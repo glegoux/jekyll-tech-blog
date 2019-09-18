@@ -10,23 +10,27 @@
 
   <style>
     .center {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
     }
     .block {
       display: block;
+      margin-bottom: 5px;
     }
   </style>
 </head>
 
 <body style="background-color: #f4f5f7">
-  <div>
+
     <span class="block">
       Know more about this dashboard at <a href="https://go/my-jira-tickets">https://go/my-jira-tickets</a>
     </span>
-    <img class="center" alt="Active JIRA Tickets" src="/active_tickets.jpg"/>
-  </div>
+
+    <div class="center">
+      <img alt="Active JIRA Tickets" height="48" src="/active_tickets.jpg"/>
+    </div>
+
 </body>
 </html>
