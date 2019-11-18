@@ -1,0 +1,9 @@
+---
+layout: null
+permalink: /config.txt
+sitemap: false
+---
+
+{% if jekyll.environment == 'development' %}
+{{ site | jsonify  }}
+{% endif %}

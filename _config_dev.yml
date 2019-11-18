@@ -1,0 +1,21 @@
+---
+---
+# Site configuration for developement
+# override properties in _config.yml:
+# if jekyll serve --config "_config.yml,_config_dev.yml" used
+
+# Server
+
+host: 0.0.0.0 # overridden by --host option of jekyll serve command line
+port: 4000 # overridden by --port option  of jekyll serve command line
+
+# Info
+
+url: http://0.0.0.0:4000
+
+# Build
+
+show_drafts: true
+
+sass:
+  style: full

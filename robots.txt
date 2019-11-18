@@ -1,0 +1,15 @@
+---
+layout: null
+permalink: /robots.txt
+sitemap: false
+---
+# robots.txt
+# see http://www.robotstxt.org/robotstxt.html
+
+# ban all spiders from the entire site:
+User-Agent: *
+Disallow: /
+
+# visit only referenced page by sitemap
+#User-Agent: *
+#Sitemap: {{ site.url }}/sitemap.xml

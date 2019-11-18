@@ -1,0 +1,43 @@
+---
+---
+# Site configuration for production
+# _config.yml
+# default configuration: https://jekyllrb.com/docs/configuration/default/
+
+# Server
+
+url: https://glegoux.com
+baseurl: ""
+detach: false
+show_dir_listing: false
+encoding: utf-8
+
+# Build
+
+source: .
+data_dir: ./_data
+layouts_dir: ./_layouts
+includes_dir: ./_includes
+plugins_dir: ./_plugins
+destination: ./_site
+
+show_drafts: false
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+exclude:
+  - bin/
+  - Makefile
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - VERSION
+  - LICENCE
+
+# Plugins
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
