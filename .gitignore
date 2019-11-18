@@ -1,3 +1,8 @@
+
+# Jekyll - web server
 _site
 .sass-cache
 .jekyll-metadata
+
+# RubyMine
+.idea
