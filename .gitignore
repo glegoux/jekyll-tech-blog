@@ -5,5 +5,5 @@ _site
 .sass-cache
 .jekyll-metadata
 
-# RubyMine
+# RubyMine - integrated development environment
 .idea
