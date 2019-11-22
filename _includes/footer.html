@@ -1,15 +1,137 @@
-<footer>
-  <div class="container">
+<div class="container">
+  <div class="row">
 
-    <div class="row">
-      <div class="copyright col-12">
-        <p>
-          Gilles Legoux, Software Engineer.<br>
-          ©Copyright 2014-{{ 'now' | date: "%Y" }}. Tous droits réservés.<br>
-          Version: {% include VERSION %}.
-        </p>
-      </div>
+    <div class="blog col-lg-3 col-md-4 col-12">
+      <table>
+        <tr>
+          <td colspan="2">
+            <h1>Blog</h1>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a class="link-strong" href="/articles/">
+              <i class="icon fa fa-cloud"></i>
+            </a>
+          </td>
+          <td>
+            <a class="link-strong" href="/articles/">
+              Articles
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a class="link-strong" href="/projects/">
+              <i class="icon fa fa-pie-chart"></i>
+            </a>
+          </td>
+          <td>
+            <a class="link-strong" href="/projects/">
+              Projects
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a class="link-strong" href="/snippets/">
+              <i class="icon fa fa-code"></i>
+            </a>
+          </td>
+          <td>
+            <a class="link-strong" href="/snippets/">
+              Snippets
+            </a>
+          </td>
+        </tr>
+      </table>
     </div>
 
+    <div class="contact col-lg-3 col-md-4 col-12">
+      <table>
+        <tr>
+          <td colspan="2">
+            <h1>Contact</h1>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a class="link-strong"
+               href="https://www.linkedin.com/in/gilleslegoux/">
+              <i class="icon rounded fa fa-envelope"></i>
+            </a>
+          </td>
+          <td>
+            <a class="link-strong"
+               href="https://www.linkedin.com/in/gilleslegoux/">
+              Contact me
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a class="link-strong" href="/about/">
+              <i class="icon rounded color1 fa fa-user"></i>
+            </a>
+          </td>
+          <td>
+            <a class="link-strong" href="/about/">
+              About me
+            </a>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="language col-lg-3 col-md-4 col-12">
+      <table>
+        <tr>
+          <td colspan="2">
+            <h1>Language</h1>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img class="lang small"
+                 src="/website/img/lang/french.png"
+                 alt="french">
+          </td>
+          <td>
+            <a href="javascript:" class="lang" data-lang="fr">
+              <span> Français</span>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img class="lang small"
+                 src="/website/img/lang/english.png"
+                 alt="english"/>
+          </td>
+          <td>
+            <a href="javascript:" class="lang" data-lang="en">
+              <span class="active-lang"> English</span>
+            </a>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="follow col-lg-3 col-md-12 col-12">
+      <h1 class="title">Follow me</h1>
+      {% include social.html %}
+    </div>
   </div>
-</footer>
+
+  <hr>
+
+  <div class="row">
+    <div class="copyright col-12">
+      <p>
+        glegoux.com - ©Copyright. Tous droits réservés 2014-{{ 'now' | date: "%Y" }}.<br>
+        Version: {% include VERSION %}
+      </p>
+    </div>
+  </div>
+
+</div>

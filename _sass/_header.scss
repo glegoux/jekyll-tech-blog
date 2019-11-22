@@ -1,0 +1,12 @@
+/* Header */
+
+header {
+  background-color: $color;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  z-index: 999;
+}

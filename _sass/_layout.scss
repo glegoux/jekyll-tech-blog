@@ -1,0 +1,38 @@
+/* Layout */
+
+.content {
+  margin-top: 10em;
+}
+
+ul {
+  list-style-type: none;
+  padding-inline-start: 0 !important;
+
+}
+
+a, a:visited, a:active, a:link, a:hover {
+  text-decoration: none !important;
+}
+
+a.link-strong:hover {
+  font-weight: bold;
+}
+
+.icon {
+  color: white;
+  font-size: 1.5em;
+  height: 2em;
+  line-height: 2em;
+  width: 2em;
+}
+
+.icon.rounded {
+  border-radius: 50% !important;
+  display: inline-block;
+  text-align: center;
+}
+
+.icon:hover {
+  text-decoration: none;
+  color: white;
+}
