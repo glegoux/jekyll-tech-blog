@@ -5,6 +5,7 @@ header {
 
   .flex-container {
     display: flex;
+
     #name {
       flex-grow: 1;
       margin-left: 2em;
@@ -76,7 +77,6 @@ header {
     position: fixed;
     top: 0.5em;
     right: -250px;
-    height: 100%;
     transition: 0.5s;
     width: 240px;
     padding-left: 2em;
@@ -98,8 +98,12 @@ header {
       transition: 0.8s;
       padding-top: 1em;
       padding-bottom: 1em;
+    }
+
+    ul li:not(:last-child) {
       border-bottom: 1px solid rgba(144, 144, 144, 0.2) !important;
     }
+
   }
 
 }
