@@ -20,7 +20,7 @@ header {
     color: black !important;
   }
 
-  .hr {
+  .hr-above {
     height: 0.3em;
     width: 100%;
     background-color: $color;
@@ -29,11 +29,6 @@ header {
 
   img {
     height: 1em;
-  }
-
-  i {
-    color: grey;
-    font-size: 0.8em;
   }
 
   ul li {
