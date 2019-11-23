@@ -65,6 +65,12 @@ header {
     height: 100%;
   }
 
+  #sidebar-close {
+    position: fixed;
+    top: 0;
+    right: 1em;
+  }
+
   #sidebar {
     z-index: 999;
     position: fixed;
