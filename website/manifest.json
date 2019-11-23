@@ -29,5 +29,5 @@ sitemap: false
   "start_url": "/",
   "display": "standalone",
   "background_color": "#000000",
-  "theme_color": "#383b43"
+  "theme_color": "{{site.data.theme.color}}"
 }
