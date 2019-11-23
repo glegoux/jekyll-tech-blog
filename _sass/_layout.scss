@@ -22,15 +22,15 @@ a.link-strong:hover {
 .icon {
   color: white;
   font-size: 1.5em;
-  height: 2em;
   line-height: 2em;
+  height: 2em;
   width: 2em;
+  text-align: center;
 }
 
 .icon.rounded {
   border-radius: 50% !important;
   display: inline-block;
-  text-align: center;
 }
 
 .icon:hover {
