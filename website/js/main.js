@@ -1,9 +1,25 @@
 jQuery(document).ready(function () {
 
-    $('header #toggler a, header #menu a').click(function () {
-        $('#menu').toggleClass('d-none');
-    });
+  // toggle menu for small screen
 
-    new SmoothScroll('a[href*="#"]');
+  let menuIcon = $("#menu-icon");
+  let menuContent = $(".menu-content");
+  let sidebarOverlay = $("#sidebar-overlay");
+  let sidebar = $("#sidebar");
+
+  menuContent.clone().appendTo("#sidebar");
+
+  menuIcon.click(function () {
+    sidebarOverlay.show();
+    sidebar.css("right", "0");
+  });
+
+  sidebarOverlay.click(function () {
+    sidebar.css("right", "-250px");
+    setTimeout(function () {
+      sidebarOverlay.hide();
+    }, 900);
+  });
 
 });
+
