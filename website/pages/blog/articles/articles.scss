@@ -1,74 +1,73 @@
 ---
 ---
-.list-articles {
-  text-align: center;
+#page-articles {
+  width: 100%;
 
-  li.article:not(:last-child) {
-    border-bottom: 1px solid lightgrey;
-  }
+  .list-articles {
+    text-align: center;
 
-  li.article {
-    a {
-      color: grey;
+    li.article:not(:last-child) {
+      border-bottom: 1px solid lightgrey;
     }
 
-    padding-bottom: 1em;
-    margin-left: 4em;
-    margin-right: 4em;
+    li.article {
+      padding-bottom: 1em;
+      margin-left: 4em;
+      margin-right: 4em;
 
-    .title {
-      font-weight: bold;
-    }
-
-    .description {
-      font-style: italic;
-    }
-
-    ul.meta-data {
-      list-style-type: none;
-      font-size: 0.8em;
-
-      li {
-        display: inline-block;
-        margin-left: 1em;
+      .title {
+        font-weight: bold;
       }
 
-      img {
-        height: 1em;
-        width: 1em;
+      .description {
+        font-style: italic;
       }
 
-    }
-
-    /* Tags */
-
-    .tags {
-      padding: 0;
-      text-align: center;
-      font-size: 0.8em;
-
-      ul {
-        list-style: none;
-        padding: 0;
+      ul.meta-data {
+        list-style-type: none;
+        font-size: 0.8em;
 
         li {
-          display: inline;
-          padding: 0.3em 0.9em;
-          margin: 0.25em 0.5em 0.25em 0;
-          background-color: #e7f3ff;
-          border-radius: 3px;
+          display: inline-block;
+          margin-left: 1em;
         }
 
-        li:hover {
-          background-color: #ddeeff;
+        img {
+          height: 1em;
+          width: 1em;
         }
 
-        li a {
-          color: #0366d6;
-          text-decoration: none;
+      }
+
+      /* Tags */
+
+      .tags {
+        padding: 0;
+        text-align: center;
+        font-size: 0.8em;
+
+        ul {
+          list-style: none;
+          padding: 0;
+
+          li {
+            display: inline;
+            padding: 0.3em 0.9em;
+            margin: 0.25em 0.5em 0.25em 0;
+            background-color: #e7f3ff;
+            border-radius: 3px;
+          }
+
+          li:hover {
+            background-color: #ddeeff;
+          }
+
+          li a {
+            color: #0366d6;
+            text-decoration: none;
+          }
         }
       }
     }
-
   }
 }

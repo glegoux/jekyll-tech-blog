@@ -13,26 +13,27 @@
 
 /* Breadcrumb */
 
-.breadcrumb {
+#breadcrumb {
   display: block !important;
-  height: 100%;
+  width: 100%;
   margin: auto;
   text-align: center;
   background-color: white !important;
-}
 
-.breadcrumb .sep {
-  margin-left: 0.5em;
-  margin-right: 0.5em;
-  color: dimgray !important;
-}
+  .sep {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    color: dimgray !important;
+  }
 
-.breadcrumb a {
-  color: cornflowerblue !important;
-}
+  a {
+    color: cornflowerblue !important;
+  }
 
-.breadcrumb a:last-child {
-  font-weight: bold !important;
+  a:last-child {
+    font-weight: bold !important;
+  }
+
 }
 
 /* List */
