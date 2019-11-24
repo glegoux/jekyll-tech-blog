@@ -26,7 +26,6 @@ jQuery(document).ready(function () {
   $("header li a").each(function () {
     let urlPath = window.location.pathname;
     let focusPath = $(this).attr("href");
-    console.log(focusPath);
     if (urlPath.startsWith(focusPath)) {
       $(this).addClass("focus");
     } else {

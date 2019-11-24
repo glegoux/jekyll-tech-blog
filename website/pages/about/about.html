@@ -21,8 +21,11 @@ permalink: /about
 
     <p>
       I am very exciting by the startup world <img height=25 src="/website/img/perso/startup.png">
-      and the creation principe. I am a <b>French citizen</b> <img height=25 src="/website/img/lang/french.png">.
-      I like my country. But I feel a citizen of the world <img height=25 src="/website/img/perso/world.png"> .
+      and the creation principe. I am a <b>French citizen</b> <img height=25
+                                                                   src="/website/img/lang/french.png">.
+      I like my country. But I feel a citizen of the world <img height=25
+                                                                src="/website/img/perso/world.png">
+      .
     </p>
 
     <p>
@@ -49,14 +52,14 @@ permalink: /about
     </p>
     <p>
       &#8226;
-      <a class="link" href="https://stackoverflow.com/users/8071126/glegoux">
+      <a class="link" href="{{ site.data.social_links.stackoverflow }}">
         <img height=25 src="/website/img/perso/stackoverflow.png">
         <b>stack overflow</b>
-      </a>profile:
+      </a>
     </p>
 
     <p style="text-align: center">
-      <a href="https://stackoverflow.com/users/8071126/glegoux">
+      <a href="{{ site.data.social_links.stackoverflow }}">
         <img src="https://stackexchange.com/users/flair/6974918.png"
              alt="profile for glegoux on Stack Exchange, a network of free, community-driven Q&amp;A sites"
              title="profile for glegoux on Stack Exchange, a network of free, community-driven Q&amp;A sites"/>
@@ -65,20 +68,16 @@ permalink: /about
 
     <p>
       &#8226;
-      <a class="link" href="https://stackshare.io/glegoux/glegoux">
+      <a class="link" href="{{ site.data.social_links.stackshare }}">
         <img height=25 src="/website/img/perso/stack.png">
         <b> stackshare</b>
-      </a>:
-    </p>
-
-    <p>
-      <a class="link" href="https://stackshare.io/glegoux/glegoux">
-        <div class="tech-stack"></div>
       </a>
     </p>
 
+    {% include stack.html %}
+
     <p>
-      These quotes are my philosophy:
+      Several quotes that I appreciate:
     </p>
 
     <ul>
@@ -94,8 +93,8 @@ permalink: /about
     <p>
       If I precise what that means for me. I add that: show me the documentation. Before talking,
       give your sources and no bullshit. Choose if you want to go fast or far. And understand the
-      social interactions and interests of
-      each one by being bountiful is the most important. The man is a social animal.
+      social interactions and interests of each one by being bountiful is the most important.
+      The man is a social animal.
     </p>
 
   </div>
