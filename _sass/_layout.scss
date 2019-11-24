@@ -93,3 +93,54 @@ a, a:visited, a:active, a:link, a:hover {
   text-decoration: none;
   color: white;
 }
+
+/* Tech Stack */
+
+.tech-stack {
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+  .tech-stack {
+    background-image: url(/website/img/perso/technos.png) !important;
+    height: 150px !important;
+  }
+}
+
+.tech-stack {
+  background-image: url(/website/img/perso/technos-medium.png);
+  height: 300px;
+}
+
+.avatar {
+  opacity: 0.95;
+  width: 150px;
+  height: 150px;
+}
+
+/* Avatar */
+
+.icon-avatar {
+  opacity: 0.95;
+  border-radius: 100%;
+  width: 4em;
+  height: 4em;
+}
+
+.medium-avatar {
+  opacity: 0.95;
+  border-radius: 100%;
+  width: 3em;
+  height: 3em !important;
+  vertical-align: middle;
+}
+
+.small-avatar {
+  opacity: 0.95;
+  border-radius: 100%;
+  width: 2em;
+  height: 2em;
+  vertical-align: bottom;
+}
