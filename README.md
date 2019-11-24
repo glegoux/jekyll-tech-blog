@@ -1,12 +1,33 @@
 # glegoux.com
 
-This website is written in ruby, use https://jekyllrb.com/ as static web server and https://shopify.github.io/liquid/ as customer-facing template language.
+I use GitHub Pages feature to render this website available at https://glegoux.com .
 
-You can read these documentations:
+## Technos
 
-https://help.github.com/categories/customizing-github-pages/  
-https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/
+This source code generates static web pages, that are served by a static web server.
 
-## Jekyll plugins
+**web server**
 
-https://pages.github.com/versions/
+- Web server: GitHub.com
+- Website generator: Jekyll - https://jekyllrb.com
+- Templating language: Liquid - https://shopify.github.io/liquid
+- Text-to-HTML conversion: Markdown - https://daringfireball.net/projects/markdown
+- CSS extension: Sass - https://sass-lang.com
+- JavaScript library: JQuery - https://jquery.com
+- JavaScript for mathematics: Mathjax - https://www.mathjax.org
+- Toolkit for HTML, CSS and JS: Bootstrap - https://getbootstrap.com
+- Data-interchange format: JSON - http://www.json.org and YAML - https://yaml.org
+
+**Used jekyll plugins**
+
+- https://pages.github.com/versions
+
+**References**
+
+- https://help.github.com/categories/customizing-github-pages
+- https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll
+
+### Monitoring
+
+- http://status.glegoux.com
+- https://www.digicert.com/help
