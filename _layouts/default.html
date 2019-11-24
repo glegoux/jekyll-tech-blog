@@ -2,21 +2,23 @@
 <html>
 
 <head>
-{% include meta.html %}
-{% include css.html %}
+  {% include meta.html %}
+  {% include css.html %}
 </head>
 
 <body>
 <header>
-{% include header.html %}
+  {% include header.html %}
 </header>
 
 <div id="content" class="container">
-{{ content }}
+  <div class="row">
+    {{ content }}
+  </div>
 </div>
 
 <footer>
-{% include footer.html %}
+  {% include footer.html %}
 </footer>
 {% include js.html %}
 </body>

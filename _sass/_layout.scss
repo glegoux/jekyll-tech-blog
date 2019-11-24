@@ -1,9 +1,41 @@
 /* Layout */
 
+/* Content */
+
 #content {
-  min-height: 500px;
-  margin-top: 10em;
+  padding: 2em 2em 2em 2em;
+  min-height: 700px;
+
+  .title-page {
+    margin-bottom: 1em;
+  }
 }
+
+/* Breadcrumb */
+
+.breadcrumb {
+  display: block !important;
+  height: 100%;
+  margin: auto;
+  text-align: center;
+  background-color: white !important;
+}
+
+.breadcrumb .sep {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  color: dimgray !important;
+}
+
+.breadcrumb a {
+  color: cornflowerblue !important;
+}
+
+.breadcrumb a:last-child {
+  font-weight: bold !important;
+}
+
+/* List */
 
 ul {
   list-style-type: none;
@@ -11,16 +43,40 @@ ul {
 
 }
 
+/* Link and anchor */
+
 a, a:visited, a:active, a:link, a:hover {
+  color: inherit !important;
   text-decoration: none !important;
 }
 
-a.link-strong:hover {
+.link-strong:hover {
   font-weight: bold;
 }
 
+.link, .link-inverse, .link-zoom, .link-light, .link-strong {
+  text-decoration: none;
+}
+
+.link:hover {
+  border-bottom: dashed 1px !important;
+}
+
+.link-zoom:hover {
+  font-size: 100.5% !important;
+}
+
+.link-strong:hover {
+  font-weight: 700 !important;
+}
+
+.link-light:hover {
+  opacity: 1 !important;
+}
+
+/* Icon */
+
 .icon {
-  color: white;
   font-size: 1.5em;
   line-height: 2em;
   height: 2em;
