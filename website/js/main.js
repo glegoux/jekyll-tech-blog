@@ -40,35 +40,13 @@ jQuery(document).ready(function () {
   jQuery(document).ready(function () {
 
     let originalLangHeader = $("#original-lang");
-    let heightOriginalLangHeader = originalLangHeader.outerHeight();
-
-    let menuIcon = $("#menu-icon");
-    let topMenuIcon = parseInt(menuIcon.css("top").replace("px", ""));
-
     let langs = $(".lang");
-
-    let body = $("body");
-
-    function showOriginalLangHeader() {
-      originalLangHeader.show();
-      let h = originalLangHeader.outerHeight() + "px";
-      menuIcon.css("top", (topMenuIcon + heightOriginalLangHeader) + "px");
-      setTimeout(function () {
-        body.css("top", heightOriginalLangHeader);
-      }, 100);
-    }
-
-    function hideOriginalLangHeader() {
-      originalLangHeader.hide();
-      body.css("top", 0);
-      menuIcon.css("top", topMenuIcon + "px");
-    }
 
     function changeLanguage(language) {
       if (originalLanguage === language) {
-        hideOriginalLangHeader();
+        originalLangHeader.hide();
       } else {
-        showOriginalLangHeader();
+        originalLangHeader.show();
       }
       langs.each(function () {
         if (language === $(this).data("lang")) {
