@@ -8,8 +8,8 @@ This source code generates static web pages, that are served by a static web ser
 
 **web server**
 
-- Web server: GitHub.com
-- Website generator: Jekyll - https://jekyllrb.com
+- Web static werver: GitHub.com
+- Static site generator: Jekyll - https://jekyllrb.com
 - Templating language: Liquid - https://shopify.github.io/liquid
 - Text-to-HTML conversion: Markdown - https://daringfireball.net/projects/markdown
 - CSS extension: Sass - https://sass-lang.com
