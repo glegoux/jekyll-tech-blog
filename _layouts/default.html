@@ -3,24 +3,39 @@
 
 <head>
   {% include meta.html %}
+  {% include js.html %}
   {% include css.html %}
 </head>
 
 <body>
-<header>
+
+<div id="original-lang" class="notranslate">
+  Ce site est écrit en anglais, cette traduction est faite à la volée.
+</div>
+
+<header class="notranslate">
   {% include header.html %}
 </header>
 
 <div id="content" class="container">
   <div class="row">
+    {% include loader.html %}
     {{ content }}
   </div>
 </div>
 
-<footer>
+<footer class="notranslate">
   {% include footer.html %}
 </footer>
-{% include js.html %}
+{% include google-translate.html %}
+
+<!-- Loader -->
+<script type="text/javascript">
+    $(window).on("load", function () {
+        $("#loader").fadeOut("slow");
+    });
+</script>
+
 </body>
 
 </html>

@@ -1,6 +1,7 @@
 /* Header */
 
 header {
+  padding-top: 1.5em;
   color: black !important;
 
   .flex-container {
@@ -21,7 +22,7 @@ header {
     color: black !important;
   }
 
-  .hr-above {
+  #hr-above {
     height: 0.3em;
     width: 100%;
     background-color: $color;

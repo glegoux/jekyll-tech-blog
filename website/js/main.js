@@ -33,6 +33,70 @@ jQuery(document).ready(function () {
     }
   });
 
+  // Multi-lang
+
+  let originalLanguage = "english";
+
+  jQuery(document).ready(function () {
+
+    let originalLangHeader = $("#original-lang");
+    let heightOriginalLangHeader = originalLangHeader.outerHeight();
+
+    let menuIcon = $("#menu-icon");
+    let topMenuIcon = parseInt(menuIcon.css("top").replace("px", ""));
+
+    let langs = $(".lang");
+
+    let body = $("body");
+
+    function showOriginalLangHeader() {
+      originalLangHeader.show();
+      let h = originalLangHeader.outerHeight() + "px";
+      menuIcon.css("top", (topMenuIcon + heightOriginalLangHeader) + "px");
+      setTimeout(function () {
+        body.css("top", heightOriginalLangHeader);
+      }, 100);
+    }
+
+    function hideOriginalLangHeader() {
+      originalLangHeader.hide();
+      body.css("top", 0);
+      menuIcon.css("top", topMenuIcon + "px");
+    }
+
+    function changeLanguage(language) {
+      if (originalLanguage === language) {
+        hideOriginalLangHeader();
+      } else {
+        showOriginalLangHeader();
+      }
+      langs.each(function () {
+        if (language === $(this).data("lang")) {
+          $(this).find("span").addClass("focus");
+        } else {
+          $(this).find("span").removeClass("focus");
+        }
+      });
+      // Called twice
+      googleTranslate(language);
+      googleTranslate(language);
+      window.localStorage.setItem('lang', language);
+    }
+
+    // init translation
+    let currentLanguage = window.localStorage.getItem('lang');
+    if (currentLanguage === null) {
+      currentLanguage = originalLanguage;
+    }
+    changeLanguage(currentLanguage);
+
+    // update translation
+    langs.click(function () {
+      let language = $(this).data("lang");
+      changeLanguage(language);
+    });
+  });
+
 
 });
 
