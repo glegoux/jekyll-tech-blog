@@ -2,7 +2,7 @@
 
 I use GitHub Pages feature to render this website available at https://glegoux.com .
 
-## Technos
+### Technos
 
 This source code generates static web pages, that are served by a static web server.
 
