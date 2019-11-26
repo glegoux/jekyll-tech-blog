@@ -1,6 +1,7 @@
 /* Header */
 
 header {
+  z-index: 1000;
   padding-top: 1em;
   color: black !important;
 
@@ -46,6 +47,7 @@ header {
   }
 
   #menu-icon {
+    z-index: 1001;
     position: fixed;
     top: 1.5em;
     right: 1em;
@@ -56,7 +58,6 @@ header {
     height: 2em;
     line-height: 2em;
     text-align: center;
-    z-index: 998;
 
     i {
       color: white;
@@ -64,7 +65,7 @@ header {
   }
 
   #sidebar-overlay {
-    z-index: 1000;
+    z-index: 1002;
     position: fixed;
     top: 0;
     right: 0;
@@ -79,7 +80,7 @@ header {
   }
 
   #sidebar {
-    z-index: 999;
+    z-index: 1002;
     position: fixed;
     top: 0.5em;
     right: -250px;
