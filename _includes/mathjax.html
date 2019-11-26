@@ -1,0 +1,16 @@
+<!-- MathJax -->
+<script
+  src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}});
+</script>
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        setTimeout(function () {
+            for (const jax of MathJax.Hub.getAllJax()) {
+                jax.SourceElement().previousSibling.classList.add("notranslate");
+            }
+        }, 1000);
+    });
+</script>
+
