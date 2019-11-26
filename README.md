@@ -24,7 +24,9 @@ This source code generates static web pages, that are served by a static web ser
 
 ### Known issues
 
-- https://www.glegoux.com has an invalid TLS/SSL certificate, using wildcard certificate is undadvised and there is a GitHub open issue https://github.com/isaacs/github/issues/1675 .
+- The url https://www.glegoux.com has an invalid TLS/SSL certificate, using wildcard certificate is undadvised and there is a GitHub open issue https://github.com/isaacs/github/issues/1675 
+- The contents of iframe are not translated (see /contact/email page)
+- The iframes are not resized when completing a web form for example (see /contact/email page)
 
 ### References
 
