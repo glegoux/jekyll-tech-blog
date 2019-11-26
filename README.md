@@ -1,6 +1,6 @@
 # glegoux.com
 
-I use [GitHub Pages](https://pages.github.com/) feature to render this website available at https://glegoux.com .
+I use [GitHub Pages](https://pages.github.com/) with Jekyll to render this website available at https://glegoux.com .
 
 ### Technical stack
 
