@@ -24,7 +24,7 @@ This source code generates static web pages, that are served by a static web ser
 
 ### Known issues
 
-- https://www.glegoux.com has invalid TLS/SSL certificate, using wildcard certificate is undadvised and there is a GitHub open issue https://github.com/isaacs/github/issues/1675 .
+- https://www.glegoux.com has an invalid TLS/SSL certificate, using wildcard certificate is undadvised and there is a GitHub open issue https://github.com/isaacs/github/issues/1675 .
 
 ### References
 
