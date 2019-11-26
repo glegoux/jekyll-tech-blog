@@ -29,5 +29,5 @@ This source code generates static web pages, that are served by a static web ser
 
 ### Monitoring
 
-- Health Check: http://status.glegoux.com
+- Health Checker: http://status.glegoux.com
 - TLS/SSL Certificate Checker: https://www.digicert.com/help
