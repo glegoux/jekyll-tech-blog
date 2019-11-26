@@ -6,8 +6,6 @@ I use [GitHub Pages](https://pages.github.com/) with Jekyll to render this websi
 
 This source code generates static web pages, that are served by a static web server.
 
-**web server**
-
 - Web static werver: GitHub.com
 - Static site generator: Jekyll - https://jekyllrb.com with plugins: 
   - https://pages.github.com/versions
@@ -24,7 +22,11 @@ This source code generates static web pages, that are served by a static web ser
 - Health Checker: http://status.glegoux.com
 - TLS/SSL Certificate Checker: https://www.digicert.com/help
 
-## References
+### Known issues
+
+- https://www.glegoux.com has invalid TLS/SSL certificate, using wildcard certificate is undadvised and there is a GitHub open issue https://github.com/isaacs/github/issues/1675 .
+
+### References
 
 - https://help.github.com/categories/customizing-github-pages
 - https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll
