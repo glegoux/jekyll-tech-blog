@@ -1,2 +1,22 @@
 ---
 ---
+#page-snippets {
+  width: 100%;
+  text-align: center;
+
+  .snippets {
+    text-align: center;
+
+    li.snippet:not(:last-child) {
+      border-bottom: 1px solid lightgrey;
+    }
+
+    li.snippet {
+      padding-top: 1em;
+      padding-bottom: 1em;
+      margin-left: 4em;
+      margin-right: 4em;
+    }
+  }
+
+}

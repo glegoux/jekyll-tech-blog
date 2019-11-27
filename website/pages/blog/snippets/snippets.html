@@ -2,5 +2,34 @@
 layout: default
 permalink: /blog/snippets
 ---
+<div id="page-snippets">
 
-Coming soon ...
+  <h3 class="title-page notranslate">Snippets</h3>
+
+  <div id="breadcrumb">
+    <a href="/">Home</a><span class="sep"> &gt; </span>
+    <a href="/blog">Blog</a><span class="sep"> &gt; </span>
+    <a href="/blog/articles" class="notranslate">Snippets</a>
+  </div>
+
+  <hr>
+
+  <ul class="snippets">
+    {% for gist_id in site.data.gist_ids.all %}
+    <li class="snippet">
+      {% gist gist_id %}
+    </li>
+    {% else %}
+    <li>No one available snippet</li>
+    {% endfor %}
+  </ul>
+
+  <p>
+    <a href="{{ site.data.links.gist }}">
+      <button class="btn">
+        <b class="black">See all <span class="notranslate">snippets</span></b>
+      </button>
+    </a>
+  </p>
+
+</div>
