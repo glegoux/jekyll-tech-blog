@@ -9,7 +9,7 @@ permalink: /blog/articles
   <div id="breadcrumb">
     <a href="/">Home</a><span class="sep"> &gt; </span>
     <a href="/blog">Blog</a><span class="sep"> &gt; </span>
-    <a href="/blog/articles">Articles</a>
+    <a href="">Articles</a>
   </div>
 
   <hr>
@@ -21,7 +21,6 @@ permalink: /blog/articles
       <li class="article">
         <a href="{{ post.url }}">
           <p class="title">{{ post.title | capitalize }}</p>
-          <p class="description">{{ post.description }}</p>
           <ul class="meta-data">
             <li>
               <i class="fa fa-calendar"></i>
@@ -32,6 +31,7 @@ permalink: /blog/articles
               <span>{{ post.time_reading_minutes }} min</span>
             </li>
           </ul>
+          <p class="description">{{ post.description }}</p>
           <!-- ul class="tags">
             {% for tag in post.tags %}
             <li>{{ tag }}</li>

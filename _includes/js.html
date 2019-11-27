@@ -12,9 +12,13 @@
   type="text/javascript" integrity="sha256-98vAGjEDGN79TjHkYWVD4s87rvWkdWLHPs5MC3FvFX4="
   crossorigin="anonymous"></script>
 <script
-  src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/{{ site.data.versions.bootstrap }}/js/bootstrap.js"
-  type="text/javascript" integrity="sha256-82SVOjZ1qLdrq8VUmAisFapCSq1bpgavtXQaDGLPAAg="
+  src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/{{ site.data.versions.bootstrap }}/js/bootstrap.min.js"
+  type="text/javascript" integrity="sha256-CjSoeELFOcH0/uxWu6mC/Vlrc1AARqbm/jiiImDGV3s="
   crossorigin="anonymous"></script>
 <!-- Website Javascript -->
 <script src="/website/js/main.js" type="text/javascript"></script>
+{% if page.article %}
+<script src="/website/js/article.js" type="text/javascript" ></script>
+{% else %}
 <script src="/{{ page.path | replace: '.html', '.js' }}" type="text/javascript"></script>
+{% endif %}

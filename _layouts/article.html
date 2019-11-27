@@ -1,5 +1,89 @@
 ---
 layout: default
 ---
+<div id="breadcrumb">
+  <a href="/">Home</a><span class="sep"> > </span>
+  <a href="/blog/">Blog</a><span class="sep"> > </span>
+  <a href="/blog/articles/">Articles</a><span class="sep"> > </span>
+  <a href="">{{ page.title }}</a>
+</div>
 
-{{ content }}
+<hr>
+
+<!-- Article metadata -->
+<div class="article-metadata">
+
+  <!-- Title -->
+  <p class="article-title">
+    {{ page.title | capitalize }}
+  </p>
+
+  <!-- License -->
+  <div class="article-license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0">
+      <i class="cc">Creative Commons Attribution 4.0 International License:</i>
+      <span class="cc-icon" title="CC"></span>
+      <span class="ccby-icon" title="BY"></span>
+      <span class="ccnc-icon" title="NC"></span>
+      <span class="ccsa-icon" title="SA"></span>
+    </a>
+  </div>
+
+  <!-- Details -->
+  <ul>
+    <li style="display: inline">
+      <i class="icon small fa fa-calendar"></i>
+      <span> Saturday 12 October 2019</span>
+    </li>
+    <li style="display: inline">
+      <i class="icon small fa fa-bookmark-o"></i>
+      <span>{{ page.time_reading_minutes }} min</span>
+    </li>
+  </ul>
+
+  <!-- Description -->
+  <p class="article-description">
+    {{ page.description }}
+  </p>
+
+  <!-- Tags
+  <div class="tags">
+
+    <ul>
+
+      <li>
+        <a href="/articles/?tag=Algorithm">Algorithm</a>
+      </li>
+
+      <li>
+        <a href="/articles/?tag=Enumeration">Enumeration</a>
+      </li>
+
+      <li>
+        <a href="/articles/?tag=Mathematics">Mathematics</a>
+      </li>
+
+    </ul>
+
+  </div>
+  -->
+
+</div>
+
+<!-- Article content -->
+<div class="markdown-body article-content">
+  {{ content }}
+</div>
+
+<hr class="sep-author"/>
+
+<p>
+  Written by
+  <a href="/about">
+    <img class="link-light small-avatar" src="/website/img/perso/avatar.jpg">
+  </a>
+  <a class="link" href="/about">
+    <b class="black">Gilles Legoux</b>
+  </a>
+  (glegoux) - Software Engineer.
+</p>

@@ -1,0 +1,130 @@
+---
+layout: article
+article: true
+permalink: /blog/articles/test
+title: "Combination"
+description: "How to enumerate the number of subsets of a set?"
+time_reading_minutes: "11"
+tags: ["Mathematics", "Enumeration", "Algorithm"]
+---
+<p>Let $E$ be a finite set and $\mathcal{P}_E(k)$ be the number of subsets of $E$ with $k$
+  elements.<br>
+  Put $n = card(E)$ with $n \geq k \geq 0$.<br>
+  The number of elements of $\mathcal{P}_E(k)$ is the $k^{th}$ binomial coefficient:</p>
+
+$$\mathcal{C}^n_k = n(n-1)(n-2)...(n-k-1) = \frac{n!}{k!(n-k)!} = \binom{n}{k}$$
+
+<p>To enumerate the set of elements of $\mathcal{P}_E(k)$, use this recurrence formula:</p>
+
+$$\mathcal{P}_E(k) = \left\{
+\begin{array}{ll}
+\emptyset & \text{if } k = 0 \\
+\{ e \cup p \;|\; e \in E, p \in \mathcal{P}_{E \backslash \{e\}}(k-1) \} & \text{if } k
+\neq 0
+\end{array}
+\right.$$
+
+<div class="highlight highlight-source-python"><pre><span
+  class="pl-k">from</span> typing <span class="pl-k">import</span> Iterable, Set, FrozenSet
+
+<span class="pl-k">def</span> <span class="pl-en">combinations</span>(<span class="pl-smi">E</span>: Iterable, <span
+    class="pl-smi">k</span>: <span class="pl-c1">int</span>) -&gt; Set[FrozenSet]:
+    <span class="pl-k">if</span> k <span class="pl-k">&lt;</span> <span class="pl-c1">0</span>:
+        <span class="pl-k">raise</span> <span class="pl-c1">ValueError</span>(<span
+    class="pl-s">f</span><span class="pl-pds">"</span><span class="pl-s">k=</span><span
+    class="pl-c1">{</span>k<span class="pl-c1">}</span><span
+    class="pl-s"> should be positive</span><span
+    class="pl-pds">"</span>)
+    <span class="pl-k">elif</span> k <span class="pl-k">==</span> <span class="pl-c1">0</span> <span
+    class="pl-k">or</span> k <span class="pl-k">&gt;</span> <span class="pl-c1">len</span>(E):
+        <span class="pl-k">return</span> <span class="pl-c1">set</span>()
+    <span class="pl-k">elif</span> k <span class="pl-k">==</span> <span class="pl-c1">len</span>(E):
+        <span class="pl-k">return</span> <span class="pl-c1">set</span>(<span class="pl-c1">frozenset</span>(E))
+
+    E_e <span class="pl-k">=</span> <span class="pl-c1">set</span>(E)
+
+    <span class="pl-k">def</span> <span class="pl-en">_combinations</span>(<span
+    class="pl-smi">e</span>: <span class="pl-c1">int</span>, <span class="pl-smi">E</span>: Iterable):
+        <span class="pl-k">nonlocal</span> E_e
+        E_e.remove(e)
+        <span class="pl-k">return</span> combinations(E_e, k <span class="pl-k">-</span> <span
+    class="pl-c1">1</span>)
+
+    <span class="pl-k">if</span> k <span class="pl-k">==</span> <span class="pl-c1">1</span>:
+        <span class="pl-k">return</span> {<span class="pl-c1">frozenset</span>(e) <span
+    class="pl-k">for</span> e <span class="pl-k">in</span> E}
+    <span class="pl-k">else</span>:
+        <span class="pl-k">return</span> {<span class="pl-c1">frozenset</span>(p) <span
+    class="pl-k">|</span> {e} <span class="pl-k">for</span> e <span
+    class="pl-k">in</span> E <span
+    class="pl-k">for</span> p <span class="pl-k">in</span> _combinations(e, E)}</pre>
+</div>
+<p>Usage of <code>frozenset</code> is justified in python because a <code>set</code>
+  contained only hashable element, then cannot contain element of type <code>set</code>.
+  Because a mutable object like <code>set</code> is unhashable unlike in immutable object
+  like <code>frozenset</code>. This first implementation is not very performing. In addition
+  of multiple copies of $E$ costly, the recursion is non-tail and stack of memory should
+  overflow and reach out a limit case, in python <code>sys.getrecursionlimit()</code> is by
+  default 1000. And <code>yield</code> keyword could be used to avoid storing in memory the
+  set of elements of $\mathcal{P}_E(k)$ that growths factorially.</p>
+<p>Another way to enumerate the set of elements of $\mathcal{P}_E(k)$ is by filtering the
+  set of subsets of $E$, called $\mathcal{P}_E$, that have a length of $k$:</p>
+
+$$\mathcal{P}_E(k) = \{ e \;|\; e \in \mathcal{P}_E, len(e) = k \}$$
+
+<div class="highlight highlight-source-python"><pre><span
+  class="pl-k">from</span> typing <span class="pl-k">import</span> Iterable, Generator, FrozenSet
+
+<span class="pl-k">def</span> <span class="pl-en">combinations</span>(<span class="pl-smi">E</span>: Iterable, <span
+    class="pl-smi">k</span>: <span class="pl-c1">int</span>) -&gt; Generator[FrozenSet]:
+    E_l <span class="pl-k">=</span> <span class="pl-c1">list</span>(E)
+    n <span class="pl-k">=</span>  <span class="pl-c1">len</span>(E)
+    <span class="pl-k">for</span> i <span class="pl-k">in</span> <span
+    class="pl-c1">range</span>(<span class="pl-c1">1</span> <span
+    class="pl-k">&lt;&lt;</span> n):
+        bits <span class="pl-k">=</span> [<span class="pl-c1">int</span>(b) <span
+    class="pl-k">for</span> b <span class="pl-k">in</span> <span
+    class="pl-c1">bin</span>(i)[<span
+    class="pl-c1">2</span>:]]
+        n_one_bits <span class="pl-k">=</span> <span class="pl-c1">sum</span>(bits)
+        <span class="pl-k">if</span> n_one_bits <span class="pl-k">!=</span> k:
+            <span class="pl-k">continue</span>
+        element <span class="pl-k">=</span> <span class="pl-c1">set</span>()
+        bits <span class="pl-k">=</span> [<span class="pl-c1">0</span>]<span class="pl-k">*</span>(n <span
+    class="pl-k">-</span> <span class="pl-c1">len</span>(bits)) <span class="pl-k">+</span> bits
+        <span class="pl-k">for</span> index, bit <span class="pl-k">in</span> <span class="pl-c1">enumerate</span>(bits):
+            <span class="pl-k">if</span> bit <span class="pl-k">==</span> <span
+    class="pl-c1">1</span>:
+                element.add(E_l[index])
+        <span class="pl-k">yield</span> <span class="pl-c1">frozenset</span>(element)</pre>
+</div>
+<p>Note that, $\mathcal{P}_E$ is in bijection with $\{ b_1, b_2, ..., b_n \,|\, \forall i
+  \in \left[\!\left[1, n\right]\!\right] b_i \in \{0, 1\} \}$.<br>
+  $b_i$ is the value of the indicator function that indicates that the $i^{th}$ element of
+  $E$ with 1-based indexing is in the related subset of $E$, if and only if $b_i = 1$.</p>
+<p>But this iterative implementation is not efficient yet, the number of elements of
+  $\mathcal{P}_E$ is :</p>
+
+$$card(\mathcal{P}_E) = card\left(\coprod_{k=0}^{n}\mathcal{P}_E(k)\right) = \sum_{k=0}^{n}
+card(\mathcal{P}_E(k)) = \sum_{k=0}^{n} \binom{n}{k} = (1 + 1)^n = 2^n$$
+
+<p>thanks to binomial formula. Also retrieve directly the result thanks to the bijection
+  mentioned above. The for loop from $\left[\!\left[0, 2^n - 1\right]\!\right]$ could be
+  shorter.</p>
+<p>But why reinventing the wheel, use the python standard library:</p>
+<p><a
+  href="https://docs.python.org/3/library/itertools.html?highlight=itertools#itertools.combinations"
+  rel="nofollow">https://docs.python.org/3/library/itertools.html?highlight=itertools#itertools.combinations</a>
+</p>
+<div class="highlight highlight-source-python"><pre><span
+  class="pl-k">from</span> typing <span class="pl-k">import</span> Iterable, Generator, Tuple
+<span class="pl-k">import</span> itertools
+
+<span class="pl-k">def</span> <span class="pl-en">combinations</span>(<span class="pl-smi">E</span>: Iterable, <span
+    class="pl-smi">k</span>: <span class="pl-c1">int</span>) -&gt; Generator[Tuple]:
+    <span class="pl-k">return</span> itertools.combinations(E, k)</pre>
+</div>
+<p>Combinations are emitted in lexicographic sort order, and implementation could be in
+  relation to permutation on a set of length $k$. Here you have tuple objects, not frozenset
+  objects.
+</p>
