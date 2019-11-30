@@ -1,0 +1,141 @@
+---
+---
+.article-metadata {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 0.5em;
+
+  ul {
+    margin-bottom: 0 !important;
+  }
+
+  .article-title {
+    font-weight: bold;
+    color: black;
+    font-size: 1.2em;
+  }
+
+  .article-description {
+    font-style: italic;
+    color: black;
+    font-size: 0.9em;
+  }
+
+  .article-details {
+    font-size: 0.8em;
+    li {
+      display: inline;
+      padding-right: 0.5em;
+    }
+
+  }
+
+  i.icon:hover {
+    color: black;
+  }
+
+  .tags {
+    padding: 0;
+    text-align: center;
+    margin-top: -1em;
+    font-size: 0.8em;
+  }
+
+  .tags ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .tags ul li {
+    display: inline-block;
+    padding: 0.3em 0.9em;
+    margin: 0.25em 0.5em 0.25em 0;
+    background-color: #e7f3ff;
+    border-radius: 3px;
+  }
+
+  .tags ul li:hover {
+    background-color: #ddeeff;
+  }
+
+
+  .tags ul li a {
+    color: #0366d6;
+    text-decoration: none;
+  }
+}
+
+/* Content */
+
+.article-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-top: 1px solid lightgrey;
+  padding-top: 1em;
+  border-bottom: 1px solid lightgrey;
+  padding-bottom: 1em;
+  padding-right: 1em;
+
+  iframe#google-doc {
+    align-self: center;
+    width: 850px;
+    resize: both;
+    overflow: hidden;
+    border: none;
+  }
+}
+
+
+/* License */
+
+.article-license {
+  text-align: right;
+  width: 100%;
+  font-size: 0.8em !important;
+  margin-bottom: 1em;
+
+  span {
+    display: inline-block;
+    background-position: center center;
+    height: 0.8em;
+    width: 0.8em;
+    background-size: cover;
+    vertical-align: middle;
+  }
+
+  .cc {
+    font-size: 0.8em;
+  }
+
+  .cc-icon {
+    background-image: url('/website/img/license/cc/chooser_cc.png');
+  }
+
+  .ccby-icon {
+    background-image: url('/website/img/license/cc/chooser_by.png');
+  }
+
+  .ccsa-icon {
+    background-image: url('/website/img/license/cc/chooser_sa.png');
+  }
+
+  .ccnd-icon {
+    background-image: url('/website/img/license/cc/chooser_nd.png');
+  }
+
+  .ccnc-icon {
+    background-image: url('/website/img/license/cc/chooser_nc.png');
+  }
+}
+
+/* Author */
+
+.article-author {
+  width: 100%;
+  text-align: center;
+  padding-top: 1em;
+}
+

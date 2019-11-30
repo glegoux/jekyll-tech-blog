@@ -6,13 +6,7 @@ permalink: /blog/articles/
 
   <h3 class="title-page notranslate">Articles</h3>
 
-  <div id="breadcrumb">
-    <a href="/">Home</a><span class="sep"> &gt; </span>
-    <a href="/blog">Blog</a><span class="sep"> &gt; </span>
-    <a href="">Articles</a>
-  </div>
-
-  <hr>
+  <hr/>
 
   <div class="list-articles">
     <ul>
@@ -20,23 +14,61 @@ permalink: /blog/articles/
       {% for post in posts %}
       <li class="article">
         <a href="{{ post.url }}">
-          <p class="title">{{ post.title | capitalize }}</p>
-          <ul class="meta-data">
-            <li>
-              <i class="fa fa-calendar"></i>
-              <span> {{ post.date | date: '%A, %B %d, %Y' }}</span>
-            </li>
-            <li>
-              <i class="fa fa-bookmark-o"></i>
-              <span>{{ post.time_reading_minutes }} min</span>
-            </li>
-          </ul>
-          <p class="description">{{ post.description }}</p>
-          <!-- ul class="tags">
-            {% for tag in post.tags %}
-            <li>{{ tag }}</li>
-            {% endfor %}
-          </ul -->
+          <!-- Article metadata -->
+          <div class="article-metadata">
+
+            <!-- Article cover -->
+            <ul class="article-cover">
+              <li>
+                <img class="img-fluid" src="/website/img/articles/{{ post.cover }}" width="400" height="200"/>
+              </li>
+            </ul>
+
+            <ul>
+              <!-- Article title -->
+              <li class="article-title">
+                {{ post.title }}
+              </li>
+              <!-- Article description -->
+              <li class="article-description">
+                {{ post.description }}
+              </li>
+            </ul>
+
+            <!-- Article details -->
+            <ul class="article-details">
+              <li>
+                <i class="fa fa-calendar"></i>
+                <span>{{ post.date | date: '%B %d, %Y' }}</span>
+              </li>
+              <li>
+                <i class="fa fa-bookmark-o"></i>
+                <span>{{ post.time_reading_minutes }} min</span>
+              </li>
+            </ul>
+
+            <!-- Article tags
+            <div class="tags">
+
+              <ul>
+
+                <li>
+                  <a href="/articles/?tag=Algorithm">Algorithm</a>
+                </li>
+
+                <li>
+                  <a href="/articles/?tag=Enumeration">Enumeration</a>
+                </li>
+
+                <li>
+                  <a href="/articles/?tag=Mathematics">Mathematics</a>
+                </li>
+
+              </ul>
+
+            </div>
+            -->
+          </div>
         </a>
       </li>
       {% else %}

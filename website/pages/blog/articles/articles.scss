@@ -16,59 +16,72 @@
       margin-left: 4em;
       margin-right: 4em;
 
-      .title {
-        font-weight: bold;
-      }
-
-      .description {
-        font-style: italic;
-      }
-
-      ul.meta-data {
-        list-style-type: none;
-        font-size: 0.8em;
-
-        li {
-          display: inline-block;
-          margin-left: 1em;
-        }
-
-        img {
-          height: 1em;
-          width: 1em;
-        }
-
-      }
-
-      /* Tags */
-
-      .tags {
-        padding: 0;
+      .article-metadata {
+        width: 100%;
+        margin: auto;
         text-align: center;
-        font-size: 0.8em;
+        padding-bottom: 0.5em;
 
         ul {
-          list-style: none;
-          padding: 0;
+          margin-bottom: 0 !important;
+        }
 
+        .article-title {
+          font-weight: bold;
+          color: black;
+          font-size: 1.2em;
+        }
+
+        .article-description {
+          font-style: italic;
+          color: black;
+          font-size: 0.9em;
+        }
+
+        .article-details {
+          font-size: 0.8em;
           li {
             display: inline;
-            padding: 0.3em 0.9em;
-            margin: 0.25em 0.5em 0.25em 0;
-            background-color: #e7f3ff;
-            border-radius: 3px;
+            padding-right: 0.5em;
           }
 
-          li:hover {
-            background-color: #ddeeff;
-          }
+        }
 
-          li a {
-            color: #0366d6;
-            text-decoration: none;
-          }
+        i.icon:hover {
+          color: black;
+        }
+
+        .tags {
+          padding: 0;
+          text-align: center;
+          margin-top: -1em;
+          font-size: 0.8em;
+        }
+
+        .tags ul {
+          list-style: none;
+          padding: 0;
+        }
+
+        .tags ul li {
+          display: inline-block;
+          padding: 0.3em 0.9em;
+          margin: 0.25em 0.5em 0.25em 0;
+          background-color: #e7f3ff;
+          border-radius: 3px;
+        }
+
+        .tags ul li:hover {
+          background-color: #ddeeff;
+        }
+
+
+        .tags ul li a {
+          color: #0366d6;
+          text-decoration: none;
         }
       }
+
     }
   }
 }

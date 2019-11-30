@@ -1,52 +1,40 @@
 ---
 layout: default
 ---
-<div id="breadcrumb">
-  <a href="/">Home</a><span class="sep"> > </span>
-  <a href="/blog/">Blog</a><span class="sep"> > </span>
-  <a href="/blog/articles/">Articles</a><span class="sep"> > </span>
-  <a href="">{{ page.title }}</a>
-</div>
-
-<hr>
-
 <!-- Article metadata -->
 <div class="article-metadata">
 
-  <!-- Title -->
-  <p class="article-title">
-    {{ page.title | capitalize }}
-  </p>
-
-  <!-- License -->
-  <div class="article-license">
-    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0">
-      <i class="cc">Creative Commons Attribution 4.0 International License:</i>
-      <span class="cc-icon" title="CC"></span>
-      <span class="ccby-icon" title="BY"></span>
-      <span class="ccnc-icon" title="NC"></span>
-      <span class="ccsa-icon" title="SA"></span>
-    </a>
-  </div>
-
-  <!-- Details -->
-  <ul>
-    <li style="display: inline">
-      <i class="icon small fa fa-calendar"></i>
-      <span> Saturday 12 October 2019</span>
+  <!-- Article cover -->
+  <ul class="article-cover">
+    <li>
+      <img class="img-fluid" src="/website/img/articles/{{ page.cover }}" width="400" height="200"/>
     </li>
-    <li style="display: inline">
-      <i class="icon small fa fa-bookmark-o"></i>
+  </ul>
+
+  <ul>
+    <!-- Article title -->
+    <li class="article-title">
+      {{ page.title }}
+    </li>
+    <!-- Article description -->
+    <li class="article-description">
+      {{ page.description }}
+    </li>
+  </ul>
+
+  <!-- Article details -->
+  <ul class="article-details">
+    <li>
+      <i class="fa fa-calendar"></i>
+      <span>{{ page.date | date: '%B %d, %Y' }}</span>
+    </li>
+    <li>
+      <i class="fa fa-bookmark-o"></i>
       <span>{{ page.time_reading_minutes }} min</span>
     </li>
   </ul>
 
-  <!-- Description -->
-  <p class="article-description">
-    {{ page.description }}
-  </p>
-
-  <!-- Tags
+  <!-- Article tags
   <div class="tags">
 
     <ul>
@@ -67,23 +55,33 @@ layout: default
 
   </div>
   -->
-
 </div>
 
 <!-- Article content -->
-<div class="markdown-body article-content">
+<div class="article-content">
   {{ content }}
 </div>
 
-<hr class="sep-author"/>
-
-<p>
+<!-- Article license -->
+<div class="article-license">
+  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0">
+    <i class="cc">Creative Commons Attribution 4.0 International License:</i>
+    <br/>
+    <span class="cc-icon" title="CC"></span>
+    <span class="ccby-icon" title="BY"></span>
+    <span class="ccnc-icon" title="NC"></span>
+    <span class="ccsa-icon" title="SA"></span>
+  </a>
+</div>
+<br>
+<!-- Article author -->
+<p class="article-author">
   Written by
-  <a href="/about">
+  <a class="notranslate" href="/about">
     <img class="link-light small-avatar" src="/website/img/perso/avatar.jpg">
   </a>
-  <a class="link" href="/about">
+  <a class="link notranslate" href="/about">
     <b class="black">Gilles Legoux</b>
   </a>
-  (glegoux) - Software Engineer.
+  <span class="notranslate">(glegoux)</span> - Software Engineer.
 </p>
