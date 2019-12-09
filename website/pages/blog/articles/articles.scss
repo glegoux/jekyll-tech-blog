@@ -6,24 +6,29 @@
   .list-articles {
     text-align: center;
 
-    li.article:not(:last-child) {
-      border-bottom: 1px solid lightgrey;
-    }
-
-    li.article {
-      padding-top: 1em;
+    .article {
+      z-index: 1;
       padding-bottom: 1em;
-      margin-left: 4em;
-      margin-right: 4em;
+      margin-bottom: 2em;
+      border: 1px solid lightgrey;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+      width:100%;
+      height:400px;
+      border-radius: 10px;
 
       .article-metadata {
-        width: 100%;
         margin: auto;
         text-align: center;
         padding-bottom: 0.5em;
 
-        ul {
-          margin-bottom: 0 !important;
+        .article-cover {
+          img {
+            width: 100%;
+            height: 200px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+          }
         }
 
         .article-title {
@@ -33,18 +38,25 @@
         }
 
         .article-description {
-          font-style: italic;
-          color: black;
+          color: grey;
           font-size: 0.9em;
+          padding-bottom: 1em;
         }
 
         .article-details {
-          font-size: 0.8em;
-          li {
-            display: inline;
-            padding-right: 0.5em;
+          .date {
+            position: absolute;
+            bottom: 50px;
+            left: 30px;
+            font-size: 0.8em;
           }
 
+          .reading-time {
+            position: absolute;
+            bottom: 50px;
+            right: 30px;
+            font-size: 0.8em;
+          }
         }
 
         i.icon:hover {

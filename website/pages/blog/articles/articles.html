@@ -9,71 +9,71 @@ permalink: /blog/articles/
   <hr/>
 
   <div class="list-articles">
-    <ul>
+    <div class="row">
       {% assign posts = site.posts | sort: 'date' | reverse %}
       {% for post in posts %}
-      <li class="article">
-        <a href="{{ post.url }}">
-          <!-- Article metadata -->
-          <div class="article-metadata">
+      <div class="col-xs-12 col-md-6 col-lg-4">
+        <div class="article">
+          <a href="{{ post.url }}">
+            <!-- Article metadata -->
+            <div class="article-metadata">
 
-            <!-- Article cover -->
-            <ul class="article-cover">
-              <li>
-                <img class="img-fluid" src="/website/img/articles/{{ post.cover }}" width="400" height="200"/>
-              </li>
-            </ul>
-
-            <ul>
-              <!-- Article title -->
-              <li class="article-title">
-                {{ post.title }}
-              </li>
-              <!-- Article description -->
-              <li class="article-description">
-                {{ post.description }}
-              </li>
-            </ul>
-
-            <!-- Article details -->
-            <ul class="article-details">
-              <li>
-                <i class="fa fa-calendar"></i>
-                <span>{{ post.date | date: '%B %d, %Y' }}</span>
-              </li>
-              <li>
-                <i class="fa fa-bookmark-o"></i>
-                <span>{{ post.time_reading_minutes }} min</span>
-              </li>
-            </ul>
-
-            <!-- Article tags
-            <div class="tags">
+              <!-- Article cover -->
+              <div class="article-cover">
+                <img class="img-fluid" src="/website/img/articles/{{ post.cover }}"/>
+              </div>
 
               <ul>
-
-                <li>
-                  <a href="/articles/?tag=Algorithm">Algorithm</a>
+                <!-- Article title -->
+                <li class="article-title">
+                  {{ post.title }}
                 </li>
-
-                <li>
-                  <a href="/articles/?tag=Enumeration">Enumeration</a>
+                <!-- Article description -->
+                <li class="article-description">
+                  {{ post.description }}
                 </li>
-
-                <li>
-                  <a href="/articles/?tag=Mathematics">Mathematics</a>
-                </li>
-
               </ul>
 
+              <!-- Article details -->
+              <ul class="article-details">
+                <li class="date">
+                  <i class="fa fa-calendar"></i>
+                  <span>{{ post.date | date: '%B %d, %Y' }}</span>
+                </li>
+                <li class="reading-time">
+                  <i class="fa fa-bookmark-o"></i>
+                  <span>{{ post.time_reading_minutes }} min</span>
+                </li>
+              </ul>
+
+              <!-- Article tags
+              <div class="tags">
+
+                <ul>
+
+                  <li>
+                    <a href="/articles/?tag=Algorithm">Algorithm</a>
+                  </li>
+
+                  <li>
+                    <a href="/articles/?tag=Enumeration">Enumeration</a>
+                  </li>
+
+                  <li>
+                    <a href="/articles/?tag=Mathematics">Mathematics</a>
+                  </li>
+
+                </ul>
+
+              </div>
+              -->
             </div>
-            -->
-          </div>
-        </a>
-      </li>
+          </a>
+        </div>
+      </div>
       {% else %}
-      <li>No one available article</li>
+      <div>No one available article</div>
       {% endfor %}
-    </ul>
+    </div>
   </div>
 </div>
