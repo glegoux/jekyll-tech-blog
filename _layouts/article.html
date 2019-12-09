@@ -85,3 +85,34 @@ layout: default
   </a>
   <span class="notranslate">(glegoux)</span> - Software Engineer.
 </p>
+
+<h5 style="color: grey">Also read</h5>
+
+<!-- Other articles -->
+{% assign index = 0 %}
+<div class="row">
+  {% for post in site.posts %}
+  {% if index == 3 %}
+  {% break %}
+  {% endif %}
+  {% if page.title != post.title %}
+  {% assign index = index | plus: 1 %}
+  <div class="col-xs-12 col-md-6 col-lg-4">
+    {% include article.html %}
+  </div>
+  {% else %}
+  {% continue %}
+  {% endif %}
+  {% endfor %}
+</div>
+
+<div style="text-align: center;width: 100%">
+  <a href="/blog/articles">
+    <button class="btn btn-dark">
+      <b class="black">List all</b>
+    </button>
+  </a>
+</div>
+
+<!-- Comment -->
+{% include disqus.html %}

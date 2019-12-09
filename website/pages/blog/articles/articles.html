@@ -4,7 +4,7 @@ permalink: /blog/articles/
 ---
 <div id="page-articles">
 
-  <h3 class="title-page notranslate">Articles</h3>
+  <h3 class="title-page"><i class="fa fa-cloud"></i> Articles</h3>
 
   <hr/>
 
@@ -13,67 +13,12 @@ permalink: /blog/articles/
       {% assign posts = site.posts | sort: 'date' | reverse %}
       {% for post in posts %}
       <div class="col-xs-12 col-md-6 col-lg-4">
-        <div class="article">
-          <a href="{{ post.url }}">
-            <!-- Article metadata -->
-            <div class="article-metadata">
-
-              <!-- Article cover -->
-              <div class="article-cover">
-                <img class="img-fluid" src="/website/img/articles/{{ post.cover }}"/>
-              </div>
-
-              <ul>
-                <!-- Article title -->
-                <li class="article-title">
-                  {{ post.title }}
-                </li>
-                <!-- Article description -->
-                <li class="article-description">
-                  {{ post.description }}
-                </li>
-              </ul>
-
-              <!-- Article details -->
-              <ul class="article-details">
-                <li class="date">
-                  <i class="fa fa-calendar"></i>
-                  <span>{{ post.date | date: '%B %d, %Y' }}</span>
-                </li>
-                <li class="reading-time">
-                  <i class="fa fa-bookmark-o"></i>
-                  <span>{{ post.time_reading_minutes }} min</span>
-                </li>
-              </ul>
-
-              <!-- Article tags
-              <div class="tags">
-
-                <ul>
-
-                  <li>
-                    <a href="/articles/?tag=Algorithm">Algorithm</a>
-                  </li>
-
-                  <li>
-                    <a href="/articles/?tag=Enumeration">Enumeration</a>
-                  </li>
-
-                  <li>
-                    <a href="/articles/?tag=Mathematics">Mathematics</a>
-                  </li>
-
-                </ul>
-
-              </div>
-              -->
-            </div>
-          </a>
-        </div>
+        {% include article.html %}
       </div>
       {% else %}
-      <div>No one available article</div>
+      <p>No one available article</p>
       {% endfor %}
     </div>
   </div>
+
 </div>
