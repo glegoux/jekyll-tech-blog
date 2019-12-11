@@ -123,52 +123,52 @@ Source code:
 
 ## Info
 
-<pre class=" info"> 
+<pre class=" info">
 INFO
 </pre>
 
 Source code:
 ~~~
-<pre class=" info"> 
+<pre class=" info">
 INFO
 </pre>
 ~~~
 
 ## Question
 
-<pre class="question"> 
+<pre class="question">
 QUESTION
 </pre>
 
 Source code:
 ~~~
-<pre class="question"> 
+<pre class="question">
 QUESTION
 </pre>
 ~~~
 
 ## Warning
 
-<pre class="warning"> 
+<pre class="warning">
 WARNING
 </pre>
 
 Source code:
 ~~~
-<pre class="warning"> 
+<pre class="warning">
 WARNING
 </pre>
 ~~~
 
 ## Error
 
-<pre class="error"> 
+<pre class="error">
 ERROR
 </pre>
 
 Source code:
 ~~~
-<pre class="error"> 
+<pre class="error">
 ERROR
 </pre>
 ~~~
