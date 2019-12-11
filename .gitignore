@@ -1,9 +1,9 @@
 # See https://git-scm.com/docs/gitignore
 
 # Jekyll - web server
-_site
+_site/
 .sass-cache
 .jekyll-metadata
 
 # RubyMine - integrated development environment
-.idea
+.idea/
