@@ -10,8 +10,8 @@
 # These files are binary and should be left untouched
 # (binary is a macro for -text -diff)
 # archives
-*.zip
-*.tar.gz
+*.zip binary
+*.tar.gz binary
 # fonts
 *.woff binary
 *.woff2 binary
