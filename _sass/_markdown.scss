@@ -864,6 +864,12 @@ body {
     margin-top: 2em;
     margin-bottom: 2em;
     padding: 0 1em 1em 1em;
+    font: inherit !important;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    overflow: auto !important;
+    display: block;
   }
 
 }
