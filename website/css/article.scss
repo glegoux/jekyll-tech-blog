@@ -66,27 +66,19 @@
   }
 }
 
-/* Content */
+/* Article Content */
 
-.article-content {
+#article-content {
   width: 100%;
   border-top: 1px solid lightgrey;
   padding-top: 1em;
   border-bottom: 1px solid lightgrey;
   padding-bottom: 1em;
   padding-right: 1em;
-
-  iframe#google-doc {
-    align-self: center;
-    width: 850px;
-    resize: both;
-    overflow: hidden;
-    border: none;
-  }
 }
 
 
-/* License */
+/* Article License */
 
 .article-license {
   text-align: right;
@@ -128,7 +120,7 @@
   }
 }
 
-/* Author */
+/* Article Author */
 
 .article-author {
   width: 100%;

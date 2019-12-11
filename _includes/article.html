@@ -9,28 +9,28 @@
         <img class="img-fluid" src="/website/img/articles/{{ post.cover }}"/>
       </div>
 
-      <ul>
-        <!-- Article title -->
-        <li class="article-title">
-          {{ post.title }}
-        </li>
-        <!-- Article description -->
-        <li class="article-description">
-          {{ post.description }}
-        </li>
-      </ul>
 
       <!-- Article details -->
-      <ul class="article-details">
-        <li class="date">
+      <div class="article-details">
+        <!-- Article title -->
+        <div class="article-title">
+          {{ post.title }}
+        </div>
+        <!-- Article description -->
+        <div class="article-description">
+          {{ post.description }}
+        </div>
+        <!-- Article publication date -->
+        <div class="date">
           <i class="fa fa-calendar"></i>
           <span>{{ post.date | date: '%B %d, %Y' }}</span>
-        </li>
-        <li class="reading-time">
+        </div>
+        <!-- Article reading time -->
+        <div class="reading-time">
           <i class="fa fa-bookmark-o"></i>
           <span>{{ post.time_reading_minutes }} min</span>
-        </li>
-      </ul>
+        </div>
+      </div>
 
       <!-- Article tags
       <div class="tags">

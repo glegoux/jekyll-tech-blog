@@ -27,19 +27,22 @@
       }
     }
 
-    .article-title {
-      font-weight: bold;
-      color: black;
-      font-size: 1.2em;
-    }
-
-    .article-description {
-      color: grey;
-      font-size: 0.9em;
-      padding-bottom: 1em;
-    }
-
     .article-details {
+      padding-left: 0.5em;
+      padding-right: 0.5em;
+
+      .article-title {
+        font-weight: bold;
+        color: black;
+        font-size: 1.2em;
+      }
+
+      .article-description {
+        color: grey;
+        font-size: 0.9em;
+        padding-bottom: 1em;
+      }
+
       .date {
         position: absolute;
         bottom: 50px;
