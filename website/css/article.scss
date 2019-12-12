@@ -24,6 +24,7 @@
 
   .article-details {
     font-size: 0.8em;
+
     li {
       display: inline;
       padding-right: 0.5em;
@@ -66,6 +67,39 @@
   }
 }
 
+/* Table of contents */
+
+#table-of-contents {
+  text-align: center;
+  margin-top: 1em;
+}
+
+#table-of-contents-container {
+  margin-top: 1em;
+  text-align: left !important;
+  border-radius: 10px;
+  border: solid lightgrey 1px;
+  padding: 1em;
+
+  h1, h2, h3 {
+    cursor: pointer;
+  }
+
+  h1 {
+    font-size: 1em;
+  }
+
+  h2 {
+    font-size: 0.8em;
+    padding-left: 1em;
+  }
+
+  h3 {
+    font-size: 0.6em;
+    padding-left: 2em;
+  }
+}
+
 /* Article Content */
 
 #article-content {
@@ -75,6 +109,14 @@
   border-bottom: 1px solid lightgrey;
   padding-bottom: 1em;
   padding-right: 1em;
+
+  h2 {
+    padding-left: 1em;
+  }
+
+  h3 {
+    padding-left: 2em;
+  }
 }
 
 

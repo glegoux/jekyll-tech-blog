@@ -5,22 +5,20 @@ layout: default
 <div class="article-metadata">
 
   <!-- Article cover -->
-  <ul class="article-cover">
-    <li>
-      <img class="img-fluid" src="/website/img/articles/{{ page.cover }}" width="400" height="200"/>
-    </li>
-  </ul>
+  <div class="article-cover">
+    <img class="img-fluid" src="/website/img/articles/{{ page.cover }}" width="400" height="200"/>
+  </div>
 
-  <ul>
+  <div>
     <!-- Article title -->
-    <li class="article-title">
+    <div class="article-title">
       {{ page.title }}
-    </li>
+    </div>
     <!-- Article description -->
-    <li class="article-description">
+    <div class="article-description">
       {{ page.description }}
-    </li>
-  </ul>
+    </div>
+  </div>
 
   <!-- Article details -->
   <ul class="article-details">
@@ -33,6 +31,13 @@ layout: default
       <span>{{ page.time_reading_minutes }} min</span>
     </li>
   </ul>
+
+  <div>
+    <button id="table-of-contents" class="btn btn-light">
+      See contents
+    </button>
+    <div id="table-of-contents-container" style="display: none;"></div>
+  </div>
 
   <!-- Article tags
   <div class="tags">
