@@ -36,35 +36,31 @@
     color: black;
   }
 
-  .tags {
+  .article-tags {
     padding: 0;
     text-align: center;
     margin-top: -1em;
     font-size: 0.8em;
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        display: inline-block;
+        padding: 0.3em 0.9em;
+        margin: 0.25em 0.5em 0.25em 0;
+        background-color: #e7f3ff;
+        color: #0366d6;
+        border-radius: 3px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+    }
   }
 
-  .tags ul {
-    list-style: none;
-    padding: 0;
-  }
-
-  .tags ul li {
-    display: inline-block;
-    padding: 0.3em 0.9em;
-    margin: 0.25em 0.5em 0.25em 0;
-    background-color: #e7f3ff;
-    border-radius: 3px;
-  }
-
-  .tags ul li:hover {
-    background-color: #ddeeff;
-  }
-
-
-  .tags ul li a {
-    color: #0366d6;
-    text-decoration: none;
-  }
 }
 
 /* Table of contents */

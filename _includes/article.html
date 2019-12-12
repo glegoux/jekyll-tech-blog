@@ -20,6 +20,14 @@
         <div class="article-description">
           {{ post.description }}
         </div>
+        <!-- Article tags -->
+        <div class="article-tags">
+          <ul>
+            {% for tag in post.tags %}
+            <li>{{ tag }}</li>
+            {% endfor %}
+          </ul>
+        </div>
         <!-- Article publication date -->
         <div class="date">
           <i class="fa fa-calendar"></i>

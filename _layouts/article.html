@@ -20,6 +20,15 @@ layout: default
     </div>
   </div>
 
+  <!-- Article tags -->
+  <div class="article-tags">
+    <ul>
+      {% for tag in page.tags %}
+      <li>{{ tag }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+
   <!-- Article details -->
   <ul class="article-details">
     <li>
@@ -39,27 +48,6 @@ layout: default
     <div id="table-of-contents-container" style="display: none;"></div>
   </div>
 
-  <!-- Article tags
-  <div class="tags">
-
-    <ul>
-
-      <li>
-        <a href="/articles/?tag=Algorithm">Algorithm</a>
-      </li>
-
-      <li>
-        <a href="/articles/?tag=Enumeration">Enumeration</a>
-      </li>
-
-      <li>
-        <a href="/articles/?tag=Mathematics">Mathematics</a>
-      </li>
-
-    </ul>
-
-  </div>
-  -->
 </div>
 
 <!-- Article content -->
