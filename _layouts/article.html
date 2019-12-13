@@ -85,7 +85,8 @@ layout: default
 
 {% assign index = 0 %}
 <div class="row">
-  {% for post in site.posts %}
+  {% assign posts = site.posts | sample:3 %}
+  {% for post in posts %}
   {% if index == 3 %}
   {% break %}
   {% endif %}
