@@ -83,9 +83,9 @@ layout: default
 <!-- Other articles -->
 <h5 style="color: grey">Also read</h5>
 
-{% assign index = 0 %}
 <div class="row">
-  {% assign posts = site.posts | sample:3 %}
+  {% assign posts = site.posts | sample:4 %}
+  {% assign index = 0 %}
   {% for post in posts %}
   {% if index == 3 %}
   {% break %}
