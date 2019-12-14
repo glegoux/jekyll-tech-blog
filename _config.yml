@@ -47,7 +47,7 @@ exclude:
   - "Gemfile.lock"
   - "README.md"
   - "VERSION"
-  - "LICENCE"
+  - "LICENSE"
 
 # Plugins
 
