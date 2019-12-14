@@ -5,10 +5,13 @@ sitemap: false
 ---
 # See http://www.robotstxt.org/robotstxt.html
 
-# ban all spiders from the entire site:
+# For all web spiders/crawlers/robots and the indexing in the search engines
 User-Agent: *
-Disallow: /
-
-# visit only these referenced pages
-User-Agent: *
+Crawl-delay: 1
+Disallow: /assets/
+Disallow: /website/
+Disallow: /config.txt
+Disallow: /404.html
+Disallow: /manifest.json
+Disallow: /redirects.json
 Sitemap: {{ site.url }}/sitemap.xml
