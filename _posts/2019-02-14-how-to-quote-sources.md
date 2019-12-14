@@ -1,7 +1,7 @@
 ---
 layout: article
 article: true
-permalink: /blog/articles/how-to-quote-sources
+permalink: /blog/article/how-to-quote-sources
 cover: "how-to-quote-sources.jpg"
 title: "How to quote sources"
 description: "Current standards and rules to respect in order to quote sources."

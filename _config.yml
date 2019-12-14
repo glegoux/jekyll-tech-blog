@@ -19,6 +19,11 @@ highlighter: rouge
 gist:
   noscript: true
 
+# Pagination
+
+paginate: 12
+paginate_path: "/blog/articles/:num/"
+
 # Build
 
 source: "."
@@ -51,4 +56,5 @@ plugins:
   - "jekyll-seo-tag"
   - "jekyll-github-metadata"
   - "jekyll-redirect-from"
+  - "jekyll-paginate"
   - "jemoji"

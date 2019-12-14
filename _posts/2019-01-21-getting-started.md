@@ -1,7 +1,7 @@
 ---
 layout: article
 article: true
-permalink: /blog/articles/getting-started
+permalink: /blog/article/getting-started
 cover: "getting-started.jpg"
 title: "Getting Started"
 description: "Markdown is a lightweight and easy-to-use syntax for styling all forms of writing on this blog."

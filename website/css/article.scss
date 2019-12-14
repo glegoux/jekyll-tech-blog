@@ -1,5 +1,20 @@
 ---
 ---
+#page-articles {
+  .pagination {
+    display: block !important;
+    text-align: center;
+
+    .next {
+      margin-left: 1em;
+    }
+
+    .previous {
+      margin-right: 1em;
+    }
+  }
+}
+
 .article-metadata {
   width: 100%;
   margin: auto;
