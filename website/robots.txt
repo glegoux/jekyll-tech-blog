@@ -13,5 +13,6 @@ Disallow: /website/
 Disallow: /config.txt
 Disallow: /404.html
 Disallow: /manifest.json
+Disallow: /search.json
 Disallow: /redirects.json
 Sitemap: {{ site.url }}/sitemap.xml

@@ -1,0 +1,20 @@
+---
+layout: null
+permalink: /search.json
+sitemap: false
+---
+[
+{% for post in site.posts %}
+{
+"title"       : "{{ post.title }}",
+"description" : "{{ post.description }}",
+"categories"  : "{{ post.categories | join: ', ' }}",
+"labels"      : "{{ post.labels | join: ', ' }}",
+"url"         : "{{ site.baseurl }}{{ post.url }}",
+"date"        : "{{ post.date }}",
+"year"        : "{{ post.date | date: '%Y' }}",
+"yearMonth"   : "{{ post.date | date: '%Y-%m' }}",
+"month"       : "{{ post.date | date: '%m' }}"
+} {% unless forloop.last %},{% endunless %}
+{% endfor %}
+]

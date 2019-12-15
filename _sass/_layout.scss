@@ -62,31 +62,31 @@
       color: black;
     }
 
-    .article-tags {
-      padding: 0;
-      text-align: center;
-      margin-top: -1em;
-      font-size: 0.8em;
+  }
+}
 
-      ul {
-        list-style: none;
-        padding: 0;
+.article-categories {
+  padding: 0;
+  text-align: center;
+  margin-top: -1em;
+  font-size: 0.8em;
 
-        li {
-          display: inline-block;
-          padding: 0.3em 0.9em;
-          margin: 0.25em 0.5em 0.25em 0;
-          background-color: #e7f3ff;
-          color: #0366d6;
-          border-radius: 3px;
-        }
+  ul {
+    list-style: none;
+    padding: 0;
 
-        a {
-          text-decoration: none;
-        }
-      }
+    li {
+      display: inline-block;
+      padding: 0.3em 0.9em;
+      margin: 0.25em 0.5em 0.25em 0;
+      background-color: #e7f3ff;
+      color: #0366d6;
+      border-radius: 3px;
     }
 
+    a {
+      text-decoration: none;
+    }
   }
 }
 

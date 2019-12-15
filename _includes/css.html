@@ -3,6 +3,8 @@
 <link href="/website/css/main.css" rel="stylesheet" type="text/css"/>
 {%- if page.article -%}
 <link rel="stylesheet" type="text/css" href="/website/css/article.css"/>
+{%- elsif page.articles -%}
+<link rel="stylesheet" type="text/css" href="/website/css/articles.css"/>
 {%- else -%}
 <link href="/{{ page.path | replace: '.html', '.css' }}" rel="stylesheet" type="text/css"/>
 {%- endif -%}

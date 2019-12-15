@@ -1,14 +1,58 @@
 ---
 layout: default
-article: true
+articles: true
 ---
 <div id="page-articles">
 
   <h3 class="notranslate title-page"><i class="fa fa-cloud"></i> Articles</h3>
 
+  <!-- Articles advanced search -->
+  <ul class="articles-advanced-search">
+    <li class="articles-archive-button">
+      <a href="javascript:" class="link-strong">
+        <i class="fa fa-archive" aria-hidden="true"></i>
+        Archives
+      </a>
+    </li>
+    <li class="articles-categories-button">
+      <i class="fa fa-tags" aria-hidden="true"></i>
+      <a href="javascript:" class="link-strong">
+        Categories
+      </a>
+    </li>
+  </ul>
+
+
+  <div id="articles-archive-container" class="filter-result-advanced-search"
+       style="display: none">
+  </div>
+  <div id="articles-categories-container" class="filter-result-advanced-search"
+       style="display: none">
+  </div>
+
+  <div id="result-advanced-search"></div>
+
+
   <hr/>
 
-  <!-- Articles -->
+  <!-- Articles subscriptions -->
+  <ul class="articles-subscription">
+    <li>
+      Subscribe:
+    </li>
+    <li>
+      <i class="fa fa-rss" aria-hidden="true"></i>
+      <a href="/atom.xml" class="link-strong">
+        Atom
+      </a>
+      |
+      <a href="/rss.xml" class="link-strong">
+        RSS
+      </a>
+    </li>
+  </ul>
+
+  <!-- Articles list -->
   <div class="list-articles">
     <div class="row">
       {% assign posts = paginator.posts | sort: 'date' | reverse %}
@@ -23,7 +67,7 @@ article: true
   </div>
 
   <!-- Pagination links -->
-  <div class="pagination">
+  <div class="articles-pagination">
     {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path }}" class="previous">
       <i class="fa fa-arrow-circle-left"></i>

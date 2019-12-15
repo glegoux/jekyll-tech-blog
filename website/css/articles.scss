@@ -1,0 +1,63 @@
+---
+---
+#page-articles {
+
+  ul.articles-advanced-search, ul.articles-subscription {
+    li {
+      color: grey;
+      margin-left: 1em;
+      display: inline;
+    }
+  }
+
+  ul.articles-advanced-search {
+    font-size: 0.8em;
+  }
+
+  hr {
+    margin-bottom: 0 !important;
+  }
+
+  ul.articles-subscription {
+    font-size: 0.7em;
+    text-align: right;
+    margin-top: 0;
+  }
+
+  #articles-archive-container {
+
+    li {
+      display: inline;
+
+      .month {
+        display: inline-block;
+        font-family: monospace;
+        width: 3ch;
+        overflow: hidden;
+        white-space: nowrap;
+        text-transform: uppercase;
+        margin-right: 1em;
+        color: #0366d6;
+        font-size: 0.8em;
+      }
+    }
+
+    li:nth-child(4n):after {
+      display: block;
+      content: '';
+    }
+  }
+
+  .articles-pagination {
+    display: block !important;
+    text-align: center;
+
+    .next {
+      margin-left: 1em;
+    }
+
+    .previous {
+      margin-right: 1em;
+    }
+  }
+}

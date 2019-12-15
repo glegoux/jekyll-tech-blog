@@ -6,7 +6,7 @@ cover: "getting-started.jpg"
 title: "Getting Started"
 description: "Markdown is a lightweight and easy-to-use syntax for styling all forms of writing on this blog."
 time_reading_minutes: "10"
-tags: ["Methodology"]
+categories: ["Methodology"]
 ---
 
 # Text
