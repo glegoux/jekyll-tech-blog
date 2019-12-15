@@ -53,6 +53,35 @@ layout: default
 <!-- Article content -->
 <div id="article-content" class="markdown-body">
   {{ content }}
+
+  <ul>
+    {% if page.categories %}
+    <li>
+      <!-- Article categories -->
+      <span>Categories: </span>
+      <span class="article-categories">
+        <ul>
+          {% for category in page.categories %}
+          <li>{{ category }}</li>
+          {% endfor %}
+        </ul>
+      </span>
+    </li>
+    {% endif %}
+    {% if page.labels %}
+    <li>
+      <!-- Article labels -->
+      <span>Labels: </span>
+      <span class="article-labels">
+        <ul>
+          {% for label in page.labels %}
+          <li>{{ label }}</li>
+          {% endfor %}
+        </ul>
+      </span>
+    </li>
+    {% endif %}
+  </ul>
 </div>
 
 <!-- Article license -->

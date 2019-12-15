@@ -40,7 +40,6 @@
       .article-description {
         color: grey;
         font-size: 0.9em;
-        padding-bottom: 1em;
       }
 
       .date {
@@ -65,13 +64,12 @@
   }
 }
 
-.article-categories {
+.article-categories, .article-labels {
   padding: 0;
-  text-align: center;
-  margin-top: -1em;
   font-size: 0.8em;
 
   ul {
+    display: inline;
     list-style: none;
     padding: 0;
 
@@ -79,9 +77,7 @@
       display: inline-block;
       padding: 0.3em 0.9em;
       margin: 0.25em 0.5em 0.25em 0;
-      background-color: #e7f3ff;
-      color: #0366d6;
-      border-radius: 3px;
+      border-radius: 5px;
     }
 
     a {
@@ -89,6 +85,21 @@
     }
   }
 }
+
+.article-categories {
+  li {
+    background-color: #e7f3ff;
+    color: #0366d6;
+  }
+}
+
+.article-labels {
+  li {
+    background-color: whitesmoke;
+    color: grey;
+  }
+}
+
 
 /* Content */
 
