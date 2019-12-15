@@ -1,31 +1,29 @@
 jQuery(document).ready(function () {
 
-  /* Advanced Search */
-
-  // Text search
-
-  let commonSearchOptions = {
-    shouldSort: true,
-    threshold: 0.6,
-    location: 0,
-    distance: 0,
-    maxPatternLength: 32,
-    minMatchCharLength: 3
-  };
+  /* Advanced search for Articles */
 
   let filterResultAdvancedSearchElements = $('.filter-result-advanced-search');
   let resultAdvancedSearchElement = $('#result-advanced-search');
 
-  // Show result
+  // Show search result(s)
 
-  function showResult(articles) {
+  function showSearchResult(articles, request) {
     filterResultAdvancedSearchElements.hide();
     resultAdvancedSearchElement.html('');
+    resultAdvancedSearchElement.append(
+      '<div class="article-request-search-result">' + articles.length + ' search result(s) for \'' + request + '\'</div>'
+    );
     articles.forEach(article => {
       resultAdvancedSearchElement.append(
-        '<div>' +
+        '<div class="article-search-result">' +
         '<a href="' + article.url + '">' +
-        article.title +
+        '<div class="article-title">' + article.title + '</div>' +
+        '<div class="article-description">' + article.description + '</div>' +
+        '<div class="article-details">' +
+        [article.yearMonthDay, article.categories, article.labels].filter(detail => {
+          return detail !== "";
+        }).join(' - ') +
+        '</div>' +
         '<a>' +
         '</div>'
       )
@@ -33,7 +31,60 @@ jQuery(document).ready(function () {
     resultAdvancedSearchElement.show();
   }
 
-  // Articles archive
+  function hideSearchResult() {
+    filterResultAdvancedSearchElements.hide();
+    resultAdvancedSearchElement.hide();
+  }
+
+  // Text search
+
+  let textSearchInputElement = $('#articles-text-search input');
+  let textSearchIconElement = $('#articles-text-search i');
+
+  textSearchInputElement.focus();
+
+  let textSearchOptions = {
+    shouldSort: true,
+    threshold: 0.6,
+    location: 0,
+    distance: 0,
+    maxPatternLength: 32,
+    minMatchCharLength: 1,
+    keys: [
+      "title",
+      "description",
+      "categories",
+      "labels",
+      "yearMonthDay"
+    ]
+  };
+
+  function showTextSearchResult(searchEngineText, textSearch) {
+    if (textSearch === "") {
+      hideSearchResult();
+      return;
+    }
+    let articles = searchEngineText.search(textSearch);
+    showSearchResult(articles, textSearch);
+  }
+
+  function decorateTextSelector(searchEngineText) {
+    textSearchInputElement.keypress(function (event) {
+      var key = event.which;
+      if (key !== 13) { // the enter key code
+        return;
+      }
+      let textSearch = $(this).val();
+      showTextSearchResult(searchEngineText, textSearch);
+    });
+
+    textSearchIconElement.click(function (event) {
+      let textSearch = textSearchInputElement.val();
+      showTextSearchResult(searchEngineText, textSearch);
+    });
+  }
+
+  // Archive search
 
   let archiveButtonElement = $('.articles-archive-button');
   let archiveContainerElement = $('#articles-archive-container');
@@ -79,18 +130,18 @@ jQuery(document).ready(function () {
   function decorateArchiveYearSelectors(articles) {
     archiveContainerElement.find('.year').click(function () {
       let year = $(this).data('year').toString();
-      showResult(articles.filter(article => {
+      showSearchResult(articles.filter(article => {
         return article.year === year;
-      }));
+      }), year);
     });
   }
 
   function decorateArchiveMonthSelectors(articles) {
     archiveContainerElement.find('.month').click(function () {
       let yearMonth = $(this).data('year-month').toString();
-      showResult(articles.filter(article => {
+      showSearchResult(articles.filter(article => {
         return article.yearMonth === yearMonth;
-      }));
+      }), yearMonth);
     });
   }
 
@@ -104,7 +155,7 @@ jQuery(document).ready(function () {
     }
   });
 
-  // Articles categories
+  // Category search
 
   let categoriesButtonElement = $('.articles-categories-button');
   let categoriesContainerElement = $('#articles-categories-container');
@@ -134,12 +185,12 @@ jQuery(document).ready(function () {
     });
   }
 
-  function decorateCategories(articles) {
+  function decorateCategorySelectors(articles) {
     $('.article-category').click(function () {
       let category = $(this).data('category').toString();
-      showResult(articles.filter(article => {
+      showSearchResult(articles.filter(article => {
         return article.categories.split(',').includes(category);
-      }));
+      }), category);
     })
   }
 
@@ -156,15 +207,8 @@ jQuery(document).ready(function () {
   // Build
 
   $.getJSON('/search.json', function (articles) {
-    // Text search
-    commonSearchOptions['keys'] = [
-      "title",
-      "categories",
-      "description",
-      "label"
-    ];
-    let searchEngineText = new Fuse(articles, commonSearchOptions);
-    // TODO: Implement search text
+    let searchEngineText = new Fuse(articles, textSearchOptions);
+    decorateTextSelector(searchEngineText);
     // Articles archive
     let archiveStructure = buildArchiveStructure(articles);
     buildArchivesContainerElement(archiveStructure);
@@ -173,7 +217,7 @@ jQuery(document).ready(function () {
     // Articles categories
     let categoriesStructure = buildCategoriesStructure(articles);
     buildCategoriesContainerElement(categoriesStructure);
-    decorateCategories(articles);
+    decorateCategorySelectors(articles);
   });
 
 });

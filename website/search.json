@@ -13,8 +13,9 @@ sitemap: false
 "url"         : "{{ site.baseurl }}{{ post.url }}",
 "date"        : "{{ post.date }}",
 "year"        : "{{ post.date | date: '%Y' }}",
+"month"       : "{{ post.date | date: '%m' }}",
 "yearMonth"   : "{{ post.date | date: '%Y-%m' }}",
-"month"       : "{{ post.date | date: '%m' }}"
+"yearMonthDay"   : "{{ post.date | date: '%Y-%m-%d' }}"
 } {% unless forloop.last %},{% endunless %}
 {% endfor %}
 ]

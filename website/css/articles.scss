@@ -2,6 +2,35 @@
 ---
 #page-articles {
 
+  #articles-text-search {
+    display: flex;
+    color: grey;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    height: 2.1em;
+    margin-bottom: 1em;
+
+    input {
+      width: 100%;
+      border-radius: 5px;
+      color: grey;
+      border: 0;
+      padding: 0.5em;
+      height: 2em;
+      font-size: 1em;
+    }
+
+    input:focus {
+      border: 0;
+      outline: none;
+    }
+
+    .fa-search {
+      padding: 0.5em;
+      height: 2em;
+    }
+  }
+
   ul.articles-advanced-search, ul.articles-subscription {
     li {
       color: grey;
@@ -47,6 +76,33 @@
       content: '';
     }
   }
+
+  #result-advanced-search {
+    .article-search-result {
+      width: 100%;
+      padding-left: 1em;
+      border-radius: 5px;
+
+      .article-title {
+        font-weight: bold;
+      }
+
+      .article-description {
+        color: grey;
+        font-size: 0.8em;
+      }
+
+      .article-details {
+        color: grey;
+        font-size: 0.6em;
+      }
+    }
+
+    .article-search-result:hover {
+      background-color: whitesmoke;
+    }
+  }
+
 
   .articles-pagination {
     display: block !important;
