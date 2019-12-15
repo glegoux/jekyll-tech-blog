@@ -19,6 +19,14 @@ highlighter: rouge
 gist:
   noscript: true
 
+# SEO
+
+title: "Software Engineering Blog - Gilles Legoux"
+description: "Personal blog about software engineering"
+author: "Gilles Legoux"
+logo: "/website/img/icon-iphone.png"
+lang: "en_US"
+
 # Pagination
 
 paginate: 12

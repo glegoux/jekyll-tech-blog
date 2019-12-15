@@ -1,0 +1,41 @@
+<div class="social-sharing">
+  <span>Share: </span>
+  <ul>
+    <li>
+      <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ page.title }}&summary={{ page.description }}&source={{ site.url }}">
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://twitter.com/intent/tweet/?text={{ page.title }} - {{ page.description }}&url={{ site.url }}{{ page.url }}">
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}">
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<style type="text/css">
+  .social-sharing {
+    width: 100%;
+    color: black;
+  }
+
+  .social-sharing a {
+    color: black !important;
+  }
+
+  .social-sharing ul {
+    display: inline;
+  }
+
+  .social-sharing ul li {
+    margin-left: 0.5em;
+    font-size: 1em;
+    display: inline;
+  }
+</style>
