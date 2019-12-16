@@ -65,7 +65,7 @@ articles: true
       {% assign posts = paginator.posts %}
       {% for post in posts %}
       <div class="col-xs-12 col-md-6 col-lg-4">
-        {% include article.html %}
+        {% include article-card.html %}
       </div>
       {% else %}
       <p>No one available article</p>

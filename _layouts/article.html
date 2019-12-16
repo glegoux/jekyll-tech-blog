@@ -128,7 +128,7 @@ layout: default
   {% if page.title != post.title %}
   {% assign index = index | plus: 1 %}
   <div class="col-xs-12 col-md-6 col-lg-4">
-    {% include article.html %}
+    {% include article-card.html %}
   </div>
   {% else %}
   {% continue %}
