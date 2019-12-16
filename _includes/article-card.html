@@ -1,34 +1,34 @@
-<div class="article-card">
+<div class="article-card-container">
   <a href="{{ post.url }}">
     <!-- Article metadata -->
-    <div class="article-metadata">
+    <div class="article-card">
 
       <!-- Article cover -->
       <div class="article-cover">
         <img class="img-fluid" src="/website/img/articles/{{ post.cover }}"/>
       </div>
 
-      <!-- Article title -->
-      <div class="article-title">
-        {{ post.title }}
-      </div>
-
-      <!-- Article description -->
-      <div class="article-description">
-        {{ post.description }}
-      </div>
-
-      <!-- Article categories -->
-      <div class="article-categories">
-        <ul>
-          {% for category in post.categories %}
-          <li>{{ category }}</li>
-          {% endfor %}
-        </ul>
-      </div>
-
       <!-- Article details -->
       <div class="article-details">
+        <!-- Article title -->
+        <div class="article-title">
+          {{ post.title }}
+        </div>
+
+        <!-- Article description -->
+        <div class="article-description">
+          {{ post.description }}
+        </div>
+
+        <!-- Article categories -->
+        <div class="article-categories">
+          <ul>
+            {% for category in post.categories %}
+            <li>{{ category }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+
         <!-- Article publication date -->
         <div class="date">
           <i class="fa fa-calendar"></i>

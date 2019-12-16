@@ -4,7 +4,6 @@
 
   #articles-text-search {
     display: flex;
-    color: grey;
     border-radius: 5px;
     border: 1px solid lightgrey;
     height: 2.1em;
@@ -13,7 +12,6 @@
     input {
       width: 100%;
       border-radius: 5px;
-      color: grey;
       border: 0;
       padding: 0.5em;
       height: 2em;
@@ -33,13 +31,17 @@
 
   ul.articles-advanced-search, ul.articles-subscription {
     li {
-      color: grey;
       margin-left: 1em;
       display: inline;
     }
   }
 
+  ul.articles-subscription {
+    color: grey;
+  }
+
   ul.articles-advanced-search {
+    color: black;
     font-size: 0.8em;
   }
 

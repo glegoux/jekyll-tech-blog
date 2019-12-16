@@ -2,7 +2,7 @@
 
 /* Article */
 
-.article-card {
+.article-card-container {
   z-index: 1;
   padding-bottom: 1em;
   margin-bottom: 2em;
@@ -12,7 +12,7 @@
   height: 450px;
   border-radius: 10px;
 
-  .article-metadata {
+  .article-card {
     margin: auto;
     text-align: center;
     padding-bottom: 0.5em;
