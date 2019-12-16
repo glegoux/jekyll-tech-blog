@@ -12,7 +12,7 @@ if [[ "${_type}" != 'css' ]] && [[ "${_type}" != 'js' ]]; then
 fi
 
 content=$(curl -sS --fail "${url}")
-integrity=$(echo "${content}" | openssl dgst -${encryption} -binary | openssl base64 -A)
+integrity=$(echo -n "${content}" | openssl dgst -${encryption} -binary | openssl base64 -A)
 
 if [[ "${_type}" = 'css' ]] ; then
   echo "<link href=\"${url}\" rel=\"stylesheet\" type=\"text/css\" integrity=\"${encryption}-${integrity}\" crossorigin=\"anonymous\">"
