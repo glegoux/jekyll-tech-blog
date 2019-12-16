@@ -1,148 +1,174 @@
 ---
 layout: default
 ---
-<!-- Article metadata -->
-<div class="article-metadata">
+<div id="page-article">
 
-  <!-- Article cover -->
-  <div class="article-cover">
-    <img class="img-fluid" src="/website/img/articles/{{ page.cover }}" width="400" height="200"/>
-  </div>
+  <!-- Article metadata -->
+  <div class="article-metadata">
 
-  <div>
-    <!-- Article title -->
-    <div class="article-title">
-      {{ page.title }}
+    <!-- Article cover -->
+    <div class="article-cover">
+      <img class="img-fluid" src="/website/img/articles/{{ page.cover }}" width="400" height="200"/>
     </div>
-    <!-- Article description -->
-    <div class="article-description">
-      {{ page.description }}
-    </div>
-  </div>
 
-  <!-- Article categories -->
-  <div class="article-categories">
-    <ul>
-      {% for category in page.categories %}
-      <li>{{ category }}</li>
-      {% endfor %}
+    <div>
+      <!-- Article title -->
+      <div class="article-title">
+        {{ page.title }}
+      </div>
+      <!-- Article description -->
+      <div class="article-description">
+        {{ page.description }}
+      </div>
+    </div>
+
+    <!-- Article categories -->
+    <div class="article-categories">
+      <ul>
+        {% for category in page.categories %}
+        <li>{{ category }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <!-- Article details -->
+    <ul class="article-details">
+      <li>
+        <i class="fa fa-calendar"></i>
+        <span>{{ page.date | date: '%B %d, %Y' }}</span>
+      </li>
+      <li>
+        <i class="fa fa-bookmark-o"></i>
+        <span>{{ page.time_reading_minutes }} min</span>
+      </li>
     </ul>
+
+    <div>
+      <button id="table-of-contents" class="btn btn-light">
+        See contents
+      </button>
+      <div id="table-of-contents-container" style="display: none;"></div>
+    </div>
+
   </div>
 
-  <!-- Article details -->
-  <ul class="article-details">
-    <li>
-      <i class="fa fa-calendar"></i>
-      <span>{{ page.date | date: '%B %d, %Y' }}</span>
-    </li>
-    <li>
-      <i class="fa fa-bookmark-o"></i>
-      <span>{{ page.time_reading_minutes }} min</span>
-    </li>
-  </ul>
+  <!-- Article content -->
+  <div id="article-content">
+    <div class="markdown-body">
+      <div style="text-align: right">
+        {% include page-social-sharing.html %}
+      </div>
 
-  <div>
-    <button id="table-of-contents" class="btn btn-light">
-      See contents
-    </button>
-    <div id="table-of-contents-container" style="display: none;"></div>
-  </div>
+      {{ content }}
+    </div>
 
-</div>
-
-<!-- Article content -->
-<div id="article-content" class="markdown-body">
-  <div style="text-align: right">
-    {% include social-sharing.html %}
-  </div>
-
-  {{ content }}
-
-  <ul>
-    {% if page.categories %}
-    <li>
-      <!-- Article categories -->
-      <span>Categories: </span>
-      <span class="article-categories">
+    <ul>
+      {% if page.categories %}
+      <li>
+        <!-- Article categories -->
+        <span>Categories: </span>
+        <span class="article-categories">
         <ul>
           {% for category in page.categories %}
           <li>{{ category }}</li>
           {% endfor %}
         </ul>
       </span>
-    </li>
-    {% endif %}
-    {% if page.labels %}
-    <li>
-      <!-- Article labels -->
-      <span>Labels: </span>
-      <span class="article-labels">
+      </li>
+      {% endif %}
+      {% if page.labels %}
+      <li>
+        <!-- Article labels -->
+        <span>Labels: </span>
+        <span class="article-labels">
         <ul>
           {% for label in page.labels %}
           <li>{{ label }}</li>
           {% endfor %}
         </ul>
       </span>
-    </li>
-    {% endif %}
-  </ul>
+      </li>
+      {% endif %}
+    </ul>
 
-  {% include social-sharing.html %}
-</div>
+    <div class="row" style="font-size: 1.3em;">
+      <div class="col-6">
+        {% include page-social-sharing.html %}
+      </div>
+      <div class="col-6 article-browser" style="text-align: right;">
+        <a href="/blog/articles" title="All articles">
+          <i class="fa fa-file-text"></i>
+        </a>
+        {%- if page.previous.url -%}
+        <a href="{{ page.previous.url }}" title="Previous article">
+          <i class="fa fa-arrow-left"></i>
+        </a>
+        {%- endif -%}
+        {%- if page.next.url -%}
+        <a href="{{ page.next.url }}" title="Next article">
+          <i class="fa fa-arrow-right"></i>
+        </a>
+        {%- endif -%}
+      </div>
+    </div>
 
-<!-- Article license -->
-<div class="article-license">
-  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0">
-    <i class="cc">Creative Commons Attribution 4.0 International License:</i>
-    <br/>
-    <span class="cc-icon" title="CC"></span>
-    <span class="ccby-icon" title="BY"></span>
-    <span class="ccnc-icon" title="NC"></span>
-    <span class="ccsa-icon" title="SA"></span>
-  </a>
-</div>
-<br>
-
-<!-- Article author -->
-<p class="article-author">
-  Written by
-  <a class="notranslate" href="/about">
-    <img class="link-light small-avatar" src="/website/img/perso/avatar.jpg">
-  </a>
-  <a class="link notranslate" href="/about">
-    <b class="black">Gilles Legoux</b>
-  </a>
-  <span class="notranslate">(glegoux) - Software Engineer</span>.
-</p>
-
-<!-- Other articles -->
-<h5 style="color: grey">Also read</h5>
-
-<div class="row">
-  {% assign posts = site.posts | sample:4 %}
-  {% assign index = 0 %}
-  {% for post in posts %}
-  {% if index == 3 %}
-  {% break %}
-  {% endif %}
-  {% if page.title != post.title %}
-  {% assign index = index | plus: 1 %}
-  <div class="col-xs-12 col-md-6 col-lg-4">
-    {% include article-card.html %}
   </div>
-  {% else %}
-  {% continue %}
-  {% endif %}
-  {% endfor %}
-</div>
 
-<div style="text-align: center;width: 100%; margin-bottom: 1em;">
-  <a href="/blog/articles">
-    <button class="btn btn-dark">
-      <b class="black">List all</b>
-    </button>
-  </a>
-</div>
+  <!-- Article license -->
+  <div class="article-license" title="See license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0">
+      <i class="cc">Creative Commons Attribution 4.0 International License:</i>
+      <br/>
+      <span class="cc-icon" title="CC"></span>
+      <span class="ccby-icon" title="BY"></span>
+      <span class="ccnc-icon" title="NC"></span>
+      <span class="ccsa-icon" title="SA"></span>
+    </a>
+  </div>
+  <br>
 
-<!-- Comments -->
-{% include disqus.html %}
+  <!-- Article author -->
+  <p class="article-author">
+    Written by
+    <a class="notranslate" href="/about">
+      <img class="link-light small-avatar" src="/website/img/perso/avatar.jpg">
+    </a>
+    <a class="link notranslate" href="/about">
+      <b class="black">Gilles Legoux</b>
+    </a>
+    <span class="notranslate">(glegoux) - Software Engineer</span>.
+  </p>
+
+  <!-- Other articles -->
+  <h5 style="color: grey">Also read</h5>
+
+  <div class="row">
+    {% assign posts = site.posts | sample:4 %}
+    {% assign index = 0 %}
+    {% for post in posts %}
+    {% if index == 3 %}
+    {% break %}
+    {% endif %}
+    {% if page.title != post.title %}
+    {% assign index = index | plus: 1 %}
+    <div class="col-xs-12 col-md-6 col-lg-4">
+      {% include article-card.html %}
+    </div>
+    {% else %}
+    {% continue %}
+    {% endif %}
+    {% endfor %}
+  </div>
+
+  <div style="text-align: center;width: 100%; margin-bottom: 1em;">
+    <a href="/blog/articles">
+      <button class="btn btn-dark">
+        <b class="black">List all</b>
+      </button>
+    </a>
+  </div>
+
+  <!-- Comments -->
+  {% include disqus.html %}
+
+</div>
