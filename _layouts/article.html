@@ -54,11 +54,29 @@ layout: default
 
   <!-- Article content -->
   <div id="article-content">
-    <div class="markdown-body">
-      <div style="text-align: right">
+
+    <div class="row">
+      <div class="col-6">
         {% include page-social-sharing.html %}
       </div>
+      <div class="col-6 article-browser" style="text-align: right;">
+        <a href="/blog/articles" title="All articles">
+          <i class="fa fa-file-text"></i>
+        </a>
+        {%- if page.previous.url -%}
+        <a href="{{ page.previous.url }}" title="Previous article">
+          <i class="fa fa-arrow-left"></i>
+        </a>
+        {%- endif -%}
+        {%- if page.next.url -%}
+        <a href="{{ page.next.url }}" title="Next article">
+          <i class="fa fa-arrow-right"></i>
+        </a>
+        {%- endif -%}
+      </div>
+    </div>
 
+    <div class="markdown-body">
       {{ content }}
     </div>
 
@@ -91,7 +109,7 @@ layout: default
       {% endif %}
     </ul>
 
-    <div class="row" style="font-size: 1.3em;">
+    <div class="row">
       <div class="col-6">
         {% include page-social-sharing.html %}
       </div>
