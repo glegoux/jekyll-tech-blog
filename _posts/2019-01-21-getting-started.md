@@ -4,36 +4,69 @@ article: true
 permalink: /blog/article/getting-started
 cover: "getting-started.jpg"
 title: "Getting Started"
-description: "Markdown is a lightweight and easy-to-use syntax for styling all forms of writing on this blog."
+description: "Markdown is a easy-to-use syntax for writing text on this blog."
 time_reading_minutes: "10"
 categories: ["Methodology"]
 labels: ["Markdown"]
 ---
 
+[Markdown](https://daringfireball.net/projects/markdown/) is a lightweight and popular text metalanguage which is a writing standard for scientists 
+with extension `.md` or `.markdown`.  
+It is often converted into HTML what allows it to be easily shared on the web :spider_web:.
+
+After the matching HTML text can be decorate and animate by CSS style sheet and/or JS script: 
+
+{% include image.html title="Markdown processor"
+src="https://docs.google.com/drawings/d/e/2PACX-1vRPwfUjnj6bT9B-M4jdzQqOICzCwblxYR5xvgiXYWrpcgpmFddbWR-ErodWf-U0rE8f0aqzUfazXvf8/pub?w=960&amp;h=267" %}
+
+Discover the Markdown syntax used on this blog and more generally on the web.
+
 # Text
 
 ## Highlight
 
-Use Github markdown https://guides.github.com/features/mastering-markdown/ or nearly.
+Enhance your text:
 
 Italics: *italics* or _italics_  
 Bold:	**bold** or __bold__  
 Strikethrough: ~~Strikethrough~~  
-Bold & Italics: **_bold italics_** or __*bold italics*__
+Bold & Italics: **_bold italics_** or __*bold italics*__  
+Inline code: `code`
 
 Source code:
+
 ~~~
 Italics: *italics* or _italics_  
-Bold:	**bold** or __bold__  
-Strikethrough: ~~Strikethrough~~  
+Bold:	**bold** or __bold__ 
+Strikethrough: ~~Strikethrough~~
 Bold & Italics: **_bold italics_** or __*bold italics*__
+Inline code: `code`
 ~~~
 
-## Structures of articles
+## New line & paragraph
+
+Let 2 trailing spaces to have an end of line, and let a empty line for a new paragraph:
+
+Hello,  
+
+World!
+
+Source code:
+
+~~~ whitespace
+Hello,␣␣\n
+\n
+World!\n
+~~~
+
+*Note: `\n` and `␣` represent respectively a new line character and a space character.*
+
+## Headings
 
 Make a part, a subpart and a sub-subpart:
 
 Source code:
+
 ~~~
 # H1
 ## H2
@@ -49,18 +82,32 @@ H2
 
 ## List
 
-1. item1
-2. item2
-3. item3
-4. item4
+Build an ordered list:
+
+1. item
+2. item
+3. item
 
 Source code:
 
 ~~~
-1. item1
-2. item2
-3. item3
-4. item4
+1. item
+2. item
+3. item
+~~~
+
+Build a unordered list:
+
+* item
+* item
+* item
+
+Source code:
+
+~~~
+ * item
+ * item
+ * item
 ~~~
 
 ## Quote
@@ -78,7 +125,7 @@ Linus Torvalds
 
 ## Emoticon
 
-Use Github emoji,  https://www.webpagefx.com/tools/emoji-cheat-sheet/
+Use [emoji](https://www.webpagefx.com/tools/emoji-cheat-sheet/) :
 
 :smile: :scream: :yum:
 
@@ -98,10 +145,6 @@ Source code:
 [Google](https://www.google.com)
 ~~~
 
-Simple link with title:
-
-[Google](https://www.google.com "Google's Homepage")
-
 Source code:
 ~~~
 [Google](https://www.google.com "Google's Homepage")
@@ -120,9 +163,9 @@ Source code:
 [1]: https://www.google.com
 ~~~
 
-# Notes
+## Notes
 
-## Info
+### Info
 
 <pre class=" info">
 INFO
@@ -135,7 +178,7 @@ INFO
 </pre>
 ~~~
 
-## Question
+### Question
 
 <pre class="question">
 QUESTION
@@ -148,7 +191,7 @@ QUESTION
 </pre>
 ~~~
 
-## Warning
+### Warning
 
 <pre class="warning">
 WARNING
@@ -161,7 +204,7 @@ WARNING
 </pre>
 ~~~
 
-## Error
+### Error
 
 <pre class="error">
 ERROR
@@ -174,9 +217,11 @@ ERROR
 </pre>
 ~~~
 
-# Programming code
+# Informatics code
 
-## Terminal
+## Programming language
+
+### <span class="notranslate">Terminal</span>
 
 ~~~ terminal
 $ command
@@ -192,7 +237,7 @@ result
 ~~~
 </pre>
 
-## Python
+### <span class="notranslate">Python</span>
 
 ~~~ python
 print("Hello world!")
@@ -206,7 +251,7 @@ print("Hello world!")
 ~~~
 </pre>
 
-## Java
+### <span class="notranslate">Java</span>
 
 ~~~ java 
 System.out.println("Hello world!");
@@ -219,7 +264,7 @@ System.out.println("Hello world!");
 ~~~
 </pre>
 
-## Bash
+### <span class="notranslate">Bash</span>
 
 ~~~ bash
 echo "Hello world!"
@@ -233,7 +278,7 @@ echo "Hello world!"
 ~~~
 </pre>
 
-## Ruby
+### <span class="notranslate">Ruby</span>
 
 ~~~ ruby 
 puts "Hello world!"
@@ -246,7 +291,7 @@ puts "Hello world!"
 ~~~
 </pre>
 
-## Go
+### <span class="notranslate">Go</span>
 
 ~~~ go
 import("fmt")
@@ -263,7 +308,7 @@ fmt.Println("Hello world!")
 ~~~
 </pre>
 
-## JavaScript
+### <span class="notranslate">JavaScript</span>
 
 ~~~ javascript
 console.log("Hello world!");
@@ -276,20 +321,21 @@ console.log("Hello world!");
 ~~~
 </pre>
 
-## HTML
+### <span class="notranslate">HTML</span>
 
 ~~~ html
 <p>Hello world!</p>
 ~~~
 
 Source code:
+
 <pre>
 ~~~ html
 &lt;p&gt;Hello world&lt;/p&gt;
 ~~~
 </pre>
 
-## CSS
+### <span class="notranslate">CSS</span>
 
 ~~~ css
 .hello-world {
@@ -298,6 +344,7 @@ Source code:
 ~~~
 
 Source code:
+
 <pre>
 ~~~ css
 .hello-world {
@@ -306,9 +353,9 @@ Source code:
 ~~~
 </pre>
 
-# Format text file
+## Text file
 
-## Plain text 
+### Plain text 
 
 ~~~
 "Hello World!"
@@ -322,7 +369,7 @@ Source code:
 </pre>
 
 
-## JSON
+### JSON
 
 ~~~ json
 {"message": "Hello World!"}
@@ -335,7 +382,7 @@ Source code:
 ~~~
 </pre>
 
-## YAML
+### YAML
 
 ~~~ yaml
 hello:
@@ -350,7 +397,7 @@ hello:
 ~~~
 </pre>
 
-## XML
+### XML
 
 ~~~ xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -365,7 +412,7 @@ Source code:
 ~~~
 </pre>
 
-## INI
+### <span class="notranslate">INI</span>
 
 ~~~ ini
 [message]
@@ -380,7 +427,7 @@ message="Hello World!"
 ~~~
 </pre>
 
-# Maths
+# Mathematics Formula
 
 Use LateX syntax, see https://www.latex-project.org .
 

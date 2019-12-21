@@ -749,6 +749,12 @@ body {
     }
   }
 
+  /* Inline code */
+
+  .highlighter-rouge.language-plaintext {
+    color: inherit !important;
+  }
+
   /* Terminal */
 
   .highlighter-rouge.language-terminal .highlight {

@@ -1,5 +1,5 @@
 <figure>
   <div>
-    <img src="{{ include.src }}" width="{{ include.width }}" alt="{{ include.title }}"></div>
-  <figcaption>{{ include.title }}</figcaption>
+    <img class="img-fluid" src="{{ include.src }}" width="{{ include.width | default: 960 }}" alt="{{ include.title | default: '' }}"></div>
+  <figcaption>{{ include.title | default: '' }}</figcaption>
 </figure>
