@@ -7,14 +7,14 @@ Related resources for the articles are in other repository: https://github.com/g
 
 This source code generates static web pages, that are served by a static web server.
 
-- Web static werver: GitHub.com
-- Static site generator: Jekyll - https://jekyllrb.com with plugins: 
+- Web Static Server: GitHub.com
+- Static Site Generator: Jekyll - https://jekyllrb.com with plugins: 
   - https://pages.github.com/versions
-- Templating language: Liquid - https://shopify.github.io/liquid
-- Text-to-HTML conversion: Markdown - https://daringfireball.net/projects/markdown
-- CSS extension: Sass - https://sass-lang.com
-- JavaScript library: JQuery - https://jquery.com
-- JavaScript for mathematics: Mathjax - https://www.mathjax.org
+- Templating Language: Liquid - https://shopify.github.io/liquid
+- Text-to-HTML Conversion: Markdown - https://daringfireball.net/projects/markdown
+- CSS Extension: Sass - https://sass-lang.com
+- JavaScript Library: JQuery - https://jquery.com
+- JavaScript for Mathematics: Mathjax - https://www.mathjax.org
 - Toolkit for HTML, CSS and JS: Bootstrap - https://getbootstrap.com
 - Data-interchange format: JSON - http://www.json.org and YAML - https://yaml.org
 
