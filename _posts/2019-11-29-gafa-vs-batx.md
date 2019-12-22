@@ -26,7 +26,9 @@ the world there is the big four tech companies **Google, Apple, Facebook, Amazon
 
 {% include article-image.html title="BATX & GAFA" src="batx-gafa.png" %}
 
-# Business to Consumer (B2C)
+# Business
+
+## Business to Customer
 
 On the **hardware side**, Apple and Xiaomi control the **market of smartphones**, to allow an end user to 
 enter in the digital consummation. On the **software side**, your digital experience consists of 
@@ -35,7 +37,7 @@ searching with engine of Google or Baidu, **buying** with e-commerce platform of
 Messenger & Whatsapp and WeChat. For **spending money online**, WeChat is in competition with Apple Pay 
 and Google Pay.
 
-# Business to Consumer (B2B)
+## Business to Business
 
 The **cloud computing and hosting** is managed by Google Cloud Platform, or Amazon Web Service (AWS), 
 and in China there is Alibaba Cloud, also known as Aliyun.
