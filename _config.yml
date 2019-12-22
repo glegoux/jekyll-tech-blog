@@ -27,10 +27,11 @@ author: "Gilles Legoux"
 logo: "/static/img/icon-iphone.png"
 lang: "en_US"
 
-# Pagination
+# Articles
 
 paginate: 12
 paginate_path: "/blog/articles/:num/"
+permalink: "/blog/articles/:year/:month/:day/:title:output_ext"
 
 # Build
 

@@ -1,3 +1,4 @@
+{%- assign article_id = page.date | date: '%Y-%m-%d-' | append: page.title | slugify -%}
 <div class="article-card-container">
   <a href="{{ post.url }}">
     <!-- Article metadata -->
@@ -5,8 +6,7 @@
 
       <!-- Article cover -->
       <div class="article-cover">
-        {%- assign article_cover = post.id | slice: 1,post.id.size | replace: '/', '-' | append: '.jpg' -%}
-        <img class="img-fluid" src="/static/img/articles/cover/{{article_cover}}" alt="{{article_cover}}"/>
+        <img class="img-fluid" src="/static/img/articles/cover/{{article_id}}.jpg" alt="{{article_cover}}"/>
       </div>
 
       <!-- Article details -->

@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+{%- assign article_id = page.date | date: '%Y-%m-%d-' | append: page.title | slugify -%}
 <div id="page-article">
 
   <!-- Article metadata -->
@@ -8,8 +9,7 @@ layout: default
 
     <!-- Article cover -->
     <div class="article-cover">
-      {%- assign article_cover = page.id | slice: 1,page.id.size | replace: '/', '-' | append: '.jpg' -%}
-      <img class="img-fluid" src="/static/img/articles/cover/{{article_cover}}" alt="{{article_cover}}"/>
+      <img class="img-fluid" src="/static/img/articles/cover/{{article_id}}.jpg" alt="{{article_cover}}"/>
     </div>
 
     <div>
