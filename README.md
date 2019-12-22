@@ -17,10 +17,11 @@ This source code generates static web pages, that are served by a static web ser
 - Toolkit for HTML, CSS and JS: Bootstrap - https://getbootstrap.com
 - Data-interchange format: JSON - http://www.json.org and YAML - https://yaml.org
 
-### Monitoring
+### Monitoring & Checher
 
 - Health Checker: http://status.glegoux.com
 - TLS/SSL Certificate Checker: https://www.digicert.com/help
+- Page Speed Checker: https://developers.google.com/speed/pagespeed/insights
 
 ### Known issues
 
