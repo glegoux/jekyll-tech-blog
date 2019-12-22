@@ -145,19 +145,50 @@ layout: default
   <!-- Article author -->
   {%- if page.author -%}
   {%- assign author = site.data.authors[page.author] -%}
-  <p class="article-author">
-    Written by
-    <a class="notranslate" href="/about">
-      <img class="" src="/static/img/articles/author/{{ page.author }}.jpg" alt="{{ page.author }}">
-    </a>
-    <a class="link notranslate" href="/about">
-      <b class="black">{{ author.firstname | capitalize }} {{ author.lastname | uppercase }}</b>
-    </a>
-    <span class="notranslate">
-      ({{ page.author }}) - {{ author.jobname | capitalize }} @{{ author.company | capitalize }} .
-    </span>
-    {%- endif -%}
-  </p>
+  <div class="article-author">
+    <table>
+      <tbody>
+      <tr>
+        <td colspan="2" style="text-align: center; color: grey">Author</td>
+      <tr>
+      <tr>
+        <td colspan="2">
+          <hr/>
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="2">
+          <img class="" src="/static/img/articles/author/{{ page.author }}.jpg"
+               alt="{{ page.author }}">
+        </td>
+        <td>
+          <a class="link notranslate" href="/about">
+            <b class="black">{{ author.firstname | capitalize }} {{ author.lastname | uppercase
+              }}</b>
+            ({{ page.author }})
+          </a>
+        </td>
+      <tr>
+        <td>
+        <span class="notranslate job">
+        {{ author.job | capitalize }} @{{ author.company | capitalize }}
+        </span>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align: center">
+          <a href="{{ author.follow_link }}">
+            <br>
+            <button class="btn btn-dark">
+              <b class="black">Follow</b>
+            </button>
+          </a>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  {%- endif -%}
 
   <!-- Other articles -->
   <h5 style="color: grey">Also read</h5>

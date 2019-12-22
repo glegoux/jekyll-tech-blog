@@ -1,5 +1,6 @@
 glegoux:
-  firstname: Gilles
-  lastname: LEGOUX
-  jobname: Software Engineer
-  company: Criteo
+  firstname: "Gilles"
+  lastname: "LEGOUX"
+  job: "Software Engineer"
+  company: "Criteo"
+  follow_link: "https://www.linkedin.com/in/gilleslegoux"
