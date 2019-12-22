@@ -13,7 +13,7 @@ h="$(identify -format '%h' "${cover_article}")"
 echo "INFO: Initial image format is $w x $h"
 
 if ((w > h * ratio)); then
-    echo "INFO: Crop image in width with ratio ${ratio}:1"
+  echo "INFO: Crop image in width with ratio ${ratio}:1"
   convert "${cover_article}" -crop $((h * ratio))x${h}+0+0 output.jpg
 elif ((w < h * ratio)); then
   echo "INFO: Crop image in height with ratio ${ratio}:1"
