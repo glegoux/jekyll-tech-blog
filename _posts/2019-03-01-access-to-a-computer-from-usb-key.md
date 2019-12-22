@@ -19,23 +19,19 @@ With a bootable USB key on Ubuntu, you can change the password of the target com
 
 First, plug your USB drive into the target computer, choose your key as the boot device for the target computer to boot to the Ubuntu system on your USB drive. On a DELL computer, press `F12` to access this selection. This information is visible on the welcome screen of the manufacturer of your computer.
 
-{% include image.html title="DELL welcome screen" 
-src="https://github.com/glegoux/glegoux.com/blob/master/articles/3edxtxE/welcome-screen-dell.png?raw=true" %}
+{% include article-image.html title="DELL welcome screen" src="welcome-screen-dell.png" %}
 
 Start by choosing the following option: 
 
-{% include image.html title="Advanced startup options" 
-src="https://github.com/glegoux/glegoux.com/blob/master/articles/3edxtxE/hack1.png?raw=true" %}
+{% include article-image.html title="Advanced startup options" src="hack1.png" %}
 
 Then select the `recovery mode`:
 
-{% include image.html title="Getting started in recovery mode" 
-src="https://github.com/glegoux/glegoux.com/blob/master/articles/3edxtxE/hack2.png?raw=true" %}
+{% include article-image.html title="Getting started in recovery mode" src="hack2.png" %}
 
 Launch a `root shell`:
 
-{% include image.html title="Choosing the root shell" 
-src="https://github.com/glegoux/glegoux.com/blob/master/articles/3edxtxE/hack3.png?raw=true" %}
+{% include article-image.html title="Choosing the root shell" src="hack3.png" %}
 
 You access a device as a `root` user.
 
