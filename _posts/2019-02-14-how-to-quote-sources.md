@@ -1,12 +1,11 @@
 ---
 layout: article
 article: true
-permalink: /blog/article/how-to-quote-sources
-cover: "how-to-quote-sources.jpg"
+
 title: "How to quote sources"
 description: "Current standards and rules to respect in order to quote sources."
 time_reading_minutes: "5"
-categories: ["Methodology"]
+category: "Methodology"
 ---
 
 The standard in force is mainly Afnor Standard Z 44-005, December 1987 (ISO 690). Here is a link of the website of the Ministry of Culture and Communication which presents in a synthetic way the standards in force for the writing of bibliographical references:

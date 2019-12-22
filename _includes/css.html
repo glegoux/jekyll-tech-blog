@@ -8,11 +8,11 @@
   rel="stylesheet" type="text/css"
   integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous"/>
 <!-- Local CSS -->
-<link href="/website/css/main.css" rel="stylesheet" type="text/css"/>
+<link href="/static/css/main.css" rel="stylesheet" type="text/css"/>
 {%- if page.article -%}
-<link href="/website/css/article.css" rel="stylesheet" type="text/css"/>
+<link href="/static/css/article.css" rel="stylesheet" type="text/css"/>
 {%- elsif page.articles -%}
-<link href="/website/css/articles.css" rel="stylesheet" type="text/css"/>
+<link href="/static/css/articles.css" rel="stylesheet" type="text/css"/>
 {%- else -%}
 <link href="/{{ page.path | replace: '.html', '.css' }}" rel="stylesheet" type="text/css"/>
 {%- endif -%}

@@ -1,13 +1,12 @@
 ---
 layout: article
 article: true
-permalink: /blog/article/getting-started
-cover: "getting-started.jpg"
+
 title: "Getting Started"
 description: "Markdown is a easy-to-use syntax for writing text on this blog."
 time_reading_minutes: "10"
-categories: ["Methodology"]
-labels: ["Markdown"]
+category: "Methodology"
+tags: ["Markdown"]
 ---
 
 [Markdown](https://daringfireball.net/projects/markdown/) is a lightweight and popular text metalanguage which is a writing standard for scientists 

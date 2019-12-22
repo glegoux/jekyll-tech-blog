@@ -8,7 +8,8 @@ layout: default
 
     <!-- Article cover -->
     <div class="article-cover">
-      <img class="img-fluid" src="/website/img/articles/{{ page.cover }}" width="400" height="200"/>
+      {%- assign article_cover = page.id | slice: 1,page.id.size | replace: '/', '-' | append: '.jpg' -%}
+      <img class="img-fluid" src="/static/img/articles/cover/{{article_cover}}" alt="{{article_cover}}"/>
     </div>
 
     <div>
@@ -23,11 +24,9 @@ layout: default
     </div>
 
     <!-- Article categories -->
-    <div class="article-categories">
+    <div class="article-category">
       <ul>
-        {% for category in page.categories %}
-        <li>{{ category }}</li>
-        {% endfor %}
+        <li>{{ page.category }}</li>
       </ul>
     </div>
 
@@ -61,7 +60,7 @@ layout: default
       </div>
       <div class="col-6 article-browser" style="text-align: right;">
         <a href="/blog/articles" title="All articles">
-          <i class="fa fa-file-text"></i>
+          <i class="fa fa-home"></i>
         </a>
         {%- if page.previous.url -%}
         <a href="{{ page.previous.url }}" title="Previous article">
@@ -81,27 +80,24 @@ layout: default
     </div>
 
     <ul>
-      {% if page.categories %}
       <li>
-        <!-- Article categories -->
-        <span>Categories: </span>
-        <span class="article-categories">
+        <!-- Article category -->
+        <span>Category: </span>
+        <span class="article-category">
         <ul>
-          {% for category in page.categories %}
-          <li>{{ category }}</li>
-          {% endfor %}
+          <li>{{ page.category }}</li>
         </ul>
       </span>
       </li>
-      {% endif %}
-      {% if page.labels %}
+      {%- assign n_tags = page.tags | size -%}
+      {% if n_tags > 0 %}
       <li>
-        <!-- Article labels -->
-        <span>Labels: </span>
+        <!-- Article tags -->
+        <span>Tags: </span>
         <span class="article-labels">
         <ul>
-          {% for label in page.labels %}
-          <li>{{ label }}</li>
+          {% for tag in page.tags %}
+          <li>{{ tag }}</li>
           {% endfor %}
         </ul>
       </span>
@@ -115,7 +111,7 @@ layout: default
       </div>
       <div class="col-6 article-browser" style="text-align: right;">
         <a href="/blog/articles" title="All articles">
-          <i class="fa fa-file-text"></i>
+          <i class="fa fa-home"></i>
         </a>
         {%- if page.previous.url -%}
         <a href="{{ page.previous.url }}" title="Previous article">
@@ -146,15 +142,20 @@ layout: default
   <br>
 
   <!-- Article author -->
+  {%- if page.author -%}
+  {%- assign author = site.data.authors[page.author] -%}
   <p class="article-author">
     Written by
     <a class="notranslate" href="/about">
-      <img class="link-light small-avatar" src="/website/img/perso/avatar.jpg">
+      <img class="" src="/static/img/articles/author/{{ page.author }}.jpg" alt="{{ page.author }}">
     </a>
     <a class="link notranslate" href="/about">
-      <b class="black">Gilles Legoux</b>
+      <b class="black">{{ author.firstname | capitalize }} {{ author.lastname | uppercase }}</b>
     </a>
-    <span class="notranslate">(glegoux) - Software Engineer</span>.
+    <span class="notranslate">
+      ({{ page.author }}) - {{ author.jobname | capitalize }} @{{ author.company | capitalize }} .
+    </span>
+    {%- endif -%}
   </p>
 
   <!-- Other articles -->

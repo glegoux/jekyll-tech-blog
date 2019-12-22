@@ -24,7 +24,7 @@ gist:
 title: "Software Engineering Blog - Gilles Legoux"
 description: "Personal blog about software engineering"
 author: "Gilles Legoux"
-logo: "/website/img/icon-iphone.png"
+logo: "/static/img/icon-iphone.png"
 lang: "en_US"
 
 # Pagination

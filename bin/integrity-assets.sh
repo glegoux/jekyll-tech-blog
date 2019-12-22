@@ -2,7 +2,7 @@
 
 set -e
 
-url="${1:-http://localhost:4000/website/js/main.js}"
+url="${1}"
 encryption="${2:-sha256}"
 
 _type=${url##*.}

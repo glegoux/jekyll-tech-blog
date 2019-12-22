@@ -5,7 +5,8 @@
 
       <!-- Article cover -->
       <div class="article-cover">
-        <img class="img-fluid" src="/website/img/articles/{{ post.cover }}"/>
+        {%- assign article_cover = post.id | slice: 1,post.id.size | replace: '/', '-' | append: '.jpg' -%}
+        <img class="img-fluid" src="/static/img/articles/cover/{{article_cover}}" alt="{{article_cover}}"/>
       </div>
 
       <!-- Article details -->
@@ -21,11 +22,9 @@
         </div>
 
         <!-- Article categories -->
-        <div class="article-categories">
+        <div class="article-category">
           <ul>
-            {% for category in post.categories %}
-            <li>{{ category }}</li>
-            {% endfor %}
+            <li>{{ post.category }}</li>
           </ul>
         </div>
 

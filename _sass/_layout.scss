@@ -65,7 +65,7 @@
   }
 }
 
-.article-categories, .article-labels {
+.article-category, .article-labels {
   padding: 0;
   font-size: 0.8em;
 
@@ -87,7 +87,7 @@
   }
 }
 
-.article-categories {
+.article-category {
   li {
     background-color: #e7f3ff;
     color: #0366d6;
@@ -252,13 +252,13 @@ a, a:visited, a:active, a:link, a:hover {
 
 @media (min-width: 768px) {
   .tech-stack {
-    background-image: url(/website/img/perso/technos.png) !important;
+    background-image: url(/static/img/perso/technos.png) !important;
     height: 120px !important;
   }
 }
 
 .tech-stack {
-  background-image: url(/website/img/perso/technos-medium.png);
+  background-image: url(/static/img/perso/technos-medium.png);
   height: 200px;
 }
 

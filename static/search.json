@@ -1,0 +1,21 @@
+---
+layout: null
+permalink: /search.json
+sitemap: false
+---
+[
+{% for post in site.posts %}
+{
+"title"       : "{{ post.title }}",
+"description" : "{{ post.description }}",
+"category"    : "{{ post.category }}",
+"tags"        : "{{ post.tags | join: ', ' }}",
+"url"         : "{{ site.baseurl }}{{ post.url }}",
+"date"        : "{{ post.date }}",
+"year"        : "{{ post.date | date: '%Y' }}",
+"month"       : "{{ post.date | date: '%m' }}",
+"yearMonth"   : "{{ post.date | date: '%Y-%m' }}",
+"yearMonthDay"   : "{{ post.date | date: '%Y-%m-%d' }}"
+} {% unless forloop.last %},{% endunless %}
+{% endfor %}
+]

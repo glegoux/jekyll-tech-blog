@@ -769,43 +769,43 @@ body {
 
   .highlighter-rouge.language-bash::before {
     text-align: right;
-    content: "bash " url("/website/img/language/bash.png");
+    content: "bash " url("/static/img/language/bash.png");
   }
 
   .highlighter-rouge.language-java::before {
-    content: "java " url("/website/img/language/java.png");
+    content: "java " url("/static/img/language/java.png");
   }
 
   .highlighter-rouge.language-python::before {
-    content: "python " url("/website/img/language/python.png");
+    content: "python " url("/static/img/language/python.png");
   }
 
   .highlighter-rouge.language-sql::before {
-    content: "sql " url("/website/img/language/sql.png");
+    content: "sql " url("/static/img/language/sql.png");
   }
 
   .highlighter-rouge.language-scala:before {
-    content: "scala " url("/website/img/language/scala.png");
+    content: "scala " url("/static/img/language/scala.png");
   }
 
   .highlighter-rouge.language-javascript::before {
-    content: "javascript " url("/website/img/language/javascript.png");
+    content: "javascript " url("/static/img/language/javascript.png");
   }
 
   .highlighter-rouge.language-go::before {
-    content: "go " url("/website/img/language/go.png");
+    content: "go " url("/static/img/language/go.png");
   }
 
   .highlighter-rouge.language-ruby::before {
-    content: "ruby " url("/website/img/language/ruby.png");
+    content: "ruby " url("/static/img/language/ruby.png");
   }
 
   .highlighter-rouge.language-html::before {
-    content: "html " url("/website/img/language/html.png");
+    content: "html " url("/static/img/language/html.png");
   }
 
   .highlighter-rouge.language-css::before {
-    content: "css " url("/website/img/language/css.png");
+    content: "css " url("/static/img/language/css.png");
   }
 
   /* Format text file */
