@@ -4,7 +4,7 @@ article: true
 
 title: "Gafa vs Batx"
 description: "What is the difference?"
-author: "glegoux"
+authors: ["glegoux"]
 time_reading_minutes: "5"
 category: "Business"
 ---

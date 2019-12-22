@@ -4,7 +4,7 @@ article: true
 
 title: "How to quote sources"
 description: "Current standards and rules to respect in order to quote sources."
-author: "glegoux"
+authors: ["glegoux"]
 time_reading_minutes: "5"
 category: "Methodology"
 ---

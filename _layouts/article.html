@@ -143,50 +143,53 @@ layout: default
   <br>
 
   <!-- Article author -->
-  {%- if page.author -%}
-  {%- assign author = site.data.authors[page.author] -%}
-  <div class="article-author">
-    <table>
-      <tbody>
-      <tr>
-        <td colspan="2" style="text-align: center; color: grey">Author</td>
-      <tr>
-      <tr>
-        <td colspan="2">
-          <hr/>
-        </td>
-      </tr>
-      <tr>
-        <td rowspan="2">
-          <img class="" src="/static/img/articles/author/{{ page.author }}.jpg"
-               alt="{{ page.author }}">
-        </td>
-        <td>
-          <a class="link notranslate" href="/about">
-            <b class="black">{{ author.firstname | capitalize }} {{ author.lastname | uppercase
-              }}</b>
-            ({{ page.author }})
-          </a>
-        </td>
-      <tr>
-        <td>
+  {%- if page.authors -%}
+  {%- assign n_authors = page.authors | size -%}
+  <div class="article-authors">
+    <div style="text-align: center; color: grey">
+      Author{%- if n_authors > 1 -%}s{%- endif -%}:
+    </div>
+    <hr width="30%"/>
+    <div class="row">
+      {%- for author_name in page.authors -%}
+      {%- assign author = site.data.authors[author_name] -%}
+      <div class="col-xs-12 col-md-6 col-lg-4">
+        <table class="article-author">
+          <tbody>
+          <tr>
+            <td rowspan="2">
+              <img class="" src="/static/img/articles/author/{{ author_name }}.jpg"
+                   alt="{{ page.author }}">
+            </td>
+            <td>
+              <b class="black">
+                {{ author.firstname | capitalize }}
+                {{ author.lastname | uppercase }}
+              </b>
+              ({{ author_name }})
+            </td>
+          <tr>
+            <td>
         <span class="notranslate job">
         {{ author.job | capitalize }} @{{ author.company | capitalize }}
         </span>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2" style="text-align: center">
-          <a href="{{ author.follow_link }}">
-            <br>
-            <button class="btn btn-dark">
-              <b class="black">Follow</b>
-            </button>
-          </a>
-        </td>
-      </tr>
-      </tbody>
-    </table>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" style="text-align: center">
+              <a href="{{ author.follow_link }}">
+                <br>
+                <button class="btn btn-dark">
+                  <b class="black">Follow</b>
+                </button>
+              </a>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      {%- endfor -%}
+    </div>
   </div>
   {%- endif -%}
 

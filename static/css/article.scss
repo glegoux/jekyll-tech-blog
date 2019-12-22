@@ -146,10 +146,14 @@
 
   /* Article Author */
 
-  .article-author {
+  .article-authors {
     width: 100%;
     padding-top: 1em;
     margin-bottom: 2em;
+
+    .article-author {
+      margin-bottom: 1em;
+    }
 
     .job {
       color: grey;
