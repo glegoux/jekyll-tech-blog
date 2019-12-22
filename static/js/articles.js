@@ -10,8 +10,9 @@ jQuery(document).ready(function () {
   function showSearchResult(articles, request) {
     filterResultAdvancedSearchElements.hide();
     resultAdvancedSearchElement.html('');
+    let plural = articles.length > 1 ? 's' : '';
     resultAdvancedSearchElement.append(
-      '<div class="article-request-search-result">' + articles.length + ' search result(s) for \'' + request + '\'</div>'
+      '<div class="article-request-search-result">' + articles.length + ' search result' + plural + ' for \'' + request + '\'</div>'
     );
     articles.forEach(article => {
       resultAdvancedSearchElement.append(
