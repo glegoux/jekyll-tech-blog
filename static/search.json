@@ -8,6 +8,7 @@ sitemap: false
 {
 "title"       : "{{ post.title }}",
 "description" : "{{ post.description }}",
+"authors"     : "{{ post.authors | join: ', ' }}",
 "category"    : "{{ post.category }}",
 "tags"        : "{{ post.tags | join: ', ' }}",
 "url"         : "{{ site.baseurl }}{{ post.url }}",

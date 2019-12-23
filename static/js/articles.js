@@ -54,6 +54,7 @@ jQuery(document).ready(function () {
     keys: [
       "title",
       "description",
+      "authors",
       "category",
       "tags",
       "yearMonthDay"
