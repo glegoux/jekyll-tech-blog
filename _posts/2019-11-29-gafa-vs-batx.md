@@ -9,7 +9,7 @@ time_reading_minutes: "5"
 category: "Business"
 ---
 
-# Two worlds: China or not
+# China or not
 
 The business world is split into 3 regions with the acronyms: **AMER, EMEA, APAC**. But the web and 
 computer worldwide market is bi-polaire due to the **Internet censorship in China**.
@@ -42,7 +42,7 @@ and Google Pay.
 The **cloud computing and hosting** is managed by Google Cloud Platform, or Amazon Web Service (AWS), 
 and in China there is Alibaba Cloud, also known as Aliyun.
 
-# The other companies and the future
+# Other companies and future
 
 After the cloud infrastructure, and the web services, each main actor wants to control the markets 
 of **Artificial Intelligence** (AI) and of **Internet of Things** (IoT) what compose the new business 
