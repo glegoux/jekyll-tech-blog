@@ -1,6 +1,5 @@
 # Site configuration for development
-# override properties in _config.yml:
-# if jekyll serve --config "_config.yml,_config_dev.yml" used
+# Override properties in _config.yml, if jekyll serve --config "_config.yml,_config_dev.yml" used.
 
 # Server
 
@@ -19,17 +18,7 @@ show_drafts: true
 sass:
   style: "full"
 
-# Admin
-
-jekyll_admin:
-  hidden_links:
-    - posts
-    - pages
-    - staticfiles
-    - datafiles
-    - configuration
-
-# Dev
+# Plugins
 
 plugins:
   - jekyll-admin
