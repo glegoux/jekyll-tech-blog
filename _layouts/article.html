@@ -50,8 +50,31 @@ layout: default
 
     <!-- Article cover -->
     <div class="article-cover">
+      <div class="article-cover-button">
+
+        <div class="row">
+          <div class="col-12 right">
+            <ul>
+              <li class="notranslate">
+                <a href="{{ site.data.article.source }}/{{ article_id }}.md">
+                  <i class="fa fa-code" aria-hidden="true"></i>
+                  Source
+                </a>
+              </li>
+              <li>
+                <a href="{{ site.data.article.static }}/{{ article_id }}">
+                  <i class="fa fa-folder-open-o" aria-hidden="true"></i>
+                  Dependency
+                </a>
+              </li>
+          </div>
+        </div>
+
+      </div>
+
       <img class="img-fluid" src="/static/img/articles/cover/{{ article_id }}.jpg"
            alt="{{ article_id }}"/>
+
     </div>
 
   </div>

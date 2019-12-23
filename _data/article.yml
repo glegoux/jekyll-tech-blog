@@ -1,4 +1,5 @@
 static: "https://github.com/glegoux/glegoux.com/blob/master/articles"
+source: "https://raw.githubusercontent.com/glegoux/glegoux.github.io/master/_posts"
 image:
   path: "images"
   suffix: "?raw=true"

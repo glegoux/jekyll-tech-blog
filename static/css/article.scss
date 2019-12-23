@@ -38,8 +38,25 @@
     }
 
     .article-cover {
-      width: 100%;
-      padding-top: 1em;
+      .article-cover-button {
+        color: dimgrey;
+        font-weight: 300;
+
+        ul {
+          li {
+            display: inline;
+          }
+
+          li:first-child {
+            margin-right: 1em;
+          }
+        }
+
+        .right {
+          padding-right: 2em;
+          text-align: right;
+        }
+      }
     }
 
   }
