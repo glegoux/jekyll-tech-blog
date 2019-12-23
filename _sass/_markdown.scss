@@ -428,30 +428,31 @@
   content: " .";
 }
 
-.markdown-body .wrapper-table {
+.markdown-body table {
+  display: block;
+  max-width: 100%;
   overflow-y: hidden;
   overflow-x: auto;
 }
 
-.markdown-body .wrapper-table table {
-  width: 100%;
+.markdown-body table thead, .markdown-body table tbody {
   word-break: normal;
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-.markdown-body .wrapper-table table th,
-.markdown-body .wrapper-table table td {
+.markdown-body table th,
+.markdown-body table td {
   padding: 6px 13px;
   border: 1px solid #ddd;
 }
 
-.markdown-body .wrapper-table table tr {
+.markdown-body table tr {
   background-color: #fff;
   border-top: 1px solid #ccc;
 }
 
-.markdown-body .wrapper-table table tr:nth-child(2n) {
+.markdown-body table tr:nth-child(2n) {
   background-color: #f8f8f8;
 }
 

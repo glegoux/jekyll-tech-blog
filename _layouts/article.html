@@ -5,7 +5,7 @@ layout: default
 {%- assign related_posts = site.posts | sample:4 -%}
 {%- assign n_tags = page.tags | size -%}
 {%- assign n_authors = page.authors | size -%}
-<div id="page-article">
+<div id="page-article" class="col-12">
 
 
   <!-- Article metadata -->
@@ -37,12 +37,16 @@ layout: default
         </li>
         <li>
           <i class="fa fa-bookmark-o"></i>
-          <span>{{ page.time_reading_minutes }} min</span>
+          <span>
+            {{ page.time_reading_minutes }} min
+          </span>
         </li>
         {%- if n_authors > 0 -%}
         <li>
           <i class="fa fa-user"></i>
-          <span>{{ page.authors | join: ", " }}</span>
+          <span>
+            {{ page.authors | join: ", " }}
+          </span>
         </li>
         {%- endif -%}
       </ul>
