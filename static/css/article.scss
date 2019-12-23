@@ -39,19 +39,19 @@
 
     .article-cover {
       margin-top: 1em;
-        color: dimgrey;
-        font-weight: 300;
-        font-size: 0.8em;
+      color: dimgrey;
+      font-weight: 300;
+      font-size: 0.8em;
 
-        ul {
-          li {
-            display: inline;
-          }
-
-          li:first-child {
-            margin-right: 1em;
-          }
+      ul {
+        li {
+          display: inline;
         }
+
+        li:first-child {
+          margin-right: 1em;
+        }
+      }
     }
 
   }
