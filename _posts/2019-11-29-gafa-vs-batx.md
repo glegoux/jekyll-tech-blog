@@ -1,15 +1,13 @@
 ---
+title: Gafa vs Batx
 layout: article
 article: true
-
-title: "Gafa vs Batx"
-description: "What is the difference?"
-authors: ["glegoux"]
-time_reading_minutes: "5"
-category: "Business"
+description: What is the difference?
+authors:
+- glegoux
+time_reading_minutes: 5
+category: Business
 ---
-
-# China or not
 
 The business world is split into 3 regions with the acronyms: **AMER, EMEA, APAC**. But the web and 
 computer worldwide market is bi-polaire due to the **Internet censorship in China**.
@@ -42,7 +40,7 @@ and Google Pay.
 The **cloud computing and hosting** is managed by Google Cloud Platform, or Amazon Web Service (AWS), 
 and in China there is Alibaba Cloud, also known as Aliyun.
 
-# Other companies and future
+# Other companies
 
 After the cloud infrastructure, and the web services, each main actor wants to control the markets 
 of **Artificial Intelligence** (AI) and of **Internet of Things** (IoT) what compose the new business 
