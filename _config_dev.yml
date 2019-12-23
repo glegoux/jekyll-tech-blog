@@ -18,3 +18,18 @@ show_drafts: true
 
 sass:
   style: "full"
+
+# Admin
+
+jekyll_admin:
+  hidden_links:
+    - posts
+    - pages
+    - staticfiles
+    - datafiles
+    - configuration
+
+# Dev
+
+plugins:
+  - jekyll-admin
