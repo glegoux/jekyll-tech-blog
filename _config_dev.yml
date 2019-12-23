@@ -21,4 +21,10 @@ sass:
 # Plugins
 
 plugins:
-  - jekyll-admin
+  - "jekyll-sitemap"
+  - "jekyll-seo-tag"
+  - "jekyll-github-metadata"
+  - "jekyll-redirect-from"
+  - "jekyll-paginate"
+  - "jemoji"
+  - "jekyll-admin" # only dev

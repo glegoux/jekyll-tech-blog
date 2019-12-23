@@ -92,30 +92,32 @@ layout: default
       {{ content }}
     </div>
 
-    <ul>
-      <li>
-        <!-- Article category -->
-        <span>Category: </span>
-        <span class="article-category">
+    <div class="article-category-tags">
+      <ul>
+        <li>
+          <!-- Article category -->
+          <span>Category: </span>
+          <span class="article-category">
         <ul>
           <li>{{ page.category }}</li>
         </ul>
       </span>
-      </li>
-      {% if n_tags > 0 %}
-      <li>
-        <!-- Article tags -->
-        <span>Tags: </span>
-        <span class="article-labels">
+        </li>
+        {% if n_tags > 0 %}
+        <li>
+          <!-- Article tags -->
+          <span>Tags: </span>
+          <span class="article-labels">
         <ul>
           {% for tag in page.tags %}
           <li>{{ tag }}</li>
           {% endfor %}
         </ul>
       </span>
-      </li>
-      {% endif %}
-    </ul>
+        </li>
+        {% endif %}
+      </ul>
+    </div>
 
     <div class="row">
       <div class="col-6">
@@ -156,10 +158,12 @@ layout: default
   <!-- Article author -->
   {%- if n_authors > 0 -%}
   <div class="article-authors">
-    <div style="text-align: center; color: grey">
-      Author{%- if n_authors > 1 -%}s{%- endif -%}:
-    </div>
-    <hr width="30%"/>
+    <h5>
+      Author{%- if n_authors > 1 -%}s{%- endif -%}
+    </h5>
+
+    <hr/>
+
     <div class="row">
       {%- for author_name in page.authors -%}
       {%- assign author = site.data.authors[author_name] -%}
@@ -181,9 +185,9 @@ layout: default
             </td>
           <tr>
             <td>
-        <span class="notranslate job">
-        {{ author.job | capitalize }} @{{ author.company | capitalize }}
-        </span>
+              <span class="notranslate job">
+              {{ author.job | capitalize }} @{{ author.company | capitalize }}
+              </span>
             </td>
           </tr>
           <tr>
@@ -205,31 +209,33 @@ layout: default
   {%- endif -%}
 
   <!-- Other articles -->
-  <h5 style="color: grey">Also read</h5>
+  <div class="article-others">
+    <h5>Also read</h5>
 
-  <div class="row">
-    {% assign index = 0 %}
-    {% for post in related_posts %}
-    {% if index == 3 %}
-    {% break %}
-    {% endif %}
-    {% if page.title != post.title %}
-    {% assign index = index | plus: 1 %}
-    <div class="col-xs-12 col-md-6 col-lg-4">
-      {% include article-card.html %}
+    <div class="row">
+      {% assign index = 0 %}
+      {% for post in related_posts %}
+      {% if index == 3 %}
+      {% break %}
+      {% endif %}
+      {% if page.title != post.title %}
+      {% assign index = index | plus: 1 %}
+      <div class="col-xs-12 col-md-6 col-lg-4">
+        {% include article-card.html %}
+      </div>
+      {% else %}
+      {% continue %}
+      {% endif %}
+      {% endfor %}
     </div>
-    {% else %}
-    {% continue %}
-    {% endif %}
-    {% endfor %}
-  </div>
 
-  <div style="text-align: center;width: 100%; margin-bottom: 1em;">
-    <a href="/blog/articles">
-      <button class="btn btn-dark">
-        <b class="black">List all</b>
-      </button>
-    </a>
+    <div class="article-list-all">
+      <a href="/blog/articles">
+        <button class="btn btn-dark">
+          <b class="black">List all</b>
+        </button>
+      </a>
+    </div>
   </div>
 
   <!-- Comments -->
