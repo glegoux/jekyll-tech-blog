@@ -5,26 +5,30 @@
   .article-metadata {
     width: 100%;
     margin: auto;
-    text-align: center;
     padding-bottom: 0.5em;
 
     ul {
       margin-bottom: 0 !important;
     }
 
+    i.icon:hover {
+      color: black;
+    }
+
     .article-title {
       font-weight: bold;
       color: black;
-      font-size: 1.2em;
+      font-size: 2em;
     }
 
     .article-description {
       color: grey;
-      font-size: 0.9em;
+      font-weight: 300;
+      font-size: 1.5em;
     }
 
     .article-details {
-      font-size: 0.8em;
+      font-size: 1em;
 
       li {
         display: inline;
@@ -33,10 +37,14 @@
 
     }
 
-    i.icon:hover {
-      color: black;
+    .article-cover {
+      padding-top: 1em;
     }
 
+    .article-contents {
+      width: 100%;
+      text-align: center;
+    }
   }
 
   /* Table of contents */
@@ -76,7 +84,6 @@
 
   #article-content {
     width: 100%;
-    border-top: 1px solid lightgrey;
     border-bottom: 1px solid lightgrey;
 
     h2 {

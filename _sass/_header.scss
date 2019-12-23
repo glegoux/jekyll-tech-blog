@@ -13,6 +13,14 @@ header {
       margin-left: 2em;
     }
 
+    #logo {
+      margin-left: 4em;
+      flex-grow: 1;
+      img {
+        height: 40px;
+      }
+    }
+
     #menu {
       margin-right: 2em;
     }

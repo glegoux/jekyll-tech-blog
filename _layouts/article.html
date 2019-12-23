@@ -2,15 +2,20 @@
 layout: default
 ---
 {%- assign article_id = page.date | date: '%Y-%m-%d-' | append: page.title | slugify -%}
+{%- assign related_posts = site.posts | sample:4 -%}
+{%- assign n_tags = page.tags | size -%}
+{%- assign n_authors = page.authors | size -%}
 <div id="page-article">
+
 
   <!-- Article metadata -->
   <div class="article-metadata">
 
-    <!-- Article cover -->
-    <div class="article-cover">
-      <img class="img-fluid" src="/static/img/articles/cover/{{ article_id }}.jpg"
-           alt="{{ article_id }}"/>
+    <!-- Article category -->
+    <div class="article-category">
+      <ul>
+        <li>{{ page.category }}</li>
+      </ul>
     </div>
 
     <div>
@@ -24,13 +29,6 @@ layout: default
       </div>
     </div>
 
-    <!-- Article categories -->
-    <div class="article-category">
-      <ul>
-        <li>{{ page.category }}</li>
-      </ul>
-    </div>
-
     <!-- Article details -->
     <ul class="article-details">
       <li>
@@ -41,9 +39,22 @@ layout: default
         <i class="fa fa-bookmark-o"></i>
         <span>{{ page.time_reading_minutes }} min</span>
       </li>
+      {%- if n_authors > 0 -%}
+      <li>
+        <i class="fa fa-user"></i>
+        <span>{{ page.authors | join: ", " }}</span>
+      </li>
+      {%- endif -%}
     </ul>
 
-    <div>
+    <!-- Article cover -->
+    <div class="article-cover">
+      <img class="img-fluid" src="/static/img/articles/cover/{{ article_id }}.jpg"
+           alt="{{ article_id }}"/>
+    </div>
+
+    <!-- Article contents -->
+    <div class="article-contents">
       <button id="table-of-contents" class="btn btn-light">
         See contents
       </button>
@@ -90,7 +101,6 @@ layout: default
         </ul>
       </span>
       </li>
-      {%- assign n_tags = page.tags | size -%}
       {% if n_tags > 0 %}
       <li>
         <!-- Article tags -->
@@ -143,8 +153,7 @@ layout: default
   <br>
 
   <!-- Article author -->
-  {%- if page.authors -%}
-  {%- assign n_authors = page.authors | size -%}
+  {%- if n_authors > 0 -%}
   <div class="article-authors">
     <div style="text-align: center; color: grey">
       Author{%- if n_authors > 1 -%}s{%- endif -%}:
@@ -153,7 +162,8 @@ layout: default
     <div class="row">
       {%- for author_name in page.authors -%}
       {%- assign author = site.data.authors[author_name] -%}
-      <div class="{% if n_authors == 1 %}w-100 {% endif %}col-xs-12{% if n_authors > 1 %} col-md-6{% endif %}{% if n_authors > 2 %} col-lg-4{% endif %}">
+      <div
+        class="{% if n_authors == 1 %}w-100 {% endif %}col-xs-12{% if n_authors > 1 %} col-md-6{% endif %}{% if n_authors > 2 %} col-lg-4{% endif %}">
         <table class="article-author">
           <tbody>
           <tr>
@@ -197,9 +207,8 @@ layout: default
   <h5 style="color: grey">Also read</h5>
 
   <div class="row">
-    {% assign posts = site.posts | sample:4 %}
     {% assign index = 0 %}
-    {% for post in posts %}
+    {% for post in related_posts %}
     {% if index == 3 %}
     {% break %}
     {% endif %}
