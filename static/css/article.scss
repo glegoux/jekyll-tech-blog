@@ -38,9 +38,10 @@
     }
 
     .article-cover {
-      .article-cover-button {
+      margin-top: 1em;
         color: dimgrey;
         font-weight: 300;
+        font-size: 0.8em;
 
         ul {
           li {
@@ -51,12 +52,6 @@
             margin-right: 1em;
           }
         }
-
-        .right {
-          padding-right: 2em;
-          text-align: right;
-        }
-      }
     }
 
   }
