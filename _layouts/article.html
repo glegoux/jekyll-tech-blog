@@ -54,20 +54,12 @@ layout: default
            alt="{{ article_id }}"/>
     </div>
 
-    <!-- Article contents -->
-    <div class="article-contents">
-      <button id="table-of-contents" class="btn btn-light">
-        See contents
-      </button>
-      <div id="table-of-contents-container" style="display: none;"></div>
-    </div>
-
   </div>
 
   <!-- Article content -->
   <div id="article-content">
 
-    <div class="row" style="margin-bottom: 1em">
+    <div class="row">
       <div class="col-6">
         {% include page-social-sharing.html %}
       </div>
@@ -86,6 +78,14 @@ layout: default
         </a>
         {%- endif -%}
       </div>
+    </div>
+
+    <!-- Article contents -->
+    <div class="article-contents">
+      <button id="table-of-contents" class="btn btn-light">
+        See contents
+      </button>
+      <div id="table-of-contents-container" style="display: none;"></div>
     </div>
 
     <div class="markdown-body">

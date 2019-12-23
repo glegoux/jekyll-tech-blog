@@ -38,13 +38,10 @@
     }
 
     .article-cover {
+      width: 100%;
       padding-top: 1em;
     }
 
-    .article-contents {
-      width: 100%;
-      text-align: center;
-    }
   }
 
   /* Table of contents */
@@ -92,6 +89,12 @@
 
     h3 {
       padding-left: 2em;
+    }
+
+    .article-contents {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 1em;
     }
   }
 
