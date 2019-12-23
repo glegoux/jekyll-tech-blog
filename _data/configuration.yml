@@ -1,3 +1,8 @@
+blog:
+  title_header: "@GillesLegoux (glegoux)"
+  title: "Software Engineering"
+  quote: "Truth can only be found in 2 places: the informatics code and the mathematics demonstration."
+  keywords: ["Research & Development", "Algorithm", "Data", "Machine Learning", "Web", "Security", "Applied Mathematics", "Reliability & Infrastructure", "Design", "System", "Methodology", "Business"]
 google_analytics:
   code: "UA-102138582-1"
   site_verification: "Zi6VjmkhN84h8s9omSlTaTm5UQD5Tm31VkQ7KyndH8c"

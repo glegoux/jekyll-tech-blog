@@ -7,11 +7,24 @@
   .blog-header {
     text-align: center;
 
-    .blinker {
-      font-weight: 400;
-      font-size: 1.5em;
-      color: cornflowerblue;
+    .blog-title {
+      color: black;
     }
+
+    .blog-keywords {
+      color: cornflowerblue;
+
+      .blinker {
+        font-weight: 400;
+        font-size: 1.5em;
+      }
+    }
+
+    .blog-quote {
+      color: grey;
+      font-weight: 300;
+    }
+
   }
 
   #articles-text-search {
