@@ -18,34 +18,35 @@ layout: default
       </ul>
     </div>
 
-    <div>
-      <!-- Article title -->
-      <div class="article-title">
-        {{ page.title }}
-      </div>
-      <!-- Article description -->
-      <div class="article-description">
-        {{ page.description }}
-      </div>
+    <!-- Article title -->
+    <div class="article-title">
+      {{ page.title }}
+    </div>
+
+    <!-- Article description -->
+    <div class="article-description">
+      {{ page.description }}
     </div>
 
     <!-- Article details -->
-    <ul class="article-details">
-      <li>
-        <i class="fa fa-calendar"></i>
-        <span>{{ page.date | date: '%B %d, %Y' }}</span>
-      </li>
-      <li>
-        <i class="fa fa-bookmark-o"></i>
-        <span>{{ page.time_reading_minutes }} min</span>
-      </li>
-      {%- if n_authors > 0 -%}
-      <li>
-        <i class="fa fa-user"></i>
-        <span>{{ page.authors | join: ", " }}</span>
-      </li>
-      {%- endif -%}
-    </ul>
+    <div class="article-details">
+      <ul>
+        <li>
+          <i class="fa fa-calendar"></i>
+          <span>{{ page.date | date: '%B %d, %Y' }}</span>
+        </li>
+        <li>
+          <i class="fa fa-bookmark-o"></i>
+          <span>{{ page.time_reading_minutes }} min</span>
+        </li>
+        {%- if n_authors > 0 -%}
+        <li>
+          <i class="fa fa-user"></i>
+          <span>{{ page.authors | join: ", " }}</span>
+        </li>
+        {%- endif -%}
+      </ul>
+    </div>
 
     <!-- Article cover -->
     <div class="article-cover">
