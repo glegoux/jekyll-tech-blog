@@ -89,6 +89,7 @@ function drawRegionsMap() {
 
     var options = {
         colorAxis: {colors: ['#e6f7ff', '#00334d']},
+        width: $('#content').width(), // responsive
         legend: false
     };
     
@@ -97,6 +98,7 @@ function drawRegionsMap() {
      chart.draw(data, options);
 }
 
+// responsive
 $(window).resize(function(){
     drawRegionsMap();
 });
