@@ -761,6 +761,10 @@ body {
   .highlighter-rouge.language-terminal .highlight {
     background-color: black !important;
 
+    code {
+      color: white !important;
+    }
+
     code * {
       color: white !important;
     }
