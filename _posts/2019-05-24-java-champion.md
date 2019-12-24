@@ -99,8 +99,12 @@ function drawRegionsMap() {
 }
 
 // responsive
+var width = $(window).width();
 $(window).resize(function(){
-    drawRegionsMap();
+    if ($(this).width() != width) {
+        width = $(this).width();
+        drawRegionsMap();
+    }
 });
 </script>
 </div>
