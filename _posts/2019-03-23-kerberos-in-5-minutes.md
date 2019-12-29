@@ -80,9 +80,9 @@ src="https://docs.google.com/drawings/d/e/2PACX-1vRFoa0U8YarJybG_tJJ4bxSaDj000n8
 
 You can use **Lightweight Directory Access Protocol** (LDAP) as principal database to store users and groups of your organization. Now you have a nice **Authentication, Authorization** and **Accounting** System (AAAS) :
 
-* `Authentication</code> is managed by the KDC to guarantee the identity of an entity.
-* `Authorization</code> is controlled by the Service directly to authorize access (you can also use Access Control List (ACL) for other permissions)
-* `Accounting</code> is allowed by LDAP server.
+* `Authentication` is managed by the KDC to guarantee the identity of an entity.
+* `Authorization` is controlled by the Service directly to authorize access (you can also use Access Control List (ACL) for other permissions)
+* `Accounting` is allowed by LDAP server.
 
 {% include image.html title=" Kerberos authentication workflow with LDAP" 
 src="https://docs.google.com/drawings/d/e/2PACX-1vRmsLxbS-kwQOzK20d0i3PZGADr1dmoWbG2ld-M2hIyXYjw1pGPuXtWO8LmBv9VaYJVh-E1aJOU7xoF/pub?w=959&h=542" %}
