@@ -1,16 +1,15 @@
 ---
 title: LightHouse
 layout: article
+
 article: true
-description: Lighthouse is an open-source, automated tool for improving the quality
-  of web pages.
-authors:
-- glegoux
+description: "Lighthouse is an open-source, automated tool for improving the quality of web pages."
+authors: ["glegoux"]
 time_reading_minutes: 10
-category: Reliability & Infrastructure
+category: "Web"
 ---
 
-[LightHouse 2.4.0](https://github.com/GoogleChrome/lighthouse/releases/tag/v2.4.0) is an [open-source project](https://github.com/GoogleChrome/lighthouse) written in Javascript and began in January 2016 under [Apache 2,0 License](https://github.com/GoogleChrome/lighthouse/blob/master/LICENSE). On GitHub, it is a project of the Organisation [Google Chrome](https://github.com/GoogleChrome) knows a huge success and counts roughly 10,000 stars and 100 contributors. It is already stable, see  [latest release](https://github.com/GoogleChrome/lighthouse/releases/). It is an automated tool for improving the quality of web pages. You can run it against any web page, public or requiring authentication. It has audits for performance, accessibility, progressive web apps, and more.
+[LightHouse 5.6.0](https://github.com/GoogleChrome/lighthouse/releases/tag/v5.6.0) is an [open-source project](https://github.com/GoogleChrome/lighthouse) written in Javascript and began in January 2016 under [Apache 2,0 License](https://github.com/GoogleChrome/lighthouse/blob/master/LICENSE). On GitHub, it is a project of the Organisation [Google Chrome](https://github.com/GoogleChrome) knows a huge success and counts roughly 10,000 stars and 100 contributors. It is already stable, see  [latest release](https://github.com/GoogleChrome/lighthouse/releases/). It is an automated tool for improving the quality of web pages. You can run it against any web page, public or requiring authentication. It has audits for performance, accessibility, progressive web apps, and more.
 
 {% include article-image.html title="Logo of Lighthouse" src="lighthouse-logo.png" %}
 
@@ -32,9 +31,8 @@ You can export report under HTML or JSON format, then import these format or see
 {% include article-image.html title="Export, import and view LightHouse report" src="export-import-view.jpg" %}
 
 The work flow of LightHouse core is described by the following chart:
- 
 
- {% include article-image.html title="Architecture of Lighthouse Core" src="architecture.jpg" %}
+{% include article-image.html title="Architecture of Lighthouse Core" src="architecture.jpg" %}
 
 [See details of the architecture](https://github.com/GoogleChrome/lighthouse/blob/master/docs/architecture.md).
 
@@ -55,22 +53,24 @@ Before installing [LightHouse 2.4.0](https://github.com/GoogleChrome/lighthouse/
 
 As lighthouse is a very recent project, you can use [Canary](https://www.google.com/chrome/browser/canary.html) version for Google Chrome.
 
- {% include article-image.html title="Google Chrome, Chromium and Canary version" src="chrome-version.jpg" %}
+{% include article-image.html title="Google Chrome, Chromium and Canary version" src="chrome-version.jpg" %}
 
-I reminder in a nutshell that [Google Chrome](https://www.google.com/chrome/browser) is the [Chromium](https://github.com/chromium/chromium) open source project built, packaged, and distributed by Google. You can see a few [differences](https://chromium.googlesource.com/chromium/src/+/master/docs/chromium_browser_vs_google_chrome.md) . It has [4 versions](https://www.chromium.org/getting-involved/dev-channel) Stable, Beta, Dev, Canary for MAC, Windows and Linux for desktops and Android, iOS for smart phones and tablets.
+Reminder you in a nutshell that [Google Chrome](https://www.google.com/chrome/browser) is the [Chromium](https://github.com/chromium/chromium) open source project built, packaged, 
+and distributed by Google. You can see a few [differences](https://chromium.googlesource.com/chromium/src/+/master/docs/chromium_browser_vs_google_chrome.md) . 
+It has [4 versions](https://www.chromium.org/getting-involved/dev-channel) Stable, Beta, Dev, Canary for MAC, Windows and Linux for desktops and Android, iOS for smart phones and tablets.
 
-For example, I can test LightHouse on this blog. Suppose that I have this file **urls.txt** containing one URL per line:
+For example, test LightHouse on this blog. Suppose that you have this file **urls.txt** containing one URL per line:
 
 ~~~
 https://glegoux.com/
 https://glegoux.com/blog/
-https://glegoux.com/articles/
-https://glegoux.com/projects/
-https://glegoux.com/snippets/
+https://glegoux.com/blog/articles/
 https://glegoux.com/about/
+https://glegoux.com/contact/
+https://glegoux.com/contact/email/
 ~~~
 
-You can run this bash script to get one report by url:
+Run this bash script to get one report by url:
 
 ~~~ bash 
 i=0
@@ -83,26 +83,26 @@ for url in $(cat urls.txt); do
 done
 ~~~
 
-I can run the python script **lighthouse.py**:
+Then run this python script **lighthouse.py**:
 
 ~~~ terminal
 python3 lighthouse.py urls.txt reports.csv
 ~~~
 
-[See more details](https://github.com/glegoux/articles-glegoux-com/tree/master/articles/2019-04-01-lighthouse/code).
+[See code](https://github.com/glegoux/articles-glegoux-com/tree/master/articles/2019-04-01-lighthouse/code).
 
-I get this csv file **reports.csv**. Visualize with **matplotlib** library:
+You get this csv file **reports.csv**. Visualize with **matplotlib** library:
 
  {% include article-image.html title=" Charts of scores for a set of URLs" src="plot_scores.png" %}
 
 | url | date | pwa | performance | accessibility | best-practices |
 | --- |  --- |  --- |  --- |  --- |  --- |
-https://glegoux.com/projects/ |  2017-08-17 | 45.45 | 46.12,91 | 43,69.23
-https://glegoux.com/blog/ | 2017-08-17 | 45.45 | 48.71 | 91.43,69.23
-https://glegoux.com/home/ | 2017-08-17 | 36.36 | 36.53,88.57 | 69.23
-https://glegoux.com/snippets/ |  2017-08-17,45.45 |  40.88,91.43 | 61.54
-https://glegoux.com/articles/ |  2017-08-17 |  45.45 |  46.12 |  88.57 |  69.23
-https://glegoux.com/about/ |  2017-08-17 |  36.36,40.18 |  88.57 |  69.23
+https://glegoux.com/projects/ | 2017-08-17 | 45.45 | 46.12 | 91.43  | 69.23
+https://glegoux.com/blog/     | 2017-08-17 | 45.45 | 48.71 | 91.43  | 69.23
+https://glegoux.com/home/     | 2017-08-17 | 36.36 | 36.53 | 88.57  | 69.23
+https://glegoux.com/snippets/ | 2017-08-17 | 45.45 | 40.88 | 91.43  | 61.54
+https://glegoux.com/articles/ | 2017-08-17 | 45.45 | 46.12 |  88.57 | 69.23
+https://glegoux.com/about/    | 2017-08-17 | 36.36 | 40.18 |  88.57 | 69.23
 
 **References**
 
