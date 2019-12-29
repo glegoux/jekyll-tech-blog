@@ -101,8 +101,8 @@ layout: default
 
     <!-- Article contents -->
     <div class="article-contents">
-      <button id="table-of-contents" class="btn btn-light">
-        See contents
+      <button id="table-of-contents" class="btn btn-dark">
+        <b>See contents</b>
       </button>
       <div id="table-of-contents-container" style="display: none;"></div>
     </div>
@@ -196,7 +196,7 @@ layout: default
                    alt="{{ page.author }}">
             </td>
             <td>
-              <b class="black">
+              <b>
                 {{ author.firstname | capitalize }}
                 {{ author.lastname | uppercase }}
               </b>
@@ -214,7 +214,7 @@ layout: default
               <a href="{{ author.follow_link }}">
                 <br>
                 <button class="btn btn-dark">
-                  <b class="black">Follow</b>
+                  <b>Follow</b>
                 </button>
               </a>
             </td>
@@ -251,7 +251,7 @@ layout: default
     <div class="article-list-all">
       <a href="/blog/articles">
         <button class="btn btn-dark">
-          <b class="black">List all</b>
+          <b>List all</b>
         </button>
       </a>
     </div>
