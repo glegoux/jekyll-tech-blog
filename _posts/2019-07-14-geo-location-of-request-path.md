@@ -5,7 +5,7 @@ title: Geo-location of request path
 description: When you are doing HTTP request through the Internet, it is interesting to know for which routers this HTTP request browses
 authors: ["glegoux"]
 time_reading_minutes: 5
-category: Reliability & Infrastructure
+category: Web
 tags: ["Internet", "Network"]
 ---
 
