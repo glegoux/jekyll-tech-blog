@@ -1,7 +1,6 @@
 blog:
   title_header: "@GillesLegoux (glegoux)"
   title: "Software Engineering"
-  quote: "Truth can be found in 2 places: informatics and mathematics."
   keywords: ["Research & Development", "Algorithm", "Data", "Machine Learning", "Web", "Security", "Applied Mathematics", "Reliability & Infrastructure", "Design", "System", "Methodology", "Business"]
 google_analytics:
   code: "UA-102138582-1"
