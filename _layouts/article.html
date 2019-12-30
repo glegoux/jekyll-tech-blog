@@ -32,18 +32,18 @@ layout: default
     <div class="article-details">
       <ul>
         <li>
-          <i class="fa fa-calendar"></i>
+          <i class="far fa-calendar-alt"></i>
           <span>{{ page.date | date: '%B %d, %Y' }}</span>
         </li>
         <li>
-          <i class="fa fa-bookmark-o"></i>
+          <i class="far fa-clock"></i>
           <span>
             {{ page.time_reading_minutes }} min
           </span>
         </li>
         {%- if n_authors > 0 -%}
         <li>
-          <i class="fa fa-user"></i>
+          <i class="far fa-user"></i>
           <span>
             {{ page.authors | join: ", " }}
           </span>
@@ -57,13 +57,13 @@ layout: default
       <ul>
         <li class="notranslate">
           <a href="{{ site.data.article.source }}/{{ article_id }}.md">
-            <i class="fa fa-code" aria-hidden="true"></i>
+            <i class="far fa-file-code"></i>
             Source
           </a>
         </li>
         <li>
           <a href="{{ site.data.article.static }}/{{ article_id }}">
-            <i class="fa fa-folder-open-o" aria-hidden="true"></i>
+            <i class="fas fa-code-branch"></i>
             Dependency
           </a>
         </li>
