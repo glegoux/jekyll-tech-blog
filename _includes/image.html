@@ -1,5 +1,5 @@
 <figure>
   <div>
-    <img class="img-fluid" src="{{ include.src }}" alt="{{ include.title | default: '' }}"></div>
+    <img class="img-fluid lazyload" data-src="{{ include.src }}" alt="{{ include.title | default: '' }}"></div>
   <figcaption>{{ include.title | default: '' }}</figcaption>
 </figure>
