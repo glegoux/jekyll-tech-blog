@@ -1,18 +1,25 @@
 <!-- Third-party CSS -->
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/{{ site.data.versions.bootstrap }}/css/bootstrap.min.css" as="style">
 <link
   href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/{{ site.data.versions.bootstrap }}/css/bootstrap.min.css"
-  rel="preload" as="style" type="text/css"
+  rel="stylesheet" type="text/css"
   integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous"/>
+
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/{{ site.data.versions.font-awesome }}/css/font-awesome.min.css" as="style">
 <link
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/{{ site.data.versions.font-awesome }}/css/font-awesome.min.css"
-  rel="preload" as="style" type="text/css"
+  rel="stylesheet" type="text/css"
   integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous"/>
 <!-- Local CSS -->
-<link href="/static/css/main.css" rel="preload" as="style" type="text/css"/>
+<link rel="preload" href="/static/css/main.css" as="style">
+<link href="/static/css/main.css" rel="stylesheet" type="text/css"/>
 {%- if page.article -%}
-<link href="/static/css/article.css" rel="preload" as="style" type="text/css"/>
+<link rel="preload" href="/static/css/article.css" as="style">
+<link href="/static/css/article.css" rel="stylesheet" type="text/css"/>
 {%- elsif page.articles -%}
-<link href="/static/css/articles.css" rel="preload" as="style" type="text/css"/>
+<link rel="preload" href="/static/css/articles.css" as="style">
+<link href="/static/css/articles.css" rel="stylesheet" type="text/css"/>
 {%- else -%}
-<link href="/{{ page.path | replace: '.html', '.css' }}" rel="preload" as="style" type="text/css"/>
+<link rel="preload" href="/{{ page.path | replace: '.html', '.css' }}" as="style">
+<link href="/{{ page.path | replace: '.html', '.css' }}" rel="stylesheet" type="text/css"/>
 {%- endif -%}
