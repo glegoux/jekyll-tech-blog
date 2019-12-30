@@ -3,9 +3,11 @@
 <link rel="preconnect" crossorigin="anonymous" href="https://www.google-analytics.com"/>
 <link rel="preconnect" crossorigin="anonymous" href="https://www.gstatic.com"/>
 <link rel="preconnect" crossorigin="anonymous" href="https://www.google.com"/>
+{%- if page.comment -%}
 <link rel="preconnect" crossorigin="anonymous" href="https://a.disquscdn.com"/>
 <link rel="preconnect" crossorigin="anonymous" href="https://c.disquscdn.com"/>
 <link rel="preconnect" crossorigin="anonymous" href="https://disquscdn.com"/>
+{%- endif -%}
 <!-- Preload JS links -->
 <link rel="preload" as="script"
       href="/static/libs/jquery/{{ site.data.versions.jquery }}/js/jquery.min.js"/>

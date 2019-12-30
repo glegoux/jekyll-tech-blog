@@ -16,11 +16,8 @@ defaults:
       type: "posts"
     values:
       layout: "article"
+      comment: true
       article: true
-  - scope:
-      path: "static/img"
-    values:
-      image: true
 
 # GitHub
 

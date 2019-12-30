@@ -1,11 +1,5 @@
 /* Layout */
 
-/* Font */
-
-@font-face {
-  font-display: swap;
-}
-
 /* Article */
 
 .article-card-container {
@@ -131,6 +125,20 @@
   #loader-inner {
     margin-top: 150px;
   }
+}
+
+/* Comment */
+
+.comments {
+  h5 {
+    color: grey;
+  }
+
+  #disqus_thread {
+    width: 100%;
+    height: auto;
+  }
+
 }
 
 /* Multi-Lang */
