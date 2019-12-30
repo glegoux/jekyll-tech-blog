@@ -1,7 +1,5 @@
 ---
 title: Gafa vs Batx
-layout: article
-article: true
 description: What is the difference?
 authors:
 - glegoux

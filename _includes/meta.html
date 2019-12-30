@@ -11,11 +11,11 @@
 <!-- Desktop -->
 <link rel="icon" type="image/png" href="/static/img/favicon.ico?v=1"/>
 <!-- Search Engine -->
-<meta name="author" content="Gilles Legoux"/>
+<meta name="author" content="{{ site.author }}"/>
 <title>{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 <meta itemprop="description" name="description" content="{% if page.description %}{{ page.description | truncate: 100 }}{% else %}{{ site.description | truncate: 100  }}{% endif %}"/>
 <meta name="keywords"
-      content="glegoux,Gilles,Legoux,informatics,mathematics{%- if page.article -%},{{ page.categories }},{{ page.labels }}{%- endif -%}"/>
+      content="{{ site.keywords }}{%- if page.article -%},{{ page.category }},{{ page.labels }}{%- endif -%}"/>
 <!-- SEO -->
 {% seo title=false %}
 {%- if page.article -%}

@@ -1,7 +1,4 @@
 ---
-layout: article
-article: true
-
 title: "Kerberos in 5 minutes"
 description: "Kerberos is an authentication protocol for trusted hosts on untrusted networks."
 authors: ["glegoux"]

@@ -1,7 +1,4 @@
 ---
-layout: article
-article: true
-
 title: "Getting Started"
 description: "Markdown is a easy-to-use syntax for writing text on this blog."
 authors: ["glegoux"]

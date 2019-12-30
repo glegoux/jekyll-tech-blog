@@ -10,6 +10,18 @@ detach: false
 show_dir_listing: false
 encoding: "utf-8"
 
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "article"
+      article: true
+  - scope:
+      path: "static/img"
+    values:
+      image: true
+
 # GitHub
 
 github: ["metadata"]
@@ -24,6 +36,7 @@ gist:
 title: "Software Engineering Blog - Gilles Legoux"
 description: "Personal blog about software engineering"
 author: "Gilles Legoux"
+keywords: "glegoux,Gilles,Legoux,informatics,mathematics"
 logo: "/static/img/icon-iphone.png"
 lang: "en"
 

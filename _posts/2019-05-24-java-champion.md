@@ -1,6 +1,4 @@
 ---
-layout: article
-article: true
 title: Java champion
 description: How to become a Java champion?
 authors: ["glegoux"]
