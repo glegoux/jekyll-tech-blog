@@ -1,6 +1,6 @@
 ---
 title: Geo-location of request path
-description: When you are doing HTTP request through the Internet, it is interesting to know for which routers this HTTP request browses
+description: How to know for which routers a HTTP request browses?
 authors: ["glegoux"]
 time_reading_minutes: 5
 category: Web
