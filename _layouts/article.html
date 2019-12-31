@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+{%- assign config_article = site.data.config.article -%}
 {%- assign article_id = page.date | date: '%Y-%m-%d-' | append: page.title | slugify -%}
 {%- assign related_posts = site.posts | sample:4 -%}
 {%- assign n_tags = page.tags | size -%}
@@ -56,13 +57,13 @@ layout: default
     <div class="article-cover">
       <ul>
         <li class="notranslate">
-          <a href="{{ site.data.article.source }}/{{ article_id }}.md">
+          <a href="{{ config_article.source }}/{{ article_id }}.md">
             <i class="far fa-file-code"></i>
             Source
           </a>
         </li>
         <li>
-          <a href="{{ site.data.article.static }}/{{ article_id }}">
+          <a href="{{ config_article.static }}/{{ article_id }}">
             <i class="fas fa-code-branch"></i>
             Dependency
           </a>

@@ -1,8 +1,9 @@
+{%- assign config_article = site.data.config.article -%}
 {%- assign article_id = page.date | date: '%Y-%m-%d-' | append: page.title | slugify -%}
 <figure>
   <div>
     <img class="img-fluid lazyload"
-         data-src="{{ site.data.article.static }}/{{ article_id }}/{{ site.data.article.image.path }}/{{ include.src }}{{ site.data.article.image.suffix }}"
+         data-src="{{ config_article.static }}/{{ article_id }}/{{ config_article.image.path }}/{{ include.src }}{{ config_article.image.suffix }}"
          alt="{{ include.title | default: '' }}">
   </div>
   <figcaption>{{ include.title | default: '' }}</figcaption>

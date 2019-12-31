@@ -1,9 +1,10 @@
+{%- assign libs_version = site.data.config.libs.version -%}
 <!-- Third-party CSS -->
 <link
-  href="/static/libs/bootstrap/{{ site.data.versions.bootstrap }}/css/bootstrap.min.css"
+  href="/static/libs/bootstrap/{{ libs_version.bootstrap }}/css/bootstrap.min.css"
   rel="stylesheet" type="text/css"/>
 <link
-  href="/static/libs/font-awesome/{{ site.data.versions.font-awesome }}/css/all.min.css"
+  href="/static/libs/font-awesome/{{ libs_version.font-awesome }}/css/all.min.css"
   rel="stylesheet" type="text/css"/>
 <!-- Local CSS -->
 <link href="/static/css/main.css" rel="stylesheet" type="text/css"/>
