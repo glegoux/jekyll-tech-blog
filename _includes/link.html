@@ -9,6 +9,13 @@
 <link rel="preconnect" crossorigin="anonymous" href="https://c.disquscdn.com"/>
 <link rel="preconnect" crossorigin="anonymous" href="https://disquscdn.com"/>
 {%- endif -%}
+<!-- Preload Font -->
+<link rel="preload" as="font"
+      href="/static/libs/font-awesome/{{ libs_version.font-awesome }}/webfonts/fa-regular-400.woff2"/>
+<link rel="preload" as="font"
+      href="/static/libs/font-awesome/{{ libs_version.font-awesome }}/webfonts/fa-brands-400.woff2"/>
+<link rel="preload" as="font"
+      href="/static/libs/font-awesome/{{ libs_version.font-awesome }}/webfonts/fa-solid-900.woff2"/>
 <!-- Preload JS links -->
 <link rel="preload" as="script"
       href="/static/libs/jquery/{{ libs_version.jquery }}/js/jquery.min.js"/>
