@@ -22,3 +22,5 @@ libs:
     fuse: "3.4.6"
     lazysizes: "5.2.0"
     mathjax: "2.7.6"
+theme:
+  color: "#383b43"
