@@ -12,7 +12,7 @@
         new google.translate.TranslateElement(
             {
                 pageLanguage: 'en',
-                includedLanguages: 'en,fr',
+                includedLanguages: 'en,fr,zh',
                 layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
                 autoDisplay: false
             },
@@ -59,7 +59,7 @@
         if (currentLanguage === null) {
             let browserLanguage = navigator.language.substring(0, 2);
             if (browserLanguage === "fr") {
-                changeLanguage("french");
+                changeLanguage("chinese");
             } else {
                 changeLanguage(originalLanguage);
             }
