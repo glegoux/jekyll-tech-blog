@@ -2,7 +2,7 @@
 
 header {
   z-index: 1000;
-  padding-top: 1em;
+  padding-top: 1.5em;
   color: black !important;
 
   .flex-container {
@@ -88,13 +88,13 @@ header {
   }
 
   #sidebar {
-    z-index: 1002;
+    z-index: 1003;
+    height: 100%;
     position: fixed;
-    top: 0.5em;
     right: -250px;
     transition: 0.5s;
-    width: 240px;
-    padding-left: 2em;
+    width: 230px;
+    padding: 0 1em 0 1em;
     border-right: 0.5px solid lightgrey;
     box-shadow: 0.5em 0 2em 0 rgba(0, 0, 0, 0.125);
     background: white;

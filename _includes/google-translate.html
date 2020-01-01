@@ -8,11 +8,14 @@
 
 <script defer type="text/javascript">
 
+    let originalLanguageCode = '{{ site.data.config.lang.original.code }}';
+    let includedLanguageCodes = originalLanguageCode + ',' + '{{ site.data.config.lang.others | map: "code" | uniq | join: "," }}';
+
     function googleTranslateElementInit() {
         new google.translate.TranslateElement(
             {
-                pageLanguage: 'en',
-                includedLanguages: 'en,fr,zh',
+                pageLanguage: originalLanguageCode,
+                includedLanguages: includedLanguageCodes,
                 layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
                 autoDisplay: false
             },
@@ -22,7 +25,74 @@
 
     jQuery(document).ready(function () {
 
-        let originalLanguage = "english";
+        let LANGUAGES = {
+            "af": "afrikaans",
+            "sq": "albanian",
+            "ar": "arabic",
+            "az": "azerbaijani",
+            "eu": "basque",
+            "bn": "bengali",
+            "be": "belarusian",
+            "bg": "bulgarian",
+            "ca": "catalan",
+            "zh-CN": "chinese (simplified)",
+            "zh-TW": "chinese (traditional)",
+            "hr": "croatian",
+            "cs": "czech",
+            "da": "danish",
+            "nl": "dutch",
+            "en": "english",
+            "eo": "esperanto",
+            "et": "estonian",
+            "tl": "filipino",
+            "fi": "finnish",
+            "fr": "french",
+            "gl": "galician",
+            "ka": "georgian",
+            "de": "german",
+            "el": "greek",
+            "gu": "gujarati",
+            "ht": "haitian",
+            "iw": "hebrew",
+            "hi": "hindi",
+            "hu": "hungarian",
+            "is": "icelandic",
+            "id": "indonesian",
+            "ga": "irish",
+            "it": "italian",
+            "ja": "japanese",
+            "kn": "kannada",
+            "ko": "korean",
+            "la": "latin",
+            "lv": "latvian",
+            "lt": "lithuanian",
+            "mk": "macedonian",
+            "ms": "malay",
+            "mt": "maltese",
+            "no": "norwegian",
+            "fa": "persian",
+            "pl": "polish",
+            "pt": "portuguese",
+            "ro": "romanian",
+            "ru": "russian",
+            "sr": "serbian",
+            "sk": "slovak",
+            "sl": "slovenian",
+            "es": "spanish",
+            "sw": "swahili",
+            "sv": "swedish",
+            "ta": "tamil",
+            "te": "telugu",
+            "th": "thai",
+            "tr": "turkish",
+            "uk": "ukrainian",
+            "ur": "urdu",
+            "vi": "vietnamese",
+            "cy": "welsh",
+            "yi": "yiddish"
+        };
+
+        let originalLanguage = LANGUAGES[originalLanguageCode];
         let originalLangHeader = $("#original-lang");
         let langs = $(".lang");
 
@@ -34,44 +104,46 @@
             });
         }
 
-        function changeLanguage(language) {
+        function changeLanguage(languageCode) {
+            let language = LANGUAGES[languageCode];
+            console.log(languageCode, language);
             if (originalLanguage === language) {
                 originalLangHeader.hide();
             } else {
                 originalLangHeader.show();
             }
             langs.each(function () {
-                if (language === $(this).data("lang")) {
-                    $(this).find("span").addClass("focus");
-                } else {
-                    $(this).find("span").removeClass("focus");
-                }
+                $(this).find('option').each(function () {
+                    if ($(this).val() === languageCode) {
+                        $(this).attr('selected', true)
+                    }
+                });
             });
             // Called twice
             googleTranslate(language);
             googleTranslate(language);
-            window.localStorage.setItem('lang', language);
+            window.localStorage.setItem('language-code', languageCode);
         }
 
         // init translation
 
-        let currentLanguage = window.localStorage.getItem('lang');
-        if (currentLanguage === null) {
-            let browserLanguage = navigator.language.substring(0, 2);
-            if (browserLanguage === "fr") {
-                changeLanguage("chinese");
-            } else {
-                changeLanguage(originalLanguage);
-            }
-        } else {
-            changeLanguage(currentLanguage);
+        let currentLanguageCode = window.localStorage.getItem('language-code');
+        if (currentLanguageCode === null) {
+            currentLanguageCode = originalLanguageCode;
+            let browserLanguageCode = navigator.language.substring(0, 2);
+            includedLanguageCodes.split(',').forEach(function (languageCode) {
+                if (languageCode.startsWith(browserLanguageCode)) {
+                    currentLanguageCode = browserLanguageCode;
+                }
+            });
         }
+        changeLanguage(currentLanguageCode);
 
         // update translation
 
-        langs.click(function () {
-            let language = $(this).data("lang");
-            changeLanguage(language);
+        langs.change(function () {
+            let languageCode = $(this).children("option:selected").val();
+            changeLanguage(languageCode);
         });
 
         // no translate

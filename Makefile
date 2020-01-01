@@ -20,7 +20,7 @@ run: run-dev
 
 .PHONY: run-dev
 run-dev:
-	@bundle exec jekyll serve --host 0.0.0.0 --port 4000 --config "_config.yml,_config_dev.yml"
+	@bundle exec jekyll serve --host 0.0.0.0 --port 4000 --incremental --config "_config.yml,_config_dev.yml"
 
 .PHONY: run-debug
 run-debug:
