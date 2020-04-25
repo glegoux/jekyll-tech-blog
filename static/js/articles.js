@@ -188,7 +188,7 @@ jQuery(document).ready(function () {
   }
 
   function decorateCategorySelectors(articles) {
-    categoriesContainerElement.find('search-article-category').click(function () {
+    categoriesContainerElement.find('.search-article-category').click(function () {
       let category = $(this).data('category').toString();
       showSearchResult(articles.filter(article => {
         return article.category.split(',').includes(category);
