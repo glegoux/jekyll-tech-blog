@@ -16,12 +16,13 @@ update:
 	@bundle update
 
 .PHONY: run
-run: run-dev
+run:
+	@bundle exec jekyll serve --host localhost --port 4000 --incremental --config "_config.yml,_config_dev.yml" --no-watch
 
 .PHONY: run-dev
 run-dev:
-	@bundle exec jekyll serve --host 0.0.0.0 --port 4000 --incremental --config "_config.yml,_config_dev.yml"
+	@bundle exec jekyll serve --host localhost --port 4000 --incremental --config "_config.yml,_config_dev.yml"
 
 .PHONY: run-debug
 run-debug:
-	@PAGES_REPO_NWO="glegoux/glegoux.github.io" JEKYLL_ENV=production bundle exec jekyll serve --host 0.0.0.0 --port 4000
+	@PAGES_REPO_NWO="glegoux/glegoux.github.io" JEKYLL_ENV=production bundle exec jekyll serve --host localhost --port 4000
