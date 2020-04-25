@@ -31,7 +31,7 @@ This source code generates static web pages, that are served by a static web ser
 
 - Health Checker: http://status.glegoux.com
 - TLS/SSL Certificate Checker: https://www.digicert.com/help
-- Page Speed Checker: https://developers.google.com/speed/pagespeed/insights
+- Page Speed Checker: https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fglegoux.com
 
 ### Known issues
 
