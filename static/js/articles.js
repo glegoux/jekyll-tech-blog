@@ -109,7 +109,7 @@ jQuery(document).ready(function () {
     let years = Array.from(archiveStructure.keys()).sort().reverse();
     years.forEach(year => {
       archiveContainerElement.append(
-        '<div class="year" data-year="' + year + '">' +
+        '<div class="search-year-article" data-year="' + year + '">' +
         '<a href="javascript:">' +
         year +
         '</a></div>');
@@ -121,7 +121,7 @@ jQuery(document).ready(function () {
         let yearMonth = year + "-" + month;
         monthsUlElement.append(
           '<li><a href="javascript:">' +
-          '<span class="month" data-year-month="' + yearMonth + '">' +
+          '<span class="search-year-month-article" data-year-month="' + yearMonth + '">' +
           monthName +
           '</span>' +
           '</a></li>');
@@ -130,7 +130,7 @@ jQuery(document).ready(function () {
   }
 
   function decorateArchiveYearSelectors(articles) {
-    archiveContainerElement.find('.year').click(function () {
+    archiveContainerElement.find('.search-year-article').click(function () {
       let year = $(this).data('year').toString();
       showSearchResult(articles.filter(article => {
         return article.year === year;
@@ -139,7 +139,7 @@ jQuery(document).ready(function () {
   }
 
   function decorateArchiveMonthSelectors(articles) {
-    archiveContainerElement.find('.month').click(function () {
+    archiveContainerElement.find('.search-year-month-article').click(function () {
       let yearMonth = $(this).data('year-month').toString();
       showSearchResult(articles.filter(article => {
         return article.yearMonth === yearMonth;
@@ -180,7 +180,7 @@ jQuery(document).ready(function () {
     let categoriesUlElement = categoriesContainerElement.find('ul');
     categoriesStructure.forEach(category => {
       categoriesUlElement.append(
-        '<li class="article-category" data-category="' + category + '">' +
+        '<li class="search-article-category" data-category="' + category + '">' +
         '<a href="javascript:">' +
         category +
         '</a></li>');
@@ -188,7 +188,7 @@ jQuery(document).ready(function () {
   }
 
   function decorateCategorySelectors(articles) {
-    $('.article-category').click(function () {
+    categoriesContainerElement.find('search-article-category').click(function () {
       let category = $(this).data('category').toString();
       showSearchResult(articles.filter(article => {
         return article.category.split(',').includes(category);

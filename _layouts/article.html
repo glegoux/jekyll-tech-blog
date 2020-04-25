@@ -118,22 +118,22 @@ layout: default
           <!-- Article category -->
           <span>Category: </span>
           <span class="article-category">
-        <ul>
-          <li>{{ page.category }}</li>
-        </ul>
-      </span>
+            <ul>
+              <li>{{ page.category }}</li>
+            </ul>
+          </span>
         </li>
         {% if n_tags > 0 %}
         <li>
           <!-- Article tags -->
           <span>Tags: </span>
           <span class="article-labels">
-        <ul>
-          {% for tag in page.tags %}
-          <li>{{ tag }}</li>
-          {% endfor %}
-        </ul>
-      </span>
+            <ul>
+              {% for tag in page.tags %}
+              <li>{{ tag }}</li>
+              {% endfor %}
+            </ul>
+          </div>
         </li>
         {% endif %}
       </ul>
