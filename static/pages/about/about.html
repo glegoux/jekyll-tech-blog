@@ -12,65 +12,34 @@ permalink: /about/
   {% include stack.html %}
 
   <p style="text-align:center">
-    <img class="link-light icon-avatar" src="/static/img/perso/avatar.jpg">
-    <br>
-    <span style="font-size:1.2em;font-weight: bold;">
-      Gilles Legoux
-    </span>
-    <br>
-    <span style="color:grey;font-weight: 300;">
-      Software Engineer
-    </span>
-    <br>
-    <a href="{{ site.data.links.github }}">
-      <img height=25 src="/static/img/perso/github.png" title="GitHub">
-    </a>
-    &nbsp;
-    <a href="{{ site.data.links.linkedin }}">
-      <img height=25 src="/static/img/perso/linkedin.png" title="LinkedIn">
-    </a>
-    &nbsp;
-    <a href="{{ site.data.links.stackoverflow }}">
-      <img height=25 src="/static/img/perso/stackoverflow.png" title="Stack Overflow">
-    </a>
-    &nbsp;
-    <a href="{{ site.data.links.stackshare }}">
-      <img height=25 src="/static/img/perso/stack.png" title="stackshare">
-    </a>
-    <br/>
-    <br/>
-    <a href="/contact/email">
-      <button class="btn btn-dark">
-        <b class="black">Contact me</b>
-      </button>
-    </a>
+    {% include avatar.html %}
   </p>
 
-  <div style="text-align: left">
+  <p style="text-align:left">
+    Briefly I am a <b class="notranslate">software engineer</b>. I love coding, the algorithms and
+    the applied mathematics.
+    I worked as <span class="notranslate">web full stack developer</span>
+    <img height=25 src="/static/img/perso/web-icon.png">
+    and <span class="notranslate">software reliability engineer</span>
+    <img height=25 src="/static/img/perso/infra.png">.
+    I have had several professional experiences by working successively in a <b>start-up</b> and
+    in a <b>multinational organization</b>.
+    I am very excited by the start-up company world
+    <img height=25 src="/static/img/perso/startup.png">
+    and the process of creation.
+    I am passionate about the computer science and the data science
+    <img height=25 src="/static/img/tech/data-science.png">,
+    and more generally about <b>the informatics and the mathematics</b>.
+    One of my preferred formulae is the Euler's identity: $e^{i\pi} + 1 = 0$.
+    My favorite programming languages are Java <img height=25 src="/static/img/tech/java.png">
+    and Python <img height=25 src="/static/img/tech/python.png">.
+    I am a Linux user <img height=25 src="/static/img/tech/linux.png">,
+    I use Ubuntu <img height=25 src="/static/img/tech/ubuntu.png">.
+  </p>
 
-
-    <p>
-      Briefly I am a <b class="notranslate">software engineer</b>. I love coding, the algorithms and
-      the applied mathematics.
-      I worked as <span class="notranslate">web full stack developer</span>
-      <img height=25 src="/static/img/perso/web-icon.png">
-      and <span class="notranslate">software reliability engineer</span>
-      <img height=25 src="/static/img/perso/infra.png">.
-      I have had several professional experiences by working successively in a <b>start-up</b> and
-      in a <b>multinational organization</b>.
-      I am very excited by the start-up company world
-      <img height=25 src="/static/img/perso/startup.png">
-      and the process of creation.
-      I am passionate about the computer science and the data science
-      <img height=25 src="/static/img/tech/data-science.png">,
-      and more generally about <b>the informatics and the mathematics</b>.
-      One of my preferred formulae is the Euler's identity: $e^{i\pi} + 1 = 0$.
-      My favorite programming languages are Java <img height=25 src="/static/img/tech/java.png">
-      and Python <img height=25 src="/static/img/tech/python.png">.
-      I am a Linux user <img height=25 src="/static/img/tech/linux.png">,
-      I use Ubuntu <img height=25 src="/static/img/tech/ubuntu.png">.
-    </p>
-
-  </div>
+  <p style="text-align:center">
+    Follow me:
+    {% include social.html %}
+  </p>
 
 </div>
