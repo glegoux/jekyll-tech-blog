@@ -32,7 +32,6 @@
     display: flex;
     border-radius: 5px;
     border: 1px solid lightgrey;
-    height: 2.1em;
     margin-bottom: 1em;
     color: grey;
 
@@ -40,9 +39,10 @@
       width: 100%;
       border-radius: 5px;
       border: 0;
-      padding: 0.5em;
-      height: 2em;
       font-size: 1em;
+      padding-left: 1em;
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
     }
 
     input:focus {
@@ -51,8 +51,8 @@
     }
 
     .fa-search {
+      font-size: 1.5em;
       padding: 0.5em;
-      height: 2em;
     }
   }
 
