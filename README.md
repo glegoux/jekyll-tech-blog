@@ -24,4 +24,4 @@ Go to [Installation](https://github.com/glegoux/glegoux.github.io/wiki/Installat
 
 # Know more
 
-Go to [Wiki](https://github.com/glegoux/glegoux.github.io/wiki/More)
+Go to [Wiki](https://github.com/glegoux/glegoux.github.io/wiki/More).
