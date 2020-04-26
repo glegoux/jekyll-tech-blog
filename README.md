@@ -12,6 +12,42 @@ Related resources for the articles are in another repository: https://github.com
   </tr>
 </table>
 
+### Installation
+
+Compatible for all operating system on your workstation.
+
+* For Linux, Mac OS, and WSL host:
+
+Required: 
+- bash: https://www.gnu.org/software/bash/ (often installed by default)
+- make: https://www.gnu.org/software/make/ (often installed by default)
+- rvm: https://rvm.io/ (if you don't want use rvm, see Windows host installation)
+
+Run in your bash terminal:
+
+~~~
+git clone https://github.com/glegoux/glegoux.github.io.git
+cd glegoux.github.io
+source bootsrap.sh
+make install
+make run
+~~~
+
+* For Windows host:
+
+Required:
+- ruby: https://www.ruby-lang.org/ (see [.ruby-version](https://github.com/glegoux/glegoux.github.io/blob/master/.ruby-version))
+- bundle: https://bundler.io/ 
+
+Run in your powershell terminal:
+
+~~~
+git clone https://github.com/glegoux/glegoux.github.io.git
+cd glegoux.github.io
+bundle update
+bundle exec jekyll serve --host localhost --port 4000 --incremental --config "_config.yml,_config_dev.yml" --no-watch
+~~~
+
 ### Technical stack
 
 This source code generates static web pages, that are served by a static web server.
