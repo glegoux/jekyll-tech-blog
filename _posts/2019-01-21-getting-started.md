@@ -111,13 +111,13 @@ Source code:
 
 > Talk is cheap. Show me the code.
 
-Linus Torvalds
+Linus Torvalds, creator of the Linux operating system
 
 Source code:
 ~~~ @escape
 > Talk is cheap. Show me the code.
 
-Linus Torvalds
+Linus Torvalds, creator of the Linux operating system
 ~~~
 
 ## Emoticon
