@@ -114,7 +114,9 @@
             langs.each(function () {
                 $(this).find('option').each(function () {
                     if ($(this).val() === languageCode) {
-                        $(this).attr('selected', true)
+                        $(this).attr('selected', true);
+                    } else {
+                        $(this).removeAttr('selected');    
                     }
                 });
             });
