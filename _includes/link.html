@@ -19,13 +19,30 @@
 <link rel="preload" as="font"
       href="/static/libs/font-awesome/{{ libs_version.font-awesome }}/webfonts/fa-solid-900.woff2"
       crossorigin="anonymous"/>
-<!-- Preload JS links -->
+<!-- Preload CSS and JS -->
 <link rel="preload" as="script"
       href="/static/libs/jquery/{{ libs_version.jquery }}/js/jquery.min.js"/>
-<!-- Preload CSS links -->
 <link rel="preload" as="style"
       href="/static/libs/bootstrap/{{ libs_version.bootstrap }}/css/bootstrap.min.css"/>
 <link rel="preload" as="style"
       href="/static/libs/font-awesome/{{ libs_version.font-awesome }}/css/all.min.css"/>
+<link rel="preload" as="script"
+      href="/static/js/main.js">
+<link rel="preload"  as="style"
+      href="/static/css/main.css">
+{%- if page.article -%}
+<link rel="preload" as="script"
+      href="/static/js/article.js">
 <link rel="preload" as="style"
-      href="/static/css/main.css"/>
+      href="/static/css/article.css">
+{%- elsif page.articles -%}
+<link rel="preload" as="script"
+      href="/static/js/articles.js">
+<link rel="preload" as="style"
+      href="/static/css/articles.css">
+{%- else -%}
+<link rel="preload" as="script"
+      href="/{{ page.path | replace: '.html', '.js' }}">
+<link rel="preload" as="style"
+      href="/{{ page.path | replace: '.html', '.css' }}">
+{%- endif -%}

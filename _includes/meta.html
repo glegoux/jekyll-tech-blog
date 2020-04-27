@@ -23,16 +23,3 @@
 <!-- Article cover social sharing -->
 <meta property="og:image" content="{{ site.url }}/static/img/articles/cover/{{ article_id }}.jpg"/>
 {%- endif -%}
-<!-- Preload -->
-<link rel="preload" href="/static/js/main.js" as="script">
-<link rel="preload" href="/static/css/main.css" as="style">
-{%- if page.article -%}
-<link rel="preload" href="/static/js/article.js" as="script">
-<link rel="preload" href="/static/css/article.css" as="style">
-{%- elsif page.articles -%}
-<link rel="preload" href="/static/js/articles.js" as="script">
-<link rel="preload" href="/static/css/articles.css" as="style">
-{%- else -%}
-<link rel="preload" href="/{{ page.path | replace: '.html', '.js' }}" as="script">
-<link rel="preload" href="/{{ page.path | replace: '.html', '.css' }}" as="style">
-{%- endif -%}
