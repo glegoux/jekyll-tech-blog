@@ -36,8 +36,8 @@
             "be": "belarusian",
             "bg": "bulgarian",
             "ca": "catalan",
-            "zh-CN": "chinese (simplified)",
-            "zh-TW": "chinese (traditional)",
+            "zh-CH": "chinese (simplified)",
+            "zh": "chinese (simplified)", // not available for google translate, just here for native browser in chinese
             "hr": "croatian",
             "cs": "czech",
             "da": "danish",
@@ -94,10 +94,19 @@
         };
 
         let originalLanguage = LANGUAGES[originalLanguageCode];
+        if (originalLanguage == undefined) {
+            console.error(`language ${originalLanguageCode} is unavailable`);
+        }
         let originalLangHeader = $("#original-lang");
         let langs = $(".lang");
 
-        function googleTranslate(language) {
+        function googleTranslate(languageCode) {
+            let language = LANGUAGES[languageCode];
+            if (language === undefined) {
+                console.error(`language ${languageCode} is unavailable`);
+                return;  
+            }
+
             $(".goog-te-menu-frame").contents().find("a.goog-te-menu2-item").each(function () {
                 if ($(this).text().toLowerCase().includes(language.toLowerCase())) {
                     $(this)[0].click();
@@ -106,8 +115,7 @@
         }
 
         function changeLanguage(languageCode) {
-            let language = LANGUAGES[languageCode];
-            console.log(languageCode);
+
             originalLangHeader.hide();
             langs.each(function () {
                 $(this).find("option").each(function () {
@@ -120,8 +128,8 @@
             });
             
             // call twice
-            googleTranslate(language);
-            googleTranslate(language);
+            googleTranslate(languageCode);
+            googleTranslate(languageCode);
 
             window.localStorage.setItem("language-code", languageCode);
 
@@ -160,7 +168,7 @@
         // no translate
 
         setTimeout(function () {
-            // wait for executing of MathJax
+            // wait for the execution of MathJax
             for (const jax of MathJax.Hub.getAllJax()) {
                 jax.SourceElement().previousSibling.classList.add("notranslate");
             }
