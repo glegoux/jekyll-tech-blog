@@ -1,14 +1,9 @@
 <!-- Google Translate -->
 <div id="google-translate"></div>
 
-<script async
-        type="text/javascript"
-        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit&hl=en">
-</script>
+<script type="text/javascript">
 
-<script defer type="text/javascript">
-
-    let originalLanguageCode = '{{ site.data.config.lang.original.code }}';
+    let originalLanguageCode = "{{ site.data.config.lang.original.code }}";
     let includedLanguageCodes = originalLanguageCode + ',' + '{{ site.data.config.lang.others | map: "code" | uniq | join: "," }}';
 
     function googleTranslateElementInit() {
@@ -22,7 +17,13 @@
             'google-translate'
         );
     }
+</script>
 
+<script async type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit&hl=en">
+</script>
+
+<script type="text/javascript">
     jQuery(document).ready(function () {
 
         let LANGUAGES = {
@@ -97,7 +98,7 @@
         let langs = $(".lang");
 
         function googleTranslate(language) {
-            $('.goog-te-menu-frame').contents().find("a.goog-te-menu2-item").each(function () {
+            $(".goog-te-menu-frame").contents().find("a.goog-te-menu2-item").each(function () {
                 if ($(this).text().toLowerCase().includes(language.toLowerCase())) {
                     $(this)[0].click();
                 }
@@ -106,29 +107,35 @@
 
         function changeLanguage(languageCode) {
             let language = LANGUAGES[languageCode];
-            if (originalLanguage === language) {
-                originalLangHeader.hide();
-            } else {
-                originalLangHeader.show();
-            }
+            console.log(languageCode);
+            originalLangHeader.hide();
             langs.each(function () {
-                $(this).find('option').each(function () {
+                $(this).find("option").each(function () {
                     if ($(this).val() === languageCode) {
-                        $(this).attr('selected', true);
+                        $(this).attr("selected", true);
                     } else {
-                        $(this).removeAttr('selected');    
+                        $(this).removeAttr("selected");    
                     }
                 });
             });
-            // Called twice
+            
+            // call twice
             googleTranslate(language);
             googleTranslate(language);
-            window.localStorage.setItem('language-code', languageCode);
+
+            window.localStorage.setItem("language-code", languageCode);
+
+            setTimeout(function () {
+                // wait for the end of the translation of the page
+                if (originalLanguageCode !== languageCode) {
+                    originalLangHeader.show();
+                }
+            }, 1000);
         }
 
         // init translation
 
-        let currentLanguageCode = window.localStorage.getItem('language-code');
+        let currentLanguageCode = window.localStorage.getItem("language-code");
         if (currentLanguageCode === null) {
             currentLanguageCode = originalLanguageCode;
             let browserLanguageCode = navigator.language.substring(0, 2);
@@ -138,7 +145,10 @@
                 }
             });
         }
-        changeLanguage(currentLanguageCode);
+        setTimeout(function () {
+            // wait for the end of load of the iframe and resources of google translate
+            changeLanguage(currentLanguageCode);
+        }, 1000);
 
         // update translation
 
@@ -150,6 +160,7 @@
         // no translate
 
         setTimeout(function () {
+            // wait for executing of MathJax
             for (const jax of MathJax.Hub.getAllJax()) {
                 jax.SourceElement().previousSibling.classList.add("notranslate");
             }
