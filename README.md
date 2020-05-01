@@ -18,9 +18,9 @@ See demo on this website on my own blog: https://glegoux.com.
 I use [GitHub Pages](https://pages.github.com/) with Jekyll to render this website available at https://glegoux.com .
 Related resources for the articles are in another repository: https://github.com/glegoux/articles-glegoux-com .
 
-# Installation
+# Quick started
 
-Go to [Installation](https://github.com/glegoux/glegoux.github.io/wiki/Installation).
+Go to [Quick started](https://github.com/glegoux/glegoux.github.io/wiki/Quick-started).
 
 # Know more
 
