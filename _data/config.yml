@@ -8,7 +8,7 @@ lang:
     code: "en"
     display_name: "English"
   others:
-    - code: "zh-CH"
+    - code: "zh-CN"
       display_name: "中文"
     - code: "fr"
       display_name: "Français"
