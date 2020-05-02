@@ -8,8 +8,6 @@ sitemap: false
 # For all web spiders/crawlers/robots and the indexing in the search engines
 User-Agent: *
 Crawl-delay: 1
-Disallow: /assets/
-Disallow: /static/
 Disallow: /config.txt
 Disallow: /404.html
 Disallow: /manifest.json
