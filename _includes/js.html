@@ -1,16 +1,19 @@
 {%- assign libs_version = site.data.config.libs.version -%}
+<!-- Load before DOMContentLoaded (<script> markup harcoded, ...) -->
 <!-- Third-party JS -->
-<script type="text/javascript" defer src="/static/libs/jquery/{{ libs_version.jquery }}/js/jquery.min.js"></script>
+<script type="text/javascript" src="/static/libs/jquery/{{ libs_version.jquery }}/js/jquery.min.js"></script>
+<script type="text/javascript" src="/static/libs/lazysizes/{{ libs_version.lazysizes }}/js/lazysizes.min.js"></script>
+<script type="text/javascript" src='/static/libs/mathjax/{{ libs_version.mathjax }}/js/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}});
+</script>
+<!-- Load after DOMContentLoaded -->
+<!-- Third-party JS -->
 <script type="text/javascript" defer src="/static/libs/smooth-scroll/{{ libs_version.smooth-scroll }}/js/smooth-scroll.min.js"></script>
 <script type="text/javascript" defer src="/static/libs/popper/{{ libs_version.popper }}/js/popper.min.js"></script>
 <script type="text/javascript" defer src="/static/libs/bootstrap/{{ libs_version.bootstrap }}/js/bootstrap.min.js"></script>
 <script type="text/javascript" defer src="/static/libs/moment/{{ libs_version.moment }}/js/moment.min.js"></script>
 <script type="text/javascript" defer src="/static/libs/fuse/{{ libs_version.fuse }}/js/fuse.min.js"></script>
-<script type="text/javascript" defer src="/static/libs/lazysizes/{{ libs_version.lazysizes }}/js/lazysizes.min.js"></script>
-<script type="text/javascript" defer src='/static/libs/mathjax/{{ libs_version.mathjax }}/js/MathJax.js?config=TeX-MML-AM_CHTML'></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}});
-</script>
 <!-- Local JS -->
 <script type="text/javascript" defer src="/static/js/main.js"></script>
 <script type="text/javascript" defer src="/static/js/typing-text.min.js"></script>

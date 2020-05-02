@@ -70,11 +70,11 @@
     };
 
     const originalLanguageCode = "{{ site.data.config.lang.original.code }}";
-    const includedLanguageCodes = (originalLanguageCode + "," + "{{ site.data.config.lang.others | map: 'code' | uniq | join: ',' }}")
-        .join(",").filter(function(x){ return x != ""; });
+    const includedLanguageCodesString = originalLanguageCode + "," + "{{ site.data.config.lang.others | map: 'code' | uniq | join: ',' }}";
+    const includedLanguageCodes = includedLanguageCodesString.split(",").filter(function(x){ return x != ""; });
  
     includedLanguageCodes.forEach(function (languageCode) {
-        if(LANGUAGES[languageCode] === undefined) {
+        if (LANGUAGES[languageCode] === undefined) {
             console.error(`language '${languageCode}' is unavailable`);
         }
     });
@@ -83,7 +83,7 @@
         new google.translate.TranslateElement(
             {
                 pageLanguage: originalLanguageCode,
-                includedLanguages: includedLanguageCodes,
+                includedLanguages: includedLanguageCodesString,
                 layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
                 autoDisplay: false
             },
@@ -92,7 +92,7 @@
     }
 </script>
 
-<script async type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit&hl=en"></script>
+<script type="text/javascript" async src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit&hl=en"></script>
 
 <script type="text/javascript">
     jQuery(document).ready(function () {
@@ -101,6 +101,11 @@
         const langs = $(".lang");
 
         function googleTranslate(languageCode) {
+            const language = LANGUAGES[languageCode];
+            if (LANGUAGES[languageCode] === undefined) {
+                console.error(`language '${languageCode}' is unavailable`);
+                return;
+            }
             $(".goog-te-menu-frame").contents().find("a.goog-te-menu2-item").each(function () {
                 if ($(this).text().toLowerCase().includes(language.toLowerCase())) {
                     $(this)[0].click();
