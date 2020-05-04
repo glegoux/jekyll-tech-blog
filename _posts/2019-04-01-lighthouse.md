@@ -1,4 +1,5 @@
 ---
+title: Lighthouse
 article: true
 description: "Lighthouse is an open-source, automated tool for improving the quality of web pages."
 authors: ["glegoux"]
