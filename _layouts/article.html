@@ -15,17 +15,17 @@ layout: default
     <!-- Article category -->
     <div class="article-category">
       <ul>
-        <li>{{ page.category }}</li>
+        <li title="Category of this article">{{ page.category }}</li>
       </ul>
     </div>
 
     <!-- Article title -->
-    <div class="article-title">
+    <div class="article-title" title="Title of this article">
       {{ page.title }}
     </div>
 
     <!-- Article description -->
-    <div class="article-description">
+    <div class="article-description" title="Description of this article">
       {{ page.description }}
     </div>
 
@@ -60,7 +60,7 @@ layout: default
     </div>
 
     <!-- Article cover -->
-    <div class="article-cover">
+    <div class="article-cover" title="Cover of this article">
       <ul>
         <li title="See the source code of this article">
           <a href="{{ config_article.source }}/{{ article_id }}.md">
@@ -125,7 +125,7 @@ layout: default
           <span>Category: </span>
           <span class="article-category">
             <ul>
-              <li>{{ page.category }}</li>
+              <li title="Category of this article">{{ page.category }}</li>
             </ul>
           </span>
         </li>
@@ -136,7 +136,7 @@ layout: default
           <span class="article-labels">
             <ul>
               {% for tag in page.tags %}
-              <li>{{ tag }}</li>
+              <li title="Tag of this article">{{ tag }}</li>
               {% endfor %}
             </ul>
           </span>
