@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Get config file for debugging
+# Search in config file for debugging
 
 cd "$(git rev-parse --show-toplevel)" || exit 1
 
