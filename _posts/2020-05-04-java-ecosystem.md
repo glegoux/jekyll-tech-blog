@@ -90,6 +90,11 @@ conferences Java et tutorial
 Java ecosystem is composed of several master of pieces
 JVM,JRE,JDK,Java SE Compatible.
 
-Scala, Groovy, Kotlin, Closure, 
+Scala, Groovy, Kotlin, Closure, Jruby
 JEP, JSP, JFR
+
+In computer science, bootstrapping is the technique for producing a self-compiling compiler 
+The trick is bootstrapping. You first write a compiler for your language (or a subset thereof) 
+in some other language. Then you write a compiler for your language (or a large subset of the one you can already handle) 
+in your language. You use the former compiler to compile the new compiler, and then the new compiler can compile itself.
 {% endcomment %}
