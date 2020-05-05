@@ -1,6 +1,6 @@
 ---
 layout: null
-permalink: /config.txt
+permalink: /config.json
 sitemap: false
 ---
 {%- if jekyll.environment == 'development' -%}
