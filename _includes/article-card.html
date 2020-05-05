@@ -1,6 +1,5 @@
 {%- assign article_id = post.date | date: '%Y-%m-%d-' | append: post.title | slugify -%}
 <div class="article-card-container">
-  <a href="{{ post.url }}" title="Read this article">
     <!-- Article metadata -->
     <div class="article-card">
 
@@ -42,6 +41,5 @@
       </div>
 
     </div>
-  </a>
 </div>
 
