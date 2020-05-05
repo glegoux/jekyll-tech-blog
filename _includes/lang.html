@@ -1,12 +1,12 @@
 {%- assign original_lang = site.data.config.lang.original -%}
 {%- assign n_other_languages = site.data.config.lang.others | size -%}
 {%- if n_other_languages > 0 -%}
-<select class="lang custom-select notranslate" title="Translate the web page into your language">
-  <option value="{{ original_lang.code }}">
+<select class="lang custom-select" title="Translate the web page into your language">
+  <option class="notranslate" value="{{ original_lang.code }}">
     <span>{{ original_lang.display_name }}</span>
   </option>
   {%- for lang in site.data.config.lang.others -%}
-  <option value="{{ lang.code }}">
+  <option class="notranslate" value="{{ lang.code }}">
     <span>{{ lang.display_name }}</span>
   </option>
   {%- endfor -%}
