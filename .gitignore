@@ -4,6 +4,9 @@
 _site/
 .sass-cache
 .jekyll-metadata
+.jekyll-cache
+# personal file to debug
+.jekyll-config-debug.json
 
 # RubyMine - integrated development environment
 .idea/
