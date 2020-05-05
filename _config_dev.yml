@@ -13,8 +13,6 @@ url: "http://localhost:4000"
 
 # Build
 
-show_drafts: true
-
 sass:
   style: "full"
 
