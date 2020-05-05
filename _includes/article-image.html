@@ -4,7 +4,9 @@
   <div>
     <img class="img-fluid lazyload"
          data-src="{{ config_article.static }}/{{ article_id }}/{{ config_article.image.path }}/{{ include.src }}{{ config_article.image.suffix }}"
-         alt="{{ include.title | default: '' }}">
+         alt="{{ include.title | default: '' }}"
+         title="{{ include.title | default: '' }}"
+    />
   </div>
   <figcaption>{{ include.title | default: '' }}</figcaption>
 </figure>
