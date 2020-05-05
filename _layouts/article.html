@@ -32,18 +32,18 @@ layout: default
     <!-- Article details -->
     <div class="article-details">
       <ul>
-        <li>
+        <li title="Published date of this article">
           <i class="far fa-calendar-alt"></i>
           <span>{{ page.date | date: '%B %d, %Y' }}</span>
         </li>
-        <li>
+        <li title="Time of reading of this article">
           <i class="far fa-clock"></i>
           <span>
             {{ page.time_reading_minutes }} min
           </span>
         </li>
         {%- if n_authors > 0 -%}
-        <li>
+        <li title="Author(s) of this article">
           <i class="far fa-user"></i>
           <span>
             {{ page.authors | join: ", " }}
@@ -56,16 +56,16 @@ layout: default
     <!-- Article cover -->
     <div class="article-cover">
       <ul>
-        <li class="notranslate">
+        <li title="See the source code of this article">
           <a href="{{ config_article.source }}/{{ article_id }}.md">
             <i class="far fa-file-code"></i>
-            Source
+            Source code
           </a>
         </li>
-        <li>
+        <li title="See the resources of this articles">
           <a href="{{ config_article.static }}/{{ article_id }}">
             <i class="fas fa-code-branch"></i>
-            Dependency
+            Resources
           </a>
         </li>
       </ul>
@@ -84,16 +84,16 @@ layout: default
         {% include page-social-sharing.html %}
       </div>
       <div class="col-6 article-browser">
-        <a href="/blog/articles" title="All articles">
+        <a href="/blog/articles" title="See all articles">
           <i class="fas fa-home"></i>
         </a>
         {%- if page.previous.url -%}
-        <a href="{{ page.previous.url }}" title="Previous article">
+        <a href="{{ page.previous.url }}" title="See the previous article">
           <i class="fas fa-arrow-left"></i>
         </a>
         {%- endif -%}
         {%- if page.next.url -%}
-        <a href="{{ page.next.url }}" title="Next article">
+        <a href="{{ page.next.url }}" title="See the next article">
           <i class="fas fa-arrow-right"></i>
         </a>
         {%- endif -%}
@@ -102,7 +102,7 @@ layout: default
 
     <!-- Article contents -->
     <div class="article-contents">
-      <button id="table-of-contents" class="btn btn-dark">
+      <button id="table-of-contents" class="btn btn-dark" title="See table of contents">
         <b>See contents</b>
       </button>
       <div id="table-of-contents-container" style="display: none;"></div>
@@ -144,16 +144,16 @@ layout: default
         {% include page-social-sharing.html %}
       </div>
       <div class="col-6 article-browser">
-        <a href="/blog/articles" title="All articles">
+        <a href="/blog/articles" title="See all articles">
           <i class="fa fa-home"></i>
         </a>
         {%- if page.previous.url -%}
-        <a href="{{ page.previous.url }}" title="Previous article">
+        <a href="{{ page.previous.url }}" title="See the previous article">
           <i class="fa fa-arrow-left"></i>
         </a>
         {%- endif -%}
         {%- if page.next.url -%}
-        <a href="{{ page.next.url }}" title="Next article">
+        <a href="{{ page.next.url }}" title="See the next article">
           <i class="fa fa-arrow-right"></i>
         </a>
         {%- endif -%}
@@ -163,7 +163,7 @@ layout: default
   </div>
 
   <!-- Article license -->
-  <div class="article-license" title="See license">
+  <div class="article-license" title="See the license">
     <a href="https://creativecommons.org/licenses/by-nc-sa/4.0">
       <i class="cc notranslate">Creative Commons Attribution 4.0 International License:</i>
       <br/>
@@ -193,8 +193,12 @@ layout: default
           <tbody>
           <tr>
             <td rowspan="2">
-              <img class="" src="/static/img/articles/author/{{ author_name }}.jpg"
-                   alt="{{ page.author }}">
+              {%- assign author_avatar_path = '/static/img/articles/author/'  | append: author_name | append: '.jpg' -%}
+              {%- assign author_avatar_path_exist = site.static_files | where: "path", author_avatar_path | first -%}
+              {%- unless author_avatar_path_exist -%}
+                {%- assign author_avatar_path = '/static/img/articles/author/unknown.png' -%}
+              {%- endunless -%}
+              <img src="{{ author_avatar_path }}" alt="picture of {{ author_name }}" title="picture of this author"/>
             </td>
             <td>
               <b>
@@ -212,7 +216,7 @@ layout: default
           </tr>
           <tr>
             <td colspan="2" style="text-align: center">
-              <a href="{{ author.follow_link }}">
+              <a href="{{ author.follow_link }}" title="Follow this author">
                 <br>
                 <button class="btn btn-dark">
                   <b>Follow</b>
@@ -251,7 +255,7 @@ layout: default
 
     <div class="article-list-all">
       <a href="/blog/articles">
-        <button class="btn btn-dark">
+        <button class="btn btn-dark" title="List all articles">
           <b>List all</b>
         </button>
       </a>
