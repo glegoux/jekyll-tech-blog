@@ -36,17 +36,23 @@ layout: default
           <i class="far fa-calendar-alt"></i>
           <span>{{ page.date | date: '%B %d, %Y' }}</span>
         </li>
-        <li title="Time of reading of this article">
+        <li title="Reading time of this article">
           <i class="far fa-clock"></i>
           <span>
             {{ page.time_reading_minutes }} min
           </span>
         </li>
         {%- if n_authors > 0 -%}
-        <li title="Author(s) of this article">
+        <li title="Author{%- if n_authors > 1 -%}s{%- endif -%} of this article">
           <i class="far fa-user"></i>
           <span>
-            {{ page.authors | join: ", " }}
+            {%- for author_name in page.authors -%}
+              {%- assign author = site.data.authors[author_name] -%}
+              <a class="link-strong" href="{{ author.follow_link }}" title="Follow this author">
+                {{ author_name }}
+              </a>
+              {%- unless forloop.last -%},  {%- endunless -%}
+            {%- endfor -%}
           </span>
         </li>
         {%- endif -%}
