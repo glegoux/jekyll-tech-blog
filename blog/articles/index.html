@@ -18,20 +18,20 @@ articles: true
 
   <!-- Articles advanced search -->
   <div id="articles-text-search">
-    <a href="javascript:">
+    <a href="javascript:" title="Launch a search of articles">
       <i class="fa fa-search"></i>
     </a>
     <input placeholder="" type="text"/>
   </div>
 
   <ul class="articles-advanced-search">
-    <li class="articles-archive-button">
+    <li class="articles-archive-button" title="Search a article by published date">
       <a href="javascript:" class="link-strong">
         <i class="fa fa-archive" aria-hidden="true"></i>
         Archives
       </a>
     </li>
-    <li class="articles-categories-button">
+    <li class="articles-categories-button" title="Search a article by category">
       <i class="fa fa-tags" aria-hidden="true"></i>
       <a href="javascript:" class="link-strong">
         Categories
@@ -58,13 +58,13 @@ articles: true
       Subscribe:
     </li>
     <li>
-      <i class="fa fa-rss" aria-hidden="true"></i>
-      <a href="/atom.xml" class="link-strong">
-        Atom
+      <a href="/rss.xml" class="link-strong" title="Subscribe to RSS feed">
+        RSS
       </a>
       |
-      <a href="/rss.xml" class="link-strong">
-        RSS
+      <i class="fa fa-rss" aria-hidden="true"></i>
+      <a href="/atom.xml" class="link-strong" title="Subscribe to Atom feed">
+        Atom
       </a>
     </li>
   </ul>
