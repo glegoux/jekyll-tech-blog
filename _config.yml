@@ -76,6 +76,21 @@ exclude:
   - "README.md"
   - "VERSION"
   - "LICENSE"
+  # force to ignore some files for the watcher (with --watch option) in the Jekyll::Watcher
+  # normally already ignore by `jekyll build` (files starting by .,#,~ and _)
+  # See https://help.github.jp/enterprise/2.11/user/articles/files-that-start-with-an-underscore-are-missing/
+  - ".idea/"
+  - ".git"
+  - ".gitignore"
+  - ".gitattributes"
+  - ".ruby-version"
+  - ".sass-cache"
+  - ".jekyll-metadata"
+  - ".jekyll-cache"
+  - ".jekyll-config-debug.json" # personal file to debug
+  - "_config.yml"
+  - "_config_dev.yml"
+  - "_site/"
 
 # Plugins
 

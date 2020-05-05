@@ -5,7 +5,8 @@
 
 host: "localhost" # overridden by --host option of jekyll serve command line
 port: 4000 # overridden by --port option of jekyll serve command line
-livereload: true # overridden by --livereload option of jekyll serve command line
+
+livereload: false # overridden by --livereload option of jekyll serve command line
 
 # Info
 
