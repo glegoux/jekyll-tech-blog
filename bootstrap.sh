@@ -15,6 +15,7 @@ else
 fi
 
 if ! echo "${PATH}" | grep -q "${PWD}/bin" &> /dev/null; then
+  echo "Add ${PWD}/bin as first entry of your PATH environment variable"
   export PATH="${PWD}/bin:$PATH"
 else
   >&2 echo "WARNING: ${PWD}/bin is already in your PATH environment variable"
