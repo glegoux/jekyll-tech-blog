@@ -43,7 +43,7 @@ layout: default
           </span>
         </li>
         {%- if n_authors > 0 -%}
-        <li title="Author{%- if n_authors > 1 -%}s{%- endif -%} of this article">
+        <li title="Author{%- if n_authors > 1 -%}s{%- endif %} of this article">
           <i class="far fa-user"></i>
           <span>
             {%- for author_name in page.authors -%}
@@ -68,7 +68,7 @@ layout: default
             Source code
           </a>
         </li>
-        <li title="See the resources of this articles">
+        <li title="See the resources of this article">
           <a href="{{ config_article.static }}/{{ article_id }}">
             <i class="fas fa-code-branch"></i>
             Resources
@@ -185,14 +185,14 @@ layout: default
   {%- if n_authors > 0 -%}
   <div class="article-authors">
     <h5>
-      Author{%- if n_authors > 1 -%}s{%- endif -%}
+      Author{%- if n_authors > 1 -%}s{%- endif %}
     </h5>
 
     <hr/>
 
     <div class="row">
       {%- for author_name in page.authors -%}
-      {%- assign author = site.data.authors[author_name] -%}
+      {%- assign author = site.data.authors[author_name] %}
       <div
         class="{% if n_authors == 1 %}w-100 {% endif %}col-xs-12{% if n_authors > 1 %} col-md-6{% endif %}{% if n_authors > 2 %} col-lg-4{% endif %}">
         <table class="article-author">
