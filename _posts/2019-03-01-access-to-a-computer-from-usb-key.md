@@ -2,7 +2,7 @@
 title: "Access to a computer from USB key"
 description: "Somebody with USB key can take control of your computer"
 authors: ["glegoux"]
-time_reading_minutes: "5"
+time_reading_minutes: 5
 category: "Security"
 ---
 
