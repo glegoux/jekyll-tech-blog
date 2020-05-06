@@ -1,10 +1,9 @@
 ---
-title: Gafa vs Batx
-description: What is the difference?
-authors:
-- glegoux
+title: "Gafa vs Batx"
+description: "What is the difference?"
+authors: ["glegoux"]
 time_reading_minutes: 5
-category: Business
+category: "Business"
 ---
 
 The business world is split into 3 regions with the acronyms: **AMER, EMEA, APAC**. But the web and 
