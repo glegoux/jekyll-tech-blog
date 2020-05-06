@@ -2,7 +2,7 @@
 title: "Java ecosystem"
 description: "What is the Java ecosystem from Sun to Oracle?"
 authors: ["glegoux"]
-time_reading_minutes: "10"
+time_reading_minutes: 10
 category: "Software"
 tags: ["Language"]
 ---
