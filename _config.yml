@@ -10,16 +10,8 @@ detach: false
 show_dir_listing: false
 encoding: "utf-8"
 
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "article"
-      article: true
-      comment: true
-
 # GitHub settings
+
 # /!\ Some configuration settings cannot be changed for GitHub Pages sites.
 # See https://help.github.com/en/github/working-with-github-pages/about-github-pages-and-jekyll .
 # These below settings are forced by GitHub.
@@ -35,22 +27,6 @@ gist:
 kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
-# End GitHub settings
-
-# SEO
-
-title: "Software Engineering Blog - Gilles Legoux"
-description: "Personal blog about software engineering"
-author: "Gilles Legoux"
-keywords: "glegoux,Gilles,Legoux,informatics,mathematics"
-logo: "/static/img/icon-iphone.png"
-lang: "en"
-
-# Articles
-
-paginate: 12
-paginate_path: "/blog/articles/:num/"
-permalink: "/blog/articles/:year/:month/:day/:title:output_ext"
 
 # Build
 
@@ -101,3 +77,29 @@ plugins:
   - "jekyll-redirect-from"
   - "jekyll-paginate"
   - "jemoji"
+
+# Layout
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "article"
+      article: true
+      comment: true
+
+# SEO
+
+title: "Software Engineering Blog - Gilles Legoux"
+description: "Personal blog about software engineering"
+author: "Gilles Legoux"
+keywords: "glegoux,Gilles,Legoux,informatics,mathematics"
+logo: "/static/img/icon-iphone.png"
+lang: "en"
+
+# Articles
+
+paginate: 12
+paginate_path: "/blog/articles/:num/"
+permalink: "/blog/articles/:year/:month/:day/:title:output_ext"
