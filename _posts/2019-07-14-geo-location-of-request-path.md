@@ -1,9 +1,9 @@
 ---
-title: Geo-location of request path
-description: How to know for which routers a HTTP request browses?
+title: "Geo-location of request path"
+description: "How to know for which routers a HTTP request browses?"
 authors: ["glegoux"]
 time_reading_minutes: 5
-category: Web
+category: "Web"
 tags: ["Internet", "Network"]
 ---
 
