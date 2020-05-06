@@ -10,3 +10,6 @@ _site/
 
 # RubyMine - integrated development environment
 .idea/
+
+# Backup files
+*.old

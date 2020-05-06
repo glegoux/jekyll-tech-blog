@@ -8,10 +8,10 @@
 
 set -e
 
-cd "$(dirname "$0")"
+cd "$(git rev-parse --show-toplevel)" || exit 1
 
 # arguments
-cover_article="${1}"
+cover_article_path="${1}"
 
 # constants
 declare -r WIDTH=1080
@@ -21,28 +21,28 @@ declare -r HEIGHT
 declare -r EXT="jpg"
 
 # script
-cp "${cover_article}" "${cover_article}"
-new_cover_article="${cover_article%.*}.${EXT}"
-echo "INFO: Transform image from $(basename "${cover_article}") to $(basename "${new_cover_article}")"
+cp "${cover_article_path}" "${cover_article_path}.old"
+new_cover_article_path="${cover_article_path%.*}.${EXT}"
+echo "INFO: Transform image from $(basename "${cover_article_path}") to $(basename "${new_cover_article_path}")"
 
-w="$(identify -format '%w' "${cover_article}")"
-h="$(identify -format '%h' "${cover_article}")"
+w="$(identify -format '%w' "${cover_article_path}")"
+h="$(identify -format '%h' "${cover_article_path}")"
 
 echo "INFO: Initial image format is $w x $h"
 
 if (($(echo "${w} > ${h} * ${RATIO}" | bc -l))); then
   echo "INFO: Crop image in width with ratio ${RATIO}:1"
-  convert "${cover_article}" -crop "$(echo "${h} * ${RATIO}" | bc)x${h}+0+0" "${new_cover_article}"
+  convert "${cover_article_path}" -crop "$(echo "${h} * ${RATIO}" | bc)x${h}+0+0" "${new_cover_article_path}"
 elif (($(echo "${w} < ${h} * ${RATIO}" | bc -l))); then
   echo "INFO: Crop image in height with ratio ${RATIO}:1"
-  convert "${cover_article}" -crop "${w}x$(echo "${w} * 1 / ${RATIO}" | bc)+0+0" "${new_cover_article}"
+  convert "${cover_article_path}" -crop "${w}x$(echo "${w} * 1 / ${RATIO}" | bc)+0+0" "${new_cover_article_path}"
 else
   echo "INFO: Format image is well with ratio ${RATIO}:1"
-  convert "${cover_article}" "${new_cover_article}"
+  convert "${cover_article_path}" "${new_cover_article_path}"
 fi
 
 echo "INFO: Resize image in ${WIDTH}x${HEIGHT} with .${EXT} extension and format"
-convert "${new_cover_article}" -resize "${WIDTH}x${HEIGHT}!" "${new_cover_article}"
+convert "${new_cover_article_path}" -resize "${WIDTH}x${HEIGHT}!" "${new_cover_article_path}"
 
 echo "INFO: Clean image"
-convert -verbose -strip "${new_cover_article}" "${new_cover_article}"
+convert -verbose -strip "${new_cover_article_path}" "${new_cover_article_path}"
