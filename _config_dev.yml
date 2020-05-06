@@ -27,5 +27,5 @@ plugins:
   - "jekyll-redirect-from"
   - "jekyll-paginate"
   - "jemoji"
-   # Only dev
+  # Only dev
   - "jekyll-admin"
