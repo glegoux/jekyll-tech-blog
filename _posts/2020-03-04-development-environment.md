@@ -22,7 +22,7 @@ another physical machine (bare metal), a virtual machine or a container. Because
 
 If you use only a high-level layer for writing applications in `Python`, `Java` or `Ruby` ..., you can use a tool of version management 
 as `Pyenv`,  `Sdkman` and `Rvm`, it is sufficient. Like that you can use your project language in the correct version for your project, 
-directly on your host machine that you be on Windows, WSL, MAC OS, or a Linux distribution and regardless of the environment ecosystem ... 
+directly on your host machine that you be on Windows, WSL, macOS, or a Linux distribution and regardless of the environment ecosystem ... 
 because these languages are cross platform. You need also that related dependencies libraries be installed in dedicated locations, 
 but these tools do that as well. 
 
