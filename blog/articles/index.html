@@ -11,7 +11,7 @@ articles: true
 
     <p class="typewrite notranslate blog-keywords" data-period="1000"
        data-type='["{{ site.data.config.blog.keywords | join: '", "' }}"]'>
-      <span class="blinker"></span>
+    <span class="blinker"></span>
     </p>
 
   </div>
@@ -25,16 +25,16 @@ articles: true
   </div>
 
   <ul class="articles-advanced-search">
-    <li class="articles-archive-button" title="Search an article by published date">
-      <a href="javascript:" class="link-strong">
-        <i class="fa fa-archive" aria-hidden="true"></i>
-        Archives
-      </a>
-    </li>
     <li class="articles-categories-button" title="Search an article by category">
       <i class="fa fa-tags" aria-hidden="true"></i>
       <a href="javascript:" class="link-strong">
         Categories
+      </a>
+    </li>
+    <li class="articles-archive-button" title="Search an article by published date">
+      <a href="javascript:" class="link-strong">
+        <i class="fa fa-archive" aria-hidden="true"></i>
+        Archives
       </a>
     </li>
   </ul>
@@ -74,8 +74,9 @@ articles: true
     <div class="row">
       {%- assign posts = paginator.posts -%}
       {%- for post in posts %}
-      <a href="{{ post.url }}" title="Read this article" class="col-xs-12 col-md-6 col-lg-4" style="display: block">
-          {% include article-card.html %}
+      <a href="{{ post.url }}" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"
+         style="display: block">
+        {% include article-card.html %}
       </a>
       {%- else -%}
       <p>No one available article</p>
