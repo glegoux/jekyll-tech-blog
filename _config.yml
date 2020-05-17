@@ -64,7 +64,7 @@ exclude:
   - ".sass-cache"
   - ".jekyll-metadata"
   - ".jekyll-cache"
-  - ".jekyll-config-debug.json" # personal file to debug
+  - ".jekyll-config-debug.json" # project file to debug
   - "_config.yml"
   - "_config_dev.yml"
   - "_site/"
