@@ -110,7 +110,7 @@ jQuery(document).ready(function () {
     years.forEach(year => {
       archiveContainerElement.append(
         '<div class="search-year-article" data-year="' + year + '">' +
-        '<a href="javascript:">' +
+        '<a href="#">' +
         year +
         '</a></div>');
       let months = Array.from(archiveStructure.get(year)).sort();
@@ -120,7 +120,7 @@ jQuery(document).ready(function () {
         let monthName = moment(month, 'MM').format('MMMM');
         let yearMonth = year + "-" + month;
         monthsUlElement.append(
-          '<li><a href="javascript:">' +
+          '<li><a href="#">' +
           '<span class="search-year-month-article" data-year-month="' + yearMonth + '">' +
           monthName +
           '</span>' +
@@ -181,7 +181,7 @@ jQuery(document).ready(function () {
     categoriesStructure.forEach(category => {
       categoriesUlElement.append(
         '<li class="search-article-category" data-category="' + category + '">' +
-        '<a href="javascript:">' +
+        '<a href="#">' +
         category +
         '</a></li>');
     });
