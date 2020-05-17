@@ -76,7 +76,12 @@ layout: default
       </ul>
     </div>
 
-    <img class="img-fluid lazyload" data-src="/static/img/articles/cover/{{ article_id }}.jpg"
+    {%- assign article_cover_path = "/static/common/posts/" | append: article_id | append: ".jpg" -%}
+    {%- assign article_cover_path_exist = site.static_files | where: "path", article_cover_path | first -%}
+    {%- unless article_cover_path_exist -%}
+      {%- assign article_cover_path = "/static/site/img/default/article-cover.jpg" -%}
+    {%- endunless -%}
+    <img class="img-fluid lazyload" data-src="{{ article_cover_path }}"
          alt="{{ article_id }}" title="Cover of this article"/>
 
   </div>
@@ -198,10 +203,10 @@ layout: default
           <tbody>
           <tr>
             <td rowspan="2">
-              {%- assign author_avatar_path = '/static/img/articles/author/'  | append: author_name | append: '.jpg' -%}
+              {%- assign author_avatar_path = '/static/common/authors/'  | append: author_name | append: '.jpg' -%}
               {%- assign author_avatar_path_exist = site.static_files | where: "path", author_avatar_path | first -%}
               {%- unless author_avatar_path_exist -%}
-                {%- assign author_avatar_path = '/static/img/articles/author/unknown.png' -%}
+                {%- assign author_avatar_path = '/static/site/img/default/author-avatar.png' -%}
               {%- endunless -%}
               <img src="{{ author_avatar_path }}" alt="picture of {{ author_name }}" title="picture of this author"/>
             </td>

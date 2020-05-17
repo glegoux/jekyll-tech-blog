@@ -8,27 +8,27 @@
 <link rel="preconnect" href="https://c.disquscdn.com" crossorigin="anonymous"/>
 {%- endif -%}
 <!-- Preload Font -->
-<link rel="preload" as="font" href="/static/libs/font-awesome/{{ libs_version.font-awesome }}/webfonts/fa-regular-400.woff2" crossorigin="anonymous"/>
-<link rel="preload" as="font" href="/static/libs/font-awesome/{{ libs_version.font-awesome }}/webfonts/fa-brands-400.woff2" crossorigin="anonymous"/>
-<link rel="preload" as="font" href="/static/libs/font-awesome/{{ libs_version.font-awesome }}/webfonts/fa-solid-900.woff2" crossorigin="anonymous"/>
+<link rel="preload" as="font" href="/static/site/libs/font-awesome/{{ libs_version.font-awesome }}/webfonts/fa-regular-400.woff2" crossorigin="anonymous"/>
+<link rel="preload" as="font" href="/static/site/libs/font-awesome/{{ libs_version.font-awesome }}/webfonts/fa-brands-400.woff2" crossorigin="anonymous"/>
+<link rel="preload" as="font" href="/static/site/libs/font-awesome/{{ libs_version.font-awesome }}/webfonts/fa-solid-900.woff2" crossorigin="anonymous"/>
 <!-- Preload CSS and JS -->
-<link rel="preload" as="script" href="/static/libs/smooth-scroll/{{ libs_version.smooth-scroll }}/js/smooth-scroll.min.js"/>
-<link rel="preload" as="script" href="/static/libs/popper/{{ libs_version.popper }}/js/popper.min.js"/>
-<link rel="preload" as="script" href="/static/libs/bootstrap/{{ libs_version.bootstrap }}/js/bootstrap.min.js"/>
-<link rel="preload" as="script" href="/static/libs/moment/{{ libs_version.moment }}/js/moment.min.js"/>
-<link rel="preload" as="script" href="/static/libs/fuse/{{ libs_version.fuse }}/js/fuse.min.js"/>
+<link rel="preload" as="script" href="/static/site/libs/smooth-scroll/{{ libs_version.smooth-scroll }}/js/smooth-scroll.min.js"/>
+<link rel="preload" as="script" href="/static/site/libs/popper/{{ libs_version.popper }}/js/popper.min.js"/>
+<link rel="preload" as="script" href="/static/site/libs/bootstrap/{{ libs_version.bootstrap }}/js/bootstrap.min.js"/>
+<link rel="preload" as="script" href="/static/site/libs/moment/{{ libs_version.moment }}/js/moment.min.js"/>
+<link rel="preload" as="script" href="/static/site/libs/fuse/{{ libs_version.fuse }}/js/fuse.min.js"/>
 
-<link rel="preload" as="style" href="/static/libs/bootstrap/{{ libs_version.bootstrap }}/css/bootstrap.min.css"/>
-<link rel="preload" as="style" href="/static/libs/font-awesome/{{ libs_version.font-awesome }}/css/all.min.css"/>
+<link rel="preload" as="style" href="/static/site/libs/bootstrap/{{ libs_version.bootstrap }}/css/bootstrap.min.css"/>
+<link rel="preload" as="style" href="/static/site/libs/font-awesome/{{ libs_version.font-awesome }}/css/all.min.css"/>
 
-<link rel="preload" as="script" href="/static/js/typing-text.min.js"/>
-<link rel="preload"  as="style" href="/static/css/main.css"/>
+<link rel="preload" as="script" href="/static/site/js/typing-text.min.js"/>
+<link rel="preload"  as="style" href="/static/site/css/main.css"/>
 {%- if page.article -%}
-<link rel="preload" as="script" href="/static/js/article.js"/>
-<link rel="preload" as="style" href="/static/css/article.css"/>
+<link rel="preload" as="script" href="/static/site/js/article.js"/>
+<link rel="preload" as="style" href="/static/site/css/article.css"/>
 {%- elsif page.articles -%}
-<link rel="preload" as="script" href="/static/js/articles.js"/>
-<link rel="preload" as="style" href="/static/css/articles.css"/>
+<link rel="preload" as="script" href="/static/site/js/articles.js"/>
+<link rel="preload" as="style" href="/static/site/css/articles.css"/>
 {%- else -%}
 <link rel="preload" as="script" href="/{{ page.path | replace: '.html', '.js' }}"/>
 <link rel="preload" as="style" href="/{{ page.path | replace: '.html', '.css' }}"/>

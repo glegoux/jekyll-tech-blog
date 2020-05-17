@@ -30,4 +30,4 @@ _posts/* linguist-vendored
 _drafts/* linguist-vendored
 static/pages/* linguist-vendored
 # third-party libraries
-static/libs/* linguist-vendored
+static/site/libs/* linguist-vendored

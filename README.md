@@ -5,8 +5,8 @@ You can use this static website as a template to build your own blog.
 <table>
   <tr>
     <td>
-        <img src="https://github.com/glegoux/glegoux.github.io/blob/master/static/img/glegoux-com.jpg?raw=true"
-             alt="glegoux.com blof" />
+        <img src="https://github.com/glegoux/glegoux.github.io/blob/master/static/site/img/meta/glegoux-com.jpg?raw=true"
+             alt="glegoux.com blog features" />
     </td>
   </tr>
 </table>

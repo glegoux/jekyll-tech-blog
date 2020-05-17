@@ -4,8 +4,13 @@
     <div class="article-card">
 
       <!-- Article cover -->
+      {%- assign article_cover_path = "/static/common/posts/" | append: article_id | append: ".jpg" -%}
+      {%- assign article_cover_path_exist = site.static_files | where: "path", article_cover_path | first -%}
+      {%- unless article_cover_path_exist -%}
+        {%- assign article_cover_path = "/static/site/img/default/article-cover.jpg" -%}
+      {%- endunless -%}
       <div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/static/img/articles/cover/{{article_id}}.jpg"
+        <img class="img-fluid lazyload" data-src="{{ article_cover_path }}"
              alt="{{article_id}}"/>
       </div>
 

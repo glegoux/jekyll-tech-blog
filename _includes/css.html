@@ -1,13 +1,13 @@
 {%- assign libs_version = site.data.config.libs.version -%}
 <!-- Third-party CSS -->
-<link type="text/css" rel="stylesheet" href="/static/libs/bootstrap/{{ libs_version.bootstrap }}/css/bootstrap.min.css"/>
-<link type="text/css" rel="stylesheet" href="/static/libs/font-awesome/{{ libs_version.font-awesome }}/css/all.min.css"/>
+<link type="text/css" rel="stylesheet" href="/static/site/libs/bootstrap/{{ libs_version.bootstrap }}/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet" href="/static/site/libs/font-awesome/{{ libs_version.font-awesome }}/css/all.min.css"/>
 <!-- Local CSS -->
-<link type="text/css" rel="stylesheet" href="/static/css/main.css"/>
+<link type="text/css" rel="stylesheet" href="/static/site/css/main.css"/>
 {%- if page.article -%}
-<link type="text/css" rel="stylesheet" href="/static/css/article.css"/>
+<link type="text/css" rel="stylesheet" href="/static/site/css/article.css"/>
 {%- elsif page.articles -%}
-<link type="text/css" rel="stylesheet" href="/static/css/articles.css"/>
+<link type="text/css" rel="stylesheet" href="/static/site/css/articles.css"/>
 {%- else -%}
 <link type="text/css" rel="stylesheet" href="/{{ page.path | replace: '.html', '.css' }}"/>
 {%- endif -%}
