@@ -1,0 +1,17 @@
+name: Publish static website
+
+on:
+  push:
+    branches: [ develop ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install project
+    - name: Show versions
+    - name: Build static website
+      run: |
+        echo Add other actions to build,
+        echo test, and deploy your project.
