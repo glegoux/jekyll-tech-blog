@@ -50,9 +50,9 @@ exclude:
 plugins:
   - "jekyll-sitemap"
   - "jekyll-seo-tag"
-  - "jekyll-github-metadata"
-  - "jekyll-redirect-from"
   - "jekyll-paginate"
+  - "jekyll-mentions"
+  - "jekyll-redirect-from"
   - "jemoji"
 
 # Redirect

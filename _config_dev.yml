@@ -23,9 +23,9 @@ plugins:
   # Need to repeat plugins for production mode here
   - "jekyll-sitemap"
   - "jekyll-seo-tag"
-  - "jekyll-github-metadata"
-  - "jekyll-redirect-from"
   - "jekyll-paginate"
+  - "jekyll-mentions"
+  - "jekyll-redirect-from"
   - "jemoji"
   # Only development mode
   - "jekyll-admin"
