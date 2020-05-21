@@ -17,7 +17,7 @@ update:
 
 .PHONY: build
 build:
-	@bundle exec jekyll build --config "_config.yml"
+	@JEKYLL_ENV=production bundle exec jekyll build --config "_config.yml"
 
 .PHONY: run
 run:

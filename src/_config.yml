@@ -1,0 +1,4 @@
+# Site configuration for GitHub pages
+
+include:
+  - "_static" # project folder for static files

@@ -45,6 +45,7 @@ sass:
 
 include:
   - "_static" # project folder for static files
+  - "_config.yml" # embedded config for GitHub pages
 
 exclude:
   # Force to ignore some files for the watcher (with --watch option) in the Jekyll::Watcher, it is
