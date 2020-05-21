@@ -9,13 +9,36 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+    - name: Show environment
+      run: |
+        echo "Operating System: $(cat /etc/issue.net)"
+        echo "Working Directory: $(pwd)"
+        echo "Shell: $SHELL"
     - name: Install project
       run: |
-        echo Install project
+        echo "Install rvm:"
+        gpg --keyserver hkp://pool.sks-keyservers.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+        curl -sSL https://get.rvm.io | bash -s stable
+        echo "Install ruby:"
+        source ~/.profile
+        rvm install "$(cat .ruby-version)"
+        echo "Use ruby with rvm:"
+        source bootstrap.sh
+        echo "Install ruby dependencies:"
+        make install
     - name: Show versions
       run: |
-        echo versions
+        source ~/.profile
+        echo "Context ecosystem:"
+        echo "make version: $(make --version | head -1)"
+        echo "bash version: $(bash --version | head -1)"
+        echo "rvm version: $(rvm --version)"
+        echo "Ruby ecosystem:"
+        echo "ruby version: $(ruby --version)"
+        echo "bundle version: $(bundle --version)"
+        echo "jekyll version: $(jekyll --version 2> /dev/null)"
+        echo -e "gem version:\n $(gem list)"
     - name: Build static website
       run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
+        source ~/.profile
+        make build

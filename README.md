@@ -1,5 +1,7 @@
 # glegoux.com
 
+![Publish static website](https://github.com/glegoux/glegoux.github.io/workflows/Publish%20static%20website/badge.svg)
+
 You can use this static website as a template to build your own blog.
 
 <table>
