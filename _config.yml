@@ -55,6 +55,11 @@ plugins:
   - "jekyll-paginate"
   - "jemoji"
 
+# Redirect
+
+redirect_from:
+  json: false
+
 # Layout
 
 defaults:
