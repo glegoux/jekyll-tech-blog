@@ -10,7 +10,11 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Install project
+      run: |
+        echo Install project
     - name: Show versions
+      run: |
+        echo versions
     - name: Build static website
       run: |
         echo Add other actions to build,
