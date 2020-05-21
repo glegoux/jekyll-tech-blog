@@ -83,5 +83,5 @@ lang: "en"
 # Articles
 
 paginate: 12
-paginate_path: "/blog/articles/:num/"
+paginate_path: "/blog/articles/page/:num/"
 permalink: "/blog/articles/:year/:month/:day/:title:output_ext"
