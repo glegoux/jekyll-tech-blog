@@ -1,0 +1,7 @@
+---
+layout: null
+sitemap: false
+---
+{%- if jekyll.environment == 'development' -%}
+{{ site | jsonify  }}
+{%- endif -%}

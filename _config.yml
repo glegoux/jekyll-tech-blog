@@ -30,12 +30,12 @@ kramdown:
 
 # Build
 
-source: "."
-data_dir: "./_data"
-layouts_dir: "./_layouts"
-includes_dir: "./_includes"
-plugins_dir: "./_plugins"
-destination: "./_site"
+source: "src"
+data_dir: "_data"
+layouts_dir: "_layouts"
+includes_dir: "_includes"
+plugins_dir: "_plugins"
+destination: "dest"
 
 show_drafts: false
 
@@ -43,31 +43,17 @@ sass:
   sass_dir: "_sass"
   style: "compressed"
 
+include:
+  - "_static" # project folder for static files
+
 exclude:
-  - "bin/"
-  - "CNAME"
-  - "Makefile"
-  - "Gemfile"
-  - "Gemfile.lock"
-  - "README.md"
-  - "VERSION"
-  - "LICENSE"
-  - "bootstrap.sh"
   # Force to ignore some files for the watcher (with --watch option) in the Jekyll::Watcher, it is
   # normally already ignore by `jekyll build` (files starting by ., #, ~ and _).
   # See https://help.github.jp/enterprise/2.11/user/articles/files-that-start-with-an-underscore-are-missing/
-  - ".idea/"
-  - ".git"
-  - ".gitignore"
-  - ".gitattributes"
-  - ".ruby-version"
   - ".sass-cache"
   - ".jekyll-metadata"
   - ".jekyll-cache"
-  - ".jekyll-config-debug.json" # project file to debug
-  - "_config.yml"
-  - "_config_dev.yml"
-  - "_site/"
+  - ".jekyll-config-debug.json" # project file for debugging
 
 # Plugins
 
@@ -96,7 +82,7 @@ title: "Software Engineering Blog - Gilles Legoux"
 description: "Personal blog about software engineering"
 author: "Gilles Legoux"
 keywords: "glegoux,Gilles,Legoux,informatics,mathematics"
-logo: "/static/img/icon-iphone.png"
+logo: "/_static/img/icon-iphone.png"
 lang: "en"
 
 # Articles

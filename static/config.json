@@ -1,8 +1,0 @@
----
-layout: null
-permalink: /config.json
-sitemap: false
----
-{%- if jekyll.environment == 'development' -%}
-{{ site | jsonify  }}
-{%- endif -%}
