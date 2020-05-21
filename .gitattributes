@@ -31,7 +31,5 @@ src/_drafts/* linguist-vendored
 src/_static/about/* linguist-vendored
 src/_static/blog/* linguist-vendored
 src/_static/contact/* linguist-vendored
-src/_static/error/* linguist-vendored
-src/_static/home/* linguist-vendored
 # third-party libraries
 src/_static/site/libs/* linguist-vendored
