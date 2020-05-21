@@ -1,0 +1,12 @@
+# Site configuration for GitHub Pages
+# See https://help.github.com/en/github/working-with-github-pages/about-github-pages-and-jekyll
+#
+# Note: To bypass Jekyll processing for GitHub Pages, you can use .nojekyll.
+# See https://github.blog/2009-12-29-bypassing-jekyll-on-github-pages/
+
+exclude:
+  - "CNAME"
+  - "README.md"
+
+include:
+  - "_static" # project folder for static files

@@ -3,11 +3,11 @@
 
 # Server
 
-# Overridden by --host <value> of jekyll serve command line
+# Overridden by --host <value> command line option
 host: "localhost"
-# Overridden by --port <value> of jekyll serve command line
+# Overridden by --port <value> command line option
 port: 4000
-# Overridden by --livereload of jekyll serve command line
+# Overridden by --livereload command line option
 livereload: false
 
 url: "http://localhost:4000"
@@ -20,12 +20,12 @@ sass:
 # Plugins
 
 plugins:
-  # Need to repeat plugins for prod here
+  # Need to repeat plugins for production mode here
   - "jekyll-sitemap"
   - "jekyll-seo-tag"
   - "jekyll-github-metadata"
   - "jekyll-redirect-from"
   - "jekyll-paginate"
   - "jemoji"
-  # Only dev
+  # Only development mode
   - "jekyll-admin"

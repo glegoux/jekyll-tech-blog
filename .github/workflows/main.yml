@@ -43,6 +43,7 @@ jobs:
       run: |
         source ~/.profile
         make build
+        cp .github/files/* dest/
     - name: Deploy static website
       run: |
         git add --force dest/
