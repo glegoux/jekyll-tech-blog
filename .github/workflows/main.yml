@@ -55,6 +55,6 @@ jobs:
         mv dest/* .
         git add -A
         git config user.email ""
-        git config user.name "GitHub action"
-        git commit -m "Deploy static website" --author="GitHub action <>" --quiet
+        git config user.name "GitHub Actions"
+        git commit -m "Deploy static website" --author="GitHub Actions <>" --quiet
         git push
