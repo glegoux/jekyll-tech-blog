@@ -39,6 +39,7 @@ jobs:
         cp .github/files/* dest/
     - name: Deploy static website
       run: |
+        cat "${{ secrets.PRIVATE_SSH_KEY }}" > ~/.ssh/id_rsa
         git add --force dest/
         git stash --keep-index --include-untracked
         git stash save -m "Deploy static website"

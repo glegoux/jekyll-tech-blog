@@ -2,7 +2,7 @@ SHELL = /usr/bin/env bash
 
 .PHONY: usage
 usage:
-	@echo "usage install update build run run-dev run-debug"
+	@echo "usage install update build test run run-dev run-debug"
 
 .PHONY: all
 all: update run
@@ -18,6 +18,10 @@ update:
 .PHONY: build
 build:
 	@JEKYLL_ENV=production bundle exec jekyll build --config "_config.yml"
+
+.PHONY: test
+test:
+	@JEKYLL_ENV=production ./test/run_tests.sh
 
 .PHONY: run
 run:
