@@ -13,6 +13,7 @@ jobs:
       run: |
         echo "Operating System: $(cat /etc/issue.net)"
         echo "Working Directory: $(pwd)"
+        echo "User: $(id)"
         echo "Shell: $SHELL"
     - uses: ruby/setup-ruby@v1 # use .ruby-version
     - name: Install project
