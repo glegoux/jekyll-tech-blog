@@ -15,15 +15,8 @@ jobs:
         echo "Working Directory: $(pwd)"
         echo "Shell: $SHELL"
     - name: Install project
+    - uses: ruby/setup-ruby@v1 # use .ruby-version
       run: |
-        echo "** Install rvm:"
-        gpg --keyserver hkp://pool.sks-keyservers.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
-        curl -sSL https://get.rvm.io | bash -s stable
-        echo "** Install ruby:"
-        source ~/.profile
-        rvm install "$(cat .ruby-version)"
-        echo "** Use ruby with rvm:"
-        source bootstrap.sh
         echo "** Install ruby dependencies:"
         make install
     - name: Show versions
@@ -33,7 +26,6 @@ jobs:
         echo "git version: $(git --version)"
         echo "make version: $(make --version | head -1)"
         echo "bash version: $(bash --version | head -1)"
-        echo "rvm version: $(rvm --version)"
         echo "** Ruby ecosystem:"
         echo "ruby version: $(ruby --version)"
         echo "bundle version: $(bundle --version)"
