@@ -47,6 +47,8 @@ jobs:
         git stash pop --quiet
         mv dest/* .
         git add -A
+        cat "${{ secrets.PRIVATE_SSH_KEY }}" > ~/.ssh/id_rsa
+        git config url."git@github.com:".insteadOf "https://github.com/"
         git config user.email ""
         git config user.name "GitHub Actions"
         git commit -m "Deploy static website" --author="GitHub Actions <>" --quiet
