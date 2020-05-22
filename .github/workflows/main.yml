@@ -48,6 +48,7 @@ jobs:
         git stash pop --quiet
         mv dest/* .
         git add -A
+        # Use ssh to push to master branch
         mkdir -p ~/.ssh/
         echo "${{ secrets.PRIVATE_SSH_KEY }}" > ~/.ssh/id_rsa
         git config url."git@github.com:".insteadOf "https://github.com/"
