@@ -7,9 +7,8 @@ sitemap: false
 # For all web spiders/crawlers/robots and the indexing in the search engines
 User-Agent: *
 Crawl-delay: 1
-Disallow: /config.txt
+Disallow: /config.json
 Disallow: /404.html
 Disallow: /manifest.json
 Disallow: /search.json
-Disallow: /redirects.json
 Sitemap: {{ site.url }}/sitemap.xml
