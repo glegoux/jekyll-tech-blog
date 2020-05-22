@@ -51,6 +51,7 @@ jobs:
         # Use ssh to push to master branch
         mkdir -p ~/.ssh/
         echo "${{ secrets.PRIVATE_SSH_KEY }}" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
         git config url."git@github.com:".insteadOf "https://github.com/"
         git config user.email ""
         git config user.name "GitHub Actions"
