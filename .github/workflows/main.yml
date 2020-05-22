@@ -14,8 +14,8 @@ jobs:
         echo "Operating System: $(cat /etc/issue.net)"
         echo "Working Directory: $(pwd)"
         echo "Shell: $SHELL"
-    - name: Install project
     - uses: ruby/setup-ruby@v1 # use .ruby-version
+    - name: Install project
       run: |
         echo "** Install ruby dependencies:"
         make install
