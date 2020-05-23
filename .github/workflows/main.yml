@@ -37,9 +37,23 @@ jobs:
         source ~/.profile
         make build
         cp .github/files/* dest/
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '10.x'
+    - name: Test project
+      run: |
+        echo "** Install test dependencies:"
+        npm install -global stylelint
+        sudo apt install jq
+        echo "** Show test versions:"
+        echo "node version: $(node --version)"
+        echo "npm version: $(npm --version)"
+        echo "stylelint version: $(npx stylelint --version)"
+        echo "jq version: $(jq --version)"
+        echo "** Run:"
+        make test
     - name: Deploy static website
       run: |
-        cat "${{ secrets.PRIVATE_SSH_KEY }}" > ~/.ssh/id_rsa
         git add --force dest/
         git stash --keep-index --include-untracked
         git stash save -m "Deploy static website"
