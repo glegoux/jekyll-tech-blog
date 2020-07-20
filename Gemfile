@@ -2,7 +2,7 @@
 source 'https://rubygems.org'
 ruby File.read('.ruby-version', mode: 'rb').chomp
 
-gem 'jekyll', '3.8.5'
+gem 'jekyll', '4.1.1'
 
 # Jekyll plugins
 group :jekyll_plugins do
@@ -18,11 +18,11 @@ group :jekyll_plugins do
 end
 
 # Others gems
-gem 'kramdown', '1.17.0'
+gem 'kramdown', '2.1'
 gem 'liquid', '4.0.3'
 gem 'minima', '2.5.1'
 gem 'nokogiri', '1.10.9'
-gem 'rouge', '3.13.0'
+gem 'rouge', '3.0'
 gem 'safe_yaml', '1.0.5'
 gem 'sass', '3.7.4'
 gem 'html-pipeline', '2.12.3'
