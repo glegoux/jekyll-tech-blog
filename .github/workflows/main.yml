@@ -58,12 +58,12 @@ jobs:
         git stash --keep-index --include-untracked
         git stash save -m "Deploy static website"
         git fetch --all
-        git checkout master
+        git checkout gh-pages
         git rm -rf --quiet .
         git stash pop --quiet
         mv dest/* .
         git add -A
-        # Use ssh to push to master branch
+        # Use ssh to push to gh-pages branch
         mkdir -p ~/.ssh/
         echo "${{ secrets.PRIVATE_SSH_KEY }}" > ~/.ssh/id_rsa
         chmod 600 ~/.ssh/id_rsa
