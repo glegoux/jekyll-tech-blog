@@ -22,7 +22,7 @@
       content="glegoux,Gilles,Legoux,informatics,mathematics,software,engineer,Web,"/>
 <!-- SEO -->
 <!-- Begin Jekyll SEO tag v2.6.1 -->
-<meta name="generator" content="Jekyll v3.8.5" />
+<meta name="generator" content="Jekyll v4.1.1" />
 <meta property="og:title" content="Geo-location of request path" />
 <meta name="author" content="glegoux" />
 <meta property="og:locale" content="en" />
@@ -34,7 +34,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-07-14T00:00:00+00:00" />
 <script type="application/ld+json">
-{"description":"How to know for which routers a HTTP request browses?","@type":"BlogPosting","url":"https://glegoux.com/blog/articles/2019/07/14/geo-location-of-request-path.html","headline":"Geo-location of request path","datePublished":"2019-07-14T00:00:00+00:00","dateModified":"2019-07-14T00:00:00+00:00","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://glegoux.com/_static/img/icon-iphone.png"},"name":"glegoux"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://glegoux.com/blog/articles/2019/07/14/geo-location-of-request-path.html"},"author":{"@type":"Person","name":"glegoux"},"@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","description":"How to know for which routers a HTTP request browses?","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://glegoux.com/_static/img/icon-iphone.png"},"name":"glegoux"},"headline":"Geo-location of request path","dateModified":"2019-07-14T00:00:00+00:00","datePublished":"2019-07-14T00:00:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://glegoux.com/blog/articles/2019/07/14/geo-location-of-request-path.html"},"author":{"@type":"Person","name":"glegoux"},"url":"https://glegoux.com/blog/articles/2019/07/14/geo-location-of-request-path.html","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <!-- Article cover social sharing --><meta property="og:image" content="https://glegoux.com/_static/common/posts/2019-07-14-geo-location-of-request-path.jpg"/>
   <!-- Preconnect -->
@@ -347,22 +347,22 @@
   <figcaption>Request path from your laptop to web server</figcaption>
 </figure>
 
-<p>Internet is a network of routers. When your web browser is sending one HTTP request your computer uses by default the destination <code class="highlighter-rouge">0.0.0.0</code> if no one sub-network matches with your original destination IP address in its route table.</p>
+<p>Internet is a network of routers. When your web browser is sending one HTTP request your computer uses by default the destination <code class="language-plaintext highlighter-rouge">0.0.0.0</code> if no one sub-network matches with your original destination IP address in its route table.</p>
 
-<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>route <span class="nt">-n</span>
+<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span> route <span class="nt">-n</span>
 <span class="go">Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
 0.0.0.0         192.168.1.254   0.0.0.0         UG    600    0        0 wlp6s0
 </span></code></pre></div></div>
 
-<p>Here the gateway <code class="highlighter-rouge">192.168.1.254</code>  is my Internet box related to network interface <code class="highlighter-rouge">wlp6s0</code>.</p>
+<p>Here the gateway <code class="language-plaintext highlighter-rouge">192.168.1.254</code>  is my Internet box related to network interface <code class="language-plaintext highlighter-rouge">wlp6s0</code>.</p>
 
-<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>nslookup 192.168.1.254
+<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span> nslookup 192.168.1.254
 <span class="go">Server:		127.0.1.1
 </span><span class="gp">Address:	127.0.1.1#</span>53
 <span class="go">name = bbox.lan.
 </span></code></pre></div></div>
 
-<p>Your request is sent to box of your Internet Service Provider (ISP), for me it is a French ISP: Bouygues Telecom. Leaving your Local Area Network (LAN) to the Wide Area Network (WAN) of Internet, thanks to  Network Address Translation  (NAT), your box replaces IP address source in the header of your HTTP request (equals to your private IP, see <code class="highlighter-rouge">ifconfig wlp6s0</code>) by its public IP address (see <code class="highlighter-rouge">dig +short myip.opendns.com @resolver1.opendns.com</code>), and keeps in memory this matching only for this request in order to it comes from your computer by doing reverse translation.</p>
+<p>Your request is sent to box of your Internet Service Provider (ISP), for me it is a French ISP: Bouygues Telecom. Leaving your Local Area Network (LAN) to the Wide Area Network (WAN) of Internet, thanks to  Network Address Translation  (NAT), your box replaces IP address source in the header of your HTTP request (equals to your private IP, see <code class="language-plaintext highlighter-rouge">ifconfig wlp6s0</code>) by its public IP address (see <code class="language-plaintext highlighter-rouge">dig +short myip.opendns.com @resolver1.opendns.com</code>), and keeps in memory this matching only for this request in order to it comes from your computer by doing reverse translation.</p>
 
 <p>The Time to live (TTL) of your request allows to know how many maximally your request can cross routers before arriving at destination. It prevents infinite cycle of routers in the network, by default a value of 64 is recommended depending of diameter of Internet. By modifying this value from 1 to N, you can get the IP address of each router on the path of your request: it will be the IP source of the response of your request HTTP.</p>
 
@@ -375,7 +375,7 @@
 
 <p>For example, you can get TTL minimum by successive ping commands, see details in <a href="https://github.com/glegoux/glegoux.com/blob/master/articles/6PmiK7b/n_routers.sh">n_routers.sh</a> bash script. Each router must decrement TTL value and if TTL is 0, it refuses to transmit message. The minimum TTL is length path in the network to reach the server (by excluding source machine for number of nodes or is directly number of edges). Here one time to live of 4 is insufficient to reach glegoux.com from my machine location:</p>
 
-<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>ping <span class="nt">-c</span> 1 <span class="nt">-t</span> 4 glegoux.com
+<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span> ping <span class="nt">-c</span> 1 <span class="nt">-t</span> 4 glegoux.com
 <span class="go">PING glegoux.com (195.164.48.181) 56(84) bytes of data.
 From 10.125.135.205 icmp_seq=1 Time to live exceeded
 
@@ -383,9 +383,9 @@ From 10.125.135.205 icmp_seq=1 Time to live exceeded
 1 packets transmitted, 0 received, +1 errors, 100% packet loss, time 0ms
 </span></code></pre></div></div>
 
-<p>This is valid for outward network path your TTL must be sufficient, you can see your current TTL <code class="highlighter-rouge">cat /proc/sys/net/ipv4/ip_default_ttl</code> or with <code class="highlighter-rouge">ping -c 1 localhost</code> (for Linux default value is 64), and change that without persistence <code class="highlighter-rouge">sudo sysctl net.ipv4.ip_default_ttl=128</code>. Targeted server must have also sufficient TTL for return network path, this value is decremented (until value 56 here, but we don’t know initial value a priori):</p>
+<p>This is valid for outward network path your TTL must be sufficient, you can see your current TTL <code class="language-plaintext highlighter-rouge">cat /proc/sys/net/ipv4/ip_default_ttl</code> or with <code class="language-plaintext highlighter-rouge">ping -c 1 localhost</code> (for Linux default value is 64), and change that without persistence <code class="language-plaintext highlighter-rouge">sudo sysctl net.ipv4.ip_default_ttl=128</code>. Targeted server must have also sufficient TTL for return network path, this value is decremented (until value 56 here, but we don’t know initial value a priori):</p>
 
-<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>ping <span class="nt">-c</span> 1 glegoux.com
+<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span> ping <span class="nt">-c</span> 1 glegoux.com
 <span class="go">PING glegoux.com (195.164.48.181) 56(84) bytes of data.
 64 bytes from 10.125.135.205.rev.poneytelecom.eu (10.125.135.205): icmp_seq=1 ttl=56 time=13.8 ms
 
@@ -394,7 +394,7 @@ From 10.125.135.205 icmp_seq=1 Time to live exceeded
 rtt min/avg/max/mdev = 13.821/13.821/13.821/0.000 ms
 </span></code></pre></div></div>
 
-<p>While ping command uses ICMP protocol, the system command  <code class="highlighter-rouge">traceroute</code> realizes that directly with TCP protocol more easily. If there are stars instead of one IP address it means router refused to give its identity.</p>
+<p>While ping command uses ICMP protocol, the system command  <code class="language-plaintext highlighter-rouge">traceroute</code> realizes that directly with TCP protocol more easily. If there are stars instead of one IP address it means router refused to give its identity.</p>
 
 <p>There is no rule to guarantee that outward path and return path are identical. This is sometimes useful to get traceroute from both ends of your network. Here I am considering only outward path.</p>
 
@@ -419,7 +419,7 @@ rtt min/avg/max/mdev = 13.821/13.821/13.821/0.000 ms
 
 <p>But an constant update and smart analysis of the network is required to locate any IP address (IPv4 or IPv6), because of dynamic IP addresses and moving connected objects for instance in the Internet of Things (IoT) or mobile networks. In addition, this location could not be too precised to respect private life of each Internet surfer, even if this one shares its location via its web browser.</p>
 
-<p>With this <a href="https://github.com/glegoux/articles-glegoux-com/tree/master/articles/2019-07-14-geo-location-of-request-path/code">Proof of Concept (PoC)</a>, you can run <code class="highlighter-rouge">get_route.sh glegoux.com</code> to get IP locations in csv file <code class="highlighter-rouge">route.csv</code> and see the result via Google Maps (just <a href="https://developers.google.com/maps/documentation/javascript/get-api-key">get your own API token</a>) and a python web server by executing <code class="highlighter-rouge">httpserver.sh</code> and by visualizing <code class="highlighter-rouge">index.html</code> in your favorite web browser.</p>
+<p>With this <a href="https://github.com/glegoux/articles-glegoux-com/tree/master/articles/2019-07-14-geo-location-of-request-path/code">Proof of Concept (PoC)</a>, you can run <code class="language-plaintext highlighter-rouge">get_route.sh glegoux.com</code> to get IP locations in csv file <code class="language-plaintext highlighter-rouge">route.csv</code> and see the result via Google Maps (just <a href="https://developers.google.com/maps/documentation/javascript/get-api-key">get your own API token</a>) and a python web server by executing <code class="language-plaintext highlighter-rouge">httpserver.sh</code> and by visualizing <code class="language-plaintext highlighter-rouge">index.html</code> in your favorite web browser.</p>
 
 <figure>
   <div>
@@ -581,42 +581,42 @@ rtt min/avg/max/mdev = 13.821/13.821/13.821/0.000 ms
     <h5>Also read</h5>
 
     <div class="row">
-<a href="/blog/articles/2019/01/21/getting-started.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
+<a href="/blog/articles/2019/03/23/kerberos-in-5-minutes.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 
       <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/common/posts/2019-01-21-getting-started.jpg" alt="2019-01-21-getting-started">
+        <img class="img-fluid lazyload" data-src="/_static/common/posts/2019-03-23-kerberos-in-5-minutes.jpg" alt="2019-03-23-kerberos-in-5-minutes">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          Getting Started
+          Kerberos in 5 minutes
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          Markdown is a easy-to-use syntax for writing text on this blog.
+          Kerberos is an authentication protocol for trusted hosts on untrusted networks.
         </div>
 
         <!-- Article categories -->
         <div class="article-category">
           <ul>
-            <li>Methodology</li>
+            <li>Security</li>
           </ul>
         </div>
 
         <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>January 21, 2019</span>
+          <span>March 23, 2019</span>
         </div>
         <!-- Article reading time -->
         <div class="reading-time">
           <i class="far fa-clock"></i>
-          <span>10 min</span>
+          <span>5 min</span>
         </div>
       </div>
 
@@ -665,37 +665,37 @@ rtt min/avg/max/mdev = 13.821/13.821/13.821/0.000 ms
     </div>
 </div>
 
-</a><a href="/blog/articles/2019/02/14/how-to-quote-sources.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
+</a><a href="/blog/articles/2019/03/01/access-to-a-computer-from-usb-key.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 
       <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/common/posts/2019-02-14-how-to-quote-sources.jpg" alt="2019-02-14-how-to-quote-sources">
+        <img class="img-fluid lazyload" data-src="/_static/common/posts/2019-03-01-access-to-a-computer-from-usb-key.jpg" alt="2019-03-01-access-to-a-computer-from-usb-key">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          How to quote sources
+          Access to a computer from USB key
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          Current standards and rules to respect in order to quote sources.
+          Somebody with USB key can take control of your computer
         </div>
 
         <!-- Article categories -->
         <div class="article-category">
           <ul>
-            <li>Methodology</li>
+            <li>Security</li>
           </ul>
         </div>
 
         <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>February 14, 2019</span>
+          <span>March 01, 2019</span>
         </div>
         <!-- Article reading time -->
         <div class="reading-time">

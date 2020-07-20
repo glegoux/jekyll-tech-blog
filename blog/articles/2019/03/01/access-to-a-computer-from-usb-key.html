@@ -22,7 +22,7 @@
       content="glegoux,Gilles,Legoux,informatics,mathematics,software,engineer,Security,"/>
 <!-- SEO -->
 <!-- Begin Jekyll SEO tag v2.6.1 -->
-<meta name="generator" content="Jekyll v3.8.5" />
+<meta name="generator" content="Jekyll v4.1.1" />
 <meta property="og:title" content="Access to a computer from USB key" />
 <meta name="author" content="glegoux" />
 <meta property="og:locale" content="en" />
@@ -34,7 +34,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-03-01T00:00:00+00:00" />
 <script type="application/ld+json">
-{"description":"Somebody with USB key can take control of your computer","@type":"BlogPosting","url":"https://glegoux.com/blog/articles/2019/03/01/access-to-a-computer-from-usb-key.html","headline":"Access to a computer from USB key","datePublished":"2019-03-01T00:00:00+00:00","dateModified":"2019-03-01T00:00:00+00:00","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://glegoux.com/_static/img/icon-iphone.png"},"name":"glegoux"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://glegoux.com/blog/articles/2019/03/01/access-to-a-computer-from-usb-key.html"},"author":{"@type":"Person","name":"glegoux"},"@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","description":"Somebody with USB key can take control of your computer","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://glegoux.com/_static/img/icon-iphone.png"},"name":"glegoux"},"headline":"Access to a computer from USB key","dateModified":"2019-03-01T00:00:00+00:00","datePublished":"2019-03-01T00:00:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://glegoux.com/blog/articles/2019/03/01/access-to-a-computer-from-usb-key.html"},"author":{"@type":"Person","name":"glegoux"},"url":"https://glegoux.com/blog/articles/2019/03/01/access-to-a-computer-from-usb-key.html","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <!-- Article cover social sharing --><meta property="og:image" content="https://glegoux.com/_static/common/posts/2019-03-01-access-to-a-computer-from-usb-key.jpg"/>
   <!-- Preconnect -->
@@ -348,7 +348,7 @@
 
 <p>With a bootable USB key on Ubuntu, you can change the password of the target computer and recover its file system.</p>
 
-<p>First, plug your USB drive into the target computer, choose your key as the boot device for the target computer to boot to the Ubuntu system on your USB drive. On a DELL computer, press <code class="highlighter-rouge">F12</code> to access this selection. This information is visible on the welcome screen of the manufacturer of your computer.</p>
+<p>First, plug your USB drive into the target computer, choose your key as the boot device for the target computer to boot to the Ubuntu system on your USB drive. On a DELL computer, press <code class="language-plaintext highlighter-rouge">F12</code> to access this selection. This information is visible on the welcome screen of the manufacturer of your computer.</p>
 
 <figure>
   <div>
@@ -366,7 +366,7 @@
   <figcaption>Advanced startup options</figcaption>
 </figure>
 
-<p>Then select the <code class="highlighter-rouge">recovery mode</code>:</p>
+<p>Then select the <code class="language-plaintext highlighter-rouge">recovery mode</code>:</p>
 
 <figure>
   <div>
@@ -375,7 +375,7 @@
   <figcaption>Getting started in recovery mode</figcaption>
 </figure>
 
-<p>Launch a <code class="highlighter-rouge">root shell</code>:</p>
+<p>Launch a <code class="language-plaintext highlighter-rouge">root shell</code>:</p>
 
 <figure>
   <div>
@@ -384,21 +384,21 @@
   <figcaption>Choosing the root shell</figcaption>
 </figure>
 
-<p>You access a device as a <code class="highlighter-rouge">root</code> user.</p>
+<p>You access a device as a <code class="language-plaintext highlighter-rouge">root</code> user.</p>
 
 <pre class="info">
 If you need to access the internet, select the network entry before. To verify that you have access to the web you can <i>ping 8.8.8.8</i> on the Google DNS server, then make <i>nslookup  8.8.8.8</i> to check that the DNS resolution works. If that does not work, add this line <i>nameserver 8.8.8.8</i> to the file <i>/etc/resolv.conf</i> (this will be deleted when you restart the computer) and restart your service <i>network-manager</i> with <i>service network-manager restart</i>.
 </pre>
 
-<p>For the moment the file system is only in <code class="highlighter-rouge">read only</code>, type the following command to mount the file system in<code class="highlighter-rouge"> read / write</code> at the root of your key:</p>
+<p>For the moment the file system is only in <code class="language-plaintext highlighter-rouge">read only</code>, type the following command to mount the file system in<code class="language-plaintext highlighter-rouge"> read / write</code> at the root of your key:</p>
 
 <div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">mount -o remount, rw /
 </span></code></pre></div></div>
 
 <p>Now you can copy the file system to an external hard drive, and then you can choose the new user password by typing:</p>
 
-<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">passwd &lt;username&gt;</span><span class="w">
-</span></code></pre></div></div>
+<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">passwd &lt;username&gt;</span>
+</code></pre></div></div>
 
 <pre class="info">
 If you do not know the users on this machine, you can do <i>ls /home</i>. Certainly a user of this machine corresponds to a directory name in <i>/home/</i>, or even view the file <i>/etc/passwd</i>, or else you can create a user as you are <i>root</i>.
@@ -557,37 +557,37 @@ Beware the morality of this article is that a person physically accessing your c
     <h5>Also read</h5>
 
     <div class="row">
-<a href="/blog/articles/2019/07/14/geo-location-of-request-path.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
+<a href="/blog/articles/2019/11/29/gafa-vs-batx.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 
       <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/common/posts/2019-07-14-geo-location-of-request-path.jpg" alt="2019-07-14-geo-location-of-request-path">
+        <img class="img-fluid lazyload" data-src="/_static/common/posts/2019-11-29-gafa-vs-batx.jpg" alt="2019-11-29-gafa-vs-batx">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          Geo-location of request path
+          Gafa vs Batx
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          How to know for which routers a HTTP request browses?
+          What is the difference?
         </div>
 
         <!-- Article categories -->
         <div class="article-category">
           <ul>
-            <li>Web</li>
+            <li>Business</li>
           </ul>
         </div>
 
         <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>July 14, 2019</span>
+          <span>November 29, 2019</span>
         </div>
         <!-- Article reading time -->
         <div class="reading-time">
@@ -641,37 +641,37 @@ Beware the morality of this article is that a person physically accessing your c
     </div>
 </div>
 
-</a><a href="/blog/articles/2020/05/04/java-ecosystem.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
+</a><a href="/blog/articles/2019/04/01/lighthouse.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 
       <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/common/posts/2020-05-04-java-ecosystem.jpg" alt="2020-05-04-java-ecosystem">
+        <img class="img-fluid lazyload" data-src="/_static/common/posts/2019-04-01-lighthouse.jpg" alt="2019-04-01-lighthouse">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          Java ecosystem
+          Lighthouse
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          What is the Java ecosystem from Sun to Oracle?
+          Lighthouse is an open-source, automated tool for improving the quality of web pages.
         </div>
 
         <!-- Article categories -->
         <div class="article-category">
           <ul>
-            <li>Software</li>
+            <li>Web</li>
           </ul>
         </div>
 
         <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>May 04, 2020</span>
+          <span>April 01, 2019</span>
         </div>
         <!-- Article reading time -->
         <div class="reading-time">

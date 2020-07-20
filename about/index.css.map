@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "index.css",
+	"sources": [
+		"index.scss"
+	],
+	"sourcesContent": [
+		"#page-about {\n\n}\n"
+	],
+	"names": [],
+	"mappings": ""
+}
