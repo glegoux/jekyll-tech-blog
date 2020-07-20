@@ -40,7 +40,7 @@ GEM
       rouge (~> 3.0)
       safe_yaml (~> 1.0)
       terminal-table (~> 1.8)
-    jekyll-admin (0.10.1)
+    jekyll-admin (0.10.2)
       jekyll (>= 3.7, < 5.0)
       sinatra (~> 1.4)
       sinatra-contrib (~> 1.4)
@@ -127,7 +127,7 @@ PLATFORMS
 DEPENDENCIES
   html-pipeline (= 2.12.3)
   jekyll (= 4.1.1)
-  jekyll-admin (= 0.10.1)
+  jekyll-admin (= 0.10.2)
   jekyll-mentions (= 1.5.1)
   jekyll-paginate (= 1.1.0)
   jekyll-redirect-from (= 0.16.0)

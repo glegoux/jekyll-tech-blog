@@ -13,7 +13,7 @@ group :jekyll_plugins do
   gem 'jekyll-redirect-from', '0.16.0'
   gem 'jemoji', '0.11.1'
   group :development do
-    gem 'jekyll-admin', '0.10.1'
+    gem 'jekyll-admin', '0.10.2'
   end
 end
 
