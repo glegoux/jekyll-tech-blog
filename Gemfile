@@ -7,7 +7,7 @@ gem 'jekyll', '3.8.5'
 # Jekyll plugins
 group :jekyll_plugins do
   gem 'jekyll-sitemap', '1.4.0'
-  gem 'jekyll-seo-tag', '	2.6.1'
+  gem 'jekyll-seo-tag', '2.6.1'
   gem 'jekyll-paginate', '1.1.0'
   gem 'jekyll-mentions', '1.5.1'
   gem 'jekyll-redirect-from', '0.16.0'
@@ -18,7 +18,7 @@ group :jekyll_plugins do
 end
 
 # Others gems
-gem 'kramdown', '	1.17.0'
+gem 'kramdown', '1.17.0'
 gem 'liquid', '4.0.3'
 gem 'minima', '2.5.1'
 gem 'nokogiri', '1.10.9'
