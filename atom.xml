@@ -1,0 +1,1518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>Software Engineering Blog - Gilles Legoux</title>
+ <link href="https://glegoux.com/atom.xml" rel="self"/>
+ <link href="https://glegoux.com/"/>
+ <updated>2020-07-20T05:25:21+00:00</updated>
+ <id>https://glegoux.com/</id>
+
+ 
+ <entry>
+   <title>GNU Privacy Guard</title>
+   <link href="https://glegoux.com/blog/articles/2020/05/15/gnu-privacy-guard.html"/>
+   <updated>2020-05-15T00:00:00+00:00</updated>
+   <id>https://glegoux.com/blog/articles/2020/05/15/gnu-privacy-guard.html</id>
+   <content type="html">&lt;p&gt;First, it is important to distinguish: &lt;strong&gt;PGP&lt;/strong&gt; (Pretty Good Privacy), &lt;strong&gt;OpenPGP&lt;/strong&gt; and &lt;strong&gt;GnuPG&lt;/strong&gt; also named &lt;strong&gt;GPG&lt;/strong&gt; (Gnu Privacy Guard).
+Phil Zimmerman made up PGP in 1991 as a way for people to communicate without eavesdropping. Going further 
+back into the 1990s, there used to be a law in the US that restricted the export of cryptographic technology 
+outside the US until 1992 after the World War II. Due to this patent and license around the source code and specification of 
+the proprietary product PGP, it was not always practical for international use. That’s why the 
+&lt;a href=&quot;https://www.openpgp.org/about&quot;&gt;OpenPGP Working Group&lt;/a&gt; was formed within the Internet Engineering Task Force (IETF) 
+to define a free standard protocol OpenPGP inspired by PGP with &lt;a href=&quot;https://www.ietf.org/rfc/rfc4880.txt&quot;&gt;RFC4880&lt;/a&gt; and 
+after the end of the US restriction to allow to everyone to implement a solution. In June 2010 Symantec Corporation bought PGP Inc., 
+but it is acquired by &lt;a href=&quot;https://www.broadcom.com&quot;&gt;Broadcom Inc&lt;/a&gt; in 2019 that owns a propriety implementation of PGP now. 
+&lt;a href=&quot;https://gnupg.org&quot;&gt;GnuPG&lt;/a&gt; is a free implementation of the OpenPGP standard very used in the world.&lt;/p&gt;
+
+&lt;p&gt;GnuPG proposes services as authentication, confidentiality, compression, compatibility and segmentation
+with a hybrid cryptosystem combining the efficiency of symmetrical cryptosystem and the convenience of asymmetrical cryptosystem. 
+Particularly, you can:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;sign resources (electronic document, Git commit …)&lt;/li&gt;
+  &lt;li&gt;encrypt/decrypt resources (email, sms, message, filesystem partition, stored data …)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;References:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://help.github.com/en/github/authenticating-to-github/generating-a-new-gpg-key&quot;&gt;https://help.github.com/en/github/authenticating-to-github/generating-a-new-gpg-key&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gnupg.org/index.html&quot;&gt;https://www.gnupg.org/index.html&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://git.gnupg.org/cgi-bin/gitweb.cgi&quot;&gt;https://git.gnupg.org/cgi-bin/gitweb.cgi&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.faqs.org/faqs/pgp-faq/part1/&quot;&gt;http://www.faqs.org/faqs/pgp-faq/part1/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.linuxjournal.com/content/signing-git-commits&quot;&gt;https://www.linuxjournal.com/content/signing-git-commits&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.linode.com/docs/security/encryption/gpg-keys-to-send-encrypted-messages/#more-information&quot;&gt;https://www.linode.com/docs/security/encryption/gpg-keys-to-send-encrypted-messages/#more-information&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content><author>
+       <name>glegoux</name>
+       <uri>https://www.linkedin.com/in/gilleslegoux</uri>
+   </author></entry>
+ 
+ <entry>
+   <title>Java ecosystem</title>
+   <link href="https://glegoux.com/blog/articles/2020/05/04/java-ecosystem.html"/>
+   <updated>2020-05-04T00:00:00+00:00</updated>
+   <id>https://glegoux.com/blog/articles/2020/05/04/java-ecosystem.html</id>
+   <content type="html">&lt;p&gt;The Java language is initiated by &lt;strong&gt;James Gosling&lt;/strong&gt;, &lt;strong&gt;Mike Sheridan&lt;/strong&gt; and &lt;strong&gt;Patrick Naughton&lt;/strong&gt; is June &lt;strong&gt;1991&lt;/strong&gt;. After several years,
+the company &lt;strong&gt;Sun Microsystems&lt;/strong&gt; released the first version of Java. Here its principles:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;It must be simple, object-oriented, and familiar.&lt;/li&gt;
+  &lt;li&gt;It must be robust and secure.&lt;/li&gt;
+  &lt;li&gt;It must be architecture-neutral and portable.&lt;/li&gt;
+  &lt;li&gt;It must execute with high performance.&lt;/li&gt;
+  &lt;li&gt;It must be interpreted, threaded, and dynamic.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;figure&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://cdn.jsdelivr.net/gh/glegoux/articles-glegoux-com@master/articles/2020-05-04-java-ecosystem/images/java-logo.png&quot; alt=&quot;Java logo&quot; title=&quot;Java logo&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;Java logo&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;That is to say:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Java is C++ without the guns, clubs and knives.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;James Gosling, one of inventors of Java language&lt;/p&gt;
+
+&lt;p&gt;Java is a &lt;strong&gt;most famous programming language&lt;/strong&gt;, it is in the &lt;strong&gt;top 10&lt;/strong&gt; of the languages 
+the most &lt;strong&gt;present on the Internet resources&lt;/strong&gt; and with the highest number of contributors 
+respectively with the &lt;a href=&quot;https://www.tiobe.com/tiobe-index/programming-languages-definition&quot;&gt;TIOBE index&lt;/a&gt; 
+that counts the search engine hits, and the &lt;a href=&quot;https://octoverse.github.com&quot;&gt;octoverse&lt;/a&gt;
+annual report of Github that counts the number of unique contributors of java projects.&lt;/p&gt;
+
+&lt;p&gt;But the mascot of Java is &lt;a href=&quot;https://www.oracle.com/java/duke.html&quot;&gt;Duke&lt;/a&gt; that plays the role of a &lt;em&gt;software agent&lt;/em&gt; 
+that performed tasks for the user:&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://cdn.jsdelivr.net/gh/glegoux/articles-glegoux-com@master/articles/2020-05-04-java-ecosystem/images/duke.png&quot; alt=&quot;Duke the Java mascot&quot; title=&quot;Duke the Java mascot&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;Duke the Java mascot&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The best resource about Java is surely the &lt;em&gt;Effective Java&lt;/em&gt; book with its different editions:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Learning the art of programming, like most other disciplines,&lt;br /&gt;
+consists of first learning the rules and then learning when to break them.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Joshua Bloch, author of Effective Java&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://cdn.jsdelivr.net/gh/glegoux/articles-glegoux-com@master/articles/2020-05-04-java-ecosystem/images/effective-java-book-cover.jpg&quot; alt=&quot;Effective Java book&quot; title=&quot;Effective Java book&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;Effective Java book&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;But Sun Microsystems had an issue a business model, and &lt;strong&gt;Oracle acquired Java in January 2010&lt;/strong&gt;. 
+Now the project has 2 main versions, an &lt;strong&gt;open source version with OpenJDK&lt;/strong&gt; and &lt;strong&gt;commercial version with Oracle JDK&lt;/strong&gt;.
+These both Java Development Kit are available respectively at &lt;a href=&quot;https://openjdk.java.net&quot;&gt;https://openjdk.java.net&lt;/a&gt; and &lt;a href=&quot;https://www.oracle.com/java&quot;&gt;https://www.oracle.com/java&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;There are &lt;strong&gt;several JDK vendors among AdoptOpenJDK, Amazon Correto, SAP, Red Hat, Azul, IBM&lt;/strong&gt;. 
+The most of the vendors have a project based on OpenJDK. The Java Community Process (JCP) 
+provides a &lt;strong&gt;Technology Compatibility Kit&lt;/strong&gt; (TCK) to certify whether a JDK build meets 
+the Java standards. Once a build passes the TCK, it can be referred to as &lt;code class=&quot;highlighter-rouge&quot;&gt;Java SE compatible&lt;/code&gt;.
+The certification process requires a commercial license from Oracle.&lt;/p&gt;
+
+&lt;p&gt;You can see, what is the usage of the Java ecosystem in terms of IDE, Java vendors, Java version, Java 
+with the Snyk company survey, or the Jrebel company survey.&lt;/p&gt;
+
+&lt;p&gt;To follow the evolution of the ecosystem, you can subscribe to the Java magazine.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;References:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blogs.oracle.com/java-platform-group/the-arrival-of-java-14&quot;&gt;https://blogs.oracle.com/java-platform-group/the-arrival-of-java-14&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://dzone.com/articles/an-overview-on-jdk-vendors&quot;&gt;https://dzone.com/articles/an-overview-on-jdk-vendors&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.overops.com/java-wish-list-the-top-differences-between-java-scala-groovy-clojure-and-kotlin&quot;&gt;https://blog.overops.com/java-wish-list-the-top-differences-between-java-scala-groovy-clojure-and-kotlin&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://mreinhold.org/blog/forward-faster&quot;&gt;https://mreinhold.org/blog/forward-faster&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.jrebel.com/blog/2020-java-technology-report&quot;&gt;https://www.jrebel.com/blog/2020-java-technology-report&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blogs.oracle.com/java-platform-group/faster-and-easier-use-and-redistribution-of-java-se&quot;&gt;https://blogs.oracle.com/java-platform-group/faster-and-easier-use-and-redistribution-of-java-se&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.developpez.com/actu/159181/Oracle-annonce-des-changements-pour-Java-SE-deux-versions-par-an-licence-GPL-des-fonctionnalites-commerciales-du-JDK-d-Oracle-en-open-source&quot;&gt;https://www.developpez.com/actu/159181/Oracle-annonce-des-changements-pour-Java-SE-deux-versions-par-an-licence-GPL-des-fonctionnalites-commerciales-du-JDK-d-Oracle-en-open-source&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.developpez.com/actu/185779/Java-8-ne-va-plus-recevoir-de-mises-a-jour-et-correctifs-de-securite-a-partir-de-septembre-a-moins-de-passer-a-un-support-commercial&quot;&gt;https://www.developpez.com/actu/185779/Java-8-ne-va-plus-recevoir-de-mises-a-jour-et-correctifs-de-securite-a-partir-de-septembre-a-moins-de-passer-a-un-support-commercial&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://tekcollab.imdeo.com/java-devient-payant&quot;&gt;https://tekcollab.imdeo.com/java-devient-payant&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.oracle.com/java/technologies/java-se-support-roadmap.html&quot;&gt;https://www.oracle.com/java/technologies/java-se-support-roadmap.html&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://oss.oracle.com&quot;&gt;https://oss.oracle.com&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://dzone.com/articles/difference-between-jdk-vs-jre-vs-jvm&quot;&gt;https://dzone.com/articles/difference-between-jdk-vs-jre-vs-jvm&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.scala-lang.org/overviews/jdk-compatibility/overview.html&quot;&gt;https://docs.scala-lang.org/overviews/jdk-compatibility/overview.html&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/search?l=&amp;amp;o=desc&amp;amp;q=stars%3A%22%3E+1000%22+language%3AJava&amp;amp;s=stars&amp;amp;type=Repositories&quot;&gt;https://github.com/search?l=&amp;amp;o=desc&amp;amp;q=stars%3A%22%3E+1000%22+language%3AJava&amp;amp;s=stars&amp;amp;type=Repositories&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</content><author>
+       <name>glegoux</name>
+       <uri>https://www.linkedin.com/in/gilleslegoux</uri>
+   </author></entry>
+ 
+ <entry>
+   <title>Development Environment</title>
+   <link href="https://glegoux.com/blog/articles/2020/03/04/development-environment.html"/>
+   <updated>2020-03-04T00:00:00+00:00</updated>
+   <id>https://glegoux.com/blog/articles/2020/03/04/development-environment.html</id>
+   <content type="html">&lt;p&gt;It is a good practice to isolate the used technologies for your development environment, because:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Your operating system could already have an installed version of this technology for its own needs, 
+and you don’t want touch that for not break that.&lt;/li&gt;
+  &lt;li&gt;Your development environment should be close to your production environment, that is not necessary the same as your local environment&lt;/li&gt;
+  &lt;li&gt;Your projects use certainly several versions of the same technology, you don’t want to have conflicts between them&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;That’s why you need to have a tool in order to build and isolate your environment development, and to can switch between 
+these different environment.&lt;/p&gt;
+
+&lt;p&gt;Of course, it depends on which kind of projects you work. You don’t need to have always a full isolated environment by setting up 
+another physical machine (bare metal), a virtual machine or a container. Because, the computer ecosystem is composed of layers.&lt;/p&gt;
+
+&lt;p&gt;If you use only a high-level layer for writing applications in &lt;code class=&quot;highlighter-rouge&quot;&gt;Python&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;Java&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;Ruby&lt;/code&gt; …, you can use a tool of version management 
+as &lt;code class=&quot;highlighter-rouge&quot;&gt;Pyenv&lt;/code&gt;,  &lt;code class=&quot;highlighter-rouge&quot;&gt;Sdkman&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;Rvm&lt;/code&gt;, it is sufficient. Like that you can use your project language in the correct version for your project, 
+directly on your host machine that you be on Windows, WSL, macOS, or a Linux distribution and regardless of the environment ecosystem … 
+because these languages are cross platform. You need also that related dependencies libraries be installed in dedicated locations, 
+but these tools do that as well.&lt;/p&gt;
+
+&lt;p&gt;If you need to have other services like a database, a email service, a message brokers, machine learning platform, perhaps you can
+use a pre-built staging environment for each service, running on your own machine, or on a cluster with the cloud computing paradigme if
+the services are too complex to set up or too greedy in resources. Else often, you can use mock-ups for each service respecting
+the contract of interface.&lt;/p&gt;
+
+&lt;p&gt;This problematic is the same for the test environment, or the pre-production environment and prod environment. In addition, for security 
+reason, these environments should be isolated and partitioned with a segregation of permission. It is another subject.&lt;/p&gt;
+</content><author>
+       <name>glegoux</name>
+       <uri>https://www.linkedin.com/in/gilleslegoux</uri>
+   </author></entry>
+ 
+ <entry>
+   <title>Gafa vs Batx</title>
+   <link href="https://glegoux.com/blog/articles/2019/11/29/gafa-vs-batx.html"/>
+   <updated>2019-11-29T00:00:00+00:00</updated>
+   <id>https://glegoux.com/blog/articles/2019/11/29/gafa-vs-batx.html</id>
+   <content type="html">&lt;p&gt;The business world is split into 3 regions with the acronyms: &lt;strong&gt;AMER, EMEA, APAC&lt;/strong&gt;. But the web and 
+computer worldwide market is bi-polaire due to the &lt;strong&gt;Internet censorship in China&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://cdn.jsdelivr.net/gh/glegoux/articles-glegoux-com@master/articles/2019-11-29-gafa-vs-batx/images/business-area.png&quot; alt=&quot;Business regions and computer technology areas&quot; title=&quot;Business regions and computer technology areas&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;Business regions and computer technology areas&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;So the behaviours of consumers are different according to they are in China or not. This Oligopoly 
+constraints the chinese inhabitants to use the digital chinese services, or to be in the illegality 
+by using a Virtual &lt;strong&gt;Network Private&lt;/strong&gt; (VPN) to use other blacklisted services. So chinese government 
+controls the chinese digital market with its own private company.&lt;/p&gt;
+
+&lt;p&gt;In China we have a gang of four with &lt;strong&gt;Baidu, Alibaba, Tencent, Xiaomi&lt;/strong&gt; (BATX), and for the rest of 
+the world there is the big four tech companies &lt;strong&gt;Google, Apple, Facebook, Amazon&lt;/strong&gt; (GAFA):&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://cdn.jsdelivr.net/gh/glegoux/articles-glegoux-com@master/articles/2019-11-29-gafa-vs-batx/images/batx-gafa.png&quot; alt=&quot;BATX &amp;amp; GAFA&quot; title=&quot;BATX &amp;amp; GAFA&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;BATX &amp;amp; GAFA&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h1 id=&quot;business&quot;&gt;Business&lt;/h1&gt;
+
+&lt;h2 id=&quot;business-to-customer&quot;&gt;Business to Customer&lt;/h2&gt;
+
+&lt;p&gt;On the &lt;strong&gt;hardware side&lt;/strong&gt;, Apple and Xiaomi control the &lt;strong&gt;market of smartphones&lt;/strong&gt;, to allow an end user to 
+enter in the digital consummation. On the &lt;strong&gt;software side&lt;/strong&gt;, your digital experience consists of 
+searching with engine of Google or Baidu, &lt;strong&gt;buying&lt;/strong&gt; with e-commerce platform of Amazon or Alibaba, and 
+&lt;strong&gt;communicating&lt;/strong&gt; with social network of Tencent or Facebook, that have respectively instant messaging 
+Messenger &amp;amp; Whatsapp and WeChat. For &lt;strong&gt;spending money online&lt;/strong&gt;, WeChat is in competition with Apple Pay 
+and Google Pay.&lt;/p&gt;
+
+&lt;h2 id=&quot;business-to-business&quot;&gt;Business to Business&lt;/h2&gt;
+
+&lt;p&gt;The &lt;strong&gt;cloud computing and hosting&lt;/strong&gt; is managed by Google Cloud Platform, or Amazon Web Service (AWS), 
+and in China there is Alibaba Cloud, also known as Aliyun.&lt;/p&gt;
+
+&lt;h1 id=&quot;other-companies&quot;&gt;Other companies&lt;/h1&gt;
+
+&lt;p&gt;After the cloud infrastructure, and the web services, each main actor wants to control the markets 
+of &lt;strong&gt;Artificial Intelligence&lt;/strong&gt; (AI) and of &lt;strong&gt;Internet of Things&lt;/strong&gt; (IoT) what compose the new business 
+opportunities. Of course a lot of companies are forgotten in the artificial classification BATX 
+vs GAFA as (without quoting all other ones):&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://cdn.jsdelivr.net/gh/glegoux/articles-glegoux-com@master/articles/2019-11-29-gafa-vs-batx/images/other-companies.png&quot; alt=&quot;Other big companies&quot; title=&quot;Other big companies&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;Other big companies&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+</content><author>
+       <name>glegoux</name>
+       <uri>https://www.linkedin.com/in/gilleslegoux</uri>
+   </author></entry>
+ 
+ <entry>
+   <title>Geo-location of request path</title>
+   <link href="https://glegoux.com/blog/articles/2019/07/14/geo-location-of-request-path.html"/>
+   <updated>2019-07-14T00:00:00+00:00</updated>
+   <id>https://glegoux.com/blog/articles/2019/07/14/geo-location-of-request-path.html</id>
+   <content type="html">&lt;p&gt;The goal of this article is to understand what is the used path of HTTP request generated by your web browser to load a web page from your computer to server web. I suppose each time DNS resolution is done, that is to say client knows IP server (by passing over in silence the resolution of name, it is prerequisites).&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://docs.google.com/drawings/d/e/2PACX-1vT8X8g2uXuTLb3lruhcD17wdroEZaMSFRbiKbMKpdYNKTvkGnRgTs80T7L4SS1fE_-68ofjmjim0q0-/pub?w=855&amp;amp;h=364&quot; alt=&quot;Request path from your laptop to web server&quot; title=&quot;Request path from your laptop to web server&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;Request path from your laptop to web server&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Internet is a network of routers. When your web browser is sending one HTTP request your computer uses by default the destination &lt;code class=&quot;highlighter-rouge&quot;&gt;0.0.0.0&lt;/code&gt; if no one sub-network matches with your original destination IP address in its route table.&lt;/p&gt;
+
+&lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;route &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt;
+&lt;span class=&quot;go&quot;&gt;Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+0.0.0.0         192.168.1.254   0.0.0.0         UG    600    0        0 wlp6s0
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Here the gateway &lt;code class=&quot;highlighter-rouge&quot;&gt;192.168.1.254&lt;/code&gt;  is my Internet box related to network interface &lt;code class=&quot;highlighter-rouge&quot;&gt;wlp6s0&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;nslookup 192.168.1.254
+&lt;span class=&quot;go&quot;&gt;Server:		127.0.1.1
+&lt;/span&gt;&lt;span class=&quot;gp&quot;&gt;Address:	127.0.1.1#&lt;/span&gt;53
+&lt;span class=&quot;go&quot;&gt;name = bbox.lan.
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Your request is sent to box of your Internet Service Provider (ISP), for me it is a French ISP: Bouygues Telecom. Leaving your Local Area Network (LAN) to the Wide Area Network (WAN) of Internet, thanks to  Network Address Translation  (NAT), your box replaces IP address source in the header of your HTTP request (equals to your private IP, see &lt;code class=&quot;highlighter-rouge&quot;&gt;ifconfig wlp6s0&lt;/code&gt;) by its public IP address (see &lt;code class=&quot;highlighter-rouge&quot;&gt;dig +short myip.opendns.com @resolver1.opendns.com&lt;/code&gt;), and keeps in memory this matching only for this request in order to it comes from your computer by doing reverse translation.&lt;/p&gt;
+
+&lt;p&gt;The Time to live (TTL) of your request allows to know how many maximally your request can cross routers before arriving at destination. It prevents infinite cycle of routers in the network, by default a value of 64 is recommended depending of diameter of Internet. By modifying this value from 1 to N, you can get the IP address of each router on the path of your request: it will be the IP source of the response of your request HTTP.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://docs.google.com/drawings/d/e/2PACX-1vTKqD-P7RBe5bT7jx4i7wOvMQtp3hNgVZchWR8eM3KnJ7Z-bsgBwKYqPfBBW2ABp8zel6wJ6NbuFfcA/pub?w=855&amp;amp;h=364&quot; alt=&quot;Time to Live (TTL)&quot; title=&quot;Time to Live (TTL)&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;Time to Live (TTL)&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;For example, you can get TTL minimum by successive ping commands, see details in &lt;a href=&quot;https://github.com/glegoux/glegoux.com/blob/master/articles/6PmiK7b/n_routers.sh&quot;&gt;n_routers.sh&lt;/a&gt; bash script. Each router must decrement TTL value and if TTL is 0, it refuses to transmit message. The minimum TTL is length path in the network to reach the server (by excluding source machine for number of nodes or is directly number of edges). Here one time to live of 4 is insufficient to reach glegoux.com from my machine location:&lt;/p&gt;
+
+&lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;ping &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; 1 &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; 4 glegoux.com
+&lt;span class=&quot;go&quot;&gt;PING glegoux.com (195.164.48.181) 56(84) bytes of data.
+From 10.125.135.205 icmp_seq=1 Time to live exceeded
+
+--- glegoux.com ping statistics ---
+1 packets transmitted, 0 received, +1 errors, 100% packet loss, time 0ms
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This is valid for outward network path your TTL must be sufficient, you can see your current TTL &lt;code class=&quot;highlighter-rouge&quot;&gt;cat /proc/sys/net/ipv4/ip_default_ttl&lt;/code&gt; or with &lt;code class=&quot;highlighter-rouge&quot;&gt;ping -c 1 localhost&lt;/code&gt; (for Linux default value is 64), and change that without persistence &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo sysctl net.ipv4.ip_default_ttl=128&lt;/code&gt;. Targeted server must have also sufficient TTL for return network path, this value is decremented (until value 56 here, but we don’t know initial value a priori):&lt;/p&gt;
+
+&lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;ping &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; 1 glegoux.com
+&lt;span class=&quot;go&quot;&gt;PING glegoux.com (195.164.48.181) 56(84) bytes of data.
+64 bytes from 10.125.135.205.rev.poneytelecom.eu (10.125.135.205): icmp_seq=1 ttl=56 time=13.8 ms
+
+--- glegoux.com ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 13.821/13.821/13.821/0.000 ms
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;While ping command uses ICMP protocol, the system command  &lt;code class=&quot;highlighter-rouge&quot;&gt;traceroute&lt;/code&gt; realizes that directly with TCP protocol more easily. If there are stars instead of one IP address it means router refused to give its identity.&lt;/p&gt;
+
+&lt;p&gt;There is no rule to guarantee that outward path and return path are identical. This is sometimes useful to get traceroute from both ends of your network. Here I am considering only outward path.&lt;/p&gt;
+
+&lt;p&gt;By combining that with free IP locator like :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;http://ip-api.com/&lt;/li&gt;
+  &lt;li&gt;https://ipinfo.io&lt;/li&gt;
+  &lt;li&gt;http://getcitydetails.geobytes.com/&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You can locate request path via Application Programming Interface (API) with the usage of pre-computed databases of geolocalisation of these free IP locators.&lt;/p&gt;
+
+&lt;p&gt;It is important to keep in mind that IP locator is not 100% accurate, only 95% for the best ones. And behind one IP address  can hide a web proxy and a virtual private cluster preventing to locate really the destination. Thanks to Regional Internet Registry (RIR) and static address IP of  ISPs, IP locators can know the location of some IP addresses easily.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://cdn.jsdelivr.net/gh/glegoux/articles-glegoux-com@master/articles/2019-07-14-geo-location-of-request-path/images/rir.png&quot; alt=&quot;Map of Regional Internet Registry&quot; title=&quot;Map of Regional Internet Registry&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;Map of Regional Internet Registry&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;But an constant update and smart analysis of the network is required to locate any IP address (IPv4 or IPv6), because of dynamic IP addresses and moving connected objects for instance in the Internet of Things (IoT) or mobile networks. In addition, this location could not be too precised to respect private life of each Internet surfer, even if this one shares its location via its web browser.&lt;/p&gt;
+
+&lt;p&gt;With this &lt;a href=&quot;https://github.com/glegoux/articles-glegoux-com/tree/master/articles/2019-07-14-geo-location-of-request-path/code&quot;&gt;Proof of Concept (PoC)&lt;/a&gt;, you can run &lt;code class=&quot;highlighter-rouge&quot;&gt;get_route.sh glegoux.com&lt;/code&gt; to get IP locations in csv file &lt;code class=&quot;highlighter-rouge&quot;&gt;route.csv&lt;/code&gt; and see the result via Google Maps (just &lt;a href=&quot;https://developers.google.com/maps/documentation/javascript/get-api-key&quot;&gt;get your own API token&lt;/a&gt;) and a python web server by executing &lt;code class=&quot;highlighter-rouge&quot;&gt;httpserver.sh&lt;/code&gt; and by visualizing &lt;code class=&quot;highlighter-rouge&quot;&gt;index.html&lt;/code&gt; in your favorite web browser.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://cdn.jsdelivr.net/gh/glegoux/articles-glegoux-com@master/articles/2019-07-14-geo-location-of-request-path/images/map.png&quot; alt=&quot;Geo-location of request path from Paris to glegoux.com&quot; title=&quot;Geo-location of request path from Paris to glegoux.com&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;Geo-location of request path from Paris to glegoux.com&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+</content><author>
+       <name>glegoux</name>
+       <uri>https://www.linkedin.com/in/gilleslegoux</uri>
+   </author></entry>
+ 
+ <entry>
+   <title>Java champion</title>
+   <link href="https://glegoux.com/blog/articles/2019/05/24/java-champion.html"/>
+   <updated>2019-05-24T00:00:00+00:00</updated>
+   <id>https://glegoux.com/blog/articles/2019/05/24/java-champion.html</id>
+   <content type="html">&lt;p&gt;Java champion is ambassador of Java ecosystem for the world! It is enough hard to become Java champion.&lt;/p&gt;
+
+&lt;p&gt;Here qualities of Java champion:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;leader&lt;/li&gt;
+  &lt;li&gt;technical luminary&lt;/li&gt;
+  &lt;li&gt;independent-minded and credible&lt;/li&gt;
+  &lt;li&gt;involved in Java technology&lt;/li&gt;
+  &lt;li&gt;influencer&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Currently in the world, there are 282 Java champions in 2019 knowing that in 2012 there are more that 10 millions of Java developers. That is to say about 1 per 30 thousands of Java developers. Here you can see repartition of Java champions in the world:&lt;/p&gt;
+
+&lt;figure&gt;
+    &lt;div id=&quot;java-champions&quot;&gt;&lt;/div&gt;
+    &lt;figcaption&gt;Java champions in the world (Source: https://github.com/aalmiray/java-champions)&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;You can write to Java champions:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;mailto://javachampions@groups.io&quot;&gt;javachampions@groups.io&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;References&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://community.oracle.com/community/groundbreakers/java/java-champions&quot;&gt;What is Java champion&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://community.oracle.com/docs/DOC-922857&quot;&gt;Who are Java Champions?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://www.gstatic.com/charts/loader.js&quot;&gt;&lt;/script&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+jQuery(document).ready(function () {
+    google.charts.load('current', {
+        'packages':['geochart'],
+        // Note: you will need to get a mapsApiKey for your project.
+        // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
+        'mapsApiKey': 'AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
+    });
+    google.charts.setOnLoadCallback(drawRegionsMap);
+    
+    function drawRegionsMap() {
+        var data = google.visualization.arrayToDataTable([
+            ['Country', 'Number'],
+            ['Armenia',1],
+            ['Australia',1],
+            ['Australia/USA',1],
+            ['Austria',3],
+            ['Belgium',5],
+            ['Brazil',14],
+            ['Bulgaria',2],
+            ['Canada',4],
+            ['China',2],
+            ['Colombia',2],
+            ['Denmark',2],
+            ['Ecuador',1],
+            ['Egypt',2],
+            ['Estonia',2],
+            ['France',12],
+            ['Germany',25],
+            ['Germany/Switzerland',1],
+            ['Greece',3],
+            ['Guatemala',2],
+            ['Hungary',2],
+            ['India',3],
+            ['Indonesia',1],
+            ['Ireland',1],
+            ['Italy',7],
+            ['Japan',5],
+            ['Malaysia',1],
+            ['Mexico',2],
+            ['Mexico/Switzerland',2],
+            ['Morocco',1],
+            ['New Zealand',1],
+            ['Norway',4],
+            ['Perú',1],
+            ['Poland',4],
+            ['Portugal',1],
+            ['Romania',2],
+            ['Russia',4],
+            ['Scotland',2],
+            ['Serbia',1],
+            ['Slovenia',1],
+            ['South Africa',1],
+            ['South Korea',1],
+            ['Spain',4],
+            ['Sweden',5],
+            ['Switzerland',3],
+            ['Netherlands',8],
+            ['Turkey',5],
+            ['United States',77],
+            ['USA/Germany',1],
+            ['United Kingdom',23]
+        ]);
+    
+        var options = {
+            colorAxis: {colors: ['#e6f7ff', '#00334d']},
+            width: $('#content').width(), // responsive
+            legend: false
+        };
+        
+        var chart = new google.visualization.GeoChart(document.getElementById('java-champions'));
+        
+         chart.draw(data, options);
+    }
+    
+    // responsive
+    var width = $(window).width();
+    $(window).resize(function(){
+        if ($(this).width() != width) {
+            width = $(this).width();
+            drawRegionsMap();
+        }
+    });
+});
+&lt;/script&gt;
+
+</content><author>
+       <name>glegoux</name>
+       <uri>https://www.linkedin.com/in/gilleslegoux</uri>
+   </author></entry>
+ 
+ <entry>
+   <title>Lighthouse</title>
+   <link href="https://glegoux.com/blog/articles/2019/04/01/lighthouse.html"/>
+   <updated>2019-04-01T00:00:00+00:00</updated>
+   <id>https://glegoux.com/blog/articles/2019/04/01/lighthouse.html</id>
+   <content type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/GoogleChrome/lighthouse/releases/tag/v5.6.0&quot;&gt;LightHouse 5.6.0&lt;/a&gt; is an &lt;a href=&quot;https://github.com/GoogleChrome/lighthouse&quot;&gt;open-source project&lt;/a&gt; written in Javascript and began in January 2016 under &lt;a href=&quot;https://github.com/GoogleChrome/lighthouse/blob/master/LICENSE&quot;&gt;Apache 2,0 License&lt;/a&gt;. On GitHub, it is a project of the Organisation &lt;a href=&quot;https://github.com/GoogleChrome&quot;&gt;Google Chrome&lt;/a&gt; knows a huge success and counts roughly 10,000 stars and 100 contributors. It is already stable, see  &lt;a href=&quot;https://github.com/GoogleChrome/lighthouse/releases/&quot;&gt;latest release&lt;/a&gt;. It is an automated tool for improving the quality of web pages. You can run it against any web page, public or requiring authentication. It has audits for performance, accessibility, progressive web apps, and more.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://cdn.jsdelivr.net/gh/glegoux/articles-glegoux-com@master/articles/2019-04-01-lighthouse/images/lighthouse-logo.png&quot; alt=&quot;Logo of Lighthouse&quot; title=&quot;Logo of Lighthouse&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;Logo of Lighthouse&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;You can run Lighthouse as a &lt;a href=&quot;https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en&quot;&gt;Chrome Extension&lt;/a&gt;, from the command line, or as a &lt;a href=&quot;https://www.npmjs.com/package/lighthouse&quot;&gt;Node module&lt;/a&gt;. You give Lighthouse a URL to audit, it runs a series of audits against the page, and then it generates a report on how well the page did. From there, use the failing audits as indicators on how to improve the page. Each audit has a reference doc explaining why the audit is important, as well as how to fix it.&lt;/p&gt;
+
+&lt;p&gt;The rapport is divided into 4 categories:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Progressive Web App&lt;/strong&gt;: tests if your app is corect progressive web app.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Performance&lt;/strong&gt;: measures if the page is loaded quickly.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Accessibility&lt;/strong&gt;: checks if the content of your page is accessible.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Best Practices&lt;/strong&gt;: checks if good practices are applied.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The goal is to have a score of 100 for each category and for each web page of your website:&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://cdn.jsdelivr.net/gh/glegoux/articles-glegoux-com@master/articles/2019-04-01-lighthouse/images/scores.png&quot; alt=&quot;Lighthouse scores by report category&quot; title=&quot;Lighthouse scores by report category&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;Lighthouse scores by report category&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;You can export report under HTML or JSON format, then import these format or see directly report due to &lt;a href=&quot;https://googlechrome.github.io/lighthouse/viewer/&quot;&gt;LightHouse Viewer&lt;/a&gt; (online version). You can install on-premises version directly from the &lt;a href=&quot;https://github.com/GoogleChrome/lighthouse/tree/master/lighthouse-viewer&quot;&gt;Git repository if LightHouse Viewer&lt;/a&gt; .&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://cdn.jsdelivr.net/gh/glegoux/articles-glegoux-com@master/articles/2019-04-01-lighthouse/images/export-import-view.jpg&quot; alt=&quot;Export, import and view LightHouse report&quot; title=&quot;Export, import and view LightHouse report&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;Export, import and view LightHouse report&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The work flow of LightHouse core is described by the following chart:&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://cdn.jsdelivr.net/gh/glegoux/articles-glegoux-com@master/articles/2019-04-01-lighthouse/images/architecture.jpg&quot; alt=&quot;Architecture of Lighthouse Core&quot; title=&quot;Architecture of Lighthouse Core&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;Architecture of Lighthouse Core&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/GoogleChrome/lighthouse/blob/master/docs/architecture.md&quot;&gt;See details of the architecture&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The project &lt;a href=&quot;https://github.com/GoogleChrome/lighthouse&quot;&gt;Lighthouse&lt;/a&gt; has 5 main components:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;lighthouse-cli&lt;/strong&gt;: allows to call lighthouse services from command line.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;lighthouse-core&lt;/strong&gt;: allows to generate report to measure the quality of your app at some urls.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;lighthouse-extension&lt;/strong&gt;: allows to call lighthouse services from an Google Chrome extension.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;lighthouse-logger&lt;/strong&gt;: allows common logs.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;lighthouse-viewer&lt;/strong&gt;: allows to see report in your web browser or to import reports under JSON or HTML format.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Before installing &lt;a href=&quot;https://github.com/GoogleChrome/lighthouse/releases/tag/v2.4.0&quot;&gt;LightHouse 2.4.0&lt;/a&gt;, we must have:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://releases.ubuntu.com/16.04/&quot;&gt; Ubtuntu Desktop 16.04 LTS+&lt;/a&gt; : &lt;code class=&quot;highlighter-rouge&quot;&gt;cat /ect/issue&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://chromereleases.googleblog.com/2017/08/stable-channel-update-for-desktop.html&quot;&gt;Google Chrome 60.0.3112.90+&lt;/a&gt; : &lt;code class=&quot;highlighter-rouge&quot;&gt;google-chrome --version&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V6.md#6.11.2&quot;&gt;Node 6.11.2 LTS+&lt;/a&gt; : &lt;code class=&quot;highlighter-rouge&quot;&gt;node --version&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/npm/npm/releases/tag/v5.3.0&quot;&gt;NPM 5.3.0+&lt;/a&gt; : &lt;code class=&quot;highlighter-rouge&quot;&gt;npm --version&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;As lighthouse is a very recent project, you can use &lt;a href=&quot;https://www.google.com/chrome/browser/canary.html&quot;&gt;Canary&lt;/a&gt; version for Google Chrome.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://cdn.jsdelivr.net/gh/glegoux/articles-glegoux-com@master/articles/2019-04-01-lighthouse/images/chrome-version.jpg&quot; alt=&quot;Google Chrome, Chromium and Canary version&quot; title=&quot;Google Chrome, Chromium and Canary version&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;Google Chrome, Chromium and Canary version&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Reminder you in a nutshell that &lt;a href=&quot;https://www.google.com/chrome/browser&quot;&gt;Google Chrome&lt;/a&gt; is the &lt;a href=&quot;https://github.com/chromium/chromium&quot;&gt;Chromium&lt;/a&gt; open source project built, packaged, 
+and distributed by Google. You can see a few &lt;a href=&quot;https://chromium.googlesource.com/chromium/src/+/master/docs/chromium_browser_vs_google_chrome.md&quot;&gt;differences&lt;/a&gt; . 
+It has &lt;a href=&quot;https://www.chromium.org/getting-involved/dev-channel&quot;&gt;4 versions&lt;/a&gt; Stable, Beta, Dev, Canary for MAC, Windows and Linux for desktops and Android, iOS for smart phones and tablets.&lt;/p&gt;
+
+&lt;p&gt;For example, test LightHouse on this blog. Suppose that you have this file &lt;strong&gt;urls.txt&lt;/strong&gt; containing one URL per line:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://glegoux.com/
+https://glegoux.com/blog/
+https://glegoux.com/blog/articles/
+https://glegoux.com/about/
+https://glegoux.com/contact/
+https://glegoux.com/contact/email/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Run this bash script to get one report by url:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0
+&lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;url &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cat &lt;/span&gt;urls.txt&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do
+  &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;--&quot;&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$i&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; | &lt;span class=&quot;nb&quot;&gt;tee&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-a&lt;/span&gt; matching_url_report.txt
+  &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;--&quot;&lt;/span&gt;
+  lighthouse &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--output&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;json &lt;span class=&quot;nt&quot;&gt;--output-path&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;report-&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$i&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;.json&quot;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;$((&lt;/span&gt;i++&lt;span class=&quot;k&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Then run this python script &lt;strong&gt;lighthouse.py&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;go&quot;&gt;python3 lighthouse.py urls.txt reports.csv
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/glegoux/articles-glegoux-com/tree/master/articles/2019-04-01-lighthouse/code&quot;&gt;See code&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;You get this csv file &lt;strong&gt;reports.csv&lt;/strong&gt;. Visualize with &lt;strong&gt;matplotlib&lt;/strong&gt; library:&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://cdn.jsdelivr.net/gh/glegoux/articles-glegoux-com@master/articles/2019-04-01-lighthouse/images/plot_scores.png&quot; alt=&quot; Charts of scores for a set of URLs&quot; title=&quot; Charts of scores for a set of URLs&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt; Charts of scores for a set of URLs&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;url&lt;/th&gt;
+      &lt;th&gt;date&lt;/th&gt;
+      &lt;th&gt;pwa&lt;/th&gt;
+      &lt;th&gt;performance&lt;/th&gt;
+      &lt;th&gt;accessibility&lt;/th&gt;
+      &lt;th&gt;best-practices&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;https://glegoux.com/projects/&lt;/td&gt;
+      &lt;td&gt;2017-08-17&lt;/td&gt;
+      &lt;td&gt;45.45&lt;/td&gt;
+      &lt;td&gt;46.12&lt;/td&gt;
+      &lt;td&gt;91.43&lt;/td&gt;
+      &lt;td&gt;69.23&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;https://glegoux.com/blog/&lt;/td&gt;
+      &lt;td&gt;2017-08-17&lt;/td&gt;
+      &lt;td&gt;45.45&lt;/td&gt;
+      &lt;td&gt;48.71&lt;/td&gt;
+      &lt;td&gt;91.43&lt;/td&gt;
+      &lt;td&gt;69.23&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;https://glegoux.com/home/&lt;/td&gt;
+      &lt;td&gt;2017-08-17&lt;/td&gt;
+      &lt;td&gt;36.36&lt;/td&gt;
+      &lt;td&gt;36.53&lt;/td&gt;
+      &lt;td&gt;88.57&lt;/td&gt;
+      &lt;td&gt;69.23&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;https://glegoux.com/snippets/&lt;/td&gt;
+      &lt;td&gt;2017-08-17&lt;/td&gt;
+      &lt;td&gt;45.45&lt;/td&gt;
+      &lt;td&gt;40.88&lt;/td&gt;
+      &lt;td&gt;91.43&lt;/td&gt;
+      &lt;td&gt;61.54&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;https://glegoux.com/articles/&lt;/td&gt;
+      &lt;td&gt;2017-08-17&lt;/td&gt;
+      &lt;td&gt;45.45&lt;/td&gt;
+      &lt;td&gt;46.12&lt;/td&gt;
+      &lt;td&gt;88.57&lt;/td&gt;
+      &lt;td&gt;69.23&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;https://glegoux.com/about/&lt;/td&gt;
+      &lt;td&gt;2017-08-17&lt;/td&gt;
+      &lt;td&gt;36.36&lt;/td&gt;
+      &lt;td&gt;40.18&lt;/td&gt;
+      &lt;td&gt;88.57&lt;/td&gt;
+      &lt;td&gt;69.23&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;strong&gt;References&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://developers.google.com/web/tools/lighthouse&quot;&gt;User Documentation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/GoogleChrome/lighthouse&quot;&gt;LightHouse Open Source Code&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en&quot;&gt;LightHouse as Google Chrome Extension&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/lighthouse&quot;&gt;LightHouse as NPM Javascript module&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gitbook.com/book/google-developer-training/progressive-web-apps-ilt-codelabs&quot;&gt;LightHouse as NPM Javascript module&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content><author>
+       <name>glegoux</name>
+       <uri>https://www.linkedin.com/in/gilleslegoux</uri>
+   </author></entry>
+ 
+ <entry>
+   <title>Kerberos in 5 minutes</title>
+   <link href="https://glegoux.com/blog/articles/2019/03/23/kerberos-in-5-minutes.html"/>
+   <updated>2019-03-23T00:00:00+00:00</updated>
+   <id>https://glegoux.com/blog/articles/2019/03/23/kerberos-in-5-minutes.html</id>
+   <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.kerberos.org/&quot;&gt;Kerberos&lt;/a&gt; is a protocol to guarantee one subpart of the security of your Information Infrastructure (II). 
+Among the key concepts of security: confidentiality, integrity, availability and non-repudiation. Kerberos allows to set up communications 
+confidentiality and non-repudiation accesses, it is an &lt;strong&gt;Authentication and Authorization System&lt;/strong&gt; (AAS). The step of authorization is very limited.&lt;/p&gt;
+
+&lt;p&gt;This article is an introduction to Kerberos ecosystem. It can be interesting for a &lt;strong&gt;manager&lt;/strong&gt; to understand key principles of Kerberos, a &lt;strong&gt;non-technical person&lt;/strong&gt; to 
+have a overview of this technology (2 first paragraphs), or for &lt;strong&gt;technical person&lt;/strong&gt; particularly with &lt;strong&gt;DevOps&lt;/strong&gt; skills to increase action field and go further if necessary (3 last paragraphs).&lt;/p&gt;
+
+&lt;h1 id=&quot;what-is-kerberos&quot;&gt;What is Kerberos?&lt;/h1&gt;
+
+&lt;p&gt;The goal of Kerberos is to prove the identity of each entity, then to secure communication, that’s all. You can use &lt;strong&gt;telnet, SSH, database, local system login, web API&lt;/strong&gt; or &lt;strong&gt;web portal&lt;/strong&gt;… 
+with Kerberos authentication method.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Kerberos allows to secure communications on untrusted networks but where each node is trusted&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;MIT&lt;/p&gt;
+
+&lt;p&gt;Kerberos is first a protocol and after a implementation. Kerberos builds on&lt;strong&gt;symmetric key cryptography&lt;/strong&gt; to encrypt communication and requires a trusted third party to identify &lt;strong&gt;mutual authentication&lt;/strong&gt; with a system of renewable tickets (each 10 hours by default).&lt;/p&gt;
+
+&lt;p&gt;The current important &lt;em&gt;Requests for Comments&lt;/em&gt; (RFC) to understand Kerberos are &lt;a href=&quot;https://www.ietf.org/rfc/rfc4120.txt&quot;&gt;rfc4120&lt;/a&gt; and &lt;a href=&quot;https://www.ietf.org/rfc/rfc6649.txt&quot;&gt;rfc6649&lt;/a&gt;), see &lt;a href=&quot;https://datatracker.ietf.org/doc/search/?name=Kerberos&amp;amp;sort=&amp;amp;rfcs=on&quot;&gt;all Kerberos RFCs&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The latest Kerberos version of Massachusetts Institute of Technology (MIT) implementation is &lt;a href=&quot;https://web.mit.edu/kerberos/krb5-1.16/&quot;&gt;Kerberos V5 1.16.1 (2018-05-03)&lt;/a&gt; written in Language C under &lt;a href=&quot;https://web.mit.edu/kerberos/krb5-1.15/doc/mitK5license.html&quot;&gt;MIT License&lt;/a&gt;. You can see &lt;a href=&quot;http://web.mit.edu/kerberos/dist/&quot;&gt;all available releases&lt;/a&gt;. The project is Open Source project and published on a &lt;a href=&quot;https://github.com/krb5/krb5&quot;&gt;git mirror repository on Github&lt;/a&gt; by &lt;a href=&quot;https://github.com/krb5&quot;&gt;Github krb5 Organization&lt;/a&gt;. There are a &lt;a href=&quot;https://web.mit.edu/kerberos/krb5-1.15/doc/mitK5license.html&quot;&gt;full online documentation&lt;/a&gt; and &lt;a href=&quot;http://www.kerberos.org/software/adminkerberos.pdf&quot;&gt;short guide pdf&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Kerberos’ name comes from Greek mythology, the three-headed guard dog of Hades.This technology is invented at MIT in the 1980s, became an &lt;strong&gt;IETF Standard&lt;/strong&gt; in 1993, and the first MIT implementation release in 1987 until present with continuous improvements.&lt;/p&gt;
+
+&lt;p&gt;Three current widespread implementations are &lt;strong&gt;MIT Kerberos&lt;/strong&gt;, &lt;strong&gt;Heimdal&lt;/strong&gt;, &lt;strong&gt;Active Directory&lt;/strong&gt; (AD) available allowing a multi-platform ecosystem (Windows or Linux server).&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://cdn.jsdelivr.net/gh/glegoux/articles-glegoux-com@master/articles/2019-03-23-kerberos-in-5-minutes/images/kerberos-logo.jpg&quot; alt=&quot;MIT Kerberos&quot; title=&quot;MIT Kerberos&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;MIT Kerberos&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;See &lt;a href=&quot;http://www.kerberos.org/about/FAQ.html&quot;&gt;Frequently Asked Questions (FAQ)&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The MIT &lt;strong&gt;Kerberos Consortium&lt;/strong&gt; ensures development and lasting quality of the Kerberos project since 2007 with past and present sponsors of &lt;strong&gt;Apple, Google, Oracle, Stanford University, Microsoft&lt;/strong&gt; …&lt;/p&gt;
+
+&lt;p&gt;Kerberos is a very famous tool using &lt;strong&gt;Hadoop Distributed File System&lt;/strong&gt; (HDFS) used by &lt;strong&gt;Spark&lt;/strong&gt; or &lt;strong&gt;Mapreduce&lt;/strong&gt; and distributed by Cloudera, Hortonworks or MapR for the Linux world to secure a environment &lt;strong&gt;Big Data&lt;/strong&gt;. But it is also famous in the Microsoft world as cornerstone of &lt;strong&gt;Active Directory&lt;/strong&gt; tool used a lot of companies as the &lt;strong&gt;Single Sign On&lt;/strong&gt; (SSO) solution for access to all applications and services.&lt;/p&gt;
+
+&lt;h1 id=&quot;pros-and-cons&quot;&gt;Pros and cons&lt;/h1&gt;
+
+&lt;p&gt;You can read this paper: &lt;a href=&quot;https://www.kerberos.org/software/whykerberos.pdf&quot;&gt;Why is Kerberos a credible security solution?&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;pros&quot;&gt;Pro’s&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;There is better performance when using of Kerberos. Because it uses symmetric key operations, which are orders of magnitude faster than public key operations used by SSL.&lt;/li&gt;
+  &lt;li&gt;User management is simpler. For example, revoking a user can be done by simply deleting the user from the centrally managed Kerberos KDC (key distribution center). Whereas in SSL, a new certificate revocation list has to be generated and propagated to all servers&lt;/li&gt;
+  &lt;li&gt;Thanks to its ticket system, Kerberos allows temporary access if a key session is stolen.&lt;/li&gt;
+  &lt;li&gt;The passwords is never sent through network (even ciphered, robust against Man In the Middle attack).&lt;/li&gt;
+  &lt;li&gt;Kerberos allows a mutual authentication, when a client is connected to  a service. The client knows which is the service and vice versa unlike SSL certificate where the server does not know a priori the client.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;cons&quot;&gt;Con’s&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A brute force attack on Key Distribution Service (KDC) could compromise the entire network, since it contains all the passwords (in an encrypted version, but still). So the security of the KDC is essential.&lt;/li&gt;
+  &lt;li&gt;Kerberos assumes that the host it is running on is safe, so if an attacker can get hold of a client it can steal tickets and during the lifetime of the ticket do the same things a normal user could. On multi-user systems the above point even becomes more important. Meaning that the different users should not be able to access each others files and memory.&lt;/li&gt;
+  &lt;li&gt;Since anybody can request a (TGT) of any user, and that ticket is encrypted with the user’s secret key (password), it is simple to perform an offline attack on this ticket by trying to decrypt it with different passwords. Kerberos 5 introduced to solve this problem.&lt;/li&gt;
+  &lt;li&gt;Kerberos is very dependent on the Domain Name Service (DNS), a service principal should have both:  DNS lookup and reverse DNS lookup working. If your DNS Server crashed your authentication system is out.&lt;/li&gt;
+  &lt;li&gt;The set up of Kerberos can be more constraining than another authentication system.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;how-it-works&quot;&gt;How it works?&lt;/h1&gt;
+
+&lt;p&gt;Imagine that a client wishes to access to a service through a Kerberos Authentication. The Kerberos authentication is divided into 3 main steps:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Getting a Ticket-Granting Ticket (TGT) from Authentication Server (AS)&lt;/li&gt;
+  &lt;li&gt;Getting a Ticket-Granting Service (TGS) from Ticket-Granting Server (TGS)&lt;/li&gt;
+  &lt;li&gt;Accessing to the Service&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Here client (identified as user) and service are already registered in the Kerberos database in the same Realm (understanding same Kerberos perimeter), respectively as User Principal Name (UPN) and Service Principal Name (SPN).&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://docs.google.com/drawings/d/e/2PACX-1vRFoa0U8YarJybG_tJJ4bxSaDj000n8XduoQyDVJQ77XHTovCd4EuGArkG9JhGDqATybKOHV9TSCVSh/pub?w=959&amp;amp;h=535&quot; alt=&quot;Kerberos authentication architecture&quot; title=&quot;Kerberos authentication architecture&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;Kerberos authentication architecture&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;You can use &lt;strong&gt;Lightweight Directory Access Protocol&lt;/strong&gt; (LDAP) as principal database to store users and groups of your organization. Now you have a nice &lt;strong&gt;Authentication, Authorization&lt;/strong&gt; and &lt;strong&gt;Accounting&lt;/strong&gt; System (AAAS) :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Authentication&lt;/code&gt; is managed by the KDC to guarantee the identity of an entity.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Authorization&lt;/code&gt; is controlled by the Service directly to authorize access (you can also use Access Control List (ACL) for other permissions)&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Accounting&lt;/code&gt; is allowed by LDAP server.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://docs.google.com/drawings/d/e/2PACX-1vRmsLxbS-kwQOzK20d0i3PZGADr1dmoWbG2ld-M2hIyXYjw1pGPuXtWO8LmBv9VaYJVh-E1aJOU7xoF/pub?w=959&amp;amp;h=542&quot; alt=&quot; Kerberos authentication workflow with LDAP&quot; title=&quot; Kerberos authentication workflow with LDAP&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt; Kerberos authentication workflow with LDAP&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h1 id=&quot;how-to-test&quot;&gt;How to test?&lt;/h1&gt;
+
+&lt;p&gt;I suppose that you are comfortable with docker containers and command-line interface under Linux Operating System as Ubuntu. You can test directly Kerberos ecosystem in few commands.&lt;/p&gt;
+
+&lt;p&gt;To do that, just consult this Open Source project &lt;a href=&quot;https://github.com/criteo/kerberos-docker&quot;&gt;kerberos-docker&lt;/a&gt;.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://cdn.jsdelivr.net/gh/glegoux/articles-glegoux-com@master/articles/2019-03-23-kerberos-in-5-minutes/images/kerberos-docker-logo.png&quot; alt=&quot;Kerberos/Docker icon&quot; title=&quot;Kerberos/Docker icon&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;Kerberos/Docker icon&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;This servers cluster is deployed automatically with only one command.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://docs.google.com/drawings/d/e/2PACX-1vSWzlGsP6c2XMkKZnJ8ncLx5rfaqR9vWJlvG8ksr5CxAKc1zeJ4aFUC-Zw4KpZt-ipcGJRcoY4P2q-o/pub?w=695&amp;amp;h=421&quot; alt=&quot;Kerberos architecture on docker for Kerberos/Docker project&quot; title=&quot;Kerberos architecture on docker for Kerberos/Docker project&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;Kerberos architecture on docker for Kerberos/Docker project&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Thanks to GSS-API implementation in C, OpenSSH use one method based on Kerberos authentication: &lt;strong&gt;gssapi-with-mic&lt;/strong&gt;. That is a Message Authentication Code (MAC) methods renamed in Message Integrated Code (MIC) for disambiguation MAC address. Thus the suffix with-mic is used. But SSH continue to manage authorization (using Linux-PAM or/and AllowsUser, Allowsgroup,PermitRootLogin in /etc/ssh/sshd_config), and accounting is managed by the Operating System.&lt;/p&gt;
+
+&lt;p&gt;The layer of access authorization provided by Kerberos is really minimal and consists in a ~/.k5login file and a few configurations. See details &lt;a href=&quot;https://web.mit.edu/kerberos/krb5-latest/doc/admin/host_config.html#login-authorization&quot;&gt;here&lt;/a&gt;. By default Kerberos applies a default authorization rule: if host H is in realm R, the Kerberos principal u@R is allowed access to the account u@H. You change the configuration of SSH server with KerberosAuthentication yes to connect directly the service without doing kinit. And you can use also another way to use the PAM module of Kerberos &lt;a href=&quot;https://github.com/rra/pam-krb5&quot;&gt;pam_krb5.so&lt;/a&gt; thanks to the configuration UsePAM yes.&lt;/p&gt;
+
+&lt;p&gt;For developing your own kerberized application, you can read &lt;a href=&quot;https://www.kerberos.org/software/appskerberos.pdf&quot;&gt;Best Practices for Integrating Kerberos into Your Application&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;go-further&quot;&gt;Go further&lt;/h1&gt;
+
+&lt;p&gt;To go further, you should know that with Kerberos you can do Delegation of authentication, Servers’ replication and redundancy, Cross Realm Authentication. And it is important to distinguish Kerberos with SSL/HTTPS, SSH or JWT, Radius and Diameter.&lt;/p&gt;
+
+&lt;h1 id=&quot;annexes&quot;&gt;Annexes&lt;/h1&gt;
+
+&lt;h2 id=&quot;key-concepts&quot;&gt;Key Concepts&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Authentication&lt;/code&gt;: Action of checking that an entity is really this entity without impersonating another entity.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Authorization&lt;/code&gt;: Action of verifying that an entity have sufficient rights to access a system.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Accounting&lt;/code&gt;: Management of defined groups and users.&lt;/p&gt;
+
+&lt;h2 id=&quot;general-concepts&quot;&gt;General concepts&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Mutual authentication&lt;/code&gt;: It is also called two-way authentication, is a process or technology in which both entities in a communications link authenticate each other. In a network environment, the client authenticates the server and vice-versa.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;AAS&lt;/code&gt;: Authentication and Authorization System.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;AAAS&lt;/code&gt;: Authentication, Authorization, Accounting/Auditing System.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Client&lt;/code&gt;: An entity that can obtain a ticket. This entity is usually either a user or a host.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Host&lt;/code&gt;: A computer that can be accessed over a network.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;DNS&lt;/code&gt;: The Domain Name System is a hierarchical decentralized naming system for computers.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Service&lt;/code&gt;: Any program or computer you access over a network. Examples of services include “host” (a host, e.g., when you use telnet and rsh), “ftp” (FTP), “krbtgt” (authentication; cf. ticket-granting ticket), and “pop” (email).&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;RFC&lt;/code&gt;: A Request for Comments (RFC) is a type of publication from the Internet Engineering Task Force (IETF) and the Internet Society (ISOC), the principal technical development and standards-setting bodies for the Internet.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;LDAP&lt;/code&gt;: Lightweight Directory Access Protocol is a directory service protocol that runs on a layer above the TCP/IP stack. It provides a mechanism used to connect to, search, and modify Internet directories. It is essentially a database that contains information about users and groups in a tree structure&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;HDFS&lt;/code&gt;:  Hadoop Distributed File System is a Java-based file system that provides scalable and reliable data storage, and it was designed to span large clusters of commodity servers.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;SSO&lt;/code&gt;: Single Sign On is a method allowing to an user to access to several applications thanks to one unique authentication.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;OpenSSH&lt;/code&gt;: Implementation Open Source of Secure SHell (SSH) is a cryptographic network protocol for operating network services securely over an unsecured network.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ACL&lt;/code&gt;: Access Control List allows to manage permissions attached to an object.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;PAM&lt;/code&gt;: A Pluggable Authentication Module allows to standardize security layer dynamically though system of same customizable modules for all applications.&lt;/p&gt;
+
+&lt;h2 id=&quot;kerberos-concepts&quot;&gt;Kerberos concepts&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Kerberos&lt;/code&gt;: In Greek mythology, the three-headed dog that guards the entrance to the underworld. In the computing world, Kerberos is a network security package that was developed at MIT.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;KDC&lt;/code&gt;: Key Distribution Center. A machine that issues Kerberos tickets composed of Ticket-Granting Server (TGS), Authentication Server (AS) and database instances.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;AS&lt;/code&gt;: Authentication Service gives Ticket-Granting Ticket (TGT) to authenticate a client.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;AD&lt;/code&gt;: Active Directory is a Microsoft product which makes use of a Kerberos implementation.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Keytab&lt;/code&gt;: Shortcut for key table a key tab is the file containing one or more keys. A host or service uses a keytab file in much the same way as a user uses his/her password.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Realm&lt;/code&gt;: A REALM is in Kerberos terms equivalent to a Domain in Domain Name Server (DNS) by convention in UPPERCASE.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Principal&lt;/code&gt;: You can understand that as UNIX username. There 2 types of principles: Service Principal Name (SPN) and User Principal Name (UPN). It is a string that names a specific entity to which a set of credentials may be assigned. 
+It can have an arbitrary number of components:
+component1/component2/…@REALM
+The typical format of a typical Kerberos principal is primary/instance@REALM.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;primary&lt;/code&gt;: The first part of a Kerberos principal. In the case of a user, it is the username. In the case of a service, it is the name of the service.
+&lt;code class=&quot;highlighter-rouge&quot;&gt;instance&lt;/code&gt;: The second part of a Kerberos principal. It gives information that qualifies the primary. The instance may be null. In the case of a user, the instance is often used to describe the intended use of the corresponding credentials. In the case of a host, the instance is the fully qualified hostname.
+&lt;code class=&quot;highlighter-rouge&quot;&gt;realm&lt;/code&gt;: The logical network served by a single Kerberos database and a set of Key Distribution Centers. By convention, realm names are generally all uppercase letters, to differentiate the realm from the internet domain.
+&lt;code class=&quot;highlighter-rouge&quot;&gt;Ticket&lt;/code&gt;: A temporary set of electronic credentials that verify the identity of a client for a particular service (typically 8 or 10 hours of life time).&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;TGT&lt;/code&gt;: Ticket-Granting Ticket. A special Kerberos ticket to guarantee authentication that permits the client to obtain additional Kerberos tickets within the same Kerberos realm given by Authentication Service (AS).&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;TGS&lt;/code&gt;: Ticket-Granting Service or Ticket-Granting Server (depends on context). The TGS exchange is initiated by a client when it wishes to obtain authentication credentials for a given server&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GSS-API&lt;/code&gt;: Acronym for Generic Security Service Application Program Interface (GSSAPI, also GSS-API) is an application programming interface for programs to access security services.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Session Key&lt;/code&gt;:  Random number generated by the KDC when it builds a ticket. It is the shared secret that the KDC, the client, and the validating server have in common.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;KVNO&lt;/code&gt;: It is an acronym for Key version number. Kerberos can hold multiple keys for a principal. To distinguish between those keys every key has version number. The number is incremented by one when the password or encryption is changed.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;KRBTGT Account&lt;/code&gt;: This is a special account to create Ticket Granting Tickets.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Key salt&lt;/code&gt;: The salt is a string concatenated to the password to make sure the string2key function creates a unique encryption key, via a one-way hash. In Kerberos 5 the salt is the complete principal name including the realm. The reason the salt is used is to make sure the outcome of the one way hash is unique across realms.&lt;/p&gt;
+
+&lt;h1 id=&quot;references&quot;&gt;References&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ROBINSON Trevor (eztenia). &lt;strong&gt;Kerberos&lt;/strong&gt;. Canonical Ltd. Ubuntu Article, November 2014. Link: https://help.ubuntu.com/community/Kerberos.&lt;/li&gt;
+  &lt;li&gt;MIGEON Jean. &lt;strong&gt;Protocol, Installation and Single Sign On, The MIT Kerberos Admnistrator’s how-to Guide&lt;/strong&gt;. MIT Kerberos Consortium, July 2008. p 62.&lt;/li&gt;
+  &lt;li&gt;BARRETT Daniel, SILVERMAN Richard, BYRNES Robert. &lt;strong&gt;SSH, The Secure Shell: The Definitive Guide, 2nd Edition&lt;/strong&gt;. O’Reilly Media, June 2009. p. 672. Notes: Chapter 11. ISBN-10: 0596008953, ISBN-13: 978-0596008956&lt;/li&gt;
+  &lt;li&gt;GARMAN, Jason. &lt;strong&gt;Kerberos: The Definitive Guide, 2nd Edition&lt;/strong&gt;. O’Reilly Media, March 2010. p. 272.  ISBN-10: 0596004036, ISBN-13: 978-0596004033.&lt;/li&gt;
+  &lt;li&gt;O’MALLEY Owen, ZHANG Kan, RADIA Sanjay, MARTI Ram, and HARRELL Christopher. &lt;strong&gt;Hadoop Security Design&lt;/strong&gt;. Yahoo! Research Paper, October 2009. p 19.&lt;/li&gt;
+  &lt;li&gt;MATTHIAS Karl, KANE Sean. &lt;strong&gt;Docker: Up &amp;amp; Running&lt;/strong&gt;. O’Reilly Media, June 2015. p. 232. ISBN-10: 1491917571, ISBN-13: 978-1491917572.&lt;/li&gt;
+&lt;/ul&gt;
+</content><author>
+       <name>glegoux</name>
+       <uri>https://www.linkedin.com/in/gilleslegoux</uri>
+   </author></entry>
+ 
+ <entry>
+   <title>Access to a computer from USB key</title>
+   <link href="https://glegoux.com/blog/articles/2019/03/01/access-to-a-computer-from-usb-key.html"/>
+   <updated>2019-03-01T00:00:00+00:00</updated>
+   <id>https://glegoux.com/blog/articles/2019/03/01/access-to-a-computer-from-usb-key.html</id>
+   <content type="html">&lt;p&gt;Imagine that you are in the following situation:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;You have forgotten your password,&lt;/li&gt;
+  &lt;li&gt;Following a wrong manipulation you can not access to your personal space anymore,&lt;/li&gt;
+  &lt;li&gt;You found a computer without supervision.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;With a bootable USB key on Ubuntu, you can change the password of the target computer and recover its file system.&lt;/p&gt;
+
+&lt;p&gt;First, plug your USB drive into the target computer, choose your key as the boot device for the target computer to boot to the Ubuntu system on your USB drive. On a DELL computer, press &lt;code class=&quot;highlighter-rouge&quot;&gt;F12&lt;/code&gt; to access this selection. This information is visible on the welcome screen of the manufacturer of your computer.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://cdn.jsdelivr.net/gh/glegoux/articles-glegoux-com@master/articles/2019-03-01-access-to-a-computer-from-usb-key/images/welcome-screen-dell.png&quot; alt=&quot;DELL welcome screen&quot; title=&quot;DELL welcome screen&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;DELL welcome screen&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Start by choosing the following option:&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://cdn.jsdelivr.net/gh/glegoux/articles-glegoux-com@master/articles/2019-03-01-access-to-a-computer-from-usb-key/images/hack1.png&quot; alt=&quot;Advanced startup options&quot; title=&quot;Advanced startup options&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;Advanced startup options&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Then select the &lt;code class=&quot;highlighter-rouge&quot;&gt;recovery mode&lt;/code&gt;:&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://cdn.jsdelivr.net/gh/glegoux/articles-glegoux-com@master/articles/2019-03-01-access-to-a-computer-from-usb-key/images/hack2.png&quot; alt=&quot;Getting started in recovery mode&quot; title=&quot;Getting started in recovery mode&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;Getting started in recovery mode&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Launch a &lt;code class=&quot;highlighter-rouge&quot;&gt;root shell&lt;/code&gt;:&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://cdn.jsdelivr.net/gh/glegoux/articles-glegoux-com@master/articles/2019-03-01-access-to-a-computer-from-usb-key/images/hack3.png&quot; alt=&quot;Choosing the root shell&quot; title=&quot;Choosing the root shell&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;Choosing the root shell&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;You access a device as a &lt;code class=&quot;highlighter-rouge&quot;&gt;root&lt;/code&gt; user.&lt;/p&gt;
+
+&lt;pre class=&quot;info&quot;&gt;
+If you need to access the internet, select the network entry before. To verify that you have access to the web you can &lt;i&gt;ping 8.8.8.8&lt;/i&gt; on the Google DNS server, then make &lt;i&gt;nslookup  8.8.8.8&lt;/i&gt; to check that the DNS resolution works. If that does not work, add this line &lt;i&gt;nameserver 8.8.8.8&lt;/i&gt; to the file &lt;i&gt;/etc/resolv.conf&lt;/i&gt; (this will be deleted when you restart the computer) and restart your service &lt;i&gt;network-manager&lt;/i&gt; with &lt;i&gt;service network-manager restart&lt;/i&gt;.
+&lt;/pre&gt;
+
+&lt;p&gt;For the moment the file system is only in &lt;code class=&quot;highlighter-rouge&quot;&gt;read only&lt;/code&gt;, type the following command to mount the file system in&lt;code class=&quot;highlighter-rouge&quot;&gt; read / write&lt;/code&gt; at the root of your key:&lt;/p&gt;
+
+&lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;go&quot;&gt;mount -o remount, rw /
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now you can copy the file system to an external hard drive, and then you can choose the new user password by typing:&lt;/p&gt;
+
+&lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;passwd &amp;lt;username&amp;gt;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;pre class=&quot;info&quot;&gt;
+If you do not know the users on this machine, you can do &lt;i&gt;ls /home&lt;/i&gt;. Certainly a user of this machine corresponds to a directory name in &lt;i&gt;/home/&lt;/i&gt;, or even view the file &lt;i&gt;/etc/passwd&lt;/i&gt;, or else you can create a user as you are &lt;i&gt;root&lt;/i&gt;.
+&lt;/pre&gt;
+
+&lt;p&gt;Type in the new password and confirm.&lt;/p&gt;
+
+&lt;p&gt;You can shut down the computer.&lt;/p&gt;
+
+&lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;go&quot;&gt;shutdown -h now
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You can now turn on the computer normally and log in with the chosen user and password.&lt;/p&gt;
+
+&lt;pre class=&quot;error&quot;&gt;
+Beware the morality of this article is that a person physically accessing your computer does not need login /password to access your computer. If you want to protect yourself from this attack, you must &lt;b&gt;encrypt your hard drive&lt;/b&gt;.
+&lt;/pre&gt;
+
+&lt;p&gt;Well done :smile:!&lt;/p&gt;
+</content><author>
+       <name>glegoux</name>
+       <uri>https://www.linkedin.com/in/gilleslegoux</uri>
+   </author></entry>
+ 
+ <entry>
+   <title>How to quote sources</title>
+   <link href="https://glegoux.com/blog/articles/2019/02/14/how-to-quote-sources.html"/>
+   <updated>2019-02-14T00:00:00+00:00</updated>
+   <id>https://glegoux.com/blog/articles/2019/02/14/how-to-quote-sources.html</id>
+   <content type="html">&lt;p&gt;The standard in force is mainly Afnor Standard Z 44-005, December 1987 (ISO 690). Here is a link of the website of the Ministry of Culture and Communication which presents in a synthetic way the standards in force for the writing of bibliographical references:&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;a href=&quot;http://www.culture.gouv.fr/culture/inventai/telechar/normes.pdf&quot;&gt;http://www.culture.gouv.fr/culture/inventai/telechar/normes.pdf&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;To write a blog article resources are used and must be specified in a &lt;strong&gt;bibliography&lt;/strong&gt; and / or a &lt;strong&gt;sitemap&lt;/strong&gt;. These groups respectively the paper resources or online like books, articles, videos, research papers, interviews …&lt;/p&gt;
+
+&lt;p&gt;In general, these rules are to be respected with a certain freedom, but all known information must be mentioned. Some information is mandatory or conditionally mandatory (ISBN, ISSN for example).&lt;/p&gt;
+
+&lt;p&gt;You can find out what an ISBN (International Standard Book Number) is:&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;a href=&quot;https://www.isbn-international.org/fr/&quot;&gt; https://www.isbn-international.org/en/ &lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Likewise for what is an ISBN (International Standard Book Number):&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;a href=&quot;http://www.issn.org/fr/&quot;&gt; http://www.issn.org/en/ &lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Two sites are also interesting:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The website of AFNIL (French Agency for International Numbering of Books):&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+    &lt;a href=&quot;http://www.afnil.org/&quot;&gt; http://www.afnil.org/ &lt;/a&gt;
+&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The site of the BnF (Libraries National of France):&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+    &lt;a href=&quot;http://www.bnf.fr/&quot;&gt; http://www.bnf.fr/ &lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;With these resources:&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;a href=&quot;http://www.bnf.fr/fr/professionnels/s_informer_obtenir_issn.html&quot;&gt; Get informed and get an ISSN &lt;/a&gt; &lt;br /&gt;
+	&lt;a href=&quot;http://www.bnf.fr/fr/professionnels/s_informer_obtenir_isbn.html&quot;&gt; Get information and get an ISBN &lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Your references must be in alphabetical order at the end of your article respecting these conventions.&lt;/p&gt;
+
+&lt;h1 id=&quot;book&quot;&gt;Book&lt;/h1&gt;
+
+&lt;p&gt;NAME OF THE AUTHOR, First name of the author. &lt;strong&gt;Title of the book&lt;/strong&gt;. Name of publisher, year of publication. Number of pages. Notes. ISBN.&lt;/p&gt;
+
+&lt;h1 id=&quot;periodical-article&quot;&gt;Periodical article&lt;/h1&gt;
+
+&lt;p&gt;NAME OF THE AUTHOR, First name of the author. &lt;strong&gt;Title of the article&lt;/strong&gt;. &lt;em&gt;Title of the periodical&lt;/em&gt;. year of publication. not. paging. ISSN.&lt;/p&gt;
+
+&lt;h1 id=&quot;internet-resource&quot;&gt;Internet resource&lt;/h1&gt;
+
+&lt;p&gt;This convention is personal. For this blog by default the links given are consulted the day of the creation of the article.&lt;/p&gt;
+
+&lt;p&gt;NAME OF THE AUTHOR, First name of the author. &lt;strong&gt;Title&lt;/strong&gt; [online]. &lt;em&gt;Editor’s name&lt;/em&gt;. [date of publication or update date of consultation]. Availability and access. (or just a link)&lt;/p&gt;
+
+&lt;h1 id=&quot;references&quot;&gt;References&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.isbn-international.org&quot;&gt;https://www.isbn-international.org&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.issn.org&quot;&gt;http://www.issn.org&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.afnil.org&quot;&gt;http://www.afnil.org&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.bnf.fr&quot;&gt;http://www.bnf.fr&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content><author>
+       <name>glegoux</name>
+       <uri>https://www.linkedin.com/in/gilleslegoux</uri>
+   </author></entry>
+ 
+ <entry>
+   <title>Getting Started</title>
+   <link href="https://glegoux.com/blog/articles/2019/01/21/getting-started.html"/>
+   <updated>2019-01-21T00:00:00+00:00</updated>
+   <id>https://glegoux.com/blog/articles/2019/01/21/getting-started.html</id>
+   <content type="html">&lt;p&gt;&lt;a href=&quot;https://daringfireball.net/projects/markdown/&quot;&gt;Markdown&lt;/a&gt; is a lightweight and popular text metalanguage which is a writing standard for scientists 
+with extension &lt;code class=&quot;highlighter-rouge&quot;&gt;.md&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;.markdown&lt;/code&gt;.&lt;br /&gt;
+It is often converted into HTML what allows it to be easily shared on the web :spider_web:.&lt;/p&gt;
+
+&lt;p&gt;After the matching HTML text can be decorate and animate by CSS style sheet and/or JS script:&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://docs.google.com/drawings/d/e/2PACX-1vRPwfUjnj6bT9B-M4jdzQqOICzCwblxYR5xvgiXYWrpcgpmFddbWR-ErodWf-U0rE8f0aqzUfazXvf8/pub?w=960&amp;amp;h=267&quot; alt=&quot;Markdown processor&quot; title=&quot;Markdown processor&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;Markdown processor&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Discover the Markdown syntax used on this blog and more generally on the web.&lt;/p&gt;
+
+&lt;h1 id=&quot;text&quot;&gt;Text&lt;/h1&gt;
+
+&lt;h2 id=&quot;highlight&quot;&gt;Highlight&lt;/h2&gt;
+
+&lt;p&gt;Enhance your text:&lt;/p&gt;
+
+&lt;p&gt;Italics: &lt;em&gt;italics&lt;/em&gt; or &lt;em&gt;italics&lt;/em&gt;&lt;br /&gt;
+Bold:	&lt;strong&gt;bold&lt;/strong&gt; or &lt;strong&gt;bold&lt;/strong&gt;&lt;br /&gt;
+Strikethrough: &lt;del&gt;Strikethrough&lt;/del&gt;&lt;br /&gt;
+Bold &amp;amp; Italics: &lt;strong&gt;&lt;em&gt;bold italics&lt;/em&gt;&lt;/strong&gt; or &lt;strong&gt;&lt;em&gt;bold italics&lt;/em&gt;&lt;/strong&gt;&lt;br /&gt;
+Inline code: &lt;code class=&quot;highlighter-rouge&quot;&gt;code&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Italics: *italics* or _italics_  
+Bold:	**bold** or __bold__ 
+Strikethrough: ~~Strikethrough~~
+Bold &amp;amp; Italics: **_bold italics_** or __*bold italics*__
+Inline code: `code`
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;new-line--paragraph&quot;&gt;New line &amp;amp; paragraph&lt;/h2&gt;
+
+&lt;p&gt;Let 2 trailing spaces to have an end of line, and let a empty line for a new paragraph:&lt;/p&gt;
+
+&lt;p&gt;Hello,&lt;/p&gt;
+
+&lt;p&gt;World!&lt;/p&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-whitespace&quot;&gt;Hello,␣␣\n
+\n
+World!\n
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;em&gt;Note: &lt;code class=&quot;highlighter-rouge&quot;&gt;\n&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;␣&lt;/code&gt; represent respectively a new line character and a space character.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;headings&quot;&gt;Headings&lt;/h2&gt;
+
+&lt;p&gt;Make a part, a subpart and a sub-subpart:&lt;/p&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# H1
+## H2
+### H3
+
+
+H1
+======
+
+H2
+------
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;list&quot;&gt;List&lt;/h2&gt;
+
+&lt;p&gt;Build an ordered list:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;item&lt;/li&gt;
+  &lt;li&gt;item&lt;/li&gt;
+  &lt;li&gt;item&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1. item
+2. item
+3. item
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Build a unordered list:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;item&lt;/li&gt;
+  &lt;li&gt;item&lt;/li&gt;
+  &lt;li&gt;item&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; * item
+ * item
+ * item
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;quote&quot;&gt;Quote&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Talk is cheap. Show me the code.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Linus Torvalds, creator of the Linux operating system&lt;/p&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-@escape&quot;&gt;&amp;gt; Talk is cheap. Show me the code.
+
+Linus Torvalds, creator of the Linux operating system
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;emoticon&quot;&gt;Emoticon&lt;/h2&gt;
+
+&lt;p&gt;Use &lt;a href=&quot;https://www.webpagefx.com/tools/emoji-cheat-sheet/&quot;&gt;emoji&lt;/a&gt; :&lt;/p&gt;
+
+&lt;p&gt;:smile: :scream: :yum:&lt;/p&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-@escape&quot;&gt;:smile: :scream: :yum:
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;links&quot;&gt;Links&lt;/h2&gt;
+
+&lt;p&gt;Simple link (works with absolute and relative link):&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.google.com&quot;&gt;Google&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[Google](https://www.google.com)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[Google](https://www.google.com &quot;Google's Homepage&quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You can use shortcut for your links to use that several times on article or to centralize links:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.google.com&quot;&gt;Google1&lt;/a&gt; &lt;a href=&quot;https://www.google.com&quot;&gt;Google2&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[Google1][1] [Google2][1]
+
+[1]: https://www.google.com
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;notes&quot;&gt;Notes&lt;/h2&gt;
+
+&lt;h3 id=&quot;info&quot;&gt;Info&lt;/h3&gt;
+
+&lt;pre class=&quot; info&quot;&gt;
+INFO
+&lt;/pre&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;pre class=&quot; info&quot;&amp;gt;
+INFO
+&amp;lt;/pre&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;question&quot;&gt;Question&lt;/h3&gt;
+
+&lt;pre class=&quot;question&quot;&gt;
+QUESTION
+&lt;/pre&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;pre class=&quot;question&quot;&amp;gt;
+QUESTION
+&amp;lt;/pre&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;warning&quot;&gt;Warning&lt;/h3&gt;
+
+&lt;pre class=&quot;warning&quot;&gt;
+WARNING
+&lt;/pre&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;pre class=&quot;warning&quot;&amp;gt;
+WARNING
+&amp;lt;/pre&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;error&quot;&gt;Error&lt;/h3&gt;
+
+&lt;pre class=&quot;error&quot;&gt;
+ERROR
+&lt;/pre&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;pre class=&quot;error&quot;&amp;gt;
+ERROR
+&amp;lt;/pre&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;informatics-code&quot;&gt;Informatics code&lt;/h1&gt;
+
+&lt;h2 id=&quot;programming-language&quot;&gt;Programming language&lt;/h2&gt;
+
+&lt;h3 id=&quot;terminal&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;Terminal&lt;/span&gt;&lt;/h3&gt;
+
+&lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;command&lt;/span&gt;
+&lt;span class=&quot;go&quot;&gt;result
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+
+&lt;pre&gt;
+~~~ terminal
+$ command
+result
+~~~
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;python&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;Python&lt;/span&gt;&lt;/h3&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello world!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+
+&lt;pre&gt;
+~~~ python
+print(&quot;Hello world!&quot;)
+~~~
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;java&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;Java&lt;/span&gt;&lt;/h3&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello world!&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;pre&gt;
+~~~ java 
+System.out.println(&quot;Hello world!&quot;);
+~~~
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;bash&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;Bash&lt;/span&gt;&lt;/h3&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hello world!&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+
+&lt;pre&gt;
+~~~ bash 
+echo &quot;Hello world!&quot;
+~~~
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;ruby&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;Ruby&lt;/span&gt;&lt;/h3&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hello world!&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;pre&gt;
+~~~ ruby 
+puts &quot;Hello world!&quot;
+~~~
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;go&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;Go&lt;/span&gt;&lt;/h3&gt;
+
+&lt;div class=&quot;language-go highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;fmt&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;fmt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Println&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello world!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;pre&gt;
+~~~ go
+import(&quot;fmt&quot;)
+
+fmt.Println(&quot;Hello world!&quot;)
+~~~
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;javascript&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;JavaScript&lt;/span&gt;&lt;/h3&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Hello world!&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;pre&gt;
+~~~ javascript
+console.log(&quot;Hello world!&quot;);
+~~~
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;html&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;HTML&lt;/span&gt;&lt;/h3&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Hello world!&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+
+&lt;pre&gt;
+~~~ html
+&amp;lt;p&amp;gt;Hello world&amp;lt;/p&amp;gt;
+~~~
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;css&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;CSS&lt;/span&gt;&lt;/h3&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;.hello-world&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;text-align&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;center&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+
+&lt;pre&gt;
+~~~ css
+.hello-world {
+  text-align: center
+}
+~~~
+&lt;/pre&gt;
+
+&lt;h2 id=&quot;text-file&quot;&gt;Text file&lt;/h2&gt;
+
+&lt;h3 id=&quot;plain-text&quot;&gt;Plain text&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&quot;Hello World!&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;pre&gt;
+~~~
+&quot;Hello World!&quot;
+~~~
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;json&quot;&gt;JSON&lt;/h3&gt;
+
+&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;message&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Hello World!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;pre&gt;
+~~~ json
+{&quot;message&quot;: &quot;Hello World!&quot;}
+~~~
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;yaml&quot;&gt;YAML&lt;/h3&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;world&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Hello&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;World!&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;pre&gt;
+~~~ yaml
+hello:
+  world: &quot;Hello World!&quot;
+~~~
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;xml&quot;&gt;XML&lt;/h3&gt;
+
+&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;message&amp;gt;&lt;/span&gt;Hello World!&lt;span class=&quot;nt&quot;&gt;&amp;lt;/message&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;pre&gt;
+~~~ xml
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;message&gt;Hello World!&lt;/message&gt;
+~~~
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;ini&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;INI&lt;/span&gt;&lt;/h3&gt;
+
+&lt;div class=&quot;language-ini highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nn&quot;&gt;[message]&lt;/span&gt;
+&lt;span class=&quot;py&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello World!&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;pre&gt;
+~~~ ini
+[message]
+message=&quot;Hello World!&quot;
+~~~
+&lt;/pre&gt;
+
+&lt;h1 id=&quot;mathematics-formula&quot;&gt;Mathematics Formula&lt;/h1&gt;
+
+&lt;p&gt;Use LateX syntax, see https://www.latex-project.org .&lt;/p&gt;
+
+&lt;h2 id=&quot;inline-formula&quot;&gt;Inline formula&lt;/h2&gt;
+
+&lt;p&gt;This formula $\int_0^1 x^2dx = \frac{1}{3}$ is inline.&lt;/p&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$\int_0^1 x^2dx = \frac{1}{3}$
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;multiline-formula&quot;&gt;Multiline formula&lt;/h2&gt;
+
+&lt;p&gt;This formula is multiline:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\int_0^1 xdx = \frac{1}{2} \\
+\int_0^1 x^2dx = \frac{1}{3}&lt;/script&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$$
+\int_0^1 xdx = \frac{1}{2} \\
+\int_0^1 x^2dx = \frac{1}{3} 
+$$
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+</content><author>
+       <name>glegoux</name>
+       <uri>https://www.linkedin.com/in/gilleslegoux</uri>
+   </author></entry>
+ 
+
+</feed>

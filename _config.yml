@@ -1,87 +1,12 @@
-# Site configuration for production
-# See default configuration: https://jekyllrb.com/docs/configuration/default
+# Site configuration for GitHub Pages
+# See https://help.github.com/en/github/working-with-github-pages/about-github-pages-and-jekyll
+#
+# Note: To bypass Jekyll processing for GitHub Pages, you can use .nojekyll.
+# See https://github.blog/2009-12-29-bypassing-jekyll-on-github-pages/
 
-# Server
+exclude:
+  - "CNAME"
+  - "README.md"
 
-url: "https://glegoux.com"
-baseurl: ""
-detach: false
-show_dir_listing: false
-encoding: "utf-8"
-lsi: false
-safe: true
-incremental: false
-highlighter: rouge
-gist:
-  noscript: false
-kramdown:
-  math_engine: mathjax
-  syntax_highlighter: rouge
-
-# Build
-
-source: "src"
-data_dir: "_data"
-includes_dir: "_includes"
-layouts_dir: "_layouts"
-plugins_dir: "_plugins"
-destination: "dest"
-
-show_drafts: false
-
-sass:
-  sass_dir: "_sass"
-  style: "compressed"
-
-# Normally files starting by ., #, ~ and _ are ignoring by the Jekyll build.
 include:
   - "_static" # project folder for static files
-
-# Force to exclude some files for the watcher (with --watch option) in the Jekyll::Watcher
-# See https://help.github.jp/enterprise/2.11/user/articles/files-that-start-with-an-underscore-are-missing/
-exclude:
-  - ".sass-cache"
-  - ".jekyll-metadata"
-  - ".jekyll-cache"
-  - ".jekyll-config-debug.json" # project file for debugging
-
-# Plugins
-
-plugins:
-  - "jekyll-sitemap"
-  - "jekyll-seo-tag"
-  - "jekyll-paginate"
-  - "jekyll-mentions"
-  - "jekyll-redirect-from"
-  - "jemoji"
-
-# Redirect
-
-redirect_from:
-  json: false
-
-# Layout
-
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "article"
-      article: true
-      comment: true
-
-# SEO
-
-title: "Software Engineering Blog - Gilles Legoux"
-description: "Personal blog about software engineering"
-author: "Gilles Legoux"
-keywords: "glegoux,Gilles,Legoux,informatics,mathematics,software,engineer"
-logo: "/_static/img/icon-iphone.png"
-lang: "en"
-
-# Articles
-
-paginate: 12
-paginate_path: "/blog/articles/page/:num/"
-permalink: "/blog/articles/:year/:month/:day/:title:output_ext"

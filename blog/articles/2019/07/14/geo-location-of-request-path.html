@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- Mobile Iphone -->
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<link rel="apple-touch-icon" href="/_static/site/img/icon-iphone.png?v=1"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<!-- Mobile Android -->
+<meta name="mobile-web-app-capable" content="yes"/>
+<link rel="manifest" href="/manifest.json"/>
+<meta name="theme-color" content="#383b43"/>
+<!-- Desktop -->
+<link rel="icon" type="image/png" href="/favicon.ico?v=1"/>
+<!-- Search Engine -->
+<meta name="author" content="Gilles Legoux"/>
+<title>Geo-location of request path</title>
+<meta itemprop="description" name="description" content="How to know for which routers a HTTP request browses?"/>
+<meta name="keywords"
+      content="glegoux,Gilles,Legoux,informatics,mathematics,software,engineer,Web,"/>
+<!-- SEO -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Geo-location of request path" />
+<meta name="author" content="glegoux" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="How to know for which routers a HTTP request browses?" />
+<meta property="og:description" content="How to know for which routers a HTTP request browses?" />
+<link rel="canonical" href="https://glegoux.com/blog/articles/2019/07/14/geo-location-of-request-path.html" />
+<meta property="og:url" content="https://glegoux.com/blog/articles/2019/07/14/geo-location-of-request-path.html" />
+<meta property="og:site_name" content="Software Engineering Blog - Gilles Legoux" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-07-14T00:00:00+00:00" />
+<script type="application/ld+json">
+{"description":"How to know for which routers a HTTP request browses?","@type":"BlogPosting","headline":"Geo-location of request path","dateModified":"2019-07-14T00:00:00+00:00","url":"https://glegoux.com/blog/articles/2019/07/14/geo-location-of-request-path.html","datePublished":"2019-07-14T00:00:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://glegoux.com/blog/articles/2019/07/14/geo-location-of-request-path.html"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://glegoux.com/_static/img/icon-iphone.png"},"name":"glegoux"},"author":{"@type":"Person","name":"glegoux"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<!-- Article cover social sharing --><meta property="og:image" content="https://glegoux.com/_static/common/posts/2019-07-14-geo-location-of-request-path.jpg"/>
+  <!-- Preconnect -->
+<link rel="preconnect" href="https://marketingplatform.google.com/about/analytics/" crossorigin="anonymous"/>
+<link rel="preconnect" href="https://www.google.com" crossorigin="anonymous"/><link rel="preconnect" href="https://disquscdn.com" crossorigin="anonymous"/>
+<link rel="preconnect" href="https://a.disquscdn.com" crossorigin="anonymous"/>
+<link rel="preconnect" href="https://c.disquscdn.com" crossorigin="anonymous"/><!-- Preload Font -->
+<link rel="preload" as="font" href="/_static/site/libs/font-awesome/5.11.2/webfonts/fa-regular-400.woff2" crossorigin="anonymous"/>
+<link rel="preload" as="font" href="/_static/site/libs/font-awesome/5.11.2/webfonts/fa-brands-400.woff2" crossorigin="anonymous"/>
+<link rel="preload" as="font" href="/_static/site/libs/font-awesome/5.11.2/webfonts/fa-solid-900.woff2" crossorigin="anonymous"/>
+<!-- Preload CSS and JS -->
+<link rel="preload" as="script" href="/_static/site/libs/smooth-scroll/14.2.1/js/smooth-scroll.min.js"/>
+<link rel="preload" as="script" href="/_static/site/libs/popper/1.14.3/js/popper.min.js"/>
+<link rel="preload" as="script" href="/_static/site/libs/bootstrap/4.3.1/js/bootstrap.min.js"/>
+<link rel="preload" as="script" href="/_static/site/libs/moment/2.24.0/js/moment.min.js"/>
+<link rel="preload" as="script" href="/_static/site/libs/fuse/3.4.6/js/fuse.min.js"/>
+
+<link rel="preload" as="style" href="/_static/site/libs/bootstrap/4.3.1/css/bootstrap.min.css"/>
+<link rel="preload" as="style" href="/_static/site/libs/font-awesome/5.11.2/css/all.min.css"/>
+
+<link rel="preload" as="script" href="/_static/site/js/typing-text.min.js"/>
+<link rel="preload"  as="style" href="/_static/site/css/main.css"/><link rel="preload" as="script" href="/_static/site/js/article.js"/>
+<link rel="preload" as="style" href="/_static/site/css/article.css"/>
+  <!-- Load before DOMContentLoaded (<script> markup harcoded, ...) -->
+<!-- Third-party JS -->
+<script type="text/javascript" src="/_static/site/libs/jquery/3.4.1/js/jquery.min.js"></script>
+<script type="text/javascript" src="/_static/site/libs/lazysizes/5.2.0/js/lazysizes.min.js"></script>
+<script type="text/javascript" src='/_static/site/libs/mathjax/2.7.7/js/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}});
+</script>
+<script type="text/javascript" src="/_static/site/js/main.js"></script>
+<!-- Load after DOMContentLoaded -->
+<!-- Third-party JS -->
+<script type="text/javascript" defer src="/_static/site/libs/smooth-scroll/14.2.1/js/smooth-scroll.min.js"></script>
+<script type="text/javascript" defer src="/_static/site/libs/popper/1.14.3/js/popper.min.js"></script>
+<script type="text/javascript" defer src="/_static/site/libs/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" defer src="/_static/site/libs/moment/2.24.0/js/moment.min.js"></script>
+<script type="text/javascript" defer src="/_static/site/libs/fuse/3.4.6/js/fuse.min.js"></script>
+<!-- Local JS -->
+<script type="text/javascript" defer src="/_static/site/js/typing-text.min.js"></script><script type="text/javascript" defer src="/_static/site/js/article.js"></script>
+  <!-- Third-party CSS -->
+<link type="text/css" rel="stylesheet" href="/_static/site/libs/bootstrap/4.3.1/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet" href="/_static/site/libs/font-awesome/5.11.2/css/all.min.css"/>
+<!-- Local CSS -->
+<link type="text/css" rel="stylesheet" href="/_static/site/css/main.css"/><link type="text/css" rel="stylesheet" href="/_static/site/css/article.css"/>
+</head>
+
+<body>
+
+<div id="original-lang" style="display: none;">
+  Translates from English
+</div>
+
+<header>
+  <div class="flex-container">
+  <!-- Name -->
+  <div id="name">
+    <a href="/" title="Go to the home page">
+      <span class="notranslate">@GillesLegoux (glegoux)</span>
+    </a>
+  </div>
+  <!-- Logo -->
+  <div id="logo" class="d-none d-lg-block">
+    <a href="/" title="Go to the home page">
+      <img class="img-fluid lazyload" data-src="/_static/site/img/site-logo.png" alt="site logo">
+    </a>
+  </div>
+  <!-- Menu -->
+  <div id="menu" class="d-none d-lg-block">
+    <ul class="menu-content">
+      <li>
+        <a class="link-strong" href="/blog/" title="Go to the blog page">
+          Blog
+        </a>
+      </li>
+      <li>
+        <a class="link-strong" href="/about/" title="Go to the about page">
+          About
+        </a>
+      </li>
+      <li>
+        <a class="link-strong" href="/contact/" title="Go to the contact page">
+          Contact
+        </a>
+      </li>
+      <li>
+        <select class="lang custom-select" title="Translate the web page into your language">
+  <option class="notranslate" value="en">
+    <span>English</span>
+  </option>
+<option class="notranslate" value="zh-CN">
+    <span>中文</span>
+  </option>
+<option class="notranslate" value="fr">
+    <span>Français</span>
+  </option></select>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- Menu for small screen -->
+<a href="javascript:void(0);" style="display: block">
+  <div id="menu-icon" class="d-lg-none">
+    <i class="fa fa-bars"></i>
+  </div>
+</a>
+
+<div id="sidebar-overlay" style="display: none">
+  <div id="sidebar">
+    <div id="sidebar-close">x</div>
+  </div>
+</div>
+
+</header>
+
+<div id="content" class="container">
+  <div class="row">
+    <!-- Loader -->
+<div id="loader">
+  <div id="loader-inner">
+    <!-- Loader image -->
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin:auto;background:#fff;display:block;" width="100px" height="100px" viewbox="0 0 100 100" preserveaspectratio="xMidYMid">
+      <defs>
+        <path id="path" d="M50 15A15 35 0 0 1 50 85A15 35 0 0 1 50 15" fill="none"></path>
+        <path id="patha" d="M0 0A15 35 0 0 1 0 70A15 35 0 0 1 0 0" fill="none"></path>
+      </defs>
+      <g transform="rotate(0 50 50)">
+        <use xlink:href="#path" stroke="#f1f2f3" stroke-width="3"></use>
+      </g>
+      <g transform="rotate(60 50 50)">
+        <use xlink:href="#path" stroke="#f1f2f3" stroke-width="3"></use>
+      </g>
+      <g transform="rotate(120 50 50)">
+        <use xlink:href="#path" stroke="#f1f2f3" stroke-width="3"></use>
+      </g>
+      <g transform="rotate(0 50 50)">
+        <circle cx="50" cy="15" r="9" fill="#e0e0e0">
+          <animatemotion dur="1.8518518518518516s" repeatcount="indefinite" begin="0s">
+            <mpath xlink:href="#patha"></mpath>
+          </animatemotion>
+        </circle>
+      </g>
+      <g transform="rotate(60 50 50)">
+        <circle cx="50" cy="15" r="9" fill="#e0e0e0">
+          <animatemotion dur="1.8518518518518516s" repeatcount="indefinite" begin="-0.16666666666666666s">
+            <mpath xlink:href="#patha"></mpath>
+          </animatemotion>
+        </circle>
+      </g>
+      <g transform="rotate(120 50 50)">
+        <circle cx="50" cy="15" r="9" fill="#e0e0e0">
+          <animatemotion dur="1.8518518518518516s" repeatcount="indefinite" begin="-0.3333333333333333s">
+            <mpath xlink:href="#patha"></mpath>
+          </animatemotion>
+        </circle>
+      </g>
+    </svg>
+  </div>
+</div>
+
+<script type="text/javascript">
+    jQuery(window).on("load", function () {
+        $("#loader").fadeOut("slow");
+    });
+</script>
+
+
+
+    <div id="page-article" class="col-12">
+
+  <!-- Article metadata -->
+  <div class="article-metadata">
+
+    <!-- Article category -->
+    <div class="article-category">
+      <ul>
+        <li title="Category of this article">Web</li>
+      </ul>
+    </div>
+
+    <!-- Article title -->
+    <div class="article-title" title="Title of this article">
+      Geo-location of request path
+    </div>
+
+    <!-- Article description -->
+    <div class="article-description" title="Description of this article">
+      How to know for which routers a HTTP request browses?
+    </div>
+
+    <!-- Article details -->
+    <div class="article-details">
+      <ul>
+        <li title="Published date of this article">
+          <i class="far fa-calendar-alt"></i>
+          <span>July 14, 2019</span>
+        </li>
+        <li title="Reading time of this article">
+          <i class="far fa-clock"></i>
+          <span>
+            5 min
+          </span>
+        </li>
+<li title="Author of this article">
+          <i class="far fa-user"></i>
+          <span><a class="link-strong" href="https://www.linkedin.com/in/gilleslegoux" title="Follow this author">
+                glegoux
+              </a></span>
+        </li>
+</ul>
+    </div>
+
+    <!-- Article cover -->
+    <div class="article-cover" title="Cover of this article">
+      <ul>
+        <li title="See the source code of this article">
+          <a href="https://raw.githubusercontent.com/glegoux/glegoux.github.io/master/_posts/2019-07-14-geo-location-of-request-path.md">
+            <i class="far fa-file-code"></i>
+            Source code
+          </a>
+        </li>
+        <li title="See the resources of this article">
+          <a href="https://cdn.jsdelivr.net/gh/glegoux/articles-glegoux-com@master/articles/2019-07-14-geo-location-of-request-path">
+            <i class="fas fa-code-branch"></i>
+            Resources
+          </a>
+        </li>
+      </ul>
+    </div>
+<img class="img-fluid lazyload" data-src="/_static/common/posts/2019-07-14-geo-location-of-request-path.jpg" alt="2019-07-14-geo-location-of-request-path" title="Cover of this article">
+
+  </div>
+
+  <!-- Article content -->
+  <div id="article-content">
+
+    <div class="row">
+      <div class="col-6">
+        <div class="social-sharing">
+  <ul>
+    <li title="Share page on LinkedIn">
+      <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://glegoux.com/blog/articles/2019/07/14/geo-location-of-request-path.html&amp;title=Geo-location%20of%20request%20path&amp;summary=How%20to%20know%20for%20which%20routers%20a%20HTTP%20request%20browses?&amp;source=https://glegoux.com">
+        <i class="fab fa-linkedin" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li title="Share page on Twitter">
+      <a href="https://twitter.com/intent/tweet/?text=Geo-location%20of%20request%20path%20-%20How%20to%20know%20for%20which%20routers%20a%20HTTP%20request%20browses?&amp;url=https://glegoux.com/blog/articles/2019/07/14/geo-location-of-request-path.html">
+        <i class="fab fa-twitter" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li title="Share page on Facebook">
+      <a href="https://facebook.com/sharer/sharer.php?u=https://glegoux.com/blog/articles/2019/07/14/geo-location-of-request-path.html">
+        <i class="fab fa-facebook" aria-hidden="true"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<style type="text/css">
+  .social-sharing {
+    font-size: 1.3em;
+    width: 100%;
+    color: black;
+  }
+
+  .social-sharing a {
+    color: black !important;
+  }
+
+  .social-sharing ul {
+    display: inline;
+  }
+
+  .social-sharing ul li {
+    margin-left: 0.5em;
+    font-size: 1em;
+    display: inline;
+  }
+</style>
+
+      </div>
+      <div class="col-6 article-browser">
+        <a href="/blog/articles" title="See all articles">
+          <i class="fas fa-home"></i>
+        </a><a href="/blog/articles/2019/05/24/java-champion.html" title="See the previous article">
+          <i class="fas fa-arrow-left"></i>
+        </a><a href="/blog/articles/2019/11/29/gafa-vs-batx.html" title="See the next article">
+          <i class="fas fa-arrow-right"></i>
+        </a>
+</div>
+    </div>
+
+    <!-- Article contents -->
+    <div class="article-contents">
+      <button id="table-of-contents" class="btn btn-dark" title="See table of contents">
+        <b>See contents</b>
+      </button>
+      <div id="table-of-contents-container" style="display: none;"></div>
+    </div>
+
+    <div class="markdown-body">
+      <p>The goal of this article is to understand what is the used path of HTTP request generated by your web browser to load a web page from your computer to server web. I suppose each time DNS resolution is done, that is to say client knows IP server (by passing over in silence the resolution of name, it is prerequisites).</p>
+
+<figure>
+  <div>
+    <img class="img-fluid lazyload" data-src="https://docs.google.com/drawings/d/e/2PACX-1vT8X8g2uXuTLb3lruhcD17wdroEZaMSFRbiKbMKpdYNKTvkGnRgTs80T7L4SS1fE_-68ofjmjim0q0-/pub?w=855&amp;h=364" alt="Request path from your laptop to web server" title="Request path from your laptop to web server">
+  </div>
+  <figcaption>Request path from your laptop to web server</figcaption>
+</figure>
+
+<p>Internet is a network of routers. When your web browser is sending one HTTP request your computer uses by default the destination <code class="highlighter-rouge">0.0.0.0</code> if no one sub-network matches with your original destination IP address in its route table.</p>
+
+<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>route <span class="nt">-n</span>
+<span class="go">Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+0.0.0.0         192.168.1.254   0.0.0.0         UG    600    0        0 wlp6s0
+</span></code></pre></div></div>
+
+<p>Here the gateway <code class="highlighter-rouge">192.168.1.254</code>  is my Internet box related to network interface <code class="highlighter-rouge">wlp6s0</code>.</p>
+
+<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>nslookup 192.168.1.254
+<span class="go">Server:		127.0.1.1
+</span><span class="gp">Address:	127.0.1.1#</span>53
+<span class="go">name = bbox.lan.
+</span></code></pre></div></div>
+
+<p>Your request is sent to box of your Internet Service Provider (ISP), for me it is a French ISP: Bouygues Telecom. Leaving your Local Area Network (LAN) to the Wide Area Network (WAN) of Internet, thanks to  Network Address Translation  (NAT), your box replaces IP address source in the header of your HTTP request (equals to your private IP, see <code class="highlighter-rouge">ifconfig wlp6s0</code>) by its public IP address (see <code class="highlighter-rouge">dig +short myip.opendns.com @resolver1.opendns.com</code>), and keeps in memory this matching only for this request in order to it comes from your computer by doing reverse translation.</p>
+
+<p>The Time to live (TTL) of your request allows to know how many maximally your request can cross routers before arriving at destination. It prevents infinite cycle of routers in the network, by default a value of 64 is recommended depending of diameter of Internet. By modifying this value from 1 to N, you can get the IP address of each router on the path of your request: it will be the IP source of the response of your request HTTP.</p>
+
+<figure>
+  <div>
+    <img class="img-fluid lazyload" data-src="https://docs.google.com/drawings/d/e/2PACX-1vTKqD-P7RBe5bT7jx4i7wOvMQtp3hNgVZchWR8eM3KnJ7Z-bsgBwKYqPfBBW2ABp8zel6wJ6NbuFfcA/pub?w=855&amp;h=364" alt="Time to Live (TTL)" title="Time to Live (TTL)">
+  </div>
+  <figcaption>Time to Live (TTL)</figcaption>
+</figure>
+
+<p>For example, you can get TTL minimum by successive ping commands, see details in <a href="https://github.com/glegoux/glegoux.com/blob/master/articles/6PmiK7b/n_routers.sh">n_routers.sh</a> bash script. Each router must decrement TTL value and if TTL is 0, it refuses to transmit message. The minimum TTL is length path in the network to reach the server (by excluding source machine for number of nodes or is directly number of edges). Here one time to live of 4 is insufficient to reach glegoux.com from my machine location:</p>
+
+<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>ping <span class="nt">-c</span> 1 <span class="nt">-t</span> 4 glegoux.com
+<span class="go">PING glegoux.com (195.164.48.181) 56(84) bytes of data.
+From 10.125.135.205 icmp_seq=1 Time to live exceeded
+
+--- glegoux.com ping statistics ---
+1 packets transmitted, 0 received, +1 errors, 100% packet loss, time 0ms
+</span></code></pre></div></div>
+
+<p>This is valid for outward network path your TTL must be sufficient, you can see your current TTL <code class="highlighter-rouge">cat /proc/sys/net/ipv4/ip_default_ttl</code> or with <code class="highlighter-rouge">ping -c 1 localhost</code> (for Linux default value is 64), and change that without persistence <code class="highlighter-rouge">sudo sysctl net.ipv4.ip_default_ttl=128</code>. Targeted server must have also sufficient TTL for return network path, this value is decremented (until value 56 here, but we don’t know initial value a priori):</p>
+
+<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>ping <span class="nt">-c</span> 1 glegoux.com
+<span class="go">PING glegoux.com (195.164.48.181) 56(84) bytes of data.
+64 bytes from 10.125.135.205.rev.poneytelecom.eu (10.125.135.205): icmp_seq=1 ttl=56 time=13.8 ms
+
+--- glegoux.com ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 13.821/13.821/13.821/0.000 ms
+</span></code></pre></div></div>
+
+<p>While ping command uses ICMP protocol, the system command  <code class="highlighter-rouge">traceroute</code> realizes that directly with TCP protocol more easily. If there are stars instead of one IP address it means router refused to give its identity.</p>
+
+<p>There is no rule to guarantee that outward path and return path are identical. This is sometimes useful to get traceroute from both ends of your network. Here I am considering only outward path.</p>
+
+<p>By combining that with free IP locator like :</p>
+
+<ul>
+  <li>http://ip-api.com/</li>
+  <li>https://ipinfo.io</li>
+  <li>http://getcitydetails.geobytes.com/</li>
+</ul>
+
+<p>You can locate request path via Application Programming Interface (API) with the usage of pre-computed databases of geolocalisation of these free IP locators.</p>
+
+<p>It is important to keep in mind that IP locator is not 100% accurate, only 95% for the best ones. And behind one IP address  can hide a web proxy and a virtual private cluster preventing to locate really the destination. Thanks to Regional Internet Registry (RIR) and static address IP of  ISPs, IP locators can know the location of some IP addresses easily.</p>
+
+<figure>
+  <div>
+    <img class="img-fluid lazyload" data-src="https://cdn.jsdelivr.net/gh/glegoux/articles-glegoux-com@master/articles/2019-07-14-geo-location-of-request-path/images/rir.png" alt="Map of Regional Internet Registry" title="Map of Regional Internet Registry">
+  </div>
+  <figcaption>Map of Regional Internet Registry</figcaption>
+</figure>
+
+<p>But an constant update and smart analysis of the network is required to locate any IP address (IPv4 or IPv6), because of dynamic IP addresses and moving connected objects for instance in the Internet of Things (IoT) or mobile networks. In addition, this location could not be too precised to respect private life of each Internet surfer, even if this one shares its location via its web browser.</p>
+
+<p>With this <a href="https://github.com/glegoux/articles-glegoux-com/tree/master/articles/2019-07-14-geo-location-of-request-path/code">Proof of Concept (PoC)</a>, you can run <code class="highlighter-rouge">get_route.sh glegoux.com</code> to get IP locations in csv file <code class="highlighter-rouge">route.csv</code> and see the result via Google Maps (just <a href="https://developers.google.com/maps/documentation/javascript/get-api-key">get your own API token</a>) and a python web server by executing <code class="highlighter-rouge">httpserver.sh</code> and by visualizing <code class="highlighter-rouge">index.html</code> in your favorite web browser.</p>
+
+<figure>
+  <div>
+    <img class="img-fluid lazyload" data-src="https://cdn.jsdelivr.net/gh/glegoux/articles-glegoux-com@master/articles/2019-07-14-geo-location-of-request-path/images/map.png" alt="Geo-location of request path from Paris to glegoux.com" title="Geo-location of request path from Paris to glegoux.com">
+  </div>
+  <figcaption>Geo-location of request path from Paris to glegoux.com</figcaption>
+</figure>
+
+
+    </div>
+
+    <div class="article-category-tags">
+      <ul>
+        <li>
+          <!-- Article category -->
+          <span>Category: </span>
+          <span class="article-category">
+            <ul>
+              <li title="Category of this article">Web</li>
+            </ul>
+          </span>
+        </li>
+        
+        <li>
+          <!-- Article tags -->
+          <span>Tags: </span>
+          <span class="article-labels">
+            <ul>
+              
+              <li title="Tag of this article">Internet</li>
+              
+              <li title="Tag of this article">Network</li>
+              
+            </ul>
+          </span>
+        </li>
+        
+      </ul>
+    </div>
+
+    <div class="row">
+      <div class="col-6">
+        <div class="social-sharing">
+  <ul>
+    <li title="Share page on LinkedIn">
+      <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://glegoux.com/blog/articles/2019/07/14/geo-location-of-request-path.html&amp;title=Geo-location%20of%20request%20path&amp;summary=How%20to%20know%20for%20which%20routers%20a%20HTTP%20request%20browses?&amp;source=https://glegoux.com">
+        <i class="fab fa-linkedin" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li title="Share page on Twitter">
+      <a href="https://twitter.com/intent/tweet/?text=Geo-location%20of%20request%20path%20-%20How%20to%20know%20for%20which%20routers%20a%20HTTP%20request%20browses?&amp;url=https://glegoux.com/blog/articles/2019/07/14/geo-location-of-request-path.html">
+        <i class="fab fa-twitter" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li title="Share page on Facebook">
+      <a href="https://facebook.com/sharer/sharer.php?u=https://glegoux.com/blog/articles/2019/07/14/geo-location-of-request-path.html">
+        <i class="fab fa-facebook" aria-hidden="true"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<style type="text/css">
+  .social-sharing {
+    font-size: 1.3em;
+    width: 100%;
+    color: black;
+  }
+
+  .social-sharing a {
+    color: black !important;
+  }
+
+  .social-sharing ul {
+    display: inline;
+  }
+
+  .social-sharing ul li {
+    margin-left: 0.5em;
+    font-size: 1em;
+    display: inline;
+  }
+</style>
+
+      </div>
+      <div class="col-6 article-browser">
+        <a href="/blog/articles" title="See all articles">
+          <i class="fa fa-home"></i>
+        </a><a href="/blog/articles/2019/05/24/java-champion.html" title="See the previous article">
+          <i class="fa fa-arrow-left"></i>
+        </a><a href="/blog/articles/2019/11/29/gafa-vs-batx.html" title="See the next article">
+          <i class="fa fa-arrow-right"></i>
+        </a>
+</div>
+    </div>
+
+  </div>
+
+  <!-- Article license -->
+  <div class="article-license" title="See the license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0">
+      <i class="cc notranslate">Creative Commons Attribution 4.0 International License:</i>
+      <br>
+      <i class="fab fa-creative-commons notranslate" title="CC"></i>
+      <i class="fab fa-creative-commons-by notranslate" title="BY"></i>
+      <i class="fab fa-creative-commons-nc notranslate" title="NC"></i>
+      <i class="fab fa-creative-commons-sa notranslate" title="SA"></i>
+    </a>
+  </div>
+  <br>
+
+  <!-- Article author --><div class="article-authors">
+    <h5>
+      Author
+    </h5>
+
+    <hr>
+
+    <div class="row">
+      <div class="w-100 col-xs-12">
+        <table class="article-author">
+          <tbody>
+          <tr>
+            <td rowspan="2">
+<img src="/_static/common/authors/glegoux.jpg" alt="picture of glegoux" title="picture of this author">
+            </td>
+            <td>
+              <b>
+                Gilles
+                LEGOUX
+              </b>
+              (glegoux)
+            </td>
+          </tr>
+<tr>
+            <td>
+              <span class="notranslate job">
+              Software engineer <a href="https://github.com/Criteo" class="user-mention">@Criteo</a>
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" style="text-align: center">
+              <a href="https://www.linkedin.com/in/gilleslegoux" title="Follow this author">
+                <br>
+                <button class="btn btn-dark">
+                  <b>Follow</b>
+                </button>
+              </a>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+</div>
+  </div>
+<!-- Other articles -->
+  <div class="article-others">
+    <h5>Also read</h5>
+
+    <div class="row">
+<a href="/blog/articles/2019/04/01/lighthouse.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
+    <!-- Article metadata -->
+    <div class="article-card">
+
+      <!-- Article cover --><div class="article-cover">
+        <img class="img-fluid lazyload" data-src="/_static/common/posts/2019-04-01-lighthouse.jpg" alt="2019-04-01-lighthouse">
+      </div>
+
+      <!-- Article details -->
+      <div class="article-details">
+        <!-- Article title -->
+        <div class="article-title">
+          Lighthouse
+        </div>
+
+        <!-- Article description -->
+        <div class="article-description">
+          Lighthouse is an open-source, automated tool for improving the quality of web pages.
+        </div>
+
+        <!-- Article categories -->
+        <div class="article-category">
+          <ul>
+            <li>Web</li>
+          </ul>
+        </div>
+
+        <!-- Article publication date -->
+        <div class="date">
+          <i class="far fa-calendar-alt"></i>
+          <span>April 01, 2019</span>
+        </div>
+        <!-- Article reading time -->
+        <div class="reading-time">
+          <i class="far fa-clock"></i>
+          <span>10 min</span>
+        </div>
+      </div>
+
+    </div>
+</div>
+
+</a><a href="/blog/articles/2020/05/04/java-ecosystem.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
+    <!-- Article metadata -->
+    <div class="article-card">
+
+      <!-- Article cover --><div class="article-cover">
+        <img class="img-fluid lazyload" data-src="/_static/common/posts/2020-05-04-java-ecosystem.jpg" alt="2020-05-04-java-ecosystem">
+      </div>
+
+      <!-- Article details -->
+      <div class="article-details">
+        <!-- Article title -->
+        <div class="article-title">
+          Java ecosystem
+        </div>
+
+        <!-- Article description -->
+        <div class="article-description">
+          What is the Java ecosystem from Sun to Oracle?
+        </div>
+
+        <!-- Article categories -->
+        <div class="article-category">
+          <ul>
+            <li>Software</li>
+          </ul>
+        </div>
+
+        <!-- Article publication date -->
+        <div class="date">
+          <i class="far fa-calendar-alt"></i>
+          <span>May 04, 2020</span>
+        </div>
+        <!-- Article reading time -->
+        <div class="reading-time">
+          <i class="far fa-clock"></i>
+          <span>10 min</span>
+        </div>
+      </div>
+
+    </div>
+</div>
+
+</a><a href="/blog/articles/2020/03/04/development-environment.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
+    <!-- Article metadata -->
+    <div class="article-card">
+
+      <!-- Article cover --><div class="article-cover">
+        <img class="img-fluid lazyload" data-src="/_static/common/posts/2020-03-04-development-environment.jpg" alt="2020-03-04-development-environment">
+      </div>
+
+      <!-- Article details -->
+      <div class="article-details">
+        <!-- Article title -->
+        <div class="article-title">
+          Development Environment
+        </div>
+
+        <!-- Article description -->
+        <div class="article-description">
+          Why isolate its development environment?
+        </div>
+
+        <!-- Article categories -->
+        <div class="article-category">
+          <ul>
+            <li>Working environment</li>
+          </ul>
+        </div>
+
+        <!-- Article publication date -->
+        <div class="date">
+          <i class="far fa-calendar-alt"></i>
+          <span>March 04, 2020</span>
+        </div>
+        <!-- Article reading time -->
+        <div class="reading-time">
+          <i class="far fa-clock"></i>
+          <span>5 min</span>
+        </div>
+      </div>
+
+    </div>
+</div>
+
+</a>
+</div>
+
+    <div class="article-list-all">
+      <a href="/blog/articles/">
+        <button class="btn btn-dark" title="List all articles">
+          <b>List all</b>
+        </button>
+      </a>
+    </div>
+  </div>
+
+</div>
+
+    <!-- Disqus -->
+<div class="comments col-12">
+  <h5>Comments</h5>
+
+  <div id="disqus_thread"></div>
+
+  <script type="text/javascript">
+      var disqus_config = function () {
+          this.page.url = 'https://glegoux.com//blog/articles/2019/07/14/geo-location-of-request-path.html';
+          this.page.identifier = 'geo-location of request path';
+      };
+      (function () {
+          var d = document, s = d.createElement('script');
+          s.src = 'https://glegoux-com.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+      })();
+  </script>
+
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments
+    powered by Disqus.</a>
+</noscript>
+</div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+  <div class="row">
+    <div class="contact col-md-4 col-12">
+      <table>
+        <tr>
+          <td colspan="2">
+            <h1>Plan</h1>
+          </td>
+        </tr>
+        <tr title="Go to the blog page">
+          <td>
+            <a class="link-strong" href="/blog/articles/">
+              <i class="icon fas fa-newspaper"></i>
+            </a>
+          </td>
+          <td>
+            <a class="link-strong" href="/blog/articles/" title="Go to the blog page">
+              Blog
+            </a>
+          </td>
+        </tr>
+        <tr title="Go to the about page">
+          <td>
+            <a class="link-strong" href="/about/">
+              <i class="icon fas fa-user"></i>
+            </a>
+          </td>
+          <td>
+            <a class="link-strong" href="/about/">
+              About
+            </a>
+          </td>
+        </tr>
+        <tr title="Go to the contact page">
+          <td>
+            <a class="link-strong" href="/contact/">
+              <i class="icon fas fa-address-card"></i>
+            </a>
+          </td>
+          <td>
+            <a class="link-strong" href="/contact/">
+              Contact
+            </a>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="language col-md-4 col-12">
+      <table>
+        <tr>
+          <td>
+            <h1>Language</h1>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <select class="lang custom-select" title="Translate the web page into your language">
+  <option class="notranslate" value="en">
+    <span>English</span>
+  </option>
+<option class="notranslate" value="zh-CN">
+    <span>中文</span>
+  </option>
+<option class="notranslate" value="fr">
+    <span>Français</span>
+  </option></select>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="follow col-md-4 col-12">
+      <h1 class="title">Follow me</h1>
+      <div class="social notranslate">
+  <ul>
+    <li>
+      <a class="icon rounded fab fa-linkedin" title="LinkedIn" href="https://www.linkedin.com/in/gilleslegoux">
+      </a>
+    </li>
+    <li>
+      <a class="icon rounded fab fa-twitter" title="Twitter" href="https://twitter.com/gilleslegoux">
+      </a>
+    </li>
+    <li>
+      <a class="icon rounded fab fa-github" title="GitHub" href="https://github.com/glegoux">
+      </a>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <a class="icon rounded fab fa-slideshare" title="SlideShare" href="https://www.slideshare.net/gilleslegoux">
+      </a>
+    </li>
+    <li>
+      <a class="icon rounded fab fa-meetup" title="MeetUp" href="https://www.meetup.com/members/162515452">
+      </a>
+    </li>
+    <li>
+      <a class="icon rounded fas fa-paper-plane" title="Email" href="/contact/email/">
+      </a>
+    </li>
+  </ul>
+</div>
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="menu col-12">
+      <p>
+        <a class="link-strong" href="http://status.glegoux.com" title="See the status and availability">Status &amp; Availability</a> |
+        <a class="link-strong" href="/sitemap.xml" title="See the site map">Sitemap</a> |
+        <a class="link-strong" href="/rss.xml" title="Subscribe to RSS feed"><span class="notranslate">RSS</span></a> |
+        <a class="link-strong" href="/atom.xml" title="Subscribe to Atom feed"><span class="notranslate">Atom</span></a>
+      </p>
+    </div>
+  </div>
+
+
+  <!-- Please don't remove that due to license rules -->
+  <div class="row notranslate">
+    <div class="copyright col-12">
+      <hr>
+      <p>
+        Powered by <a class="link-strong" href="https://glegoux.com" title="See the original project">glegoux.com</a> - ©Copyright 2020.
+        <br>
+        <a class="link-strong" href="https://github.com/glegoux/glegoux.github.io" title="See the source code">Source code</a> |
+        <a class="link-strong" href="https://github.com/glegoux/glegoux.github.io/wiki" title="See the wiki">Wiki</a> |
+        <a class="link-strong" href="https://raw.githubusercontent.com/glegoux/glegoux.github.io/develop/LICENSE.txt" title="See the license">License</a>
+        <br>
+        Version: <span class="notranslate">1.0.0
+</span>
+      </p>
+    </div>
+  </div>
+  <!-- End -->
+
+</div>
+
+</footer>
+
+<!-- Go Top -->
+<div id="goto-top" style="display:none;">
+  <a href="#" class="fas fa-arrow-up" title="Go to top page"></a>
+</div>
+
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+
+        /* Go to top or to element with id */
+
+        function goToIdorTop() {
+            $('a[href^="#"]').click(function () {
+                var destId = $(this).attr("href");
+                var srcId = $(this).attr("id");
+                if (destId === "#") {
+                    $("html, body").animate({scrollTop: 0}, 'slow');
+                } else {
+                    if (srcId && srcId.startsWith('go-to-ref')) {
+                        srcId = '#' + srcId;
+                        $('.come-back').remove();
+                        $(destId).prepend('<a class="come-back" href="' + srcId + '">&uarr;</a>');
+                        goToIdorTop();
+                    }
+                    var offset = $(destId).offset().top;
+                    $('html, body').animate({scrollTop: offset}, 'slow');
+                }
+                return false;
+            });
+        }
+
+        goToIdorTop();
+
+        /* Show or hide menu */
+
+        var scrollticker;
+
+        $(window).scroll(function () {
+            function hide() {
+                $('#goto-top').css('display', 'inline').hide();
+                if ($('.sharing-platform').is(':hidden')) {
+                    $('.show-sharing-platform').hide();
+                }
+                $('.menu-article').css('display', 'inline').hide();
+            }
+
+            function show() {
+                $('#goto-top').css('display', 'inline').show();
+                $('.menu-article').css('display', 'inline').show();
+                $('.show-sharing-platform').show();
+            }
+
+            if (scrollticker) {
+                window.clearTimeout(scrollticker);
+                scrollticker = null;
+            }
+
+            var pos = $(window).scrollTop();
+
+            if (pos !== 0) {
+                show();
+                scrollticker = window.setTimeout(function () {
+                    hide();
+                }, 2000);
+            } else {
+                hide();
+            }
+        });
+
+    });
+</script>
+
+<style type="text/css">
+  #goto-top {
+    z-index: 9999;
+    width: 2.25em;
+    height: 2.25em;
+    position: fixed;
+    bottom: 0.5em;
+    margin-right: 0.5em;
+    right: 15px;
+    background-color: rgba(144, 144, 144, 0.65);
+    border-radius: 100%;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding-top: 0.25em;
+  }
+
+  #goto-top a:before {
+    font-size: 2em;
+  }
+
+  #goto-top a {
+    display: block;
+    font-size: 0.75em;
+  }
+</style>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics --><script type="text/javascript" async src="https://www.googletagmanager.com/gtag/js?id=UA-155162630-1"></script>
+
+<script type="text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-155162630-1');
+</script>
+
+
+<!-- Google Translate -->
+<div id="google-translate"></div>
+
+<script type="text/javascript">
+
+    const LANGUAGES = {
+        "af": "afrikaans",
+        "sq": "albanian",
+        "ar": "arabic",
+        "az": "azerbaijani",
+        "eu": "basque",
+        "bn": "bengali",
+        "be": "belarusian",
+        "bg": "bulgarian",
+        "ca": "catalan",
+        "zh-CN": "chinese (simplified)",
+        "hr": "croatian",
+        "cs": "czech",
+        "da": "danish",
+        "nl": "dutch",
+        "en": "english",
+        "eo": "esperanto",
+        "et": "estonian",
+        "tl": "filipino",
+        "fi": "finnish",
+        "fr": "french",
+        "gl": "galician",
+        "ka": "georgian",
+        "de": "german",
+        "el": "greek",
+        "gu": "gujarati",
+        "ht": "haitian",
+        "iw": "hebrew",
+        "hi": "hindi",
+        "hu": "hungarian",
+        "is": "icelandic",
+        "id": "indonesian",
+        "ga": "irish",
+        "it": "italian",
+        "ja": "japanese",
+        "kn": "kannada",
+        "ko": "korean",
+        "la": "latin",
+        "lv": "latvian",
+        "lt": "lithuanian",
+        "mk": "macedonian",
+        "ms": "malay",
+        "mt": "maltese",
+        "no": "norwegian",
+        "fa": "persian",
+        "pl": "polish",
+        "pt": "portuguese",
+        "ro": "romanian",
+        "ru": "russian",
+        "sr": "serbian",
+        "sk": "slovak",
+        "sl": "slovenian",
+        "es": "spanish",
+        "sw": "swahili",
+        "sv": "swedish",
+        "ta": "tamil",
+        "te": "telugu",
+        "th": "thai",
+        "tr": "turkish",
+        "uk": "ukrainian",
+        "ur": "urdu",
+        "vi": "vietnamese",
+        "cy": "welsh",
+        "yi": "yiddish"
+    };
+
+    const originalLanguageCode = "en";
+    const includedLanguageCodesString = originalLanguageCode + "," + "zh-CN,fr";
+    const includedLanguageCodes = includedLanguageCodesString.split(",").filter(function(x){ return x != ""; });
+ 
+    includedLanguageCodes.forEach(function (languageCode) {
+        if (LANGUAGES[languageCode] === undefined) {
+            console.error(`language '${languageCode}' is unavailable`);
+        }
+    });
+
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+            {
+                pageLanguage: originalLanguageCode,
+                includedLanguages: includedLanguageCodesString,
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                autoDisplay: false
+            },
+            "google-translate"
+        );
+    }
+</script>
+
+<script type="text/javascript" async src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit&amp;hl=en"></script>
+
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+
+        const originalLangHeader = $("#original-lang");
+        const langs = $(".lang");
+
+        function googleTranslate(languageCode) {
+            const language = LANGUAGES[languageCode];
+            if (LANGUAGES[languageCode] === undefined) {
+                console.error(`language '${languageCode}' is unavailable`);
+                return;
+            }
+            $(".goog-te-menu-frame").contents().find("a.goog-te-menu2-item").each(function () {
+                if ($(this).text().toLowerCase().includes(language.toLowerCase())) {
+                    $(this)[0].click();
+                }
+            });
+        }
+
+        function changeLanguage(languageCode) {
+
+            originalLangHeader.hide();
+            langs.each(function () {
+                $(this).find("option").each(function () {
+                    if ($(this).val() === languageCode) {
+                        $(this).attr("selected", true);
+                    } else {
+                        $(this).removeAttr("selected");    
+                    }
+                });
+            });
+            
+            // call twice
+            googleTranslate(languageCode);
+            googleTranslate(languageCode);
+
+            window.localStorage.setItem("language-code", languageCode);
+
+            setTimeout(function () {
+                // wait for the end of the translation of the page
+                if (originalLanguageCode !== languageCode) {
+                    originalLangHeader.show();
+                }
+            }, 1000);
+        }
+
+        function browserLangToGoogleTranslate() {
+            let browserLanguageCode = navigator.language.substring(0, 2);
+            if (browserLanguageCode === "zh") {
+                return "zh-CN";
+            }
+            return browserLanguageCode;
+        }
+
+        // init translation
+
+        let currentLanguageCode = window.localStorage.getItem("language-code");
+        if (currentLanguageCode === null) {
+            currentLanguageCode = originalLanguageCode;
+            const browserLanguageCode = browserLangToGoogleTranslate();
+            includedLanguageCodes.forEach(function (languageCode) {
+                if (languageCode == browserLanguageCode) {
+                    currentLanguageCode = browserLanguageCode;
+                }
+            });
+        }
+        setTimeout(function () {
+            // wait for the end of load of the iframe and resources of google translate
+            changeLanguage(currentLanguageCode);
+        }, 1000);
+
+        // update translation
+
+        langs.change(function () {
+            const languageCode = $(this).children("option:selected").val();
+            changeLanguage(languageCode);
+        });
+
+        // no translate
+
+        setTimeout(function () {
+            // wait for the execution of MathJax
+            for (const jax of MathJax.Hub.getAllJax()) {
+                jax.SourceElement().previousSibling.classList.add("notranslate");
+            }
+            $(".highlight").addClass("notranslate");
+        }, 1000);
+
+    });
+</script>
+
+<style type="text/css">
+  body {
+    top: 0 !important;
+  }
+
+  #lang {
+    display: none !important;
+  }
+
+  .goog-te-banner-frame.skiptranslate {
+    display: none !important;
+  }
+
+  .goog-tooltip {
+    display: none !important;
+  }
+
+  .goog-tooltip:hover {
+    display: none !important;
+  }
+
+  .goog-text-highlight {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  .goog-te-gadget {
+    display: none !important;
+  }
+</style>
+
+</body>
+
+</html>

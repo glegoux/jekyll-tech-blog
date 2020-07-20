@@ -1,0 +1,10 @@
+# See http://www.robotstxt.org/robotstxt.html
+
+# For all web spiders/crawlers/robots and the indexing in the search engines
+User-Agent: *
+Crawl-delay: 1
+Disallow: /config.json
+Disallow: /404.html
+Disallow: /manifest.json
+Disallow: /search.json
+Sitemap: https://glegoux.com/sitemap.xml

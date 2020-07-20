@@ -1,0 +1,157 @@
+[
+
+{
+"title"       : "GNU Privacy Guard",
+"description" : "How to prove its identity and encrypt its communication?",
+"authors"     : "glegoux",
+"category"    : "Security",
+"tags"        : "",
+"url"         : "/blog/articles/2020/05/15/gnu-privacy-guard.html",
+"date"        : "2020-05-15 00:00:00 +0000",
+"year"        : "2020",
+"month"       : "05",
+"yearMonth"   : "2020-05",
+"yearMonthDay"   : "2020-05-15"
+} ,
+
+{
+"title"       : "Java ecosystem",
+"description" : "What is the Java ecosystem from Sun to Oracle?",
+"authors"     : "glegoux",
+"category"    : "Software",
+"tags"        : "Language",
+"url"         : "/blog/articles/2020/05/04/java-ecosystem.html",
+"date"        : "2020-05-04 00:00:00 +0000",
+"year"        : "2020",
+"month"       : "05",
+"yearMonth"   : "2020-05",
+"yearMonthDay"   : "2020-05-04"
+} ,
+
+{
+"title"       : "Development Environment",
+"description" : "Why isolate its development environment?",
+"authors"     : "glegoux",
+"category"    : "Working environment",
+"tags"        : "Computer development",
+"url"         : "/blog/articles/2020/03/04/development-environment.html",
+"date"        : "2020-03-04 00:00:00 +0000",
+"year"        : "2020",
+"month"       : "03",
+"yearMonth"   : "2020-03",
+"yearMonthDay"   : "2020-03-04"
+} ,
+
+{
+"title"       : "Gafa vs Batx",
+"description" : "What is the difference?",
+"authors"     : "glegoux",
+"category"    : "Business",
+"tags"        : "",
+"url"         : "/blog/articles/2019/11/29/gafa-vs-batx.html",
+"date"        : "2019-11-29 00:00:00 +0000",
+"year"        : "2019",
+"month"       : "11",
+"yearMonth"   : "2019-11",
+"yearMonthDay"   : "2019-11-29"
+} ,
+
+{
+"title"       : "Geo-location of request path",
+"description" : "How to know for which routers a HTTP request browses?",
+"authors"     : "glegoux",
+"category"    : "Web",
+"tags"        : "Internet, Network",
+"url"         : "/blog/articles/2019/07/14/geo-location-of-request-path.html",
+"date"        : "2019-07-14 00:00:00 +0000",
+"year"        : "2019",
+"month"       : "07",
+"yearMonth"   : "2019-07",
+"yearMonthDay"   : "2019-07-14"
+} ,
+
+{
+"title"       : "Java champion",
+"description" : "How to become a Java champion?",
+"authors"     : "glegoux",
+"category"    : "Software",
+"tags"        : "",
+"url"         : "/blog/articles/2019/05/24/java-champion.html",
+"date"        : "2019-05-24 00:00:00 +0000",
+"year"        : "2019",
+"month"       : "05",
+"yearMonth"   : "2019-05",
+"yearMonthDay"   : "2019-05-24"
+} ,
+
+{
+"title"       : "Lighthouse",
+"description" : "Lighthouse is an open-source, automated tool for improving the quality of web pages.",
+"authors"     : "glegoux",
+"category"    : "Web",
+"tags"        : "",
+"url"         : "/blog/articles/2019/04/01/lighthouse.html",
+"date"        : "2019-04-01 00:00:00 +0000",
+"year"        : "2019",
+"month"       : "04",
+"yearMonth"   : "2019-04",
+"yearMonthDay"   : "2019-04-01"
+} ,
+
+{
+"title"       : "Kerberos in 5 minutes",
+"description" : "Kerberos is an authentication protocol for trusted hosts on untrusted networks.",
+"authors"     : "glegoux",
+"category"    : "Security",
+"tags"        : "Kerberos",
+"url"         : "/blog/articles/2019/03/23/kerberos-in-5-minutes.html",
+"date"        : "2019-03-23 00:00:00 +0000",
+"year"        : "2019",
+"month"       : "03",
+"yearMonth"   : "2019-03",
+"yearMonthDay"   : "2019-03-23"
+} ,
+
+{
+"title"       : "Access to a computer from USB key",
+"description" : "Somebody with USB key can take control of your computer",
+"authors"     : "glegoux",
+"category"    : "Security",
+"tags"        : "",
+"url"         : "/blog/articles/2019/03/01/access-to-a-computer-from-usb-key.html",
+"date"        : "2019-03-01 00:00:00 +0000",
+"year"        : "2019",
+"month"       : "03",
+"yearMonth"   : "2019-03",
+"yearMonthDay"   : "2019-03-01"
+} ,
+
+{
+"title"       : "How to quote sources",
+"description" : "Current standards and rules to respect in order to quote sources.",
+"authors"     : "glegoux",
+"category"    : "Methodology",
+"tags"        : "",
+"url"         : "/blog/articles/2019/02/14/how-to-quote-sources.html",
+"date"        : "2019-02-14 00:00:00 +0000",
+"year"        : "2019",
+"month"       : "02",
+"yearMonth"   : "2019-02",
+"yearMonthDay"   : "2019-02-14"
+} ,
+
+{
+"title"       : "Getting Started",
+"description" : "Markdown is a easy-to-use syntax for writing text on this blog.",
+"authors"     : "glegoux",
+"category"    : "Methodology",
+"tags"        : "Markdown",
+"url"         : "/blog/articles/2019/01/21/getting-started.html",
+"date"        : "2019-01-21 00:00:00 +0000",
+"year"        : "2019",
+"month"       : "01",
+"yearMonth"   : "2019-01",
+"yearMonthDay"   : "2019-01-21"
+} 
+
+]

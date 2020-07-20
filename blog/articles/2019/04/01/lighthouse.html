@@ -1,0 +1,1328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- Mobile Iphone -->
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<link rel="apple-touch-icon" href="/_static/site/img/icon-iphone.png?v=1"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<!-- Mobile Android -->
+<meta name="mobile-web-app-capable" content="yes"/>
+<link rel="manifest" href="/manifest.json"/>
+<meta name="theme-color" content="#383b43"/>
+<!-- Desktop -->
+<link rel="icon" type="image/png" href="/favicon.ico?v=1"/>
+<!-- Search Engine -->
+<meta name="author" content="Gilles Legoux"/>
+<title>Lighthouse</title>
+<meta itemprop="description" name="description" content="Lighthouse is an open-source, automated tool for improving the quality of web pages."/>
+<meta name="keywords"
+      content="glegoux,Gilles,Legoux,informatics,mathematics,software,engineer,Web,"/>
+<!-- SEO -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Lighthouse" />
+<meta name="author" content="glegoux" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="Lighthouse is an open-source, automated tool for improving the quality of web pages." />
+<meta property="og:description" content="Lighthouse is an open-source, automated tool for improving the quality of web pages." />
+<link rel="canonical" href="https://glegoux.com/blog/articles/2019/04/01/lighthouse.html" />
+<meta property="og:url" content="https://glegoux.com/blog/articles/2019/04/01/lighthouse.html" />
+<meta property="og:site_name" content="Software Engineering Blog - Gilles Legoux" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-04-01T00:00:00+00:00" />
+<script type="application/ld+json">
+{"description":"Lighthouse is an open-source, automated tool for improving the quality of web pages.","@type":"BlogPosting","headline":"Lighthouse","dateModified":"2019-04-01T00:00:00+00:00","url":"https://glegoux.com/blog/articles/2019/04/01/lighthouse.html","datePublished":"2019-04-01T00:00:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://glegoux.com/blog/articles/2019/04/01/lighthouse.html"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://glegoux.com/_static/img/icon-iphone.png"},"name":"glegoux"},"author":{"@type":"Person","name":"glegoux"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<!-- Article cover social sharing --><meta property="og:image" content="https://glegoux.com/_static/common/posts/2019-04-01-lighthouse.jpg"/>
+  <!-- Preconnect -->
+<link rel="preconnect" href="https://marketingplatform.google.com/about/analytics/" crossorigin="anonymous"/>
+<link rel="preconnect" href="https://www.google.com" crossorigin="anonymous"/><link rel="preconnect" href="https://disquscdn.com" crossorigin="anonymous"/>
+<link rel="preconnect" href="https://a.disquscdn.com" crossorigin="anonymous"/>
+<link rel="preconnect" href="https://c.disquscdn.com" crossorigin="anonymous"/><!-- Preload Font -->
+<link rel="preload" as="font" href="/_static/site/libs/font-awesome/5.11.2/webfonts/fa-regular-400.woff2" crossorigin="anonymous"/>
+<link rel="preload" as="font" href="/_static/site/libs/font-awesome/5.11.2/webfonts/fa-brands-400.woff2" crossorigin="anonymous"/>
+<link rel="preload" as="font" href="/_static/site/libs/font-awesome/5.11.2/webfonts/fa-solid-900.woff2" crossorigin="anonymous"/>
+<!-- Preload CSS and JS -->
+<link rel="preload" as="script" href="/_static/site/libs/smooth-scroll/14.2.1/js/smooth-scroll.min.js"/>
+<link rel="preload" as="script" href="/_static/site/libs/popper/1.14.3/js/popper.min.js"/>
+<link rel="preload" as="script" href="/_static/site/libs/bootstrap/4.3.1/js/bootstrap.min.js"/>
+<link rel="preload" as="script" href="/_static/site/libs/moment/2.24.0/js/moment.min.js"/>
+<link rel="preload" as="script" href="/_static/site/libs/fuse/3.4.6/js/fuse.min.js"/>
+
+<link rel="preload" as="style" href="/_static/site/libs/bootstrap/4.3.1/css/bootstrap.min.css"/>
+<link rel="preload" as="style" href="/_static/site/libs/font-awesome/5.11.2/css/all.min.css"/>
+
+<link rel="preload" as="script" href="/_static/site/js/typing-text.min.js"/>
+<link rel="preload"  as="style" href="/_static/site/css/main.css"/><link rel="preload" as="script" href="/_static/site/js/article.js"/>
+<link rel="preload" as="style" href="/_static/site/css/article.css"/>
+  <!-- Load before DOMContentLoaded (<script> markup harcoded, ...) -->
+<!-- Third-party JS -->
+<script type="text/javascript" src="/_static/site/libs/jquery/3.4.1/js/jquery.min.js"></script>
+<script type="text/javascript" src="/_static/site/libs/lazysizes/5.2.0/js/lazysizes.min.js"></script>
+<script type="text/javascript" src='/_static/site/libs/mathjax/2.7.7/js/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}});
+</script>
+<script type="text/javascript" src="/_static/site/js/main.js"></script>
+<!-- Load after DOMContentLoaded -->
+<!-- Third-party JS -->
+<script type="text/javascript" defer src="/_static/site/libs/smooth-scroll/14.2.1/js/smooth-scroll.min.js"></script>
+<script type="text/javascript" defer src="/_static/site/libs/popper/1.14.3/js/popper.min.js"></script>
+<script type="text/javascript" defer src="/_static/site/libs/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" defer src="/_static/site/libs/moment/2.24.0/js/moment.min.js"></script>
+<script type="text/javascript" defer src="/_static/site/libs/fuse/3.4.6/js/fuse.min.js"></script>
+<!-- Local JS -->
+<script type="text/javascript" defer src="/_static/site/js/typing-text.min.js"></script><script type="text/javascript" defer src="/_static/site/js/article.js"></script>
+  <!-- Third-party CSS -->
+<link type="text/css" rel="stylesheet" href="/_static/site/libs/bootstrap/4.3.1/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet" href="/_static/site/libs/font-awesome/5.11.2/css/all.min.css"/>
+<!-- Local CSS -->
+<link type="text/css" rel="stylesheet" href="/_static/site/css/main.css"/><link type="text/css" rel="stylesheet" href="/_static/site/css/article.css"/>
+</head>
+
+<body>
+
+<div id="original-lang" style="display: none;">
+  Translates from English
+</div>
+
+<header>
+  <div class="flex-container">
+  <!-- Name -->
+  <div id="name">
+    <a href="/" title="Go to the home page">
+      <span class="notranslate">@GillesLegoux (glegoux)</span>
+    </a>
+  </div>
+  <!-- Logo -->
+  <div id="logo" class="d-none d-lg-block">
+    <a href="/" title="Go to the home page">
+      <img class="img-fluid lazyload" data-src="/_static/site/img/site-logo.png" alt="site logo">
+    </a>
+  </div>
+  <!-- Menu -->
+  <div id="menu" class="d-none d-lg-block">
+    <ul class="menu-content">
+      <li>
+        <a class="link-strong" href="/blog/" title="Go to the blog page">
+          Blog
+        </a>
+      </li>
+      <li>
+        <a class="link-strong" href="/about/" title="Go to the about page">
+          About
+        </a>
+      </li>
+      <li>
+        <a class="link-strong" href="/contact/" title="Go to the contact page">
+          Contact
+        </a>
+      </li>
+      <li>
+        <select class="lang custom-select" title="Translate the web page into your language">
+  <option class="notranslate" value="en">
+    <span>English</span>
+  </option>
+<option class="notranslate" value="zh-CN">
+    <span>中文</span>
+  </option>
+<option class="notranslate" value="fr">
+    <span>Français</span>
+  </option></select>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- Menu for small screen -->
+<a href="javascript:void(0);" style="display: block">
+  <div id="menu-icon" class="d-lg-none">
+    <i class="fa fa-bars"></i>
+  </div>
+</a>
+
+<div id="sidebar-overlay" style="display: none">
+  <div id="sidebar">
+    <div id="sidebar-close">x</div>
+  </div>
+</div>
+
+</header>
+
+<div id="content" class="container">
+  <div class="row">
+    <!-- Loader -->
+<div id="loader">
+  <div id="loader-inner">
+    <!-- Loader image -->
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin:auto;background:#fff;display:block;" width="100px" height="100px" viewbox="0 0 100 100" preserveaspectratio="xMidYMid">
+      <defs>
+        <path id="path" d="M50 15A15 35 0 0 1 50 85A15 35 0 0 1 50 15" fill="none"></path>
+        <path id="patha" d="M0 0A15 35 0 0 1 0 70A15 35 0 0 1 0 0" fill="none"></path>
+      </defs>
+      <g transform="rotate(0 50 50)">
+        <use xlink:href="#path" stroke="#f1f2f3" stroke-width="3"></use>
+      </g>
+      <g transform="rotate(60 50 50)">
+        <use xlink:href="#path" stroke="#f1f2f3" stroke-width="3"></use>
+      </g>
+      <g transform="rotate(120 50 50)">
+        <use xlink:href="#path" stroke="#f1f2f3" stroke-width="3"></use>
+      </g>
+      <g transform="rotate(0 50 50)">
+        <circle cx="50" cy="15" r="9" fill="#e0e0e0">
+          <animatemotion dur="1.8518518518518516s" repeatcount="indefinite" begin="0s">
+            <mpath xlink:href="#patha"></mpath>
+          </animatemotion>
+        </circle>
+      </g>
+      <g transform="rotate(60 50 50)">
+        <circle cx="50" cy="15" r="9" fill="#e0e0e0">
+          <animatemotion dur="1.8518518518518516s" repeatcount="indefinite" begin="-0.16666666666666666s">
+            <mpath xlink:href="#patha"></mpath>
+          </animatemotion>
+        </circle>
+      </g>
+      <g transform="rotate(120 50 50)">
+        <circle cx="50" cy="15" r="9" fill="#e0e0e0">
+          <animatemotion dur="1.8518518518518516s" repeatcount="indefinite" begin="-0.3333333333333333s">
+            <mpath xlink:href="#patha"></mpath>
+          </animatemotion>
+        </circle>
+      </g>
+    </svg>
+  </div>
+</div>
+
+<script type="text/javascript">
+    jQuery(window).on("load", function () {
+        $("#loader").fadeOut("slow");
+    });
+</script>
+
+
+
+    <div id="page-article" class="col-12">
+
+  <!-- Article metadata -->
+  <div class="article-metadata">
+
+    <!-- Article category -->
+    <div class="article-category">
+      <ul>
+        <li title="Category of this article">Web</li>
+      </ul>
+    </div>
+
+    <!-- Article title -->
+    <div class="article-title" title="Title of this article">
+      Lighthouse
+    </div>
+
+    <!-- Article description -->
+    <div class="article-description" title="Description of this article">
+      Lighthouse is an open-source, automated tool for improving the quality of web pages.
+    </div>
+
+    <!-- Article details -->
+    <div class="article-details">
+      <ul>
+        <li title="Published date of this article">
+          <i class="far fa-calendar-alt"></i>
+          <span>April 01, 2019</span>
+        </li>
+        <li title="Reading time of this article">
+          <i class="far fa-clock"></i>
+          <span>
+            10 min
+          </span>
+        </li>
+<li title="Author of this article">
+          <i class="far fa-user"></i>
+          <span><a class="link-strong" href="https://www.linkedin.com/in/gilleslegoux" title="Follow this author">
+                glegoux
+              </a></span>
+        </li>
+</ul>
+    </div>
+
+    <!-- Article cover -->
+    <div class="article-cover" title="Cover of this article">
+      <ul>
+        <li title="See the source code of this article">
+          <a href="https://raw.githubusercontent.com/glegoux/glegoux.github.io/master/_posts/2019-04-01-lighthouse.md">
+            <i class="far fa-file-code"></i>
+            Source code
+          </a>
+        </li>
+        <li title="See the resources of this article">
+          <a href="https://cdn.jsdelivr.net/gh/glegoux/articles-glegoux-com@master/articles/2019-04-01-lighthouse">
+            <i class="fas fa-code-branch"></i>
+            Resources
+          </a>
+        </li>
+      </ul>
+    </div>
+<img class="img-fluid lazyload" data-src="/_static/common/posts/2019-04-01-lighthouse.jpg" alt="2019-04-01-lighthouse" title="Cover of this article">
+
+  </div>
+
+  <!-- Article content -->
+  <div id="article-content">
+
+    <div class="row">
+      <div class="col-6">
+        <div class="social-sharing">
+  <ul>
+    <li title="Share page on LinkedIn">
+      <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://glegoux.com/blog/articles/2019/04/01/lighthouse.html&amp;title=Lighthouse&amp;summary=Lighthouse%20is%20an%20open-source,%20automated%20tool%20for%20improving%20the%20quality%20of%20web%20pages.&amp;source=https://glegoux.com">
+        <i class="fab fa-linkedin" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li title="Share page on Twitter">
+      <a href="https://twitter.com/intent/tweet/?text=Lighthouse%20-%20Lighthouse%20is%20an%20open-source,%20automated%20tool%20for%20improving%20the%20quality%20of%20web%20pages.&amp;url=https://glegoux.com/blog/articles/2019/04/01/lighthouse.html">
+        <i class="fab fa-twitter" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li title="Share page on Facebook">
+      <a href="https://facebook.com/sharer/sharer.php?u=https://glegoux.com/blog/articles/2019/04/01/lighthouse.html">
+        <i class="fab fa-facebook" aria-hidden="true"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<style type="text/css">
+  .social-sharing {
+    font-size: 1.3em;
+    width: 100%;
+    color: black;
+  }
+
+  .social-sharing a {
+    color: black !important;
+  }
+
+  .social-sharing ul {
+    display: inline;
+  }
+
+  .social-sharing ul li {
+    margin-left: 0.5em;
+    font-size: 1em;
+    display: inline;
+  }
+</style>
+
+      </div>
+      <div class="col-6 article-browser">
+        <a href="/blog/articles" title="See all articles">
+          <i class="fas fa-home"></i>
+        </a><a href="/blog/articles/2019/03/23/kerberos-in-5-minutes.html" title="See the previous article">
+          <i class="fas fa-arrow-left"></i>
+        </a><a href="/blog/articles/2019/05/24/java-champion.html" title="See the next article">
+          <i class="fas fa-arrow-right"></i>
+        </a>
+</div>
+    </div>
+
+    <!-- Article contents -->
+    <div class="article-contents">
+      <button id="table-of-contents" class="btn btn-dark" title="See table of contents">
+        <b>See contents</b>
+      </button>
+      <div id="table-of-contents-container" style="display: none;"></div>
+    </div>
+
+    <div class="markdown-body">
+      <p><a href="https://github.com/GoogleChrome/lighthouse/releases/tag/v5.6.0">LightHouse 5.6.0</a> is an <a href="https://github.com/GoogleChrome/lighthouse">open-source project</a> written in Javascript and began in January 2016 under <a href="https://github.com/GoogleChrome/lighthouse/blob/master/LICENSE">Apache 2,0 License</a>. On GitHub, it is a project of the Organisation <a href="https://github.com/GoogleChrome">Google Chrome</a> knows a huge success and counts roughly 10,000 stars and 100 contributors. It is already stable, see  <a href="https://github.com/GoogleChrome/lighthouse/releases/">latest release</a>. It is an automated tool for improving the quality of web pages. You can run it against any web page, public or requiring authentication. It has audits for performance, accessibility, progressive web apps, and more.</p>
+
+<figure>
+  <div>
+    <img class="img-fluid lazyload" data-src="https://cdn.jsdelivr.net/gh/glegoux/articles-glegoux-com@master/articles/2019-04-01-lighthouse/images/lighthouse-logo.png" alt="Logo of Lighthouse" title="Logo of Lighthouse">
+  </div>
+  <figcaption>Logo of Lighthouse</figcaption>
+</figure>
+
+<p>You can run Lighthouse as a <a href="https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en">Chrome Extension</a>, from the command line, or as a <a href="https://www.npmjs.com/package/lighthouse">Node module</a>. You give Lighthouse a URL to audit, it runs a series of audits against the page, and then it generates a report on how well the page did. From there, use the failing audits as indicators on how to improve the page. Each audit has a reference doc explaining why the audit is important, as well as how to fix it.</p>
+
+<p>The rapport is divided into 4 categories:</p>
+
+<ol>
+  <li>
+<strong>Progressive Web App</strong>: tests if your app is corect progressive web app.</li>
+  <li>
+<strong>Performance</strong>: measures if the page is loaded quickly.</li>
+  <li>
+<strong>Accessibility</strong>: checks if the content of your page is accessible.</li>
+  <li>
+<strong>Best Practices</strong>: checks if good practices are applied.</li>
+</ol>
+
+<p>The goal is to have a score of 100 for each category and for each web page of your website:</p>
+
+<figure>
+  <div>
+    <img class="img-fluid lazyload" data-src="https://cdn.jsdelivr.net/gh/glegoux/articles-glegoux-com@master/articles/2019-04-01-lighthouse/images/scores.png" alt="Lighthouse scores by report category" title="Lighthouse scores by report category">
+  </div>
+  <figcaption>Lighthouse scores by report category</figcaption>
+</figure>
+
+<p>You can export report under HTML or JSON format, then import these format or see directly report due to <a href="https://googlechrome.github.io/lighthouse/viewer/">LightHouse Viewer</a> (online version). You can install on-premises version directly from the <a href="https://github.com/GoogleChrome/lighthouse/tree/master/lighthouse-viewer">Git repository if LightHouse Viewer</a> .</p>
+
+<figure>
+  <div>
+    <img class="img-fluid lazyload" data-src="https://cdn.jsdelivr.net/gh/glegoux/articles-glegoux-com@master/articles/2019-04-01-lighthouse/images/export-import-view.jpg" alt="Export, import and view LightHouse report" title="Export, import and view LightHouse report">
+  </div>
+  <figcaption>Export, import and view LightHouse report</figcaption>
+</figure>
+
+<p>The work flow of LightHouse core is described by the following chart:</p>
+
+<figure>
+  <div>
+    <img class="img-fluid lazyload" data-src="https://cdn.jsdelivr.net/gh/glegoux/articles-glegoux-com@master/articles/2019-04-01-lighthouse/images/architecture.jpg" alt="Architecture of Lighthouse Core" title="Architecture of Lighthouse Core">
+  </div>
+  <figcaption>Architecture of Lighthouse Core</figcaption>
+</figure>
+
+<p><a href="https://github.com/GoogleChrome/lighthouse/blob/master/docs/architecture.md">See details of the architecture</a>.</p>
+
+<p>The project <a href="https://github.com/GoogleChrome/lighthouse">Lighthouse</a> has 5 main components:</p>
+
+<ol>
+  <li>
+<strong>lighthouse-cli</strong>: allows to call lighthouse services from command line.</li>
+  <li>
+<strong>lighthouse-core</strong>: allows to generate report to measure the quality of your app at some urls.</li>
+  <li>
+<strong>lighthouse-extension</strong>: allows to call lighthouse services from an Google Chrome extension.</li>
+  <li>
+<strong>lighthouse-logger</strong>: allows common logs.</li>
+  <li>
+<strong>lighthouse-viewer</strong>: allows to see report in your web browser or to import reports under JSON or HTML format.</li>
+</ol>
+
+<p>Before installing <a href="https://github.com/GoogleChrome/lighthouse/releases/tag/v2.4.0">LightHouse 2.4.0</a>, we must have:</p>
+
+<ul>
+  <li>
+<a href="http://releases.ubuntu.com/16.04/"> Ubtuntu Desktop 16.04 LTS+</a> : <code class="highlighter-rouge">cat /ect/issue</code>
+</li>
+  <li>
+<a href="https://chromereleases.googleblog.com/2017/08/stable-channel-update-for-desktop.html">Google Chrome 60.0.3112.90+</a> : <code class="highlighter-rouge">google-chrome --version</code>
+</li>
+  <li>
+<a href="https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V6.md#6.11.2">Node 6.11.2 LTS+</a> : <code class="highlighter-rouge">node --version</code>
+</li>
+  <li>
+<a href="https://github.com/npm/npm/releases/tag/v5.3.0">NPM 5.3.0+</a> : <code class="highlighter-rouge">npm --version</code>
+</li>
+</ul>
+
+<p>As lighthouse is a very recent project, you can use <a href="https://www.google.com/chrome/browser/canary.html">Canary</a> version for Google Chrome.</p>
+
+<figure>
+  <div>
+    <img class="img-fluid lazyload" data-src="https://cdn.jsdelivr.net/gh/glegoux/articles-glegoux-com@master/articles/2019-04-01-lighthouse/images/chrome-version.jpg" alt="Google Chrome, Chromium and Canary version" title="Google Chrome, Chromium and Canary version">
+  </div>
+  <figcaption>Google Chrome, Chromium and Canary version</figcaption>
+</figure>
+
+<p>Reminder you in a nutshell that <a href="https://www.google.com/chrome/browser">Google Chrome</a> is the <a href="https://github.com/chromium/chromium">Chromium</a> open source project built, packaged, 
+and distributed by Google. You can see a few <a href="https://chromium.googlesource.com/chromium/src/+/master/docs/chromium_browser_vs_google_chrome.md">differences</a> . 
+It has <a href="https://www.chromium.org/getting-involved/dev-channel">4 versions</a> Stable, Beta, Dev, Canary for MAC, Windows and Linux for desktops and Android, iOS for smart phones and tablets.</p>
+
+<p>For example, test LightHouse on this blog. Suppose that you have this file <strong>urls.txt</strong> containing one URL per line:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://glegoux.com/
+https://glegoux.com/blog/
+https://glegoux.com/blog/articles/
+https://glegoux.com/about/
+https://glegoux.com/contact/
+https://glegoux.com/contact/email/
+</code></pre></div></div>
+
+<p>Run this bash script to get one report by url:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">i</span><span class="o">=</span>0
+<span class="k">for </span>url <span class="k">in</span> <span class="si">$(</span><span class="nb">cat </span>urls.txt<span class="si">)</span><span class="p">;</span> <span class="k">do
+  </span><span class="nb">echo</span> <span class="nt">-n</span> <span class="s2">"--"</span>
+  <span class="nb">echo</span> <span class="s2">"</span><span class="nv">$i</span><span class="s2"> </span><span class="k">${</span><span class="nv">url</span><span class="k">}</span><span class="s2">"</span> | <span class="nb">tee</span> <span class="nt">-a</span> matching_url_report.txt
+  <span class="nb">echo</span> <span class="nt">-n</span> <span class="s2">"--"</span>
+  lighthouse <span class="s2">"</span><span class="k">${</span><span class="nv">url</span><span class="k">}</span><span class="s2">"</span> <span class="nt">--output</span><span class="o">=</span>json <span class="nt">--output-path</span><span class="o">=</span><span class="s2">"report-</span><span class="nv">$i</span><span class="s2">.json"</span>
+  <span class="k">$((</span>i++<span class="k">))</span>
+<span class="k">done</span>
+</code></pre></div></div>
+
+<p>Then run this python script <strong>lighthouse.py</strong>:</p>
+
+<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">python3 lighthouse.py urls.txt reports.csv
+</span></code></pre></div></div>
+
+<p><a href="https://github.com/glegoux/articles-glegoux-com/tree/master/articles/2019-04-01-lighthouse/code">See code</a>.</p>
+
+<p>You get this csv file <strong>reports.csv</strong>. Visualize with <strong>matplotlib</strong> library:</p>
+
+<figure>
+  <div>
+    <img class="img-fluid lazyload" data-src="https://cdn.jsdelivr.net/gh/glegoux/articles-glegoux-com@master/articles/2019-04-01-lighthouse/images/plot_scores.png" alt=" Charts of scores for a set of URLs" title=" Charts of scores for a set of URLs">
+  </div>
+  <figcaption> Charts of scores for a set of URLs</figcaption>
+</figure>
+
+<table>
+  <thead>
+    <tr>
+      <th>url</th>
+      <th>date</th>
+      <th>pwa</th>
+      <th>performance</th>
+      <th>accessibility</th>
+      <th>best-practices</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>https://glegoux.com/projects/</td>
+      <td>2017-08-17</td>
+      <td>45.45</td>
+      <td>46.12</td>
+      <td>91.43</td>
+      <td>69.23</td>
+    </tr>
+    <tr>
+      <td>https://glegoux.com/blog/</td>
+      <td>2017-08-17</td>
+      <td>45.45</td>
+      <td>48.71</td>
+      <td>91.43</td>
+      <td>69.23</td>
+    </tr>
+    <tr>
+      <td>https://glegoux.com/home/</td>
+      <td>2017-08-17</td>
+      <td>36.36</td>
+      <td>36.53</td>
+      <td>88.57</td>
+      <td>69.23</td>
+    </tr>
+    <tr>
+      <td>https://glegoux.com/snippets/</td>
+      <td>2017-08-17</td>
+      <td>45.45</td>
+      <td>40.88</td>
+      <td>91.43</td>
+      <td>61.54</td>
+    </tr>
+    <tr>
+      <td>https://glegoux.com/articles/</td>
+      <td>2017-08-17</td>
+      <td>45.45</td>
+      <td>46.12</td>
+      <td>88.57</td>
+      <td>69.23</td>
+    </tr>
+    <tr>
+      <td>https://glegoux.com/about/</td>
+      <td>2017-08-17</td>
+      <td>36.36</td>
+      <td>40.18</td>
+      <td>88.57</td>
+      <td>69.23</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>References</strong></p>
+
+<ul>
+  <li><a href="https://developers.google.com/web/tools/lighthouse">User Documentation</a></li>
+  <li><a href="https://github.com/GoogleChrome/lighthouse">LightHouse Open Source Code</a></li>
+  <li><a href="https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en">LightHouse as Google Chrome Extension</a></li>
+  <li><a href="https://www.npmjs.com/package/lighthouse">LightHouse as NPM Javascript module</a></li>
+  <li><a href="https://www.gitbook.com/book/google-developer-training/progressive-web-apps-ilt-codelabs">LightHouse as NPM Javascript module</a></li>
+</ul>
+
+    </div>
+
+    <div class="article-category-tags">
+      <ul>
+        <li>
+          <!-- Article category -->
+          <span>Category: </span>
+          <span class="article-category">
+            <ul>
+              <li title="Category of this article">Web</li>
+            </ul>
+          </span>
+        </li>
+        
+      </ul>
+    </div>
+
+    <div class="row">
+      <div class="col-6">
+        <div class="social-sharing">
+  <ul>
+    <li title="Share page on LinkedIn">
+      <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://glegoux.com/blog/articles/2019/04/01/lighthouse.html&amp;title=Lighthouse&amp;summary=Lighthouse%20is%20an%20open-source,%20automated%20tool%20for%20improving%20the%20quality%20of%20web%20pages.&amp;source=https://glegoux.com">
+        <i class="fab fa-linkedin" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li title="Share page on Twitter">
+      <a href="https://twitter.com/intent/tweet/?text=Lighthouse%20-%20Lighthouse%20is%20an%20open-source,%20automated%20tool%20for%20improving%20the%20quality%20of%20web%20pages.&amp;url=https://glegoux.com/blog/articles/2019/04/01/lighthouse.html">
+        <i class="fab fa-twitter" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li title="Share page on Facebook">
+      <a href="https://facebook.com/sharer/sharer.php?u=https://glegoux.com/blog/articles/2019/04/01/lighthouse.html">
+        <i class="fab fa-facebook" aria-hidden="true"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<style type="text/css">
+  .social-sharing {
+    font-size: 1.3em;
+    width: 100%;
+    color: black;
+  }
+
+  .social-sharing a {
+    color: black !important;
+  }
+
+  .social-sharing ul {
+    display: inline;
+  }
+
+  .social-sharing ul li {
+    margin-left: 0.5em;
+    font-size: 1em;
+    display: inline;
+  }
+</style>
+
+      </div>
+      <div class="col-6 article-browser">
+        <a href="/blog/articles" title="See all articles">
+          <i class="fa fa-home"></i>
+        </a><a href="/blog/articles/2019/03/23/kerberos-in-5-minutes.html" title="See the previous article">
+          <i class="fa fa-arrow-left"></i>
+        </a><a href="/blog/articles/2019/05/24/java-champion.html" title="See the next article">
+          <i class="fa fa-arrow-right"></i>
+        </a>
+</div>
+    </div>
+
+  </div>
+
+  <!-- Article license -->
+  <div class="article-license" title="See the license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0">
+      <i class="cc notranslate">Creative Commons Attribution 4.0 International License:</i>
+      <br>
+      <i class="fab fa-creative-commons notranslate" title="CC"></i>
+      <i class="fab fa-creative-commons-by notranslate" title="BY"></i>
+      <i class="fab fa-creative-commons-nc notranslate" title="NC"></i>
+      <i class="fab fa-creative-commons-sa notranslate" title="SA"></i>
+    </a>
+  </div>
+  <br>
+
+  <!-- Article author --><div class="article-authors">
+    <h5>
+      Author
+    </h5>
+
+    <hr>
+
+    <div class="row">
+      <div class="w-100 col-xs-12">
+        <table class="article-author">
+          <tbody>
+          <tr>
+            <td rowspan="2">
+<img src="/_static/common/authors/glegoux.jpg" alt="picture of glegoux" title="picture of this author">
+            </td>
+            <td>
+              <b>
+                Gilles
+                LEGOUX
+              </b>
+              (glegoux)
+            </td>
+          </tr>
+<tr>
+            <td>
+              <span class="notranslate job">
+              Software engineer <a href="https://github.com/Criteo" class="user-mention">@Criteo</a>
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" style="text-align: center">
+              <a href="https://www.linkedin.com/in/gilleslegoux" title="Follow this author">
+                <br>
+                <button class="btn btn-dark">
+                  <b>Follow</b>
+                </button>
+              </a>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+</div>
+  </div>
+<!-- Other articles -->
+  <div class="article-others">
+    <h5>Also read</h5>
+
+    <div class="row">
+<a href="/blog/articles/2020/05/04/java-ecosystem.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
+    <!-- Article metadata -->
+    <div class="article-card">
+
+      <!-- Article cover --><div class="article-cover">
+        <img class="img-fluid lazyload" data-src="/_static/common/posts/2020-05-04-java-ecosystem.jpg" alt="2020-05-04-java-ecosystem">
+      </div>
+
+      <!-- Article details -->
+      <div class="article-details">
+        <!-- Article title -->
+        <div class="article-title">
+          Java ecosystem
+        </div>
+
+        <!-- Article description -->
+        <div class="article-description">
+          What is the Java ecosystem from Sun to Oracle?
+        </div>
+
+        <!-- Article categories -->
+        <div class="article-category">
+          <ul>
+            <li>Software</li>
+          </ul>
+        </div>
+
+        <!-- Article publication date -->
+        <div class="date">
+          <i class="far fa-calendar-alt"></i>
+          <span>May 04, 2020</span>
+        </div>
+        <!-- Article reading time -->
+        <div class="reading-time">
+          <i class="far fa-clock"></i>
+          <span>10 min</span>
+        </div>
+      </div>
+
+    </div>
+</div>
+
+</a><a href="/blog/articles/2019/01/21/getting-started.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
+    <!-- Article metadata -->
+    <div class="article-card">
+
+      <!-- Article cover --><div class="article-cover">
+        <img class="img-fluid lazyload" data-src="/_static/common/posts/2019-01-21-getting-started.jpg" alt="2019-01-21-getting-started">
+      </div>
+
+      <!-- Article details -->
+      <div class="article-details">
+        <!-- Article title -->
+        <div class="article-title">
+          Getting Started
+        </div>
+
+        <!-- Article description -->
+        <div class="article-description">
+          Markdown is a easy-to-use syntax for writing text on this blog.
+        </div>
+
+        <!-- Article categories -->
+        <div class="article-category">
+          <ul>
+            <li>Methodology</li>
+          </ul>
+        </div>
+
+        <!-- Article publication date -->
+        <div class="date">
+          <i class="far fa-calendar-alt"></i>
+          <span>January 21, 2019</span>
+        </div>
+        <!-- Article reading time -->
+        <div class="reading-time">
+          <i class="far fa-clock"></i>
+          <span>10 min</span>
+        </div>
+      </div>
+
+    </div>
+</div>
+
+</a><a href="/blog/articles/2019/03/23/kerberos-in-5-minutes.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
+    <!-- Article metadata -->
+    <div class="article-card">
+
+      <!-- Article cover --><div class="article-cover">
+        <img class="img-fluid lazyload" data-src="/_static/common/posts/2019-03-23-kerberos-in-5-minutes.jpg" alt="2019-03-23-kerberos-in-5-minutes">
+      </div>
+
+      <!-- Article details -->
+      <div class="article-details">
+        <!-- Article title -->
+        <div class="article-title">
+          Kerberos in 5 minutes
+        </div>
+
+        <!-- Article description -->
+        <div class="article-description">
+          Kerberos is an authentication protocol for trusted hosts on untrusted networks.
+        </div>
+
+        <!-- Article categories -->
+        <div class="article-category">
+          <ul>
+            <li>Security</li>
+          </ul>
+        </div>
+
+        <!-- Article publication date -->
+        <div class="date">
+          <i class="far fa-calendar-alt"></i>
+          <span>March 23, 2019</span>
+        </div>
+        <!-- Article reading time -->
+        <div class="reading-time">
+          <i class="far fa-clock"></i>
+          <span>5 min</span>
+        </div>
+      </div>
+
+    </div>
+</div>
+
+</a>
+</div>
+
+    <div class="article-list-all">
+      <a href="/blog/articles/">
+        <button class="btn btn-dark" title="List all articles">
+          <b>List all</b>
+        </button>
+      </a>
+    </div>
+  </div>
+
+</div>
+
+    <!-- Disqus -->
+<div class="comments col-12">
+  <h5>Comments</h5>
+
+  <div id="disqus_thread"></div>
+
+  <script type="text/javascript">
+      var disqus_config = function () {
+          this.page.url = 'https://glegoux.com//blog/articles/2019/04/01/lighthouse.html';
+          this.page.identifier = 'lighthouse';
+      };
+      (function () {
+          var d = document, s = d.createElement('script');
+          s.src = 'https://glegoux-com.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+      })();
+  </script>
+
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments
+    powered by Disqus.</a>
+</noscript>
+</div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+  <div class="row">
+    <div class="contact col-md-4 col-12">
+      <table>
+        <tr>
+          <td colspan="2">
+            <h1>Plan</h1>
+          </td>
+        </tr>
+        <tr title="Go to the blog page">
+          <td>
+            <a class="link-strong" href="/blog/articles/">
+              <i class="icon fas fa-newspaper"></i>
+            </a>
+          </td>
+          <td>
+            <a class="link-strong" href="/blog/articles/" title="Go to the blog page">
+              Blog
+            </a>
+          </td>
+        </tr>
+        <tr title="Go to the about page">
+          <td>
+            <a class="link-strong" href="/about/">
+              <i class="icon fas fa-user"></i>
+            </a>
+          </td>
+          <td>
+            <a class="link-strong" href="/about/">
+              About
+            </a>
+          </td>
+        </tr>
+        <tr title="Go to the contact page">
+          <td>
+            <a class="link-strong" href="/contact/">
+              <i class="icon fas fa-address-card"></i>
+            </a>
+          </td>
+          <td>
+            <a class="link-strong" href="/contact/">
+              Contact
+            </a>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="language col-md-4 col-12">
+      <table>
+        <tr>
+          <td>
+            <h1>Language</h1>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <select class="lang custom-select" title="Translate the web page into your language">
+  <option class="notranslate" value="en">
+    <span>English</span>
+  </option>
+<option class="notranslate" value="zh-CN">
+    <span>中文</span>
+  </option>
+<option class="notranslate" value="fr">
+    <span>Français</span>
+  </option></select>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="follow col-md-4 col-12">
+      <h1 class="title">Follow me</h1>
+      <div class="social notranslate">
+  <ul>
+    <li>
+      <a class="icon rounded fab fa-linkedin" title="LinkedIn" href="https://www.linkedin.com/in/gilleslegoux">
+      </a>
+    </li>
+    <li>
+      <a class="icon rounded fab fa-twitter" title="Twitter" href="https://twitter.com/gilleslegoux">
+      </a>
+    </li>
+    <li>
+      <a class="icon rounded fab fa-github" title="GitHub" href="https://github.com/glegoux">
+      </a>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <a class="icon rounded fab fa-slideshare" title="SlideShare" href="https://www.slideshare.net/gilleslegoux">
+      </a>
+    </li>
+    <li>
+      <a class="icon rounded fab fa-meetup" title="MeetUp" href="https://www.meetup.com/members/162515452">
+      </a>
+    </li>
+    <li>
+      <a class="icon rounded fas fa-paper-plane" title="Email" href="/contact/email/">
+      </a>
+    </li>
+  </ul>
+</div>
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="menu col-12">
+      <p>
+        <a class="link-strong" href="http://status.glegoux.com" title="See the status and availability">Status &amp; Availability</a> |
+        <a class="link-strong" href="/sitemap.xml" title="See the site map">Sitemap</a> |
+        <a class="link-strong" href="/rss.xml" title="Subscribe to RSS feed"><span class="notranslate">RSS</span></a> |
+        <a class="link-strong" href="/atom.xml" title="Subscribe to Atom feed"><span class="notranslate">Atom</span></a>
+      </p>
+    </div>
+  </div>
+
+
+  <!-- Please don't remove that due to license rules -->
+  <div class="row notranslate">
+    <div class="copyright col-12">
+      <hr>
+      <p>
+        Powered by <a class="link-strong" href="https://glegoux.com" title="See the original project">glegoux.com</a> - ©Copyright 2020.
+        <br>
+        <a class="link-strong" href="https://github.com/glegoux/glegoux.github.io" title="See the source code">Source code</a> |
+        <a class="link-strong" href="https://github.com/glegoux/glegoux.github.io/wiki" title="See the wiki">Wiki</a> |
+        <a class="link-strong" href="https://raw.githubusercontent.com/glegoux/glegoux.github.io/develop/LICENSE.txt" title="See the license">License</a>
+        <br>
+        Version: <span class="notranslate">1.0.0
+</span>
+      </p>
+    </div>
+  </div>
+  <!-- End -->
+
+</div>
+
+</footer>
+
+<!-- Go Top -->
+<div id="goto-top" style="display:none;">
+  <a href="#" class="fas fa-arrow-up" title="Go to top page"></a>
+</div>
+
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+
+        /* Go to top or to element with id */
+
+        function goToIdorTop() {
+            $('a[href^="#"]').click(function () {
+                var destId = $(this).attr("href");
+                var srcId = $(this).attr("id");
+                if (destId === "#") {
+                    $("html, body").animate({scrollTop: 0}, 'slow');
+                } else {
+                    if (srcId && srcId.startsWith('go-to-ref')) {
+                        srcId = '#' + srcId;
+                        $('.come-back').remove();
+                        $(destId).prepend('<a class="come-back" href="' + srcId + '">&uarr;</a>');
+                        goToIdorTop();
+                    }
+                    var offset = $(destId).offset().top;
+                    $('html, body').animate({scrollTop: offset}, 'slow');
+                }
+                return false;
+            });
+        }
+
+        goToIdorTop();
+
+        /* Show or hide menu */
+
+        var scrollticker;
+
+        $(window).scroll(function () {
+            function hide() {
+                $('#goto-top').css('display', 'inline').hide();
+                if ($('.sharing-platform').is(':hidden')) {
+                    $('.show-sharing-platform').hide();
+                }
+                $('.menu-article').css('display', 'inline').hide();
+            }
+
+            function show() {
+                $('#goto-top').css('display', 'inline').show();
+                $('.menu-article').css('display', 'inline').show();
+                $('.show-sharing-platform').show();
+            }
+
+            if (scrollticker) {
+                window.clearTimeout(scrollticker);
+                scrollticker = null;
+            }
+
+            var pos = $(window).scrollTop();
+
+            if (pos !== 0) {
+                show();
+                scrollticker = window.setTimeout(function () {
+                    hide();
+                }, 2000);
+            } else {
+                hide();
+            }
+        });
+
+    });
+</script>
+
+<style type="text/css">
+  #goto-top {
+    z-index: 9999;
+    width: 2.25em;
+    height: 2.25em;
+    position: fixed;
+    bottom: 0.5em;
+    margin-right: 0.5em;
+    right: 15px;
+    background-color: rgba(144, 144, 144, 0.65);
+    border-radius: 100%;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding-top: 0.25em;
+  }
+
+  #goto-top a:before {
+    font-size: 2em;
+  }
+
+  #goto-top a {
+    display: block;
+    font-size: 0.75em;
+  }
+</style>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics --><script type="text/javascript" async src="https://www.googletagmanager.com/gtag/js?id=UA-155162630-1"></script>
+
+<script type="text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-155162630-1');
+</script>
+
+
+<!-- Google Translate -->
+<div id="google-translate"></div>
+
+<script type="text/javascript">
+
+    const LANGUAGES = {
+        "af": "afrikaans",
+        "sq": "albanian",
+        "ar": "arabic",
+        "az": "azerbaijani",
+        "eu": "basque",
+        "bn": "bengali",
+        "be": "belarusian",
+        "bg": "bulgarian",
+        "ca": "catalan",
+        "zh-CN": "chinese (simplified)",
+        "hr": "croatian",
+        "cs": "czech",
+        "da": "danish",
+        "nl": "dutch",
+        "en": "english",
+        "eo": "esperanto",
+        "et": "estonian",
+        "tl": "filipino",
+        "fi": "finnish",
+        "fr": "french",
+        "gl": "galician",
+        "ka": "georgian",
+        "de": "german",
+        "el": "greek",
+        "gu": "gujarati",
+        "ht": "haitian",
+        "iw": "hebrew",
+        "hi": "hindi",
+        "hu": "hungarian",
+        "is": "icelandic",
+        "id": "indonesian",
+        "ga": "irish",
+        "it": "italian",
+        "ja": "japanese",
+        "kn": "kannada",
+        "ko": "korean",
+        "la": "latin",
+        "lv": "latvian",
+        "lt": "lithuanian",
+        "mk": "macedonian",
+        "ms": "malay",
+        "mt": "maltese",
+        "no": "norwegian",
+        "fa": "persian",
+        "pl": "polish",
+        "pt": "portuguese",
+        "ro": "romanian",
+        "ru": "russian",
+        "sr": "serbian",
+        "sk": "slovak",
+        "sl": "slovenian",
+        "es": "spanish",
+        "sw": "swahili",
+        "sv": "swedish",
+        "ta": "tamil",
+        "te": "telugu",
+        "th": "thai",
+        "tr": "turkish",
+        "uk": "ukrainian",
+        "ur": "urdu",
+        "vi": "vietnamese",
+        "cy": "welsh",
+        "yi": "yiddish"
+    };
+
+    const originalLanguageCode = "en";
+    const includedLanguageCodesString = originalLanguageCode + "," + "zh-CN,fr";
+    const includedLanguageCodes = includedLanguageCodesString.split(",").filter(function(x){ return x != ""; });
+ 
+    includedLanguageCodes.forEach(function (languageCode) {
+        if (LANGUAGES[languageCode] === undefined) {
+            console.error(`language '${languageCode}' is unavailable`);
+        }
+    });
+
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+            {
+                pageLanguage: originalLanguageCode,
+                includedLanguages: includedLanguageCodesString,
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                autoDisplay: false
+            },
+            "google-translate"
+        );
+    }
+</script>
+
+<script type="text/javascript" async src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit&amp;hl=en"></script>
+
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+
+        const originalLangHeader = $("#original-lang");
+        const langs = $(".lang");
+
+        function googleTranslate(languageCode) {
+            const language = LANGUAGES[languageCode];
+            if (LANGUAGES[languageCode] === undefined) {
+                console.error(`language '${languageCode}' is unavailable`);
+                return;
+            }
+            $(".goog-te-menu-frame").contents().find("a.goog-te-menu2-item").each(function () {
+                if ($(this).text().toLowerCase().includes(language.toLowerCase())) {
+                    $(this)[0].click();
+                }
+            });
+        }
+
+        function changeLanguage(languageCode) {
+
+            originalLangHeader.hide();
+            langs.each(function () {
+                $(this).find("option").each(function () {
+                    if ($(this).val() === languageCode) {
+                        $(this).attr("selected", true);
+                    } else {
+                        $(this).removeAttr("selected");    
+                    }
+                });
+            });
+            
+            // call twice
+            googleTranslate(languageCode);
+            googleTranslate(languageCode);
+
+            window.localStorage.setItem("language-code", languageCode);
+
+            setTimeout(function () {
+                // wait for the end of the translation of the page
+                if (originalLanguageCode !== languageCode) {
+                    originalLangHeader.show();
+                }
+            }, 1000);
+        }
+
+        function browserLangToGoogleTranslate() {
+            let browserLanguageCode = navigator.language.substring(0, 2);
+            if (browserLanguageCode === "zh") {
+                return "zh-CN";
+            }
+            return browserLanguageCode;
+        }
+
+        // init translation
+
+        let currentLanguageCode = window.localStorage.getItem("language-code");
+        if (currentLanguageCode === null) {
+            currentLanguageCode = originalLanguageCode;
+            const browserLanguageCode = browserLangToGoogleTranslate();
+            includedLanguageCodes.forEach(function (languageCode) {
+                if (languageCode == browserLanguageCode) {
+                    currentLanguageCode = browserLanguageCode;
+                }
+            });
+        }
+        setTimeout(function () {
+            // wait for the end of load of the iframe and resources of google translate
+            changeLanguage(currentLanguageCode);
+        }, 1000);
+
+        // update translation
+
+        langs.change(function () {
+            const languageCode = $(this).children("option:selected").val();
+            changeLanguage(languageCode);
+        });
+
+        // no translate
+
+        setTimeout(function () {
+            // wait for the execution of MathJax
+            for (const jax of MathJax.Hub.getAllJax()) {
+                jax.SourceElement().previousSibling.classList.add("notranslate");
+            }
+            $(".highlight").addClass("notranslate");
+        }, 1000);
+
+    });
+</script>
+
+<style type="text/css">
+  body {
+    top: 0 !important;
+  }
+
+  #lang {
+    display: none !important;
+  }
+
+  .goog-te-banner-frame.skiptranslate {
+    display: none !important;
+  }
+
+  .goog-tooltip {
+    display: none !important;
+  }
+
+  .goog-tooltip:hover {
+    display: none !important;
+  }
+
+  .goog-text-highlight {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  .goog-te-gadget {
+    display: none !important;
+  }
+</style>
+
+</body>
+
+</html>
