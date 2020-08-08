@@ -18,7 +18,7 @@ group :jekyll_plugins do
 end
 
 # Others gems
-gem 'kramdown', '2.1'
+gem 'kramdown', '2.3.0'
 gem 'liquid', '4.0.3'
 gem 'minima', '2.5.1'
 gem 'nokogiri', '1.10.9'
