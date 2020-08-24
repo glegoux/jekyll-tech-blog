@@ -19,7 +19,7 @@ So each point is identified by unique way with this tuple: $(\text{latitude}, \t
 
 {% include image.html title="Distance between 2 points" src="https://docs.google.com/drawings/d/e/2PACX-1vQptEFbx1SxwX-p1QFsK94CvkoJwbVAKXpiQ8FaL9-BJbZnEUw4PYZqce7UnUtD-Hcm01ZRV4vOornF/pub?w=480&amp;h=360" %} 
 
-The distance between $p1$ and $p2$ is an arc circle such as:
+The distance between $p1$ and $p2$ is the length of an arc circle such as:
 
 $$d(p1, p2) = R\;\alpha$$ 
 
