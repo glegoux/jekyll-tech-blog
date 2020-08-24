@@ -5,9 +5,115 @@
     <description>Personal blog about software engineering</description>
     <link>https://glegoux.com/</link>
     <atom:link href="https://glegoux.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 20 Jul 2020 06:10:34 +0000</pubDate>
-    <lastBuildDate>Mon, 20 Jul 2020 06:10:34 +0000</lastBuildDate>
+    <pubDate>Mon, 24 Aug 2020 21:29:44 +0000</pubDate>
+    <lastBuildDate>Mon, 24 Aug 2020 21:29:44 +0000</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
+    
+      <item>
+        <title>Geo-location</title>
+        <description>&lt;p&gt;We can model the surface of the earth as a sphere of radius $R$.
+Even if in reality, the earth is more a kind of ellipsoid where its surface is irregular, each 
+point of its surface owns an altitude in relation to the sea level.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://docs.google.com/drawings/d/e/2PACX-1vRdm2uIt-uhISovgxlwTgP6w08Lq8LPqX-vpNz8RVt7cr_sHn8k1Fb5-3d8kVV5Z2K5-Ys8gwEYLfy9/pub?w=480&amp;amp;h=360&quot; alt=&quot;Coordinates on Earth&quot; title=&quot;Coordinates on Earth&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;Coordinates on Earth&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Let 2 points $p1 = (\text{lat1}, \text{long1})$, $p2 = (\text{lat2}, \text{long2})$ on the surface of the earth. 
+These points have for respective a latitude and a longitude given in radian.
+The latitude is a value between $[-\frac{\pi}{2}, \frac{\pi}{2}]$, and longitude between $]-\pi, \pi]$. 
+So each point is identified by unique way with this tuple: $(\text{latitude}, \text{longitude})$.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://docs.google.com/drawings/d/e/2PACX-1vQptEFbx1SxwX-p1QFsK94CvkoJwbVAKXpiQ8FaL9-BJbZnEUw4PYZqce7UnUtD-Hcm01ZRV4vOornF/pub?w=480&amp;amp;h=360&quot; alt=&quot;Distance between 2 points&quot; title=&quot;Distance between 2 points&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;Distance between 2 points&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The distance between $p1$ and $p2$ is an arc circle such as:&lt;/p&gt;
+
+\[d(p1, p2) = R\;\alpha\]
+
+&lt;figure&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://docs.google.com/drawings/d/e/2PACX-1vQtJdsudI5oZcp-eYZ0sRQDvDrSfFfH9uWMG1eTKKkBSLd402xwbJXg3lrVluZ3rn_R6w9OLEJQ8Hzw/pub?w=480&amp;amp;h=360&quot; alt=&quot;Center angle&quot; title=&quot;Center angle&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;Center angle&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;where $\alpha \in [0, \pi[$ is the smallest center angle, to avoid an ambiguity because $p1$ and $p2$ belongs to a circle. 
+With the formula of scalar product, we can find $\alpha$, because:&lt;/p&gt;
+
+\[p1\,.\,p2 = ||p1||\,||p2||\,\cos(\alpha) = R^2 \cos(\alpha)\]
+
+&lt;p&gt;But also, in the cartesian coordinate system, with $\begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}$ the center of the earth, we have that a point $p$ on the surface of 
+the earth has for cartesian coordinate:&lt;/p&gt;
+
+\[p = \begin{pmatrix} R\cos(\text{lat})\cos(\text{long}) \\\ R\cos(\text{lat})\sin(\text{long}) \\\ R\sin(\text{lat}) \end{pmatrix}\]
+
+&lt;p&gt;Then, we have also:&lt;/p&gt;
+
+\[\begin{align*}
+p1\,.\,p2 &amp;amp;= R^2\left(\sin(\text{lat1})\sin(\text{lat2}) + \cos(\text{lat1})\cos(\text{lat2})(\cos(\text{long1})\cos(\text{long2}) + \sin(\text{long1})\sin(\text{long2})\right) \\\
+          &amp;amp;= R^2\left(\sin(\text{lat1})\sin(\text{lat2}) + \cos(\text{lat1})\cos(\text{lat2})\cos(\text{long1} - \text{long2})\right)
+\end{align*}\]
+
+&lt;p&gt;So:&lt;/p&gt;
+
+\[\cos(\alpha) = \sin(\text{lat1})\sin(\text{lat2}) + \cos(\text{lat1})\cos(\text{lat2})\cos(\text{long1} - \text{long2})\]
+
+&lt;p&gt;for a historical reason and numerical computation often the haversine fonction $\text{hav}$ is used instead of cosinus:&lt;/p&gt;
+
+\[\text{hav}(\alpha) = \sin^2(\frac{\alpha}{2})\]
+
+&lt;p&gt;We have $\cos(\alpha) = 1 - 2\text{hav}(\alpha)$, so:&lt;/p&gt;
+
+\[1 - 2\text{hav}(\alpha) = \sin(\text{lat1})\sin(\text{lat2}) + \cos(\text{lat1})\cos(\text{lat2}) - 2\text{hav}(\text{long1} - \text{long2})\cos(\text{lat1})\cos(\text{lat2})\]
+
+&lt;p&gt;That is to say:&lt;/p&gt;
+
+\[\begin{align*}
+\text{hav}(\alpha) &amp;amp;= \dfrac{1 - (\sin(\text{lat1})\sin(\text{lat2}) + \cos(\text{lat1})\cos(\text{lat2}))}{2} + \text{hav}(\text{long1} - \text{long2})\cos(\text{lat1})\cos(\text{lat2}) \\\
+                   &amp;amp;= \dfrac{1 - \cos(\text{lat1 - lat2})}{2} + \text{hav}(\text{long1} - \text{long2})\cos(\text{lat1})\cos(\text{lat2}) \\\
+                   &amp;amp;= \text{hav}(\text{lat1} - \text{lat2}) + \text{hav}(\text{long1} - \text{long2})\cos(\text{lat1})\cos(\text{lat2})
+\end{align*}\]
+
+&lt;p&gt;We have:&lt;/p&gt;
+
+&lt;p&gt;\(d(p1, p2) = R\,\text{archav}(\text{hav}(\alpha))\) with $\alpha \in [0, \pi[$&lt;/p&gt;
+
+&lt;p&gt;We can check that the coherence of the formula where $d$ is well a metric distance, it is a positive function, symetric $d(p1, p2) = d(p2, p1)$, and homogeneous $d(p, p) = 0$ 
+respecting the triangle inegality.&lt;/p&gt;
+
+&lt;p&gt;In addition:&lt;/p&gt;
+
+\[\text{archav}(x) = 2\,\text{arcsin}(\sqrt{x})\]
+
+&lt;p&gt;And by putting $y = \text{arcsin}(x)$ and $x = \sin(y)$ with $\tan(y) = \sqrt{\dfrac{\sin^2(y)}{1 - \sin^2(y)}}$ we have:&lt;/p&gt;
+
+\[\text{arcsin}(x) = \text{arctan}\left(\sqrt{\dfrac{x^2}{1 - x^2}}\right)\]
+
+&lt;p&gt;So:&lt;/p&gt;
+
+\[d(p1, p2) = 2\,R\,\text{arctan}\left(\sqrt{\dfrac{\text{hav}(p1, p2)}{1 - \text{hav}(p1, p2)}}\right)\]
+
+&lt;p&gt;where $\text{hav}(p1, p2) = \text{hav}(\text{lat1} - \text{lat2}) + \text{hav}(\text{long1} - \text{long2})\cos(\text{lat1})\cos(\text{lat2})$
+is the harvesine formula.&lt;/p&gt;
+
+&lt;p&gt;In practice, the radius of the earth is  $R = 6371\,km$, and the latitude and longitude are given often in decimal degree and not in radian.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 24 Aug 2020 00:00:00 +0000</pubDate>
+        <link>https://glegoux.com/blog/articles/2020/08/24/geo-location.html</link>
+        <guid isPermaLink="true">https://glegoux.com/blog/articles/2020/08/24/geo-location.html</guid>
+        
+        
+        <category>Maths</category>
+        
+      </item>
     
       <item>
         <title>GNU Privacy Guard</title>
@@ -47,7 +153,7 @@ Particularly, you can:&lt;/p&gt;
         <guid isPermaLink="true">https://glegoux.com/blog/articles/2020/05/15/gnu-privacy-guard.html</guid>
         
         
-        <category>Security</category>
+        <category>Maths</category>
         
       </item>
     
@@ -267,7 +373,7 @@ vs GAFA as (without quoting all other ones):&lt;/p&gt;
       </item>
     
       <item>
-        <title>Geo-location of request path</title>
+        <title>Trace a request path</title>
         <description>&lt;p&gt;The goal of this article is to understand what is the used path of HTTP request generated by your web browser to load a web page from your computer to server web. I suppose each time DNS resolution is done, that is to say client knows IP server (by passing over in silence the resolution of name, it is prerequisites).&lt;/p&gt;
 
 &lt;figure&gt;
@@ -324,7 +430,7 @@ From 10.125.135.205 icmp_seq=1 Time to live exceeded
 rtt min/avg/max/mdev = 13.821/13.821/13.821/0.000 ms
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;While ping command uses ICMP protocol, the system command  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;traceroute&lt;/code&gt; realizes that directly with TCP protocol more easily. If there are stars instead of one IP address it means router refused to give its identity.&lt;/p&gt;
+&lt;p&gt;While ping command uses ICMP protocol, the system command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;traceroute&lt;/code&gt; realizes that directly with TCP protocol more easily. If there are stars instead of one IP address it means router refused to give its identity.&lt;/p&gt;
 
 &lt;p&gt;There is no rule to guarantee that outward path and return path are identical. This is sometimes useful to get traceroute from both ends of your network. Here I am considering only outward path.&lt;/p&gt;
 
@@ -342,7 +448,7 @@ rtt min/avg/max/mdev = 13.821/13.821/13.821/0.000 ms
 
 &lt;figure&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://cdn.jsdelivr.net/gh/glegoux/articles-glegoux-com@master/articles/2019-07-14-geo-location-of-request-path/images/rir.png&quot; alt=&quot;Map of Regional Internet Registry&quot; title=&quot;Map of Regional Internet Registry&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://cdn.jsdelivr.net/gh/glegoux/articles-glegoux-com@master/articles/2019-07-14-trace-a-request-path/images/rir.png&quot; alt=&quot;Map of Regional Internet Registry&quot; title=&quot;Map of Regional Internet Registry&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;Map of Regional Internet Registry&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -353,15 +459,15 @@ rtt min/avg/max/mdev = 13.821/13.821/13.821/0.000 ms
 
 &lt;figure&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://cdn.jsdelivr.net/gh/glegoux/articles-glegoux-com@master/articles/2019-07-14-geo-location-of-request-path/images/map.png&quot; alt=&quot;Geo-location of request path from Paris to glegoux.com&quot; title=&quot;Geo-location of request path from Paris to glegoux.com&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://cdn.jsdelivr.net/gh/glegoux/articles-glegoux-com@master/articles/2019-07-14-trace-a-request-path/images/map.png&quot; alt=&quot;Geo-location of request path from Paris to glegoux.com&quot; title=&quot;Geo-location of request path from Paris to glegoux.com&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;Geo-location of request path from Paris to glegoux.com&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 </description>
         <pubDate>Sun, 14 Jul 2019 00:00:00 +0000</pubDate>
-        <link>https://glegoux.com/blog/articles/2019/07/14/geo-location-of-request-path.html</link>
-        <guid isPermaLink="true">https://glegoux.com/blog/articles/2019/07/14/geo-location-of-request-path.html</guid>
+        <link>https://glegoux.com/blog/articles/2019/07/14/trace-a-request-path.html</link>
+        <guid isPermaLink="true">https://glegoux.com/blog/articles/2019/07/14/trace-a-request-path.html</guid>
         
         <category>Internet</category>
         
@@ -1027,89 +1133,6 @@ Beware the morality of this article is that a person physically accessing your c
         
         
         <category>Security</category>
-        
-      </item>
-    
-      <item>
-        <title>How to quote sources</title>
-        <description>&lt;p&gt;The standard in force is mainly Afnor Standard Z 44-005, December 1987 (ISO 690). Here is a link of the website of the Ministry of Culture and Communication which presents in a synthetic way the standards in force for the writing of bibliographical references:&lt;/p&gt;
-
-&lt;p align=&quot;center&quot;&gt;
-  &lt;a href=&quot;http://www.culture.gouv.fr/culture/inventai/telechar/normes.pdf&quot;&gt;http://www.culture.gouv.fr/culture/inventai/telechar/normes.pdf&lt;/a&gt;
-&lt;/p&gt;
-
-&lt;p&gt;To write a blog article resources are used and must be specified in a &lt;strong&gt;bibliography&lt;/strong&gt; and / or a &lt;strong&gt;sitemap&lt;/strong&gt;. These groups respectively the paper resources or online like books, articles, videos, research papers, interviews …&lt;/p&gt;
-
-&lt;p&gt;In general, these rules are to be respected with a certain freedom, but all known information must be mentioned. Some information is mandatory or conditionally mandatory (ISBN, ISSN for example).&lt;/p&gt;
-
-&lt;p&gt;You can find out what an ISBN (International Standard Book Number) is:&lt;/p&gt;
-
-&lt;p align=&quot;center&quot;&gt;
-  &lt;a href=&quot;https://www.isbn-international.org/fr/&quot;&gt; https://www.isbn-international.org/en/ &lt;/a&gt;
-&lt;/p&gt;
-
-&lt;p&gt;Likewise for what is an ISBN (International Standard Book Number):&lt;/p&gt;
-
-&lt;p align=&quot;center&quot;&gt;
-  &lt;a href=&quot;http://www.issn.org/fr/&quot;&gt; http://www.issn.org/en/ &lt;/a&gt;
-&lt;/p&gt;
-
-&lt;p&gt;Two sites are also interesting:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;The website of AFNIL (French Agency for International Numbering of Books):&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p align=&quot;center&quot;&gt;
-    &lt;a href=&quot;http://www.afnil.org/&quot;&gt; http://www.afnil.org/ &lt;/a&gt;
-&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;The site of the BnF (Libraries National of France):&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p align=&quot;center&quot;&gt;
-    &lt;a href=&quot;http://www.bnf.fr/&quot;&gt; http://www.bnf.fr/ &lt;/a&gt;
-&lt;/p&gt;
-
-&lt;p&gt;With these resources:&lt;/p&gt;
-
-&lt;p align=&quot;center&quot;&gt;
-  &lt;a href=&quot;http://www.bnf.fr/fr/professionnels/s_informer_obtenir_issn.html&quot;&gt; Get informed and get an ISSN &lt;/a&gt; &lt;br /&gt;
-	&lt;a href=&quot;http://www.bnf.fr/fr/professionnels/s_informer_obtenir_isbn.html&quot;&gt; Get information and get an ISBN &lt;/a&gt;
-&lt;/p&gt;
-
-&lt;p&gt;Your references must be in alphabetical order at the end of your article respecting these conventions.&lt;/p&gt;
-
-&lt;h1 id=&quot;book&quot;&gt;Book&lt;/h1&gt;
-
-&lt;p&gt;NAME OF THE AUTHOR, First name of the author. &lt;strong&gt;Title of the book&lt;/strong&gt;. Name of publisher, year of publication. Number of pages. Notes. ISBN.&lt;/p&gt;
-
-&lt;h1 id=&quot;periodical-article&quot;&gt;Periodical article&lt;/h1&gt;
-
-&lt;p&gt;NAME OF THE AUTHOR, First name of the author. &lt;strong&gt;Title of the article&lt;/strong&gt;. &lt;em&gt;Title of the periodical&lt;/em&gt;. year of publication. not. paging. ISSN.&lt;/p&gt;
-
-&lt;h1 id=&quot;internet-resource&quot;&gt;Internet resource&lt;/h1&gt;
-
-&lt;p&gt;This convention is personal. For this blog by default the links given are consulted the day of the creation of the article.&lt;/p&gt;
-
-&lt;p&gt;NAME OF THE AUTHOR, First name of the author. &lt;strong&gt;Title&lt;/strong&gt; [online]. &lt;em&gt;Editor’s name&lt;/em&gt;. [date of publication or update date of consultation]. Availability and access. (or just a link)&lt;/p&gt;
-
-&lt;h1 id=&quot;references&quot;&gt;References&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.isbn-international.org&quot;&gt;https://www.isbn-international.org&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.issn.org&quot;&gt;http://www.issn.org&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.afnil.org&quot;&gt;http://www.afnil.org&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.bnf.fr&quot;&gt;http://www.bnf.fr&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Thu, 14 Feb 2019 00:00:00 +0000</pubDate>
-        <link>https://glegoux.com/blog/articles/2019/02/14/how-to-quote-sources.html</link>
-        <guid isPermaLink="true">https://glegoux.com/blog/articles/2019/02/14/how-to-quote-sources.html</guid>
-        
-        
-        <category>Methodology</category>
         
       </item>
     
