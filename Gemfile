@@ -12,12 +12,10 @@ group :jekyll_plugins do
   gem 'jekyll-mentions', '1.5.1'
   gem 'jekyll-redirect-from', '0.16.0'
   gem 'jemoji', '0.11.1'
-  group :development do
-    gem 'jekyll-admin', '0.10.2'
-  end
 end
 
 # Others gems
+gem "rack", ">= 2.1.4"
 gem 'kramdown', '2.3'
 gem 'liquid', '4.0.3'
 gem 'minima', '2.5.1'
