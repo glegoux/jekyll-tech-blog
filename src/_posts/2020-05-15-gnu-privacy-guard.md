@@ -3,7 +3,7 @@ title: "GNU Privacy Guard"
 description: "How to prove its identity and encrypt its communication?"
 authors: ["glegoux"]
 time_reading_minutes: 5
-category: "Maths"
+category: "Security"
 ---
 
 First, it is important to distinguish: **PGP** (Pretty Good Privacy), **OpenPGP** and **GnuPG** also named **GPG** (Gnu Privacy Guard).
