@@ -5,8 +5,8 @@
     <description>Personal blog about software engineering</description>
     <link>https://glegoux.com/</link>
     <atom:link href="https://glegoux.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 24 Aug 2020 21:29:44 +0000</pubDate>
-    <lastBuildDate>Mon, 24 Aug 2020 21:29:44 +0000</lastBuildDate>
+    <pubDate>Mon, 24 Aug 2020 21:43:37 +0000</pubDate>
+    <lastBuildDate>Mon, 24 Aug 2020 21:43:37 +0000</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -153,7 +153,7 @@ Particularly, you can:&lt;/p&gt;
         <guid isPermaLink="true">https://glegoux.com/blog/articles/2020/05/15/gnu-privacy-guard.html</guid>
         
         
-        <category>Maths</category>
+        <category>Security</category>
         
       </item>
     
