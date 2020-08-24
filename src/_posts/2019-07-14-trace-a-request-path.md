@@ -1,5 +1,5 @@
 ---
-title: "Geo-location of request path"
+title: "Trace a request path"
 description: "How to know for which routers a HTTP request browses?"
 authors: ["glegoux"]
 time_reading_minutes: 5
@@ -57,7 +57,7 @@ PING glegoux.com (195.164.48.181) 56(84) bytes of data.
 rtt min/avg/max/mdev = 13.821/13.821/13.821/0.000 ms
 ~~~
 
-While ping command uses ICMP protocol, the system command  `traceroute` realizes that directly with TCP protocol more easily. If there are stars instead of one IP address it means router refused to give its identity.
+While ping command uses ICMP protocol, the system command `traceroute` realizes that directly with TCP protocol more easily. If there are stars instead of one IP address it means router refused to give its identity.
 
 There is no rule to guarantee that outward path and return path are identical. This is sometimes useful to get traceroute from both ends of your network. Here I am considering only outward path.
 
