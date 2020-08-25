@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2020-08-24T22:18:27+00:00</updated>
+ <updated>2020-08-25T07:57:27+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -70,7 +70,7 @@ p1\,.\,p2 &amp;amp;= R^2\left(\sin(\text{lat1})\sin(\text{lat2}) + \cos(\text{la
 
 &lt;p&gt;for a historical reason and numerical computation often the haversine fonction $\text{hav}$ is used instead of cosinus:&lt;/p&gt;
 
-\[\text{hav}(\alpha) = \sin^2(\frac{\alpha}{2})\]
+\[\text{hav}(\alpha) = \sin^2\left(\frac{\alpha}{2}\right)\]
 
 &lt;p&gt;We have $\cos(\alpha) = 1 - 2\text{hav}(\alpha)$, so:&lt;/p&gt;
 
@@ -88,9 +88,6 @@ p1\,.\,p2 &amp;amp;= R^2\left(\sin(\text{lat1})\sin(\text{lat2}) + \cos(\text{la
 
 &lt;p&gt;\(d(p1, p2) = R\,\text{archav}(\text{hav}(\alpha))\) with $\alpha \in [0, \pi[$&lt;/p&gt;
 
-&lt;p&gt;We can check that the coherence of the formula where $d$ is well a metric distance, it is a positive function, symetric $d(p1, p2) = d(p2, p1)$, and homogeneous $d(p, p) = 0$ 
-respecting the triangle inegality.&lt;/p&gt;
-
 &lt;p&gt;In addition:&lt;/p&gt;
 
 \[\text{archav}(x) = 2\,\text{arcsin}(\sqrt{x})\]
@@ -105,6 +102,9 @@ respecting the triangle inegality.&lt;/p&gt;
 
 &lt;p&gt;where $\text{hav}(p1, p2) = \text{hav}(\text{lat1} - \text{lat2}) + \text{hav}(\text{long1} - \text{long2})\cos(\text{lat1})\cos(\text{lat2})$
 is the harvesine formula.&lt;/p&gt;
+
+&lt;p&gt;We can check that the coherence of the formula where $d$ is well a metric distance, it is a positive function, symetric $d(p1, p2) = d(p2, p1)$, and homogeneous $d(p, p) = 0$ 
+respecting the triangle inegality.&lt;/p&gt;
 
 &lt;p&gt;In practice, the radius of the earth is  $R = 6371\,km$, and the latitude and longitude are given often in decimal degree and not in radian.&lt;/p&gt;
 </content><author>
