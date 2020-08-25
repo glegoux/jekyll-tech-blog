@@ -48,7 +48,7 @@ $$\cos(\alpha) = \sin(\text{lat1})\sin(\text{lat2}) + \cos(\text{lat1})\cos(\tex
 
 for a historical reason and numerical computation often the haversine fonction $\text{hav}$ is used instead of cosinus:
 
-$$\text{hav}(\alpha) = \sin^2(\frac{\alpha}{2})$$
+$$\text{hav}(\alpha) = \sin^2\left(\frac{\alpha}{2}\right)$$
 
 We have $\cos(\alpha) = 1 - 2\text{hav}(\alpha)$, so:
 
@@ -66,9 +66,6 @@ We have:
 
 $$d(p1, p2) = R\,\text{archav}(\text{hav}(\alpha))$$ with $\alpha \in [0, \pi[$
 
-We can check that the coherence of the formula where $d$ is well a metric distance, it is a positive function, symetric $d(p1, p2) = d(p2, p1)$, and homogeneous $d(p, p) = 0$ 
-respecting the triangle inegality. 
-
 In addition:
  
 $$\text{archav}(x) = 2\,\text{arcsin}(\sqrt{x})$$
@@ -83,5 +80,8 @@ $$d(p1, p2) = 2\,R\,\text{arctan}\left(\sqrt{\dfrac{\text{hav}(p1, p2)}{1 - \tex
 
 where $\text{hav}(p1, p2) = \text{hav}(\text{lat1} - \text{lat2}) + \text{hav}(\text{long1} - \text{long2})\cos(\text{lat1})\cos(\text{lat2})$
 is the harvesine formula.
+
+We can check that the coherence of the formula where $d$ is well a metric distance, it is a positive function, symetric $d(p1, p2) = d(p2, p1)$, and homogeneous $d(p, p) = 0$ 
+respecting the triangle inegality. 
 
 In practice, the radius of the earth is  $R = 6371\,km$, and the latitude and longitude are given often in decimal degree and not in radian.
