@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2020-08-25T07:57:27+00:00</updated>
+ <updated>2020-09-05T09:22:16+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -13,9 +13,7 @@
    <link href="https://glegoux.com/blog/articles/2020/08/24/geo-location.html"/>
    <updated>2020-08-24T00:00:00+00:00</updated>
    <id>https://glegoux.com/blog/articles/2020/08/24/geo-location.html</id>
-   <content type="html">&lt;p&gt;We can model the surface of the earth as a sphere of radius $R$.
-Even if in reality, the earth is more a kind of ellipsoid where its surface is irregular, each 
-point of its surface owns an altitude in relation to the sea level.&lt;/p&gt;
+   <content type="html">&lt;p&gt;We can model the surface of the earth as a sphere of radius $R$. Even if in reality, the earth is more a kind of ellipsoid with a irregular surface, where each point of its surface owns an altitude in relation to the sea level.&lt;/p&gt;
 
 &lt;figure&gt;
   &lt;div&gt;
@@ -24,9 +22,7 @@ point of its surface owns an altitude in relation to the sea level.&lt;/p&gt;
   &lt;figcaption&gt;Coordinates on Earth&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;Let 2 points $p1 = (\text{lat1}, \text{long1})$, $p2 = (\text{lat2}, \text{long2})$ on the surface of the earth. 
-These points have for respective a latitude and a longitude given in radian.
-The latitude is a value between $[-\frac{\pi}{2}, \frac{\pi}{2}]$, and longitude between $]-\pi, \pi]$. 
+&lt;p&gt;Let $p1 = (\text{lat1}, \text{long1})$, $p2 = (\text{lat2}, \text{long2})$ be 2 points on the surface of the earth with a latitude and a longitude given in radian respectively. The latitude has a value between $[-\frac{\pi}{2}, \frac{\pi}{2}]$, and the longitude between $]-\pi, \pi]$. 
 So each point is identified by unique way with this tuple: $(\text{latitude}, \text{longitude})$.&lt;/p&gt;
 
 &lt;figure&gt;
@@ -52,8 +48,7 @@ With the formula of scalar product, we can find $\alpha$, because:&lt;/p&gt;
 
 \[p1\,.\,p2 = ||p1||\,||p2||\,\cos(\alpha) = R^2 \cos(\alpha)\]
 
-&lt;p&gt;But also, in the cartesian coordinate system, with $\begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}$ the center of the earth, we have that a point $p$ on the surface of 
-the earth has for cartesian coordinate:&lt;/p&gt;
+&lt;p&gt;But also, in the cartesian coordinate system, with $\begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}$ the center of the earth, we have that a point $p$ on the surface of the earth has for cartesian coordinate:&lt;/p&gt;
 
 \[p = \begin{pmatrix} R\cos(\text{lat})\cos(\text{long}) \\\ R\cos(\text{lat})\sin(\text{long}) \\\ R\sin(\text{lat}) \end{pmatrix}\]
 
@@ -84,9 +79,9 @@ p1\,.\,p2 &amp;amp;= R^2\left(\sin(\text{lat1})\sin(\text{lat2}) + \cos(\text{la
                    &amp;amp;= \text{hav}(\text{lat1} - \text{lat2}) + \text{hav}(\text{long1} - \text{long2})\cos(\text{lat1})\cos(\text{lat2})
 \end{align*}\]
 
-&lt;p&gt;We have:&lt;/p&gt;
+&lt;p&gt;We have for $\alpha \in [0, \pi[$:&lt;/p&gt;
 
-&lt;p&gt;\(d(p1, p2) = R\,\text{archav}(\text{hav}(\alpha))\) with $\alpha \in [0, \pi[$&lt;/p&gt;
+\[d(p1, p2) = R\,\text{archav}(\text{hav}(\alpha))\]
 
 &lt;p&gt;In addition:&lt;/p&gt;
 
