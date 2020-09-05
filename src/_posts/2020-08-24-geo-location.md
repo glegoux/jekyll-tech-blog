@@ -6,15 +6,11 @@ time_reading_minutes: 10
 category: "Maths"
 ---
 
-We can model the surface of the earth as a sphere of radius $R$.
-Even if in reality, the earth is more a kind of ellipsoid where its surface is irregular, each 
-point of its surface owns an altitude in relation to the sea level.
+We can model the surface of the earth as a sphere of radius $R$. Even if in reality, the earth is more a kind of ellipsoid with a irregular surface, where each point of its surface owns an altitude in relation to the sea level.
 
 {% include image.html title="Coordinates on Earth" src="https://docs.google.com/drawings/d/e/2PACX-1vRdm2uIt-uhISovgxlwTgP6w08Lq8LPqX-vpNz8RVt7cr_sHn8k1Fb5-3d8kVV5Z2K5-Ys8gwEYLfy9/pub?w=480&amp;h=360" %}
 
-Let 2 points $p1 = (\text{lat1}, \text{long1})$, $p2 = (\text{lat2}, \text{long2})$ on the surface of the earth. 
-These points have for respective a latitude and a longitude given in radian.
-The latitude is a value between $[-\frac{\pi}{2}, \frac{\pi}{2}]$, and longitude between $]-\pi, \pi]$. 
+Let $p1 = (\text{lat1}, \text{long1})$, $p2 = (\text{lat2}, \text{long2})$ be 2 points on the surface of the earth with a latitude and a longitude given in radian respectively. The latitude has a value between $[-\frac{\pi}{2}, \frac{\pi}{2}]$, and the longitude between $]-\pi, \pi]$. 
 So each point is identified by unique way with this tuple: $(\text{latitude}, \text{longitude})$.
 
 {% include image.html title="Distance between 2 points" src="https://docs.google.com/drawings/d/e/2PACX-1vQptEFbx1SxwX-p1QFsK94CvkoJwbVAKXpiQ8FaL9-BJbZnEUw4PYZqce7UnUtD-Hcm01ZRV4vOornF/pub?w=480&amp;h=360" %} 
@@ -30,8 +26,7 @@ With the formula of scalar product, we can find $\alpha$, because:
 
 $$p1\,.\,p2 = ||p1||\,||p2||\,\cos(\alpha) = R^2 \cos(\alpha)$$
 
-But also, in the cartesian coordinate system, with $\begin{pmatrix} 0 \\\ 0 \\\ 0 \end{pmatrix}$ the center of the earth, we have that a point $p$ on the surface of 
-the earth has for cartesian coordinate:
+But also, in the cartesian coordinate system, with $\begin{pmatrix} 0 \\\ 0 \\\ 0 \end{pmatrix}$ the center of the earth, we have that a point $p$ on the surface of the earth has for cartesian coordinate:
 
 $$p = \begin{pmatrix} R\cos(\text{lat})\cos(\text{long}) \\\ R\cos(\text{lat})\sin(\text{long}) \\\ R\sin(\text{lat}) \end{pmatrix}$$
 
@@ -62,9 +57,9 @@ $$\begin{align*}
                    &= \text{hav}(\text{lat1} - \text{lat2}) + \text{hav}(\text{long1} - \text{long2})\cos(\text{lat1})\cos(\text{lat2})
 \end{align*}$$
 
-We have:
+We have for $\alpha \in [0, \pi[$:
 
-$$d(p1, p2) = R\,\text{archav}(\text{hav}(\alpha))$$ with $\alpha \in [0, \pi[$
+$$d(p1, p2) = R\,\text{archav}(\text{hav}(\alpha))$$ 
 
 In addition:
  
