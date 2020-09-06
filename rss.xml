@@ -5,8 +5,8 @@
     <description>Personal blog about software engineering</description>
     <link>https://glegoux.com/</link>
     <atom:link href="https://glegoux.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 05 Sep 2020 10:10:35 +0000</pubDate>
-    <lastBuildDate>Sat, 05 Sep 2020 10:10:35 +0000</lastBuildDate>
+    <pubDate>Sun, 06 Sep 2020 10:38:21 +0000</pubDate>
+    <lastBuildDate>Sun, 06 Sep 2020 10:38:21 +0000</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -15,24 +15,15 @@
 
 &lt;figure&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://docs.google.com/drawings/d/e/2PACX-1vRdm2uIt-uhISovgxlwTgP6w08Lq8LPqX-vpNz8RVt7cr_sHn8k1Fb5-3d8kVV5Z2K5-Ys8gwEYLfy9/pub?w=480&amp;amp;h=360&quot; alt=&quot;Coordinates on Earth&quot; title=&quot;Coordinates on Earth&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://docs.google.com/drawings/d/e/2PACX-1vRdm2uIt-uhISovgxlwTgP6w08Lq8LPqX-vpNz8RVt7cr_sHn8k1Fb5-3d8kVV5Z2K5-Ys8gwEYLfy9/pub?w=480&amp;amp;h=360&quot; alt=&quot;Coordinates on earth&quot; title=&quot;Coordinates on earth&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;Coordinates on Earth&lt;/figcaption&gt;
+  &lt;figcaption&gt;Coordinates on earth&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Let $p1 = (\text{lat1}, \text{long1})$, $p2 = (\text{lat2}, \text{long2})$ be 2 points on the surface of the earth with a latitude and a longitude given in radian respectively. The latitude has a value between $[-\frac{\pi}{2}, \frac{\pi}{2}]$, and the longitude between $]-\pi, \pi]$. 
 So each point is identified by unique way with this tuple: $(\text{latitude}, \text{longitude})$.&lt;/p&gt;
 
-&lt;figure&gt;
-  &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://docs.google.com/drawings/d/e/2PACX-1vQptEFbx1SxwX-p1QFsK94CvkoJwbVAKXpiQ8FaL9-BJbZnEUw4PYZqce7UnUtD-Hcm01ZRV4vOornF/pub?w=480&amp;amp;h=360&quot; alt=&quot;Distance between 2 points&quot; title=&quot;Distance between 2 points&quot; /&gt;
-  &lt;/div&gt;
-  &lt;figcaption&gt;Distance between 2 points&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;The distance between $p1$ and $p2$ is the length of an arc circle such as:&lt;/p&gt;
-
-\[d(p1, p2) = R\;\alpha\]
+&lt;p&gt;The smallest distance between $p1$ and $p2$ on the earth surface is the length of an arc circle $d(p1, p2) = R\;\alpha$, where $\alpha \in [0, \pi]$ is the smallest center angle, to avoid all ambiguities, because $p1$ and $p2$ belongs to a circle.&lt;/p&gt;
 
 &lt;figure&gt;
   &lt;div&gt;
@@ -41,8 +32,7 @@ So each point is identified by unique way with this tuple: $(\text{latitude}, \t
   &lt;figcaption&gt;Center angle&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;where $\alpha \in [0, \pi[$ is the smallest center angle, to avoid an ambiguity because $p1$ and $p2$ belongs to a circle. 
-With the formula of scalar product, we can find $\alpha$, because:&lt;/p&gt;
+&lt;p&gt;With the formula of scalar product, we can find $\alpha$, because:&lt;/p&gt;
 
 \[p1\,.\,p2 = ||p1||\,||p2||\,\cos(\alpha) = R^2 \cos(\alpha)\]
 
