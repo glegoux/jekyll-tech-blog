@@ -8,20 +8,15 @@ category: "Maths"
 
 We can model the surface of the earth as a sphere of radius $R$. Even if in reality, the earth is more a kind of ellipsoid with a irregular surface, where each point of its surface owns an altitude in relation to the sea level.
 
-{% include image.html title="Coordinates on Earth" src="https://docs.google.com/drawings/d/e/2PACX-1vRdm2uIt-uhISovgxlwTgP6w08Lq8LPqX-vpNz8RVt7cr_sHn8k1Fb5-3d8kVV5Z2K5-Ys8gwEYLfy9/pub?w=480&amp;h=360" %}
+{% include image.html title="Coordinates on earth" src="https://docs.google.com/drawings/d/e/2PACX-1vRdm2uIt-uhISovgxlwTgP6w08Lq8LPqX-vpNz8RVt7cr_sHn8k1Fb5-3d8kVV5Z2K5-Ys8gwEYLfy9/pub?w=480&amp;h=360" %}
 
 Let $p1 = (\text{lat1}, \text{long1})$, $p2 = (\text{lat2}, \text{long2})$ be 2 points on the surface of the earth with a latitude and a longitude given in radian respectively. The latitude has a value between $[-\frac{\pi}{2}, \frac{\pi}{2}]$, and the longitude between $]-\pi, \pi]$. 
 So each point is identified by unique way with this tuple: $(\text{latitude}, \text{longitude})$.
 
-{% include image.html title="Distance between 2 points" src="https://docs.google.com/drawings/d/e/2PACX-1vQptEFbx1SxwX-p1QFsK94CvkoJwbVAKXpiQ8FaL9-BJbZnEUw4PYZqce7UnUtD-Hcm01ZRV4vOornF/pub?w=480&amp;h=360" %} 
-
-The distance between $p1$ and $p2$ is the length of an arc circle such as:
-
-$$d(p1, p2) = R\;\alpha$$ 
+The smallest distance between $p1$ and $p2$ on the earth surface is the length of an arc circle $d(p1, p2) = R\;\alpha$, where $\alpha \in [0, \pi]$ is the smallest center angle, to avoid all ambiguities, because $p1$ and $p2$ belongs to a circle.
 
 {% include image.html title="Center angle" src="https://docs.google.com/drawings/d/e/2PACX-1vQtJdsudI5oZcp-eYZ0sRQDvDrSfFfH9uWMG1eTKKkBSLd402xwbJXg3lrVluZ3rn_R6w9OLEJQ8Hzw/pub?w=480&amp;h=360" %} 
 
-where $\alpha \in [0, \pi[$ is the smallest center angle, to avoid an ambiguity because $p1$ and $p2$ belongs to a circle. 
 With the formula of scalar product, we can find $\alpha$, because:
 
 $$p1\,.\,p2 = ||p1||\,||p2||\,\cos(\alpha) = R^2 \cos(\alpha)$$
