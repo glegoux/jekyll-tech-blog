@@ -10,64 +10,121 @@ We can model the surface of the earth as a sphere of radius $R$. Even if in real
 
 {% include image.html title="Coordinates on earth with latitude and longitude" src="https://docs.google.com/drawings/d/e/2PACX-1vRdm2uIt-uhISovgxlwTgP6w08Lq8LPqX-vpNz8RVt7cr_sHn8k1Fb5-3d8kVV5Z2K5-Ys8gwEYLfy9/pub?w=480&amp;h=360" %}
 
-Let $p1 = (\text{lat1}, \text{long1})$, $p2 = (\text{lat2}, \text{long2})$ be 2 points on the surface of the earth with a latitude and a longitude given in radian respectively. The latitude has a value between $[-\frac{\pi}{2}, \frac{\pi}{2}]$, and the longitude between $]-\pi, \pi]$. 
-So each point is identified by unique way with this tuple: latitude and longitude. The smallest distance between $p1$ and $p2$ on the earth surface is the length of an arc circle $d(p1, p2) = R\;\alpha$, where $\alpha \in [0, \pi]$ is the smallest center angle, to avoid all ambiguities, because $p1$ and $p2$ belongs to a circle.
+Let $p1 = (\text{lat1}, \text{long1})$, $p2 = (\text{lat2}, \text{long2})$ be 2 points on the surface of the earth with a latitude and a longitude given in radian respectively. The latitude has a value between $[-\frac{\pi}{2}, \frac{\pi}{2}]$, and the longitude between $]-\pi, \pi]$. So each point is identified by unique way with this tuple: latitude and longitude. There is a unique great circle passing  both through $p1$ and $p2$. The smallest distance between $p1$ and $p2$ on the earth surface is the length of an arc circle of this great circle, that we note $d(p1, p2)$, the we put $\alpha \in [0, \pi]$ is the smallest center angle, to avoid all ambiguities, because $p1$ and $p2$ belongs to a circle.
 
 {% include image.html title="Smallest distance between 2 points on the earth surface" src="https://docs.google.com/drawings/d/e/2PACX-1vQptEFbx1SxwX-p1QFsK94CvkoJwbVAKXpiQ8FaL9-BJbZnEUw4PYZqce7UnUtD-Hcm01ZRV4vOornF/pub?w=480&amp;h=360" %} 
 
+So:
+
+$$
+d(p1, p2) = R\;\alpha
+$$
+
 With the formula of scalar product, we can find $\alpha$, because:
 
-$$p1\,.\,p2 = ||p1||\,||p2||\,\cos(\alpha) = R^2 \cos(\alpha)$$
+$$
+p1\,.\,p2 = ||p1||\,||p2||\,\cos(\alpha) = R^2 \cos(\alpha)
+$$
 
-But also, in the cartesian coordinate system, with $\begin{pmatrix} 0 \\\ 0 \\\ 0 \end{pmatrix}$ the center of the earth, we have that a point $p$ on the surface of the earth has for cartesian coordinate:
+But also, in the cartesian coordinates system, with $( 0, 0, 0 )$ the center of the earth, we have that a point $p = (\text{lat}, \text{long})$ on the surface of the earth has for cartesian coordinates:
 
-$$p = \begin{pmatrix} R\cos(\text{lat})\cos(\text{long}) \\\ R\cos(\text{lat})\sin(\text{long}) \\\ R\sin(\text{lat}) \end{pmatrix}$$
+$$
+p = \begin{pmatrix} R\cos(\text{lat})\cos(\text{long}) \\\ R\cos(\text{lat})\sin(\text{long}) \\\ R\sin(\text{lat}) \end{pmatrix}
+$$
+
+Indeed, even if it means changing reference points, we can always by symmetry come back to this diagram:
+
+{% include image.html title="Cartesian coordinates on earth" src="https://docs.google.com/drawings/d/e/2PACX-1vSo-qbr70ZR3v_49gXzE7HI6cv0jgPXLEANpuZaNszi0QAL3NLIzjAd34V-s-2nCAtSaiW3AXno0urI/pub?w=529&h=323" %} 
 
 Then, we have also:
 
-$$\begin{align*}
+$$
+\begin{align*}
 p1\,.\,p2 &= R^2\left(\sin(\text{lat1})\sin(\text{lat2}) + \cos(\text{lat1})\cos(\text{lat2})(\cos(\text{long1})\cos(\text{long2}) + \sin(\text{long1})\sin(\text{long2})\right) \\\
           &= R^2\left(\sin(\text{lat1})\sin(\text{lat2}) + \cos(\text{lat1})\cos(\text{lat2})\cos(\text{long1} - \text{long2})\right)
-\end{align*}$$
+\end{align*}
+$$
 
 So:
 
-$$\cos(\alpha) = \sin(\text{lat1})\sin(\text{lat2}) + \cos(\text{lat1})\cos(\text{lat2})\cos(\text{long1} - \text{long2})$$
+$$
+\cos(\alpha) = \sin(\text{lat1})\sin(\text{lat2}) + \cos(\text{lat1})\cos(\text{lat2})\cos(\text{long1} - \text{long2})
+$$
 
-for a historical reason and numerical computation often the haversine fonction $\text{hav}$ is used instead of cosinus:
+By applying the function $\text{arccos}: [-1, 1] \rightarrow [0, \pi]$ the reciprocal bijection of $\cos$ on $[0, \pi]$, we get the smallest center angle $\alpha$, and:
 
-$$\text{hav}(\alpha) = \sin^2\left(\frac{\alpha}{2}\right)$$
+$$
+\boxed{ 
+  d(p1, p2) = R\,\text{arccos}\big(\sin(\text{lat1})\sin(\text{lat2}) + \cos(\text{lat1})\cos(\text{lat2})\cos(\text{long1} - \text{long2})\big) 
+}
+$$
+
+For a historical reason and numerical computation often the haversine fonction $\text{hav}: \mathbb{R} \rightarrow [0, 1]\quad x \mapsto \sin^2\left(\frac{x}{2}\right)$.
 
 We have $\cos(\alpha) = 1 - 2\text{hav}(\alpha)$, so:
 
-$$1 - 2\text{hav}(\alpha) = \sin(\text{lat1})\sin(\text{lat2}) + \cos(\text{lat1})\cos(\text{lat2}) - 2\text{hav}(\text{long1} - \text{long2})\cos(\text{lat1})\cos(\text{lat2})$$
+$$
+1 - 2\text{hav}(\alpha) = \sin(\text{lat1})\sin(\text{lat2}) + \cos(\text{lat1})\cos(\text{lat2}) - 2\text{hav}(\text{long1} - \text{long2})\cos(\text{lat1})\cos(\text{lat2})
+$$
 
 That is to say:
 
-$$\begin{align*}
+$$
+\begin{align*}
 \text{hav}(\alpha) &= \dfrac{1 - (\sin(\text{lat1})\sin(\text{lat2}) + \cos(\text{lat1})\cos(\text{lat2}))}{2} + \text{hav}(\text{long1} - \text{long2})\cos(\text{lat1})\cos(\text{lat2}) \\\
-                   &= \dfrac{1 - \cos(\text{lat1 - lat2})}{2} + \text{hav}(\text{long1} - \text{long2})\cos(\text{lat1})\cos(\text{lat2}) \\\
-                   &= \text{hav}(\text{lat1} - \text{lat2}) + \text{hav}(\text{long1} - \text{long2})\cos(\text{lat1})\cos(\text{lat2})
-\end{align*}$$
+                   &= \dfrac{1 - \cos(\text{lat1 - lat2})}{2} + \text{hav}(\text{long1} - \text{long2})\cos(\text{lat1})\cos(\text{lat2}) 
+\end{align*}
+$$
 
-We have for $\alpha \in [0, \pi[$:
+Thus, we get the harvesine relation:
 
-$$d(p1, p2) = R\,\text{archav}(\text{hav}(\alpha))$$ 
+$$
+\boxed{ 
+  h(p1, p2) = \text{hav}(\text{lat1} - \text{lat2}) + \text{hav}(\text{long1} - \text{long2})\cos(\text{lat1})\cos(\text{lat2}) 
+}
+$$
 
-In addition:
+By using $\text{archav}: [0, 1] \rightarrow [0, \pi]$ the reciprocal bijection of $\text{hav}$ on $[0, \pi]$, we have for $\alpha \in [0, \pi]$:
+
+$$
+d(p1, p2) = R\,\text{archav}(\text{hav}(\alpha))
+$$ 
+
+In addition $\forall x \in [0, 1]$:
  
-$$\text{archav}(x) = 2\,\text{arcsin}(\sqrt{x})$$
+$$
+\text{archav}(x) = 2\,\text{arcsin}(\sqrt{x})
+$$
   
-And by putting $y = \text{arcsin}(x)$ and $x = \sin(y)$ with $\tan(y) = \sqrt{\dfrac{\sin^2(y)}{1 - \sin^2(y)}}$ we have:
+And by putting $y = \text{arcsin}(x)$ and $x = \sin(y)$ with $\tan(y) = \sqrt{\dfrac{\sin^2(y)}{1 - \sin^2(y)}}$ we have for $x \neq 1$:
 
-$$\text{arcsin}(x) = \text{arctan}\left(\sqrt{\dfrac{x^2}{1 - x^2}}\right)$$
+$$
+\text{arcsin}(x) = \text{arctan}\left(\sqrt{\dfrac{x^2}{1 - x^2}}\right)
+$$
 
 So:
 
-$$d(p1, p2) = 2\,R\,\text{arctan}\left(\sqrt{\dfrac{\text{hav}(p1, p2)}{1 - \text{hav}(p1, p2)}}\right)$$
+$$
+d(p1, p2) = 2\,R\,\text{arctan}\left(\sqrt{\dfrac{\text{hav}(p1, p2)}{1 - \text{hav}(p1, p2)}}\right)
+$$
 
-where $\text{hav}(p1, p2) = \text{hav}(\text{lat1} - \text{lat2}) + \text{hav}(\text{long1} - \text{long2})\cos(\text{lat1})\cos(\text{lat2})$
-is the harvesine formula.
+In order to have a valid formula for the case where $\text{hav}(p1, p2) = \text{hav}(\alpha) = 1$, that is to say for $\alpha = \pi$, we introduce the function: 
+$$
+\text{atan2}: \mathbb{R}^+ \times \mathbb{R}^+ \backslash \left\{0, 0\right\} \quad (x,y) \mapsto \left\{
+    \begin{array}{ll}
+        \text{arctan}\left(\frac{x}{y}\right) & \text{if } y > 0 \\\
+        \frac{\pi}{2} & \text{if } y = 0
+    \end{array}
+\right.
+$$
+
+So:
+
+$$
+\boxed{ 
+  d(p1,p2) = 2\,R\,\text{atan2}\left( \sqrt{\text{hav}(p1, p2)}, \sqrt{1 - \text{hav}(p1, p2)} \right) 
+}
+$$
 
 We can check that the coherence of the formula where $d$ is well a metric distance, it is a positive function, symetric $d(p1, p2) = d(p2, p1)$, and homogeneous $d(p, p) = 0$ 
 respecting the triangle inegality. 
