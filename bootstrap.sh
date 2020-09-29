@@ -1,4 +1,5 @@
-# bash script
+#!/usr/bin/env bash
+#
 # usage: source boostrap.sh
 
 cd "$(git rev-parse --show-toplevel)" || exit 1
