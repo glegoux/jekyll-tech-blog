@@ -3,7 +3,7 @@
 # Ruby
 *.rb diff=ruby
 
-# End of lines (eof) with Linux and MAC OS style: LF
+# End of lines (eof) with Linux and macOS style: LF
 # (else windows rewrites eof with CRLF)
 * text eol=lf
 
