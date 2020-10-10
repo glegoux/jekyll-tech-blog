@@ -10,3 +10,4 @@ exclude:
 
 include:
   - "_static" # project folder for static files
+  - "_core" # core folder for static files
