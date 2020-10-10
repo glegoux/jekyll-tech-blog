@@ -1,0 +1,88 @@
+# Site core configuration
+# See default configuration: https://jekyllrb.com/docs/configuration/default
+
+# Server
+
+url: "https://glegoux.com"
+baseurl: ""
+detach: false
+show_dir_listing: false
+encoding: "utf-8"
+lsi: false
+safe: true
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
+
+# Build
+
+source: "src"
+data_dir: "_data"
+includes_dir: "_core/includes"
+layouts_dir: "_core/layouts"
+plugins_dir: "_core/plugins"
+destination: "dest"
+
+show_drafts: false
+
+sass:
+  sass_dir: "_core/sass"
+  style: "compressed"
+
+# Normally files starting by ., #, ~ and _ are ignoring by the Jekyll build.
+include:
+  - "_static" # project folder for static files
+  - "_core" # core folder for static files
+
+# Force to exclude some files for the watcher (with --watch option) in the Jekyll::Watcher
+# See https://help.github.jp/enterprise/2.11/user/articles/files-that-start-with-an-underscore-are-missing/
+exclude:
+  - ".sass-cache"
+  - ".jekyll-metadata"
+  - ".jekyll-cache"
+  - ".jekyll-config-debug.json" # project file for debugging
+
+# Plugins
+
+plugins:
+  - "jekyll-sitemap"
+  - "jekyll-seo-tag"
+  - "jekyll-paginate"
+  - "jekyll-mentions"
+  - "jekyll-redirect-from"
+  - "jemoji"
+
+# Redirect
+
+redirect_from:
+  json: false
+
+# Layout
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "article"
+      article: true
+      comment: true
+
+# SEO
+
+title: "Software Engineering Blog - Gilles Legoux"
+description: "Personal blog about software engineering"
+author: "Gilles Legoux"
+keywords: "glegoux,Gilles,Legoux,informatics,mathematics,software,engineer"
+logo: "/_static/img/icon-iphone.png"
+lang: "en"
+
+# Articles
+
+paginate: 12
+paginate_path: "/blog/articles/page/:num/"
+permalink: "/blog/articles/:year/:month/:day/:title:output_ext"

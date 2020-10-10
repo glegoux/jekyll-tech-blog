@@ -1,6 +1,7 @@
 ---
 layout: null
 sitemap: false
+permalink: "/manifest.json"
 ---
 {
   "short_name": "{{ site.title }}",

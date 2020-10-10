@@ -1,6 +1,7 @@
 ---
 layout: null
 sitemap: false
+permalink: "/robots.txt"
 ---
 # See http://www.robotstxt.org/robotstxt.html
 

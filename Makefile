@@ -2,7 +2,7 @@ SHELL = /usr/bin/env bash
 
 .PHONY: usage
 usage:
-	@echo "usage install update build test run run-dev run-debug"
+	@echo "usage install update build test run run-dev"
 
 .PHONY: all
 all: update run
@@ -17,7 +17,7 @@ update:
 
 .PHONY: build
 build:
-	@JEKYLL_ENV=production bundle exec jekyll build --config "_config.yml"
+	@JEKYLL_ENV=production bundle exec jekyll build --config "src/_core/_config.yml,_config.yml"
 
 .PHONY: test
 test:
@@ -25,12 +25,8 @@ test:
 
 .PHONY: run
 run:
-	@bundle exec jekyll serve --host localhost --port 4000 --incremental --config "_config.yml" --no-watch
+	@bundle exec jekyll serve --host localhost --port 4000 --incremental --config "src/_core/_config.yml,_config.yml" --no-watch
 
 .PHONY: run-dev
 run-dev:
-	@bundle exec jekyll serve --host localhost --port 4000 --incremental --config "_config.yml,_config_dev.yml" --drafts --unpublished --livereload
-
-.PHONY: run-debug
-run-debug:
-	@PAGES_REPO_NWO="glegoux/glegoux.github.io" JEKYLL_ENV=production bundle exec jekyll serve --host localhost --port 4000
+	@bundle exec jekyll serve --host localhost --port 4000 --incremental --config "src/_core/_config.yml,_config.yml,_config_dev.yml" --drafts --unpublished --livereload
