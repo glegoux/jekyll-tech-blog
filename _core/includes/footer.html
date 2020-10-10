@@ -1,0 +1,99 @@
+<div class="container">
+  <div class="row">
+    <div class="contact col-md-4 col-12">
+      <table>
+        <tr>
+          <td colspan="2">
+            <h1>Plan</h1>
+          </td>
+        </tr>
+        <tr title="Go to the blog page">
+          <td>
+            <a class="link-strong" href="/blog/articles/">
+              <i class="icon fas fa-newspaper"></i>
+            </a>
+          </td>
+          <td>
+            <a class="link-strong" href="/blog/articles/" title="Go to the blog page">
+              Blog
+            </a>
+          </td>
+        </tr>
+        <tr title="Go to the about page">
+          <td>
+            <a class="link-strong" href="/about/">
+              <i class="icon fas fa-user"></i>
+            </a>
+          </td>
+          <td>
+            <a class="link-strong" href="/about/">
+              About
+            </a>
+          </td>
+        </tr>
+        <tr title="Go to the contact page">
+          <td>
+            <a class="link-strong" href="/contact/">
+              <i class="icon fas fa-address-card"></i>
+            </a>
+          </td>
+          <td>
+            <a class="link-strong" href="/contact/">
+              Contact
+            </a>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="language col-md-4 col-12">
+      <table>
+        <tr>
+          <td>
+            <h1>Language</h1>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            {% include lang.html %}
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="follow col-md-4 col-12">
+      <h1 class="title">Follow me</h1>
+      {% include social.html %}
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="menu col-12">
+      <p>
+        <a class="link-strong" href="{{ site.data.links.status }}" title="See the status and availability">Status & Availability</a> |
+        <a class="link-strong" href="/sitemap.xml" title="See the site map">Sitemap</a> |
+        <a class="link-strong" href="/rss.xml" title="Subscribe to RSS feed"><span class="notranslate">RSS</span></a> |
+        <a class="link-strong" href="/atom.xml" title="Subscribe to Atom feed"><span class="notranslate">Atom</span></a>
+      </p>
+    </div>
+  </div>
+
+
+  <!-- Please don't remove that due to license rules -->
+  <div class="row notranslate">
+    <div class="copyright col-12">
+      <hr>
+      <p>
+        Powered by <a class="link-strong" href="https://glegoux.com" title="See the original project">glegoux.com</a> - ©Copyright {{ 'now' | date: "%Y" }}.
+        <br>
+        <a class="link-strong" href="https://github.com/glegoux/jekyll-blog" title="See the source code">Source code</a> |
+        <a class="link-strong" href="https://github.com/glegoux/jekyll-blog/wiki" title="See the wiki">Wiki</a> |
+        <a class="link-strong" href="https://raw.githubusercontent.com/glegoux/jekyll-blog/develop/LICENSE.txt" title="See the license">License</a>
+        <br>
+        Version: <span class="notranslate">{% include VERSION %}</span>
+      </p>
+    </div>
+  </div>
+  <!-- End -->
+
+</div>

@@ -3,13 +3,13 @@
 	"file": "main.css",
 	"sources": [
 		"main.scss",
-		"src/_sass/_variables.scss",
-		"src/_sass/_header.scss",
-		"src/_sass/_layout.scss",
-		"src/_sass/_social.scss",
-		"src/_sass/_footer.scss",
-		"src/_sass/_syntax-highlighting.scss",
-		"src/_sass/_markdown.scss"
+		"src/_core/sass/_variables.scss",
+		"src/_core/sass/_header.scss",
+		"src/_core/sass/_layout.scss",
+		"src/_core/sass/_social.scss",
+		"src/_core/sass/_footer.scss",
+		"src/_core/sass/_syntax-highlighting.scss",
+		"src/_core/sass/_markdown.scss"
 	],
 	"sourcesContent": [
 		"@import 'variables';\n@import 'header';\n@import 'layout';\n@import 'social';\n@import 'footer';\n@import \"syntax-highlighting\";\n@import \"markdown\";\n",
