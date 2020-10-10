@@ -69,3 +69,17 @@ defaults:
       layout: "article"
       article: true
       comment: true
+
+# Specific to project
+project:
+  libs:
+    version:
+      jquery: "3.4.1"
+      popper: "1.14.3"
+      bootstrap: "4.3.1"
+      font-awesome: "5.11.2"
+      smooth-scroll: "14.2.1"
+      moment: "2.24.0"
+      fuse: "3.4.6"
+      lazysizes: "5.2.0"
+      mathjax: "2.7.7"
