@@ -2,6 +2,16 @@ blog:
   title_header: "@GillesLegoux (glegoux)"
   title: "Software Engineering"
   keywords: ["Research & Development", "Algorithm", "Data", "Machine Learning", "Web", "Security", "Applied Mathematics", "Reliability & Infrastructure", "Design", "System", "Methodology", "Business"]
+  menu_items:
+    - name: "Blog"
+      link: "/blog/"
+      class_icon: "fas fa-newspaper"
+    - name: "About"
+      link: "/about/"
+      class_icon: "fas fa-user"
+    - name: "Contact"
+      link: "/contact/"
+      class_icon: "fas fa-address-card"
 lang:
   header_text: "Translates from English"
   original:
