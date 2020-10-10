@@ -3,8 +3,6 @@
 
 # Server
 
-url: "https://glegoux.com"
-baseurl: ""
 detach: false
 show_dir_listing: false
 encoding: "utf-8"
@@ -71,15 +69,6 @@ defaults:
       layout: "article"
       article: true
       comment: true
-
-# SEO
-
-title: "Software Engineering Blog - Gilles Legoux"
-description: "Personal blog about software engineering"
-author: "Gilles Legoux"
-keywords: "glegoux,Gilles,Legoux,informatics,mathematics,software,engineer"
-logo: "/_static/img/icon-iphone.png"
-lang: "en"
 
 # Articles
 
