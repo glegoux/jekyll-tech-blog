@@ -23,4 +23,5 @@
 <script type="text/javascript" defer src="/_core/static/js/articles.js"></script>
 {%- else -%}
 <script type="text/javascript" defer src="/{{ page.path | replace: '.html', '.js' }}"></script>
-{%- endif -%}
+{%- endif %}
+{% include project/js.html %}
