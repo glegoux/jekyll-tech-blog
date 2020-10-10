@@ -14,3 +14,9 @@ author: "Gilles Legoux"
 keywords: "glegoux,Gilles,Legoux,informatics,mathematics,software,engineer"
 logo: "/_static/img/icon-iphone.png"
 lang: "en"
+
+# Articles
+
+paginate: 12
+paginate_path: "/blog/articles/page/:num/"
+permalink: "/blog/articles/:year/:month/:day/:title:output_ext"

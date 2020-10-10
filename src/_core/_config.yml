@@ -69,9 +69,3 @@ defaults:
       layout: "article"
       article: true
       comment: true
-
-# Articles
-
-paginate: 12
-paginate_path: "/blog/articles/page/:num/"
-permalink: "/blog/articles/:year/:month/:day/:title:output_ext"
