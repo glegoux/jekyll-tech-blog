@@ -7,42 +7,20 @@
             <h1>Plan</h1>
           </td>
         </tr>
-        <tr title="Go to the blog page">
+        {%- for menu_item in site.data.config.blog.menu_items %}
+        <tr title="Go to this page">
           <td>
-            <a class="link-strong" href="/blog/articles/">
-              <i class="icon fas fa-newspaper"></i>
+            <a class="link-strong" href="{{ menu_item.link }}">
+              <i class="icon {{ menu_item.class_icon }}"></i>
             </a>
           </td>
           <td>
-            <a class="link-strong" href="/blog/articles/" title="Go to the blog page">
-              Blog
-            </a>
-          </td>
-        </tr>
-        <tr title="Go to the about page">
-          <td>
-            <a class="link-strong" href="/about/">
-              <i class="icon fas fa-user"></i>
-            </a>
-          </td>
-          <td>
-            <a class="link-strong" href="/about/">
-              About
+            <a class="link-strong" href="{{ menu_item.link }}" title="Go to this page">
+              {{ menu_item.name }}
             </a>
           </td>
         </tr>
-        <tr title="Go to the contact page">
-          <td>
-            <a class="link-strong" href="/contact/">
-              <i class="icon fas fa-address-card"></i>
-            </a>
-          </td>
-          <td>
-            <a class="link-strong" href="/contact/">
-              Contact
-            </a>
-          </td>
-        </tr>
+        {%- endfor %}
       </table>
     </div>
 
