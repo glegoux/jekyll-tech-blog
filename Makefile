@@ -17,7 +17,7 @@ update:
 
 .PHONY: build
 build:
-	@JEKYLL_ENV=production bundle exec jekyll build --config "src/_core/_config.yml,_config.yml"
+	@JEKYLL_ENV=production bundle exec jekyll build --config "src/_core/_config.yml,src/_config.yml"
 
 .PHONY: test
 test:
@@ -25,8 +25,8 @@ test:
 
 .PHONY: run
 run:
-	@bundle exec jekyll serve --host localhost --port 4000 --incremental --config "src/_core/_config.yml,_config.yml" --no-watch
+	@bundle exec jekyll serve --host localhost --port 4000 --incremental --config "src/_core/_config.yml,src/_config.yml" --no-watch
 
 .PHONY: run-dev
 run-dev:
-	@bundle exec jekyll serve --host localhost --port 4000 --incremental --config "src/_core/_config.yml,_config.yml,_config_dev.yml" --drafts --unpublished --livereload
+	@bundle exec jekyll serve --host localhost --port 4000 --incremental --config "src/_core/_config.yml,src/_config.yml,src/_config_dev.yml" --drafts --unpublished --livereload
