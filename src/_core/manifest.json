@@ -8,19 +8,19 @@ permalink: "/manifest.json"
   "name": "{{ site.description }}",
   "icons": [
     {
-      "src": "/_static/site/img/icon-android-144x144.png",
+      "src": "/_static/config/img/icon-android-144x144.png",
       "sizes": "144x144",
       "type": "image/png",
       "density": 0.75
     },
     {
-      "src": "/_static/site/img/icon-android-192x192.png",
+      "src": "/_static/config/img/icon-android-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
       "density": 0.75
     },
     {
-      "src": "/_static/site/img/icon-android-512x512.png",
+      "src": "/_static/config/img/icon-android-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "density": 0.75
