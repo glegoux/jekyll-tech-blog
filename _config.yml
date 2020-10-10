@@ -22,20 +22,21 @@ kramdown:
 
 source: "src"
 data_dir: "_data"
-includes_dir: "_includes"
-layouts_dir: "_layouts"
-plugins_dir: "_plugins"
+includes_dir: "_core/includes"
+layouts_dir: "_core/layouts"
+plugins_dir: "_core/plugins"
 destination: "dest"
 
 show_drafts: false
 
 sass:
-  sass_dir: "_sass"
+  sass_dir: "_core/sass"
   style: "compressed"
 
 # Normally files starting by ., #, ~ and _ are ignoring by the Jekyll build.
 include:
   - "_static" # project folder for static files
+  - "_core" # core folder for static files
 
 # Force to exclude some files for the watcher (with --watch option) in the Jekyll::Watcher
 # See https://help.github.jp/enterprise/2.11/user/articles/files-that-start-with-an-underscore-are-missing/

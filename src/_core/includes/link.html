@@ -1,0 +1,35 @@
+{%- assign libs_version = site.data.config.libs.version -%}
+<!-- Preconnect -->
+<link rel="preconnect" href="https://marketingplatform.google.com/about/analytics/" crossorigin="anonymous"/>
+<link rel="preconnect" href="https://www.google.com" crossorigin="anonymous"/>
+{%- if page.comment -%}
+<link rel="preconnect" href="https://disquscdn.com" crossorigin="anonymous"/>
+<link rel="preconnect" href="https://a.disquscdn.com" crossorigin="anonymous"/>
+<link rel="preconnect" href="https://c.disquscdn.com" crossorigin="anonymous"/>
+{%- endif -%}
+<!-- Preload Font -->
+<link rel="preload" as="font" href="/_core/static/libs/font-awesome/{{ libs_version.font-awesome }}/webfonts/fa-regular-400.woff2" crossorigin="anonymous"/>
+<link rel="preload" as="font" href="/_core/static/libs/font-awesome/{{ libs_version.font-awesome }}/webfonts/fa-brands-400.woff2" crossorigin="anonymous"/>
+<link rel="preload" as="font" href="/_core/static/libs/font-awesome/{{ libs_version.font-awesome }}/webfonts/fa-solid-900.woff2" crossorigin="anonymous"/>
+<!-- Preload CSS and JS -->
+<link rel="preload" as="script" href="/_core/static/libs/smooth-scroll/{{ libs_version.smooth-scroll }}/js/smooth-scroll.min.js"/>
+<link rel="preload" as="script" href="/_core/static/libs/popper/{{ libs_version.popper }}/js/popper.min.js"/>
+<link rel="preload" as="script" href="/_core/static/libs/bootstrap/{{ libs_version.bootstrap }}/js/bootstrap.min.js"/>
+<link rel="preload" as="script" href="/_core/static/libs/moment/{{ libs_version.moment }}/js/moment.min.js"/>
+<link rel="preload" as="script" href="/_core/static/libs/fuse/{{ libs_version.fuse }}/js/fuse.min.js"/>
+
+<link rel="preload" as="style" href="/_core/static/libs/bootstrap/{{ libs_version.bootstrap }}/css/bootstrap.min.css"/>
+<link rel="preload" as="style" href="/_core/static/libs/font-awesome/{{ libs_version.font-awesome }}/css/all.min.css"/>
+
+<link rel="preload" as="script" href="/_core/static/js/typing-text.min.js"/>
+<link rel="preload"  as="style" href="/_core/static/css/main.css"/>
+{%- if page.article -%}
+<link rel="preload" as="script" href="/_core/static/js/article.js"/>
+<link rel="preload" as="style" href="/_core/static/css/article.css"/>
+{%- elsif page.articles -%}
+<link rel="preload" as="script" href="/_core/static/js/articles.js"/>
+<link rel="preload" as="style" href="/_core/static/css/articles.css"/>
+{%- else -%}
+<link rel="preload" as="script" href="/{{ page.path | replace: '.html', '.js' }}"/>
+<link rel="preload" as="style" href="/{{ page.path | replace: '.html', '.css' }}"/>
+{%- endif -%}
