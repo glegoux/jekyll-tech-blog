@@ -28,8 +28,8 @@
 # blog contents
 src/_posts/* linguist-vendored
 src/_drafts/* linguist-vendored
-src/_static/about/* linguist-vendored
-src/_static/blog/* linguist-vendored
-src/_static/contact/* linguist-vendored
+src/about/* linguist-vendored
+src/blog/* linguist-vendored
+src/contact/* linguist-vendored
 # third-party libraries
-src/_static/site/libs/* linguist-vendored
+src/_core/static/libs/* linguist-vendored
