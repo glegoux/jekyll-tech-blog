@@ -48,7 +48,9 @@
   <div class="row">
     <div class="menu col-12">
       <p>
-        <a class="link-strong" href="{{ site.data.links.status }}" title="See the status and availability">Status & Availability</a> |
+        {% if site.data.config.blog.link_status_availability %}
+        <a class="link-strong" href="{{ site.data.config.blog.link_status_availibility }}" title="See the status and availability">Status & Availability</a> |
+        {% endif %}
         <a class="link-strong" href="/sitemap.xml" title="See the site map">Sitemap</a> |
         <a class="link-strong" href="/rss.xml" title="Subscribe to RSS feed"><span class="notranslate">RSS</span></a> |
         <a class="link-strong" href="/atom.xml" title="Subscribe to Atom feed"><span class="notranslate">Atom</span></a>

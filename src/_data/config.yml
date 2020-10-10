@@ -12,6 +12,7 @@ blog:
     - name: "Contact"
       link: "/contact/"
       class_icon: "fas fa-address-card"
+  link_status_availability: "http://status.glegoux.com"
 lang:
   header_text: "Translates from English"
   original:
