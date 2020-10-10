@@ -1,0 +1,32 @@
+---
+---
+/* Avatar */
+
+.avatar {
+  opacity: 0.95;
+  width: 150px;
+  height: 150px;
+}
+
+.icon-avatar {
+  opacity: 0.95;
+  border-radius: 100%;
+  width: 4em;
+  height: 4em;
+}
+
+.medium-avatar {
+  opacity: 0.95;
+  border-radius: 100%;
+  width: 3em;
+  height: 3em !important;
+  vertical-align: middle;
+}
+
+.small-avatar {
+  opacity: 0.95;
+  border-radius: 100%;
+  width: 2em;
+  height: 2em;
+  vertical-align: bottom;
+}

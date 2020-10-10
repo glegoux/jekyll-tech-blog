@@ -10,4 +10,5 @@
 <link type="text/css" rel="stylesheet" href="/_core/static/css/articles.css"/>
 {%- else -%}
 <link type="text/css" rel="stylesheet" href="/{{ page.path | replace: '.html', '.css' }}"/>
-{%- endif -%}
+{%- endif %}
+{% include project/css.html %}
