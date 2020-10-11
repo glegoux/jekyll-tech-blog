@@ -13,7 +13,7 @@ It is often converted into HTML what allows it to be easily shared on the web :s
 
 After the matching HTML text can be decorate and animate by CSS style sheet and/or JS script: 
 
-{% include image.html title="Markdown processor"
+{% include article-google-drawing.html title="Markdown processor"
 src="https://docs.google.com/drawings/d/e/2PACX-1vRPwfUjnj6bT9B-M4jdzQqOICzCwblxYR5xvgiXYWrpcgpmFddbWR-ErodWf-U0rE8f0aqzUfazXvf8/pub?w=960&amp;h=267" %}
 
 Discover the Markdown syntax used on this blog and more generally on the web.

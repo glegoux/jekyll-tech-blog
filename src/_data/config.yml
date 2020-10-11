@@ -43,8 +43,8 @@ lang:
     - code: "fr"
       display_name: "Français"
 article:
-  static: "https://github.com/glegoux/articles-glegoux-com/tree/master/articles"
   source: "https://raw.githubusercontent.com/glegoux/jekyll-blog/develop/src/_posts"
+  static: "https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles"
   image:
     path: "images"
     suffix: ""
