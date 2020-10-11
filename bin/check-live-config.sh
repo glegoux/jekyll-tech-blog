@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Get config file from server for debugging
+# Check live config file from server for debugging
 # /!\ Only if JEKYLL_ENV=development set for running the server
 
 cd "$(git rev-parse --show-toplevel)" || exit 1
