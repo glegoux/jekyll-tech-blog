@@ -70,7 +70,7 @@ defaults:
       article: true
       comment: true
 
-# Specific to project
+# Specific to project core
 project_core:
   libs:
     version:
