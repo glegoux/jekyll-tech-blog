@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "stack.css",
+	"sources": [
+		"stack.scss"
+	],
+	"sourcesContent": [
+		"/* Tech Stack */\n\n.tech-stack {\n  background-size: 100%;\n  background-position: center center;\n  background-repeat: no-repeat;\n\n  a {\n    display: block;\n    width: 100%;\n    height: 100%;\n    box-sizing: border-box;\n  }\n}\n\n@media (min-width: 768px) {\n  .tech-stack {\n    background-image: url(/_static/common/img/technos.png) !important;\n    height: 120px !important;\n  }\n}\n\n.tech-stack {\n  background-image: url(/_static/common/img/technos-medium.png);\n  height: 200px;\n}\n"
+	],
+	"names": [],
+	"mappings": "AAEA,AAAA,WAAW,AAAC,CACV,eAAe,CAAE,IAAI,CACrB,mBAAmB,CAAE,aAAa,CAClC,iBAAiB,CAAE,SAAS,CAQ7B,AAXD,AAKE,WALS,CAKT,CAAC,AAAC,CACA,OAAO,CAAE,KAAK,CACd,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,IAAI,CACZ,UAAU,CAAE,UAAU,CACvB,AAGH,MAAM,mBACJ,CAAA,AAAA,WAAW,AAAC,CACV,gBAAgB,CAAE,oCAAoC,CAAC,UAAU,CACjE,MAAM,CAAE,gBAAgB,CACzB,CAAA,AAGH,AAAA,WAAW,AAAC,CACV,gBAAgB,CAAE,2CAA2C,CAC7D,MAAM,CAAE,KAAK,CACd"
+}
