@@ -1,30 +1,15 @@
 <div class="social notranslate">
+  {%- for social in site.data.config.blog.socials %}
+  {%- assign new_bucket_index = forloop.index | minus: 1 | modulo: 3 -%}
+  {%- if new_bucket_index == 0 -%}
   <ul>
+  {%- endif %}
     <li>
-      <a class="icon rounded fab fa-linkedin" title="LinkedIn" href="{{ site.data.links.linkedin }}">
+      <a class="icon rounded {{ social.class_icon }}" title="{{ social.name }}" href="{{ social.link }}">
       </a>
     </li>
-    <li>
-      <a class="icon rounded fab fa-twitter" title="Twitter" href="{{ site.data.links.twitter }}">
-      </a>
-    </li>
-    <li>
-      <a class="icon rounded fab fa-github" title="GitHub" href="{{ site.data.links.github }}">
-      </a>
-    </li>
-  </ul>
-  <ul>
-    <li>
-      <a class="icon rounded fab fa-slideshare" title="SlideShare" href="{{ site.data.links.slideshare }}">
-      </a>
-    </li>
-    <li>
-      <a class="icon rounded fab fa-meetup" title="MeetUp" href="{{ site.data.links.meetup }}">
-      </a>
-    </li>
-    <li>
-      <a class="icon rounded fas fa-paper-plane" title="Email" href="/contact/email/">
-      </a>
-    </li>
-  </ul>
+    {%- if new_bucket_index == 2 -%}
+    </ul>
+    {%- endif %}
+  {%- endfor %}
 </div>
