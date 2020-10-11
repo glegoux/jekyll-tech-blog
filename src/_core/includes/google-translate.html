@@ -1,4 +1,5 @@
 {%- assign config_lang = site.project.blog.lang -%}
+{%- if config_lang -%}
 <!-- Google Translate -->
 <div id="google-translate"></div>
 
@@ -217,3 +218,4 @@
     display: none !important;
   }
 </style>
+{%- endif -%}

@@ -1,5 +1,6 @@
+{%- assign google_analytics_code = site.project.blog.google_analytics_code -%}
+{%- if google_analytics_code -%}
 <!-- Global site tag (gtag.js) - Google Analytics -->
-{%- assign google_analytics_code = site.data.config.google_analytics.code -%}
 <script type="text/javascript" async src="https://www.googletagmanager.com/gtag/js?id={{ google_analytics_code }}"></script>
 
 <script type="text/javascript">
@@ -9,4 +10,5 @@
 
   gtag('config', '{{ google_analytics_code }}');
 </script>
+{%- endif -%}
 
