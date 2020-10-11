@@ -2,7 +2,7 @@ SHELL = /usr/bin/env bash
 
 .PHONY: usage
 usage:
-	@echo "usage install update build test run run-dev"
+	@echo "usage install update clean build test run run-dev"
 
 .PHONY: all
 all: update run
@@ -14,6 +14,10 @@ install:
 .PHONY: update
 update:
 	@bundle update
+
+.PHONY: clean
+clean:
+	@rm -r dest/
 
 .PHONY: build
 build:
