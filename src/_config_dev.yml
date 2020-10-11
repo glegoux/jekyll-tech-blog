@@ -3,24 +3,22 @@
 
 # Server
 
-# Overridden by --host <value> command line option
-host: "localhost"
-# Overridden by --port <value> command line option
-port: 4000
-# Overridden by --livereload command line option
-livereload: false
-
 url: "http://localhost:4000"
+baseurl: ""
 
-# Build
+# /!\ Overridden by --host <value> command line option
+host: "localhost"
 
-sass:
-  style: "full"
+# /!\ Overridden by --port <value> command line option
+port: 4000
+
+# /!\ Overridden by --livereload command line option (if present force to true)
+livereload: false
 
 # Plugins
 
 plugins:
-  # Need to repeat plugins for production mode here
+  # Need to repeat plugins from src/_core/_config.yml mode here
   - "jekyll-sitemap"
   - "jekyll-seo-tag"
   - "jekyll-paginate"

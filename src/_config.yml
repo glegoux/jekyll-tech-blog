@@ -12,7 +12,7 @@ title: "Software Engineering Blog - Gilles Legoux"
 description: "Personal blog about software engineering"
 author: "Gilles Legoux"
 keywords: "glegoux,Gilles,Legoux,informatics,mathematics,software,engineer"
-logo: "/_static/img/icon-iphone.png"
+logo: "/_static/config/img/icon-iphone.png"
 lang: "en"
 
 # Articles
@@ -20,3 +20,78 @@ lang: "en"
 paginate: 12
 paginate_path: "/blog/articles/page/:num/"
 permalink: "/blog/articles/:year/:month/:day/:title:output_ext"
+
+# /!\ Overridden by --drafts command line option (if present force to true)
+show_drafts: false
+
+# /!\ Overridden by --unpublished command line option (if present force to true)
+unpublished: false
+
+# Specific to project
+
+project:
+  blog:
+    name_header: "@GillesLegoux (glegoux)"
+    logo_header: "/_static/config/img/site-logo.png"
+    menu_items:
+      - name: "Blog"
+        link: "/blog/"
+        class_icon: "fas fa-newspaper"
+      - name: "About"
+        link: "/about/"
+        class_icon: "fas fa-user"
+      - name: "Contact"
+        link: "/contact/"
+        class_icon: "fas fa-address-card"
+    lang:
+      header_text: "Translates from English"
+      original:
+        code: "en"
+        display_name: "English"
+      others:
+        - code: "zh-CN"
+          display_name: "中文"
+        - code: "fr"
+          display_name: "Français"
+    title: "Software Engineering"
+    keywords: [ "Research & Development", "Algorithm", "Data", "Machine Learning", "Web", "Security", "Applied Mathematics", "Reliability & Infrastructure", "Design", "System", "Methodology", "Business" ]
+    socials:
+      - name: "LinkedIn"
+        link: "https://www.linkedin.com/in/gilleslegoux"
+        class_icon:  "fab fa-linkedin"
+      - name: "Twitter"
+        link: "https://twitter.com/gilleslegoux"
+        class_icon: "fab fa-twitter"
+      - name: "GitHub"
+        link: "https://github.com/glegoux"
+        class_icon:  "fab fa-github"
+      - name: "SlideShare"
+        link: "https://www.slideshare.net/gilleslegoux"
+        class_icon: "fab fa-slideshare"
+      - name: "MeetUp"
+        link: "https://www.meetup.com/members/162515452"
+        class_icon: "fab fa-meetup"
+      - name: "Email"
+        link: "https://www.glegoux.com/contact/email"
+        class_icon:  "fas fa-paper-plane"
+    link_status_availability: "http://status.glegoux.com"
+    google_analytics_code: "UA-155162630-1"
+    disqus_name: "glegoux-com"
+    theme_color: "#383b43"
+  article:
+    source_code:
+      url: "https://raw.githubusercontent.com/glegoux/jekyll-blog/develop/src/_posts"
+    resources:
+      url: "https://github.com/glegoux/articles-glegoux-com/tree/master/articles"
+    static:
+      url: "https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles"
+      image:
+        path: "images"
+        suffix: ""
+    authors:
+      glegoux:
+        firstname: "Gilles"
+        lastname: "LEGOUX"
+        job: "Software Engineer"
+        company: "Criteo"
+        follow_link: "https://www.linkedin.com/in/gilleslegoux"

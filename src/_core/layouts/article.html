@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-{%- assign config_article = site.data.config.article -%}
+{%- assign config_article = site.project.article -%}
 {%- assign article_id = page.date | date: '%Y-%m-%d-' | append: page.title | slugify -%}
 {%- assign related_posts = site.posts | sample:4 -%}
 {%- assign n_tags = page.tags | size -%}
@@ -46,7 +46,7 @@ layout: default
           <i class="far fa-user"></i>
           <span>
             {%- for author_name in page.authors -%}
-              {%- assign author = site.data.authors[author_name] -%}
+              {%- assign author = config_article.authors[author_name] -%}
               <a class="link-strong" href="{{ author.follow_link }}" title="Follow this author">
                 {{ author_name }}
               </a>
@@ -62,13 +62,13 @@ layout: default
     <div class="article-cover" title="Cover of this article">
       <ul>
         <li title="See the source code of this article">
-          <a href="{{ config_article.source_code }}/{{ article_id }}.md">
+          <a href="{{ config_article.source_code.url }}/{{ article_id }}.md">
             <i class="far fa-file-code"></i>
             Source code
           </a>
         </li>
         <li title="See the resources of this article">
-          <a href="{{ config_article.resources }}/{{ article_id }}">
+          <a href="{{ config_article.resources.url }}/{{ article_id }}">
             <i class="fas fa-code-branch"></i>
             Resources
           </a>

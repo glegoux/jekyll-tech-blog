@@ -1,5 +1,7 @@
 # Site core configuration
 # See default configuration: https://jekyllrb.com/docs/configuration/default
+# /!\ don't override the elements of this configuration in src/_config.yml or src/_config_dev.yml
+#     except if you know what you do
 
 # Server
 
@@ -24,8 +26,6 @@ includes_dir: "_core/includes"
 layouts_dir: "_core/layouts"
 plugins_dir: "_core/plugins"
 destination: "dest"
-
-show_drafts: false
 
 sass:
   sass_dir: "_core/sass"
@@ -71,7 +71,7 @@ defaults:
       comment: true
 
 # Specific to project
-project:
+project_core:
   libs:
     version:
       jquery: "3.4.1"

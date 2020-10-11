@@ -3,6 +3,7 @@ layout: null
 sitemap: false
 permalink: "/manifest.json"
 ---
+{%- assign config_theme_color = site.project.blog.theme_color -%}
 {
   "short_name": "{{ site.title }}",
   "name": "{{ site.description }}",
@@ -29,5 +30,5 @@ permalink: "/manifest.json"
   "start_url": "/",
   "display": "standalone",
   "background_color": "#000000",
-  "theme_color": "{{ site.data.config.theme.color }}"
+  "theme_color": "{{ site.project.blog.theme_color }}"
 }
