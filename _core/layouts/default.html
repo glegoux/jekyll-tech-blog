@@ -1,3 +1,4 @@
+{%- assign blog_config = site.project.blog -%}
 <!DOCTYPE html>
 <html lang="{{ site.lang }}">
 
@@ -10,9 +11,11 @@
 
 <body>
 
+{%- if blog_config.lang.header_text %}
 <div id="original-lang" style="display: none;">
-  {{ site.data.config.lang.header_text }}
+  {{ blog_config.lang.header_text }}
 </div>
+{%- endif %}
 
 <header>
   {% include header.html %}
@@ -32,8 +35,8 @@
 
 {% include go-to-top.html %}
 
-{% include google-analytics.html %}
-{% include google-translate.html %}
+{%- if blog_config.google_analytics_code %} {% include google-analytics.html %} {% endif %}
+{%- if blog_config.lang %} {% include google-translate.html %} {% endif %}
 </body>
 
 </html>

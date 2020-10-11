@@ -11,7 +11,7 @@
 <!-- Mobile Android -->
 <meta name="mobile-web-app-capable" content="yes"/>
 <link rel="manifest" href="/manifest.json"/>
-<meta name="theme-color" content="#383b43"/>
+<meta name="theme-color" content=""/>
 <!-- Desktop -->
 <link rel="icon" type="image/png" href="/favicon.ico?v=1"/>
 <!-- Search Engine -->
@@ -32,7 +32,7 @@
 <meta property="og:url" content="https://glegoux.com/about/" />
 <meta property="og:site_name" content="Software Engineering Blog - Gilles Legoux" />
 <script type="application/ld+json">
-{"@type":"WebSite","url":"https://glegoux.com/about/","headline":"Software Engineering Blog - Gilles Legoux","author":{"@type":"Person","name":"Gilles Legoux"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://glegoux.com/_static/img/icon-iphone.png"},"name":"Gilles Legoux"},"name":"Software Engineering Blog - Gilles Legoux","description":"Personal blog about software engineering","@context":"https://schema.org"}</script>
+{"@type":"WebSite","url":"https://glegoux.com/about/","headline":"Software Engineering Blog - Gilles Legoux","author":{"@type":"Person","name":"Gilles Legoux"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://glegoux.com/_static/config/img/icon-iphone.png"},"name":"Gilles Legoux"},"name":"Software Engineering Blog - Gilles Legoux","description":"Personal blog about software engineering","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   <!-- Preconnect -->
@@ -88,7 +88,6 @@
 </head>
 
 <body>
-
 <div id="original-lang" style="display: none;">
   Translates from English
 </div>
@@ -101,12 +100,14 @@
       <span class="notranslate">@GillesLegoux (glegoux)</span>
     </a>
   </div>
+  
   <!-- Logo -->
   <div id="logo" class="d-none d-lg-block">
     <a href="/" title="Go to the home page">
       <img class="img-fluid lazyload" data-src="/_static/config/img/site-logo.png" alt="site logo">
     </a>
   </div>
+  
   <!-- Menu -->
   <div id="menu" class="d-none d-lg-block">
     <ul class="menu-content">
@@ -137,8 +138,10 @@
     <span>Français</span>
   </option></select>
       </li>
+      
     </ul>
   </div>
+  
 </div>
 
 <!-- Menu for small screen -->
@@ -382,7 +385,6 @@
         </tr>
       </table>
     </div>
-
     <div class="language col-md-4 col-12">
       <table>
         <tr>
@@ -406,6 +408,7 @@
         </tr>
       </table>
     </div>
+    
 
     <div class="follow col-md-4 col-12">
       <h1 class="title">Follow me</h1>
@@ -576,20 +579,17 @@
     font-size: 0.75em;
   }
 </style>
-
-
-<!-- Global site tag (gtag.js) - Google Analytics --><script type="text/javascript" async src="https://www.googletagmanager.com/gtag/js?id=UA-155162630-1"></script>
+ <!-- Global site tag (gtag.js) - Google Analytics --><script type="text/javascript" async src="https://www.googletagmanager.com/gtag/js?id="></script>
 
 <script type="text/javascript">
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-155162630-1');
+  gtag('config', '');
 </script>
 
-
-<!-- Google Translate -->
+  <!-- Google Translate -->
 <div id="google-translate"></div>
 
 <script type="text/javascript">
@@ -663,7 +663,7 @@
     const originalLanguageCode = "en";
     const includedLanguageCodesString = originalLanguageCode + "," + "zh-CN,fr";
     const includedLanguageCodes = includedLanguageCodesString.split(",").filter(function(x){ return x != ""; });
- 
+
     includedLanguageCodes.forEach(function (languageCode) {
         if (LANGUAGES[languageCode] === undefined) {
             console.error(`language '${languageCode}' is unavailable`);
@@ -712,11 +712,11 @@
                     if ($(this).val() === languageCode) {
                         $(this).attr("selected", true);
                     } else {
-                        $(this).removeAttr("selected");    
+                        $(this).removeAttr("selected");
                     }
                 });
             });
-            
+
             // call twice
             googleTranslate(languageCode);
             googleTranslate(languageCode);
@@ -807,7 +807,7 @@
     display: none !important;
   }
 </style>
-
+ 
 </body>
 
 </html>

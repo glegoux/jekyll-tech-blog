@@ -1,3 +1,4 @@
+{%- assign config_blog = site.project.blog -%}
 <div class="container">
   <div class="row">
     <div class="contact col-md-4 col-12">
@@ -7,7 +8,7 @@
             <h1>Plan</h1>
           </td>
         </tr>
-        {%- for menu_item in site.data.config.blog.menu_items %}
+        {%- for menu_item in config_blog.menu_items %}
         <tr title="Go to this page">
           <td>
             <a class="link-strong" href="{{ menu_item.link }}">
@@ -24,6 +25,7 @@
       </table>
     </div>
 
+    {%- if config_blog.lang %}
     <div class="language col-md-4 col-12">
       <table>
         <tr>
@@ -38,6 +40,9 @@
         </tr>
       </table>
     </div>
+    {% else %}
+    <div class="col-md-4 col-12"></div>
+    {% endif %}
 
     <div class="follow col-md-4 col-12">
       <h1 class="title">Follow me</h1>
@@ -48,8 +53,8 @@
   <div class="row">
     <div class="menu col-12">
       <p>
-        {% if site.data.config.blog.link_status_availability %}
-        <a class="link-strong" href="{{ site.data.config.blog.link_status_availability }}" title="See the status and availability">Status & Availability</a> |
+        {% if config_blog.link_status_availability %}
+        <a class="link-strong" href="{{ config_blog.link_status_availability }}" title="See the status and availability">Status & Availability</a> |
         {% endif %}
         <a class="link-strong" href="/sitemap.xml" title="See the site map">Sitemap</a> |
         <a class="link-strong" href="/rss.xml" title="Subscribe to RSS feed"><span class="notranslate">RSS</span></a> |

@@ -1,3 +1,4 @@
+{%- assign config_lang = site.project.blog.lang -%}
 <!-- Google Translate -->
 <div id="google-translate"></div>
 
@@ -69,10 +70,10 @@
         "yi": "yiddish"
     };
 
-    const originalLanguageCode = "{{ site.data.config.lang.original.code }}";
-    const includedLanguageCodesString = originalLanguageCode + "," + "{{ site.data.config.lang.others | map: 'code' | uniq | join: ',' }}";
+    const originalLanguageCode = "{{ config_lang.original.code }}";
+    const includedLanguageCodesString = originalLanguageCode + "," + "{{ config_lang.others | map: 'code' | uniq | join: ',' }}";
     const includedLanguageCodes = includedLanguageCodesString.split(",").filter(function(x){ return x != ""; });
- 
+
     includedLanguageCodes.forEach(function (languageCode) {
         if (LANGUAGES[languageCode] === undefined) {
             console.error(`language '${languageCode}' is unavailable`);
@@ -121,11 +122,11 @@
                     if ($(this).val() === languageCode) {
                         $(this).attr("selected", true);
                     } else {
-                        $(this).removeAttr("selected");    
+                        $(this).removeAttr("selected");
                     }
                 });
             });
-            
+
             // call twice
             googleTranslate(languageCode);
             googleTranslate(languageCode);
