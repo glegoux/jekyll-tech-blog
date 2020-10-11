@@ -3,7 +3,7 @@
 <figure>
   <div>
     <img class="img-fluid lazyload"
-         data-src="{{ config_article.static }}/{{ article_id }}/{{ config_article.image.path }}/{{ include.src }}{{ config_article.image.suffix }}"
+         data-src="{{ config_article.static.url }}/{{ article_id }}/{{ config_article.static.image.path }}/{{ include.src }}{{ config_article.static.image.suffix }}"
          alt="{{ include.title | default: '' }}"
          title="{{ include.title | default: '' }}"
     />
