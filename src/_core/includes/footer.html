@@ -1,6 +1,7 @@
 {%- assign config_blog = site.project.blog -%}
 <div class="container">
   <div class="row">
+    {%- if config_blog.menu_items %}
     <div class="contact col-md-4 col-12">
       <table>
         <tr>
@@ -24,6 +25,9 @@
         {%- endfor %}
       </table>
     </div>
+    {% else %}
+    <div class="col-md-4 col-12"></div>
+    {% endif %}
 
     {%- if config_blog.lang %}
     <div class="language col-md-4 col-12">
@@ -44,10 +48,14 @@
     <div class="col-md-4 col-12"></div>
     {% endif %}
 
+    {%- if config_blog.socials %}
     <div class="follow col-md-4 col-12">
       <h1 class="title">Follow me</h1>
       {% include social.html %}
     </div>
+    {% else %}
+    <div class="col-md-4 col-12"></div>
+    {% endif %}
   </div>
 
   <div class="row">
