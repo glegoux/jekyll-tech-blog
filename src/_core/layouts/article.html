@@ -255,7 +255,7 @@ layout: default
         {%- if page.title != post.title -%}
           {%- assign index = index | plus: 1 -%}
             <a href="{{ post.url }}" title="Read this article" class="col-xs-12 col-md-6 col-lg-4">
-              {%- include article-card.html -%}
+              {%- include card-article.html -%}
             </a>
         {%- else -%}
           {%- continue -%}

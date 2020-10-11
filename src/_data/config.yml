@@ -42,13 +42,6 @@ lang:
       display_name: "中文"
     - code: "fr"
       display_name: "Français"
-article:
-  source_code: "https://raw.githubusercontent.com/glegoux/jekyll-blog/develop/src/_posts"
-  resources: "https://github.com/glegoux/articles-glegoux-com/tree/master/articles"
-  static: "https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles"
-    image:
-      path: "images"
-      suffix: ""
 google_analytics:
   code: "UA-155162630-1"
 disqus_name: "glegoux-com"
@@ -61,3 +54,11 @@ authors:
     job: "Software Engineer"
     company: "Criteo"
     follow_link: "https://www.linkedin.com/in/gilleslegoux"
+article:
+  source_code: "https://raw.githubusercontent.com/glegoux/jekyll-blog/develop/src/_posts"
+  resources: "https://github.com/glegoux/articles-glegoux-com/tree/master/articles"
+  static:
+    url: "https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles"
+    image:
+      path: "images"
+      suffix: ""
