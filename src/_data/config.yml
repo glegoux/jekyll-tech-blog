@@ -54,3 +54,10 @@ google_analytics:
 disqus_name: "glegoux-com"
 theme:
   color: "#383b43"
+authors:
+  glegoux:
+    firstname: "Gilles"
+    lastname: "LEGOUX"
+    job: "Software Engineer"
+    company: "Criteo"
+    follow_link: "https://www.linkedin.com/in/gilleslegoux"
