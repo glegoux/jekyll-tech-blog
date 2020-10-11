@@ -20,11 +20,12 @@ kramdown:
 
 # Build
 
-source: "src"
-data_dir: "_data"
+data_dir: "_core/data"
 includes_dir: "_core/includes"
 layouts_dir: "_core/layouts"
 plugins_dir: "_core/plugins"
+
+source: "src"
 destination: "dest"
 
 sass:
