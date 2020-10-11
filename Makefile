@@ -5,7 +5,7 @@ usage:
 	@echo "usage install update clean build test run run-dev"
 
 .PHONY: all
-all: update run
+all: install clean build test run
 
 .PHONY: install
 install:
