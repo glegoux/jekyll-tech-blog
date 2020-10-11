@@ -17,11 +17,11 @@ update:
 
 .PHONY: clean
 clean:
-	@rm -r dest/
+	@rm -rf dest/
 
 .PHONY: build
 build:
-	@JEKYLL_ENV=production bundle exec jekyll build --config "src/_core/_config.yml,src/_config.yml"
+	@JEKYLL_ENV=production bundle exec jekyll build --trace --config "src/_core/_config.yml,src/_config.yml"
 
 .PHONY: test
 test:
