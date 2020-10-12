@@ -1,5 +1,5 @@
 # Site configuration for development
-
+# See default configuration: https://jekyllrb.com/docs/configuration/default
 
 # Server
 
@@ -18,7 +18,8 @@ livereload: false
 # Plugins
 
 plugins:
-  # Need to repeat plugins from src/_core/_config.yml mode here
+  # Need to repeat the plugins from src/_core/_config.yml here
+  # because override plugins configuration
   - "jekyll-sitemap"
   - "jekyll-seo-tag"
   - "jekyll-paginate"
