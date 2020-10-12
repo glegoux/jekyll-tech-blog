@@ -72,6 +72,7 @@ defaults:
       comment: true
 
 # Specific to project core
+
 project_core:
   libs:
     version:
