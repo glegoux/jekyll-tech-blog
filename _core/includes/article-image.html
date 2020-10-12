@@ -1,4 +1,4 @@
-{%- assign config_article = site.data.config.article -%}
+{%- assign config_article = site.project.article -%}
 {%- assign article_id = page.date | date: '%Y-%m-%d-' | append: page.title | slugify -%}
 <figure>
   <div>

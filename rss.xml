@@ -5,8 +5,8 @@
     <description>Personal blog about software engineering</description>
     <link>https://glegoux.com/</link>
     <atom:link href="https://glegoux.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 12 Oct 2020 06:40:19 +0000</pubDate>
-    <lastBuildDate>Mon, 12 Oct 2020 06:40:19 +0000</lastBuildDate>
+    <pubDate>Mon, 12 Oct 2020 06:57:46 +0000</pubDate>
+    <lastBuildDate>Mon, 12 Oct 2020 06:57:46 +0000</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -187,7 +187,7 @@ the company &lt;strong&gt;Sun Microsystems&lt;/strong&gt; released the first ver
 
 &lt;figure&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;/2020-05-04-java-ecosystem//java-logo.png&quot; alt=&quot;Java logo&quot; title=&quot;Java logo&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2020-05-04-java-ecosystem/images/java-logo.png&quot; alt=&quot;Java logo&quot; title=&quot;Java logo&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;Java logo&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -211,7 +211,7 @@ that performed tasks for the user:&lt;/p&gt;
 
 &lt;figure&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;/2020-05-04-java-ecosystem//duke.png&quot; alt=&quot;Duke the Java mascot&quot; title=&quot;Duke the Java mascot&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2020-05-04-java-ecosystem/images/duke.png&quot; alt=&quot;Duke the Java mascot&quot; title=&quot;Duke the Java mascot&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;Duke the Java mascot&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -227,7 +227,7 @@ consists of first learning the rules and then learning when to break them.&lt;/p
 
 &lt;figure&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;/2020-05-04-java-ecosystem//effective-java-book-cover.jpg&quot; alt=&quot;Effective Java book&quot; title=&quot;Effective Java book&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2020-05-04-java-ecosystem/images/effective-java-book-cover.jpg&quot; alt=&quot;Effective Java book&quot; title=&quot;Effective Java book&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;Effective Java book&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -327,7 +327,7 @@ computer worldwide market is bi-polaire due to the &lt;strong&gt;Internet censor
 
 &lt;figure&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;/2019-11-29-gafa-vs-batx//business-area.png&quot; alt=&quot;Business regions and computer technology areas&quot; title=&quot;Business regions and computer technology areas&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-11-29-gafa-vs-batx/images/business-area.png&quot; alt=&quot;Business regions and computer technology areas&quot; title=&quot;Business regions and computer technology areas&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;Business regions and computer technology areas&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -342,7 +342,7 @@ the world there is the big four tech companies &lt;strong&gt;Google, Apple, Face
 
 &lt;figure&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;/2019-11-29-gafa-vs-batx//batx-gafa.png&quot; alt=&quot;BATX &amp;amp; GAFA&quot; title=&quot;BATX &amp;amp; GAFA&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-11-29-gafa-vs-batx/images/batx-gafa.png&quot; alt=&quot;BATX &amp;amp; GAFA&quot; title=&quot;BATX &amp;amp; GAFA&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;BATX &amp;amp; GAFA&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -372,7 +372,7 @@ vs GAFA as (without quoting all other ones):&lt;/p&gt;
 
 &lt;figure&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;/2019-11-29-gafa-vs-batx//other-companies.png&quot; alt=&quot;Other big companies&quot; title=&quot;Other big companies&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-11-29-gafa-vs-batx/images/other-companies.png&quot; alt=&quot;Other big companies&quot; title=&quot;Other big companies&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;Other big companies&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -463,7 +463,7 @@ rtt min/avg/max/mdev = 13.821/13.821/13.821/0.000 ms
 
 &lt;figure&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;/2019-07-14-trace-a-request-path//rir.png&quot; alt=&quot;Map of Regional Internet Registry&quot; title=&quot;Map of Regional Internet Registry&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-07-14-trace-a-request-path/images/rir.png&quot; alt=&quot;Map of Regional Internet Registry&quot; title=&quot;Map of Regional Internet Registry&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;Map of Regional Internet Registry&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -474,7 +474,7 @@ rtt min/avg/max/mdev = 13.821/13.821/13.821/0.000 ms
 
 &lt;figure&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;/2019-07-14-trace-a-request-path//map.png&quot; alt=&quot;Geo-location of request path from Paris to glegoux.com&quot; title=&quot;Geo-location of request path from Paris to glegoux.com&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-07-14-trace-a-request-path/images/map.png&quot; alt=&quot;Geo-location of request path from Paris to glegoux.com&quot; title=&quot;Geo-location of request path from Paris to glegoux.com&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;Geo-location of request path from Paris to glegoux.com&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -629,7 +629,7 @@ jQuery(document).ready(function () {
 
 &lt;figure&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;/2019-04-01-lighthouse//lighthouse-logo.png&quot; alt=&quot;Logo of Lighthouse&quot; title=&quot;Logo of Lighthouse&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-04-01-lighthouse/images/lighthouse-logo.png&quot; alt=&quot;Logo of Lighthouse&quot; title=&quot;Logo of Lighthouse&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;Logo of Lighthouse&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -649,7 +649,7 @@ jQuery(document).ready(function () {
 
 &lt;figure&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;/2019-04-01-lighthouse//scores.png&quot; alt=&quot;Lighthouse scores by report category&quot; title=&quot;Lighthouse scores by report category&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-04-01-lighthouse/images/scores.png&quot; alt=&quot;Lighthouse scores by report category&quot; title=&quot;Lighthouse scores by report category&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;Lighthouse scores by report category&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -658,7 +658,7 @@ jQuery(document).ready(function () {
 
 &lt;figure&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;/2019-04-01-lighthouse//export-import-view.jpg&quot; alt=&quot;Export, import and view LightHouse report&quot; title=&quot;Export, import and view LightHouse report&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-04-01-lighthouse/images/export-import-view.jpg&quot; alt=&quot;Export, import and view LightHouse report&quot; title=&quot;Export, import and view LightHouse report&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;Export, import and view LightHouse report&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -667,7 +667,7 @@ jQuery(document).ready(function () {
 
 &lt;figure&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;/2019-04-01-lighthouse//architecture.jpg&quot; alt=&quot;Architecture of Lighthouse Core&quot; title=&quot;Architecture of Lighthouse Core&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-04-01-lighthouse/images/architecture.jpg&quot; alt=&quot;Architecture of Lighthouse Core&quot; title=&quot;Architecture of Lighthouse Core&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;Architecture of Lighthouse Core&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -697,7 +697,7 @@ jQuery(document).ready(function () {
 
 &lt;figure&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;/2019-04-01-lighthouse//chrome-version.jpg&quot; alt=&quot;Google Chrome, Chromium and Canary version&quot; title=&quot;Google Chrome, Chromium and Canary version&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-04-01-lighthouse/images/chrome-version.jpg&quot; alt=&quot;Google Chrome, Chromium and Canary version&quot; title=&quot;Google Chrome, Chromium and Canary version&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;Google Chrome, Chromium and Canary version&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -739,7 +739,7 @@ https://glegoux.com/contact/email/
 
 &lt;figure&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;/2019-04-01-lighthouse//plot_scores.png&quot; alt=&quot; Charts of scores for a set of URLs&quot; title=&quot; Charts of scores for a set of URLs&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-04-01-lighthouse/images/plot_scores.png&quot; alt=&quot; Charts of scores for a set of URLs&quot; title=&quot; Charts of scores for a set of URLs&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt; Charts of scores for a set of URLs&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -858,7 +858,7 @@ with Kerberos authentication method.&lt;/p&gt;
 
 &lt;figure&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;/2019-03-23-kerberos-in-5-minutes//kerberos-logo.jpg&quot; alt=&quot;MIT Kerberos&quot; title=&quot;MIT Kerberos&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-03-23-kerberos-in-5-minutes/images/kerberos-logo.jpg&quot; alt=&quot;MIT Kerberos&quot; title=&quot;MIT Kerberos&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;MIT Kerberos&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -1075,7 +1075,7 @@ The typical format of a typical Kerberos principal is primary/instance@REALM.&lt
 
 &lt;figure&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;/2019-03-01-access-to-a-computer-from-usb-key//welcome-screen-dell.png&quot; alt=&quot;DELL welcome screen&quot; title=&quot;DELL welcome screen&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-03-01-access-to-a-computer-from-usb-key/images/welcome-screen-dell.png&quot; alt=&quot;DELL welcome screen&quot; title=&quot;DELL welcome screen&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;DELL welcome screen&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -1084,7 +1084,7 @@ The typical format of a typical Kerberos principal is primary/instance@REALM.&lt
 
 &lt;figure&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;/2019-03-01-access-to-a-computer-from-usb-key//hack1.png&quot; alt=&quot;Advanced startup options&quot; title=&quot;Advanced startup options&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-03-01-access-to-a-computer-from-usb-key/images/hack1.png&quot; alt=&quot;Advanced startup options&quot; title=&quot;Advanced startup options&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;Advanced startup options&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -1093,7 +1093,7 @@ The typical format of a typical Kerberos principal is primary/instance@REALM.&lt
 
 &lt;figure&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;/2019-03-01-access-to-a-computer-from-usb-key//hack2.png&quot; alt=&quot;Getting started in recovery mode&quot; title=&quot;Getting started in recovery mode&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-03-01-access-to-a-computer-from-usb-key/images/hack2.png&quot; alt=&quot;Getting started in recovery mode&quot; title=&quot;Getting started in recovery mode&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;Getting started in recovery mode&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -1102,7 +1102,7 @@ The typical format of a typical Kerberos principal is primary/instance@REALM.&lt
 
 &lt;figure&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;/2019-03-01-access-to-a-computer-from-usb-key//hack3.png&quot; alt=&quot;Choosing the root shell&quot; title=&quot;Choosing the root shell&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-03-01-access-to-a-computer-from-usb-key/images/hack3.png&quot; alt=&quot;Choosing the root shell&quot; title=&quot;Choosing the root shell&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;Choosing the root shell&lt;/figcaption&gt;
 &lt;/figure&gt;
