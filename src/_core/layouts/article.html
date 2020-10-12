@@ -89,9 +89,10 @@ layout: default
     </div>
 
     {%- assign article_cover_path = "/_static/posts/" | append: article_id | append: ".jpg" -%}
-    {%- assign article_cover_path_exist = site.static_files | where: "path", article_cover_path | first -%}
+    {%- assign article_cover_path_exist = site.static_files | where: "path", article_cover_path |
+    first -%}
     {%- unless article_cover_path_exist -%}
-      {%- assign article_cover_path = "/_core/static/img/default/article-cover.jpg" -%}
+    {%- assign article_cover_path = "/_core/static/img/default/article-cover.jpg" -%}
     {%- endunless -%}
     <img class="img-fluid lazyload" data-src="{{ article_cover_path }}"
          alt="{{ article_id }}" title="Cover of this article"/>
@@ -120,6 +121,20 @@ layout: default
         </a>
         {%- endif -%}
       </div>
+    </div>
+
+    <hr class="sep"/>
+
+    <!-- Article license -->
+    <div class="article-license" title="See the license">
+      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0">
+        <i class="cc notranslate">Creative Commons Attribution 4.0 International License:</i>
+        <br/>
+        <i class="fab fa-creative-commons notranslate" title="CC"></i>
+        <i class="fab fa-creative-commons-by notranslate" title="BY"></i>
+        <i class="fab fa-creative-commons-nc notranslate" title="NC"></i>
+        <i class="fab fa-creative-commons-sa notranslate" title="SA"></i>
+      </a>
     </div>
 
     <!-- Article contents -->
@@ -182,20 +197,21 @@ layout: default
       </div>
     </div>
 
-  </div>
+    <hr class="sep"/>
 
-  <!-- Article license -->
-  <div class="article-license" title="See the license">
-    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0">
-      <i class="cc notranslate">Creative Commons Attribution 4.0 International License:</i>
-      <br/>
-      <i class="fab fa-creative-commons notranslate" title="CC"></i>
-      <i class="fab fa-creative-commons-by notranslate" title="BY"></i>
-      <i class="fab fa-creative-commons-nc notranslate" title="NC"></i>
-      <i class="fab fa-creative-commons-sa notranslate" title="SA"></i>
-    </a>
+    <!-- Article license -->
+    <div class="article-license" title="See the license">
+      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0">
+        <i class="cc notranslate">Creative Commons Attribution 4.0 International License:</i>
+        <br/>
+        <i class="fab fa-creative-commons notranslate" title="CC"></i>
+        <i class="fab fa-creative-commons-by notranslate" title="BY"></i>
+        <i class="fab fa-creative-commons-nc notranslate" title="NC"></i>
+        <i class="fab fa-creative-commons-sa notranslate" title="SA"></i>
+      </a>
+    </div>
+
   </div>
-  <br>
 
   <!-- Article author(s) -->
   {%- if n_authors > 0 -%}
@@ -215,12 +231,15 @@ layout: default
           <tbody>
           <tr>
             <td rowspan="2">
-              {%- assign author_avatar_path = '/_static/authors/'  | append: author_name | append: '.jpg' -%}
-              {%- assign author_avatar_path_exist = site.static_files | where: "path", author_avatar_path | first -%}
+              {%- assign author_avatar_path = '/_static/authors/' | append: author_name | append:
+              '.jpg' -%}
+              {%- assign author_avatar_path_exist = site.static_files | where: "path",
+              author_avatar_path | first -%}
               {%- unless author_avatar_path_exist -%}
-                {%- assign author_avatar_path = '/_core/static/img/default/author-avatar.png' -%}
+              {%- assign author_avatar_path = '/_core/static/img/default/author-avatar.png' -%}
               {%- endunless -%}
-              <img src="{{ author_avatar_path }}" alt="picture of {{ author_name }}" title="picture of this author"/>
+              <img src="{{ author_avatar_path }}" alt="picture of {{ author_name }}"
+                   title="picture of this author"/>
             </td>
             <td>
               <b>
@@ -261,17 +280,17 @@ layout: default
     <div class="row">
       {%- assign index = 0 -%}
       {%- for post in related_posts -%}
-        {%- if index == 3 -%}
-          {%- break -%}
-        {%- endif -%}
-        {%- if page.title != post.title -%}
-          {%- assign index = index | plus: 1 -%}
-            <a href="{{ post.url }}" title="Read this article" class="col-xs-12 col-md-6 col-lg-4">
-              {%- include card-article.html -%}
-            </a>
-        {%- else -%}
-          {%- continue -%}
-        {%- endif -%}
+      {%- if index == 3 -%}
+      {%- break -%}
+      {%- endif -%}
+      {%- if page.title != post.title -%}
+      {%- assign index = index | plus: 1 -%}
+      <a href="{{ post.url }}" title="Read this article" class="col-xs-12 col-md-6 col-lg-4">
+        {%- include card-article.html -%}
+      </a>
+      {%- else -%}
+      {%- continue -%}
+      {%- endif -%}
       {%- endfor -%}
     </div>
 

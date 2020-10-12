@@ -88,7 +88,6 @@
 
   #article-content {
     width: 100%;
-    border-bottom: 1px solid lightgrey;
 
     h2 {
       padding-left: 1em;
@@ -103,6 +102,12 @@
       text-align: center;
       margin-bottom: 1em;
     }
+  }
+
+  /* Separator */
+
+  hr.sep {
+    margin: 0;
   }
 
   /* Articles tags & articles */
