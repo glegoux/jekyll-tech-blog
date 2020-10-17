@@ -76,7 +76,7 @@ defaults:
 project_core:
   libs:
     version:
-      jquery: "3.4.1"
+      jquery: "3.5.1"
       popper: "1.14.3"
       bootstrap: "4.3.1"
       font-awesome: "5.11.2"
