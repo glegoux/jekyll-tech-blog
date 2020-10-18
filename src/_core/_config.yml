@@ -31,6 +31,7 @@ destination: "dest"
 sass:
   sass_dir: "_core/sass"
   style: "compressed"
+  sourcemap: "development"
 
 # Normally files starting by ., #, ~ and _ are ignoring by the Jekyll build.
 include:
