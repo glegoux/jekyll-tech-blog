@@ -45,4 +45,4 @@ run-dev:
 	@JEKYLL_ENV=development bundle exec jekyll serve \
         --host localhost --port 4000 \
 		--config "src/_core/_config.yml,src/_config.yml,src/_config_dev.yml" \
-		--incremental --drafts --unpublished --livereload --limit_posts 1
+		--incremental --drafts --unpublished --livereload --limit_posts 10
