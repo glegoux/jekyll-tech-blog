@@ -241,3 +241,11 @@ a, a:visited, a:active, a:link, a:hover {
   text-decoration: none;
   color: white;
 }
+
+/* Print */
+
+@media print {
+  .no-print, .no-print * {
+    display: none !important;
+  }
+}

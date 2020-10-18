@@ -110,12 +110,18 @@
     margin: 0;
   }
 
-  /* Articles tags & articles */
+  /* Article tags */
 
   .article-category-tags {
     ul {
       list-style-type: none;
     }
+  }
+
+  /* Article actions */
+
+  .article-actions {
+    text-align: right;
   }
 
   /* Article browsing */
