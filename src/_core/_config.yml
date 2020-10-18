@@ -84,4 +84,4 @@ project_core:
       moment: "2.24.0"
       fuse: "3.4.6"
       lazysizes: "5.2.0"
-      mathjax: "2.7.7"
+      mathjax: "3.1.2"

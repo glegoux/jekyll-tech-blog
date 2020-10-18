@@ -178,10 +178,7 @@
 
         setTimeout(function () {
             // wait for the execution of MathJax
-            for (const jax of MathJax.Hub.getAllJax()) {
-                jax.SourceElement().previousSibling.classList.add("notranslate");
-            }
-            $(".highlight").addClass("notranslate");
+            $("mjx-container").addClass("notranslate");
         }, 1000);
 
     });

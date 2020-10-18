@@ -1,25 +1,11 @@
 # Site configuration for development
 # See default configuration: https://jekyllrb.com/docs/configuration/default
 
-# Server
-
-url: "http://localhost:4000"
-baseurl: ""
-
-# /!\ Overridden by --host <value> command line option
-host: "localhost"
-
-# /!\ Overridden by --port <value> command line option
-port: 4000
-
-# /!\ Overridden by --livereload command line option (if present force to true)
-livereload: false
-
 # Plugins
 
 plugins:
-  # Need to repeat the plugins from src/_core/_config.yml here
-  # because override plugins configuration
+  # Need to repeat the plugins from src/_core/_config.yml here,
+  # due to this override of plugins configuration.
   - "jekyll-sitemap"
   - "jekyll-seo-tag"
   - "jekyll-paginate"
