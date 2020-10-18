@@ -164,13 +164,13 @@ Source code:
 
 ### Info
 
-<pre class=" info">
+<pre class="info">
 INFO
 </pre>
 
 Source code:
 ~~~
-<pre class=" info">
+<pre class="info">
 INFO
 </pre>
 ~~~
