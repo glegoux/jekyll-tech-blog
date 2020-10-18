@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2020-10-18T16:26:23+00:00</updated>
+ <updated>2020-10-18T16:28:07+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -1361,12 +1361,12 @@ Linus Torvalds, creator of the Linux operating system
 
 &lt;h3 id=&quot;info&quot;&gt;Info&lt;/h3&gt;
 
-&lt;pre class=&quot; info&quot;&gt;
+&lt;pre class=&quot;info&quot;&gt;
 INFO
 &lt;/pre&gt;
 
 &lt;p&gt;Source code:&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;pre class=&quot; info&quot;&amp;gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;pre class=&quot;info&quot;&amp;gt;
 INFO
 &amp;lt;/pre&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
