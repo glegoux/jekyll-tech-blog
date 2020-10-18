@@ -41,15 +41,22 @@
       font-weight: 300;
       font-size: 0.8em;
 
-      ul {
-        li {
-          display: inline;
-          margin-right: 1em;
+      .article-actions {
+        text-align: right;
+
+        ul {
+          margin-bottom: 0;
+
+          li {
+            display: inline;
+            margin-right: 1em;
+          }
         }
       }
     }
 
   }
+
 
   /* Table of contents */
 
@@ -119,10 +126,6 @@
   }
 
   /* Article actions */
-
-  .article-actions {
-    text-align: right;
-  }
 
   /* Article browsing */
 

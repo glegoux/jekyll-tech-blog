@@ -96,220 +96,220 @@ layout: default
           {%- endif -%}
         </ul>
       </div>
-
-      {%- assign article_cover_path = "/_static/posts/" | append: article_id | append: ".jpg" -%}
-      {%- assign article_cover_path_exist = site.static_files | where: "path", article_cover_path |
-      first -%}
-      {%- unless article_cover_path_exist -%}
-      {%- assign article_cover_path = "/_core/static/img/default/article-cover.jpg" -%}
-      {%- endunless -%}
-      <img class="img-fluid lazyload" data-src="{{ article_cover_path }}"
-           alt="{{ article_id }}" title="Cover of this article"/>
-
     </div>
 
-    <!-- Article content -->
-    <div id="article-content">
+    {%- assign article_cover_path = "/_static/posts/" | append: article_id | append: ".jpg" -%}
+    {%- assign article_cover_path_exist = site.static_files | where: "path", article_cover_path |
+    first -%}
+    {%- unless article_cover_path_exist -%}
+    {%- assign article_cover_path = "/_core/static/img/default/article-cover.jpg" -%}
+    {%- endunless -%}
+    <img class="img-fluid lazyload" data-src="{{ article_cover_path }}"
+         alt="{{ article_id }}" title="Cover of this article"/>
 
-      <div class="row">
-        <div class="col-6">
-          {% include page-social-sharing.html %}
-        </div>
-        <div class="col-6 article-browser">
-          <a href="/blog/articles" title="See all articles">
-            <i class="fas fa-home"></i>
-          </a>
-          {%- if page.previous.url -%}
-          <a href="{{ page.previous.url }}" title="See the previous article">
-            <i class="fas fa-arrow-left"></i>
-          </a>
-          {%- endif -%}
-          {%- if page.next.url -%}
-          <a href="{{ page.next.url }}" title="See the next article">
-            <i class="fas fa-arrow-right"></i>
-          </a>
-          {%- endif -%}
-        </div>
+  </div>
+
+  <!-- Article content -->
+  <div id="article-content">
+
+    <div class="row">
+      <div class="col-6">
+        {% include page-social-sharing.html %}
       </div>
-
-      <hr class="sep"/>
-
-      <!-- Article license -->
-      <div class="article-license" title="See the license">
-        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0">
-          <i class="cc notranslate">Creative Commons Attribution 4.0 International License:</i>
-          <br/>
-          <i class="fab fa-creative-commons notranslate" title="CC"></i>
-          <i class="fab fa-creative-commons-by notranslate" title="BY"></i>
-          <i class="fab fa-creative-commons-nc notranslate" title="NC"></i>
-          <i class="fab fa-creative-commons-sa notranslate" title="SA"></i>
+      <div class="col-6 article-browser">
+        <a href="/blog/articles" title="See all articles">
+          <i class="fas fa-home"></i>
         </a>
+        {%- if page.previous.url -%}
+        <a href="{{ page.previous.url }}" title="See the previous article">
+          <i class="fas fa-arrow-left"></i>
+        </a>
+        {%- endif -%}
+        {%- if page.next.url -%}
+        <a href="{{ page.next.url }}" title="See the next article">
+          <i class="fas fa-arrow-right"></i>
+        </a>
+        {%- endif -%}
       </div>
+    </div>
 
-      <!-- Article contents -->
-      <div class="article-contents">
-        <button id="table-of-contents" class="btn btn-dark" title="See table of contents">
-          <b>See contents</b>
-        </button>
-        <div id="table-of-contents-container" style="display: none;"></div>
-      </div>
+    <hr class="sep"/>
 
-      <div class="markdown-body">
-        {{ content }}
-      </div>
+    <!-- Article license -->
+    <div class="article-license" title="See the license">
+      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0">
+        <i class="cc notranslate">Creative Commons Attribution 4.0 International License:</i>
+        <br/>
+        <i class="fab fa-creative-commons notranslate" title="CC"></i>
+        <i class="fab fa-creative-commons-by notranslate" title="BY"></i>
+        <i class="fab fa-creative-commons-nc notranslate" title="NC"></i>
+        <i class="fab fa-creative-commons-sa notranslate" title="SA"></i>
+      </a>
+    </div>
 
-      <div class="article-category-tags">
-        <ul>
-          <li>
-            <!-- Article category -->
-            <span>Category: </span>
-            <span class="article-category">
+    <!-- Article contents -->
+    <div class="article-contents">
+      <button id="table-of-contents" class="btn btn-dark" title="See table of contents">
+        <b>See contents</b>
+      </button>
+      <div id="table-of-contents-container" style="display: none;"></div>
+    </div>
+
+    <div class="markdown-body">
+      {{ content }}
+    </div>
+
+    <div class="article-category-tags">
+      <ul>
+        <li>
+          <!-- Article category -->
+          <span>Category: </span>
+          <span class="article-category">
             <ul>
               <li title="Category of this article">{{ page.category }}</li>
             </ul>
           </span>
-          </li>
-          {% if n_tags > 0 %}
-          <li>
-            <!-- Article tags -->
-            <span>Tags: </span>
-            <span class="article-labels">
+        </li>
+        {% if n_tags > 0 %}
+        <li>
+          <!-- Article tags -->
+          <span>Tags: </span>
+          <span class="article-labels">
             <ul>
               {% for tag in page.tags %}
               <li title="Tag of this article">{{ tag }}</li>
               {% endfor %}
             </ul>
           </span>
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="row">
-        <div class="col-6">
-          {% include page-social-sharing.html %}
-        </div>
-        <div class="col-6 article-browser">
-          <a href="/blog/articles" title="See all articles">
-            <i class="fa fa-home"></i>
-          </a>
-          {%- if page.previous.url -%}
-          <a href="{{ page.previous.url }}" title="See the previous article">
-            <i class="fa fa-arrow-left"></i>
-          </a>
-          {%- endif -%}
-          {%- if page.next.url -%}
-          <a href="{{ page.next.url }}" title="See the next article">
-            <i class="fa fa-arrow-right"></i>
-          </a>
-          {%- endif -%}
-        </div>
-      </div>
-
-      <hr class="sep"/>
-
-      <!-- Article license -->
-      <div class="article-license" title="See the license">
-        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0">
-          <i class="cc notranslate">Creative Commons Attribution 4.0 International License:</i>
-          <br/>
-          <i class="fab fa-creative-commons notranslate" title="CC"></i>
-          <i class="fab fa-creative-commons-by notranslate" title="BY"></i>
-          <i class="fab fa-creative-commons-nc notranslate" title="NC"></i>
-          <i class="fab fa-creative-commons-sa notranslate" title="SA"></i>
-        </a>
-      </div>
-
+        </li>
+        {% endif %}
+      </ul>
     </div>
 
-    <!-- Article author(s) -->
-    {%- if n_authors > 0 -%}
-    <div class="article-authors">
-      <h5>
-        Author{%- if n_authors > 1 -%}s{%- endif %}
-      </h5>
+    <div class="row">
+      <div class="col-6">
+        {% include page-social-sharing.html %}
+      </div>
+      <div class="col-6 article-browser">
+        <a href="/blog/articles" title="See all articles">
+          <i class="fa fa-home"></i>
+        </a>
+        {%- if page.previous.url -%}
+        <a href="{{ page.previous.url }}" title="See the previous article">
+          <i class="fa fa-arrow-left"></i>
+        </a>
+        {%- endif -%}
+        {%- if page.next.url -%}
+        <a href="{{ page.next.url }}" title="See the next article">
+          <i class="fa fa-arrow-right"></i>
+        </a>
+        {%- endif -%}
+      </div>
+    </div>
 
-      <hr/>
+    <hr class="sep"/>
 
-      <div class="row">
-        {%- for author_name in page.authors -%}
-        {%- assign author = config_article.authors[author_name] %}
-        <div
-          class="{% if n_authors == 1 %}w-100 {% endif %}col-xs-12{% if n_authors > 1 %} col-md-6{% endif %}{% if n_authors > 2 %} col-lg-4{% endif %}">
-          <table class="article-author">
-            <tbody>
-            <tr>
-              <td rowspan="2">
-                {%- assign author_avatar_path = '/_static/authors/' | append: author_name | append:
-                '.jpg' -%}
-                {%- assign author_avatar_path_exist = site.static_files | where: "path",
-                author_avatar_path | first -%}
-                {%- unless author_avatar_path_exist -%}
-                {%- assign author_avatar_path = '/_core/static/img/default/author-avatar.png' -%}
-                {%- endunless -%}
-                <img src="{{ author_avatar_path }}" alt="picture of {{ author_name }}"
-                     title="picture of this author"/>
-              </td>
-              <td>
-                <b>
-                  {{ author.firstname | capitalize }}
-                  {{ author.lastname | uppercase }}
-                </b>
-                ({{ author_name }})
-              </td>
-            <tr>
-              <td>
+    <!-- Article license -->
+    <div class="article-license" title="See the license">
+      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0">
+        <i class="cc notranslate">Creative Commons Attribution 4.0 International License:</i>
+        <br/>
+        <i class="fab fa-creative-commons notranslate" title="CC"></i>
+        <i class="fab fa-creative-commons-by notranslate" title="BY"></i>
+        <i class="fab fa-creative-commons-nc notranslate" title="NC"></i>
+        <i class="fab fa-creative-commons-sa notranslate" title="SA"></i>
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Article author(s) -->
+  {%- if n_authors > 0 -%}
+  <div class="article-authors">
+    <h5>
+      Author{%- if n_authors > 1 -%}s{%- endif %}
+    </h5>
+
+    <hr/>
+
+    <div class="row">
+      {%- for author_name in page.authors -%}
+      {%- assign author = config_article.authors[author_name] %}
+      <div
+        class="{% if n_authors == 1 %}w-100 {% endif %}col-xs-12{% if n_authors > 1 %} col-md-6{% endif %}{% if n_authors > 2 %} col-lg-4{% endif %}">
+        <table class="article-author">
+          <tbody>
+          <tr>
+            <td rowspan="2">
+              {%- assign author_avatar_path = '/_static/authors/' | append: author_name | append:
+              '.jpg' -%}
+              {%- assign author_avatar_path_exist = site.static_files | where: "path",
+              author_avatar_path | first -%}
+              {%- unless author_avatar_path_exist -%}
+              {%- assign author_avatar_path = '/_core/static/img/default/author-avatar.png' -%}
+              {%- endunless -%}
+              <img src="{{ author_avatar_path }}" alt="picture of {{ author_name }}"
+                   title="picture of this author"/>
+            </td>
+            <td>
+              <b>
+                {{ author.firstname | capitalize }}
+                {{ author.lastname | uppercase }}
+              </b>
+              ({{ author_name }})
+            </td>
+          <tr>
+            <td>
               <span class="notranslate job">
               {{ author.job | capitalize }} @{{ author.company | capitalize }}
               </span>
-              </td>
-            </tr>
-            <tr>
-              <td colspan="2" style="text-align: center">
-                <a href="{{ author.follow_link }}" title="Follow this author">
-                  <br>
-                  <button class="btn btn-dark">
-                    <b>Follow</b>
-                  </button>
-                </a>
-              </td>
-            </tr>
-            </tbody>
-          </table>
-        </div>
-        {%- endfor -%}
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" style="text-align: center">
+              <a href="{{ author.follow_link }}" title="Follow this author">
+                <br>
+                <button class="btn btn-dark">
+                  <b>Follow</b>
+                </button>
+              </a>
+            </td>
+          </tr>
+          </tbody>
+        </table>
       </div>
+      {%- endfor -%}
     </div>
-    {%- endif -%}
+  </div>
+  {%- endif -%}
 
-    <!-- Other articles -->
-    <div class="article-others no-print">
-      <h5>Also read</h5>
+  <!-- Other articles -->
+  <div class="article-others no-print">
+    <h5>Also read</h5>
 
-      <div class="row">
-        {%- assign index = 0 -%}
-        {%- for post in related_posts -%}
-        {%- if index == 3 -%}
-        {%- break -%}
-        {%- endif -%}
-        {%- if page.title != post.title -%}
-        {%- assign index = index | plus: 1 -%}
-        <a href="{{ post.url }}" title="Read this article" class="col-xs-12 col-md-6 col-lg-4">
-          {%- include card-article.html -%}
-        </a>
-        {%- else -%}
-        {%- continue -%}
-        {%- endif -%}
-        {%- endfor -%}
-      </div>
+    <div class="row">
+      {%- assign index = 0 -%}
+      {%- for post in related_posts -%}
+      {%- if index == 3 -%}
+      {%- break -%}
+      {%- endif -%}
+      {%- if page.title != post.title -%}
+      {%- assign index = index | plus: 1 -%}
+      <a href="{{ post.url }}" title="Read this article" class="col-xs-12 col-md-6 col-lg-4">
+        {%- include card-article.html -%}
+      </a>
+      {%- else -%}
+      {%- continue -%}
+      {%- endif -%}
+      {%- endfor -%}
+    </div>
 
-      <div class="article-list-all no-print">
-        <a href="/blog/articles/">
-          <button class="btn btn-dark" title="List all articles">
-            <b>List all</b>
-          </button>
-        </a>
-      </div>
+    <div class="article-list-all no-print">
+      <a href="/blog/articles/">
+        <button class="btn btn-dark" title="List all articles">
+          <b>List all</b>
+        </button>
+      </a>
     </div>
   </div>
 
