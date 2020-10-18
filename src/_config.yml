@@ -84,7 +84,7 @@ project:
     resources:
       url: "https://github.com/glegoux/articles-glegoux-com/tree/master/articles"
     issue:
-      url: "https://github.com/glegoux/jekyll-blog/pulls"
+      url: "https://github.com/glegoux/jekyll-blog/issues"
     edit:
       url: "https://github.com/glegoux/jekyll-blog/edit/develop/src/_posts/"
     static:
