@@ -1,5 +1,56 @@
 /* Layout */
 
+/* Info, Warning, Error, Question */
+
+div.info:before {
+  content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSczMicgaGVpZ2h0PSczMicgdmlld0JveD0nMCAwIDMyIDMyJz48cGF0aCBmaWxsPScjM2ZhNWRiJyBkPSdNMjYuNCAyMi4yYzEtMS45IDEuNi00IDEuNi02LjMgMC03LjYtNi4yLTEzLjgtMTMuOC0xMy44cy0xMy44IDYuMi0xMy44IDEzLjggNi4yIDEzLjggMTMuOCAxMy44YzMuNSAwIDYuNy0xLjMgOS4yLTMuNWw3LjIgMi00LjEtNS45ek0xMy40IDIyLjNjMC4xIDAuMSAwLjIgMC4xIDAuMyAwLjEgMC4xIDAgMC4zLTAuMSAwLjUtMC4yIDAuNS0wLjQgMS0xIDEuNi0xLjdsMC41IDAuM2MtMC42IDAuOS0xLjMgMS43LTIuMiAyLjQtMC42IDAuNS0xLjIgMC43LTEuOCAwLjctMC40IDAtMC43LTAuMS0wLjktMC4zcy0wLjQtMC41LTAuNC0wLjhjMC0wLjMgMC4xLTAuOSAwLjMtMS43bDEuOC02LjFjMC4zLTEgMS0zLjQgMS0zLjRsMi4xLTAuMy0yLjcgOS42Yy0wLjIgMC42LTAuMyAxLTAuMyAxLjIgMCAwLjEgMCAwLjMgMC4xIDAuNHpNMTcgOC4xYy0wLjMgMC4zLTAuNiAwLjQtMSAwLjRzLTAuNy0wLjEtMS0wLjRjLTAuMy0wLjMtMC40LTAuNi0wLjQtMSAwLTAuNCAwLjEtMC43IDAuNC0xIDAuMy0wLjMgMC42LTAuNCAxLTAuNHMwLjcgMC4xIDEgMC40YzAuMyAwLjMgMC40IDAuNiAwLjQgMSAwIDAuNC0wLjEgMC43LTAuNCAxeicvPjwvc3ZnPg==);
+}
+
+div.info {
+  background: #e6f4fa !important;
+}
+
+div.warning::before {
+  content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSczMicgaGVpZ2h0PSczMicgdmlld0JveD0nMCAwIDMyIDMyJz48cGF0aCBmaWxsPScjZjM5NTM5JyBkPSdNMjYuNCAyMi4yYzEtMS45IDEuNi00IDEuNi02LjMgMC03LjYtNi4yLTEzLjgtMTMuOC0xMy44cy0xMy44IDYuMi0xMy44IDEzLjggNi4yIDEzLjggMTMuOCAxMy44YzMuNSAwIDYuNy0xLjMgOS4yLTMuNWw3LjIgMi00LjEtNS45ek0xMi43IDIyLjZjLTAuNyAwLTEuMi0wLjYtMS4yLTEuMyAwLTAuOCAwLjYtMS41IDEuNC0xLjUgMC43IDAgMS4yIDAuNiAxLjIgMS4zIDAgMC44LTAuNiAxLjQtMS40IDEuNHpNMTQuMSAxOC4xaC0xLjRsMS43LTEwLjVoMi4xbC0yLjMgMTAuNXonLz48L3N2Zz4=);
+}
+
+div.warning {
+  background: #fdefe1;
+}
+
+div.error::before {
+  content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSczMicgaGVpZ2h0PSczMicgdmlld0JveD0nMCAwIDMyIDMyJz48cGF0aCBmaWxsPScjYzIxOTM2JyBkPSdNMjYuNCAyMi4yYzEtMS45IDEuNi00IDEuNi02LjMgMC03LjYtNi4yLTEzLjgtMTMuOC0xMy44LTcuNiAwLTEzLjggNi4yLTEzLjggMTMuOHM2LjIgMTMuOCAxMy44IDEzLjhjMy41IDAgNi43LTEuMyA5LjItMy41bDcuMiAyLTQuMS01Ljl6TTE3LjcgMTkuNmgtMi41bC0wLjUtMS4yYy0wLjItMC42LTAuNC0xLTAuNS0xLjRoLTAuMWMtMC4yIDAuNC0wLjQgMC44LTAuOCAxLjNsLTAuOSAxLjRoLTIuNmwzLjQtNC0xLjgtMy44aDIuNWwwLjUgMS4yYzAuMiAwLjYgMC40IDEgMC41IDEuM2gwYzAuMy0wLjQgMC41LTAuOCAwLjgtMS4ybDAuOS0xLjJoMi42bC0zLjMgMy44IDEuOCA0eicvPjwvc3ZnPg==);
+}
+
+div.error {
+  background: #f9d2d8;
+}
+
+div.question::before {
+  content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSczMicgaGVpZ2h0PSczMicgdmlld0JveD0nMCAwIDMyIDMyJz48cGF0aCBmaWxsPScjNTY1NjU2JyBkPSdNMjYuNCAyMi4yYzEtMS45IDEuNi00IDEuNi02LjMgMC03LjYtNi4yLTEzLjgtMTMuOC0xMy44cy0xMy44IDYuMi0xMy44IDEzLjggNi4yIDEzLjggMTMuOCAxMy44YzMuNSAwIDYuNy0xLjMgOS4yLTMuNWw3LjIgMi00LjEtNS45ek0xMy4yIDIyLjZjLTAuNyAwLTEuMi0wLjYtMS4yLTEuMyAwLTAuOCAwLjYtMS41IDEuNC0xLjUgMC43IDAgMS4yIDAuNiAxLjIgMS4zIDAgMC44LTAuNiAxLjQtMS40IDEuNHpNMTYuNiAxNC40Yy0xLjEgMS4xLTEuNiAyLTEuNyAzLjIgMCAwLjItMC4xIDAuNC0wLjEgMC42aC0xLjhjMC0wLjIgMC0wLjQgMC0wLjYgMC4xLTEuMiAwLjctMi41IDIuMS00IDEtMSAxLjktMiAxLjktMy4yIDAtMC44LTAuNC0xLjUtMS43LTEuNS0wLjggMC0xLjYgMC4yLTIuMiAwLjZsLTAuMy0xLjNjMC44LTAuNSAxLjgtMC44IDMtMC44IDIuMSAwIDMuMSAxLjQgMy4xIDIuNyAwIDEuNy0xLjEgMy0yLjQgNC4zeicvPjwvc3ZnPg==);
+}
+
+div.question {
+  background: #f4f4f4;
+}
+
+div.error::before, div.warning::before, div.info::before, div.question::before {
+  position: relative;
+  top: 0;
+  left: -1em;
+}
+
+div.error, div.warning, div.info, div.question {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  padding: 0 1em 1em 1em;
+  font: inherit !important;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  overflow: auto !important;
+  width: 100%;
+}
+
 /* Article */
 
 .article-card-container {
@@ -185,6 +236,12 @@
 
 }
 
+/* Underline */
+
+.underline {
+  text-decoration: underline !important;
+}
+
 /* List */
 
 ul {
@@ -195,31 +252,32 @@ ul {
 
 a, a:visited, a:active, a:link, a:hover {
   color: inherit !important;
-  text-decoration: none !important;
+  text-decoration: none;
+}
+
+.link, .link-underline, .link-zoom, .link-light, .link-strong {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.link-underline:hover {
+  text-decoration: underline !important;
 }
 
 .link-strong:hover {
   font-weight: bold;
 }
 
-.link, .link-inverse, .link-zoom, .link-light, .link-strong {
-  text-decoration: none;
-}
-
-.link:hover {
-  border-bottom: dashed 1px !important;
-}
-
 .link-zoom:hover {
   font-size: 100.5% !important;
 }
 
-.link-strong:hover {
-  font-weight: 700 !important;
-}
-
 .link-light:hover {
   opacity: 1 !important;
+}
+
+.link-strong:hover {
+  font-weight: 700 !important;
 }
 
 /* Icon */

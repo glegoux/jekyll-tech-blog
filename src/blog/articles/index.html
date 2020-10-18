@@ -2,9 +2,9 @@
 layout: default
 articles: true
 redirect_from:
-  - /blog/
-  - /home/
-  - /blog/articles/page/1/
+- /blog/
+- /home/
+- /blog/articles/page/1/
 ---
 {%- assign config_blog = site.project.blog -%}
 <div id="page-articles">
@@ -20,6 +20,12 @@ redirect_from:
     </p>
 
   </div>
+
+  {% if site.limit_posts %}
+  <div class="warning no-print">
+    The configuration <b>site.limit_posts</b> and/or option of command line <b>--limit_posts</b> is/are defined to <b>show only {{ site.limit_posts }} articles from the last one.</b>
+  </div>
+  {% endif %}
 
   <!-- Articles advanced search -->
   <div id="articles-text-search">
