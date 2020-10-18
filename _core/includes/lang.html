@@ -2,7 +2,7 @@
 {%- assign original_lang = config_lang.original -%}
 {%- assign n_other_languages = config_lang.others | size -%}
 {%- if n_other_languages > 0 -%}
-<select class="lang custom-select" title="Translate the web page into your language">
+<select class="lang custom-select link" title="Translate the web page into your language">
   <option class="notranslate" value="{{ original_lang.code }}">
     <span>{{ original_lang.display_name }}</span>
   </option>
