@@ -142,7 +142,7 @@ window.MathJax = {
     Translates from English
   </div>
 
-  <header>
+  <header class="no-print">
     <div class="flex-container">
   <!-- Name -->
   <div id="name">
@@ -210,7 +210,7 @@ window.MathJax = {
   <div id="content" class="container">
     <div class="row">
       <!-- Loader -->
-<div id="loader">
+<div id="loader" class="no-print">
   <div id="loader-inner">
     <!-- Loader image -->
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin:auto;background:#fff;display:block;" width="100px" height="100px" viewbox="0 0 100 100" preserveaspectratio="xMidYMid">
@@ -306,43 +306,44 @@ window.MathJax = {
 
     <!-- Article cover -->
     <div class="article-cover" title="Cover of this article">
-      <ul>
+      <div class="article-actions no-print">
+        <ul>
 <li title="See the source code of this article">
-          <a href="https://raw.githubusercontent.com/glegoux/jekyll-blog/develop/src/_posts/2020-03-04-development-environment.md">
-            <i class="far fa-file-code"></i>
-            Source
-          </a>
-        </li>
+            <a href="https://raw.githubusercontent.com/glegoux/jekyll-blog/develop/src/_posts/2020-03-04-development-environment.md">
+              <i class="far fa-file-code"></i>
+              Source
+            </a>
+          </li>
 <li title="See the resources of this article">
-          <a href="https://github.com/glegoux/articles-glegoux-com/tree/master/articles/2020-03-04-development-environment">
-            <i class="fas fa-code-branch"></i>
-            Resources
-          </a>
-        </li>
+            <a href="https://github.com/glegoux/articles-glegoux-com/tree/master/articles/2020-03-04-development-environment">
+              <i class="fas fa-code-branch"></i>
+              Resources
+            </a>
+          </li>
 <li title="Edit this article (if you have permission)">
-          <a href="https://github.com/glegoux/jekyll-blog/edit/develop/src/_posts//2020-03-04-development-environment.md">
-            <i class="fas fa-edit"></i>
-            Edit
-          </a>
-        </li>
+            <a href="https://github.com/glegoux/jekyll-blog/edit/develop/src/_posts//2020-03-04-development-environment.md">
+              <i class="fas fa-edit"></i>
+              Edit
+            </a>
+          </li>
 <li title="Report an issue on this article">
-          <a href="https://github.com/glegoux/jekyll-blog/issues">
-            <i class="fas fa-exclamation-circle"></i>
-            Issue
-          </a>
-        </li>
+            <a href="https://github.com/glegoux/jekyll-blog/issues">
+              <i class="fas fa-exclamation-circle"></i>
+              Issue
+            </a>
+          </li>
 </ul>
-    </div>
+      </div>
 <img class="img-fluid lazyload" data-src="/_static/posts/2020-03-04-development-environment.jpg" alt="2020-03-04-development-environment" title="Cover of this article">
 
-  </div>
+    </div>
 
-  <!-- Article content -->
-  <div id="article-content">
+    <!-- Article content -->
+    <div id="article-content">
 
-    <div class="row">
-      <div class="col-6">
-        <div class="social-sharing">
+      <div class="row">
+        <div class="col-6">
+          <div class="social-sharing">
   <ul>
     <li title="Share page on LinkedIn">
       <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://glegoux.com/blog/articles/2020/03/04/development-environment.html&amp;title=Development%20Environment&amp;summary=Why%20isolate%20its%20development%20environment?&amp;source=https://glegoux.com">
@@ -384,42 +385,42 @@ window.MathJax = {
   }
 </style>
 
-      </div>
-      <div class="col-6 article-browser">
-        <a href="/blog/articles" title="See all articles">
-          <i class="fas fa-home"></i>
-        </a><a href="/blog/articles/2019/11/29/gafa-vs-batx.html" title="See the previous article">
-          <i class="fas fa-arrow-left"></i>
-        </a><a href="/blog/articles/2020/05/04/java-ecosystem.html" title="See the next article">
-          <i class="fas fa-arrow-right"></i>
-        </a>
+        </div>
+        <div class="col-6 article-browser">
+          <a href="/blog/articles" title="See all articles">
+            <i class="fas fa-home"></i>
+          </a><a href="/blog/articles/2019/11/29/gafa-vs-batx.html" title="See the previous article">
+            <i class="fas fa-arrow-left"></i>
+          </a><a href="/blog/articles/2020/05/04/java-ecosystem.html" title="See the next article">
+            <i class="fas fa-arrow-right"></i>
+          </a>
 </div>
-    </div>
+      </div>
 
-    <hr class="sep">
+      <hr class="sep">
 
-    <!-- Article license -->
-    <div class="article-license" title="See the license">
-      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0">
-        <i class="cc notranslate">Creative Commons Attribution 4.0 International License:</i>
-        <br>
-        <i class="fab fa-creative-commons notranslate" title="CC"></i>
-        <i class="fab fa-creative-commons-by notranslate" title="BY"></i>
-        <i class="fab fa-creative-commons-nc notranslate" title="NC"></i>
-        <i class="fab fa-creative-commons-sa notranslate" title="SA"></i>
-      </a>
-    </div>
+      <!-- Article license -->
+      <div class="article-license" title="See the license">
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0">
+          <i class="cc notranslate">Creative Commons Attribution 4.0 International License:</i>
+          <br>
+          <i class="fab fa-creative-commons notranslate" title="CC"></i>
+          <i class="fab fa-creative-commons-by notranslate" title="BY"></i>
+          <i class="fab fa-creative-commons-nc notranslate" title="NC"></i>
+          <i class="fab fa-creative-commons-sa notranslate" title="SA"></i>
+        </a>
+      </div>
 
-    <!-- Article contents -->
-    <div class="article-contents">
-      <button id="table-of-contents" class="btn btn-dark" title="See table of contents">
-        <b>See contents</b>
-      </button>
-      <div id="table-of-contents-container" style="display: none;"></div>
-    </div>
+      <!-- Article contents -->
+      <div class="article-contents">
+        <button id="table-of-contents" class="btn btn-dark" title="See table of contents">
+          <b>See contents</b>
+        </button>
+        <div id="table-of-contents-container" style="display: none;"></div>
+      </div>
 
-    <div class="markdown-body">
-      <p>It is a good practice to isolate the used technologies for your development environment, because:</p>
+      <div class="markdown-body">
+        <p>It is a good practice to isolate the used technologies for your development environment, because:</p>
 
 <ol>
   <li>Your operating system could already have an installed version of this technology for its own needs, 
@@ -448,38 +449,38 @@ the contract of interface.</p>
 <p>This problematic is the same for the test environment, or the pre-production environment and prod environment. In addition, for security 
 reason, these environments should be isolated and partitioned with a segregation of permission. It is another subject.</p>
 
-    </div>
+      </div>
 
-    <div class="article-category-tags">
-      <ul>
-        <li>
-          <!-- Article category -->
-          <span>Category: </span>
-          <span class="article-category">
+      <div class="article-category-tags">
+        <ul>
+          <li>
+            <!-- Article category -->
+            <span>Category: </span>
+            <span class="article-category">
             <ul>
               <li title="Category of this article">Working environment</li>
             </ul>
           </span>
-        </li>
-        
-        <li>
-          <!-- Article tags -->
-          <span>Tags: </span>
-          <span class="article-labels">
+          </li>
+          
+          <li>
+            <!-- Article tags -->
+            <span>Tags: </span>
+            <span class="article-labels">
             <ul>
               
               <li title="Tag of this article">Computer development</li>
               
             </ul>
           </span>
-        </li>
-        
-      </ul>
-    </div>
+          </li>
+          
+        </ul>
+      </div>
 
-    <div class="row">
-      <div class="col-6">
-        <div class="social-sharing">
+      <div class="row">
+        <div class="col-6">
+          <div class="social-sharing">
   <ul>
     <li title="Share page on LinkedIn">
       <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://glegoux.com/blog/articles/2020/03/04/development-environment.html&amp;title=Development%20Environment&amp;summary=Why%20isolate%20its%20development%20environment?&amp;source=https://glegoux.com">
@@ -521,144 +522,144 @@ reason, these environments should be isolated and partitioned with a segregation
   }
 </style>
 
-      </div>
-      <div class="col-6 article-browser">
-        <a href="/blog/articles" title="See all articles">
-          <i class="fa fa-home"></i>
-        </a><a href="/blog/articles/2019/11/29/gafa-vs-batx.html" title="See the previous article">
-          <i class="fa fa-arrow-left"></i>
-        </a><a href="/blog/articles/2020/05/04/java-ecosystem.html" title="See the next article">
-          <i class="fa fa-arrow-right"></i>
-        </a>
+        </div>
+        <div class="col-6 article-browser">
+          <a href="/blog/articles" title="See all articles">
+            <i class="fa fa-home"></i>
+          </a><a href="/blog/articles/2019/11/29/gafa-vs-batx.html" title="See the previous article">
+            <i class="fa fa-arrow-left"></i>
+          </a><a href="/blog/articles/2020/05/04/java-ecosystem.html" title="See the next article">
+            <i class="fa fa-arrow-right"></i>
+          </a>
 </div>
+      </div>
+
+      <hr class="sep">
+
+      <!-- Article license -->
+      <div class="article-license" title="See the license">
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0">
+          <i class="cc notranslate">Creative Commons Attribution 4.0 International License:</i>
+          <br>
+          <i class="fab fa-creative-commons notranslate" title="CC"></i>
+          <i class="fab fa-creative-commons-by notranslate" title="BY"></i>
+          <i class="fab fa-creative-commons-nc notranslate" title="NC"></i>
+          <i class="fab fa-creative-commons-sa notranslate" title="SA"></i>
+        </a>
+      </div>
+
     </div>
 
-    <hr class="sep">
+    <!-- Article author(s) --><div class="article-authors">
+      <h5>
+        Author
+      </h5>
 
-    <!-- Article license -->
-    <div class="article-license" title="See the license">
-      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0">
-        <i class="cc notranslate">Creative Commons Attribution 4.0 International License:</i>
-        <br>
-        <i class="fab fa-creative-commons notranslate" title="CC"></i>
-        <i class="fab fa-creative-commons-by notranslate" title="BY"></i>
-        <i class="fab fa-creative-commons-nc notranslate" title="NC"></i>
-        <i class="fab fa-creative-commons-sa notranslate" title="SA"></i>
-      </a>
-    </div>
+      <hr>
 
-  </div>
-
-  <!-- Article author(s) --><div class="article-authors">
-    <h5>
-      Author
-    </h5>
-
-    <hr>
-
-    <div class="row">
-      <div class="w-100 col-xs-12">
-        <table class="article-author">
-          <tbody>
-          <tr>
-            <td rowspan="2">
+      <div class="row">
+        <div class="w-100 col-xs-12">
+          <table class="article-author">
+            <tbody>
+            <tr>
+              <td rowspan="2">
 <img src="/_static/authors/glegoux.jpg" alt="picture of glegoux" title="picture of this author">
-            </td>
-            <td>
-              <b>
-                Gilles
-                LEGOUX
-              </b>
-              (glegoux)
-            </td>
-          </tr>
+              </td>
+              <td>
+                <b>
+                  Gilles
+                  LEGOUX
+                </b>
+                (glegoux)
+              </td>
+            </tr>
 <tr>
-            <td>
+              <td>
               <span class="notranslate job">
               Software engineer <a href="https://github.com/Criteo" class="user-mention">@Criteo</a>
               </span>
-            </td>
-          </tr>
-          <tr>
-            <td colspan="2" style="text-align: center">
-              <a href="https://www.linkedin.com/in/gilleslegoux" title="Follow this author">
-                <br>
-                <button class="btn btn-dark">
-                  <b>Follow</b>
-                </button>
-              </a>
-            </td>
-          </tr>
-          </tbody>
-        </table>
-      </div>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" style="text-align: center">
+                <a href="https://www.linkedin.com/in/gilleslegoux" title="Follow this author">
+                  <br>
+                  <button class="btn btn-dark">
+                    <b>Follow</b>
+                  </button>
+                </a>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
 </div>
-  </div>
+    </div>
 <!-- Other articles -->
-  <div class="article-others">
-    <h5>Also read</h5>
+    <div class="article-others no-print">
+      <h5>Also read</h5>
 
-    <div class="row">
-<a href="/blog/articles/2020/05/15/gnu-privacy-guard.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
+      <div class="row">
+<a href="/blog/articles/2020/08/24/geo-location.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 
       <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/posts/2020-05-15-gnu-privacy-guard.jpg" alt="2020-05-15-gnu-privacy-guard">
+        <img class="img-fluid lazyload" data-src="/_static/posts/2020-08-24-geo-location.jpg" alt="2020-08-24-geo-location">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          GNU Privacy Guard
+          Geo-location
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          How to prove its identity and encrypt its communication?
+          How to compute the distance between 2 points with given latitude and longitude?
         </div>
 
         <!-- Article categories -->
         <div class="article-category">
           <ul>
-            <li>Security</li>
+            <li>Maths</li>
           </ul>
         </div>
 
         <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>May 15, 2020</span>
+          <span>August 24, 2020</span>
         </div>
         <!-- Article reading time -->
         <div class="reading-time">
           <i class="far fa-clock"></i>
-          <span>5 min</span>
+          <span>10 min</span>
         </div>
       </div>
 
     </div>
 </div>
 
-</a><a href="/blog/articles/2019/04/01/lighthouse.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
+</a><a href="/blog/articles/2019/07/14/trace-a-request-path.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 
       <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/posts/2019-04-01-lighthouse.jpg" alt="2019-04-01-lighthouse">
+        <img class="img-fluid lazyload" data-src="/_static/posts/2019-07-14-trace-a-request-path.jpg" alt="2019-07-14-trace-a-request-path">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          Lighthouse
+          Trace a request path
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          Lighthouse is an open-source, automated tool for improving the quality of web pages.
+          How to know for which routers a HTTP request browses?
         </div>
 
         <!-- Article categories -->
@@ -671,12 +672,12 @@ reason, these environments should be isolated and partitioned with a segregation
         <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>April 01, 2019</span>
+          <span>July 14, 2019</span>
         </div>
         <!-- Article reading time -->
         <div class="reading-time">
           <i class="far fa-clock"></i>
-          <span>10 min</span>
+          <span>5 min</span>
         </div>
       </div>
 
@@ -728,19 +729,20 @@ reason, these environments should be isolated and partitioned with a segregation
 </a>
 </div>
 
-    <div class="article-list-all">
-      <a href="/blog/articles/">
-        <button class="btn btn-dark" title="List all articles">
-          <b>List all</b>
-        </button>
-      </a>
+      <div class="article-list-all no-print">
+        <a href="/blog/articles/">
+          <button class="btn btn-dark" title="List all articles">
+            <b>List all</b>
+          </button>
+        </a>
+      </div>
     </div>
   </div>
 
 </div>
 
       <!-- Disqus -->
-<div class="comments col-12">
+<div class="comments col-12 no-print">
   <h5>Comments</h5>
 
   <div id="disqus_thread"></div>
@@ -765,7 +767,7 @@ reason, these environments should be isolated and partitioned with a segregation
     </div>
   </div>
 
-  <footer>
+  <footer class="no-print">
     <div class="container">
   <div class="row">
     <div class="contact col-md-4 col-12">
@@ -913,7 +915,7 @@ reason, these environments should be isolated and partitioned with a segregation
   </footer>
 
   <!-- Go Top -->
-<div id="goto-top" style="display:none;">
+<div id="goto-top" class="no-print" style="display:none;">
   <a href="#" class="fas fa-arrow-up" title="Go to top page"></a>
 </div>
 

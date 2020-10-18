@@ -142,7 +142,7 @@ window.MathJax = {
     Translates from English
   </div>
 
-  <header>
+  <header class="no-print">
     <div class="flex-container">
   <!-- Name -->
   <div id="name">
@@ -210,7 +210,7 @@ window.MathJax = {
   <div id="content" class="container">
     <div class="row">
       <!-- Loader -->
-<div id="loader">
+<div id="loader" class="no-print">
   <div id="loader-inner">
     <!-- Loader image -->
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin:auto;background:#fff;display:block;" width="100px" height="100px" viewbox="0 0 100 100" preserveaspectratio="xMidYMid">
@@ -306,43 +306,44 @@ window.MathJax = {
 
     <!-- Article cover -->
     <div class="article-cover" title="Cover of this article">
-      <ul>
+      <div class="article-actions no-print">
+        <ul>
 <li title="See the source code of this article">
-          <a href="https://raw.githubusercontent.com/glegoux/jekyll-blog/develop/src/_posts/2019-02-14-how-to-quote-sources.md">
-            <i class="far fa-file-code"></i>
-            Source
-          </a>
-        </li>
+            <a href="https://raw.githubusercontent.com/glegoux/jekyll-blog/develop/src/_posts/2019-02-14-how-to-quote-sources.md">
+              <i class="far fa-file-code"></i>
+              Source
+            </a>
+          </li>
 <li title="See the resources of this article">
-          <a href="https://github.com/glegoux/articles-glegoux-com/tree/master/articles/2019-02-14-how-to-quote-sources">
-            <i class="fas fa-code-branch"></i>
-            Resources
-          </a>
-        </li>
+            <a href="https://github.com/glegoux/articles-glegoux-com/tree/master/articles/2019-02-14-how-to-quote-sources">
+              <i class="fas fa-code-branch"></i>
+              Resources
+            </a>
+          </li>
 <li title="Edit this article (if you have permission)">
-          <a href="https://github.com/glegoux/jekyll-blog/edit/develop/src/_posts//2019-02-14-how-to-quote-sources.md">
-            <i class="fas fa-edit"></i>
-            Edit
-          </a>
-        </li>
+            <a href="https://github.com/glegoux/jekyll-blog/edit/develop/src/_posts//2019-02-14-how-to-quote-sources.md">
+              <i class="fas fa-edit"></i>
+              Edit
+            </a>
+          </li>
 <li title="Report an issue on this article">
-          <a href="https://github.com/glegoux/jekyll-blog/issues">
-            <i class="fas fa-exclamation-circle"></i>
-            Issue
-          </a>
-        </li>
+            <a href="https://github.com/glegoux/jekyll-blog/issues">
+              <i class="fas fa-exclamation-circle"></i>
+              Issue
+            </a>
+          </li>
 </ul>
-    </div>
+      </div>
 <img class="img-fluid lazyload" data-src="/_static/posts/2019-02-14-how-to-quote-sources.jpg" alt="2019-02-14-how-to-quote-sources" title="Cover of this article">
 
-  </div>
+    </div>
 
-  <!-- Article content -->
-  <div id="article-content">
+    <!-- Article content -->
+    <div id="article-content">
 
-    <div class="row">
-      <div class="col-6">
-        <div class="social-sharing">
+      <div class="row">
+        <div class="col-6">
+          <div class="social-sharing">
   <ul>
     <li title="Share page on LinkedIn">
       <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://glegoux.com/blog/articles/2019/02/14/how-to-quote-sources.html&amp;title=How%20to%20quote%20sources&amp;summary=Current%20standards%20and%20rules%20to%20respect%20in%20order%20to%20quote%20sources.&amp;source=https://glegoux.com">
@@ -384,42 +385,42 @@ window.MathJax = {
   }
 </style>
 
-      </div>
-      <div class="col-6 article-browser">
-        <a href="/blog/articles" title="See all articles">
-          <i class="fas fa-home"></i>
-        </a><a href="/blog/articles/2019/01/21/getting-started.html" title="See the previous article">
-          <i class="fas fa-arrow-left"></i>
-        </a><a href="/blog/articles/2019/03/01/access-to-a-computer-from-usb-key.html" title="See the next article">
-          <i class="fas fa-arrow-right"></i>
-        </a>
+        </div>
+        <div class="col-6 article-browser">
+          <a href="/blog/articles" title="See all articles">
+            <i class="fas fa-home"></i>
+          </a><a href="/blog/articles/2019/01/21/getting-started.html" title="See the previous article">
+            <i class="fas fa-arrow-left"></i>
+          </a><a href="/blog/articles/2019/03/01/access-to-a-computer-from-usb-key.html" title="See the next article">
+            <i class="fas fa-arrow-right"></i>
+          </a>
 </div>
-    </div>
+      </div>
 
-    <hr class="sep">
+      <hr class="sep">
 
-    <!-- Article license -->
-    <div class="article-license" title="See the license">
-      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0">
-        <i class="cc notranslate">Creative Commons Attribution 4.0 International License:</i>
-        <br>
-        <i class="fab fa-creative-commons notranslate" title="CC"></i>
-        <i class="fab fa-creative-commons-by notranslate" title="BY"></i>
-        <i class="fab fa-creative-commons-nc notranslate" title="NC"></i>
-        <i class="fab fa-creative-commons-sa notranslate" title="SA"></i>
-      </a>
-    </div>
+      <!-- Article license -->
+      <div class="article-license" title="See the license">
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0">
+          <i class="cc notranslate">Creative Commons Attribution 4.0 International License:</i>
+          <br>
+          <i class="fab fa-creative-commons notranslate" title="CC"></i>
+          <i class="fab fa-creative-commons-by notranslate" title="BY"></i>
+          <i class="fab fa-creative-commons-nc notranslate" title="NC"></i>
+          <i class="fab fa-creative-commons-sa notranslate" title="SA"></i>
+        </a>
+      </div>
 
-    <!-- Article contents -->
-    <div class="article-contents">
-      <button id="table-of-contents" class="btn btn-dark" title="See table of contents">
-        <b>See contents</b>
-      </button>
-      <div id="table-of-contents-container" style="display: none;"></div>
-    </div>
+      <!-- Article contents -->
+      <div class="article-contents">
+        <button id="table-of-contents" class="btn btn-dark" title="See table of contents">
+          <b>See contents</b>
+        </button>
+        <div id="table-of-contents-container" style="display: none;"></div>
+      </div>
 
-    <div class="markdown-body">
-      <p>The standard in force is mainly Afnor Standard Z 44-005, December 1987 (ISO 690). Here is a link of the website of the Ministry of Culture and Communication which presents in a synthetic way the standards in force for the writing of bibliographical references:</p>
+      <div class="markdown-body">
+        <p>The standard in force is mainly Afnor Standard Z 44-005, December 1987 (ISO 690). Here is a link of the website of the Ministry of Culture and Communication which presents in a synthetic way the standards in force for the writing of bibliographical references:</p>
 
 <p align="center">
   <a href="http://www.culture.gouv.fr/culture/inventai/telechar/normes.pdf">http://www.culture.gouv.fr/culture/inventai/telechar/normes.pdf</a>
@@ -491,26 +492,26 @@ window.MathJax = {
   <li><a href="http://www.bnf.fr">http://www.bnf.fr</a></li>
 </ul>
 
-    </div>
+      </div>
 
-    <div class="article-category-tags">
-      <ul>
-        <li>
-          <!-- Article category -->
-          <span>Category: </span>
-          <span class="article-category">
+      <div class="article-category-tags">
+        <ul>
+          <li>
+            <!-- Article category -->
+            <span>Category: </span>
+            <span class="article-category">
             <ul>
               <li title="Category of this article">Methodology</li>
             </ul>
           </span>
-        </li>
-        
-      </ul>
-    </div>
+          </li>
+          
+        </ul>
+      </div>
 
-    <div class="row">
-      <div class="col-6">
-        <div class="social-sharing">
+      <div class="row">
+        <div class="col-6">
+          <div class="social-sharing">
   <ul>
     <li title="Share page on LinkedIn">
       <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://glegoux.com/blog/articles/2019/02/14/how-to-quote-sources.html&amp;title=How%20to%20quote%20sources&amp;summary=Current%20standards%20and%20rules%20to%20respect%20in%20order%20to%20quote%20sources.&amp;source=https://glegoux.com">
@@ -552,115 +553,115 @@ window.MathJax = {
   }
 </style>
 
-      </div>
-      <div class="col-6 article-browser">
-        <a href="/blog/articles" title="See all articles">
-          <i class="fa fa-home"></i>
-        </a><a href="/blog/articles/2019/01/21/getting-started.html" title="See the previous article">
-          <i class="fa fa-arrow-left"></i>
-        </a><a href="/blog/articles/2019/03/01/access-to-a-computer-from-usb-key.html" title="See the next article">
-          <i class="fa fa-arrow-right"></i>
-        </a>
+        </div>
+        <div class="col-6 article-browser">
+          <a href="/blog/articles" title="See all articles">
+            <i class="fa fa-home"></i>
+          </a><a href="/blog/articles/2019/01/21/getting-started.html" title="See the previous article">
+            <i class="fa fa-arrow-left"></i>
+          </a><a href="/blog/articles/2019/03/01/access-to-a-computer-from-usb-key.html" title="See the next article">
+            <i class="fa fa-arrow-right"></i>
+          </a>
 </div>
+      </div>
+
+      <hr class="sep">
+
+      <!-- Article license -->
+      <div class="article-license" title="See the license">
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0">
+          <i class="cc notranslate">Creative Commons Attribution 4.0 International License:</i>
+          <br>
+          <i class="fab fa-creative-commons notranslate" title="CC"></i>
+          <i class="fab fa-creative-commons-by notranslate" title="BY"></i>
+          <i class="fab fa-creative-commons-nc notranslate" title="NC"></i>
+          <i class="fab fa-creative-commons-sa notranslate" title="SA"></i>
+        </a>
+      </div>
+
     </div>
 
-    <hr class="sep">
+    <!-- Article author(s) --><div class="article-authors">
+      <h5>
+        Author
+      </h5>
 
-    <!-- Article license -->
-    <div class="article-license" title="See the license">
-      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0">
-        <i class="cc notranslate">Creative Commons Attribution 4.0 International License:</i>
-        <br>
-        <i class="fab fa-creative-commons notranslate" title="CC"></i>
-        <i class="fab fa-creative-commons-by notranslate" title="BY"></i>
-        <i class="fab fa-creative-commons-nc notranslate" title="NC"></i>
-        <i class="fab fa-creative-commons-sa notranslate" title="SA"></i>
-      </a>
-    </div>
+      <hr>
 
-  </div>
-
-  <!-- Article author(s) --><div class="article-authors">
-    <h5>
-      Author
-    </h5>
-
-    <hr>
-
-    <div class="row">
-      <div class="w-100 col-xs-12">
-        <table class="article-author">
-          <tbody>
-          <tr>
-            <td rowspan="2">
+      <div class="row">
+        <div class="w-100 col-xs-12">
+          <table class="article-author">
+            <tbody>
+            <tr>
+              <td rowspan="2">
 <img src="/_static/authors/glegoux.jpg" alt="picture of glegoux" title="picture of this author">
-            </td>
-            <td>
-              <b>
-                Gilles
-                LEGOUX
-              </b>
-              (glegoux)
-            </td>
-          </tr>
+              </td>
+              <td>
+                <b>
+                  Gilles
+                  LEGOUX
+                </b>
+                (glegoux)
+              </td>
+            </tr>
 <tr>
-            <td>
+              <td>
               <span class="notranslate job">
               Software engineer <a href="https://github.com/Criteo" class="user-mention">@Criteo</a>
               </span>
-            </td>
-          </tr>
-          <tr>
-            <td colspan="2" style="text-align: center">
-              <a href="https://www.linkedin.com/in/gilleslegoux" title="Follow this author">
-                <br>
-                <button class="btn btn-dark">
-                  <b>Follow</b>
-                </button>
-              </a>
-            </td>
-          </tr>
-          </tbody>
-        </table>
-      </div>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" style="text-align: center">
+                <a href="https://www.linkedin.com/in/gilleslegoux" title="Follow this author">
+                  <br>
+                  <button class="btn btn-dark">
+                    <b>Follow</b>
+                  </button>
+                </a>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
 </div>
-  </div>
+    </div>
 <!-- Other articles -->
-  <div class="article-others">
-    <h5>Also read</h5>
+    <div class="article-others no-print">
+      <h5>Also read</h5>
 
-    <div class="row">
-<a href="/blog/articles/2019/11/29/gafa-vs-batx.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
+      <div class="row">
+<a href="/blog/articles/2020/03/04/development-environment.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 
       <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/posts/2019-11-29-gafa-vs-batx.jpg" alt="2019-11-29-gafa-vs-batx">
+        <img class="img-fluid lazyload" data-src="/_static/posts/2020-03-04-development-environment.jpg" alt="2020-03-04-development-environment">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          Gafa vs Batx
+          Development Environment
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          What is the difference?
+          Why isolate its development environment?
         </div>
 
         <!-- Article categories -->
         <div class="article-category">
           <ul>
-            <li>Business</li>
+            <li>Working environment</li>
           </ul>
         </div>
 
         <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>November 29, 2019</span>
+          <span>March 04, 2020</span>
         </div>
         <!-- Article reading time -->
         <div class="reading-time">
@@ -714,37 +715,37 @@ window.MathJax = {
     </div>
 </div>
 
-</a><a href="/blog/articles/2020/08/24/geo-location.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
+</a><a href="/blog/articles/2020/05/04/java-ecosystem.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 
       <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/posts/2020-08-24-geo-location.jpg" alt="2020-08-24-geo-location">
+        <img class="img-fluid lazyload" data-src="/_static/posts/2020-05-04-java-ecosystem.jpg" alt="2020-05-04-java-ecosystem">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          Geo-location
+          Java ecosystem
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          How to compute the distance between 2 points with given latitude and longitude?
+          What is the Java ecosystem from Sun to Oracle?
         </div>
 
         <!-- Article categories -->
         <div class="article-category">
           <ul>
-            <li>Maths</li>
+            <li>Software</li>
           </ul>
         </div>
 
         <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>August 24, 2020</span>
+          <span>May 04, 2020</span>
         </div>
         <!-- Article reading time -->
         <div class="reading-time">
@@ -759,19 +760,20 @@ window.MathJax = {
 </a>
 </div>
 
-    <div class="article-list-all">
-      <a href="/blog/articles/">
-        <button class="btn btn-dark" title="List all articles">
-          <b>List all</b>
-        </button>
-      </a>
+      <div class="article-list-all no-print">
+        <a href="/blog/articles/">
+          <button class="btn btn-dark" title="List all articles">
+            <b>List all</b>
+          </button>
+        </a>
+      </div>
     </div>
   </div>
 
 </div>
 
       <!-- Disqus -->
-<div class="comments col-12">
+<div class="comments col-12 no-print">
   <h5>Comments</h5>
 
   <div id="disqus_thread"></div>
@@ -796,7 +798,7 @@ window.MathJax = {
     </div>
   </div>
 
-  <footer>
+  <footer class="no-print">
     <div class="container">
   <div class="row">
     <div class="contact col-md-4 col-12">
@@ -944,7 +946,7 @@ window.MathJax = {
   </footer>
 
   <!-- Go Top -->
-<div id="goto-top" style="display:none;">
+<div id="goto-top" class="no-print" style="display:none;">
   <a href="#" class="fas fa-arrow-up" title="Go to top page"></a>
 </div>
 
