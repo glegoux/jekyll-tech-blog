@@ -92,12 +92,54 @@ window.MathJax = {
 </head>
 
 <body>
-<div id="original-lang" style="display: none;">
-  Translates from English
-</div>
 
-<header>
-  <div class="flex-container">
+<!-- No Script -->
+<noscript>
+  <style type="text/css">
+    div#blog {
+      display: none;
+    }
+
+    .noscript {
+      text-align: center;
+    }
+  </style>
+</noscript>
+
+<noscript><p></p></noscript>
+
+<noscript class="noscript">
+  <p>
+    <img class="img-fluid" src="/_static/config/img/site-logo.png" alt="site logo">
+    
+  </p>
+</noscript>
+
+<noscript class="noscript">
+  <p>
+    <u><a href="https://glegoux.com">https://glegoux.com</a></u>
+  </p>
+</noscript>
+<noscript class="noscript">
+  <p>
+    Oops, JavaScript is unsupported or is disabled on this page.
+  </p>
+</noscript>
+
+<noscript class="noscript">
+  <p>
+    Please activate it, to use this web application.
+  </p>
+</noscript>
+
+
+<div id="blog">
+  <div id="original-lang" style="display: none;">
+    Translates from English
+  </div>
+
+  <header>
+    <div class="flex-container">
   <!-- Name -->
   <div id="name">
     <a href="/" title="Go to the home page">
@@ -108,7 +150,7 @@ window.MathJax = {
   <!-- Logo -->
   <div id="logo" class="d-none d-lg-block">
     <a href="/" aria-label="Logo" title="Go to the home page">
-      <img class="img-fluid lazyload" data-src="/_static/config/img/site-logo.png" aria-label="site logo" alt="site logo">
+      <img class="img-fluid lazyload" data-src="/_static/config/img/site-logo.png" alt="site logo">
     </a>
   </div>
   
@@ -159,11 +201,11 @@ window.MathJax = {
   </div>
 </div>
 
-</header>
+  </header>
 
-<div id="content" class="container">
-  <div class="row">
-    <!-- Loader -->
+  <div id="content" class="container">
+    <div class="row">
+      <!-- Loader -->
 <div id="loader">
   <div id="loader-inner">
     <!-- Loader image -->
@@ -214,7 +256,7 @@ window.MathJax = {
 
 
 
-    <div id="page-contact">
+      <div id="page-contact">
 
   <div class="row">
     <div class="col-lg-6">
@@ -309,12 +351,12 @@ window.MathJax = {
   </p>
 </div>
 
-    
+      
+    </div>
   </div>
-</div>
 
-<footer>
-  <div class="container">
+  <footer>
+    <div class="container">
   <div class="row">
     <div class="contact col-md-4 col-12">
       <table>
@@ -458,9 +500,9 @@ window.MathJax = {
 
 </div>
 
-</footer>
+  </footer>
 
-<!-- Go Top -->
+  <!-- Go Top -->
 <div id="goto-top" style="display:none;">
   <a href="#" class="fas fa-arrow-up" title="Go to top page"></a>
 </div>
@@ -781,6 +823,9 @@ window.MathJax = {
     display: none !important;
   }
 </style> 
+
+</div>
+
 </body>
 
 </html>

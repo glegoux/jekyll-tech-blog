@@ -96,12 +96,54 @@ window.MathJax = {
 </head>
 
 <body>
-<div id="original-lang" style="display: none;">
-  Translates from English
-</div>
 
-<header>
-  <div class="flex-container">
+<!-- No Script -->
+<noscript>
+  <style type="text/css">
+    div#blog {
+      display: none;
+    }
+
+    .noscript {
+      text-align: center;
+    }
+  </style>
+</noscript>
+
+<noscript><p></p></noscript>
+
+<noscript class="noscript">
+  <p>
+    <img class="img-fluid" src="/_static/config/img/site-logo.png" alt="site logo">
+    
+  </p>
+</noscript>
+
+<noscript class="noscript">
+  <p>
+    <u><a href="https://glegoux.com">https://glegoux.com</a></u>
+  </p>
+</noscript>
+<noscript class="noscript">
+  <p>
+    Oops, JavaScript is unsupported or is disabled on this page.
+  </p>
+</noscript>
+
+<noscript class="noscript">
+  <p>
+    Please activate it, to use this web application.
+  </p>
+</noscript>
+
+
+<div id="blog">
+  <div id="original-lang" style="display: none;">
+    Translates from English
+  </div>
+
+  <header>
+    <div class="flex-container">
   <!-- Name -->
   <div id="name">
     <a href="/" title="Go to the home page">
@@ -112,7 +154,7 @@ window.MathJax = {
   <!-- Logo -->
   <div id="logo" class="d-none d-lg-block">
     <a href="/" aria-label="Logo" title="Go to the home page">
-      <img class="img-fluid lazyload" data-src="/_static/config/img/site-logo.png" aria-label="site logo" alt="site logo">
+      <img class="img-fluid lazyload" data-src="/_static/config/img/site-logo.png" alt="site logo">
     </a>
   </div>
   
@@ -163,11 +205,11 @@ window.MathJax = {
   </div>
 </div>
 
-</header>
+  </header>
 
-<div id="content" class="container">
-  <div class="row">
-    <!-- Loader -->
+  <div id="content" class="container">
+    <div class="row">
+      <!-- Loader -->
 <div id="loader">
   <div id="loader-inner">
     <!-- Loader image -->
@@ -218,7 +260,7 @@ window.MathJax = {
 
 
 
-    <div id="page-article" class="col-12">
+      <div id="page-article" class="col-12">
 
   <!-- Article metadata -->
   <div class="article-metadata">
@@ -589,6 +631,48 @@ Particularly, you can:</p>
     </div>
 </div>
 
+</a><a href="/blog/articles/2019/01/21/getting-started.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
+    <!-- Article metadata -->
+    <div class="article-card">
+
+      <!-- Article cover --><div class="article-cover">
+        <img class="img-fluid lazyload" data-src="/_static/posts/2019-01-21-getting-started.jpg" alt="2019-01-21-getting-started">
+      </div>
+
+      <!-- Article details -->
+      <div class="article-details">
+        <!-- Article title -->
+        <div class="article-title">
+          Getting Started
+        </div>
+
+        <!-- Article description -->
+        <div class="article-description">
+          Markdown is a easy-to-use syntax for writing text on this blog.
+        </div>
+
+        <!-- Article categories -->
+        <div class="article-category">
+          <ul>
+            <li>Methodology</li>
+          </ul>
+        </div>
+
+        <!-- Article publication date -->
+        <div class="date">
+          <i class="far fa-calendar-alt"></i>
+          <span>January 21, 2019</span>
+        </div>
+        <!-- Article reading time -->
+        <div class="reading-time">
+          <i class="far fa-clock"></i>
+          <span>10 min</span>
+        </div>
+      </div>
+
+    </div>
+</div>
+
 </a><a href="/blog/articles/2020/08/24/geo-location.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
@@ -631,48 +715,6 @@ Particularly, you can:</p>
     </div>
 </div>
 
-</a><a href="/blog/articles/2019/11/29/gafa-vs-batx.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
-    <!-- Article metadata -->
-    <div class="article-card">
-
-      <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/posts/2019-11-29-gafa-vs-batx.jpg" alt="2019-11-29-gafa-vs-batx">
-      </div>
-
-      <!-- Article details -->
-      <div class="article-details">
-        <!-- Article title -->
-        <div class="article-title">
-          Gafa vs Batx
-        </div>
-
-        <!-- Article description -->
-        <div class="article-description">
-          What is the difference?
-        </div>
-
-        <!-- Article categories -->
-        <div class="article-category">
-          <ul>
-            <li>Business</li>
-          </ul>
-        </div>
-
-        <!-- Article publication date -->
-        <div class="date">
-          <i class="far fa-calendar-alt"></i>
-          <span>November 29, 2019</span>
-        </div>
-        <!-- Article reading time -->
-        <div class="reading-time">
-          <i class="far fa-clock"></i>
-          <span>5 min</span>
-        </div>
-      </div>
-
-    </div>
-</div>
-
 </a>
 </div>
 
@@ -687,7 +729,7 @@ Particularly, you can:</p>
 
 </div>
 
-    <!-- Disqus -->
+      <!-- Disqus -->
 <div class="comments col-12">
   <h5>Comments</h5>
 
@@ -710,11 +752,11 @@ Particularly, you can:</p>
     powered by Disqus.</a>
 </noscript>
 </div>
+    </div>
   </div>
-</div>
 
-<footer>
-  <div class="container">
+  <footer>
+    <div class="container">
   <div class="row">
     <div class="contact col-md-4 col-12">
       <table>
@@ -858,9 +900,9 @@ Particularly, you can:</p>
 
 </div>
 
-</footer>
+  </footer>
 
-<!-- Go Top -->
+  <!-- Go Top -->
 <div id="goto-top" style="display:none;">
   <a href="#" class="fas fa-arrow-up" title="Go to top page"></a>
 </div>
@@ -1181,6 +1223,9 @@ Particularly, you can:</p>
     display: none !important;
   }
 </style> 
+
+</div>
+
 </body>
 
 </html>
