@@ -85,6 +85,14 @@ layout: default
           </a>
         </li>
         {%- endif -%}
+        {%- if config_article.issue.url -%}
+        <li title="Report an issue on this article">
+          <a href="{{ config_article.issue.url }}">
+            <i class="fas fa-exclamation-circle"></i>
+            Issue
+          </a>
+        </li>
+        {%- endif -%}
       </ul>
     </div>
 

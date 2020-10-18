@@ -83,6 +83,8 @@ project:
       url: "https://raw.githubusercontent.com/glegoux/jekyll-blog/develop/src/_posts"
     resources:
       url: "https://github.com/glegoux/articles-glegoux-com/tree/master/articles"
+    issue:
+      url: "https://github.com/glegoux/jekyll-blog/pulls"
     edit:
       url: "https://github.com/glegoux/jekyll-blog/edit/develop/src/_posts/"
     static:
