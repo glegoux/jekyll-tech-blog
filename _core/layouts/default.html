@@ -25,6 +25,10 @@
     {% include header.html %}
   </header>
 
+  {%- if jekyll.environment == 'development' -%}
+  {% include banner-dev.html %}
+  {%- endif %}
+
   <div id="content" class="container">
     <div class="row">
       {% include loader.html %}
