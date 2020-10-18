@@ -1,4 +1,4 @@
-{%- assign blog_config = site.project.blog -%}
+{%- assign config_blog = site.project.blog -%}
 <!DOCTYPE html>
 <html lang="{{ site.lang }}">
 
@@ -11,32 +11,39 @@
 
 <body>
 
-{%- if blog_config.lang.header_text %}
-<div id="original-lang" style="display: none;">
-  {{ blog_config.lang.header_text }}
-</div>
-{%- endif %}
+{% include no-script.html %}
 
-<header>
-  {% include header.html %}
-</header>
+<div id="blog">
 
-<div id="content" class="container">
-  <div class="row">
-    {% include loader.html %}
-    {{ content }}
-    {% include disqus.html %}
+  {%- if config_blog.lang.header_text %}
+  <div id="original-lang" style="display: none;">
+    {{ config_blog.lang.header_text }}
   </div>
+  {%- endif %}
+
+  <header>
+    {% include header.html %}
+  </header>
+
+  <div id="content" class="container">
+    <div class="row">
+      {% include loader.html %}
+      {{ content }}
+      {% include disqus.html %}
+    </div>
+  </div>
+
+  <footer>
+    {% include footer.html %}
+  </footer>
+
+  {% include go-to-top.html %}
+
+  {%- if config_blog.google_analytics_code %} {% include google-analytics.html %} {% endif %}
+  {%- if config_blog.lang %} {% include google-translate.html %} {% endif %}
+
 </div>
 
-<footer>
-  {% include footer.html %}
-</footer>
-
-{% include go-to-top.html %}
-
-{%- if blog_config.google_analytics_code %} {% include google-analytics.html %} {% endif %}
-{%- if blog_config.lang %} {% include google-translate.html %} {% endif %}
 </body>
 
 </html>
