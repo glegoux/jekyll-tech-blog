@@ -107,8 +107,8 @@ window.MathJax = {
   
   <!-- Logo -->
   <div id="logo" class="d-none d-lg-block">
-    <a href="/" title="Go to the home page">
-      <img class="img-fluid lazyload" data-src="/_static/config/img/site-logo.png" alt="site logo">
+    <a href="/" aria-label="Logo" title="Go to the home page">
+      <img class="img-fluid lazyload" data-src="/_static/config/img/site-logo.png" aria-label="site logo" alt="site logo">
     </a>
   </div>
   
@@ -149,11 +149,9 @@ window.MathJax = {
 </div>
 
 <!-- Menu for small screen -->
-<a href="javascript:void(0);" style="display: block">
-  <div id="menu-icon" class="d-lg-none">
-    <i class="fa fa-bars"></i>
-  </div>
-</a>
+<div id="menu-icon" class="d-lg-none">
+  <i class="fa fa-bars"></i>
+</div>
 
 <div id="sidebar-overlay" style="display: none">
   <div id="sidebar">
@@ -231,24 +229,24 @@ window.MathJax = {
 
   <!-- Articles advanced search -->
   <div id="articles-text-search">
-    <a href="javascript:void(0);" title="Launch a search articles">
+    <span title="Launch a search articles">
       <i class="fa fa-search"></i>
-    </a>
+    </span>
     <input placeholder="Search articles ..." type="text" title="Type your search">
   </div>
 
   <ul class="articles-advanced-search">
     <li class="articles-categories-button" title="Search an article by category">
       <i class="fa fa-tags" aria-hidden="true"></i>
-      <a href="javascript:void(0);" class="link-strong">
+      <span class="link-strong">
         Categories
-      </a>
+      </span>
     </li>
     <li class="articles-archive-button" title="Search an article by published date">
-      <a href="javascript:void(0);" class="link-strong">
+      <span class="link-strong">
         <i class="fa fa-archive" aria-hidden="true"></i>
         Archives
-      </a>
+      </span>
     </li>
   </ul>
 
