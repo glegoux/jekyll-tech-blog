@@ -10,8 +10,8 @@ host="${2:-http://localhost:4000}"
 
 if [[ "${option}" == "--keys" ]]; then
   echo >&2 "INFO: Show the keys of the config, do '$0 site.<key>' to see the value of this related config"
-  curl -sS -X GET "${host}/config.json" | jq .site | jq keys
+  curl -sS -f -X GET "${host}/config.json" | jq .site | jq keys
 else
   echo >&2 "INFO: Show the config related to this key ${option} if it exists"
-  curl -sS -X GET "${host}/config.json" | jq ".${option}"
+  curl -sS -f -X GET "${host}/config.json" | jq ".${option}"
 fi
