@@ -58,10 +58,14 @@
 <!-- Third-party JS -->
 <script type="text/javascript" src="/_core/static/libs/jquery/3.5.1/js/jquery.min.js"></script>
 <script type="text/javascript" src="/_core/static/libs/lazysizes/5.2.0/js/lazysizes.min.js"></script>
-<script type="text/javascript" src='/_core/static/libs/mathjax/2.7.7/js/MathJax.js?config=TeX-MML-AM_CHTML'></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}});
+<script type="text/javascript">
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
 </script>
+<script type="text/javascript" src='/_core/static/libs/mathjax/3.1.2/js/tex-chtml.min.js'></script>
 <script type="text/javascript" src="/_core/static/js/main.js"></script>
 <!-- Load after DOMContentLoaded -->
 <!-- Third-party JS -->
@@ -1264,10 +1268,7 @@
 
         setTimeout(function () {
             // wait for the execution of MathJax
-            for (const jax of MathJax.Hub.getAllJax()) {
-                jax.SourceElement().previousSibling.classList.add("notranslate");
-            }
-            $(".highlight").addClass("notranslate");
+            $("mjx-container").addClass("notranslate");
         }, 1000);
 
     });
