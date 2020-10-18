@@ -11,8 +11,8 @@
   {%- if config_blog.logo_header %}
   <!-- Logo -->
   <div id="logo" class="d-none d-lg-block">
-    <a href="/" title="Go to the home page">
-      <img class="img-fluid lazyload" data-src="{{ config_blog.logo_header }}" alt="site logo"/>
+    <a href="/" aria-label="Logo" title="Go to the home page">
+      <img class="img-fluid lazyload" data-src="{{ config_blog.logo_header }}" aria-label="site logo" alt="site logo"/>
     </a>
   </div>
   {% endif %}
@@ -38,11 +38,9 @@
 </div>
 
 <!-- Menu for small screen -->
-<a href="javascript:void(0);" style="display: block">
-  <div id="menu-icon" class="d-lg-none">
-    <i class="fa fa-bars"></i>
-  </div>
-</a>
+<div id="menu-icon" class="d-lg-none">
+  <i class="fa fa-bars"></i>
+</div>
 
 <div id="sidebar-overlay" style="display: none">
   <div id="sidebar">
