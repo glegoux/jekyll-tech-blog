@@ -776,44 +776,43 @@ body {
   /* Language */
 
   .highlighter-rouge.language-bash::before {
-    text-align: right;
-    content: "bash " url("/_static/site/img/language/bash.png");
+    content: "bash " url("/_core/static/img/language/bash.png");
   }
 
   .highlighter-rouge.language-java::before {
-    content: "java " url("/_static/site/img/language/java.png");
+    content: "java " url("/_core/static/img/language/java.png");
   }
 
   .highlighter-rouge.language-python::before {
-    content: "python " url("/_static/site/img/language/python.png");
+    content: "python " url("/_core/static/img/language/python.png");
   }
 
   .highlighter-rouge.language-sql::before {
-    content: "sql " url("/_static/site/img/language/sql.png");
+    content: "sql " url("/_core/static/img/language/sql.png");
   }
 
   .highlighter-rouge.language-scala:before {
-    content: "scala " url("/_static/site/img/language/scala.png");
+    content: "scala " url("/_core/static/img/language/scala.png");
   }
 
   .highlighter-rouge.language-javascript::before {
-    content: "javascript " url("/_static/site/img/language/javascript.png");
+    content: "javascript " url("/_core/static/img/language/javascript.png");
   }
 
   .highlighter-rouge.language-go::before {
-    content: "go " url("/_static/site/img/language/go.png");
+    content: "go " url("/_core/static/img/language/go.png");
   }
 
   .highlighter-rouge.language-ruby::before {
-    content: "ruby " url("/_static/site/img/language/ruby.png");
+    content: "ruby " url("/_core/static/img/language/ruby.png");
   }
 
   .highlighter-rouge.language-html::before {
-    content: "html " url("/_static/site/img/language/html.png");
+    content: "html " url("/_core/static/img/language/html.png");
   }
 
   .highlighter-rouge.language-css::before {
-    content: "css " url("/_static/site/img/language/css.png");
+    content: "css " url("/_core/static/img/language/css.png");
   }
 
   /* Format text file */

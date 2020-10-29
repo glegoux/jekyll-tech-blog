@@ -133,14 +133,16 @@ Source code:
 
 ## Links
 
-Simple link (works with absolute and relative link):
+It works with absolute and relative link:
 
-[Google](https://www.google.com)
+A simple link: [Google](https://www.google.com).
 
 Source code:
 ~~~
 [Google](https://www.google.com)
 ~~~
+
+A simple link: [Google](https://www.google.com "Google's Homepage") with title `Google's Homepage`.
 
 Source code:
 ~~~
@@ -258,6 +260,19 @@ Source code:
 <pre>
 ~~~ java 
 System.out.println("Hello world!");
+~~~
+</pre>
+
+### <span class="notranslate">Scala</span>
+
+~~~ scala 
+println("Hello world!")
+~~~
+
+Source code:
+<pre>
+~~~ scala 
+println("Hello world!")
 ~~~
 </pre>
 
@@ -437,20 +452,26 @@ Source code:
 $\int_0^1 x^2dx = \frac{1}{3}$
 ~~~
 
+:warning: It is a conflict with the dollar symbol, use the html code for that `&#36;`, that gives you &#36;.
+
 ## Multiline formula
 
-This formula is multiline:
+This formula is multiline and centered:
 
 $$
+\displaylines{
 \int_0^1 xdx = \frac{1}{2} \\
-\int_0^1 x^2dx = \frac{1}{3} 
+\int_0^1 x^2dx = \frac{1}{3}
+}
 $$
 
 Source code:
 ~~~
 $$
+\displaylines{
 \int_0^1 xdx = \frac{1}{2} \\
 \int_0^1 x^2dx = \frac{1}{3} 
+}
 $$
 ~~~
 
