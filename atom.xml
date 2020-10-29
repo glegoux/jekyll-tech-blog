@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2020-10-18T17:52:32+00:00</updated>
+ <updated>2020-10-29T07:53:04+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -1325,7 +1325,7 @@ Linus Torvalds, creator of the Linux operating system
 
 &lt;h2 id=&quot;emoticon&quot;&gt;Emoticon&lt;/h2&gt;
 
-&lt;p&gt;Use &lt;a href=&quot;https://www.webpagefx.com/tools/emoji-cheat-sheet/&quot;&gt;emoji&lt;/a&gt; :&lt;/p&gt;
+&lt;p&gt;Use emoji, see &lt;a href=&quot;https://emojipedia.org/github/&quot;&gt;emojipedia.org&lt;/a&gt; :&lt;/p&gt;
 
 &lt;p&gt;:smile: :scream: :yum:&lt;/p&gt;
 
@@ -1604,7 +1604,7 @@ message=&quot;Hello World!&quot;
 
 &lt;h1 id=&quot;mathematics-formula&quot;&gt;Mathematics Formula&lt;/h1&gt;
 
-&lt;p&gt;Use LateX syntax, see https://www.latex-project.org .&lt;/p&gt;
+&lt;p&gt;Use LateX syntax, see &lt;a href=&quot;https://www.latex-project.org&quot;&gt;latex-project.org&lt;/a&gt; .&lt;/p&gt;
 
 &lt;h2 id=&quot;inline-formula&quot;&gt;Inline formula&lt;/h2&gt;
 
