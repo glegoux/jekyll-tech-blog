@@ -122,7 +122,7 @@ Linus Torvalds, creator of the Linux operating system
 
 ## Emoticon
 
-Use [emoji](https://www.webpagefx.com/tools/emoji-cheat-sheet/) :
+Use emoji, see [emojipedia.org](https://emojipedia.org/github/) :
 
 :smile: :scream: :yum:
 
@@ -426,7 +426,7 @@ message="Hello World!"
 
 # Mathematics Formula
 
-Use LateX syntax, see https://www.latex-project.org .
+Use LateX syntax, see [latex-project.org](https://www.latex-project.org) .
 
 ## Inline formula
 
