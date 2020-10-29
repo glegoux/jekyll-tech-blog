@@ -550,13 +550,15 @@ Linus Torvalds, creator of the Linux operating system
 
 <h2 id="links">Links</h2>
 
-<p>Simple link (works with absolute and relative link):</p>
+<p>It works with absolute and relative link:</p>
 
-<p><a href="https://www.google.com">Google</a></p>
+<p>A simple link: <a href="https://www.google.com">Google</a>.</p>
 
 <p>Source code:</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Google](https://www.google.com)
 </code></pre></div></div>
+
+<p>A simple link: <a href="https://www.google.com" title="Google's Homepage">Google</a> with title <code class="language-plaintext highlighter-rouge">Google's Homepage</code>.</p>
 
 <p>Source code:</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Google](https://www.google.com "Google's Homepage")
@@ -663,6 +665,18 @@ print("Hello world!")
 <pre>
 ~~~ java 
 System.out.println("Hello world!");
+~~~
+</pre>
+
+<h3 id="scala"><span class="notranslate">Scala</span></h3>
+
+<div class="language-scala highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">println</span><span class="o">(</span><span class="s">"Hello world!"</span><span class="o">)</span>
+</code></pre></div></div>
+
+<p>Source code:</p>
+<pre>
+~~~ scala 
+println("Hello world!")
 ~~~
 </pre>
 
@@ -829,17 +843,23 @@ message="Hello World!"
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$\int_0^1 x^2dx = \frac{1}{3}$
 </code></pre></div></div>
 
+<p><img class="emoji" title=":warning:" alt=":warning:" src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png" height="20" width="20"> It is a conflict with the dollar symbol, use the html code for that <code class="language-plaintext highlighter-rouge">&amp;#36;</code>, that gives you $.</p>
+
 <h2 id="multiline-formula">Multiline formula</h2>
 
-<p>This formula is multiline:</p>
+<p>This formula is multiline and centered:</p>
 
-\[\int_0^1 xdx = \frac{1}{2} \\
-\int_0^1 x^2dx = \frac{1}{3}\]
+\[\displaylines{
+\int_0^1 xdx = \frac{1}{2} \\
+\int_0^1 x^2dx = \frac{1}{3}
+}\]
 
 <p>Source code:</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$$
+\displaylines{
 \int_0^1 xdx = \frac{1}{2} \\
 \int_0^1 x^2dx = \frac{1}{3} 
+}
 $$
 </code></pre></div></div>
 
@@ -993,37 +1013,37 @@ $$
     <h5>Also read</h5>
 
     <div class="row">
-<a href="/blog/articles/2019/03/23/kerberos-in-5-minutes.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
+<a href="/blog/articles/2019/11/29/gafa-vs-batx.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 
       <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/posts/2019-03-23-kerberos-in-5-minutes.jpg" alt="2019-03-23-kerberos-in-5-minutes">
+        <img class="img-fluid lazyload" data-src="/_static/posts/2019-11-29-gafa-vs-batx.jpg" alt="2019-11-29-gafa-vs-batx">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          Kerberos in 5 minutes
+          Gafa vs Batx
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          Kerberos is an authentication protocol for trusted hosts on untrusted networks.
+          What is the difference?
         </div>
 
         <!-- Article categories -->
         <div class="article-category">
           <ul>
-            <li>Security</li>
+            <li>Business</li>
           </ul>
         </div>
 
         <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>March 23, 2019</span>
+          <span>November 29, 2019</span>
         </div>
         <!-- Article reading time -->
         <div class="reading-time">
@@ -1035,66 +1055,24 @@ $$
     </div>
 </div>
 
-</a><a href="/blog/articles/2020/05/15/gnu-privacy-guard.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
+</a><a href="/blog/articles/2019/07/14/trace-a-request-path.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 
       <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/posts/2020-05-15-gnu-privacy-guard.jpg" alt="2020-05-15-gnu-privacy-guard">
+        <img class="img-fluid lazyload" data-src="/_static/posts/2019-07-14-trace-a-request-path.jpg" alt="2019-07-14-trace-a-request-path">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          GNU Privacy Guard
+          Trace a request path
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          How to prove its identity and encrypt its communication?
-        </div>
-
-        <!-- Article categories -->
-        <div class="article-category">
-          <ul>
-            <li>Security</li>
-          </ul>
-        </div>
-
-        <!-- Article publication date -->
-        <div class="date">
-          <i class="far fa-calendar-alt"></i>
-          <span>May 15, 2020</span>
-        </div>
-        <!-- Article reading time -->
-        <div class="reading-time">
-          <i class="far fa-clock"></i>
-          <span>5 min</span>
-        </div>
-      </div>
-
-    </div>
-</div>
-
-</a><a href="/blog/articles/2019/04/01/lighthouse.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
-    <!-- Article metadata -->
-    <div class="article-card">
-
-      <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/posts/2019-04-01-lighthouse.jpg" alt="2019-04-01-lighthouse">
-      </div>
-
-      <!-- Article details -->
-      <div class="article-details">
-        <!-- Article title -->
-        <div class="article-title">
-          Lighthouse
-        </div>
-
-        <!-- Article description -->
-        <div class="article-description">
-          Lighthouse is an open-source, automated tool for improving the quality of web pages.
+          How to know for which routers a HTTP request browses?
         </div>
 
         <!-- Article categories -->
@@ -1107,7 +1085,49 @@ $$
         <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>April 01, 2019</span>
+          <span>July 14, 2019</span>
+        </div>
+        <!-- Article reading time -->
+        <div class="reading-time">
+          <i class="far fa-clock"></i>
+          <span>5 min</span>
+        </div>
+      </div>
+
+    </div>
+</div>
+
+</a><a href="/blog/articles/2020/05/04/java-ecosystem.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
+    <!-- Article metadata -->
+    <div class="article-card">
+
+      <!-- Article cover --><div class="article-cover">
+        <img class="img-fluid lazyload" data-src="/_static/posts/2020-05-04-java-ecosystem.jpg" alt="2020-05-04-java-ecosystem">
+      </div>
+
+      <!-- Article details -->
+      <div class="article-details">
+        <!-- Article title -->
+        <div class="article-title">
+          Java ecosystem
+        </div>
+
+        <!-- Article description -->
+        <div class="article-description">
+          What is the Java ecosystem from Sun to Oracle?
+        </div>
+
+        <!-- Article categories -->
+        <div class="article-category">
+          <ul>
+            <li>Software</li>
+          </ul>
+        </div>
+
+        <!-- Article publication date -->
+        <div class="date">
+          <i class="far fa-calendar-alt"></i>
+          <span>May 04, 2020</span>
         </div>
         <!-- Article reading time -->
         <div class="reading-time">
