@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2020-10-29T09:15:42+00:00</updated>
+ <updated>2020-11-14T21:16:37+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -1207,10 +1207,9 @@ Beware the morality of this article is that a person physically accessing your c
    <updated>2019-01-21T00:00:00+00:00</updated>
    <id>https://glegoux.com/blog/articles/2019/01/21/getting-started.html</id>
    <content type="html">&lt;p&gt;&lt;a href=&quot;https://daringfireball.net/projects/markdown/&quot;&gt;Markdown&lt;/a&gt; is a lightweight and popular text metalanguage which is a writing standard for scientists 
-with extension &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.md&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.markdown&lt;/code&gt;.&lt;br /&gt;
-It is often converted into HTML what allows it to be easily shared on the web :spider_web:.&lt;/p&gt;
+with extension &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.md&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.markdown&lt;/code&gt;. It is often converted into HTML what allows it to be easily shared on the web :spider_web:.&lt;/p&gt;
 
-&lt;p&gt;After the matching HTML text can be decorate and animate by CSS style sheet and/or JS script:&lt;/p&gt;
+&lt;p&gt;After the conversion to a HTML text, it is decorated and animated by CSS style sheets and/or JS scripts:&lt;/p&gt;
 
 &lt;figure&gt;
   &lt;div&gt;
@@ -1219,7 +1218,8 @@ It is often converted into HTML what allows it to be easily shared on the web :s
   &lt;figcaption&gt;Markdown processor&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;Discover the Markdown syntax used on this blog and more generally on the web.&lt;/p&gt;
+&lt;p&gt;Discover the Markdown syntax used on this blog and more generally on the web.
+More precisely on this blog, a superset of Markdown is used and called &lt;a href=&quot;https://kramdown.gettalong.org/&quot;&gt;Kramdown&lt;/a&gt;, the syntax is available &lt;a href=&quot;https://kramdown.gettalong.org/syntax.html&quot;&gt;here&lt;/a&gt;. Each following section gives an overview and examples for each usage.&lt;/p&gt;
 
 &lt;h1 id=&quot;text&quot;&gt;Text&lt;/h1&gt;
 
@@ -1337,13 +1337,28 @@ Linus Torvalds, creator of the Linux operating system
 
 &lt;p&gt;It works with absolute and relative link:&lt;/p&gt;
 
-&lt;p&gt;A simple link: &lt;a href=&quot;https://www.google.com&quot;&gt;Google&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;An simple link:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.google.com&quot;&gt;https://www.google.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;https://www.google.com&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A link with a name: &lt;a href=&quot;https://www.google.com&quot;&gt;Google&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;Source code:&lt;/p&gt;
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[Google](https://www.google.com)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;A simple link: &lt;a href=&quot;https://www.google.com&quot; title=&quot;Google's Homepage&quot;&gt;Google&lt;/a&gt; with title &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Google's Homepage&lt;/code&gt;.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;A link with a name and a title: &lt;a href=&quot;https://www.google.com&quot; title=&quot;Google's Homepage&quot;&gt;Google&lt;/a&gt; with title &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Google's Homepage&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;Source code:&lt;/p&gt;
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[Google](https://www.google.com &quot;Google's Homepage&quot;)
