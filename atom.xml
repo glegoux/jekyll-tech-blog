@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2020-11-14T21:16:37+00:00</updated>
+ <updated>2020-11-14T21:24:47+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -1338,7 +1338,7 @@ Linus Torvalds, creator of the Linux operating system
 &lt;p&gt;It works with absolute and relative link:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;An simple link:&lt;/li&gt;
+  &lt;li&gt;A simple link:&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.google.com&quot;&gt;https://www.google.com&lt;/a&gt;&lt;/p&gt;
