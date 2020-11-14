@@ -8,15 +8,15 @@ tags: ["Markdown"]
 ---
 
 [Markdown](https://daringfireball.net/projects/markdown/) is a lightweight and popular text metalanguage which is a writing standard for scientists 
-with extension `.md` or `.markdown`.  
-It is often converted into HTML what allows it to be easily shared on the web :spider_web:.
+with extension `.md` or `.markdown`. It is often converted into HTML what allows it to be easily shared on the web :spider_web:.
 
-After the matching HTML text can be decorate and animate by CSS style sheet and/or JS script: 
+After the conversion to a HTML text, it is decorated and animated by CSS style sheets and/or JS scripts: 
 
 {% include article-google-drawing.html title="Markdown processor"
 src="https://docs.google.com/drawings/d/e/2PACX-1vRPwfUjnj6bT9B-M4jdzQqOICzCwblxYR5xvgiXYWrpcgpmFddbWR-ErodWf-U0rE8f0aqzUfazXvf8/pub?w=960&amp;h=267" %}
 
 Discover the Markdown syntax used on this blog and more generally on the web.
+More precisely on this blog, a superset of Markdown is used and called [Kramdown](https://kramdown.gettalong.org/), the syntax is available [here](https://kramdown.gettalong.org/syntax.html). Each following section gives an overview and examples for each usage.
 
 # Text
 
@@ -135,14 +135,24 @@ Source code:
 
 It works with absolute and relative link:
 
-A simple link: [Google](https://www.google.com).
+* An simple link:
+
+<https://www.google.com>
+
+Source code:
+
+~~~
+<https://www.google.com>
+~~~
+
+* A link with a name: [Google](https://www.google.com).
 
 Source code:
 ~~~
 [Google](https://www.google.com)
 ~~~
 
-A simple link: [Google](https://www.google.com "Google's Homepage") with title `Google's Homepage`.
+* A link with a name and a title: [Google](https://www.google.com "Google's Homepage") with title `Google's Homepage`.
 
 Source code:
 ~~~
