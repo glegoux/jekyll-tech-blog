@@ -135,7 +135,7 @@ Source code:
 
 It works with absolute and relative link:
 
-* An simple link:
+* A simple link:
 
 <https://www.google.com>
 
