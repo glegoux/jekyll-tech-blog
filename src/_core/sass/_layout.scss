@@ -4,6 +4,29 @@ html {
   scroll-behavior: smooth;
 }
 
+/* MathJax */
+
+mjx-container {
+  outline:  none!important;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+mjx-math {
+  margin-bottom: 0.3em;
+}
+
+mjx-container::-webkit-scrollbar {
+  height: 4px;
+  background-color: transparent;
+}
+
+mjx-container::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 6px;
+  border: 1em solid rgba(0, 0, 0, 0);
+  background-color: lightgrey;
+}
+
 /* Info, Warning, Error, Question */
 
 div.info:before {

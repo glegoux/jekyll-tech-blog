@@ -109,6 +109,7 @@ d(p1, p2) = 2\,R\,\text{arctan}\left(\sqrt{\dfrac{\text{hav}(p1, p2)}{1 - \text{
 $$
 
 In order to have a valid formula for the case where $\text{hav}(p1, p2) = \text{hav}(\alpha) = 1$, that is to say for $\alpha = \pi$, we introduce the function: 
+
 $$
 \text{atan2}: \mathbb{R}^+ \times \mathbb{R}^+ \backslash \left\{0, 0\right\} \quad (x,y) \mapsto \left\{
     \begin{array}{ll}
