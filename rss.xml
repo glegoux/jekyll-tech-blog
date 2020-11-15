@@ -5,8 +5,8 @@
     <description>Personal blog about software engineering</description>
     <link>https://glegoux.com/</link>
     <atom:link href="https://glegoux.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 15 Nov 2020 15:48:12 +0000</pubDate>
-    <lastBuildDate>Sun, 15 Nov 2020 15:48:12 +0000</lastBuildDate>
+    <pubDate>Sun, 15 Nov 2020 17:07:06 +0000</pubDate>
+    <lastBuildDate>Sun, 15 Nov 2020 17:07:06 +0000</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -102,13 +102,14 @@ p1\,.\,p2 &amp;amp;= R^2\left(\sin(\text{lat1})\sin(\text{lat2}) + \cos(\text{la
 
 \[d(p1, p2) = 2\,R\,\text{arctan}\left(\sqrt{\dfrac{\text{hav}(p1, p2)}{1 - \text{hav}(p1, p2)}}\right)\]
 
-&lt;p&gt;In order to have a valid formula for the case where $\text{hav}(p1, p2) = \text{hav}(\alpha) = 1$, that is to say for $\alpha = \pi$, we introduce the function: 
-\(\text{atan2}: \mathbb{R}^+ \times \mathbb{R}^+ \backslash \left\{0, 0\right\} \quad (x,y) \mapsto \left\{
+&lt;p&gt;In order to have a valid formula for the case where $\text{hav}(p1, p2) = \text{hav}(\alpha) = 1$, that is to say for $\alpha = \pi$, we introduce the function:&lt;/p&gt;
+
+\[\text{atan2}: \mathbb{R}^+ \times \mathbb{R}^+ \backslash \left\{0, 0\right\} \quad (x,y) \mapsto \left\{
     \begin{array}{ll}
         \text{arctan}\left(\frac{x}{y}\right) &amp;amp; \text{if } y &amp;gt; 0 \\\
         \frac{\pi}{2} &amp;amp; \text{if } y = 0
     \end{array}
-\right.\)&lt;/p&gt;
+\right.\]
 
 &lt;p&gt;So:&lt;/p&gt;
 
