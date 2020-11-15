@@ -308,28 +308,32 @@ window.MathJax = {
     <div class="article-cover" title="Cover of this article">
       <div class="article-actions no-print">
         <ul>
+          <li title="Print this article" style="cursor: pointer" onclick="window.print();">
+            <i class="fas fa-print"></i>
+            <span class="d-none d-md-inline">Print</span>
+          </li>
 <li title="See the source code of this article">
             <a href="https://raw.githubusercontent.com/glegoux/jekyll-blog/develop/src/_posts/2020-05-04-java-ecosystem.md">
               <i class="far fa-file-code"></i>
-              Source
+              <span class="d-none d-md-inline">Source</span>
             </a>
           </li>
 <li title="See the resources of this article">
             <a href="https://github.com/glegoux/articles-glegoux-com/tree/master/articles/2020-05-04-java-ecosystem">
               <i class="fas fa-code-branch"></i>
-              Resources
+              <span class="d-none d-md-inline">Resources</span>
             </a>
           </li>
 <li title="Edit this article (if you have permission)">
             <a href="https://github.com/glegoux/jekyll-blog/edit/develop/src/_posts//2020-05-04-java-ecosystem.md">
               <i class="fas fa-edit"></i>
-              Edit
+              <span class="d-none d-md-inline">Edit</span>
             </a>
           </li>
 <li title="Report an issue on this article">
             <a href="https://github.com/glegoux/jekyll-blog/issues">
               <i class="fas fa-exclamation-circle"></i>
-              Issue
+              <span class="d-none d-md-inline">Issue</span>
             </a>
           </li>
 </ul>
@@ -342,7 +346,7 @@ window.MathJax = {
   <!-- Article content -->
   <div id="article-content">
 
-    <div class="row">
+    <div class="row no-print">
       <div class="col-6">
         <div class="social-sharing">
   <ul>
@@ -398,20 +402,21 @@ window.MathJax = {
 </div>
     </div>
 
-    <hr class="sep">
+    <hr class="sep no-print">
 
     <div class="row">
       <div class="col-6">
         <!-- Article table of contents -->
-        <div id="table-of-contents" title="See or hide the table of contents">
-          <i class="fas fa-list-ul"></i> Table of contents
+        <div id="table-of-contents" class="no-print" title="See or hide the table of contents">
+          <i class="fas fa-list-ul"></i>
+          Table of contents
         </div>
       </div>
       <div class="col-6">
         <!-- Article license -->
         <div class="article-license" title="See the license">
           <a href="https://creativecommons.org/licenses/by-nc-sa/4.0">
-            <i class="cc notranslate">Creative Commons Attribution 4.0 International License:</i>
+            <i class="cc notranslate"><span class="d-none d-md-inline">Creative Commons Attribution 4.0 International</span> License:</i>
             <br>
             <i class="fab fa-creative-commons notranslate" title="CC"></i>
             <i class="fab fa-creative-commons-by notranslate" title="BY"></i>
@@ -548,7 +553,7 @@ with the Snyk company survey, or the Jrebel company survey.</p>
       </ul>
     </div>
 
-    <div class="row">
+    <div class="row no-print">
       <div class="col-6">
         <div class="social-sharing">
   <ul>
@@ -609,7 +614,7 @@ with the Snyk company survey, or the Jrebel company survey.</p>
     <!-- Article license -->
     <div class="article-license" title="See the license">
       <a href="https://creativecommons.org/licenses/by-nc-sa/4.0">
-        <i class="cc notranslate">Creative Commons Attribution 4.0 International License:</i>
+        <i class="cc notranslate"><span class="d-none d-md-inline">Creative Commons Attribution 4.0 International</span> License:</i>
         <br>
         <i class="fab fa-creative-commons notranslate" title="CC"></i>
         <i class="fab fa-creative-commons-by notranslate" title="BY"></i>
@@ -670,84 +675,42 @@ with the Snyk company survey, or the Jrebel company survey.</p>
     <h5>Also read</h5>
 
     <div class="row">
-<a href="/blog/articles/2019/11/29/gafa-vs-batx.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
+<a href="/blog/articles/2020/05/15/gnu-privacy-guard.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 
       <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/posts/2019-11-29-gafa-vs-batx.jpg" alt="2019-11-29-gafa-vs-batx">
+        <img class="img-fluid lazyload" data-src="/_static/posts/2020-05-15-gnu-privacy-guard.jpg" alt="2020-05-15-gnu-privacy-guard">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          Gafa vs Batx
+          GNU Privacy Guard
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          What is the difference?
+          How to prove its identity and encrypt its communication?
         </div>
 
         <!-- Article categories -->
         <div class="article-category">
           <ul>
-            <li>Business</li>
+            <li>Security</li>
           </ul>
         </div>
 
         <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>November 29, 2019</span>
+          <span>May 15, 2020</span>
         </div>
         <!-- Article reading time -->
         <div class="reading-time">
           <i class="far fa-clock"></i>
           <span>5 min</span>
-        </div>
-      </div>
-
-    </div>
-</div>
-
-</a><a href="/blog/articles/2020/08/24/geo-location.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
-    <!-- Article metadata -->
-    <div class="article-card">
-
-      <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/posts/2020-08-24-geo-location.jpg" alt="2020-08-24-geo-location">
-      </div>
-
-      <!-- Article details -->
-      <div class="article-details">
-        <!-- Article title -->
-        <div class="article-title">
-          Geo-location
-        </div>
-
-        <!-- Article description -->
-        <div class="article-description">
-          How to compute the distance between 2 points with given latitude and longitude?
-        </div>
-
-        <!-- Article categories -->
-        <div class="article-category">
-          <ul>
-            <li>Maths</li>
-          </ul>
-        </div>
-
-        <!-- Article publication date -->
-        <div class="date">
-          <i class="far fa-calendar-alt"></i>
-          <span>August 24, 2020</span>
-        </div>
-        <!-- Article reading time -->
-        <div class="reading-time">
-          <i class="far fa-clock"></i>
-          <span>10 min</span>
         </div>
       </div>
 
@@ -790,6 +753,48 @@ with the Snyk company survey, or the Jrebel company survey.</p>
         <div class="reading-time">
           <i class="far fa-clock"></i>
           <span>10 min</span>
+        </div>
+      </div>
+
+    </div>
+</div>
+
+</a><a href="/blog/articles/2020/03/04/development-environment.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
+    <!-- Article metadata -->
+    <div class="article-card">
+
+      <!-- Article cover --><div class="article-cover">
+        <img class="img-fluid lazyload" data-src="/_static/posts/2020-03-04-development-environment.jpg" alt="2020-03-04-development-environment">
+      </div>
+
+      <!-- Article details -->
+      <div class="article-details">
+        <!-- Article title -->
+        <div class="article-title">
+          Development Environment
+        </div>
+
+        <!-- Article description -->
+        <div class="article-description">
+          Why isolate its development environment?
+        </div>
+
+        <!-- Article categories -->
+        <div class="article-category">
+          <ul>
+            <li>Working environment</li>
+          </ul>
+        </div>
+
+        <!-- Article publication date -->
+        <div class="date">
+          <i class="far fa-calendar-alt"></i>
+          <span>March 04, 2020</span>
+        </div>
+        <!-- Article reading time -->
+        <div class="reading-time">
+          <i class="far fa-clock"></i>
+          <span>5 min</span>
         </div>
       </div>
 
