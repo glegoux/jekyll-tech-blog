@@ -48,7 +48,6 @@
 <link rel="preload" as="font" href="/_core/static/libs/font-awesome/5.11.2/webfonts/fa-brands-400.woff2" crossorigin="anonymous"/>
 <link rel="preload" as="font" href="/_core/static/libs/font-awesome/5.11.2/webfonts/fa-solid-900.woff2" crossorigin="anonymous"/>
 <!-- Preload CSS and JS -->
-<link rel="preload" as="script" href="/_core/static/libs/smooth-scroll/14.2.1/js/smooth-scroll.min.js"/>
 <link rel="preload" as="script" href="/_core/static/libs/popper/1.14.3/js/popper.min.js"/>
 <link rel="preload" as="script" href="/_core/static/libs/bootstrap/4.3.1/js/bootstrap.min.js"/>
 <link rel="preload" as="script" href="/_core/static/libs/moment/2.24.0/js/moment.min.js"/>
@@ -75,7 +74,6 @@ window.MathJax = {
 <script type="text/javascript" src="/_core/static/js/main.js"></script>
 <!-- Load after DOMContentLoaded -->
 <!-- Third-party JS -->
-<script type="text/javascript" defer src="/_core/static/libs/smooth-scroll/14.2.1/js/smooth-scroll.min.js"></script>
 <script type="text/javascript" defer src="/_core/static/libs/popper/1.14.3/js/popper.min.js"></script>
 <script type="text/javascript" defer src="/_core/static/libs/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <script type="text/javascript" defer src="/_core/static/libs/moment/2.24.0/js/moment.min.js"></script>
@@ -402,25 +400,30 @@ window.MathJax = {
 
     <hr class="sep">
 
-    <!-- Article license -->
-    <div class="article-license" title="See the license">
-      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0">
-        <i class="cc notranslate">Creative Commons Attribution 4.0 International License:</i>
-        <br>
-        <i class="fab fa-creative-commons notranslate" title="CC"></i>
-        <i class="fab fa-creative-commons-by notranslate" title="BY"></i>
-        <i class="fab fa-creative-commons-nc notranslate" title="NC"></i>
-        <i class="fab fa-creative-commons-sa notranslate" title="SA"></i>
-      </a>
+    <div class="row">
+      <div class="col-6">
+        <!-- Article table of contents -->
+        <div id="table-of-contents" title="See or hide the table of contents">
+          <i class="fas fa-list-ul"></i> Table of contents
+        </div>
+      </div>
+      <div class="col-6">
+        <!-- Article license -->
+        <div class="article-license" title="See the license">
+          <a href="https://creativecommons.org/licenses/by-nc-sa/4.0">
+            <i class="cc notranslate">Creative Commons Attribution 4.0 International License:</i>
+            <br>
+            <i class="fab fa-creative-commons notranslate" title="CC"></i>
+            <i class="fab fa-creative-commons-by notranslate" title="BY"></i>
+            <i class="fab fa-creative-commons-nc notranslate" title="NC"></i>
+            <i class="fab fa-creative-commons-sa notranslate" title="SA"></i>
+          </a>
+        </div>
+      </div>
     </div>
 
-    <!-- Article contents -->
-    <div class="article-contents">
-      <button id="table-of-contents" class="btn btn-dark" title="See table of contents">
-        <b>See contents</b>
-      </button>
-      <div id="table-of-contents-container" style="display: none;"></div>
-    </div>
+    <!-- Article table of contents container -->
+    <div id="table-of-contents-container" style="display: none;"></div>
 
     <div class="markdown-body">
       <p>It is a good practice to isolate the used technologies for your development environment, because:</p>
@@ -603,66 +606,24 @@ reason, these environments should be isolated and partitioned with a segregation
     <h5>Also read</h5>
 
     <div class="row">
-<a href="/blog/articles/2019/03/23/kerberos-in-5-minutes.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
+<a href="/blog/articles/2020/05/04/java-ecosystem.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 
       <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/posts/2019-03-23-kerberos-in-5-minutes.jpg" alt="2019-03-23-kerberos-in-5-minutes">
+        <img class="img-fluid lazyload" data-src="/_static/posts/2020-05-04-java-ecosystem.jpg" alt="2020-05-04-java-ecosystem">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          Kerberos in 5 minutes
+          Java ecosystem
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          Kerberos is an authentication protocol for trusted hosts on untrusted networks.
-        </div>
-
-        <!-- Article categories -->
-        <div class="article-category">
-          <ul>
-            <li>Security</li>
-          </ul>
-        </div>
-
-        <!-- Article publication date -->
-        <div class="date">
-          <i class="far fa-calendar-alt"></i>
-          <span>March 23, 2019</span>
-        </div>
-        <!-- Article reading time -->
-        <div class="reading-time">
-          <i class="far fa-clock"></i>
-          <span>5 min</span>
-        </div>
-      </div>
-
-    </div>
-</div>
-
-</a><a href="/blog/articles/2019/05/24/java-champion.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
-    <!-- Article metadata -->
-    <div class="article-card">
-
-      <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/posts/2019-05-24-java-champion.jpg" alt="2019-05-24-java-champion">
-      </div>
-
-      <!-- Article details -->
-      <div class="article-details">
-        <!-- Article title -->
-        <div class="article-title">
-          Java champion
-        </div>
-
-        <!-- Article description -->
-        <div class="article-description">
-          How to become a Java champion?
+          What is the Java ecosystem from Sun to Oracle?
         </div>
 
         <!-- Article categories -->
@@ -675,7 +636,49 @@ reason, these environments should be isolated and partitioned with a segregation
         <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>May 24, 2019</span>
+          <span>May 04, 2020</span>
+        </div>
+        <!-- Article reading time -->
+        <div class="reading-time">
+          <i class="far fa-clock"></i>
+          <span>10 min</span>
+        </div>
+      </div>
+
+    </div>
+</div>
+
+</a><a href="/blog/articles/2019/11/29/gafa-vs-batx.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
+    <!-- Article metadata -->
+    <div class="article-card">
+
+      <!-- Article cover --><div class="article-cover">
+        <img class="img-fluid lazyload" data-src="/_static/posts/2019-11-29-gafa-vs-batx.jpg" alt="2019-11-29-gafa-vs-batx">
+      </div>
+
+      <!-- Article details -->
+      <div class="article-details">
+        <!-- Article title -->
+        <div class="article-title">
+          Gafa vs Batx
+        </div>
+
+        <!-- Article description -->
+        <div class="article-description">
+          What is the difference?
+        </div>
+
+        <!-- Article categories -->
+        <div class="article-category">
+          <ul>
+            <li>Business</li>
+          </ul>
+        </div>
+
+        <!-- Article publication date -->
+        <div class="date">
+          <i class="far fa-calendar-alt"></i>
+          <span>November 29, 2019</span>
         </div>
         <!-- Article reading time -->
         <div class="reading-time">

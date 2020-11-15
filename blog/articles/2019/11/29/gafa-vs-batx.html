@@ -48,7 +48,6 @@
 <link rel="preload" as="font" href="/_core/static/libs/font-awesome/5.11.2/webfonts/fa-brands-400.woff2" crossorigin="anonymous"/>
 <link rel="preload" as="font" href="/_core/static/libs/font-awesome/5.11.2/webfonts/fa-solid-900.woff2" crossorigin="anonymous"/>
 <!-- Preload CSS and JS -->
-<link rel="preload" as="script" href="/_core/static/libs/smooth-scroll/14.2.1/js/smooth-scroll.min.js"/>
 <link rel="preload" as="script" href="/_core/static/libs/popper/1.14.3/js/popper.min.js"/>
 <link rel="preload" as="script" href="/_core/static/libs/bootstrap/4.3.1/js/bootstrap.min.js"/>
 <link rel="preload" as="script" href="/_core/static/libs/moment/2.24.0/js/moment.min.js"/>
@@ -75,7 +74,6 @@ window.MathJax = {
 <script type="text/javascript" src="/_core/static/js/main.js"></script>
 <!-- Load after DOMContentLoaded -->
 <!-- Third-party JS -->
-<script type="text/javascript" defer src="/_core/static/libs/smooth-scroll/14.2.1/js/smooth-scroll.min.js"></script>
 <script type="text/javascript" defer src="/_core/static/libs/popper/1.14.3/js/popper.min.js"></script>
 <script type="text/javascript" defer src="/_core/static/libs/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <script type="text/javascript" defer src="/_core/static/libs/moment/2.24.0/js/moment.min.js"></script>
@@ -402,25 +400,30 @@ window.MathJax = {
 
     <hr class="sep">
 
-    <!-- Article license -->
-    <div class="article-license" title="See the license">
-      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0">
-        <i class="cc notranslate">Creative Commons Attribution 4.0 International License:</i>
-        <br>
-        <i class="fab fa-creative-commons notranslate" title="CC"></i>
-        <i class="fab fa-creative-commons-by notranslate" title="BY"></i>
-        <i class="fab fa-creative-commons-nc notranslate" title="NC"></i>
-        <i class="fab fa-creative-commons-sa notranslate" title="SA"></i>
-      </a>
+    <div class="row">
+      <div class="col-6">
+        <!-- Article table of contents -->
+        <div id="table-of-contents" title="See or hide the table of contents">
+          <i class="fas fa-list-ul"></i> Table of contents
+        </div>
+      </div>
+      <div class="col-6">
+        <!-- Article license -->
+        <div class="article-license" title="See the license">
+          <a href="https://creativecommons.org/licenses/by-nc-sa/4.0">
+            <i class="cc notranslate">Creative Commons Attribution 4.0 International License:</i>
+            <br>
+            <i class="fab fa-creative-commons notranslate" title="CC"></i>
+            <i class="fab fa-creative-commons-by notranslate" title="BY"></i>
+            <i class="fab fa-creative-commons-nc notranslate" title="NC"></i>
+            <i class="fab fa-creative-commons-sa notranslate" title="SA"></i>
+          </a>
+        </div>
+      </div>
     </div>
 
-    <!-- Article contents -->
-    <div class="article-contents">
-      <button id="table-of-contents" class="btn btn-dark" title="See table of contents">
-        <b>See contents</b>
-      </button>
-      <div id="table-of-contents-container" style="display: none;"></div>
-    </div>
+    <!-- Article table of contents container -->
+    <div id="table-of-contents-container" style="display: none;"></div>
 
     <div class="markdown-body">
       <p>The business world is split into 3 regions with the acronyms: <strong>AMER, EMEA, APAC</strong>. But the web and 
@@ -618,49 +621,7 @@ vs GAFA as (without quoting all other ones):</p>
     <h5>Also read</h5>
 
     <div class="row">
-<a href="/blog/articles/2019/02/14/how-to-quote-sources.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
-    <!-- Article metadata -->
-    <div class="article-card">
-
-      <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/posts/2019-02-14-how-to-quote-sources.jpg" alt="2019-02-14-how-to-quote-sources">
-      </div>
-
-      <!-- Article details -->
-      <div class="article-details">
-        <!-- Article title -->
-        <div class="article-title">
-          How to quote sources
-        </div>
-
-        <!-- Article description -->
-        <div class="article-description">
-          Current standards and rules to respect in order to quote sources.
-        </div>
-
-        <!-- Article categories -->
-        <div class="article-category">
-          <ul>
-            <li>Methodology</li>
-          </ul>
-        </div>
-
-        <!-- Article publication date -->
-        <div class="date">
-          <i class="far fa-calendar-alt"></i>
-          <span>February 14, 2019</span>
-        </div>
-        <!-- Article reading time -->
-        <div class="reading-time">
-          <i class="far fa-clock"></i>
-          <span>5 min</span>
-        </div>
-      </div>
-
-    </div>
-</div>
-
-</a><a href="/blog/articles/2019/03/23/kerberos-in-5-minutes.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
+<a href="/blog/articles/2019/03/23/kerberos-in-5-minutes.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 
@@ -702,42 +663,84 @@ vs GAFA as (without quoting all other ones):</p>
     </div>
 </div>
 
-</a><a href="/blog/articles/2019/01/21/getting-started.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
+</a><a href="/blog/articles/2019/07/14/trace-a-request-path.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 
       <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/posts/2019-01-21-getting-started.jpg" alt="2019-01-21-getting-started">
+        <img class="img-fluid lazyload" data-src="/_static/posts/2019-07-14-trace-a-request-path.jpg" alt="2019-07-14-trace-a-request-path">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          Getting Started
+          Trace a request path
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          Markdown is a easy-to-use syntax for writing text on this blog.
+          How to know for which routers a HTTP request browses?
         </div>
 
         <!-- Article categories -->
         <div class="article-category">
           <ul>
-            <li>Methodology</li>
+            <li>Web</li>
           </ul>
         </div>
 
         <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>January 21, 2019</span>
+          <span>July 14, 2019</span>
         </div>
         <!-- Article reading time -->
         <div class="reading-time">
           <i class="far fa-clock"></i>
-          <span>10 min</span>
+          <span>5 min</span>
+        </div>
+      </div>
+
+    </div>
+</div>
+
+</a><a href="/blog/articles/2020/05/15/gnu-privacy-guard.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
+    <!-- Article metadata -->
+    <div class="article-card">
+
+      <!-- Article cover --><div class="article-cover">
+        <img class="img-fluid lazyload" data-src="/_static/posts/2020-05-15-gnu-privacy-guard.jpg" alt="2020-05-15-gnu-privacy-guard">
+      </div>
+
+      <!-- Article details -->
+      <div class="article-details">
+        <!-- Article title -->
+        <div class="article-title">
+          GNU Privacy Guard
+        </div>
+
+        <!-- Article description -->
+        <div class="article-description">
+          How to prove its identity and encrypt its communication?
+        </div>
+
+        <!-- Article categories -->
+        <div class="article-category">
+          <ul>
+            <li>Security</li>
+          </ul>
+        </div>
+
+        <!-- Article publication date -->
+        <div class="date">
+          <i class="far fa-calendar-alt"></i>
+          <span>May 15, 2020</span>
+        </div>
+        <!-- Article reading time -->
+        <div class="reading-time">
+          <i class="far fa-clock"></i>
+          <span>5 min</span>
         </div>
       </div>
 
