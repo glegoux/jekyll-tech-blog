@@ -1,5 +1,9 @@
 /* Layout */
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Info, Warning, Error, Question */
 
 div.info:before {

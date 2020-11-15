@@ -61,8 +61,8 @@
   /* Table of contents */
 
   #table-of-contents {
-    text-align: center;
-    margin-top: 1em;
+    cursor:pointer;
+    margin-top: 0.5em;
   }
 
   #table-of-contents-container {
@@ -102,12 +102,6 @@
 
     h3 {
       padding-left: 2em;
-    }
-
-    .article-contents {
-      width: 100%;
-      text-align: center;
-      margin-bottom: 1em;
     }
   }
 
