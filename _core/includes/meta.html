@@ -21,10 +21,10 @@
 {%- if page.article -%}
 {%- assign article_id = page.date | date: '%Y-%m-%d-' | append: page.title | slugify -%}
 <!-- Article cover social sharing -->
-{%- assign article_cover_path = "/_static/common/posts/" | append: article_id | append: ".jpg" -%}
+{%- assign article_cover_path = "/_static/posts/" | append: article_id | append: ".jpg" -%}
 {%- assign article_cover_path_exist = site.static_files | where: "path", article_cover_path | first -%}
 {%- unless article_cover_path_exist -%}
   {%- assign article_cover_path = "/_core/static/img/default/article-cover.jpg" -%}
-{%- endunless -%}
+{%- endunless %}
 <meta property="og:image" content="{{ site.url }}{{ article_cover_path }}"/>
 {%- endif -%}
