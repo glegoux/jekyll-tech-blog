@@ -28,9 +28,9 @@ You can write to Java champions:
 [javachampions@groups.io](mailto://javachampions@groups.io )
 
 **References**
- 
-* [What is Java champion](https://community.oracle.com/community/groundbreakers/java/java-champions)
-* [Who are Java Champions?](https://community.oracle.com/docs/DOC-922857)
+
+* [Find a Java Champion](https://apex.oracle.com/champions)
+* [Who are Java Champions?](https://developer.oracle.com/javachampions)
 
 
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
