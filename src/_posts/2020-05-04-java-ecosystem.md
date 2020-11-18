@@ -4,7 +4,7 @@ description: "What is the Java ecosystem from Sun to Oracle?"
 authors: ["glegoux"]
 time_reading_minutes: 10
 category: "Software"
-tags: ["Language"]
+tags: ["Language", "Java"]
 ---
 
 The Java language is initiated by **James Gosling**, **Mike Sheridan** and **Patrick Naughton** is June **1991**. After several years,
