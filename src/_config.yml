@@ -54,7 +54,7 @@ project:
         - code: "fr"
           display_name: "Français"
     title: "Software Engineering"
-    keywords: [ "Research & Development", "Algorithm", "Data", "Machine Learning", "Web", "Security", "Applied Mathematics", "Reliability & Infrastructure", "Design", "System", "Methodology", "Business" ]
+    keywords: [ "Research", "Development", "Algorithm", "Data", "Machine Learning", "Web", "Security", "Applied Mathematics", "Reliability", "Infrastructure", "Design", "System", "Methodology", "Business" ]
     socials:
       - name: "LinkedIn"
         link: "https://www.linkedin.com/in/gilleslegoux"
