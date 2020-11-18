@@ -5,8 +5,8 @@
     <description>Personal blog about software engineering</description>
     <link>https://glegoux.com/</link>
     <atom:link href="https://glegoux.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 18 Nov 2020 23:32:49 +0000</pubDate>
-    <lastBuildDate>Wed, 18 Nov 2020 23:32:49 +0000</lastBuildDate>
+    <pubDate>Wed, 18 Nov 2020 23:45:12 +0000</pubDate>
+    <lastBuildDate>Wed, 18 Nov 2020 23:45:12 +0000</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -524,8 +524,8 @@ rtt min/avg/max/mdev = 13.821/13.821/13.821/0.000 ms
 &lt;p&gt;&lt;strong&gt;References&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://community.oracle.com/community/groundbreakers/java/java-champions&quot;&gt;What is Java champion&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://community.oracle.com/docs/DOC-922857&quot;&gt;Who are Java Champions?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://apex.oracle.com/champions&quot;&gt;Find a Java Champion&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://developer.oracle.com/javachampions&quot;&gt;Who are Java Champions?&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;script type=&quot;text/javascript&quot; src=&quot;https://www.gstatic.com/charts/loader.js&quot;&gt;&lt;/script&gt;
