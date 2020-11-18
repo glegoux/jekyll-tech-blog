@@ -5,8 +5,8 @@
     <description>Personal blog about software engineering</description>
     <link>https://glegoux.com/</link>
     <atom:link href="https://glegoux.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 16 Nov 2020 08:43:44 +0000</pubDate>
-    <lastBuildDate>Mon, 16 Nov 2020 08:43:44 +0000</lastBuildDate>
+    <pubDate>Wed, 18 Nov 2020 10:47:35 +0000</pubDate>
+    <lastBuildDate>Wed, 18 Nov 2020 10:47:35 +0000</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -273,6 +273,8 @@ with the Snyk company survey, or the Jrebel company survey.&lt;/p&gt;
         <guid isPermaLink="true">https://glegoux.com/blog/articles/2020/05/04/java-ecosystem.html</guid>
         
         <category>Language</category>
+        
+        <category>Java</category>
         
         
         <category>Software</category>
