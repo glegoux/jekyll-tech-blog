@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2020-11-19T07:33:54+00:00</updated>
+ <updated>2020-11-19T20:46:32+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -441,9 +441,9 @@ rtt min/avg/max/mdev = 13.821/13.821/13.821/0.000 ms
 &lt;p&gt;By combining that with free IP locator like :&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;http://ip-api.com/&lt;/li&gt;
-  &lt;li&gt;https://ipinfo.io&lt;/li&gt;
-  &lt;li&gt;http://getcitydetails.geobytes.com/&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://ip-api.com&quot;&gt;http://ip-api.com&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ipinfo.io&quot;&gt;https://ipinfo.io&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://getcitydetails.geobytes.com&quot;&gt;http://getcitydetails.geobytes.com&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;You can locate request path via Application Programming Interface (API) with the usage of pre-computed databases of geolocalisation of these free IP locators.&lt;/p&gt;
