@@ -3,8 +3,8 @@ title: "Development Environment"
 description: "Why isolate its development environment?"
 authors: ["glegoux"]
 time_reading_minutes: 5
-category: "Working environment"
-tags: ["Computer development"]
+category: "Development"
+tags: [" Working environment"]
 ---
 
 It is a good practice to isolate the used technologies for your development environment, because: 
