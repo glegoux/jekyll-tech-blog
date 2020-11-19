@@ -3,7 +3,8 @@ title: "Java champion"
 description: "How to become a Java champion?"
 authors: ["glegoux"]
 time_reading_minutes: 5
-category: "Software"
+category: "Development"
+tags: ["Language", "Java"]
 ---
 
 Java champion is ambassador of Java ecosystem for the world! It is enough hard to become Java champion. 
