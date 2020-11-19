@@ -5,8 +5,8 @@
     <description>Personal blog about software engineering</description>
     <link>https://glegoux.com/</link>
     <atom:link href="https://glegoux.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 18 Nov 2020 23:45:12 +0000</pubDate>
-    <lastBuildDate>Wed, 18 Nov 2020 23:45:12 +0000</lastBuildDate>
+    <pubDate>Thu, 19 Nov 2020 07:27:58 +0000</pubDate>
+    <lastBuildDate>Thu, 19 Nov 2020 07:27:58 +0000</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -316,10 +316,10 @@ reason, these environments should be isolated and partitioned with a segregation
         <link>https://glegoux.com/blog/articles/2020/03/04/development-environment.html</link>
         <guid isPermaLink="true">https://glegoux.com/blog/articles/2020/03/04/development-environment.html</guid>
         
-        <category>Computer development</category>
+        <category> Working environment</category>
         
         
-        <category>Working environment</category>
+        <category>Development</category>
         
       </item>
     
