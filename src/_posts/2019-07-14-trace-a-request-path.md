@@ -63,9 +63,9 @@ There is no rule to guarantee that outward path and return path are identical. T
 
 By combining that with free IP locator like :
 
-* http://ip-api.com/
-* https://ipinfo.io
-* http://getcitydetails.geobytes.com/
+* <http://ip-api.com>
+* <https://ipinfo.io>
+* <http://getcitydetails.geobytes.com>
 
 You can locate request path via Application Programming Interface (API) with the usage of pre-computed databases of geolocalisation of these free IP locators.
 
