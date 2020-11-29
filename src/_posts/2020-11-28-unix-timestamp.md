@@ -87,7 +87,7 @@ with the current time or a future time, often the time is fixed to have an exact
 the end-to-end test. In any case, **the error will appear firstly at the runtime directly in production**. 
 
 It could produce a chaos, because the consequences of a such error are hard to forecast, but with a risk to be destructive, 
-events can be not synchronized between several system or juste stop working: cars, internet, IoT, banks, airplanes, etc ... could suddenly
+events can be not synchronized between several systems or just stop working: cars, internet, IoT, banks, airplanes, etc ... could suddenly
 not more work.
 
 # Example in Java/Scala 
@@ -155,17 +155,12 @@ scala> toBinaryRepresentation(Int.MaxValue)
 res: String = 01111111111111111111111111111111
 ~~~
 
-To conclude the limitations of capacity can provoke a strange bug in an informatics ecosystem, 
+To conclude the limitations of storage capacity for a value can provoke weird bugs in an informatics ecosystem, 
 it is important to be aware of this kind of behavior when a technology is used.
 
 # References
 
-* RITCHIE Dennis M., and Ken THOMPSON Ken, **The UNIX TimeSharing System**. Bell Labs, July 1974. [Link](https://dsf.berkeley.edu/cs262/Unix.pdf).
+* RITCHIE Dennis M., THOMPSON Ken, **The UNIX TimeSharing System**. Bell Labs, July 1974. [Link](https://dsf.berkeley.edu/cs262/Unix.pdf).
 * NYGREN Erik, **Preparing for Y2038 (ALREADY?!)**. Akamai Blog, January 2019. [Link](https://blogs.akamai.com/2019/01/preparing-for-y2038-already.html).
 * DINAMANI Deepa, **Solving the Year 2038 problem in the Linux kernel**. opensource.com, January 2019. [Link](https://opensource.com/article/19/1/year2038-problem-linux-kernel).
 * THAKUR Vishal, **What Is The 2038 Problem?**. Science ABC, October 2020. [Link](https://www.scienceabc.com/innovation/what-is-the-2038-problem.html).
-
-
-
-
-
