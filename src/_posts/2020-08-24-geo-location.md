@@ -4,6 +4,7 @@ description: "How to compute the distance between 2 points with given latitude a
 authors: ["glegoux"]
 time_reading_minutes: 10
 category: "Applied Mathematics"
+tags: ["Geometry"]
 ---
 
 We can model the surface of the earth as a sphere of radius $R$. Even if in reality, the earth is more a kind of ellipsoid with an irregular surface, where each point of its surface owns an altitude in relation to the sea level.
