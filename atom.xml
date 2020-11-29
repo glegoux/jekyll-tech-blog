@@ -4,9 +4,172 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2020-11-19T20:46:32+00:00</updated>
+ <updated>2020-11-29T12:57:17+00:00</updated>
  <id>https://glegoux.com/</id>
 
+ 
+ <entry>
+   <title>Unix timestamp</title>
+   <link href="https://glegoux.com/blog/articles/2020/11/28/unix-timestamp.html"/>
+   <updated>2020-11-28T00:00:00+00:00</updated>
+   <id>https://glegoux.com/blog/articles/2020/11/28/unix-timestamp.html</id>
+   <content type="html">&lt;h1 id=&quot;what-is-the-y2k38-problem&quot;&gt;What is the Y2K38 problem?&lt;/h1&gt;
+
+&lt;p&gt;2038 is a particular year where a informatics bug could occur, sometimes referred to as the &lt;strong&gt;Y2K38 problem&lt;/strong&gt;. 
+Because an &lt;strong&gt;arithmetic overflow&lt;/strong&gt; on the Unix timestamp risks to appear, what it means, there are insufficient bits in a 
+binary number representation to portray the result of an arithmetic operation. For example, an arithmetic operation 
+is not closed with respect to addition, subtraction, multiplication, or division.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Y2K38 problem is caused by insufficient capacity used to represent a time duration:&lt;br /&gt;
+the Unix timestamp as a signed 32-bits integer. It could produce a huge chaos.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;h1 id=&quot;unix-timestamp&quot;&gt;Unix timestamp&lt;/h1&gt;
+
+&lt;p&gt;Effectively, the &lt;strong&gt;Unix timestamp&lt;/strong&gt;, used largely in informatics systems, represents the number of
+elapsed seconds since January 1st, 1970 at midnight in the Coordinated Universal Time (UTC) time standard.
+This value is incremented every seconds. And the date &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1970-01-01 00:00:00 UTC&lt;/code&gt;, usually called &lt;strong&gt;epoch date&lt;/strong&gt;, 
+is a particular date in a lot of informatics system representing the origin time, inherited of the Unix operating system
+an POSIX standard. The Unix engineers picked this date arbitrarily, because they needed to set a uniform date for the start of time, 
+and New Year’s Day, 1970, seemed most convenient.&lt;/p&gt;
+
+&lt;p&gt;As you can see:&lt;/p&gt;
+
+&lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;s &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;seq 0 3&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do &lt;/span&gt;date &lt;span class=&quot;nt&quot;&gt;--date&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;1970-01-01 00:00:00 UTC &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$s&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; seconds&quot;&lt;/span&gt; +%s&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;
+&lt;span class=&quot;go&quot;&gt;0
+1
+2
+3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;A Unix timestamp is used to known the occurrence date of an informatics event, after 1970. Sometimes other 
+granularity of time like the millisecond, or the nanosecond are used, but traditionally it is the second.&lt;/p&gt;
+
+&lt;div class=&quot;info&quot;&gt;
+While the trademark today is UNIX, in this article, we use Unix in deference to dmr's wishes, dmr being the 
+username of Dennis MacAlistair Ritchie, famous computer scientist having worked the on Unix operating system.
+&lt;/div&gt;
+
+&lt;h1 id=&quot;arithmetic-binary-representation-overflow&quot;&gt;Arithmetic binary representation overflow&lt;/h1&gt;
+
+&lt;p&gt;But the arithmetic binary representation of this Unix timestamp is sometimes on &lt;strong&gt;32-bits as a signed integer&lt;/strong&gt; again as 
+originally at its creation. That is to say, its maximum value is $ 2^{31} - 1 $. The negative values until $ -2^{31} 
+$ (inclusive) are used by convention for representing a duration from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1970-01-01 00:00:00 UTC&lt;/code&gt; to an anterior date. 
+Then the maximum duration time supported by a such Unix timestamp will be reach out at &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2038-01-19 03:14:07 UTC&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt; date &lt;span class=&quot;nt&quot;&gt;--date&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;@&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$((&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;31&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--utc&lt;/span&gt;
+&lt;span class=&quot;go&quot;&gt;Tue Jan 19 03:14:07 UTC 2038
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The &lt;strong&gt;adding of 1 second at this date&lt;/strong&gt; raises an arithmetic overflow error. For a representation on &lt;strong&gt;32-bits 
+as an unsigned integer&lt;/strong&gt;. The problem will be the same in 2106:&lt;/p&gt;
+
+&lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt; date &lt;span class=&quot;nt&quot;&gt;--date&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;@&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$((&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;32&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--utc&lt;/span&gt;
+&lt;span class=&quot;go&quot;&gt;Sun Feb  7 06:28:15 UTC 2106
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Hopefully, the majority of informatics technology have already migrated to a &lt;strong&gt;64-bits representation&lt;/strong&gt;. For a signed integer,
+this problem is rescheduled for around in 290 billions of years, in other words in a &lt;strong&gt;quantity quasi-infinity of time&lt;/strong&gt;, knowing the 
+age of the universe is estimated around 13 billions of years, or around 20 times less. With the approximate computation:&lt;/p&gt;
+
+&lt;div class=&quot;language-scala highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;scala&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Long&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;MaxValue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;365&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;24&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3600&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)/&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Double&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;292.471208677&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The problem could be considered as resolved. But &lt;strong&gt;some informatics system could be bugged&lt;/strong&gt; by the &lt;strong&gt;negligence&lt;/strong&gt; or the &lt;strong&gt;ignorance&lt;/strong&gt; of this problem 
+from developers and/or maintainers of these informatics systems. The informatics system uses often &lt;strong&gt;a lot of dependencies&lt;/strong&gt; like code libraries, 
+hardware components, or operating systems. Only one of the dependency could be the source of a such bug in the related informatics systems that uses it, 
+because the Unix timestamp are omnipresent on each system layer from low level to high level.&lt;/p&gt;
+
+&lt;p&gt;Concretely, it raises an &lt;strong&gt;arithmetic overflow error&lt;/strong&gt;. It could be silent, trigger a coding exception, or have a different behavior.
+For example for the most programming languages, it will be silent for the programmer but with a different behavior. 
+Even if the test policy of the coding project could catch this kind of error. It is enough rare to have a unit or integration test 
+with the current time or a future time, often the time is fixed to have an exact reproducible test. But it could be observed in 
+the end-to-end test. In any case, &lt;strong&gt;the error will appear firstly at the runtime directly in production&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;It could produce a chaos, because the consequences of a such error are hard to forecast, but with a risk to be destructive, 
+events can be not synchronized between several system or juste stop working: cars, internet, IoT, banks, airplanes, etc … could suddenly
+not more work.&lt;/p&gt;
+
+&lt;h1 id=&quot;example-in-javascala&quot;&gt;Example in Java/Scala&lt;/h1&gt;
+
+&lt;p&gt;While currently Java/Scala ecosystem is not exposed to this problem in the standard library, 
+with a signed 64-bits representation for an Unix timestamp:&lt;/p&gt;
+
+&lt;div class=&quot;language-scala highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;scala&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.time.Instant&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Instant&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;now&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getEpochSecond&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;isInstanceOf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Long&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Boolean&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;A Unix timestamp is well represented by a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Long&lt;/code&gt; from $-2^{63}$ to $2^{63} - 1$. Let’s study together, what it could happen, if it was a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Int&lt;/code&gt;.&lt;br /&gt;
+The range of values will be between $-2^{31}$ and $2^{31} - 1$ for a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Int&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;language-scala highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;scala&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;MinValue&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Int&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2147483648&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;scala&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;MaxValue&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Int&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2147483647&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;warning&quot;&gt;
+In Scala, it is false to express $2^{31}$ with Math.pow(2, 31).intValue that is equal to 2147483647, what it doesn't make sense.
+Here, you have a odd number instead of an even number, and typically an arithmetic overflow per truncation from Double to Int.
+&lt;/div&gt;
+
+&lt;p&gt;In addition we have:&lt;/p&gt;
+
+&lt;div class=&quot;language-scala highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;scala&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;MaxValue&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;MinValue&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Boolean&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The adding of 1 second after &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Tue Jan 19 03:14:07 UTC 2038&lt;/code&gt; gives:&lt;/p&gt;
+
+&lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt; date &lt;span class=&quot;nt&quot;&gt;--date&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;@&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$((&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;31&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--utc&lt;/span&gt;
+&lt;span class=&quot;go&quot;&gt;Fri Dec 13 20:45:52 UTC 1901
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Weird, how could we explain that. The error is silent no exception raised, the addition provoking the arithmetic overflow is cyclic on the 
+arithmetic representation. Because, here a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Int&lt;/code&gt; has a &lt;strong&gt;two’s complement binary representation&lt;/strong&gt; (2C) in Scala.
+Here the relation between the base 10 and the two’s complement binary representation on 32-bits is:&lt;/p&gt;
+
+\[[N]_{10} = [b_{31}\,...\,b_{1}\,b_{0}]_{2C} = - b_{31}\,2^{31} + \sum_{i=0}^{30} b_{i}\,2^{i} \text{ where } b_k \,\in\, \{ 0,1 \}\]
+
+&lt;p&gt;with the notation &lt;strong&gt;little endian&lt;/strong&gt; for the order of the bits, the most significant bit (MSB) $ b_{31} $ is the &lt;strong&gt;sign bit&lt;/strong&gt; 
+and the least significant (LSB) bit $ b_{0} $ the &lt;strong&gt;unit bit&lt;/strong&gt;. For example:&lt;/p&gt;
+
+&lt;div class=&quot;language-scala highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;toBinaryRepresentation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;toBinaryString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;reverse&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;padTo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;32&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'0'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;reverse&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;scala&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;toBinaryRepresentation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;MinValue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10000000000000000000000000000000&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;scala&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;toBinaryRepresentation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;11111111111111111111111111111111&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;scala&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;toBinaryRepresentation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;00000000000000000000000000000000&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;scala&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;toBinaryRepresentation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;MaxValue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;01111111111111111111111111111111&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;To conclude the limitations of capacity can provoke a strange bug in an informatics ecosystem, 
+it is important to be aware of this kind of behavior when a technology is used.&lt;/p&gt;
+
+&lt;h1 id=&quot;references&quot;&gt;References&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;RITCHIE Dennis M., and Ken THOMPSON Ken, &lt;strong&gt;The UNIX TimeSharing System&lt;/strong&gt;. Bell Labs, July 1974. &lt;a href=&quot;https://dsf.berkeley.edu/cs262/Unix.pdf&quot;&gt;Link&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;NYGREN Erik, &lt;strong&gt;Preparing for Y2038 (ALREADY?!)&lt;/strong&gt;. Akamai Blog, January 2019. &lt;a href=&quot;https://blogs.akamai.com/2019/01/preparing-for-y2038-already.html&quot;&gt;Link&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;DINAMANI Deepa, &lt;strong&gt;Solving the Year 2038 problem in the Linux kernel&lt;/strong&gt;. opensource.com, January 2019. &lt;a href=&quot;https://opensource.com/article/19/1/year2038-problem-linux-kernel&quot;&gt;Link&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;THAKUR Vishal, &lt;strong&gt;What Is The 2038 Problem?&lt;/strong&gt;. Science ABC, October 2020. &lt;a href=&quot;https://www.scienceabc.com/innovation/what-is-the-2038-problem.html&quot;&gt;Link&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+</content><author>
+       <name>glegoux</name>
+       <uri></uri>
+   </author></entry>
  
  <entry>
    <title>Geo-location</title>
