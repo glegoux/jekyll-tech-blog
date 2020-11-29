@@ -86,9 +86,9 @@ Even if the test policy of the coding project could catch this kind of error. It
 with the current time or a future time, often the time is fixed to have an exact reproducible test. But it could be observed in 
 the end-to-end test. In any case, **the error will appear firstly at the runtime directly in production**. 
 
-It could produce a chaos, because the consequences of a such error are hard to forecast, but with a risk to be destructive, 
-events can be not synchronized between several systems or just stop working: cars, internet, IoT, banks, airplanes, etc ... could suddenly
-not more work.
+It could produce a chaos, because the consequences of a such error are hard to forecast, but with a risk to be destructive.
+Events can be not synchronized between several systems or just stop working: internet, cars, IoT devices, banks, airplanes, etc ... 
+could suddenly not more work.
 
 # Example in Java/Scala 
 
