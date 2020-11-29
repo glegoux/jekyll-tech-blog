@@ -5,8 +5,8 @@
     <description>Personal blog about software engineering</description>
     <link>https://glegoux.com/</link>
     <atom:link href="https://glegoux.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 29 Nov 2020 13:57:06 +0000</pubDate>
-    <lastBuildDate>Sun, 29 Nov 2020 13:57:06 +0000</lastBuildDate>
+    <pubDate>Sun, 29 Nov 2020 13:57:20 +0000</pubDate>
+    <lastBuildDate>Sun, 29 Nov 2020 13:57:20 +0000</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -291,6 +291,8 @@ respecting the triangle inegality.&lt;/p&gt;
         <pubDate>Mon, 24 Aug 2020 00:00:00 +0000</pubDate>
         <link>https://glegoux.com/blog/articles/2020/08/24/geo-location.html</link>
         <guid isPermaLink="true">https://glegoux.com/blog/articles/2020/08/24/geo-location.html</guid>
+        
+        <category>Geometry</category>
         
         
         <category>Applied Mathematics</category>
