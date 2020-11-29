@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2020-11-29T12:57:17+00:00</updated>
+ <updated>2020-11-29T13:51:05+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -91,7 +91,7 @@ with the current time or a future time, often the time is fixed to have an exact
 the end-to-end test. In any case, &lt;strong&gt;the error will appear firstly at the runtime directly in production&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;It could produce a chaos, because the consequences of a such error are hard to forecast, but with a risk to be destructive, 
-events can be not synchronized between several system or juste stop working: cars, internet, IoT, banks, airplanes, etc … could suddenly
+events can be not synchronized between several systems or just stop working: cars, internet, IoT, banks, airplanes, etc … could suddenly
 not more work.&lt;/p&gt;
 
 &lt;h1 id=&quot;example-in-javascala&quot;&gt;Example in Java/Scala&lt;/h1&gt;
@@ -154,18 +154,17 @@ and the least significant (LSB) bit $ b_{0} $ the &lt;strong&gt;unit bit&lt;/str
 &lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;01111111111111111111111111111111&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;To conclude the limitations of capacity can provoke a strange bug in an informatics ecosystem, 
+&lt;p&gt;To conclude the limitations of storage capacity for a value can provoke weird bugs in an informatics ecosystem, 
 it is important to be aware of this kind of behavior when a technology is used.&lt;/p&gt;
 
 &lt;h1 id=&quot;references&quot;&gt;References&lt;/h1&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;RITCHIE Dennis M., and Ken THOMPSON Ken, &lt;strong&gt;The UNIX TimeSharing System&lt;/strong&gt;. Bell Labs, July 1974. &lt;a href=&quot;https://dsf.berkeley.edu/cs262/Unix.pdf&quot;&gt;Link&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;RITCHIE Dennis M., THOMPSON Ken, &lt;strong&gt;The UNIX TimeSharing System&lt;/strong&gt;. Bell Labs, July 1974. &lt;a href=&quot;https://dsf.berkeley.edu/cs262/Unix.pdf&quot;&gt;Link&lt;/a&gt;.&lt;/li&gt;
   &lt;li&gt;NYGREN Erik, &lt;strong&gt;Preparing for Y2038 (ALREADY?!)&lt;/strong&gt;. Akamai Blog, January 2019. &lt;a href=&quot;https://blogs.akamai.com/2019/01/preparing-for-y2038-already.html&quot;&gt;Link&lt;/a&gt;.&lt;/li&gt;
   &lt;li&gt;DINAMANI Deepa, &lt;strong&gt;Solving the Year 2038 problem in the Linux kernel&lt;/strong&gt;. opensource.com, January 2019. &lt;a href=&quot;https://opensource.com/article/19/1/year2038-problem-linux-kernel&quot;&gt;Link&lt;/a&gt;.&lt;/li&gt;
   &lt;li&gt;THAKUR Vishal, &lt;strong&gt;What Is The 2038 Problem?&lt;/strong&gt;. Science ABC, October 2020. &lt;a href=&quot;https://www.scienceabc.com/innovation/what-is-the-2038-problem.html&quot;&gt;Link&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-
 </content><author>
        <name>glegoux</name>
        <uri></uri>
