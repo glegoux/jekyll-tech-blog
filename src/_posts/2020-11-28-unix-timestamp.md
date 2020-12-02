@@ -136,7 +136,7 @@ Here the relation between the base 10 and the two's complement binary representa
 $$ [N]_{10} = [b_{31}\,...\,b_{1}\,b_{0}]_{2C} = - b_{31}\,2^{31} + \sum_{i=0}^{30} b_{i}\,2^{i} \text{ where } b_k \,\in\, \{ 0,1 \} $$
 
 with the notation **little endian** for the order of the bits, the most significant bit (MSB) $ b_{31} $ is the **sign bit** 
-and the least significant (LSB) bit $ b_{0} $ the **unit bit**. For example:
+and the least significant (LSB) bit $ b_{0} $ the **unit bit**. It the sign bit is 1, the number is stricly negative. And if the sign bit is odd, the numbder is odd. For example:
 
 ~~~ scala
 def toBinaryRepresentation(i: Int): String =
