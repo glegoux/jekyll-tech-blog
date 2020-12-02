@@ -552,7 +552,7 @@ Here the relation between the base 10 and the two’s complement binary represen
 \[[N]_{10} = [b_{31}\,...\,b_{1}\,b_{0}]_{2C} = - b_{31}\,2^{31} + \sum_{i=0}^{30} b_{i}\,2^{i} \text{ where } b_k \,\in\, \{ 0,1 \}\]
 
 <p>with the notation <strong>little endian</strong> for the order of the bits, the most significant bit (MSB) $ b_{31} $ is the <strong>sign bit</strong> 
-and the least significant (LSB) bit $ b_{0} $ the <strong>unit bit</strong>. For example:</p>
+and the least significant (LSB) bit $ b_{0} $ the <strong>unit bit</strong>. It the sign bit is 1, the number is stricly negative. And if the sign bit is odd, the numbder is odd. For example:</p>
 
 <div class="language-scala highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="n">toBinaryRepresentation</span><span class="o">(</span><span class="n">i</span><span class="k">:</span> <span class="kt">Int</span><span class="o">)</span><span class="k">:</span> <span class="kt">String</span> <span class="o">=</span>
     <span class="n">i</span><span class="o">.</span><span class="n">toBinaryString</span><span class="o">.</span><span class="n">reverse</span><span class="o">.</span><span class="n">padTo</span><span class="o">(</span><span class="mi">32</span><span class="o">,</span> <span class="sc">'0'</span><span class="o">).</span><span class="n">reverse</span>
@@ -731,24 +731,24 @@ it is important to be aware of this kind of behavior when a technology is used.<
     <h5>Also read</h5>
 
     <div class="row">
-<a href="/blog/articles/2020/05/04/java-ecosystem.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
+<a href="/blog/articles/2020/03/04/development-environment.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 
       <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/posts/2020-05-04-java-ecosystem.jpg" alt="2020-05-04-java-ecosystem">
+        <img class="img-fluid lazyload" data-src="/_static/posts/2020-03-04-development-environment.jpg" alt="2020-03-04-development-environment">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          Java ecosystem
+          Development Environment
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          What is the Java ecosystem from Sun to Oracle?
+          Why isolate its development environment?
         </div>
 
         <!-- Article categories -->
@@ -761,49 +761,49 @@ it is important to be aware of this kind of behavior when a technology is used.<
         <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>May 04, 2020</span>
+          <span>March 04, 2020</span>
         </div>
         <!-- Article reading time -->
         <div class="reading-time">
           <i class="far fa-clock"></i>
-          <span>10 min</span>
+          <span>5 min</span>
         </div>
       </div>
 
     </div>
 </div>
 
-</a><a href="/blog/articles/2019/11/29/gafa-vs-batx.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
+</a><a href="/blog/articles/2019/03/01/access-to-a-computer-from-usb-key.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 
       <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/posts/2019-11-29-gafa-vs-batx.jpg" alt="2019-11-29-gafa-vs-batx">
+        <img class="img-fluid lazyload" data-src="/_static/posts/2019-03-01-access-to-a-computer-from-usb-key.jpg" alt="2019-03-01-access-to-a-computer-from-usb-key">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          Gafa vs Batx
+          Access to a computer from USB key
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          What is the difference?
+          Somebody with USB key can take control of your computer
         </div>
 
         <!-- Article categories -->
         <div class="article-category">
           <ul>
-            <li>Business</li>
+            <li>Security</li>
           </ul>
         </div>
 
         <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>November 29, 2019</span>
+          <span>March 01, 2019</span>
         </div>
         <!-- Article reading time -->
         <div class="reading-time">
