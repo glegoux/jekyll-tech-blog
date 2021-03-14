@@ -8,6 +8,25 @@ layout: default
 {%- assign n_authors = page.authors | size -%}
 <div id="page-article" class="col-12">
 
+  {%- if jekyll.environment == 'development' -%}
+  <div title="Only visible in development mode">
+    <div class="container no-print" title="Only visible in development mode">
+      <div class="row">
+        {%- if page.draft -%}
+        <div class="warning">
+          This article is a <b>draft</b> visible only in <b>development</b> mode which will not deployed
+          on production.
+        </div>
+        {% else %}
+        <div class="success">
+          This article is <b>ready</b> or is <b>already</b> deployed on <b>production</b>.
+         </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
   <!-- Article metadata -->
   <div class="article-metadata">
 

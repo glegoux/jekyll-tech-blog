@@ -151,7 +151,7 @@ div.error, div.warning, div.info, div.question, div.success {
   }
 }
 
-.article-category, .article-labels {
+.article-draft, .article-category, .article-labels {
   padding: 0;
   font-size: 0.8em;
 
@@ -170,6 +170,17 @@ div.error, div.warning, div.info, div.question, div.success {
     a {
       text-decoration: none;
     }
+  }
+}
+
+.article-draft {
+  z-index: 1;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  li {
+    background-color: lightgray;
+    color: grey;
   }
 }
 

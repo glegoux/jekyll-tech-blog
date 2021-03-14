@@ -3,6 +3,16 @@
     <!-- Article metadata -->
     <div class="article-card">
 
+      {%- if post.draft -%}
+      <span class="article-draft">
+        <ul>
+          <li title="Article will not deployed in production (only visible on development mode)">
+            Draft
+          </li>
+        </ul>
+      </span>
+      {%- endif -%}
+
       <!-- Article cover -->
       {%- assign article_cover_path = "/_static/posts/" | append: article_id | append: ".jpg" -%}
       {%- assign article_cover_path_exist = site.static_files | where: "path", article_cover_path | first -%}
