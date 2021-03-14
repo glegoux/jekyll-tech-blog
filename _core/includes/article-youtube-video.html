@@ -1,0 +1,11 @@
+<figure title="{{ include.title | default: '' }}">
+  <iframe width="{{ include.width | default: '640' }}"
+          height="{{ include.height | default: '360' }}"
+          src="{{ include.src }}"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          style="border: 2px solid lightgrey">
+  </iframe>
+<figcaption>{{ include.title | default: '' }}</figcaption>
+</figure>

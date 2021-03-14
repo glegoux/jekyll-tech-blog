@@ -5,8 +5,8 @@
     <description>Personal blog about software engineering</description>
     <link>https://glegoux.com/</link>
     <atom:link href="https://glegoux.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 14 Mar 2021 13:21:16 +0000</pubDate>
-    <lastBuildDate>Sun, 14 Mar 2021 13:21:16 +0000</lastBuildDate>
+    <pubDate>Sun, 14 Mar 2021 18:46:18 +0000</pubDate>
+    <lastBuildDate>Sun, 14 Mar 2021 18:46:18 +0000</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -354,9 +354,9 @@ the company &lt;strong&gt;Sun Microsystems&lt;/strong&gt; released the first ver
   &lt;li&gt;It must be interpreted, threaded, and dynamic.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;figure&gt;
+&lt;figure title=&quot;Java logo&quot;&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2020-05-04-java-ecosystem/images/java-logo.png&quot; alt=&quot;Java logo&quot; title=&quot;Java logo&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2020-05-04-java-ecosystem/images/java-logo.png&quot; alt=&quot;Java logo&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;Java logo&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -378,9 +378,9 @@ annual report of Github that counts the number of unique contributors of java pr
 &lt;p&gt;But the mascot of Java is &lt;a href=&quot;https://www.oracle.com/java/duke.html&quot;&gt;Duke&lt;/a&gt; that plays the role of a &lt;em&gt;software agent&lt;/em&gt; 
 that performed tasks for the user:&lt;/p&gt;
 
-&lt;figure&gt;
+&lt;figure title=&quot;Duke the Java mascot&quot;&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2020-05-04-java-ecosystem/images/duke.png&quot; alt=&quot;Duke the Java mascot&quot; title=&quot;Duke the Java mascot&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2020-05-04-java-ecosystem/images/duke.png&quot; alt=&quot;Duke the Java mascot&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;Duke the Java mascot&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -394,9 +394,9 @@ consists of first learning the rules and then learning when to break them.&lt;/p
 
 &lt;p&gt;Joshua Bloch, author of Effective Java&lt;/p&gt;
 
-&lt;figure&gt;
+&lt;figure title=&quot;Effective Java book&quot;&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2020-05-04-java-ecosystem/images/effective-java-book-cover.jpg&quot; alt=&quot;Effective Java book&quot; title=&quot;Effective Java book&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2020-05-04-java-ecosystem/images/effective-java-book-cover.jpg&quot; alt=&quot;Effective Java book&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;Effective Java book&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -496,9 +496,9 @@ reason, these environments should be isolated and partitioned with a segregation
         <description>&lt;p&gt;The business world is split into 3 regions with the acronyms: &lt;strong&gt;AMER, EMEA, APAC&lt;/strong&gt;. But the web and 
 computer worldwide market is bi-polaire due to the &lt;strong&gt;Internet censorship in China&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;figure&gt;
+&lt;figure title=&quot;Business regions and computer technology areas&quot;&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-11-29-gafa-vs-batx/images/business-area.png&quot; alt=&quot;Business regions and computer technology areas&quot; title=&quot;Business regions and computer technology areas&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-11-29-gafa-vs-batx/images/business-area.png&quot; alt=&quot;Business regions and computer technology areas&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;Business regions and computer technology areas&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -511,9 +511,9 @@ controls the chinese digital market with its own private company.&lt;/p&gt;
 &lt;p&gt;In China we have a gang of four with &lt;strong&gt;Baidu, Alibaba, Tencent, Xiaomi&lt;/strong&gt; (BATX), and for the rest of 
 the world there is the big four tech companies &lt;strong&gt;Google, Apple, Facebook, Amazon&lt;/strong&gt; (GAFA):&lt;/p&gt;
 
-&lt;figure&gt;
+&lt;figure title=&quot;BATX &amp;amp; GAFA&quot;&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-11-29-gafa-vs-batx/images/batx-gafa.png&quot; alt=&quot;BATX &amp;amp; GAFA&quot; title=&quot;BATX &amp;amp; GAFA&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-11-29-gafa-vs-batx/images/batx-gafa.png&quot; alt=&quot;BATX &amp;amp; GAFA&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;BATX &amp;amp; GAFA&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -541,9 +541,9 @@ of &lt;strong&gt;Artificial Intelligence&lt;/strong&gt; (AI) and of &lt;strong&g
 opportunities. Of course a lot of companies are forgotten in the artificial classification BATX 
 vs GAFA as (without quoting all other ones):&lt;/p&gt;
 
-&lt;figure&gt;
+&lt;figure title=&quot;Other big companies&quot;&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-11-29-gafa-vs-batx/images/other-companies.png&quot; alt=&quot;Other big companies&quot; title=&quot;Other big companies&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-11-29-gafa-vs-batx/images/other-companies.png&quot; alt=&quot;Other big companies&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;Other big companies&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -632,9 +632,9 @@ rtt min/avg/max/mdev = 13.821/13.821/13.821/0.000 ms
 
 &lt;p&gt;It is important to keep in mind that IP locator is not 100% accurate, only 95% for the best ones. And behind one IP address  can hide a web proxy and a virtual private cluster preventing to locate really the destination. Thanks to Regional Internet Registry (RIR) and static address IP of  ISPs, IP locators can know the location of some IP addresses easily.&lt;/p&gt;
 
-&lt;figure&gt;
+&lt;figure title=&quot;Map of Regional Internet Registry&quot;&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-07-14-trace-a-request-path/images/rir.png&quot; alt=&quot;Map of Regional Internet Registry&quot; title=&quot;Map of Regional Internet Registry&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-07-14-trace-a-request-path/images/rir.png&quot; alt=&quot;Map of Regional Internet Registry&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;Map of Regional Internet Registry&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -643,9 +643,9 @@ rtt min/avg/max/mdev = 13.821/13.821/13.821/0.000 ms
 
 &lt;p&gt;With this &lt;a href=&quot;https://github.com/glegoux/articles-glegoux-com/tree/master/articles/2019-07-14-geo-location-of-request-path/code&quot;&gt;Proof of Concept (PoC)&lt;/a&gt;, you can run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;get_route.sh glegoux.com&lt;/code&gt; to get IP locations in csv file &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;route.csv&lt;/code&gt; and see the result via Google Maps (just &lt;a href=&quot;https://developers.google.com/maps/documentation/javascript/get-api-key&quot;&gt;get your own API token&lt;/a&gt;) and a python web server by executing &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;httpserver.sh&lt;/code&gt; and by visualizing &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;index.html&lt;/code&gt; in your favorite web browser.&lt;/p&gt;
 
-&lt;figure&gt;
+&lt;figure title=&quot;Geo-location of request path from Paris to glegoux.com&quot;&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-07-14-trace-a-request-path/images/map.png&quot; alt=&quot;Geo-location of request path from Paris to glegoux.com&quot; title=&quot;Geo-location of request path from Paris to glegoux.com&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-07-14-trace-a-request-path/images/map.png&quot; alt=&quot;Geo-location of request path from Paris to glegoux.com&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;Geo-location of request path from Paris to glegoux.com&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -802,9 +802,9 @@ jQuery(document).ready(function () {
         <title>Lighthouse</title>
         <description>&lt;p&gt;&lt;a href=&quot;https://github.com/GoogleChrome/lighthouse/releases/tag/v5.6.0&quot;&gt;LightHouse 5.6.0&lt;/a&gt; is an &lt;a href=&quot;https://github.com/GoogleChrome/lighthouse&quot;&gt;open-source project&lt;/a&gt; written in Javascript and began in January 2016 under &lt;a href=&quot;https://github.com/GoogleChrome/lighthouse/blob/master/LICENSE&quot;&gt;Apache 2,0 License&lt;/a&gt;. On GitHub, it is a project of the Organisation &lt;a href=&quot;https://github.com/GoogleChrome&quot;&gt;Google Chrome&lt;/a&gt; knows a huge success and counts roughly 10,000 stars and 100 contributors. It is already stable, see  &lt;a href=&quot;https://github.com/GoogleChrome/lighthouse/releases/&quot;&gt;latest release&lt;/a&gt;. It is an automated tool for improving the quality of web pages. You can run it against any web page, public or requiring authentication. It has audits for performance, accessibility, progressive web apps, and more.&lt;/p&gt;
 
-&lt;figure&gt;
+&lt;figure title=&quot;Logo of Lighthouse&quot;&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-04-01-lighthouse/images/lighthouse-logo.png&quot; alt=&quot;Logo of Lighthouse&quot; title=&quot;Logo of Lighthouse&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-04-01-lighthouse/images/lighthouse-logo.png&quot; alt=&quot;Logo of Lighthouse&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;Logo of Lighthouse&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -822,27 +822,27 @@ jQuery(document).ready(function () {
 
 &lt;p&gt;The goal is to have a score of 100 for each category and for each web page of your website:&lt;/p&gt;
 
-&lt;figure&gt;
+&lt;figure title=&quot;Lighthouse scores by report category&quot;&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-04-01-lighthouse/images/scores.png&quot; alt=&quot;Lighthouse scores by report category&quot; title=&quot;Lighthouse scores by report category&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-04-01-lighthouse/images/scores.png&quot; alt=&quot;Lighthouse scores by report category&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;Lighthouse scores by report category&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;You can export report under HTML or JSON format, then import these format or see directly report due to &lt;a href=&quot;https://googlechrome.github.io/lighthouse/viewer/&quot;&gt;LightHouse Viewer&lt;/a&gt; (online version). You can install on-premises version directly from the &lt;a href=&quot;https://github.com/GoogleChrome/lighthouse/tree/master/lighthouse-viewer&quot;&gt;Git repository if LightHouse Viewer&lt;/a&gt; .&lt;/p&gt;
 
-&lt;figure&gt;
+&lt;figure title=&quot;Export, import and view LightHouse report&quot;&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-04-01-lighthouse/images/export-import-view.jpg&quot; alt=&quot;Export, import and view LightHouse report&quot; title=&quot;Export, import and view LightHouse report&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-04-01-lighthouse/images/export-import-view.jpg&quot; alt=&quot;Export, import and view LightHouse report&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;Export, import and view LightHouse report&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;The work flow of LightHouse core is described by the following chart:&lt;/p&gt;
 
-&lt;figure&gt;
+&lt;figure title=&quot;Architecture of Lighthouse Core&quot;&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-04-01-lighthouse/images/architecture.jpg&quot; alt=&quot;Architecture of Lighthouse Core&quot; title=&quot;Architecture of Lighthouse Core&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-04-01-lighthouse/images/architecture.jpg&quot; alt=&quot;Architecture of Lighthouse Core&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;Architecture of Lighthouse Core&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -870,9 +870,9 @@ jQuery(document).ready(function () {
 
 &lt;p&gt;As lighthouse is a very recent project, you can use &lt;a href=&quot;https://www.google.com/chrome/browser/canary.html&quot;&gt;Canary&lt;/a&gt; version for Google Chrome.&lt;/p&gt;
 
-&lt;figure&gt;
+&lt;figure title=&quot;Google Chrome, Chromium and Canary version&quot;&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-04-01-lighthouse/images/chrome-version.jpg&quot; alt=&quot;Google Chrome, Chromium and Canary version&quot; title=&quot;Google Chrome, Chromium and Canary version&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-04-01-lighthouse/images/chrome-version.jpg&quot; alt=&quot;Google Chrome, Chromium and Canary version&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;Google Chrome, Chromium and Canary version&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -912,9 +912,9 @@ https://glegoux.com/contact/email/
 
 &lt;p&gt;You get this csv file &lt;strong&gt;reports.csv&lt;/strong&gt;. Visualize with &lt;strong&gt;matplotlib&lt;/strong&gt; library:&lt;/p&gt;
 
-&lt;figure&gt;
+&lt;figure title=&quot; Charts of scores for a set of URLs&quot;&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-04-01-lighthouse/images/plot_scores.png&quot; alt=&quot; Charts of scores for a set of URLs&quot; title=&quot; Charts of scores for a set of URLs&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-04-01-lighthouse/images/plot_scores.png&quot; alt=&quot; Charts of scores for a set of URLs&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt; Charts of scores for a set of URLs&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -1031,9 +1031,9 @@ with Kerberos authentication method.&lt;/p&gt;
 
 &lt;p&gt;Three current widespread implementations are &lt;strong&gt;MIT Kerberos&lt;/strong&gt;, &lt;strong&gt;Heimdal&lt;/strong&gt;, &lt;strong&gt;Active Directory&lt;/strong&gt; (AD) available allowing a multi-platform ecosystem (Windows or Linux server).&lt;/p&gt;
 
-&lt;figure&gt;
+&lt;figure title=&quot;MIT Kerberos&quot;&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-03-23-kerberos-in-5-minutes/images/kerberos-logo.jpg&quot; alt=&quot;MIT Kerberos&quot; title=&quot;MIT Kerberos&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-03-23-kerberos-in-5-minutes/images/kerberos-logo.jpg&quot; alt=&quot;MIT Kerberos&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;MIT Kerberos&lt;/figcaption&gt;
 &lt;/figure&gt;

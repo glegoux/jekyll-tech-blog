@@ -510,9 +510,9 @@ rtt min/avg/max/mdev = 13.821/13.821/13.821/0.000 ms
 
 <p>It is important to keep in mind that IP locator is not 100% accurate, only 95% for the best ones. And behind one IP address  can hide a web proxy and a virtual private cluster preventing to locate really the destination. Thanks to Regional Internet Registry (RIR) and static address IP of  ISPs, IP locators can know the location of some IP addresses easily.</p>
 
-<figure>
+<figure title="Map of Regional Internet Registry">
   <div>
-    <img class="img-fluid lazyload" data-src="https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-07-14-trace-a-request-path/images/rir.png" alt="Map of Regional Internet Registry" title="Map of Regional Internet Registry">
+    <img class="img-fluid lazyload" data-src="https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-07-14-trace-a-request-path/images/rir.png" alt="Map of Regional Internet Registry">
   </div>
   <figcaption>Map of Regional Internet Registry</figcaption>
 </figure>
@@ -521,9 +521,9 @@ rtt min/avg/max/mdev = 13.821/13.821/13.821/0.000 ms
 
 <p>With this <a href="https://github.com/glegoux/articles-glegoux-com/tree/master/articles/2019-07-14-geo-location-of-request-path/code">Proof of Concept (PoC)</a>, you can run <code class="language-plaintext highlighter-rouge">get_route.sh glegoux.com</code> to get IP locations in csv file <code class="language-plaintext highlighter-rouge">route.csv</code> and see the result via Google Maps (just <a href="https://developers.google.com/maps/documentation/javascript/get-api-key">get your own API token</a>) and a python web server by executing <code class="language-plaintext highlighter-rouge">httpserver.sh</code> and by visualizing <code class="language-plaintext highlighter-rouge">index.html</code> in your favorite web browser.</p>
 
-<figure>
+<figure title="Geo-location of request path from Paris to glegoux.com">
   <div>
-    <img class="img-fluid lazyload" data-src="https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-07-14-trace-a-request-path/images/map.png" alt="Geo-location of request path from Paris to glegoux.com" title="Geo-location of request path from Paris to glegoux.com">
+    <img class="img-fluid lazyload" data-src="https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-07-14-trace-a-request-path/images/map.png" alt="Geo-location of request path from Paris to glegoux.com">
   </div>
   <figcaption>Geo-location of request path from Paris to glegoux.com</figcaption>
 </figure>
@@ -682,77 +682,36 @@ rtt min/avg/max/mdev = 13.821/13.821/13.821/0.000 ms
     <h5>Also read</h5>
 
     <div class="row">
-<a href="/blog/articles/2019/03/01/access-to-a-computer-from-usb-key.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
+<a href="/blog/articles/2020/08/24/geo-location.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/posts/2019-03-01-access-to-a-computer-from-usb-key.jpg" alt="2019-03-01-access-to-a-computer-from-usb-key">
+        <img class="img-fluid lazyload" data-src="/_static/posts/2020-08-24-geo-location.jpg" alt="2020-08-24-geo-location">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          Access to a computer from USB key
+          Geo-location
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          Somebody with USB key can take control of your computer
+          How to compute the distance between 2 points with given latitude and longitude?
         </div>
 
         <!-- Article categories -->
         <div class="article-category">
           <ul>
-            <li>Security</li>
+            <li>Applied Mathematics</li>
           </ul>
         </div>
 
         <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>March 01, 2019</span>
-        </div>
-        <!-- Article reading time -->
-        <div class="reading-time">
-          <i class="far fa-clock"></i>
-          <span>5 min</span>
-        </div>
-      </div>
-
-    </div>
-</div>
-
-</a><a href="/blog/articles/2019/04/01/lighthouse.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
-    <!-- Article metadata -->
-    <div class="article-card">
-<!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/posts/2019-04-01-lighthouse.jpg" alt="2019-04-01-lighthouse">
-      </div>
-
-      <!-- Article details -->
-      <div class="article-details">
-        <!-- Article title -->
-        <div class="article-title">
-          Lighthouse
-        </div>
-
-        <!-- Article description -->
-        <div class="article-description">
-          Lighthouse is an open-source, automated tool for improving the quality of web pages.
-        </div>
-
-        <!-- Article categories -->
-        <div class="article-category">
-          <ul>
-            <li>Web</li>
-          </ul>
-        </div>
-
-        <!-- Article publication date -->
-        <div class="date">
-          <i class="far fa-calendar-alt"></i>
-          <span>April 01, 2019</span>
+          <span>August 24, 2020</span>
         </div>
         <!-- Article reading time -->
         <div class="reading-time">
@@ -764,36 +723,77 @@ rtt min/avg/max/mdev = 13.821/13.821/13.821/0.000 ms
     </div>
 </div>
 
-</a><a href="/blog/articles/2019/05/24/java-champion.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
+</a><a href="/blog/articles/2019/11/29/gafa-vs-batx.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/posts/2019-05-24-java-champion.jpg" alt="2019-05-24-java-champion">
+        <img class="img-fluid lazyload" data-src="/_static/posts/2019-11-29-gafa-vs-batx.jpg" alt="2019-11-29-gafa-vs-batx">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          Java champion
+          Gafa vs Batx
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          How to become a Java champion?
+          What is the difference?
         </div>
 
         <!-- Article categories -->
         <div class="article-category">
           <ul>
-            <li>Development</li>
+            <li>Business</li>
           </ul>
         </div>
 
         <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>May 24, 2019</span>
+          <span>November 29, 2019</span>
+        </div>
+        <!-- Article reading time -->
+        <div class="reading-time">
+          <i class="far fa-clock"></i>
+          <span>5 min</span>
+        </div>
+      </div>
+
+    </div>
+</div>
+
+</a><a href="/blog/articles/2020/11/28/unix-timestamp.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
+    <!-- Article metadata -->
+    <div class="article-card">
+<!-- Article cover --><div class="article-cover">
+        <img class="img-fluid lazyload" data-src="/_static/posts/2020-11-28-unix-timestamp.jpg" alt="2020-11-28-unix-timestamp">
+      </div>
+
+      <!-- Article details -->
+      <div class="article-details">
+        <!-- Article title -->
+        <div class="article-title">
+          Unix timestamp
+        </div>
+
+        <!-- Article description -->
+        <div class="article-description">
+          What could happen in 2038?
+        </div>
+
+        <!-- Article categories -->
+        <div class="article-category">
+          <ul>
+            <li>Applied Mathematics</li>
+          </ul>
+        </div>
+
+        <!-- Article publication date -->
+        <div class="date">
+          <i class="far fa-calendar-alt"></i>
+          <span>November 28, 2020</span>
         </div>
         <!-- Article reading time -->
         <div class="reading-time">
