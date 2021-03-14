@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2021-03-14T12:24:25+00:00</updated>
+ <updated>2021-03-14T12:31:03+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -1584,6 +1584,18 @@ ERROR
 &lt;p&gt;Source code:&lt;/p&gt;
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;pre class=&quot;error&quot;&amp;gt;
 ERROR
+&amp;lt;/pre&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;success&quot;&gt;Success&lt;/h3&gt;
+
+&lt;pre class=&quot;success&quot;&gt;
+SUCCESS
+&lt;/pre&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;pre class=&quot;success&quot;&amp;gt;
+SUCCESS
 &amp;lt;/pre&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
