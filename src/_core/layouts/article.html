@@ -11,12 +11,19 @@ layout: default
   <!-- Article metadata -->
   <div class="article-metadata">
 
+    <!-- Article browser -->
+    <span class="article-browser">
+      <a href="/blog/articles" title="See all articles">
+        <i class="fas fa-home"></i>
+      </a>
+      &gt;
+    </span>
     <!-- Article category -->
-    <div class="article-category">
+    <span class="article-category">
       <ul>
         <li title="Category of this article">{{ page.category }}</li>
       </ul>
-    </div>
+    </span>
 
     <!-- Article title -->
     <div class="article-title" title="Title of this article">
@@ -120,7 +127,7 @@ layout: default
       <div class="col-6">
         {% include page-social-sharing.html %}
       </div>
-      <div class="col-6 article-browser">
+      <div class="col-6 article-browser text-align-right">
         <a href="/blog/articles" title="See all articles">
           <i class="fas fa-home"></i>
         </a>
@@ -200,7 +207,7 @@ layout: default
       <div class="col-6">
         {% include page-social-sharing.html %}
       </div>
-      <div class="col-6 article-browser">
+      <div class="col-6 article-browser text-align-right">
         <a href="/blog/articles" title="See all articles">
           <i class="fa fa-home"></i>
         </a>
