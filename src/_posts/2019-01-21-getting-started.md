@@ -226,6 +226,19 @@ ERROR
 </pre>
 ~~~
 
+### Success
+
+<pre class="success">
+SUCCESS
+</pre>
+
+Source code:
+~~~
+<pre class="success">
+SUCCESS
+</pre>
+~~~
+
 # Informatics code
 
 ## Programming language
