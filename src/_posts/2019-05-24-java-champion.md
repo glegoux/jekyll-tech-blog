@@ -2,7 +2,7 @@
 title: "Java champion"
 description: "How to become a Java champion?"
 authors: ["glegoux"]
-time_reading_minutes: 5
+time_reading_minutes: 1
 category: "Development"
 tags: ["Language", "Java"]
 ---
