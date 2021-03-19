@@ -9,8 +9,8 @@ tags: ["Arithmetic"]
 
 # What is the Y2K38 problem? 
 
-2038 is a particular year where a informatics bug could occur, sometimes referred to as the **Y2K38 problem**. 
-Because an **arithmetic overflow** on the Unix timestamp risks to appear, what it means, there are insufficient bits in a 
+2038 is a particular year when a informatics bug could occur, sometimes referred to as the **Y2K38 problem**. 
+Because an **arithmetic overflow** on the Unix timestamp risks appearing, what it means, there are insufficient bits in a 
 binary number representation to portray the result of an arithmetic operation. For example, an arithmetic operation 
 is not closed with respect to addition, subtraction, multiplication, or division.  
 
@@ -23,7 +23,7 @@ is not closed with respect to addition, subtraction, multiplication, or division
 
 Effectively, the **Unix timestamp**, used largely in informatics systems, represents the number of
 elapsed seconds since January 1st, 1970 at midnight in the Coordinated Universal Time (UTC) time standard.
-This value is incremented every seconds. And the date `1970-01-01 00:00:00 UTC`, usually called **epoch date**, 
+This value is incremented every second. And the date `1970-01-01 00:00:00 UTC`, usually called **epoch date**, 
 is a particular date in a lot of informatics system representing the origin time, inherited of the Unix operating system
 an POSIX standard. The Unix engineers picked this date arbitrarily, because they needed to set a uniform date for the start of time, 
 and New Year's Day, 1970, seemed most convenient.
