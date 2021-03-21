@@ -243,6 +243,8 @@ SUCCESS
 
 ## Programming language
 
+The used syntax highlighter is Rouge, see the [list of supported languages and lexers][https://github.com/rouge-ruby/rouge/wiki/List-of-supported-languages-and-lexers].
+
 ### <span class="notranslate">Python</span>
 
 ~~~ python
