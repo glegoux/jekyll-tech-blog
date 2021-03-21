@@ -243,22 +243,6 @@ SUCCESS
 
 ## Programming language
 
-### <span class="notranslate">Terminal</span>
-
-~~~ terminal
-$ command
-result
-~~~
-
-Source code:
-
-<pre>
-~~~ terminal
-$ command
-result
-~~~
-</pre>
-
 ### <span class="notranslate">Python</span>
 
 ~~~ python
@@ -296,6 +280,58 @@ Source code:
 <pre>
 ~~~ scala 
 println("Hello world!")
+~~~
+</pre>
+
+### <span class="notranslate">C# .NET</span>
+
+~~~ csharp 
+Console.WriteLine("Hello world!")
+~~~
+
+Source code:
+<pre>
+~~~ csharp 
+Console.WriteLine("Hello world!")
+~~~
+</pre>
+
+### <span class="notranslate">Rust</span>
+
+~~~ rust
+println!("Hello World!");
+~~~
+
+Source code:
+<pre>
+~~~ rust
+println!("Hello World!");
+~~~
+</pre>
+
+### <span class="notranslate">C++</span>
+
+~~~ c++
+std::cout << "Hello World!";
+~~~
+
+Source code:
+<pre>
+~~~ c++
+std::cout << "Hello World!";
+~~~
+</pre>
+
+### <span class="notranslate">C</span>
+
+~~~ c
+printf("Hello, World!");
+~~~
+
+Source code:
+<pre>
+~~~ c 
+printf("Hello, World!");
 ~~~
 </pre>
 
@@ -343,6 +379,19 @@ fmt.Println("Hello world!")
 ~~~
 </pre>
 
+### <span class="notranslate">TypeScript</span>
+
+~~~ typescript
+console.log("Hello world!");
+~~~
+
+Source code:
+<pre>
+~~~ typescript
+console.log("Hello world!");
+~~~
+</pre>
+
 ### <span class="notranslate">JavaScript</span>
 
 ~~~ javascript
@@ -385,6 +434,22 @@ Source code:
 .hello-world {
   text-align: center
 }
+~~~
+</pre>
+
+## Terminal
+
+~~~ terminal
+$ command
+result
+~~~
+
+Source code:
+
+<pre>
+~~~ terminal
+$ command
+result
 ~~~
 </pre>
 

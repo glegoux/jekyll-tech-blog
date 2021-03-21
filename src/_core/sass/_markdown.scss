@@ -776,44 +776,64 @@ body {
 
   /* Language */
 
-  .highlighter-rouge.language-bash::before {
-    content: "bash " url("/_core/static/img/language/bash.png");
-  }
-
   .highlighter-rouge.language-java::before {
-    content: "java " url("/_core/static/img/language/java.png");
-  }
-
-  .highlighter-rouge.language-python::before {
-    content: "python " url("/_core/static/img/language/python.png");
-  }
-
-  .highlighter-rouge.language-sql::before {
-    content: "sql " url("/_core/static/img/language/sql.png");
+    content: url("/_core/static/img/language/java.png") " Java" ;
   }
 
   .highlighter-rouge.language-scala:before {
-    content: "scala " url("/_core/static/img/language/scala.png");
+    content: url("/_core/static/img/language/scala.png") " Scala";
   }
 
-  .highlighter-rouge.language-javascript::before {
-    content: "javascript " url("/_core/static/img/language/javascript.png");
+  .highlighter-rouge.language-csharp:before {
+    content: url("/_core/static/img/language/csharp.png") " C# .NET";
+  }
+
+  .highlighter-rouge.language-rust::before {
+    content: url("/_core/static/img/language/rust.png") " Rust";
+  }
+
+  .highlighter-rouge.language-c\+\+:before {
+    content: url("/_core/static/img/language/cplusplus.png") " C++";
+  }
+
+  .highlighter-rouge.language-c:before {
+    content: url("/_core/static/img/language/c.png") " C";
+  }
+
+  .highlighter-rouge.language-python::before {
+    content: url("/_core/static/img/language/python.png") " Python";
+  }
+
+  .highlighter-rouge.language-sql::before {
+    content: url("/_core/static/img/language/sql.png") " SQL";
+  }
+
+  .highlighter-rouge.language-bash::before {
+    content: url("/_core/static/img/language/bash.png") " Bash";
   }
 
   .highlighter-rouge.language-go::before {
-    content: "go " url("/_core/static/img/language/go.png");
+    content: url("/_core/static/img/language/go.png") " Go";
   }
 
   .highlighter-rouge.language-ruby::before {
-    content: "ruby " url("/_core/static/img/language/ruby.png");
+    content: url("/_core/static/img/language/ruby.png") " Ruby";
+  }
+
+  .highlighter-rouge.language-typescript::before {
+    content: url("/_core/static/img/language/typescript.png") " Typescript";
+  }
+
+  .highlighter-rouge.language-javascript::before {
+    content: url("/_core/static/img/language/javascript.png") " Javascript";
   }
 
   .highlighter-rouge.language-html::before {
-    content: "html " url("/_core/static/img/language/html.png");
+    content: url("/_core/static/img/language/html.png") " HTML";
   }
 
   .highlighter-rouge.language-css::before {
-    content: "css " url("/_core/static/img/language/css.png");
+    content: url("/_core/static/img/language/css.png") " CSS";
   }
 
   /* Format text file */
