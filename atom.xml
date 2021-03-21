@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2021-03-21T19:16:41+00:00</updated>
+ <updated>2021-03-21T19:25:38+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -1602,6 +1602,8 @@ SUCCESS
 &lt;h1 id=&quot;informatics-code&quot;&gt;Informatics code&lt;/h1&gt;
 
 &lt;h2 id=&quot;programming-language&quot;&gt;Programming language&lt;/h2&gt;
+
+&lt;p&gt;The used syntax highlighter is Rouge, see the [list of supported languages and lexers][https://github.com/rouge-ruby/rouge/wiki/List-of-supported-languages-and-lexers].&lt;/p&gt;
 
 &lt;h3 id=&quot;python&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;Python&lt;/span&gt;&lt;/h3&gt;
 
