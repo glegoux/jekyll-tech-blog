@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2021-03-21T18:20:39+00:00</updated>
+ <updated>2021-03-21T19:16:41+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -1603,21 +1603,6 @@ SUCCESS
 
 &lt;h2 id=&quot;programming-language&quot;&gt;Programming language&lt;/h2&gt;
 
-&lt;h3 id=&quot;terminal&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;Terminal&lt;/span&gt;&lt;/h3&gt;
-
-&lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;command&lt;/span&gt;
-&lt;span class=&quot;go&quot;&gt;result
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Source code:&lt;/p&gt;
-
-&lt;pre&gt;
-~~~ terminal
-$ command
-result
-~~~
-&lt;/pre&gt;
-
 &lt;h3 id=&quot;python&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;Python&lt;/span&gt;&lt;/h3&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello world!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
@@ -1652,6 +1637,54 @@ System.out.println(&quot;Hello world!&quot;);
 &lt;pre&gt;
 ~~~ scala 
 println(&quot;Hello world!&quot;)
+~~~
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;c-net&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;C# .NET&lt;/span&gt;&lt;/h3&gt;
+
+&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;Console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;WriteLine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello world!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;pre&gt;
+~~~ csharp 
+Console.WriteLine(&quot;Hello world!&quot;)
+~~~
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;rust&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;Rust&lt;/span&gt;&lt;/h3&gt;
+
+&lt;div class=&quot;language-rust highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nd&quot;&gt;println!&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello World!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;pre&gt;
+~~~ rust
+println!(&quot;Hello World!&quot;);
+~~~
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;c&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;C++&lt;/span&gt;&lt;/h3&gt;
+
+&lt;div class=&quot;language-c++ highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Hello World!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;pre&gt;
+~~~ c++
+std::cout &amp;lt;&amp;lt; &quot;Hello World!&quot;;
+~~~
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;c-1&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;C&lt;/span&gt;&lt;/h3&gt;
+
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello, World!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;pre&gt;
+~~~ c 
+printf(&quot;Hello, World!&quot;);
 ~~~
 &lt;/pre&gt;
 
@@ -1696,6 +1729,18 @@ fmt.Println(&quot;Hello world!&quot;)
 ~~~
 &lt;/pre&gt;
 
+&lt;h3 id=&quot;typescript&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;TypeScript&lt;/span&gt;&lt;/h3&gt;
+
+&lt;div class=&quot;language-typescript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Hello world!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;pre&gt;
+~~~ typescript
+console.log(&quot;Hello world!&quot;);
+~~~
+&lt;/pre&gt;
+
 &lt;h3 id=&quot;javascript&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;JavaScript&lt;/span&gt;&lt;/h3&gt;
 
 &lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Hello world!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
@@ -1735,6 +1780,21 @@ console.log(&quot;Hello world!&quot;);
 .hello-world {
   text-align: center
 }
+~~~
+&lt;/pre&gt;
+
+&lt;h2 id=&quot;terminal&quot;&gt;Terminal&lt;/h2&gt;
+
+&lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;command&lt;/span&gt;
+&lt;span class=&quot;go&quot;&gt;result
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+
+&lt;pre&gt;
+~~~ terminal
+$ command
+result
 ~~~
 &lt;/pre&gt;
 
