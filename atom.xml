@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2021-03-21T19:39:24+00:00</updated>
+ <updated>2021-04-20T17:17:42+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -1198,15 +1198,15 @@ The typical format of a typical Kerberos principal is primary/instance@REALM.&lt
    <link href="https://glegoux.com/blog/articles/2019/03/01/access-to-a-computer-from-usb-key.html"/>
    <updated>2019-03-01T00:00:00+00:00</updated>
    <id>https://glegoux.com/blog/articles/2019/03/01/access-to-a-computer-from-usb-key.html</id>
-   <content type="html">&lt;p&gt;Imagine that you are in the following situation:&lt;/p&gt;
+   <content type="html">&lt;p&gt;Imagine that you are in one of the following situations:&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;You have forgotten your password,&lt;/li&gt;
-  &lt;li&gt;Following a wrong manipulation you can not access to your personal space anymore,&lt;/li&gt;
-  &lt;li&gt;You found a computer without supervision.&lt;/li&gt;
+  &lt;li&gt;You have forgotten your password to connect to personal workspace of your computer, but you want reset it.&lt;/li&gt;
+  &lt;li&gt;After a wrong manipulation, you can not access to personal data of your computer, but you want retrieve this access.&lt;/li&gt;
+  &lt;li&gt;You found a computer without supervision whom you are not the owner, but you want see the content of the file system.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;With a bootable USB key on Ubuntu, you can change the password of the target computer and recover its file system.&lt;/p&gt;
+&lt;p&gt;With a bootable USB key on Ubuntu, you can resolve these situations, first by mounting the file system of the targeted computer with all permissions, then by changing the password of any local user, and finally by connecting to the targeted workspace and exploring the file system.&lt;/p&gt;
 
 &lt;p&gt;First, plug your USB drive into the target computer, choose your key as the boot device for the target computer to boot to the Ubuntu system on your USB drive. On a DELL computer, press &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;F12&lt;/code&gt; to access this selection. This information is visible on the welcome screen of the manufacturer of your computer.&lt;/p&gt;
 
