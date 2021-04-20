@@ -6,13 +6,13 @@ time_reading_minutes: 5
 category: "Security"
 ---
 
-Imagine that you are in the following situation:
+Imagine that you are in one of the following situations:
 
-1. You have forgotten your password,
-2. Following a wrong manipulation you can not access to your personal space anymore, 
-3. You found a computer without supervision. 
+1. You have forgotten your password to connect to personal workspace of your computer, but you want reset it.
+2. After a wrong manipulation, you can not access to personal data of your computer, but you want retrieve this access.
+3. You found a computer without supervision whom you are not the owner, but you want see the content of the file system.
 
-With a bootable USB key on Ubuntu, you can change the password of the target computer and recover its file system.
+With a bootable USB key on Ubuntu, you can resolve these situations, first by mounting the file system of the targeted computer with all permissions, then by changing the password of any local user, and finally by connecting to the targeted workspace and exploring the file system.
 
 First, plug your USB drive into the target computer, choose your key as the boot device for the target computer to boot to the Ubuntu system on your USB drive. On a DELL computer, press `F12` to access this selection. This information is visible on the welcome screen of the manufacturer of your computer.
 
