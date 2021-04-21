@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2021-04-20T17:17:42+00:00</updated>
+ <updated>2021-04-21T12:58:44+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -1597,6 +1597,14 @@ SUCCESS
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;pre class=&quot;success&quot;&amp;gt;
 SUCCESS
 &amp;lt;/pre&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;comment&quot;&gt;Comment&lt;/h2&gt;
+
+&lt;p&gt;If you want to put a hidden text not displayed in the article but present in the written source, that is to say a comment, simply do a HTML comment:&lt;/p&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;!-- comments --&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h1 id=&quot;informatics-code&quot;&gt;Informatics code&lt;/h1&gt;
