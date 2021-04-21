@@ -122,9 +122,9 @@ Linus Torvalds, creator of the Linux operating system
 
 ## Emoticon
 
-Use emoji, see [emojipedia.org](https://emojipedia.org/github/) :
+Use emoji, with [gemoji](https://github.com/github/gemoji) see [emoji cheat sheet](https://www.webfx.com/tools/emoji-cheat-sheet/).
 
-:smile: :scream: :yum:
+For example: :smile: :scream: :yum:
 
 Source code:
 ~~~ @escape
