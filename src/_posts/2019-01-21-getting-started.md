@@ -239,6 +239,15 @@ SUCCESS
 </pre>
 ~~~
 
+## Comment
+
+If you want to put a hidden text not displayed in the article but present in the written source, that is to say a comment, simply do a HTML comment:
+
+Source code:
+~~~
+<!-- comments -->
+~~~
+
 # Informatics code
 
 ## Programming language
