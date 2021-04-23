@@ -4,12 +4,12 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2021-04-23T16:43:23+00:00</updated>
+ <updated>2021-04-23T17:20:53+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
  <entry>
-   <title>Time Management</title>
+   <title>Time management</title>
    <link href="https://glegoux.com/blog/articles/2021/04/20/time-management.html"/>
    <updated>2021-04-20T00:00:00+00:00</updated>
    <id>https://glegoux.com/blog/articles/2021/04/20/time-management.html</id>
@@ -734,7 +734,7 @@ respecting the triangle inegality.&lt;/p&gt;
    </author></entry>
  
  <entry>
-   <title>GNU Privacy Guard</title>
+   <title>GNU privacy guard</title>
    <link href="https://glegoux.com/blog/articles/2020/05/15/gnu-privacy-guard.html"/>
    <updated>2020-05-15T00:00:00+00:00</updated>
    <id>https://glegoux.com/blog/articles/2020/05/15/gnu-privacy-guard.html</id>
@@ -876,7 +876,7 @@ with the Snyk company survey, or the Jrebel company survey.&lt;/p&gt;
    </author></entry>
  
  <entry>
-   <title>Development Environment</title>
+   <title>Development environment</title>
    <link href="https://glegoux.com/blog/articles/2020/03/04/development-environment.html"/>
    <updated>2020-03-04T00:00:00+00:00</updated>
    <id>https://glegoux.com/blog/articles/2020/03/04/development-environment.html</id>
@@ -1775,12 +1775,14 @@ Beware the morality of this article is that a person physically accessing your c
 
 &lt;p align=&quot;center&quot;&gt;
   &lt;a href=&quot;http://www.bnf.fr/fr/professionnels/s_informer_obtenir_issn.html&quot;&gt; Get informed and get an ISSN &lt;/a&gt; &lt;br /&gt;
-	&lt;a href=&quot;http://www.bnf.fr/fr/professionnels/s_informer_obtenir_isbn.html&quot;&gt; Get information and get an ISBN &lt;/a&gt;
+  &lt;a href=&quot;http://www.bnf.fr/fr/professionnels/s_informer_obtenir_isbn.html&quot;&gt; Get information and get an ISBN &lt;/a&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Your references must be in alphabetical order at the end of your article respecting these conventions.&lt;/p&gt;
 
-&lt;h1 id=&quot;book&quot;&gt;Book&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;Book&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;NAME OF THE AUTHOR, First name of the author. &lt;strong&gt;Title of the book&lt;/strong&gt;. Name of publisher, year of publication. Number of pages. Notes. ISBN.&lt;/p&gt;
 
@@ -1788,7 +1790,9 @@ Beware the morality of this article is that a person physically accessing your c
 
 &lt;p&gt;NAME OF THE AUTHOR, First name of the author. &lt;strong&gt;Title of the article&lt;/strong&gt;. &lt;em&gt;Title of the periodical&lt;/em&gt;. year of publication. not. paging. ISSN.&lt;/p&gt;
 
-&lt;h1 id=&quot;internet-resource&quot;&gt;Internet resource&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;Internet resource&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;This convention is personal. For this blog by default the links given are consulted the day of the creation of the article.&lt;/p&gt;
 
@@ -1808,7 +1812,7 @@ Beware the morality of this article is that a person physically accessing your c
    </author></entry>
  
  <entry>
-   <title>Getting Started</title>
+   <title>Getting started</title>
    <link href="https://glegoux.com/blog/articles/2019/01/21/getting-started.html"/>
    <updated>2019-01-21T00:00:00+00:00</updated>
    <id>https://glegoux.com/blog/articles/2019/01/21/getting-started.html</id>

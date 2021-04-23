@@ -5,12 +5,12 @@
     <description>Personal blog about software engineering</description>
     <link>https://glegoux.com/</link>
     <atom:link href="https://glegoux.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 23 Apr 2021 16:43:23 +0000</pubDate>
-    <lastBuildDate>Fri, 23 Apr 2021 16:43:23 +0000</lastBuildDate>
+    <pubDate>Fri, 23 Apr 2021 17:20:53 +0000</pubDate>
+    <lastBuildDate>Fri, 23 Apr 2021 17:20:53 +0000</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
-        <title>Time Management</title>
+        <title>Time management</title>
         <description>&lt;h1 id=&quot;what-is-the-time-management&quot;&gt;What is the time management?&lt;/h1&gt;
 
 &lt;p&gt;We are going to study the &lt;strong&gt;time management&lt;/strong&gt; which is the science of the usage of time, a possible
@@ -745,7 +745,7 @@ respecting the triangle inegality.&lt;/p&gt;
       </item>
     
       <item>
-        <title>GNU Privacy Guard</title>
+        <title>GNU privacy guard</title>
         <description>&lt;p&gt;First, it is important to distinguish: &lt;strong&gt;PGP&lt;/strong&gt; (Pretty Good Privacy), &lt;strong&gt;OpenPGP&lt;/strong&gt; and &lt;strong&gt;GnuPG&lt;/strong&gt; also named &lt;strong&gt;GPG&lt;/strong&gt; (Gnu Privacy Guard).
 Phil Zimmerman made up PGP in 1991 as a way for people to communicate without eavesdropping. Going further 
 back into the 1990s, there used to be a law in the US that restricted the export of cryptographic technology 
@@ -895,7 +895,7 @@ with the Snyk company survey, or the Jrebel company survey.&lt;/p&gt;
       </item>
     
       <item>
-        <title>Development Environment</title>
+        <title>Development environment</title>
         <description>&lt;p&gt;It is a good practice to isolate the used technologies for your development environment, because:&lt;/p&gt;
 
 &lt;ol&gt;

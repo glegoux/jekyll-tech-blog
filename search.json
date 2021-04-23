@@ -1,7 +1,7 @@
 [
 
 {
-"title"       : "Time Management",
+"title"       : "Time management",
 "description" : "How to optimize your time & work?",
 "authors"     : "glegoux",
 "category"    : "Methodology",
@@ -43,7 +43,7 @@
 } ,
 
 {
-"title"       : "GNU Privacy Guard",
+"title"       : "GNU privacy guard",
 "description" : "How to prove its identity and encrypt its communication?",
 "authors"     : "glegoux",
 "category"    : "Security",
@@ -71,7 +71,7 @@
 } ,
 
 {
-"title"       : "Development Environment",
+"title"       : "Development environment",
 "description" : "Why isolate its development environment?",
 "authors"     : "glegoux",
 "category"    : "Development",
@@ -183,7 +183,7 @@
 } ,
 
 {
-"title"       : "Getting Started",
+"title"       : "Getting started",
 "description" : "Markdown is a easy-to-use syntax for writing text on this blog.",
 "authors"     : "glegoux",
 "category"    : "Methodology",
