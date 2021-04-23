@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2021-04-21T20:58:50+00:00</updated>
+ <updated>2021-04-23T10:11:02+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -1369,7 +1369,12 @@ Beware the morality of this article is that a person physically accessing your c
    <link href="https://glegoux.com/blog/articles/2019/01/21/getting-started.html"/>
    <updated>2019-01-21T00:00:00+00:00</updated>
    <id>https://glegoux.com/blog/articles/2019/01/21/getting-started.html</id>
-   <content type="html">&lt;p&gt;&lt;a href=&quot;https://daringfireball.net/projects/markdown/&quot;&gt;Markdown&lt;/a&gt; is a lightweight and popular text metalanguage which is a writing standard for scientists 
+   <content type="html">&lt;p&gt;Discover the Markdown syntax used on this blog to write articles, or to generate static pages, and more generally on the web. 
+When you click on the button: &lt;i class=&quot;far fa-file-code&quot;&gt;&lt;/i&gt; Source, you can see the original source code of the article. 
+More precisely on this blog, a superset of Markdown is used and called &lt;a href=&quot;https://kramdown.gettalong.org/&quot;&gt;Kramdown&lt;/a&gt;, the syntax is available &lt;a href=&quot;https://kramdown.gettalong.org/syntax.html&quot;&gt;here&lt;/a&gt;. Each following section gives an overview and examples for each usage.
+But before, what is exactly the markdown?&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://daringfireball.net/projects/markdown/&quot;&gt;Markdown&lt;/a&gt; is a lightweight and popular text metalanguage which is a writing standard for scientists 
 with extension &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.md&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.markdown&lt;/code&gt;. It is often converted into HTML what allows it to be easily shared on the web :spider_web:.&lt;/p&gt;
 
 &lt;p&gt;After the conversion to a HTML text, it is decorated and animated by CSS style sheets and/or JS scripts:&lt;/p&gt;
@@ -1381,8 +1386,14 @@ with extension &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&g
   &lt;figcaption&gt;Markdown processor&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;Discover the Markdown syntax used on this blog and more generally on the web.
-More precisely on this blog, a superset of Markdown is used and called &lt;a href=&quot;https://kramdown.gettalong.org/&quot;&gt;Kramdown&lt;/a&gt;, the syntax is available &lt;a href=&quot;https://kramdown.gettalong.org/syntax.html&quot;&gt;here&lt;/a&gt;. Each following section gives an overview and examples for each usage.&lt;/p&gt;
+&lt;p&gt;Why using it rather than HTML? Because it is more handy to use for the writer, and all advantages of the HTML are preserved for the:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Reader: The generated HTML content is compatible with all web browsers, nothing change.&lt;/li&gt;
+  &lt;li&gt;Writer: The structured Markdown content and the style continue being separated, you can modify the one without interfering with the another one.  But in addition, it is easier to create then modify its article, the content is more human-readable and shorter than the HTML.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;With the 3 following sections: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Text&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Informatics code&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Mathematics formula&lt;/code&gt;, see how to create your content with the right syntax through examples.&lt;/p&gt;
 
 &lt;h1 id=&quot;text&quot;&gt;Text&lt;/h1&gt;
 
