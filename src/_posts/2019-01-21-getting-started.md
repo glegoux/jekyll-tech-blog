@@ -7,8 +7,8 @@ category: "Methodology"
 tags: ["Markdown"]
 ---
 
-Discover the Markdown syntax used on this blog to write articles, or to generate static pages, and more generally on the web. 
-When you click on the button: <i class="far fa-file-code"></i> Source, you can see the original source code of the article. 
+Discover the **Markdown syntax** used on this blog to write articles, or to generate static pages, and more generally on the web. 
+When you click on the button: <i class="far fa-file-code"></i> Source, you can see the **original source code of an article**. 
 More precisely on this blog, a superset of Markdown is used and called [Kramdown](https://kramdown.gettalong.org/), the syntax is available [here](https://kramdown.gettalong.org/syntax.html). Each following section gives an overview and examples for each usage.
 But before, what is exactly the Markdown?
 
@@ -22,8 +22,8 @@ src="https://docs.google.com/drawings/d/e/2PACX-1vRPwfUjnj6bT9B-M4jdzQqOICzCwblx
 
 Why using it rather than HTML? Because it is more handy to use for the writer, and all advantages of the HTML are preserved for the:
 
-* Reader: The generated HTML content is compatible with all web browsers, nothing change. 
-* Writer: The structured Markdown content and the style continue being separated, you can modify the one without interfering with the another one.  But in addition, it is easier to create then modify its article, the content is more human-readable and shorter than the HTML.
+* **Reader**: The generated HTML content is compatible with all web browsers, nothing change. 
+* **Writer**: The structured Markdown content and the style continue being separated, you can modify the one without interfering with the another one.  But in addition, it is easier to create then modify its article, the content is more human-readable and shorter than the HTML.
 
 With the 3 following sections: `Text`, `Informatics code` and `Mathematics formula`, see how to create your content with the right syntax through examples. 
 
