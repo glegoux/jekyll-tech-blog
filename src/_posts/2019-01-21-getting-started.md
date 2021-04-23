@@ -15,7 +15,7 @@ But before, what is exactly the Markdown?
 [Markdown](https://daringfireball.net/projects/markdown/) is a lightweight and popular text metalanguage which is a writing standard
 with extension `.md` or `.markdown`. It is often converted into HTML what allows it to be easily shared on the web :spider_web:.
 
-After the conversion to a HTML text, it is decorated and animated by CSS style sheets and/or JS scripts: 
+After the **conversion to a HTML text**, it is decorated and animated by CSS style sheets and/or JS scripts: 
 
 {% include article-google-drawing.html title="Markdown processor"
 src="https://docs.google.com/drawings/d/e/2PACX-1vRPwfUjnj6bT9B-M4jdzQqOICzCwblxYR5xvgiXYWrpcgpmFddbWR-ErodWf-U0rE8f0aqzUfazXvf8/pub?w=960&amp;h=267" %}
