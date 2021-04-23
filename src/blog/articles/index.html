@@ -96,21 +96,7 @@ redirect_from:
     </div>
   </div>
 
-  <!-- Pagination links -->
-  <div class="articles-pagination">
-    {%- if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous">
-      <i class="fa fa-arrow-circle-left"></i>
-    </a>
-    {%- endif %}
-    <span class="page_number">
-      page: {{ paginator.page }} / {{ paginator.total_pages }}
-    </span>
-    {%- if paginator.next_page -%}
-    <a href="{{ paginator.next_page_path }}" class="next">
-      <i class="fa fa-arrow-circle-right"></i>
-    </a>
-    {%- endif -%}
-  </div>
+  <!-- Pagination -->
+  {% include articles-pagination-browser.html %}
 
 </div>

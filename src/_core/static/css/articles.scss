@@ -135,8 +135,17 @@
 
 
   .articles-pagination {
+    color: grey;
     display: block !important;
     text-align: center;
+
+    ul li {
+      display: inline;
+    }
+
+    .current-page {
+      font-weight: bold;
+    }
 
     .next {
       margin-left: 1em;
