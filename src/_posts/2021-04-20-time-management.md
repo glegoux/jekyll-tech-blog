@@ -287,10 +287,10 @@ it.
 # For example for your lifetime
 
 Are you a student, a worker or a retiree? Take the example of a worker, more precisely a professional
-software engineer full-time working exclusively for a unique company at the beginning of your
-career. By hoping, that it matches with your **auto-introspection**, else it could help you to do
-the same for your personal context. I give you here only a **partial overview** of how I can do, this example
-is not necessary my real usage of my personal time which is private.
+software engineer full-time working exclusively for a unique company at the beginning of its
+career. By hoping, that it matches to your **auto-introspection**, else the following could help you to do
+the same thing for your personal context. I give you here only a **partial overview** of how it can be done, 
+this example is not necessary my real usage of my personal time which is private.
 
 {% include article-google-drawing.html title="Timescale of the human life"
 src="https://docs.google.com/drawings/d/e/2PACX-1vTP167tBMm4i3nTOrf72NzpkGNLuTAVMnsQqdasktHiuAnOx-AMG1G9We3qWRADeDgrfCC3EV2Oxwm7/pub?w=537&h=147"
@@ -312,27 +312,25 @@ I split my activities into 3 partitions:
 3. **Personal activity**: spare and free activities  
    *for example: practice its development personal, relaxation ...*
 
-I focus me on **life activities** that composes a part of your personal time. I let
-the work and personal activity like a back boxes that influences only for mindset and my ambition. 
-I want to be extreme and minimize my lifetime and maximize my personal time. I consider my work activity 
-like incompressible, I signed a contract.
+I focus me on **life activities** that composes my lifetime. I let on the side the work and personal activity. 
+I want to be extreme and minimize my lifetime and maximize my work and personal time.
 
-For example, for the different timescales, I take long for ~hour and short ~min. 
+For example, for the different timescales, I take long: ~hour and short: ~minute. 
 I try to evaluate the time of each life activity:
 
-* sleeping: 7h per days
-* watching: 2 times 3min per day for teeth and 15min per day for body
-* eating: 2 times 20min per day for lunch and dinner with 10min per day for the breakfast
-* seeing friends: at least one time per week
-* doing the drudgery and waste time: 4h per week (taking out the trash, preparing the meals, doing housework, shopping, ...)
-* practicing sport: 3h per week
+* sleeping: 7 hours per day
+* watching: 2 times 3 minutes per day for teeth and 15min per day for body
+* eating: 2 times 20 minutes per day for lunch and dinner with 10 minutes per day for the breakfast
+* seeing friends: at least one time per week for several hours
+* doing the drudgery and waste time: 4 hours per week (taking out the trash, preparing the meals, doing housework, shopping, ...)
+* practicing sport: 3 hours per week
 
-These activities are not dependent, and with the same priority for me. Now I sequence them for each period of a day and of the week.
-
-Now I redo the same things for my personal time, and my work time.
+These activities are not really dependent, and with the same priority for me. Now I sequence them for each period of a day and of a week.
 
 I have a **calendar** where I can monitor each timescale and put my tasks, a **weekly planning**
 for my datelines, and a **to-do list** for daily tasks.
+
+Now I redo the same things for my personal activities, and my work activities to finish my time management.
 
 # Go Further
 
@@ -344,9 +342,9 @@ if you are:
 * a **manager** for a group of teams (called a department)
 * a **CEO** or a **CTO** for a group of departments ...
 
-You need to learn to delegate tasks, understand the personal context of another people, and to drive
+It requires delegating tasks, understanding the personal context of other people, and driving
 the time management for a group of people at **different scales**. These organizations can have
-different structures and different stakes. For it, you need to re-define the **time management** to
+different structures and different stakes. For it, you must re-define the **time management** to
 resolve your new needs for **yourself** and for **another people**.
 
 # References
