@@ -167,8 +167,8 @@ src="https://docs.google.com/drawings/d/e/2PACX-1vQWBneRL7immMkY2pHZ1FMm7Kz3LNDc
 But the stability, the evolution of the objective function depends on your <b>regularity</b>, your <b>implication</b> and your <b>progress</b>.
 </div>
 
-The functions $c$ and $q$ are not independent, and generally it influences negatively for the
-optimization, reducing the cost to minimize the quality, and increasing the quality increases the cost.
+The functions $c$ and $q$ are often linked, and it influences generally each one negatively for the
+optimization: reducing the cost to minimize the quality, and increasing the quality increases the cost.
 While our optimization consists in reducing the cost, be **efficient**, and to increase the quality,
 be **effective**. It is often more performant to be firstly effective, then efficient for a given
 task. First learning to do correctly a task before doing it faster. But it is an evidence, that be
