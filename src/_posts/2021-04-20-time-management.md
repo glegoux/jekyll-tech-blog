@@ -337,8 +337,8 @@ for my datelines, and a **to-do list** for daily tasks.
 # Go Further
 
 This article is only an introduction of time management applied for oneself. But the situation can
-be **more complex**. For example, if you need to do the time management for other people, if you
-are:
+be **more complex**. For example, if you could need to think the time management for other people,
+if you are:
 
 * a **tech lead** for a team
 * a **manager** for a group of teams (called a department)
@@ -353,19 +353,13 @@ resolve your new needs for **yourself** and for **another people**.
 
 * MALABOU, Catherine. **Le Temps**. Hatier, 2019. 80 pages. ISBN: 2-218-71678-X.
 * Saint-Augustin. **Les Confessions**. 4 BC. Book XI.
-* KLEIN, Etienne. **Les tactiques de Chronos**. Flammarion, 2009. 224 pages. ISBN:
-  978-2-0812-2305-9.
-* HAWKING, Stephen. **A Brief History of Time**. Bantam Book, 2011. Chapter 2: Space and Time. 23
-  pages. ISBN: 978-0-857-50100-4.
-* VANDENBERGHE, Lieven. **Convex Optimization**. Cambridge University Press, 2009. Chapter 1: 16
-  pages. ISBN: 978-0-521-83378-3.
-* WINSTON, Wayne L.. **Operations Research**. Thomson Brooks/Cole, 2004. Chapter 1: 12 pages. ISBN:
-  0-534-38058-1.
-* MURPHY, Kevin P.. **Machine Learning: A probabilistic Perspective**. The MIT Press, 2012. Chapter
-  1: 24 pages. ISBN: 978-0-262-01802-9.
+* KLEIN, Etienne. **Les tactiques de Chronos**. Flammarion, 2009. 224 pages. ISBN: 978-2-0812-2305-9.
+* HAWKING, Stephen. **A Brief History of Time**. Bantam Book, 2011. Chapter 2: Space and Time. 23 pages. ISBN: 978-0-857-50100-4.
+* VANDENBERGHE, Lieven. **Convex Optimization**. Cambridge University Press, 2009. Chapter 1: 16 pages. ISBN: 978-0-521-83378-3.
+* WINSTON, Wayne L.. **Operations Research**. Thomson Brooks/Cole, 2004. Chapter 1: 12 pages. ISBN: 0-534-38058-1.
+* MURPHY, Kevin P.. **Machine Learning: A probabilistic Perspective**. The MIT Press, 2012. Chapter 1: 24 pages. ISBN: 978-0-262-01802-9.
 * SUTHERLAND, Jeff. **SCRUM**. Business Books, 2014. 248 pages. ISBN: 978-1-847-94108-4.
-* ANDERSON, David J. **Kanban: Successful Evolutionary ...** Blue Hole Press, 2010. 278 pages. ISBN:
-  978-0-9845214-1-8.
+* ANDERSON, David J. **Kanban: Successful Evolutionary ...** Blue Hole Press, 2010. 278 pages. ISBN: 978-0-9845214-1-8.
 * CIRILLO, Francesco. **The Pomodoro Technique**. 2018. 160 pages. ISBN: 1524760706.
 * OHNO, Taiichi. **Toyota Production System**. Synermage, 2020. 150 pages. ISBN: 106992329X.
 * New York University. **Time Management**. NYC, April 2021. [Link](https://www.nyu.edu/students/academic-services/undergraduate-advisement/academic-resource-center/tutoring-and-learning/academic-skills-workshops/time-management.html)
