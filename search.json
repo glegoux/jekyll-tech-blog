@@ -1,6 +1,20 @@
 [
 
 {
+"title"       : "Time Management",
+"description" : "How to optimize your time & work?",
+"authors"     : "glegoux",
+"category"    : "Methodology",
+"tags"        : "",
+"url"         : "/blog/articles/2021/04/20/time-management.html",
+"date"        : "2021-04-20 00:00:00 +0000",
+"year"        : "2021",
+"month"       : "04",
+"yearMonth"   : "2021-04",
+"yearMonthDay"   : "2021-04-20"
+} ,
+
+{
 "title"       : "Unix timestamp",
 "description" : "What could happen in 2038?",
 "authors"     : "glegoux",
