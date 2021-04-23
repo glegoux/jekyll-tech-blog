@@ -1,5 +1,5 @@
 ---
-title: "Time Management"
+title: "Time management"
 description: "How to optimize your time & work?"
 authors: ["glegoux"]
 time_reading_minutes: 10

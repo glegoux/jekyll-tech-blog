@@ -1,5 +1,5 @@
 ---
-title: "Getting Started"
+title: "Getting started"
 description: "Markdown is a easy-to-use syntax for writing text on this blog."
 authors: ["glegoux"]
 time_reading_minutes: 10

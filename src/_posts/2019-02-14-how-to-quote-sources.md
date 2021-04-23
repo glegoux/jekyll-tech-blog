@@ -46,12 +46,12 @@ With these resources:
 
 <p align = "center">
   <a href="http://www.bnf.fr/fr/professionnels/s_informer_obtenir_issn.html"> Get informed and get an ISSN </a> <br>
-	<a href="http://www.bnf.fr/fr/professionnels/s_informer_obtenir_isbn.html"> Get information and get an ISBN </a>
+  <a href="http://www.bnf.fr/fr/professionnels/s_informer_obtenir_isbn.html"> Get information and get an ISBN </a>
 </p>
 
 Your references must be in alphabetical order at the end of your article respecting these conventions.
 
-# Book
+* Book
 
 NAME OF THE AUTHOR, First name of the author. **Title of the book**. Name of publisher, year of publication. Number of pages. Notes. ISBN.
  
@@ -59,7 +59,7 @@ NAME OF THE AUTHOR, First name of the author. **Title of the book**. Name of pub
 
 NAME OF THE AUTHOR, First name of the author. **Title of the article**. *Title of the periodical*. year of publication. not. paging. ISSN.
 
-# Internet resource
+* Internet resource
  
  This convention is personal. For this blog by default the links given are consulted the day of the creation of the article.
  

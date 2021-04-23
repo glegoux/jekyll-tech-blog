@@ -1,5 +1,5 @@
 ---
-title: "GNU Privacy Guard"
+title: "GNU privacy guard"
 description: "How to prove its identity and encrypt its communication?"
 authors: ["glegoux"]
 time_reading_minutes: 5

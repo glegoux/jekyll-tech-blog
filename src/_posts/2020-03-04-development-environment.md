@@ -1,5 +1,5 @@
 ---
-title: "Development Environment"
+title: "Development environment"
 description: "Why isolate its development environment?"
 authors: ["glegoux"]
 time_reading_minutes: 5

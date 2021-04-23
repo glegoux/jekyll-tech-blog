@@ -1,5 +1,5 @@
 ---
-title: Lighthouse
+title: "Lighthouse"
 description: "Lighthouse is an open-source, automated tool for improving the quality of web pages."
 authors: ["glegoux"]
 time_reading_minutes: 10
