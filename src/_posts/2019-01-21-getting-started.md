@@ -10,9 +10,9 @@ tags: ["Markdown"]
 Discover the Markdown syntax used on this blog to write articles, or to generate static pages, and more generally on the web. 
 When you click on the button: <i class="far fa-file-code"></i> Source, you can see the original source code of the article. 
 More precisely on this blog, a superset of Markdown is used and called [Kramdown](https://kramdown.gettalong.org/), the syntax is available [here](https://kramdown.gettalong.org/syntax.html). Each following section gives an overview and examples for each usage.
-But before, what is exactly the markdown?
+But before, what is exactly the Markdown?
 
-[Markdown](https://daringfireball.net/projects/markdown/) is a lightweight and popular text metalanguage which is a writing standard for scientists 
+[Markdown](https://daringfireball.net/projects/markdown/) is a lightweight and popular text metalanguage which is a writing standard
 with extension `.md` or `.markdown`. It is often converted into HTML what allows it to be easily shared on the web :spider_web:.
 
 After the conversion to a HTML text, it is decorated and animated by CSS style sheets and/or JS scripts: 
