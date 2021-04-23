@@ -2,7 +2,7 @@ SHELL = /usr/bin/env bash
 
 .PHONY: usage
 usage:
-	@echo "usage install update clean doctor build test run run-dev"
+	@echo "usage install update clean doctor build test run-prod run"
 
 .PHONY: all
 all: install clean build doctor test run
@@ -33,16 +33,16 @@ build:
 test:
 	@JEKYLL_ENV=production ./test/run_tests.sh
 
-.PHONY: run
-run:
+.PHONY: run-prod
+run-prod:
 	@JEKYLL_ENV=production bundle exec jekyll serve \
 		--config "src/_core/_config.yml,src/_config.yml" \
 		--host localhost --port 4000 \
 		--no-watch
 
-.PHONY: run-dev
-run-dev:
+.PHONY: run
+run:
 	@JEKYLL_ENV=development bundle exec jekyll serve \
         --host localhost --port 4000 \
 		--config "src/_core/_config.yml,src/_config.yml,src/_config_dev.yml" \
-		--incremental --drafts --unpublished --livereload --limit_posts 10
+		--incremental --drafts --unpublished --livereload
