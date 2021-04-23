@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2021-04-23T19:30:41+00:00</updated>
+ <updated>2021-04-23T19:50:55+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -31,15 +31,14 @@ specific activities, especially to increase effectiveness, efficiency, and produ
   &lt;li&gt;&lt;strong&gt;personal context&lt;/strong&gt;:
     &lt;ul&gt;
       &lt;li&gt;which resources you have (knowledge, time, energy, money …)&lt;/li&gt;
-      &lt;li&gt;what are your features (skills, experiences, characters …)&lt;/li&gt;
-      &lt;li&gt;what are your constraints (external, internal, costs, exigencies, professional, personal,
-societal …)&lt;/li&gt;
+      &lt;li&gt;what are your features (skills, experiences, character traits …)&lt;/li&gt;
+      &lt;li&gt;what are your constraints (costs, exigencies, …)&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;projection&lt;/strong&gt;:
     &lt;ul&gt;
       &lt;li&gt;what you want to do (ambitions, preferences, choices …)&lt;/li&gt;
-      &lt;li&gt;what are your goals (objective, key results, tasks, sub-tasks, projects, missions …)&lt;/li&gt;
+      &lt;li&gt;what are your goals (objectives, key results, tasks, sub-tasks, projects, missions …)&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;strategy&lt;/strong&gt;:
@@ -86,8 +85,7 @@ debates on how to define the time, focus us on this &lt;strong&gt;timescale&lt;/
 
 &lt;p&gt;I am going to interpret the time like an estimated quantity, that is to say an amount of time, the
 length of a &lt;strong&gt;windows time&lt;/strong&gt; delimited by 2 instants, called also a &lt;strong&gt;duration&lt;/strong&gt;. For the following,
-when I speak about time, it is a duration, and no more an
-&lt;strong&gt;instant&lt;/strong&gt;.&lt;/p&gt;
+when I speak about time, it is a duration, and no more an &lt;strong&gt;instant&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;figure&gt;
   &lt;div&gt;
@@ -105,7 +103,7 @@ knowledge, the money or the energy, because all ones depend on time.
 elapsed time to carry out an activity can be &lt;strong&gt;viewed and interpreted subjectively&lt;/strong&gt;. The same
 quantity of time measured objectively in &lt;strong&gt;seconds&lt;/strong&gt; could be lived differently by 2 different
 people esteemed like &lt;strong&gt;short or long&lt;/strong&gt;. Take into account this subjectivity, because the time
-management is more relevant if it is applied personally.&lt;/p&gt;
+management is more relevant if it is applied individually with your sensibility.&lt;/p&gt;
 
 &lt;p&gt;For example, &lt;strong&gt;a sharp mind&lt;/strong&gt; on a particular situation will have the feeling to life in accelerated
 time by interacting with a less sharp mind, because he compares his thinking speed to that of his
@@ -149,7 +147,7 @@ of time&lt;/li&gt;
 &lt;p&gt;We defined several ways to conceptualize the time, here I can define more precisely the other
 concepts of time management like the &lt;strong&gt;effort&lt;/strong&gt; and the &lt;strong&gt;optimization&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;The &lt;strong&gt;effort&lt;/strong&gt; to do an activity is like the &lt;strong&gt;mode of consummation of a quantity of resources&lt;/strong&gt;.
+&lt;p&gt;The &lt;strong&gt;effort&lt;/strong&gt; to do an activity is like the &lt;strong&gt;way of consummation of a quantity of resources&lt;/strong&gt;.
 Your resources are renewed perpetually and has a &lt;strong&gt;potential&lt;/strong&gt;, the activity has also a &lt;strong&gt;potential&lt;/strong&gt;.
 You need to create a resources flow, called the &lt;strong&gt;intensity&lt;/strong&gt; of the effort, to do the activity.
 The awareness to practice an extreme effort in quantity (too much or too few) or quality (too easy or
@@ -177,8 +175,8 @@ efficiency.&lt;/li&gt;
 &lt;p&gt;In mathematics terms, the &lt;strong&gt;time management&lt;/strong&gt; can be seen the &lt;strong&gt;modeling of an objective function&lt;/strong&gt;
 to maximize. The model of this objective function is fixed by the &lt;strong&gt;definition&lt;/strong&gt; of your &lt;strong&gt;goals&lt;/strong&gt;
 (split into &lt;strong&gt;tasks&lt;/strong&gt;) and of the &lt;strong&gt;execution plan&lt;/strong&gt;. Then its optimization is determined by the
-duality between the &lt;strong&gt;minimization&lt;/strong&gt; of the &lt;strong&gt;cost of execution&lt;/strong&gt; and the &lt;strong&gt;maximization&lt;/strong&gt; of **
-quality of got results**.&lt;/p&gt;
+duality between the &lt;strong&gt;minimization&lt;/strong&gt; of the &lt;strong&gt;cost of execution&lt;/strong&gt; and the &lt;strong&gt;maximization&lt;/strong&gt; of 
+&lt;strong&gt;quality of got results&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;You need to optimize the &lt;strong&gt;objective function&lt;/strong&gt; $g \circ f$ on a set of tasks $\bigcup x \subset X$
 where:&lt;/p&gt;
