@@ -5,8 +5,8 @@
     <description>Personal blog about software engineering</description>
     <link>https://glegoux.com/</link>
     <atom:link href="https://glegoux.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 23 Apr 2021 13:59:07 +0000</pubDate>
-    <lastBuildDate>Fri, 23 Apr 2021 13:59:07 +0000</lastBuildDate>
+    <pubDate>Fri, 23 Apr 2021 14:10:09 +0000</pubDate>
+    <lastBuildDate>Fri, 23 Apr 2021 14:10:09 +0000</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -415,8 +415,8 @@ for my datelines, and a &lt;strong&gt;to-do list&lt;/strong&gt; for daily tasks.
 &lt;h1 id=&quot;go-further&quot;&gt;Go Further&lt;/h1&gt;
 
 &lt;p&gt;This article is only an introduction of time management applied for oneself. But the situation can
-be &lt;strong&gt;more complex&lt;/strong&gt;. For example, if you need to do the time management for other people, if you
-are:&lt;/p&gt;
+be &lt;strong&gt;more complex&lt;/strong&gt;. For example, if you could need to think the time management for other people,
+if you are:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;a &lt;strong&gt;tech lead&lt;/strong&gt; for a team&lt;/li&gt;
@@ -434,19 +434,13 @@ resolve your new needs for &lt;strong&gt;yourself&lt;/strong&gt; and for &lt;str
 &lt;ul&gt;
   &lt;li&gt;MALABOU, Catherine. &lt;strong&gt;Le Temps&lt;/strong&gt;. Hatier, 2019. 80 pages. ISBN: 2-218-71678-X.&lt;/li&gt;
   &lt;li&gt;Saint-Augustin. &lt;strong&gt;Les Confessions&lt;/strong&gt;. 4 BC. Book XI.&lt;/li&gt;
-  &lt;li&gt;KLEIN, Etienne. &lt;strong&gt;Les tactiques de Chronos&lt;/strong&gt;. Flammarion, 2009. 224 pages. ISBN:
-978-2-0812-2305-9.&lt;/li&gt;
-  &lt;li&gt;HAWKING, Stephen. &lt;strong&gt;A Brief History of Time&lt;/strong&gt;. Bantam Book, 2011. Chapter 2: Space and Time. 23
-pages. ISBN: 978-0-857-50100-4.&lt;/li&gt;
-  &lt;li&gt;VANDENBERGHE, Lieven. &lt;strong&gt;Convex Optimization&lt;/strong&gt;. Cambridge University Press, 2009. Chapter 1: 16
-pages. ISBN: 978-0-521-83378-3.&lt;/li&gt;
-  &lt;li&gt;WINSTON, Wayne L.. &lt;strong&gt;Operations Research&lt;/strong&gt;. Thomson Brooks/Cole, 2004. Chapter 1: 12 pages. ISBN:
-0-534-38058-1.&lt;/li&gt;
-  &lt;li&gt;MURPHY, Kevin P.. &lt;strong&gt;Machine Learning: A probabilistic Perspective&lt;/strong&gt;. The MIT Press, 2012. Chapter
-1: 24 pages. ISBN: 978-0-262-01802-9.&lt;/li&gt;
+  &lt;li&gt;KLEIN, Etienne. &lt;strong&gt;Les tactiques de Chronos&lt;/strong&gt;. Flammarion, 2009. 224 pages. ISBN: 978-2-0812-2305-9.&lt;/li&gt;
+  &lt;li&gt;HAWKING, Stephen. &lt;strong&gt;A Brief History of Time&lt;/strong&gt;. Bantam Book, 2011. Chapter 2: Space and Time. 23 pages. ISBN: 978-0-857-50100-4.&lt;/li&gt;
+  &lt;li&gt;VANDENBERGHE, Lieven. &lt;strong&gt;Convex Optimization&lt;/strong&gt;. Cambridge University Press, 2009. Chapter 1: 16 pages. ISBN: 978-0-521-83378-3.&lt;/li&gt;
+  &lt;li&gt;WINSTON, Wayne L.. &lt;strong&gt;Operations Research&lt;/strong&gt;. Thomson Brooks/Cole, 2004. Chapter 1: 12 pages. ISBN: 0-534-38058-1.&lt;/li&gt;
+  &lt;li&gt;MURPHY, Kevin P.. &lt;strong&gt;Machine Learning: A probabilistic Perspective&lt;/strong&gt;. The MIT Press, 2012. Chapter 1: 24 pages. ISBN: 978-0-262-01802-9.&lt;/li&gt;
   &lt;li&gt;SUTHERLAND, Jeff. &lt;strong&gt;SCRUM&lt;/strong&gt;. Business Books, 2014. 248 pages. ISBN: 978-1-847-94108-4.&lt;/li&gt;
-  &lt;li&gt;ANDERSON, David J. &lt;strong&gt;Kanban: Successful Evolutionary …&lt;/strong&gt; Blue Hole Press, 2010. 278 pages. ISBN:
-978-0-9845214-1-8.&lt;/li&gt;
+  &lt;li&gt;ANDERSON, David J. &lt;strong&gt;Kanban: Successful Evolutionary …&lt;/strong&gt; Blue Hole Press, 2010. 278 pages. ISBN: 978-0-9845214-1-8.&lt;/li&gt;
   &lt;li&gt;CIRILLO, Francesco. &lt;strong&gt;The Pomodoro Technique&lt;/strong&gt;. 2018. 160 pages. ISBN: 1524760706.&lt;/li&gt;
   &lt;li&gt;OHNO, Taiichi. &lt;strong&gt;Toyota Production System&lt;/strong&gt;. Synermage, 2020. 150 pages. ISBN: 106992329X.&lt;/li&gt;
   &lt;li&gt;New York University. &lt;strong&gt;Time Management&lt;/strong&gt;. NYC, April 2021. &lt;a href=&quot;https://www.nyu.edu/students/academic-services/undergraduate-advisement/academic-resource-center/tutoring-and-learning/academic-skills-workshops/time-management.html&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
