@@ -20,12 +20,11 @@ The way whose you can **use your time** depends on a lot of things, among others
 
 * **personal context**:
     * which resources you have (knowledge, time, energy, money ...)
-    * what are your features (skills, experiences, characters ...)
-    * what are your constraints (external, internal, costs, exigencies, professional, personal,
-      societal ...)
+    * what are your features (skills, experiences, character traits ...)
+    * what are your constraints (costs, exigencies, ...)
 * **projection**:
     * what you want to do (ambitions, preferences, choices ...)
-    * what are your goals (objective, key results, tasks, sub-tasks, projects, missions ...)
+    * what are your goals (objectives, key results, tasks, sub-tasks, projects, missions ...)
 * **strategy**:
     * how you organize your activities (priorities, hierarchies, dependencies, sizing, partitioning
       ...)
@@ -60,8 +59,7 @@ debates on how to define the time, focus us on this **timescale**.
 
 I am going to interpret the time like an estimated quantity, that is to say an amount of time, the
 length of a **windows time** delimited by 2 instants, called also a **duration**. For the following,
-when I speak about time, it is a duration, and no more an
-**instant**.
+when I speak about time, it is a duration, and no more an **instant**.
 
 {% include article-google-drawing.html title="Time vs Duration"
 src="https://docs.google.com/drawings/d/e/2PACX-1vQMPHMxeI8O86epOjBylFK4Pv1L71MKeIki-rfSJzG5wZ9jeickJi_y32JDWLGqLlXqm0lTj-3vBBge/pub?w=537&h=147"
@@ -76,7 +74,7 @@ It is important to distinguish the **absolute time**, and the **subjective time*
 elapsed time to carry out an activity can be **viewed and interpreted subjectively**. The same
 quantity of time measured objectively in **seconds** could be lived differently by 2 different
 people esteemed like **short or long**. Take into account this subjectivity, because the time
-management is more relevant if it is applied personally.
+management is more relevant if it is applied individually with your sensibility.
 
 For example, **a sharp mind** on a particular situation will have the feeling to life in accelerated
 time by interacting with a less sharp mind, because he compares his thinking speed to that of his
@@ -115,7 +113,7 @@ respect the time features mentioned previously, it is:
 We defined several ways to conceptualize the time, here I can define more precisely the other
 concepts of time management like the **effort** and the **optimization**.
 
-The **effort** to do an activity is like the **mode of consummation of a quantity of resources**.
+The **effort** to do an activity is like the **way of consummation of a quantity of resources**.
 Your resources are renewed perpetually and has a **potential**, the activity has also a **potential**.
 You need to create a resources flow, called the **intensity** of the effort, to do the activity.
 The awareness to practice an extreme effort in quantity (too much or too few) or quality (too easy or
@@ -141,8 +139,8 @@ I use several concepts above without defining them, here a summary:
 In mathematics terms, the **time management** can be seen the **modeling of an objective function**
 to maximize. The model of this objective function is fixed by the **definition** of your **goals**
 (split into **tasks**) and of the **execution plan**. Then its optimization is determined by the
-duality between the **minimization** of the **cost of execution** and the **maximization** of **
-quality of got results**.
+duality between the **minimization** of the **cost of execution** and the **maximization** of 
+**quality of got results**.
 
 You need to optimize the **objective function** $g \circ f$ on a set of tasks $\bigcup x \subset X$
 where:
