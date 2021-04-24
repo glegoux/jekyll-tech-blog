@@ -251,7 +251,7 @@ one(s).
 src="https://docs.google.com/drawings/d/e/2PACX-1vSudssT0neN76LmXVxtcbVBVQEI_cVhyS6wqCWo9jqCTX2EqIJeb6qMtUvm-7XR0m2J_AWm1Ynps9qB/pub?w=250&h=289"
 %}
 
-Your **dependency graph** must be a set of **acyclic graph**.
+Your **dependency graph** must be a set of **acyclic graphs**.
 
 * **Prioritize your activities**
 
@@ -264,7 +264,7 @@ src="https://docs.google.com/drawings/d/e/2PACX-1vS8OzDo_ArOse_qIVYYg1yati0qf8Me
 * **Sequence your activities**
 
 It is you build your **plan of execution** by sequencing each activity by respecting the previous
-steps and by adding your other constraints:
+steps and your other constraints:
 
 {% include article-google-drawing.html title="Sequencing"
 src="https://docs.google.com/drawings/d/e/2PACX-1vTaWiI1eOkX3AKOSixZzaKHyXRaMc7_RVdFqwglYzHhfMss0hQ7No16GBqfDbzJqM1hfNk1Pw7wDdpV/pub?w=573&h=145"
