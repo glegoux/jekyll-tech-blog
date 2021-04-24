@@ -5,8 +5,8 @@
     <description>Personal blog about software engineering</description>
     <link>https://glegoux.com/</link>
     <atom:link href="https://glegoux.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 24 Apr 2021 07:21:06 +0000</pubDate>
-    <lastBuildDate>Sat, 24 Apr 2021 07:21:06 +0000</lastBuildDate>
+    <pubDate>Sat, 24 Apr 2021 07:45:43 +0000</pubDate>
+    <lastBuildDate>Sat, 24 Apr 2021 07:45:43 +0000</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -173,7 +173,7 @@ efficiency.&lt;/li&gt;
 &lt;p&gt;The &lt;strong&gt;time management&lt;/strong&gt; can be seen the &lt;strong&gt;modeling of an objective function&lt;/strong&gt;
 to optimize. The model of this objective function is fixed by the &lt;strong&gt;definition&lt;/strong&gt; of your &lt;strong&gt;goals&lt;/strong&gt;
 (split into &lt;strong&gt;tasks&lt;/strong&gt;) and of the &lt;strong&gt;execution plan&lt;/strong&gt;. Then its optimization is determined by the
-duality between the &lt;strong&gt;minimization&lt;/strong&gt; of the &lt;strong&gt;cost of execution&lt;/strong&gt; and the &lt;strong&gt;maximization&lt;/strong&gt; of 
+duality between the &lt;strong&gt;minimization&lt;/strong&gt; of the &lt;strong&gt;cost of executions&lt;/strong&gt; and the &lt;strong&gt;maximization&lt;/strong&gt; of 
 &lt;strong&gt;quality of got results&lt;/strong&gt; for a set of tasks.&lt;/p&gt;
 
 &lt;p&gt;In mathematics terms, that is to say optimize the &lt;strong&gt;objective function&lt;/strong&gt; $g \circ f$ on a set of tasks $\bigcup x \subset X$
@@ -185,11 +185,11 @@ where:&lt;/p&gt;
 \mathbb{R}^+ \quad y \mapsto g(y) = g(f(x)) = g(c(x), q(x))\]
 
 &lt;ul&gt;
-  &lt;li&gt;$c$ is the &lt;strong&gt;cost function&lt;/strong&gt; of an execution (spent time, money, effort, or a combination …)&lt;/li&gt;
+  &lt;li&gt;$c$ is the &lt;strong&gt;cost function&lt;/strong&gt; of executions&lt;/li&gt;
   &lt;li&gt;$q$ is the &lt;strong&gt;quality function&lt;/strong&gt; of got results&lt;/li&gt;
   &lt;li&gt;$f$ is the &lt;strong&gt;productivity function&lt;/strong&gt; in terms of efficiency and effectiveness&lt;/li&gt;
   &lt;li&gt;$g$ is a &lt;strong&gt;trade-off function&lt;/strong&gt; between the minimization of the cost $c$ and maximization of the quality
-$q$ on $X$&lt;/li&gt;
+$q$ on subset of $X$&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;figure&gt;
@@ -207,11 +207,11 @@ But the stability, the evolution of the objective function depends on your &lt;b
 &lt;/div&gt;
 
 &lt;p&gt;The functions $c$ and $q$ are often linked, and it influences generally each one negatively for the
-optimization: reducing the cost to minimize the quality, and increasing the quality increases the cost.
-While our optimization consists in reducing the cost, be &lt;strong&gt;efficient&lt;/strong&gt;, and to increase the quality,
+optimization: reducing the cost reduces the quality, and increasing the quality increases the cost.
+While our optimization consists in reducing the cost, be &lt;strong&gt;efficient&lt;/strong&gt;, and in increasing the quality,
 be &lt;strong&gt;effective&lt;/strong&gt;. It is often more performant to be firstly effective, then efficient for a given
-task. First learning to do correctly a task before doing it faster. But it is an evidence, that be
-effective and efficient (at the same time in good proportion) is the final goal for each task.&lt;/p&gt;
+task. Learning to do correctly a task before doing it faster. But it is clear, that be
+effective and efficient (at the same time and in good proportion) is the final goal for each task.&lt;/p&gt;
 
 &lt;div class=&quot;info&quot;&gt;
 You can do an analogy with the &lt;b&gt;machine learning&lt;/b&gt; algorithm. The execution plan is your &lt;b&gt;model&lt;/b&gt; owning &lt;b&gt;hyper-parameters&lt;/b&gt;, 
