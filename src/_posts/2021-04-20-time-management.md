@@ -136,13 +136,13 @@ I use several concepts above without defining them, here a summary:
 
 # A model
 
-In mathematics terms, the **time management** can be seen the **modeling of an objective function**
-to maximize. The model of this objective function is fixed by the **definition** of your **goals**
+The **time management** can be seen the **modeling of an objective function**
+to optimize. The model of this objective function is fixed by the **definition** of your **goals**
 (split into **tasks**) and of the **execution plan**. Then its optimization is determined by the
 duality between the **minimization** of the **cost of execution** and the **maximization** of 
-**quality of got results**.
+**quality of got results** for a set of tasks.
 
-You need to optimize the **objective function** $g \circ f$ on a set of tasks $\bigcup x \subset X$
+In mathematics terms, that is to say optimize the **objective function** $g \circ f$ on a set of tasks $\bigcup x \subset X$
 where:
 
 $$f: X \rightarrow \mathbb{R}^+ \times \mathbb{R}^+ \quad x \mapsto f(x) = (c(x), q(x))$$
