@@ -94,9 +94,9 @@ weight:
 src="https://docs.google.com/drawings/d/e/2PACX-1vR_VEmMKNndJR493-_obuNMiuI0c3h_MeUADJoeCJF7KdAPEuAgJm0F-f7U_UF4bF-aStk1pQZF5A6K/pub?w=537&h=147"
 %}
 
-The time is considered as a quantity of spent resources (among itself in another meaning) during a
-duration to do activities now. So the **quantity of available time at your disposition** does not
-respect the time features mentioned previously, it is:
+The time could be considered as a quantity of spent resources during a duration (itself in another meaning)
+to do activities now. So the **quantity of available time at your disposition** 
+does not respect the time features mentioned previously, it is:
 
 * **personal**: you have a personal context and subjective time
 * **discrete**: you have a minimum time of reactivity your frequency sample to measure the elapsed
