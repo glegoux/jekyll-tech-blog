@@ -139,7 +139,7 @@ I use several concepts above without defining them, here a summary:
 The **time management** can be seen the **modeling of an objective function**
 to optimize. The model of this objective function is fixed by the **definition** of your **goals**
 (split into **tasks**) and of the **execution plan**. Then its optimization is determined by the
-duality between the **minimization** of the **cost of execution** and the **maximization** of 
+duality between the **minimization** of the **cost of executions** and the **maximization** of 
 **quality of got results** for a set of tasks.
 
 In mathematics terms, that is to say optimize the **objective function** $g \circ f$ on a set of tasks $\bigcup x \subset X$
@@ -150,11 +150,11 @@ $$f: X \rightarrow \mathbb{R}^+ \times \mathbb{R}^+ \quad x \mapsto f(x) = (c(x)
 $$g: Img(f) = \{\,f(x)\,|\,x \in X \} \subset \mathbb{R}^+ \times \mathbb{R}^+ \rightarrow
 \mathbb{R}^+ \quad y \mapsto g(y) = g(f(x)) = g(c(x), q(x))$$
 
-* $c$ is the **cost function** of an execution (spent time, money, effort, or a combination ...)
+* $c$ is the **cost function** of executions
 * $q$ is the **quality function** of got results
 * $f$ is the **productivity function** in terms of efficiency and effectiveness
 * $g$ is a **trade-off function** between the minimization of the cost $c$ and maximization of the quality
-  $q$ on $X$
+  $q$ on subset of $X$
 
 {% include article-google-drawing.html title="Objective function is a trade-off: cost vs quality of
 a set of tasks"
@@ -166,11 +166,11 @@ But the stability, the evolution of the objective function depends on your <b>re
 </div>
 
 The functions $c$ and $q$ are often linked, and it influences generally each one negatively for the
-optimization: reducing the cost to minimize the quality, and increasing the quality increases the cost.
-While our optimization consists in reducing the cost, be **efficient**, and to increase the quality,
+optimization: reducing the cost reduces the quality, and increasing the quality increases the cost.
+While our optimization consists in reducing the cost, be **efficient**, and in increasing the quality,
 be **effective**. It is often more performant to be firstly effective, then efficient for a given
-task. First learning to do correctly a task before doing it faster. But it is an evidence, that be
-effective and efficient (at the same time in good proportion) is the final goal for each task.
+task. Learning to do correctly a task before doing it faster. But it is clear, that be
+effective and efficient (at the same time and in good proportion) is the final goal for each task.
 
 <div class="info">
 You can do an analogy with the <b>machine learning</b> algorithm. The execution plan is your <b>model</b> owning <b>hyper-parameters</b>, 
