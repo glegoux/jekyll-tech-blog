@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2021-04-24T07:04:52+00:00</updated>
+ <updated>2021-04-24T07:10:56+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -126,9 +126,9 @@ weight:&lt;/p&gt;
   &lt;figcaption&gt;Time usage&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;The time is considered as a quantity of spent resources (among itself in another meaning) during a
-duration to do activities now. So the &lt;strong&gt;quantity of available time at your disposition&lt;/strong&gt; does not
-respect the time features mentioned previously, it is:&lt;/p&gt;
+&lt;p&gt;The time could be considered as a quantity of spent resources during a duration (itself in another meaning)
+to do activities now. So the &lt;strong&gt;quantity of available time at your disposition&lt;/strong&gt; 
+does not respect the time features mentioned previously, it is:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;personal&lt;/strong&gt;: you have a personal context and subjective time&lt;/li&gt;
