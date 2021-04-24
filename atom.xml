@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2021-04-24T07:10:56+00:00</updated>
+ <updated>2021-04-24T07:21:06+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -172,13 +172,13 @@ efficiency.&lt;/li&gt;
 
 &lt;h1 id=&quot;a-model&quot;&gt;A model&lt;/h1&gt;
 
-&lt;p&gt;In mathematics terms, the &lt;strong&gt;time management&lt;/strong&gt; can be seen the &lt;strong&gt;modeling of an objective function&lt;/strong&gt;
-to maximize. The model of this objective function is fixed by the &lt;strong&gt;definition&lt;/strong&gt; of your &lt;strong&gt;goals&lt;/strong&gt;
+&lt;p&gt;The &lt;strong&gt;time management&lt;/strong&gt; can be seen the &lt;strong&gt;modeling of an objective function&lt;/strong&gt;
+to optimize. The model of this objective function is fixed by the &lt;strong&gt;definition&lt;/strong&gt; of your &lt;strong&gt;goals&lt;/strong&gt;
 (split into &lt;strong&gt;tasks&lt;/strong&gt;) and of the &lt;strong&gt;execution plan&lt;/strong&gt;. Then its optimization is determined by the
 duality between the &lt;strong&gt;minimization&lt;/strong&gt; of the &lt;strong&gt;cost of execution&lt;/strong&gt; and the &lt;strong&gt;maximization&lt;/strong&gt; of 
-&lt;strong&gt;quality of got results&lt;/strong&gt;.&lt;/p&gt;
+&lt;strong&gt;quality of got results&lt;/strong&gt; for a set of tasks.&lt;/p&gt;
 
-&lt;p&gt;You need to optimize the &lt;strong&gt;objective function&lt;/strong&gt; $g \circ f$ on a set of tasks $\bigcup x \subset X$
+&lt;p&gt;In mathematics terms, that is to say optimize the &lt;strong&gt;objective function&lt;/strong&gt; $g \circ f$ on a set of tasks $\bigcup x \subset X$
 where:&lt;/p&gt;
 
 \[f: X \rightarrow \mathbb{R}^+ \times \mathbb{R}^+ \quad x \mapsto f(x) = (c(x), q(x))\]
