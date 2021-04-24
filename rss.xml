@@ -5,8 +5,8 @@
     <description>Personal blog about software engineering</description>
     <link>https://glegoux.com/</link>
     <atom:link href="https://glegoux.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 24 Apr 2021 06:50:28 +0000</pubDate>
-    <lastBuildDate>Sat, 24 Apr 2021 06:50:28 +0000</lastBuildDate>
+    <pubDate>Sat, 24 Apr 2021 07:04:52 +0000</pubDate>
+    <lastBuildDate>Sat, 24 Apr 2021 07:04:52 +0000</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -312,7 +312,7 @@ one(s).&lt;/p&gt;
   &lt;figcaption&gt;Dependency graph&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;Your &lt;strong&gt;dependency graph&lt;/strong&gt; must be a set of &lt;strong&gt;acyclic graph&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Your &lt;strong&gt;dependency graph&lt;/strong&gt; must be a set of &lt;strong&gt;acyclic graphs&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;Prioritize your activities&lt;/strong&gt;&lt;/li&gt;
@@ -332,7 +332,7 @@ one(s).&lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;It is you build your &lt;strong&gt;plan of execution&lt;/strong&gt; by sequencing each activity by respecting the previous
-steps and by adding your other constraints:&lt;/p&gt;
+steps and your other constraints:&lt;/p&gt;
 
 &lt;figure&gt;
   &lt;div&gt;

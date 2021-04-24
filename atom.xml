@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2021-04-24T06:50:28+00:00</updated>
+ <updated>2021-04-24T07:04:52+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -314,7 +314,7 @@ one(s).&lt;/p&gt;
   &lt;figcaption&gt;Dependency graph&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;Your &lt;strong&gt;dependency graph&lt;/strong&gt; must be a set of &lt;strong&gt;acyclic graph&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Your &lt;strong&gt;dependency graph&lt;/strong&gt; must be a set of &lt;strong&gt;acyclic graphs&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;Prioritize your activities&lt;/strong&gt;&lt;/li&gt;
@@ -334,7 +334,7 @@ one(s).&lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;It is you build your &lt;strong&gt;plan of execution&lt;/strong&gt; by sequencing each activity by respecting the previous
-steps and by adding your other constraints:&lt;/p&gt;
+steps and your other constraints:&lt;/p&gt;
 
 &lt;figure&gt;
   &lt;div&gt;
