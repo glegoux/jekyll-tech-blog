@@ -317,18 +317,18 @@ For example, for the different timescales, I take long: ~hour and short: ~minute
 I try to evaluate the time of each life activity:
 
 * sleeping: 7 hours per day
-* watching: 2 times 3 minutes per day for teeth and 15min per day for body
+* washing yourself: 2 times 3 minutes per day for teeth and 15min per day for body
 * eating: 2 times 20 minutes per day for lunch and dinner with 10 minutes per day for the breakfast
 * seeing friends: at least one time per week for several hours
-* doing the drudgery and waste time: 4 hours per week (taking out the trash, preparing the meals, doing housework, shopping, ...)
 * practicing sport: 3 hours per week
+* doing the other tasks: several hours per week (taking out the trash, preparing the meals, doing housework, shopping, do-it-yourself ...)
 
 These activities are not really dependent, and with the same priority for me. Now I sequence them for each period of a day and of a week.
 
 I have a **calendar** where I can monitor each timescale and put my tasks, a **weekly planning**
 for my datelines, and a **to-do list** for daily tasks.
 
-Now I redo the same things for my personal activities, and my work activities to finish my time management.
+Now I redo the same things for my personal activities, and my work activities to finish the management of my time.
 
 # Go Further
 
