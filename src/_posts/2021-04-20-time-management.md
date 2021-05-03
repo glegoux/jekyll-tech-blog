@@ -8,7 +8,7 @@ category: "Methodology"
 
 # What is the time management?
 
-We are going to study the **time management** which is the science of the usage of time, a possible
+We are going to study the **time management** applied for yourself by yourself. The time management is the science of the usage of time, a possible
 definition could be:
 
 > Time management is the process of planning and exercising conscious control of time spent on
@@ -18,7 +18,7 @@ definition could be:
 
 The way whose you can **use your time** depends on a lot of things, among others there are your:
 
-* **personal context**:
+* **context**:
     * which resources you have (knowledge, time, energy, money ...)
     * what are your features (skills, experiences, character traits ...)
     * what are your constraints (costs, exigencies, ...)
@@ -39,7 +39,7 @@ src="https://docs.google.com/drawings/d/e/2PACX-1vR9gDDDWTNK3btntBfhxsrL18EDGgyt
 %}
 
 Now we have an overview of this dynamic system, understand that
-the **time usage** is **personal**. But you could need to **optimize the spending of your time**
+your **time usage** is **personal**. But you could need to **optimize the spending of your time**
 for **professional or personal activities**. I am going to explain what means for me the time, and how
 you can manage it. I have been inspired by my knowledge, experiences, readings, and listenings, but
 it is my personal version of the time management between math, physics, management, philosophy, and
