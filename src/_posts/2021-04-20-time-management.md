@@ -28,7 +28,7 @@ The way whose you can **use your time** depends on a lot of things, among others
 * **strategy**:
     * how you organize your activities (priorities, hierarchies, dependencies, sizing, partitioning
       ...)
-* **auto-analysis**:
+* **analysis**:
     * how you know yourself (strong points, weak points, personal will and effort ...)
     * how you have a projection & strategy coherent of yourself (clairvoyance, honesty, realism ...)
     * how you receive a critical opinion positive or negative on yourself (feedbacks,
