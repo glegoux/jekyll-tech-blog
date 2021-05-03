@@ -8,7 +8,7 @@ category: "Methodology"
 
 # What is the time management?
 
-We are going to study the **time management** applied for yourself by yourself. The time management is the science of the usage of time, a possible
+We are going to study the **time management** applied for oneself by oneself. The time management is the science of the usage of time, a possible
 definition could be:
 
 > Time management is the process of planning and exercising conscious control of time spent on
@@ -332,7 +332,7 @@ Now I redo the same things for my personal activities, and my work activities to
 
 # Go Further
 
-This article is only an introduction of time management applied for oneself. But the situation can
+This article is only an introduction of time management. But the situation can
 be **more complex**. For example, if you could need to think the time management for other people,
 if you are:
 
