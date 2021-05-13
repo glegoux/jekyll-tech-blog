@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2021-05-13T09:58:59+00:00</updated>
+ <updated>2021-05-13T10:13:52+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -691,8 +691,8 @@ p1\,.\,p2 &amp;amp;= R^2\left(\sin(\text{lat1})\sin(\text{lat2}) + \cos(\text{la
   hav(p1, p2) = \text{hav}(\text{lat1} - \text{lat2}) + \text{hav}(\text{long1} - \text{long2})\cos(\text{lat1})\cos(\text{lat2}) 
 }\]
 
-&lt;p&gt;Where $hav: $[-\frac{\pi}{2}, \frac{\pi}{2}]$ \rightarrow $]-\pi, \pi]$$ is defined by overloading of $hav$ on $[0, \pi]$ by a change of variables
-$hav(p1, p2) = hav(\alpha)$, because the couple $(p1, p2)$ defines a unique $\alpha$ (it is not reciprocal).&lt;/p&gt;
+&lt;p&gt;Where $hav: \left(\left[-\frac{\pi}{2}, \frac{\pi}{2}\right] \times ]-\pi, \pi]\right)^2 \rightarrow \mathbb{R}$ is defined by overloading of 
+$hav$ on $[0, \pi]$ by a change of variables $hav(p1, p2) = hav(\alpha)$, because the couple $(p1, p2)$ defines a unique $\alpha$ (it is not reciprocal).&lt;/p&gt;
 
 &lt;p&gt;By using $\text{archav}: [0, 1] \rightarrow [0, \pi]$ the reciprocal bijection of $\text{hav}$ on $[0, \pi]$, we have for $\alpha \in [0, \pi]$:&lt;/p&gt;
 
