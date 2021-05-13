@@ -85,8 +85,8 @@ $$
 }
 $$
 
-Where $hav: $[-\frac{\pi}{2}, \frac{\pi}{2}]$ \rightarrow $]-\pi, \pi]$$ is defined by overloading of $hav$ on $[0, \pi]$ by a change of variables, because
-the couple $(p1, p2)$ defines a unique $\alpha$, and reciprocally.
+Where $hav: $[-\frac{\pi}{2}, \frac{\pi}{2}]$ \rightarrow $]-\pi, \pi]$$ is defined by overloading of $hav$ on $[0, \pi]$ by a change of variables
+$hav(p1, p2) = hav(\alpha)$, because the couple $(p1, p2)$ defines a unique $\alpha$ (it is not reciprocal).
 
 By using $\text{archav}: [0, 1] \rightarrow [0, \pi]$ the reciprocal bijection of $\text{hav}$ on $[0, \pi]$, we have for $\alpha \in [0, \pi]$:
 
