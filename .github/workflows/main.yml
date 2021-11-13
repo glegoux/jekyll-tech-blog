@@ -37,9 +37,9 @@ jobs:
         source ~/.profile
         make build
         cp .github/files/* dest/
-    - uses: actions/setup-node@v1
+    - uses: actions/setup-node@v2
       with:
-        node-version: '10.x'
+        node-version: '16'
     - name: Test project
       run: |
         echo "** Install test dependencies:"
