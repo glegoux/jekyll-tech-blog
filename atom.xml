@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2021-05-13T14:15:24+00:00</updated>
+ <updated>2021-11-13T16:21:00+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -490,7 +490,7 @@ and New Year’s Day, 1970, seemed most convenient.&lt;/p&gt;
 granularity of time like the millisecond, or the nanosecond are used, but traditionally it is the second.&lt;/p&gt;
 
 &lt;div class=&quot;info&quot;&gt;
-While the trademark today is UNIX, in this article, we use Unix in deference to dmr's wishes, dmr being the 
+While the trademark today is UNIX, in this article, we use Unix in deference to dmr&apos;s wishes, dmr being the 
 username of Dennis MacAlistair Ritchie, famous computer scientist having worked the on Unix operating system.
 &lt;/div&gt;
 
@@ -554,7 +554,7 @@ The range of values will be between $-2^{31}$ and $2^{31} - 1$ for a &lt;code cl
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;div class=&quot;warning&quot;&gt;
-In Scala, it is false to express $2^{31}$ with Math.pow(2, 31).intValue that is equal to 2147483647, what it doesn't make sense.
+In Scala, it is false to express $2^{31}$ with Math.pow(2, 31).intValue that is equal to 2147483647, what it doesn&apos;t make sense.
 Here, you have a odd number instead of an even number, and typically an arithmetic overflow per truncation from Double to Int.
 &lt;/div&gt;
 
@@ -580,7 +580,7 @@ Here the relation between the base 10 and the two’s complement binary represen
 and the least significant (LSB) bit $ b_{0} $ the &lt;strong&gt;unit bit&lt;/strong&gt;. It the sign bit is 1, the number is stricly negative. And if the unit bit is 1, the numbder is odd. For example:&lt;/p&gt;
 
 &lt;div class=&quot;language-scala highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;toBinaryRepresentation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;toBinaryString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;reverse&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;padTo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;32&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'0'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;reverse&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;toBinaryString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;reverse&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;padTo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;32&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;&apos;0&apos;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;reverse&lt;/span&gt;
 
 &lt;span class=&quot;n&quot;&gt;scala&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;toBinaryRepresentation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;MinValue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10000000000000000000000000000000&lt;/span&gt;
@@ -1118,75 +1118,75 @@ rtt min/avg/max/mdev = 13.821/13.821/13.821/0.000 ms
 
 &lt;script type=&quot;text/javascript&quot;&gt;
 jQuery(document).ready(function () {
-    google.charts.load('current', {
-        'packages':['geochart'],
+    google.charts.load(&apos;current&apos;, {
+        &apos;packages&apos;:[&apos;geochart&apos;],
         // Note: you will need to get a mapsApiKey for your project.
         // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
-        'mapsApiKey': 'AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
+        &apos;mapsApiKey&apos;: &apos;AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY&apos;
     });
     google.charts.setOnLoadCallback(drawRegionsMap);
     
     function drawRegionsMap() {
         var data = google.visualization.arrayToDataTable([
-            ['Country', 'Number'],
-            ['Armenia',1],
-            ['Australia',1],
-            ['Australia/USA',1],
-            ['Austria',3],
-            ['Belgium',5],
-            ['Brazil',14],
-            ['Bulgaria',2],
-            ['Canada',4],
-            ['China',2],
-            ['Colombia',2],
-            ['Denmark',2],
-            ['Ecuador',1],
-            ['Egypt',2],
-            ['Estonia',2],
-            ['France',12],
-            ['Germany',25],
-            ['Germany/Switzerland',1],
-            ['Greece',3],
-            ['Guatemala',2],
-            ['Hungary',2],
-            ['India',3],
-            ['Indonesia',1],
-            ['Ireland',1],
-            ['Italy',7],
-            ['Japan',5],
-            ['Malaysia',1],
-            ['Mexico',2],
-            ['Mexico/Switzerland',2],
-            ['Morocco',1],
-            ['New Zealand',1],
-            ['Norway',4],
-            ['Perú',1],
-            ['Poland',4],
-            ['Portugal',1],
-            ['Romania',2],
-            ['Russia',4],
-            ['Scotland',2],
-            ['Serbia',1],
-            ['Slovenia',1],
-            ['South Africa',1],
-            ['South Korea',1],
-            ['Spain',4],
-            ['Sweden',5],
-            ['Switzerland',3],
-            ['Netherlands',8],
-            ['Turkey',5],
-            ['United States',77],
-            ['USA/Germany',1],
-            ['United Kingdom',23]
+            [&apos;Country&apos;, &apos;Number&apos;],
+            [&apos;Armenia&apos;,1],
+            [&apos;Australia&apos;,1],
+            [&apos;Australia/USA&apos;,1],
+            [&apos;Austria&apos;,3],
+            [&apos;Belgium&apos;,5],
+            [&apos;Brazil&apos;,14],
+            [&apos;Bulgaria&apos;,2],
+            [&apos;Canada&apos;,4],
+            [&apos;China&apos;,2],
+            [&apos;Colombia&apos;,2],
+            [&apos;Denmark&apos;,2],
+            [&apos;Ecuador&apos;,1],
+            [&apos;Egypt&apos;,2],
+            [&apos;Estonia&apos;,2],
+            [&apos;France&apos;,12],
+            [&apos;Germany&apos;,25],
+            [&apos;Germany/Switzerland&apos;,1],
+            [&apos;Greece&apos;,3],
+            [&apos;Guatemala&apos;,2],
+            [&apos;Hungary&apos;,2],
+            [&apos;India&apos;,3],
+            [&apos;Indonesia&apos;,1],
+            [&apos;Ireland&apos;,1],
+            [&apos;Italy&apos;,7],
+            [&apos;Japan&apos;,5],
+            [&apos;Malaysia&apos;,1],
+            [&apos;Mexico&apos;,2],
+            [&apos;Mexico/Switzerland&apos;,2],
+            [&apos;Morocco&apos;,1],
+            [&apos;New Zealand&apos;,1],
+            [&apos;Norway&apos;,4],
+            [&apos;Perú&apos;,1],
+            [&apos;Poland&apos;,4],
+            [&apos;Portugal&apos;,1],
+            [&apos;Romania&apos;,2],
+            [&apos;Russia&apos;,4],
+            [&apos;Scotland&apos;,2],
+            [&apos;Serbia&apos;,1],
+            [&apos;Slovenia&apos;,1],
+            [&apos;South Africa&apos;,1],
+            [&apos;South Korea&apos;,1],
+            [&apos;Spain&apos;,4],
+            [&apos;Sweden&apos;,5],
+            [&apos;Switzerland&apos;,3],
+            [&apos;Netherlands&apos;,8],
+            [&apos;Turkey&apos;,5],
+            [&apos;United States&apos;,77],
+            [&apos;USA/Germany&apos;,1],
+            [&apos;United Kingdom&apos;,23]
         ]);
     
         var options = {
-            colorAxis: {colors: ['#e6f7ff', '#00334d']},
-            width: $('#content').width(), // responsive
+            colorAxis: {colors: [&apos;#e6f7ff&apos;, &apos;#00334d&apos;]},
+            width: $(&apos;#content&apos;).width(), // responsive
             legend: false
         };
         
-        var chart = new google.visualization.GeoChart(document.getElementById('java-champions'));
+        var chart = new google.visualization.GeoChart(document.getElementById(&apos;java-champions&apos;));
         
          chart.draw(data, options);
     }
@@ -1979,11 +1979,11 @@ Linus Torvalds, creator of the Linux operating system
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;A link with a name and a title: &lt;a href=&quot;https://www.google.com&quot; title=&quot;Google's Homepage&quot;&gt;Google&lt;/a&gt; with title &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Google's Homepage&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;A link with a name and a title: &lt;a href=&quot;https://www.google.com&quot; title=&quot;Google&apos;s Homepage&quot;&gt;Google&lt;/a&gt; with title &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Google&apos;s Homepage&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Source code:&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[Google](https://www.google.com &quot;Google's Homepage&quot;)
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[Google](https://www.google.com &quot;Google&apos;s Homepage&quot;)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;You can use shortcut for your links to use that several times on article or to centralize links:&lt;/p&gt;
