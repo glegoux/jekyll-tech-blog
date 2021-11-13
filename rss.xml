@@ -5,9 +5,79 @@
     <description>Personal blog about software engineering</description>
     <link>https://glegoux.com/</link>
     <atom:link href="https://glegoux.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 13 Nov 2021 22:04:01 +0000</pubDate>
-    <lastBuildDate>Sat, 13 Nov 2021 22:04:01 +0000</lastBuildDate>
+    <pubDate>Sat, 13 Nov 2021 23:53:15 +0000</pubDate>
+    <lastBuildDate>Sat, 13 Nov 2021 23:53:15 +0000</lastBuildDate>
     <generator>Jekyll v4.2.1</generator>
+    
+      <item>
+        <title>Software versioning</title>
+        <description>&lt;h1 id=&quot;what-is-a-software-version&quot;&gt;What is a software version?&lt;/h1&gt;
+
+&lt;p&gt;A software can be viewed as a set of line of codes that is dynamic, that is to say that evolves discretely from a 
+state to a new state in function of time. To identify a specific state of this software a versioning system is often 
+used whether it be for a language compiler, a library, a web API, an application, a server, or a client. Of course of 
+version system can be used more generally for any project, but here I focus only on a software.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;pre&gt;
+             ┌─────────┐           ┌─────────┐           ┌─────────┐
+             │         │           │         │           │         │
+  ──────────►│ State 1 ├──────────►│ State 2 ├──────────►│ State 3 │─────────►
+             │         │           │         │           │         │
+             └─────────┘           └─────────┘           └─────────┘
+&lt;/pre&gt;
+&lt;figcaption&gt;Software states&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The software versioning is the process to assign a version to a software: a version system is chosen with a version
+scheme and a version strategy to track the evolutions. For example, with a version control system as &lt;a href=&quot;https://git-scm.com/&quot;&gt;Git&lt;/a&gt;, 
+the history of a software is split into commits, where each commit identifier is used as a version.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;pre&gt;
+40551405dc02afe8240024c952fa1de953fc2ff9 Commit message: State 3
+3982dcd90b486eab39eb610ec5e7e5963b92ab33 Commit message: State 2
+32f0469eb344029bd1ecf5b0626685f2fa795f47 Commit message: State 1
+...
+&lt;/pre&gt;
+&lt;figcaption&gt;Commit logs with commit identifier and message&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Here the version scheme is a &lt;a href=&quot;https://wikipedia.org/wiki/SHA-1&quot;&gt;SHA1-hash&lt;/a&gt; assigned to each change of code rendering the more atomic than possible. 
+It is a good software versioning, because each version is unique. But not very handy to use in our use case, because it does not human readable or user friendly, 
+without additional information in the naming. And each software change has a version, what is a lot.&lt;/p&gt;
+
+&lt;p&gt;A software version is a unique identifier to distribute a software to users in a particular state with features and maintenance. So the development team of a 
+software wishes to reduce the number of supported versions exposed to their clients, and wants to package these changes to propose a software as a product 
+with coherent features. That is why another software versioning is applied often above these commit identifiers, then the usage of Git tag and/or Git release 
+is privileged.&lt;/p&gt;
+
+&lt;h1 id=&quot;example-for-javascala&quot;&gt;Example for Java/Scala&lt;/h1&gt;
+
+&lt;p&gt;A Java/Scala library is compiled to a platform-independent format called JVM bytecode and stored in .class files. These class files are zipped in JAR files for distribution.&lt;/p&gt;
+
+&lt;h1 id=&quot;references&quot;&gt;References&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;https://en.wikipedia.org/wiki/Software_versioning&lt;/li&gt;
+  &lt;li&gt;https://doc.akka.io/docs/akka/current/common/binary-compatibility-rules.html&lt;/li&gt;
+  &lt;li&gt;https://semver.org/&lt;/li&gt;
+  &lt;li&gt;https://www.scala-lang.org/blog/2021/02/16/preventing-version-conflicts-with-versionscheme.html&lt;/li&gt;
+  &lt;li&gt;https://docs.scala-lang.org/overviews/core/binary-compatibility-for-library-authors.html&lt;/li&gt;
+  &lt;li&gt;https://docs.scala-lang.org/overviews/jdk-compatibility/overview.html&lt;/li&gt;
+  &lt;li&gt;https://github.com/jatcwang/binary-compatibility-guide&lt;/li&gt;
+  &lt;li&gt;https://github.com/lightbend/mima&lt;/li&gt;
+  &lt;li&gt;https://wiki.openjdk.java.net/display/csr/Kinds+of+Compatibility&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sat, 13 Nov 2021 00:00:00 +0000</pubDate>
+        <link>https://glegoux.com/blog/articles/2021/11/13/software-versioning.html</link>
+        <guid isPermaLink="true">https://glegoux.com/blog/articles/2021/11/13/software-versioning.html</guid>
+        
+        
+        <category>Development</category>
+        
+      </item>
     
       <item>
         <title>Time management</title>
@@ -1241,209 +1311,6 @@ jQuery(document).ready(function () {
         
         
         <category>Development</category>
-        
-      </item>
-    
-      <item>
-        <title>Lighthouse</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://github.com/GoogleChrome/lighthouse/releases/tag/v5.6.0&quot;&gt;LightHouse 5.6.0&lt;/a&gt; is an &lt;a href=&quot;https://github.com/GoogleChrome/lighthouse&quot;&gt;open-source project&lt;/a&gt; written in Javascript and began in January 2016 under &lt;a href=&quot;https://github.com/GoogleChrome/lighthouse/blob/master/LICENSE&quot;&gt;Apache 2,0 License&lt;/a&gt;. On GitHub, it is a project of the Organisation &lt;a href=&quot;https://github.com/GoogleChrome&quot;&gt;Google Chrome&lt;/a&gt; knows a huge success and counts roughly 10,000 stars and 100 contributors. It is already stable, see  &lt;a href=&quot;https://github.com/GoogleChrome/lighthouse/releases/&quot;&gt;latest release&lt;/a&gt;. It is an automated tool for improving the quality of web pages. You can run it against any web page, public or requiring authentication. It has audits for performance, accessibility, progressive web apps, and more.&lt;/p&gt;
-
-&lt;figure title=&quot;Logo of Lighthouse&quot;&gt;
-  &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-04-01-lighthouse/images/lighthouse-logo.png&quot; alt=&quot;Logo of Lighthouse&quot; /&gt;
-  &lt;/div&gt;
-  &lt;figcaption&gt;Logo of Lighthouse&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;You can run Lighthouse as a &lt;a href=&quot;https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en&quot;&gt;Chrome Extension&lt;/a&gt;, from the command line, or as a &lt;a href=&quot;https://www.npmjs.com/package/lighthouse&quot;&gt;Node module&lt;/a&gt;. You give Lighthouse a URL to audit, it runs a series of audits against the page, and then it generates a report on how well the page did. From there, use the failing audits as indicators on how to improve the page. Each audit has a reference doc explaining why the audit is important, as well as how to fix it.&lt;/p&gt;
-
-&lt;p&gt;The rapport is divided into 4 categories:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Progressive Web App&lt;/strong&gt;: tests if your app is corect progressive web app.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Performance&lt;/strong&gt;: measures if the page is loaded quickly.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Accessibility&lt;/strong&gt;: checks if the content of your page is accessible.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Best Practices&lt;/strong&gt;: checks if good practices are applied.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;The goal is to have a score of 100 for each category and for each web page of your website:&lt;/p&gt;
-
-&lt;figure title=&quot;Lighthouse scores by report category&quot;&gt;
-  &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-04-01-lighthouse/images/scores.png&quot; alt=&quot;Lighthouse scores by report category&quot; /&gt;
-  &lt;/div&gt;
-  &lt;figcaption&gt;Lighthouse scores by report category&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;You can export report under HTML or JSON format, then import these format or see directly report due to &lt;a href=&quot;https://googlechrome.github.io/lighthouse/viewer/&quot;&gt;LightHouse Viewer&lt;/a&gt; (online version). You can install on-premises version directly from the &lt;a href=&quot;https://github.com/GoogleChrome/lighthouse/tree/master/lighthouse-viewer&quot;&gt;Git repository if LightHouse Viewer&lt;/a&gt; .&lt;/p&gt;
-
-&lt;figure title=&quot;Export, import and view LightHouse report&quot;&gt;
-  &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-04-01-lighthouse/images/export-import-view.jpg&quot; alt=&quot;Export, import and view LightHouse report&quot; /&gt;
-  &lt;/div&gt;
-  &lt;figcaption&gt;Export, import and view LightHouse report&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;The work flow of LightHouse core is described by the following chart:&lt;/p&gt;
-
-&lt;figure title=&quot;Architecture of Lighthouse Core&quot;&gt;
-  &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-04-01-lighthouse/images/architecture.jpg&quot; alt=&quot;Architecture of Lighthouse Core&quot; /&gt;
-  &lt;/div&gt;
-  &lt;figcaption&gt;Architecture of Lighthouse Core&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/GoogleChrome/lighthouse/blob/master/docs/architecture.md&quot;&gt;See details of the architecture&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The project &lt;a href=&quot;https://github.com/GoogleChrome/lighthouse&quot;&gt;Lighthouse&lt;/a&gt; has 5 main components:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;lighthouse-cli&lt;/strong&gt;: allows to call lighthouse services from command line.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;lighthouse-core&lt;/strong&gt;: allows to generate report to measure the quality of your app at some urls.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;lighthouse-extension&lt;/strong&gt;: allows to call lighthouse services from an Google Chrome extension.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;lighthouse-logger&lt;/strong&gt;: allows common logs.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;lighthouse-viewer&lt;/strong&gt;: allows to see report in your web browser or to import reports under JSON or HTML format.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Before installing &lt;a href=&quot;https://github.com/GoogleChrome/lighthouse/releases/tag/v2.4.0&quot;&gt;LightHouse 2.4.0&lt;/a&gt;, we must have:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://releases.ubuntu.com/16.04/&quot;&gt; Ubtuntu Desktop 16.04 LTS+&lt;/a&gt; : &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cat /ect/issue&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://chromereleases.googleblog.com/2017/08/stable-channel-update-for-desktop.html&quot;&gt;Google Chrome 60.0.3112.90+&lt;/a&gt; : &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;google-chrome --version&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V6.md#6.11.2&quot;&gt;Node 6.11.2 LTS+&lt;/a&gt; : &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;node --version&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/npm/npm/releases/tag/v5.3.0&quot;&gt;NPM 5.3.0+&lt;/a&gt; : &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;npm --version&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;As lighthouse is a very recent project, you can use &lt;a href=&quot;https://www.google.com/chrome/browser/canary.html&quot;&gt;Canary&lt;/a&gt; version for Google Chrome.&lt;/p&gt;
-
-&lt;figure title=&quot;Google Chrome, Chromium and Canary version&quot;&gt;
-  &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-04-01-lighthouse/images/chrome-version.jpg&quot; alt=&quot;Google Chrome, Chromium and Canary version&quot; /&gt;
-  &lt;/div&gt;
-  &lt;figcaption&gt;Google Chrome, Chromium and Canary version&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Reminder you in a nutshell that &lt;a href=&quot;https://www.google.com/chrome/browser&quot;&gt;Google Chrome&lt;/a&gt; is the &lt;a href=&quot;https://github.com/chromium/chromium&quot;&gt;Chromium&lt;/a&gt; open source project built, packaged, 
-and distributed by Google. You can see a few &lt;a href=&quot;https://chromium.googlesource.com/chromium/src/+/master/docs/chromium_browser_vs_google_chrome.md&quot;&gt;differences&lt;/a&gt; . 
-It has &lt;a href=&quot;https://www.chromium.org/getting-involved/dev-channel&quot;&gt;4 versions&lt;/a&gt; Stable, Beta, Dev, Canary for MAC, Windows and Linux for desktops and Android, iOS for smart phones and tablets.&lt;/p&gt;
-
-&lt;p&gt;For example, test LightHouse on this blog. Suppose that you have this file &lt;strong&gt;urls.txt&lt;/strong&gt; containing one URL per line:&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://glegoux.com/
-https://glegoux.com/blog/
-https://glegoux.com/blog/articles/
-https://glegoux.com/about/
-https://glegoux.com/contact/
-https://glegoux.com/contact/email/
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Run this bash script to get one report by url:&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0
-&lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;url &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cat &lt;/span&gt;urls.txt&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do
-  &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;--&quot;&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$i&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; | tee &lt;span class=&quot;nt&quot;&gt;-a&lt;/span&gt; matching_url_report.txt
-  &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;--&quot;&lt;/span&gt;
-  lighthouse &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--output&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;json &lt;span class=&quot;nt&quot;&gt;--output-path&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;report-&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$i&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;.json&quot;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;$((&lt;/span&gt;i++&lt;span class=&quot;k&quot;&gt;))&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Then run this python script &lt;strong&gt;lighthouse.py&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;go&quot;&gt;python3 lighthouse.py urls.txt reports.csv
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/glegoux/articles-glegoux-com/tree/master/articles/2019-04-01-lighthouse/code&quot;&gt;See code&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;You get this csv file &lt;strong&gt;reports.csv&lt;/strong&gt;. Visualize with &lt;strong&gt;matplotlib&lt;/strong&gt; library:&lt;/p&gt;
-
-&lt;figure title=&quot; Charts of scores for a set of URLs&quot;&gt;
-  &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-04-01-lighthouse/images/plot_scores.png&quot; alt=&quot; Charts of scores for a set of URLs&quot; /&gt;
-  &lt;/div&gt;
-  &lt;figcaption&gt; Charts of scores for a set of URLs&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;url&lt;/th&gt;
-      &lt;th&gt;date&lt;/th&gt;
-      &lt;th&gt;pwa&lt;/th&gt;
-      &lt;th&gt;performance&lt;/th&gt;
-      &lt;th&gt;accessibility&lt;/th&gt;
-      &lt;th&gt;best-practices&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;https://glegoux.com/projects/&lt;/td&gt;
-      &lt;td&gt;2017-08-17&lt;/td&gt;
-      &lt;td&gt;45.45&lt;/td&gt;
-      &lt;td&gt;46.12&lt;/td&gt;
-      &lt;td&gt;91.43&lt;/td&gt;
-      &lt;td&gt;69.23&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;https://glegoux.com/blog/&lt;/td&gt;
-      &lt;td&gt;2017-08-17&lt;/td&gt;
-      &lt;td&gt;45.45&lt;/td&gt;
-      &lt;td&gt;48.71&lt;/td&gt;
-      &lt;td&gt;91.43&lt;/td&gt;
-      &lt;td&gt;69.23&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;https://glegoux.com/home/&lt;/td&gt;
-      &lt;td&gt;2017-08-17&lt;/td&gt;
-      &lt;td&gt;36.36&lt;/td&gt;
-      &lt;td&gt;36.53&lt;/td&gt;
-      &lt;td&gt;88.57&lt;/td&gt;
-      &lt;td&gt;69.23&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;https://glegoux.com/snippets/&lt;/td&gt;
-      &lt;td&gt;2017-08-17&lt;/td&gt;
-      &lt;td&gt;45.45&lt;/td&gt;
-      &lt;td&gt;40.88&lt;/td&gt;
-      &lt;td&gt;91.43&lt;/td&gt;
-      &lt;td&gt;61.54&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;https://glegoux.com/articles/&lt;/td&gt;
-      &lt;td&gt;2017-08-17&lt;/td&gt;
-      &lt;td&gt;45.45&lt;/td&gt;
-      &lt;td&gt;46.12&lt;/td&gt;
-      &lt;td&gt;88.57&lt;/td&gt;
-      &lt;td&gt;69.23&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;https://glegoux.com/about/&lt;/td&gt;
-      &lt;td&gt;2017-08-17&lt;/td&gt;
-      &lt;td&gt;36.36&lt;/td&gt;
-      &lt;td&gt;40.18&lt;/td&gt;
-      &lt;td&gt;88.57&lt;/td&gt;
-      &lt;td&gt;69.23&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;&lt;strong&gt;References&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://developers.google.com/web/tools/lighthouse&quot;&gt;User Documentation&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/GoogleChrome/lighthouse&quot;&gt;LightHouse Open Source Code&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en&quot;&gt;LightHouse as Google Chrome Extension&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/lighthouse&quot;&gt;LightHouse as NPM Javascript module&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.gitbook.com/book/google-developer-training/progressive-web-apps-ilt-codelabs&quot;&gt;LightHouse as NPM Javascript module&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Mon, 01 Apr 2019 00:00:00 +0000</pubDate>
-        <link>https://glegoux.com/blog/articles/2019/04/01/lighthouse.html</link>
-        <guid isPermaLink="true">https://glegoux.com/blog/articles/2019/04/01/lighthouse.html</guid>
-        
-        
-        <category>Web</category>
         
       </item>
     
