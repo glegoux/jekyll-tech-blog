@@ -24,6 +24,4 @@ gem "nokogiri", ">= 1.12.5"
 gem 'rouge', '3.0'
 gem 'safe_yaml', '1.0.5'
 gem 'html-pipeline', '2.12.3'
-
-
-
+gem "webrick", "~> 1.7"

@@ -95,6 +95,7 @@ GEM
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
     unicode-display_width (1.8.0)
+    webrick (1.7.0)
     zeitwerk (2.5.1)
 
 PLATFORMS
@@ -117,6 +118,7 @@ DEPENDENCIES
   rack (>= 2.1.4)
   rouge (= 3.0)
   safe_yaml (= 1.0.5)
+  webrick (~> 1.7)
 
 RUBY VERSION
    ruby 3.0.2p107
