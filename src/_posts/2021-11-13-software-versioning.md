@@ -10,10 +10,10 @@ category: "Development"
 
 A software can be viewed as a set of line of codes that is dynamic, that is to say that evolves discretely from a 
 state to a new state in function of time. To identify a specific state of this software a versioning system is often 
-used whether it be for a language compiler, a library, a web API, an application, a server, or a client. Of course of 
+used whether it be for a language compiler, a library, a web API, an application, a server, or a client. Of course a 
 version system can be used more generally for any project, but here I focus only on a software.
 
-<figure>
+<figure class="notranslate">
 <pre>
              ┌─────────┐           ┌─────────┐           ┌─────────┐
              │         │           │         │           │         │
@@ -28,7 +28,7 @@ The software versioning is the process to assign a version to a software: a vers
 scheme and a version strategy to track the evolutions. For example, with a version control system as [Git](https://git-scm.com/), 
 the history of a software is split into commits, where each commit identifier is used as a version. 
 
-<figure>
+<figure  class="notranslate">
 <pre>
 40551405dc02afe8240024c952fa1de953fc2ff9 Commit message: State 3
 3982dcd90b486eab39eb610ec5e7e5963b92ab33 Commit message: State 2
