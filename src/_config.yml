@@ -75,7 +75,7 @@ project:
         link: "https://www.glegoux.com/contact/email"
         class_icon:  "fas fa-paper-plane"
     link_status_availability: "http://status.glegoux.com"
-    google_analytics_code: "UA-155162630-1"
+    google_analytics_code: "UA-102138582-1"
     disqus_name: "glegoux-com"
     theme_color: "#383b43"
   article:
