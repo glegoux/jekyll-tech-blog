@@ -13,8 +13,8 @@ state to a new state in function of time. To identify a specific state of this s
 used whether it be for a language compiler, a library, a web API, an application, a server, or a client. Of course a 
 version system can be used more generally for any project, but here I focus only on a software.
 
-<figure class="notranslate">
-<pre>
+<figure>
+<pre class="notranslate">
              ┌─────────┐           ┌─────────┐           ┌─────────┐
              │         │           │         │           │         │
   ──────────►│ State 1 ├──────────►│ State 2 ├──────────►│ State 3 │─────────►
@@ -28,8 +28,8 @@ The software versioning is the process to assign a version to a software: a vers
 scheme and a version strategy to track the evolutions. For example, with a version control system as [Git](https://git-scm.com/), 
 the history of a software is split into commits, where each commit identifier is used as a version. 
 
-<figure  class="notranslate">
-<pre>
+<figure>
+<pre class="notranslate">
 40551405dc02afe8240024c952fa1de953fc2ff9 Commit message: State 3
 3982dcd90b486eab39eb610ec5e7e5963b92ab33 Commit message: State 2
 32f0469eb344029bd1ecf5b0626685f2fa795f47 Commit message: State 1
