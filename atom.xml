@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2021-11-14T11:30:19+00:00</updated>
+ <updated>2021-11-14T13:22:41+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -1715,7 +1715,8 @@ The typical format of a typical Kerberos principal is primary/instance@REALM.&lt
   &lt;li&gt;MIGEON Jean. &lt;strong&gt;Protocol, Installation and Single Sign On, The MIT Kerberos Admnistrator’s how-to Guide&lt;/strong&gt;. MIT Kerberos Consortium, July 2008. p 62.&lt;/li&gt;
   &lt;li&gt;BARRETT Daniel, SILVERMAN Richard, BYRNES Robert. &lt;strong&gt;SSH, The Secure Shell: The Definitive Guide, 2nd Edition&lt;/strong&gt;. O’Reilly Media, June 2009. p. 672. Notes: Chapter 11. ISBN-10: 0596008953, ISBN-13: 978-0596008956&lt;/li&gt;
   &lt;li&gt;GARMAN, Jason. &lt;strong&gt;Kerberos: The Definitive Guide, 2nd Edition&lt;/strong&gt;. O’Reilly Media, March 2010. p. 272.  ISBN-10: 0596004036, ISBN-13: 978-0596004033.&lt;/li&gt;
-  &lt;li&gt;O’MALLEY Owen, ZHANG Kan, RADIA Sanjay, MARTI Ram, and HARRELL Christopher. &lt;strong&gt;Hadoop Security Design&lt;/strong&gt;. Yahoo! Research Paper, October 2009. p 19.&lt;/li&gt;
+  &lt;li&gt;Phillip J. Windley. &lt;strong&gt;Digital Identity&lt;/strong&gt;.  O’Reilly Media, August 2005. p. 254.&lt;/li&gt;
+  &lt;li&gt;O’MALLEY Owen, ZHANG Kan, RADIA Sanjay, MARTI Ram, and HARRELL Christopher. &lt;strong&gt;Hadoop Security Design&lt;/strong&gt;. Yahoo! Research Paper, October 2009. p 19. ISBN-10: 0596008783, ISBN-13: 978-0596008789&lt;/li&gt;
   &lt;li&gt;MATTHIAS Karl, KANE Sean. &lt;strong&gt;Docker: Up &amp;amp; Running&lt;/strong&gt;. O’Reilly Media, June 2015. p. 232. ISBN-10: 1491917571, ISBN-13: 978-1491917572.&lt;/li&gt;
 &lt;/ul&gt;
 </content><author>
