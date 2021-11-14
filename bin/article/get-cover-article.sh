@@ -2,9 +2,9 @@
 #
 # usage: get-cover-article.sh <cover_path>
 #
-# Convert and clean an article cover, the correct cover will be created in the same folder than
-# the given <cover_path> with a valid extension: .jpg and ratio of dimension: 1080x540. A backup of
-# <cover_path> will created in the same folder with .old suffix.
+# Convert and clean an article cover. The correct cover will be created in the same folder than
+# the given <cover_path> with a valid format JPEG and extension: .jpg and ratio of dimension: 1080x540 (2:1). 
+# A backup of <cover_path> will created in the same folder with .old suffix.
 
 set -e
 
