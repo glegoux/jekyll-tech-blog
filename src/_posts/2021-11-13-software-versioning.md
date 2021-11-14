@@ -8,11 +8,10 @@ category: "Development"
 
 # What is a software version? 
 
-A software is a dynamic set of lines of code, that evolves discretely from state 
-to state in function of time. To identify a specific state of a software, a versioning system 
-can be used whether it be for a language compiler, a library, a web API, an application, a 
-server, or a client. Of course a versioning system can be used more generally for any project, 
-but here I focus only on the **software versioning** at large.
+A software is a dynamic set of lines of code, that evolves discretely from state to state in function 
+of time. To identify a specific state of a software, a versioning can be used whether it be for a
+language compiler, a library, a web API, an application, a server, or a client. Of course a versioning 
+can be used more generally for any project, but here I focus only on the **software versioning** at large.
 
 <figure>
 <pre class="notranslate">
@@ -40,31 +39,31 @@ software is split into commits, where each commit identifier is used as a versio
 <figcaption>Commit logs with commit identifier and message</figcaption>
 </figure> 
 
-Here the version scheme is a [SHA1-hash](https://wikipedia.org/wiki/SHA-1) assigned to each change of 
-code rendered the more atomic than possible. It is a good software versioning handy for development 
-team, because each version is unique and points to each different change in the code base. 
-But not very useable for the users of this software, because it does not human readable or user 
-friendly, without additional information in the naming. And each software change has a version, 
-what makes too many existing versions. 
+Here the version scheme is a [SHA1-hash](https://wikipedia.org/wiki/SHA-1), where the version strategy is 
+to assign a new version to each change of code rendered the more atomic than possible. It is a software 
+versioning handy for development team, because each version is unique and points to each different change in 
+the code base. But not very useable for the users of this software, because a given version is not human readable 
+or user friendly, no useful information is given by this complex naming. And each change has a version, 
+what makes too many existing versions with a naming not discriminant, to know which versions are important 
+except the last one. 
 
-A software version is a unique identifier to distribute a software to users in a particular state with
-features and maintenance. So the development team of a software wishes to reduce the number of supported
+A software version is a unique identifier to distribute a software also to users in a particular state with
+features and maintenance. But the development team of a software wishes to reduce the number of supported
 versions exposed to their clients, and wants to package these changes to propose a software as a product
 with coherent features. That is why another software versioning is applied often above these commit
-identifiers, then the usage of Git tag and/or Git release 
-is privileged.
+identifiers, and the usage of Git tag and/or Git release is privileged.
 
 # What are the features of a software version?
 
-As we have seen above, a software can have several version systems, for example one used internally 
+As we have seen above, a software can have several versioning systems, for example one used internally 
 by the development team, and one exposed to users of this software.
 
-In addition to be composed of a set of unique identifier, the version system is often ordered to know 
-if a version is more recent than another. The naming of a version repects a semantics that gives a 
-meaning to this naming. 
+In addition to be composed of a set of unique identifiers, the versions are often ordered to know 
+if a version is more recent than another, where the naming of a version repects a semantics that 
+gives additional meanings. 
 
-The publication of a new version respects a lifecycle with a workflow and a process. This publication 
-has a distributable format where the software is packaged into an archive. The version is signed by 
+The publication of a new version follows a lifecycle with a workflow and a process. This publication 
+produces a distributable format of the software called archive or package. The version is signed by 
 the software provider identity with a hash function on the content of the archive to guarantee that once a
 particular version is published, this one remains immutable and author of this archive is well the
 official provider of this software.
