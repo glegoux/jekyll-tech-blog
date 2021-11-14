@@ -5,8 +5,8 @@
     <description>Personal blog about software engineering</description>
     <link>https://glegoux.com/</link>
     <atom:link href="https://glegoux.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 14 Nov 2021 22:26:50 +0000</pubDate>
-    <lastBuildDate>Sun, 14 Nov 2021 22:26:50 +0000</lastBuildDate>
+    <pubDate>Sun, 14 Nov 2021 22:46:59 +0000</pubDate>
+    <lastBuildDate>Sun, 14 Nov 2021 22:46:59 +0000</lastBuildDate>
     <generator>Jekyll v4.2.1</generator>
     
       <item>
@@ -61,11 +61,11 @@ and/or Git release is privileged.&lt;/p&gt;
 &lt;h1 id=&quot;what-are-the-features-of-a-software-version&quot;&gt;What are the features of a software version?&lt;/h1&gt;
 
 &lt;p&gt;As we have seen above, a software can have &lt;strong&gt;several versioning systems&lt;/strong&gt;, for example one used internally 
-by the development team, and one exposed to users of this software.&lt;/p&gt;
+by the development team, and one exposed externally to users.&lt;/p&gt;
 
-&lt;p&gt;In addition to be composed of a set of &lt;strong&gt;unique identifiers&lt;/strong&gt;, the versions are often ordered to know 
-if a version is more recent than another, where the naming of a version repects a &lt;strong&gt;semantics&lt;/strong&gt; that 
-contains this order and gives additional meanings.&lt;/p&gt;
+&lt;p&gt;In addition to be &lt;strong&gt;unique identifiers&lt;/strong&gt;, the versions are often ordered to know if a version is more
+recent than another. So the naming of a version repects a &lt;strong&gt;semantics&lt;/strong&gt;, that contains this order and 
+additional meanings.&lt;/p&gt;
 
 &lt;p&gt;The publication of a new version follows a &lt;strong&gt;lifecycle&lt;/strong&gt; with a workflow and a process. This publication 
 produces a distributable format of the software called &lt;strong&gt;archive&lt;/strong&gt; or &lt;strong&gt;package&lt;/strong&gt;. The version is 
