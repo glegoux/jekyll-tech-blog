@@ -5,18 +5,19 @@
     <description>Personal blog about software engineering</description>
     <link>https://glegoux.com/</link>
     <atom:link href="https://glegoux.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 14 Nov 2021 14:05:57 +0000</pubDate>
-    <lastBuildDate>Sun, 14 Nov 2021 14:05:57 +0000</lastBuildDate>
+    <pubDate>Sun, 14 Nov 2021 20:51:56 +0000</pubDate>
+    <lastBuildDate>Sun, 14 Nov 2021 20:51:56 +0000</lastBuildDate>
     <generator>Jekyll v4.2.1</generator>
     
       <item>
         <title>Software versioning</title>
         <description>&lt;h1 id=&quot;what-is-a-software-version&quot;&gt;What is a software version?&lt;/h1&gt;
 
-&lt;p&gt;A software can be viewed as a set of line of codes that is dynamic, that is to say that evolves discretely from a 
-state to a new state in function of time. To identify a specific state of this software a versioning system is often 
-used whether it be for a language compiler, a library, a web API, an application, a server, or a client. Of course a 
-version system can be used more generally for any project, but here I focus only on a software at large.&lt;/p&gt;
+&lt;p&gt;A software is a dynamic set of lines of code and/or data, that evolves discretely from state 
+to state in function of time. To identify a specific state of a software, a versioning system 
+can be used whether it be for a language compiler, a library, a web API, an application, a 
+server, or a client. Of course a versioning system can be used more generally for any project, 
+but here I focus only on the &lt;strong&gt;software versioning&lt;/strong&gt; at large.&lt;/p&gt;
 
 &lt;figure&gt;
 &lt;pre class=&quot;notranslate&quot;&gt;
@@ -29,9 +30,10 @@ version system can be used more generally for any project, but here I focus only
 &lt;figcaption&gt;Software states&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;The software versioning is the process to assign a version to a software: a version system is chosen with a version
-scheme and a version strategy to track the evolutions. For example, with a version control system as &lt;a href=&quot;https://git-scm.com/&quot;&gt;Git&lt;/a&gt;, 
-the history of a software is split into commits, where each commit identifier is used as a version.&lt;/p&gt;
+&lt;p&gt;The software versioning is the process to assign a version to a software: a version system 
+is chosen with a &lt;strong&gt;version scheme&lt;/strong&gt; and a &lt;strong&gt;version strategy&lt;/strong&gt; to track the evolutions. For 
+example, with a version control system as &lt;a href=&quot;https://git-scm.com/&quot;&gt;Git&lt;/a&gt;, the history of a 
+software is split into commits, where each commit identifier is used as a version.&lt;/p&gt;
 
 &lt;figure&gt;
 &lt;pre class=&quot;notranslate&quot;&gt;
@@ -43,25 +45,34 @@ the history of a software is split into commits, where each commit identifier is
 &lt;figcaption&gt;Commit logs with commit identifier and message&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;Here the version scheme is a &lt;a href=&quot;https://wikipedia.org/wiki/SHA-1&quot;&gt;SHA1-hash&lt;/a&gt; assigned to each change of code rendered the more atomic than possible. 
-It is a good software versioning handy for development team, because each version is unique and points to each different change in the code base. 
-But not very useable for the users of this software, because it does not human readable or user friendly, without additional information in the naming. 
-And each software change has a version, what makes too many existing versions.&lt;/p&gt;
+&lt;p&gt;Here the version scheme is a &lt;a href=&quot;https://wikipedia.org/wiki/SHA-1&quot;&gt;SHA1-hash&lt;/a&gt; assigned to each change of 
+code rendered the more atomic than possible. It is a good software versioning handy for development 
+team, because each version is unique and points to each different change in the code base. 
+But not very useable for the users of this software, because it does not human readable or user 
+friendly, without additional information in the naming. And each software change has a version, 
+what makes too many existing versions.&lt;/p&gt;
 
-&lt;p&gt;A software version is a unique identifier to distribute a software to users in a particular state with features and maintenance. So the development team of a 
-software wishes to reduce the number of supported versions exposed to their clients, and wants to package these changes to propose a software as a product 
-with coherent features. That is why another software versioning is applied often above these commit identifiers, then the usage of Git tag and/or Git release 
+&lt;p&gt;A software version is a unique identifier to distribute a software to users in a particular state with
+features and maintenance. So the development team of a software wishes to reduce the number of supported
+versions exposed to their clients, and wants to package these changes to propose a software as a product
+with coherent features. That is why another software versioning is applied often above these commit
+identifiers, then the usage of Git tag and/or Git release 
 is privileged.&lt;/p&gt;
 
 &lt;h1 id=&quot;what-are-the-features-of-a-software-version&quot;&gt;What are the features of a software version?&lt;/h1&gt;
 
-&lt;p&gt;As we have seen above, a software can have several version systems, for example one used internally by the development team, and one exposed to users of this software.&lt;/p&gt;
+&lt;p&gt;As we have seen above, a software can have several version systems, for example one used internally 
+by the development team, and one exposed to users of this software.&lt;/p&gt;
 
-&lt;p&gt;In addition to be composed of a set of unique identifier, the version system is often ordered to know if a version is more recent than another. The naming of a version
-repects a semantics that gives a meaning to this naming.&lt;/p&gt;
+&lt;p&gt;In addition to be composed of a set of unique identifier, the version system is often ordered to know 
+if a version is more recent than another. The naming of a version repects a semantics that gives a 
+meaning to this naming.&lt;/p&gt;
 
-&lt;p&gt;The publication of a new version respects a lifecycle with a workflow and a process. This publication has a distributable format where the software is packaged into 
-an archive. The version is signed by the software provider identity with a hash function on the content of the archive to guarantee that once a particular version is published, this one remains immutable and author of this archive is well the official provider of this software.&lt;/p&gt;
+&lt;p&gt;The publication of a new version respects a lifecycle with a workflow and a process. This publication 
+has a distributable format where the software is packaged into an archive. The version is signed by 
+the software provider identity with a hash function on the content of the archive to guarantee that once a
+particular version is published, this one remains immutable and author of this archive is well the
+official provider of this software.&lt;/p&gt;
 
 &lt;h1 id=&quot;how-to-build-a-software-version&quot;&gt;How to build a software version?&lt;/h1&gt;
 
@@ -71,20 +82,21 @@ an archive. The version is signed by the software provider identity with a hash 
 
 &lt;h1 id=&quot;example-for-javascala&quot;&gt;Example for Java/Scala&lt;/h1&gt;
 
-&lt;p&gt;A Java/Scala library is compiled to a platform-independent format called JVM bytecode and stored in .class files. These class files are zipped in JAR files for distribution.&lt;/p&gt;
+&lt;p&gt;A Java/Scala library is compiled to a platform-independent format called JVM bytecode and stored in 
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.class&lt;/code&gt; files. These class files are zipped in JAR files for distribution.&lt;/p&gt;
 
 &lt;h1 id=&quot;references&quot;&gt;References&lt;/h1&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;https://en.wikipedia.org/wiki/Software_versioning&lt;/li&gt;
-  &lt;li&gt;https://doc.akka.io/docs/akka/current/common/binary-compatibility-rules.html&lt;/li&gt;
-  &lt;li&gt;https://semver.org/&lt;/li&gt;
-  &lt;li&gt;https://www.scala-lang.org/blog/2021/02/16/preventing-version-conflicts-with-versionscheme.html&lt;/li&gt;
-  &lt;li&gt;https://docs.scala-lang.org/overviews/core/binary-compatibility-for-library-authors.html&lt;/li&gt;
-  &lt;li&gt;https://docs.scala-lang.org/overviews/jdk-compatibility/overview.html&lt;/li&gt;
-  &lt;li&gt;https://github.com/jatcwang/binary-compatibility-guide&lt;/li&gt;
-  &lt;li&gt;https://github.com/lightbend/mima&lt;/li&gt;
-  &lt;li&gt;https://wiki.openjdk.java.net/display/csr/Kinds+of+Compatibility&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Software_versioning&quot;&gt;https://en.wikipedia.org/wiki/Software_versioning&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://doc.akka.io/docs/akka/current/common/binary-compatibility-rules.html&quot;&gt;https://doc.akka.io/docs/akka/current/common/binary-compatibility-rules.html&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://semver.org/&quot;&gt;https://semver.org/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.scala-lang.org/blog/2021/02/16/preventing-version-conflicts-with-versionscheme.html&quot;&gt;https://www.scala-lang.org/blog/2021/02/16/preventing-version-conflicts-with-versionscheme.html&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.scala-lang.org/overviews/core/binary-compatibility-for-library-authors.html&quot;&gt;https://docs.scala-lang.org/overviews/core/binary-compatibility-for-library-authors.html&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.scala-lang.org/overviews/jdk-compatibility/overview.html&quot;&gt;https://docs.scala-lang.org/overviews/jdk-compatibility/overview.html&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/jatcwang/binary-compatibility-guide&quot;&gt;https://github.com/jatcwang/binary-compatibility-guide&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/lightbend/mima&quot;&gt;https://github.com/lightbend/mima&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://wiki.openjdk.java.net/display/csr/Kinds+of+Compatibility&quot;&gt;https://wiki.openjdk.java.net/display/csr/Kinds+of+Compatibility&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         <pubDate>Sat, 13 Nov 2021 00:00:00 +0000</pubDate>

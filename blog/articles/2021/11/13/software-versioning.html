@@ -438,10 +438,11 @@ window.MathJax = {
     <div class="markdown-body">
       <h1 id="what-is-a-software-version">What is a software version?</h1>
 
-<p>A software can be viewed as a set of line of codes that is dynamic, that is to say that evolves discretely from a 
-state to a new state in function of time. To identify a specific state of this software a versioning system is often 
-used whether it be for a language compiler, a library, a web API, an application, a server, or a client. Of course a 
-version system can be used more generally for any project, but here I focus only on a software at large.</p>
+<p>A software is a dynamic set of lines of code and/or data, that evolves discretely from state 
+to state in function of time. To identify a specific state of a software, a versioning system 
+can be used whether it be for a language compiler, a library, a web API, an application, a 
+server, or a client. Of course a versioning system can be used more generally for any project, 
+but here I focus only on the <strong>software versioning</strong> at large.</p>
 
 <figure>
 <pre class="notranslate">
@@ -454,9 +455,10 @@ version system can be used more generally for any project, but here I focus only
 <figcaption>Software states</figcaption>
 </figure>
 
-<p>The software versioning is the process to assign a version to a software: a version system is chosen with a version
-scheme and a version strategy to track the evolutions. For example, with a version control system as <a href="https://git-scm.com/">Git</a>, 
-the history of a software is split into commits, where each commit identifier is used as a version.</p>
+<p>The software versioning is the process to assign a version to a software: a version system 
+is chosen with a <strong>version scheme</strong> and a <strong>version strategy</strong> to track the evolutions. For 
+example, with a version control system as <a href="https://git-scm.com/">Git</a>, the history of a 
+software is split into commits, where each commit identifier is used as a version.</p>
 
 <figure>
 <pre class="notranslate">
@@ -468,25 +470,34 @@ the history of a software is split into commits, where each commit identifier is
 <figcaption>Commit logs with commit identifier and message</figcaption>
 </figure>
 
-<p>Here the version scheme is a <a href="https://wikipedia.org/wiki/SHA-1">SHA1-hash</a> assigned to each change of code rendered the more atomic than possible. 
-It is a good software versioning handy for development team, because each version is unique and points to each different change in the code base. 
-But not very useable for the users of this software, because it does not human readable or user friendly, without additional information in the naming. 
-And each software change has a version, what makes too many existing versions.</p>
+<p>Here the version scheme is a <a href="https://wikipedia.org/wiki/SHA-1">SHA1-hash</a> assigned to each change of 
+code rendered the more atomic than possible. It is a good software versioning handy for development 
+team, because each version is unique and points to each different change in the code base. 
+But not very useable for the users of this software, because it does not human readable or user 
+friendly, without additional information in the naming. And each software change has a version, 
+what makes too many existing versions.</p>
 
-<p>A software version is a unique identifier to distribute a software to users in a particular state with features and maintenance. So the development team of a 
-software wishes to reduce the number of supported versions exposed to their clients, and wants to package these changes to propose a software as a product 
-with coherent features. That is why another software versioning is applied often above these commit identifiers, then the usage of Git tag and/or Git release 
+<p>A software version is a unique identifier to distribute a software to users in a particular state with
+features and maintenance. So the development team of a software wishes to reduce the number of supported
+versions exposed to their clients, and wants to package these changes to propose a software as a product
+with coherent features. That is why another software versioning is applied often above these commit
+identifiers, then the usage of Git tag and/or Git release 
 is privileged.</p>
 
 <h1 id="what-are-the-features-of-a-software-version">What are the features of a software version?</h1>
 
-<p>As we have seen above, a software can have several version systems, for example one used internally by the development team, and one exposed to users of this software.</p>
+<p>As we have seen above, a software can have several version systems, for example one used internally 
+by the development team, and one exposed to users of this software.</p>
 
-<p>In addition to be composed of a set of unique identifier, the version system is often ordered to know if a version is more recent than another. The naming of a version
-repects a semantics that gives a meaning to this naming.</p>
+<p>In addition to be composed of a set of unique identifier, the version system is often ordered to know 
+if a version is more recent than another. The naming of a version repects a semantics that gives a 
+meaning to this naming.</p>
 
-<p>The publication of a new version respects a lifecycle with a workflow and a process. This publication has a distributable format where the software is packaged into 
-an archive. The version is signed by the software provider identity with a hash function on the content of the archive to guarantee that once a particular version is published, this one remains immutable and author of this archive is well the official provider of this software.</p>
+<p>The publication of a new version respects a lifecycle with a workflow and a process. This publication 
+has a distributable format where the software is packaged into an archive. The version is signed by 
+the software provider identity with a hash function on the content of the archive to guarantee that once a
+particular version is published, this one remains immutable and author of this archive is well the
+official provider of this software.</p>
 
 <h1 id="how-to-build-a-software-version">How to build a software version?</h1>
 
@@ -496,20 +507,21 @@ an archive. The version is signed by the software provider identity with a hash 
 
 <h1 id="example-for-javascala">Example for Java/Scala</h1>
 
-<p>A Java/Scala library is compiled to a platform-independent format called JVM bytecode and stored in .class files. These class files are zipped in JAR files for distribution.</p>
+<p>A Java/Scala library is compiled to a platform-independent format called JVM bytecode and stored in 
+<code class="language-plaintext highlighter-rouge">.class</code> files. These class files are zipped in JAR files for distribution.</p>
 
 <h1 id="references">References</h1>
 
 <ul>
-  <li>https://en.wikipedia.org/wiki/Software_versioning</li>
-  <li>https://doc.akka.io/docs/akka/current/common/binary-compatibility-rules.html</li>
-  <li>https://semver.org/</li>
-  <li>https://www.scala-lang.org/blog/2021/02/16/preventing-version-conflicts-with-versionscheme.html</li>
-  <li>https://docs.scala-lang.org/overviews/core/binary-compatibility-for-library-authors.html</li>
-  <li>https://docs.scala-lang.org/overviews/jdk-compatibility/overview.html</li>
-  <li>https://github.com/jatcwang/binary-compatibility-guide</li>
-  <li>https://github.com/lightbend/mima</li>
-  <li>https://wiki.openjdk.java.net/display/csr/Kinds+of+Compatibility</li>
+  <li><a href="https://en.wikipedia.org/wiki/Software_versioning">https://en.wikipedia.org/wiki/Software_versioning</a></li>
+  <li><a href="https://doc.akka.io/docs/akka/current/common/binary-compatibility-rules.html">https://doc.akka.io/docs/akka/current/common/binary-compatibility-rules.html</a></li>
+  <li><a href="https://semver.org/">https://semver.org/</a></li>
+  <li><a href="https://www.scala-lang.org/blog/2021/02/16/preventing-version-conflicts-with-versionscheme.html">https://www.scala-lang.org/blog/2021/02/16/preventing-version-conflicts-with-versionscheme.html</a></li>
+  <li><a href="https://docs.scala-lang.org/overviews/core/binary-compatibility-for-library-authors.html">https://docs.scala-lang.org/overviews/core/binary-compatibility-for-library-authors.html</a></li>
+  <li><a href="https://docs.scala-lang.org/overviews/jdk-compatibility/overview.html">https://docs.scala-lang.org/overviews/jdk-compatibility/overview.html</a></li>
+  <li><a href="https://github.com/jatcwang/binary-compatibility-guide">https://github.com/jatcwang/binary-compatibility-guide</a></li>
+  <li><a href="https://github.com/lightbend/mima">https://github.com/lightbend/mima</a></li>
+  <li><a href="https://wiki.openjdk.java.net/display/csr/Kinds+of+Compatibility">https://wiki.openjdk.java.net/display/csr/Kinds+of+Compatibility</a></li>
 </ul>
 
     </div>
@@ -649,7 +661,89 @@ an archive. The version is signed by the software provider identity with a hash 
     <h5>Also read</h5>
 
     <div class="row">
-<a href="/blog/articles/2019/01/21/getting-started.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
+<a href="/blog/articles/2020/03/04/development-environment.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
+    <!-- Article metadata -->
+    <div class="article-card">
+<!-- Article cover --><div class="article-cover">
+        <img class="img-fluid lazyload" data-src="/_static/posts/2020-03-04-development-environment.jpg" alt="2020-03-04-development-environment">
+      </div>
+
+      <!-- Article details -->
+      <div class="article-details">
+        <!-- Article title -->
+        <div class="article-title">
+          Development environment
+        </div>
+
+        <!-- Article description -->
+        <div class="article-description">
+          Why isolate its development environment?
+        </div>
+
+        <!-- Article categories -->
+        <div class="article-category">
+          <ul>
+            <li>Development</li>
+          </ul>
+        </div>
+
+        <!-- Article publication date -->
+        <div class="date">
+          <i class="far fa-calendar-alt"></i>
+          <span>March 04, 2020</span>
+        </div>
+        <!-- Article reading time -->
+        <div class="reading-time">
+          <i class="far fa-clock"></i>
+          <span>5 min</span>
+        </div>
+      </div>
+
+    </div>
+</div>
+
+</a><a href="/blog/articles/2019/07/14/trace-a-request-path.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
+    <!-- Article metadata -->
+    <div class="article-card">
+<!-- Article cover --><div class="article-cover">
+        <img class="img-fluid lazyload" data-src="/_static/posts/2019-07-14-trace-a-request-path.jpg" alt="2019-07-14-trace-a-request-path">
+      </div>
+
+      <!-- Article details -->
+      <div class="article-details">
+        <!-- Article title -->
+        <div class="article-title">
+          Trace a request path
+        </div>
+
+        <!-- Article description -->
+        <div class="article-description">
+          How to know for which routers a HTTP request browses?
+        </div>
+
+        <!-- Article categories -->
+        <div class="article-category">
+          <ul>
+            <li>Web</li>
+          </ul>
+        </div>
+
+        <!-- Article publication date -->
+        <div class="date">
+          <i class="far fa-calendar-alt"></i>
+          <span>July 14, 2019</span>
+        </div>
+        <!-- Article reading time -->
+        <div class="reading-time">
+          <i class="far fa-clock"></i>
+          <span>5 min</span>
+        </div>
+      </div>
+
+    </div>
+</div>
+
+</a><a href="/blog/articles/2019/01/21/getting-started.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 <!-- Article cover --><div class="article-cover">
@@ -684,88 +778,6 @@ an archive. The version is signed by the software provider identity with a hash 
         <div class="reading-time">
           <i class="far fa-clock"></i>
           <span>10 min</span>
-        </div>
-      </div>
-
-    </div>
-</div>
-
-</a><a href="/blog/articles/2019/03/23/kerberos-in-5-minutes.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
-    <!-- Article metadata -->
-    <div class="article-card">
-<!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/posts/2019-03-23-kerberos-in-5-minutes.jpg" alt="2019-03-23-kerberos-in-5-minutes">
-      </div>
-
-      <!-- Article details -->
-      <div class="article-details">
-        <!-- Article title -->
-        <div class="article-title">
-          Kerberos in 5 minutes
-        </div>
-
-        <!-- Article description -->
-        <div class="article-description">
-          Kerberos is an authentication protocol for trusted hosts on untrusted networks.
-        </div>
-
-        <!-- Article categories -->
-        <div class="article-category">
-          <ul>
-            <li>Security</li>
-          </ul>
-        </div>
-
-        <!-- Article publication date -->
-        <div class="date">
-          <i class="far fa-calendar-alt"></i>
-          <span>March 23, 2019</span>
-        </div>
-        <!-- Article reading time -->
-        <div class="reading-time">
-          <i class="far fa-clock"></i>
-          <span>5 min</span>
-        </div>
-      </div>
-
-    </div>
-</div>
-
-</a><a href="/blog/articles/2019/03/01/access-to-a-computer-from-usb-key.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
-    <!-- Article metadata -->
-    <div class="article-card">
-<!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/posts/2019-03-01-access-to-a-computer-from-usb-key.jpg" alt="2019-03-01-access-to-a-computer-from-usb-key">
-      </div>
-
-      <!-- Article details -->
-      <div class="article-details">
-        <!-- Article title -->
-        <div class="article-title">
-          Access to a computer from USB key
-        </div>
-
-        <!-- Article description -->
-        <div class="article-description">
-          Somebody with USB key can take control of your computer
-        </div>
-
-        <!-- Article categories -->
-        <div class="article-category">
-          <ul>
-            <li>Security</li>
-          </ul>
-        </div>
-
-        <!-- Article publication date -->
-        <div class="date">
-          <i class="far fa-calendar-alt"></i>
-          <span>March 01, 2019</span>
-        </div>
-        <!-- Article reading time -->
-        <div class="reading-time">
-          <i class="far fa-clock"></i>
-          <span>5 min</span>
         </div>
       </div>
 
