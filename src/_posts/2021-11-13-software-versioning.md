@@ -47,11 +47,11 @@ human readable or user friendly, no useful information is given by this complex 
 has a version, what makes too many existing versions with a naming not discriminant, to know which
 versions are important except the last one. 
 
-A software version is a unique identifier to distribute a software also to users in a particular state. 
-But the development team of a software wishes to reduce the number of supported and maintained versions
-exposed to their clients, and wants to package these changes to propose a software as a product with 
-coherent features. That is why another software versioning is applied often above these commit
-identifiers, and the usage of Git tag and/or Git release is privileged.
+A software version is a unique identifier to distribute a software also to users. But the development team 
+of a software wishes to reduce the number of supported and maintained versions exposed to their clients,
+and wants to package these changes to propose a software as a product with coherent features. That is why
+another software versioning is applied often above these commit identifiers, and the usage of Git tag
+and/or Git release is privileged.
 
 # What are the features of a software version?
 
