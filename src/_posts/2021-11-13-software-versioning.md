@@ -11,7 +11,7 @@ category: "Development"
 A software can be viewed as a set of line of codes that is dynamic, that is to say that evolves discretely from a 
 state to a new state in function of time. To identify a specific state of this software a versioning system is often 
 used whether it be for a language compiler, a library, a web API, an application, a server, or a client. Of course a 
-version system can be used more generally for any project, but here I focus only on a software.
+version system can be used more generally for any project, but here I focus only on a software at large.
 
 <figure>
 <pre class="notranslate">
@@ -38,14 +38,31 @@ the history of a software is split into commits, where each commit identifier is
 <figcaption>Commit logs with commit identifier and message</figcaption>
 </figure> 
 
-Here the version scheme is a [SHA1-hash](https://wikipedia.org/wiki/SHA-1) assigned to each change of code rendering the more atomic than possible. 
-It is a good software versioning, because each version is unique. But not very handy to use in our use case, because it does not human readable or user friendly, 
-without additional information in the naming. And each software change has a version, what is a lot. 
+Here the version scheme is a [SHA1-hash](https://wikipedia.org/wiki/SHA-1) assigned to each change of code rendered the more atomic than possible. 
+It is a good software versioning handy for development team, because each version is unique and points to each different change in the code base. 
+But not very useable for the users of this software, because it does not human readable or user friendly, without additional information in the naming. 
+And each software change has a version, what makes too many existing versions. 
 
 A software version is a unique identifier to distribute a software to users in a particular state with features and maintenance. So the development team of a 
 software wishes to reduce the number of supported versions exposed to their clients, and wants to package these changes to propose a software as a product 
 with coherent features. That is why another software versioning is applied often above these commit identifiers, then the usage of Git tag and/or Git release 
 is privileged.
+
+# What are the features of a software version?
+
+As we have seen above, a software can have several version systems, for example one used internally by the development team, and one exposed to users of this software.
+
+In addition to be composed of a set of unique identifier, the version system is often ordered to know if a version is more recent than another. The naming of a version
+repects a semantics that gives a meaning to this naming. 
+
+The publication of a new version respects a lifecycle with a workflow and a process. This publication has a distributable format where the software is packaged into 
+an archive. The version is signed by the software provider identity with a hash function on the content of the archive to guarantee that once a particular version is published, this one remains immutable and author of this archive is well the official provider of this software.
+
+# How to build a software version?
+
+Breaking change, compatibility, Changelog, releases, alpha, beta, dependencies
+
+For example, [Ubuntu versioning](https://ubuntu.com/about/release-cycle), [SDK/JRE versioning](https://www.oracle.com/java/technologies/javase/versioning-naming.html), ...
 
 # Example for Java/Scala
 
