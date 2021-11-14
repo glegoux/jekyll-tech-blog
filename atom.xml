@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2021-11-14T20:51:56+00:00</updated>
+ <updated>2021-11-14T21:09:04+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -15,7 +15,7 @@
    <id>https://glegoux.com/blog/articles/2021/11/13/software-versioning.html</id>
    <content type="html">&lt;h1 id=&quot;what-is-a-software-version&quot;&gt;What is a software version?&lt;/h1&gt;
 
-&lt;p&gt;A software is a dynamic set of lines of code and/or data, that evolves discretely from state 
+&lt;p&gt;A software is a dynamic set of lines of code, that evolves discretely from state 
 to state in function of time. To identify a specific state of a software, a versioning system 
 can be used whether it be for a language compiler, a library, a web API, an application, a 
 server, or a client. Of course a versioning system can be used more generally for any project, 
@@ -32,9 +32,9 @@ but here I focus only on the &lt;strong&gt;software versioning&lt;/strong&gt; at
 &lt;figcaption&gt;Software states&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;The software versioning is the process to assign a version to a software: a version system 
-is chosen with a &lt;strong&gt;version scheme&lt;/strong&gt; and a &lt;strong&gt;version strategy&lt;/strong&gt; to track the evolutions. For 
-example, with a version control system as &lt;a href=&quot;https://git-scm.com/&quot;&gt;Git&lt;/a&gt;, the history of a 
+&lt;p&gt;The software versioning is the process to assign a version to a state of a software: 
+a &lt;strong&gt;version scheme&lt;/strong&gt; and a &lt;strong&gt;version strategy&lt;/strong&gt; are chosen to track the successive evolutions. 
+For example, with a version control system as &lt;a href=&quot;https://git-scm.com/&quot;&gt;Git&lt;/a&gt;, the history of a 
 software is split into commits, where each commit identifier is used as a version.&lt;/p&gt;
 
 &lt;figure&gt;
