@@ -441,7 +441,7 @@ window.MathJax = {
 <p>A software can be viewed as a set of line of codes that is dynamic, that is to say that evolves discretely from a 
 state to a new state in function of time. To identify a specific state of this software a versioning system is often 
 used whether it be for a language compiler, a library, a web API, an application, a server, or a client. Of course a 
-version system can be used more generally for any project, but here I focus only on a software.</p>
+version system can be used more generally for any project, but here I focus only on a software at large.</p>
 
 <figure>
 <pre class="notranslate">
@@ -468,14 +468,31 @@ the history of a software is split into commits, where each commit identifier is
 <figcaption>Commit logs with commit identifier and message</figcaption>
 </figure>
 
-<p>Here the version scheme is a <a href="https://wikipedia.org/wiki/SHA-1">SHA1-hash</a> assigned to each change of code rendering the more atomic than possible. 
-It is a good software versioning, because each version is unique. But not very handy to use in our use case, because it does not human readable or user friendly, 
-without additional information in the naming. And each software change has a version, what is a lot.</p>
+<p>Here the version scheme is a <a href="https://wikipedia.org/wiki/SHA-1">SHA1-hash</a> assigned to each change of code rendered the more atomic than possible. 
+It is a good software versioning handy for development team, because each version is unique and points to each different change in the code base. 
+But not very useable for the users of this software, because it does not human readable or user friendly, without additional information in the naming. 
+And each software change has a version, what makes too many existing versions.</p>
 
 <p>A software version is a unique identifier to distribute a software to users in a particular state with features and maintenance. So the development team of a 
 software wishes to reduce the number of supported versions exposed to their clients, and wants to package these changes to propose a software as a product 
 with coherent features. That is why another software versioning is applied often above these commit identifiers, then the usage of Git tag and/or Git release 
 is privileged.</p>
+
+<h1 id="what-are-the-features-of-a-software-version">What are the features of a software version?</h1>
+
+<p>As we have seen above, a software can have several version systems, for example one used internally by the development team, and one exposed to users of this software.</p>
+
+<p>In addition to be composed of a set of unique identifier, the version system is often ordered to know if a version is more recent than another. The naming of a version
+repects a semantics that gives a meaning to this naming.</p>
+
+<p>The publication of a new version respects a lifecycle with a workflow and a process. This publication has a distributable format where the software is packaged into 
+an archive. The version is signed by the software provider identity with a hash function on the content of the archive to guarantee that once a particular version is published, this one remains immutable and author of this archive is well the official provider of this software.</p>
+
+<h1 id="how-to-build-a-software-version">How to build a software version?</h1>
+
+<p>Breaking change, compatibility, Changelog, releases, alpha, beta, dependencies</p>
+
+<p>For example, <a href="https://ubuntu.com/about/release-cycle">Ubuntu versioning</a>, <a href="https://www.oracle.com/java/technologies/javase/versioning-naming.html">SDK/JRE versioning</a>, …</p>
 
 <h1 id="example-for-javascala">Example for Java/Scala</h1>
 
@@ -632,23 +649,23 @@ is privileged.</p>
     <h5>Also read</h5>
 
     <div class="row">
-<a href="/blog/articles/2019/01/21/getting-started.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
+<a href="/blog/articles/2019/02/14/how-to-quote-sources.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/posts/2019-01-21-getting-started.jpg" alt="2019-01-21-getting-started">
+        <img class="img-fluid lazyload" data-src="/_static/posts/2019-02-14-how-to-quote-sources.jpg" alt="2019-02-14-how-to-quote-sources">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          Getting started
+          How to quote sources
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          Markdown is a easy-to-use syntax for writing text on this blog.
+          Current standards and rules to respect in order to quote sources.
         </div>
 
         <!-- Article categories -->
@@ -661,7 +678,48 @@ is privileged.</p>
         <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>January 21, 2019</span>
+          <span>February 14, 2019</span>
+        </div>
+        <!-- Article reading time -->
+        <div class="reading-time">
+          <i class="far fa-clock"></i>
+          <span>5 min</span>
+        </div>
+      </div>
+
+    </div>
+</div>
+
+</a><a href="/blog/articles/2021/04/20/time-management.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
+    <!-- Article metadata -->
+    <div class="article-card">
+<!-- Article cover --><div class="article-cover">
+        <img class="img-fluid lazyload" data-src="/_static/posts/2021-04-20-time-management.jpg" alt="2021-04-20-time-management">
+      </div>
+
+      <!-- Article details -->
+      <div class="article-details">
+        <!-- Article title -->
+        <div class="article-title">
+          Time management
+        </div>
+
+        <!-- Article description -->
+        <div class="article-description">
+          How to optimize your time &amp; work?
+        </div>
+
+        <!-- Article categories -->
+        <div class="article-category">
+          <ul>
+            <li>Methodology</li>
+          </ul>
+        </div>
+
+        <!-- Article publication date -->
+        <div class="date">
+          <i class="far fa-calendar-alt"></i>
+          <span>April 20, 2021</span>
         </div>
         <!-- Article reading time -->
         <div class="reading-time">
@@ -673,23 +731,23 @@ is privileged.</p>
     </div>
 </div>
 
-</a><a href="/blog/articles/2019/05/24/java-champion.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
+</a><a href="/blog/articles/2020/05/04/java-ecosystem.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/posts/2019-05-24-java-champion.jpg" alt="2019-05-24-java-champion">
+        <img class="img-fluid lazyload" data-src="/_static/posts/2020-05-04-java-ecosystem.jpg" alt="2020-05-04-java-ecosystem">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          Java champion
+          Java ecosystem
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          How to become a Java champion?
+          What is the Java ecosystem from Sun to Oracle?
         </div>
 
         <!-- Article categories -->
@@ -702,53 +760,12 @@ is privileged.</p>
         <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>May 24, 2019</span>
+          <span>May 04, 2020</span>
         </div>
         <!-- Article reading time -->
         <div class="reading-time">
           <i class="far fa-clock"></i>
-          <span>1 min</span>
-        </div>
-      </div>
-
-    </div>
-</div>
-
-</a><a href="/blog/articles/2019/11/29/gafa-vs-batx.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
-    <!-- Article metadata -->
-    <div class="article-card">
-<!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/posts/2019-11-29-gafa-vs-batx.jpg" alt="2019-11-29-gafa-vs-batx">
-      </div>
-
-      <!-- Article details -->
-      <div class="article-details">
-        <!-- Article title -->
-        <div class="article-title">
-          Gafa vs Batx
-        </div>
-
-        <!-- Article description -->
-        <div class="article-description">
-          What is the difference?
-        </div>
-
-        <!-- Article categories -->
-        <div class="article-category">
-          <ul>
-            <li>Business</li>
-          </ul>
-        </div>
-
-        <!-- Article publication date -->
-        <div class="date">
-          <i class="far fa-calendar-alt"></i>
-          <span>November 29, 2019</span>
-        </div>
-        <!-- Article reading time -->
-        <div class="reading-time">
-          <i class="far fa-clock"></i>
-          <span>5 min</span>
+          <span>10 min</span>
         </div>
       </div>
 
