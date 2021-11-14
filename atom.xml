@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2021-11-13T23:54:36+00:00</updated>
+ <updated>2021-11-14T08:10:10+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -17,10 +17,10 @@
 
 &lt;p&gt;A software can be viewed as a set of line of codes that is dynamic, that is to say that evolves discretely from a 
 state to a new state in function of time. To identify a specific state of this software a versioning system is often 
-used whether it be for a language compiler, a library, a web API, an application, a server, or a client. Of course of 
+used whether it be for a language compiler, a library, a web API, an application, a server, or a client. Of course a 
 version system can be used more generally for any project, but here I focus only on a software.&lt;/p&gt;
 
-&lt;figure&gt;
+&lt;figure class=&quot;notranslate&quot;&gt;
 &lt;pre&gt;
              ┌─────────┐           ┌─────────┐           ┌─────────┐
              │         │           │         │           │         │
@@ -35,7 +35,7 @@ version system can be used more generally for any project, but here I focus only
 scheme and a version strategy to track the evolutions. For example, with a version control system as &lt;a href=&quot;https://git-scm.com/&quot;&gt;Git&lt;/a&gt;, 
 the history of a software is split into commits, where each commit identifier is used as a version.&lt;/p&gt;
 
-&lt;figure&gt;
+&lt;figure class=&quot;notranslate&quot;&gt;
 &lt;pre&gt;
 40551405dc02afe8240024c952fa1de953fc2ff9 Commit message: State 3
 3982dcd90b486eab39eb610ec5e7e5963b92ab33 Commit message: State 2
