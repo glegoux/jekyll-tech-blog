@@ -5,8 +5,8 @@
     <description>Personal blog about software engineering</description>
     <link>https://glegoux.com/</link>
     <atom:link href="https://glegoux.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 14 Nov 2021 08:10:10 +0000</pubDate>
-    <lastBuildDate>Sun, 14 Nov 2021 08:10:10 +0000</lastBuildDate>
+    <pubDate>Sun, 14 Nov 2021 08:15:10 +0000</pubDate>
+    <lastBuildDate>Sun, 14 Nov 2021 08:15:10 +0000</lastBuildDate>
     <generator>Jekyll v4.2.1</generator>
     
       <item>
@@ -18,8 +18,8 @@ state to a new state in function of time. To identify a specific state of this s
 used whether it be for a language compiler, a library, a web API, an application, a server, or a client. Of course a 
 version system can be used more generally for any project, but here I focus only on a software.&lt;/p&gt;
 
-&lt;figure class=&quot;notranslate&quot;&gt;
-&lt;pre&gt;
+&lt;figure&gt;
+&lt;pre class=&quot;notranslate&quot;&gt;
              ┌─────────┐           ┌─────────┐           ┌─────────┐
              │         │           │         │           │         │
   ──────────►│ State 1 ├──────────►│ State 2 ├──────────►│ State 3 │─────────►
@@ -33,8 +33,8 @@ version system can be used more generally for any project, but here I focus only
 scheme and a version strategy to track the evolutions. For example, with a version control system as &lt;a href=&quot;https://git-scm.com/&quot;&gt;Git&lt;/a&gt;, 
 the history of a software is split into commits, where each commit identifier is used as a version.&lt;/p&gt;
 
-&lt;figure class=&quot;notranslate&quot;&gt;
-&lt;pre&gt;
+&lt;figure&gt;
+&lt;pre class=&quot;notranslate&quot;&gt;
 40551405dc02afe8240024c952fa1de953fc2ff9 Commit message: State 3
 3982dcd90b486eab39eb610ec5e7e5963b92ab33 Commit message: State 2
 32f0469eb344029bd1ecf5b0626685f2fa795f47 Commit message: State 1
