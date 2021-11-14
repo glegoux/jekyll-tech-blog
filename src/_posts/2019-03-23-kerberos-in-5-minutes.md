@@ -8,7 +8,7 @@ tags: "Kerberos"
 ---
 
 [Kerberos](http://www.kerberos.org/) is a protocol to guarantee one part of the security of your information infrastructure. 
-Among the key concepts of security: confidentiality, integrity, availability and non-repudiation. Kerberos allows to set up communications 
+Among the key concepts of security of the CIA triad: Confidentiality, Integrity, and Availability. Kerberos allows to set up communications 
 confidentiality and non-repudiation accesses, it is an **Authentication and Authorization System** (AAS), although the step of authorization is very limited, it is essentially 
 a authentication system.  
 
