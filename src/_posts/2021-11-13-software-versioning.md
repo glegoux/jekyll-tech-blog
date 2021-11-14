@@ -56,11 +56,11 @@ and/or Git release is privileged.
 # What are the features of a software version?
 
 As we have seen above, a software can have **several versioning systems**, for example one used internally 
-by the development team, and one exposed to users of this software.
+by the development team, and one exposed externally to users.
 
-In addition to be composed of a set of **unique identifiers**, the versions are often ordered to know 
-if a version is more recent than another, where the naming of a version repects a **semantics** that 
-contains this order and gives additional meanings. 
+In addition to be **unique identifiers**, the versions are often ordered to know if a version is more
+recent than another. So the naming of a version repects a **semantics**, that contains this order and 
+additional meanings. 
 
 The publication of a new version follows a **lifecycle** with a workflow and a process. This publication 
 produces a distributable format of the software called **archive** or **package**. The version is 
