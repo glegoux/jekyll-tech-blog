@@ -8,7 +8,7 @@ category: "Development"
 
 # What is a software version? 
 
-A software is a dynamic set of lines of code and/or data, that evolves discretely from state 
+A software is a dynamic set of lines of code, that evolves discretely from state 
 to state in function of time. To identify a specific state of a software, a versioning system 
 can be used whether it be for a language compiler, a library, a web API, an application, a 
 server, or a client. Of course a versioning system can be used more generally for any project, 
@@ -25,9 +25,9 @@ but here I focus only on the **software versioning** at large.
 <figcaption>Software states</figcaption>
 </figure> 
 
-The software versioning is the process to assign a version to a software: a version system 
-is chosen with a **version scheme** and a **version strategy** to track the evolutions. For 
-example, with a version control system as [Git](https://git-scm.com/), the history of a 
+The software versioning is the process to assign a version to a state of a software: 
+a **version scheme** and a **version strategy** are chosen to track the successive evolutions. 
+For example, with a version control system as [Git](https://git-scm.com/), the history of a 
 software is split into commits, where each commit identifier is used as a version. 
 
 <figure>
