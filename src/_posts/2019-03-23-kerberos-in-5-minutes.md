@@ -7,18 +7,18 @@ category: "Security"
 tags: "Kerberos"
 ---
 
-[Kerberos](http://www.kerberos.org/) is a protocol to guarantee one subpart of the security of your Information Infrastructure (II). 
+[Kerberos](http://www.kerberos.org/) is a protocol to guarantee one part of the security of your information infrastructure. 
 Among the key concepts of security: confidentiality, integrity, availability and non-repudiation. Kerberos allows to set up communications 
-confidentiality and non-repudiation accesses, it is an **Authentication and Authorization System** (AAS). The step of authorization is very limited.  
+confidentiality and non-repudiation accesses, it is an **Authentication and Authorization System** (AAS), although the step of authorization is very limited, it is essentially 
+a authentication system.  
 
 This article is an introduction to Kerberos ecosystem. It can be interesting for a **manager** to understand key principles of Kerberos, a **non-technical person** to 
-have a overview of this technology (2 first paragraphs), or for **technical person** particularly with **DevOps** skills to increase action field and go further if necessary (3 last paragraphs).
+have a overview of this technology, or for **technical person** particularly with **DevOps** skills to increase action field and go further if necessary.
 
 # What is Kerberos?
 
-The goal of Kerberos is to prove the identity of each entity, then to secure communication, that's all. You can use **telnet, SSH, database, local system login, web API** or **web portal**... 
-with Kerberos authentication method.  
-  
+The goal of Kerberos is to secure a communication channel over UDP and TCP by proving mutually the identity of each entity: transmitter and receiver. You can use the Kerberos authentication method to access to a server with SSH, to a database, to your local system login of your workstation, to a web application with HTTP. If needed, Kerberos can
+also encrypted the communication.
 
 > Kerberos allows to secure communications on untrusted networks but where each node is trusted
 
@@ -28,19 +28,19 @@ Kerberos is first a protocol and after a implementation. Kerberos builds on**sym
 
 The current important *Requests for Comments* (RFC) to understand Kerberos are [rfc4120](https://www.ietf.org/rfc/rfc4120.txt) and [rfc6649](https://www.ietf.org/rfc/rfc6649.txt)), see [all Kerberos RFCs](https://datatracker.ietf.org/doc/search/?name=Kerberos&sort=&rfcs=on).
 
-The latest Kerberos version of Massachusetts Institute of Technology (MIT) implementation is [Kerberos V5 1.16.1 (2018-05-03)](https://web.mit.edu/kerberos/krb5-1.16/) written in Language C under [MIT License](https://web.mit.edu/kerberos/krb5-1.15/doc/mitK5license.html). You can see [all available releases](http://web.mit.edu/kerberos/dist/). The project is Open Source project and published on a [git mirror repository on Github](https://github.com/krb5/krb5) by [Github krb5 Organization](https://github.com/krb5). There are a [full online documentation](https://web.mit.edu/kerberos/krb5-1.15/doc/mitK5license.html) and [short guide pdf](http://www.kerberos.org/software/adminkerberos.pdf).
+The latest Kerberos version of Massachusetts Institute of Technology (MIT) implementation is [Kerberos V5](https://web.mit.edu/kerberos/krb5-latest/) written in Language C under [MIT License](https://web.mit.edu/kerberos/krb5-latest/doc/mitK5license.html). You can see [all available releases](http://web.mit.edu/kerberos/dist/). The project is Open Source project and published on a [git mirror repository on Github](https://github.com/krb5/krb5) by [Github krb5 Organization](https://github.com/krb5). There are a [full online documentation](https://web.mit.edu/kerberos/krb5-latest/doc/) and [short guide pdf](http://www.kerberos.org/software/adminkerberos.pdf).
 
 Kerberos’ name comes from Greek mythology, the three-headed guard dog of Hades.This technology is invented at MIT in the 1980s, became an **IETF Standard** in 1993, and the first MIT implementation release in 1987 until present with continuous improvements.
 
-Three current widespread implementations are **MIT Kerberos**, **Heimdal**, **Active Directory** (AD) available allowing a multi-platform ecosystem (Windows or Linux server).
-
 {% include article-image.html title="MIT Kerberos" src="kerberos-logo.jpg" %}
-
-See [Frequently Asked Questions (FAQ)](http://www.kerberos.org/about/FAQ.html).
 
 The MIT **Kerberos Consortium** ensures development and lasting quality of the Kerberos project since 2007 with past and present sponsors of **Apple, Google, Oracle, Stanford University, Microsoft** ...
 
-Kerberos is a very famous tool using **Hadoop Distributed File System** (HDFS) used by **Spark** or **Mapreduce** and distributed by Cloudera, Hortonworks or MapR for the Linux world to secure a environment **Big Data**. But it is also famous in the Microsoft world as cornerstone of **Active Directory** tool used a lot of companies as the **Single Sign On** (SSO) solution for access to all applications and services.
+Kerberos is a very famous tool used in the **Hadoop ecosystem** distributed by Cloudera, Hortonworks or MapR for the Linux world to secure a environment **Big Data** for **Spark**, **Hadoop YARN**, **Hadoop Mapreduce**, or **Hadoop Distributed File System** (HDFS) ... But it is also famous in the Microsoft world as cornerstone of **Active Directory** tool used a lot of companies as the **Single Sign On** (SSO) solution at large for access to all applications and services, and not only web HTTP API.
+
+Three current widespread implementations are **MIT Kerberos**, **Heimdal**, **Active Directory** (AD) available allowing a multi-platform ecosystem (Windows or Linux server).
+
+See [Frequently Asked Questions (FAQ)](http://www.kerberos.org/about/FAQ.html).
 
 # Pros and cons
 
