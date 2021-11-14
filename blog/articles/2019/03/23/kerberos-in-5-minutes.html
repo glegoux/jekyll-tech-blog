@@ -438,17 +438,18 @@ window.MathJax = {
     <div id="table-of-contents-container" style="display: none;"></div>
 
     <div class="markdown-body">
-      <p><a href="http://www.kerberos.org/">Kerberos</a> is a protocol to guarantee one subpart of the security of your Information Infrastructure (II). 
+      <p><a href="http://www.kerberos.org/">Kerberos</a> is a protocol to guarantee one part of the security of your information infrastructure. 
 Among the key concepts of security: confidentiality, integrity, availability and non-repudiation. Kerberos allows to set up communications 
-confidentiality and non-repudiation accesses, it is an <strong>Authentication and Authorization System</strong> (AAS). The step of authorization is very limited.</p>
+confidentiality and non-repudiation accesses, it is an <strong>Authentication and Authorization System</strong> (AAS), although the step of authorization is very limited, it is essentially 
+a authentication system.</p>
 
 <p>This article is an introduction to Kerberos ecosystem. It can be interesting for a <strong>manager</strong> to understand key principles of Kerberos, a <strong>non-technical person</strong> to 
-have a overview of this technology (2 first paragraphs), or for <strong>technical person</strong> particularly with <strong>DevOps</strong> skills to increase action field and go further if necessary (3 last paragraphs).</p>
+have a overview of this technology, or for <strong>technical person</strong> particularly with <strong>DevOps</strong> skills to increase action field and go further if necessary.</p>
 
 <h1 id="what-is-kerberos">What is Kerberos?</h1>
 
-<p>The goal of Kerberos is to prove the identity of each entity, then to secure communication, that’s all. You can use <strong>telnet, SSH, database, local system login, web API</strong> or <strong>web portal</strong>… 
-with Kerberos authentication method.</p>
+<p>The goal of Kerberos is to secure a communication channel over UDP and TCP by proving mutually the identity of each entity: transmitter and receiver. You can use the Kerberos authentication method to access to a server with SSH, to a database, to your local system login of your workstation, to a web application with HTTP. If needed, Kerberos can
+also encrypted the communication.</p>
 
 <blockquote>
   <p>Kerberos allows to secure communications on untrusted networks but where each node is trusted</p>
@@ -460,11 +461,9 @@ with Kerberos authentication method.</p>
 
 <p>The current important <em>Requests for Comments</em> (RFC) to understand Kerberos are <a href="https://www.ietf.org/rfc/rfc4120.txt">rfc4120</a> and <a href="https://www.ietf.org/rfc/rfc6649.txt">rfc6649</a>), see <a href="https://datatracker.ietf.org/doc/search/?name=Kerberos&amp;sort=&amp;rfcs=on">all Kerberos RFCs</a>.</p>
 
-<p>The latest Kerberos version of Massachusetts Institute of Technology (MIT) implementation is <a href="https://web.mit.edu/kerberos/krb5-1.16/">Kerberos V5 1.16.1 (2018-05-03)</a> written in Language C under <a href="https://web.mit.edu/kerberos/krb5-1.15/doc/mitK5license.html">MIT License</a>. You can see <a href="http://web.mit.edu/kerberos/dist/">all available releases</a>. The project is Open Source project and published on a <a href="https://github.com/krb5/krb5">git mirror repository on Github</a> by <a href="https://github.com/krb5">Github krb5 Organization</a>. There are a <a href="https://web.mit.edu/kerberos/krb5-1.15/doc/mitK5license.html">full online documentation</a> and <a href="http://www.kerberos.org/software/adminkerberos.pdf">short guide pdf</a>.</p>
+<p>The latest Kerberos version of Massachusetts Institute of Technology (MIT) implementation is <a href="https://web.mit.edu/kerberos/krb5-latest/">Kerberos V5</a> written in Language C under <a href="https://web.mit.edu/kerberos/krb5-latest/doc/mitK5license.html">MIT License</a>. You can see <a href="http://web.mit.edu/kerberos/dist/">all available releases</a>. The project is Open Source project and published on a <a href="https://github.com/krb5/krb5">git mirror repository on Github</a> by <a href="https://github.com/krb5">Github krb5 Organization</a>. There are a <a href="https://web.mit.edu/kerberos/krb5-latest/doc/">full online documentation</a> and <a href="http://www.kerberos.org/software/adminkerberos.pdf">short guide pdf</a>.</p>
 
 <p>Kerberos’ name comes from Greek mythology, the three-headed guard dog of Hades.This technology is invented at MIT in the 1980s, became an <strong>IETF Standard</strong> in 1993, and the first MIT implementation release in 1987 until present with continuous improvements.</p>
-
-<p>Three current widespread implementations are <strong>MIT Kerberos</strong>, <strong>Heimdal</strong>, <strong>Active Directory</strong> (AD) available allowing a multi-platform ecosystem (Windows or Linux server).</p>
 
 <figure title="MIT Kerberos">
   <div>
@@ -473,11 +472,13 @@ with Kerberos authentication method.</p>
   <figcaption>MIT Kerberos</figcaption>
 </figure>
 
-<p>See <a href="http://www.kerberos.org/about/FAQ.html">Frequently Asked Questions (FAQ)</a>.</p>
-
 <p>The MIT <strong>Kerberos Consortium</strong> ensures development and lasting quality of the Kerberos project since 2007 with past and present sponsors of <strong>Apple, Google, Oracle, Stanford University, Microsoft</strong> …</p>
 
-<p>Kerberos is a very famous tool using <strong>Hadoop Distributed File System</strong> (HDFS) used by <strong>Spark</strong> or <strong>Mapreduce</strong> and distributed by Cloudera, Hortonworks or MapR for the Linux world to secure a environment <strong>Big Data</strong>. But it is also famous in the Microsoft world as cornerstone of <strong>Active Directory</strong> tool used a lot of companies as the <strong>Single Sign On</strong> (SSO) solution for access to all applications and services.</p>
+<p>Kerberos is a very famous tool used in the <strong>Hadoop ecosystem</strong> distributed by Cloudera, Hortonworks or MapR for the Linux world to secure a environment <strong>Big Data</strong> for <strong>Spark</strong>, <strong>Hadoop YARN</strong>, <strong>Hadoop Mapreduce</strong>, or <strong>Hadoop Distributed File System</strong> (HDFS) … But it is also famous in the Microsoft world as cornerstone of <strong>Active Directory</strong> tool used a lot of companies as the <strong>Single Sign On</strong> (SSO) solution at large for access to all applications and services, and not only web HTTP API.</p>
+
+<p>Three current widespread implementations are <strong>MIT Kerberos</strong>, <strong>Heimdal</strong>, <strong>Active Directory</strong> (AD) available allowing a multi-platform ecosystem (Windows or Linux server).</p>
+
+<p>See <a href="http://www.kerberos.org/about/FAQ.html">Frequently Asked Questions (FAQ)</a>.</p>
 
 <h1 id="pros-and-cons">Pros and cons</h1>
 
@@ -812,64 +813,23 @@ The typical format of a typical Kerberos principal is primary/instance@REALM.</p
     <h5>Also read</h5>
 
     <div class="row">
-<a href="/blog/articles/2021/04/20/time-management.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
+<a href="/blog/articles/2020/08/24/geo-location.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/posts/2021-04-20-time-management.jpg" alt="2021-04-20-time-management">
+        <img class="img-fluid lazyload" data-src="/_static/posts/2020-08-24-geo-location.jpg" alt="2020-08-24-geo-location">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          Time management
+          Geo-location
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          How to optimize your time &amp; work?
-        </div>
-
-        <!-- Article categories -->
-        <div class="article-category">
-          <ul>
-            <li>Methodology</li>
-          </ul>
-        </div>
-
-        <!-- Article publication date -->
-        <div class="date">
-          <i class="far fa-calendar-alt"></i>
-          <span>April 20, 2021</span>
-        </div>
-        <!-- Article reading time -->
-        <div class="reading-time">
-          <i class="far fa-clock"></i>
-          <span>10 min</span>
-        </div>
-      </div>
-
-    </div>
-</div>
-
-</a><a href="/blog/articles/2020/11/28/unix-timestamp.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
-    <!-- Article metadata -->
-    <div class="article-card">
-<!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/posts/2020-11-28-unix-timestamp.jpg" alt="2020-11-28-unix-timestamp">
-      </div>
-
-      <!-- Article details -->
-      <div class="article-details">
-        <!-- Article title -->
-        <div class="article-title">
-          Unix timestamp
-        </div>
-
-        <!-- Article description -->
-        <div class="article-description">
-          What could happen in 2038?
+          How to compute the distance between 2 points with given latitude and longitude?
         </div>
 
         <!-- Article categories -->
@@ -882,7 +842,48 @@ The typical format of a typical Kerberos principal is primary/instance@REALM.</p
         <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>November 28, 2020</span>
+          <span>August 24, 2020</span>
+        </div>
+        <!-- Article reading time -->
+        <div class="reading-time">
+          <i class="far fa-clock"></i>
+          <span>10 min</span>
+        </div>
+      </div>
+
+    </div>
+</div>
+
+</a><a href="/blog/articles/2020/03/04/development-environment.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
+    <!-- Article metadata -->
+    <div class="article-card">
+<!-- Article cover --><div class="article-cover">
+        <img class="img-fluid lazyload" data-src="/_static/posts/2020-03-04-development-environment.jpg" alt="2020-03-04-development-environment">
+      </div>
+
+      <!-- Article details -->
+      <div class="article-details">
+        <!-- Article title -->
+        <div class="article-title">
+          Development environment
+        </div>
+
+        <!-- Article description -->
+        <div class="article-description">
+          Why isolate its development environment?
+        </div>
+
+        <!-- Article categories -->
+        <div class="article-category">
+          <ul>
+            <li>Development</li>
+          </ul>
+        </div>
+
+        <!-- Article publication date -->
+        <div class="date">
+          <i class="far fa-calendar-alt"></i>
+          <span>March 04, 2020</span>
         </div>
         <!-- Article reading time -->
         <div class="reading-time">
@@ -894,41 +895,41 @@ The typical format of a typical Kerberos principal is primary/instance@REALM.</p
     </div>
 </div>
 
-</a><a href="/blog/articles/2020/05/15/gnu-privacy-guard.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
+</a><a href="/blog/articles/2019/05/24/java-champion.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/posts/2020-05-15-gnu-privacy-guard.jpg" alt="2020-05-15-gnu-privacy-guard">
+        <img class="img-fluid lazyload" data-src="/_static/posts/2019-05-24-java-champion.jpg" alt="2019-05-24-java-champion">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          GNU privacy guard
+          Java champion
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          How to prove its identity and encrypt its communication?
+          How to become a Java champion?
         </div>
 
         <!-- Article categories -->
         <div class="article-category">
           <ul>
-            <li>Security</li>
+            <li>Development</li>
           </ul>
         </div>
 
         <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>May 15, 2020</span>
+          <span>May 24, 2019</span>
         </div>
         <!-- Article reading time -->
         <div class="reading-time">
           <i class="far fa-clock"></i>
-          <span>5 min</span>
+          <span>1 min</span>
         </div>
       </div>
 
