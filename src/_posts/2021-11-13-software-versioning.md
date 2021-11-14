@@ -41,32 +41,32 @@ software is split into commits, where each commit identifier is used as a versio
 
 Here the version scheme is a [SHA1-hash](https://wikipedia.org/wiki/SHA-1), where the version strategy is 
 to assign a new version to each change of code rendered the more atomic than possible. It is a software 
-versioning handy for development team, because each version is unique and points to each different change in 
-the code base. But not very useable for the users of this software, because a given version is not human readable 
-or user friendly, no useful information is given by this complex naming. And each change has a version, 
-what makes too many existing versions with a naming not discriminant, to know which versions are important 
-except the last one. 
+versioning handy for development team, because each version is unique and points to each different change
+in the code base. But not very useable for the users of this software, because a given version is not
+human readable or user friendly, no useful information is given by this complex naming. And each change
+has a version, what makes too many existing versions with a naming not discriminant, to know which
+versions are important except the last one. 
 
-A software version is a unique identifier to distribute a software also to users in a particular state with
-features and maintenance. But the development team of a software wishes to reduce the number of supported
-versions exposed to their clients, and wants to package these changes to propose a software as a product
-with coherent features. That is why another software versioning is applied often above these commit
+A software version is a unique identifier to distribute a software also to users in a particular state. 
+But the development team of a software wishes to reduce the number of supported and maintained versions
+exposed to their clients, and wants to package these changes to propose a software as a product with 
+coherent features. That is why another software versioning is applied often above these commit
 identifiers, and the usage of Git tag and/or Git release is privileged.
 
 # What are the features of a software version?
 
-As we have seen above, a software can have several versioning systems, for example one used internally 
+As we have seen above, a software can have **several versioning systems**, for example one used internally 
 by the development team, and one exposed to users of this software.
 
-In addition to be composed of a set of unique identifiers, the versions are often ordered to know 
-if a version is more recent than another, where the naming of a version repects a semantics that 
-gives additional meanings. 
+In addition to be composed of a set of **unique identifiers**, the versions are often ordered to know 
+if a version is more recent than another, where the naming of a version repects a **semantics** that 
+contains this order and gives additional meanings. 
 
-The publication of a new version follows a lifecycle with a workflow and a process. This publication 
-produces a distributable format of the software called archive or package. The version is signed by 
-the software provider identity with a hash function on the content of the archive to guarantee that once a
-particular version is published, this one remains immutable and author of this archive is well the
-official provider of this software.
+The publication of a new version follows a **lifecycle** with a workflow and a process. This publication 
+produces a distributable format of the software called **archive** or **package**. The version is 
+assigned to the archive that is **signed by the software provider identity** with a hash function on the
+content of the archive to guarantee that once a particular version is published, this one remains
+immutable and author of this archive is well the official provider of this software.
 
 # How to build a software version?
 
