@@ -68,6 +68,25 @@ assigned to the archive that is **signed by the software provider identity** wit
 content of the archive to guarantee that once a particular version is published, this one remains
 immutable and author of this archive is well the official provider of this software.
 
+A software can have **direct** and **transitive dependencies** that are also a versioning, and can be 
+also a **dependency of another software**. So, the question is raised of the compatibility between
+the different versions of a same software.
+
+In the context of use of a software, there are two directions when we describe compatibility between 2 
+versions of this same software:
+
+* **Backward compatible** means that a newer version can be used successfully in an context where an older 
+version is expected.
+* **Forward compatible** means that an older version can be used successfully in an context where a newer 
+version is expected. 
+* **Fully compatible** means backward compatible and forward compatible.
+
+Backward compatibility is often guaranteed, but backward compatibility is not. Compatibility depends on a
+context of use, if the use is not exhaustive, it should be noted that compatibility is only guaranteed for
+this use. Otherwise, implicitly, compatibility is assumed to be true for all possible contexts of use. For
+example, full compatibility is only possible in sub-context and not on the global context, otherwise the 2
+versions would be identical.
+
 # How to build a software version?
 
 Breaking change, compatibility, Changelog, releases, alpha, beta, dependencies
