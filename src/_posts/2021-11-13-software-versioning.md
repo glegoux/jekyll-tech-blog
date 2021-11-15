@@ -70,10 +70,9 @@ immutable and author of this archive is well the official provider of this softw
 
 A software can have **direct** and **transitive dependencies** that are also a versioning, and can be 
 also a **dependency of another software**. So, the question is raised of the compatibility between
-the different versions of a same software.
+the different versions.
 
-In the context of use of a software, there are two directions when we describe compatibility between 2 
-versions of this same software:
+There are two directions to describe compatibility between 2 versions of a same software:
 
 * **Backward compatible** means that a newer version can be used successfully in an context where an older 
 version is expected.
@@ -81,11 +80,11 @@ version is expected.
 version is expected. 
 * **Fully compatible** means backward compatible and forward compatible.
 
-Backward compatibility is often guaranteed, but backward compatibility is not. Compatibility depends on a
+Backward compatibility is often guaranteed, but forward compatibility is not. Compatibility depends on a
 context of use, if the use is not exhaustive, it should be noted that compatibility is only guaranteed for
 this use. Otherwise, implicitly, compatibility is assumed to be true for all possible contexts of use. For
 example, full compatibility is only possible in sub-context and not on the global context, otherwise the 2
-versions would attach to an identical state of the software.
+versions would point to an identical state of the software.
 
 # How to build a software version?
 
