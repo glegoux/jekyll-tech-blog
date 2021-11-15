@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2021-11-15T00:10:23+00:00</updated>
+ <updated>2021-11-15T07:54:36+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -77,10 +77,9 @@ immutable and author of this archive is well the official provider of this softw
 
 &lt;p&gt;A software can have &lt;strong&gt;direct&lt;/strong&gt; and &lt;strong&gt;transitive dependencies&lt;/strong&gt; that are also a versioning, and can be 
 also a &lt;strong&gt;dependency of another software&lt;/strong&gt;. So, the question is raised of the compatibility between
-the different versions of a same software.&lt;/p&gt;
+the different versions.&lt;/p&gt;
 
-&lt;p&gt;In the context of use of a software, there are two directions when we describe compatibility between 2 
-versions of this same software:&lt;/p&gt;
+&lt;p&gt;There are two directions to describe compatibility between 2 versions of a same software:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;Backward compatible&lt;/strong&gt; means that a newer version can be used successfully in an context where an older 
@@ -90,11 +89,11 @@ version is expected.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Fully compatible&lt;/strong&gt; means backward compatible and forward compatible.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Backward compatibility is often guaranteed, but backward compatibility is not. Compatibility depends on a
+&lt;p&gt;Backward compatibility is often guaranteed, but forward compatibility is not. Compatibility depends on a
 context of use, if the use is not exhaustive, it should be noted that compatibility is only guaranteed for
 this use. Otherwise, implicitly, compatibility is assumed to be true for all possible contexts of use. For
 example, full compatibility is only possible in sub-context and not on the global context, otherwise the 2
-versions would attach to an identical state of the software.&lt;/p&gt;
+versions would point to an identical state of the software.&lt;/p&gt;
 
 &lt;h1 id=&quot;how-to-build-a-software-version&quot;&gt;How to build a software version?&lt;/h1&gt;
 
