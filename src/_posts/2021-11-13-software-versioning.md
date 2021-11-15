@@ -85,7 +85,7 @@ Backward compatibility is often guaranteed, but backward compatibility is not. C
 context of use, if the use is not exhaustive, it should be noted that compatibility is only guaranteed for
 this use. Otherwise, implicitly, compatibility is assumed to be true for all possible contexts of use. For
 example, full compatibility is only possible in sub-context and not on the global context, otherwise the 2
-versions would be identical.
+versions would attach to an identical state of the software.
 
 # How to build a software version?
 
