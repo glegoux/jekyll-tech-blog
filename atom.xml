@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2021-11-15T00:00:47+00:00</updated>
+ <updated>2021-11-15T00:10:23+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -94,7 +94,7 @@ version is expected.&lt;/li&gt;
 context of use, if the use is not exhaustive, it should be noted that compatibility is only guaranteed for
 this use. Otherwise, implicitly, compatibility is assumed to be true for all possible contexts of use. For
 example, full compatibility is only possible in sub-context and not on the global context, otherwise the 2
-versions would be identical.&lt;/p&gt;
+versions would attach to an identical state of the software.&lt;/p&gt;
 
 &lt;h1 id=&quot;how-to-build-a-software-version&quot;&gt;How to build a software version?&lt;/h1&gt;
 

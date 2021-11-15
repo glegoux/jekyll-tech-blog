@@ -5,8 +5,8 @@
     <description>Personal blog about software engineering</description>
     <link>https://glegoux.com/</link>
     <atom:link href="https://glegoux.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 15 Nov 2021 00:00:47 +0000</pubDate>
-    <lastBuildDate>Mon, 15 Nov 2021 00:00:47 +0000</lastBuildDate>
+    <pubDate>Mon, 15 Nov 2021 00:10:23 +0000</pubDate>
+    <lastBuildDate>Mon, 15 Nov 2021 00:10:23 +0000</lastBuildDate>
     <generator>Jekyll v4.2.1</generator>
     
       <item>
@@ -92,7 +92,7 @@ version is expected.&lt;/li&gt;
 context of use, if the use is not exhaustive, it should be noted that compatibility is only guaranteed for
 this use. Otherwise, implicitly, compatibility is assumed to be true for all possible contexts of use. For
 example, full compatibility is only possible in sub-context and not on the global context, otherwise the 2
-versions would be identical.&lt;/p&gt;
+versions would attach to an identical state of the software.&lt;/p&gt;
 
 &lt;h1 id=&quot;how-to-build-a-software-version&quot;&gt;How to build a software version?&lt;/h1&gt;
 
