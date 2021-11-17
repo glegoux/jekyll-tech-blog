@@ -57,8 +57,8 @@ Neuman.The first implementation release was in 1987. New releases are pushblishe
 Kerberos version is [Kerberos V5](https://web.mit.edu/kerberos/krb5-latest/) written in Language C under
 [MIT License](https://web.mit.edu/kerberos/krb5latest/doc/mitK5license.html). 
 You can see [all available releases](https://web.mit.edu/kerberos/dist/historic.html). 
-The project is Open Source project and published on a [git mirror repository on Github](https://github.com/krb5/krb5) 
-by [Github krb5 Organization](https://github.com/krb5). There are a [online documentation](https://web.mit.edu/kerberos/krb5-latest/doc/) 
+The project is open source project published on a [git mirror repository on GitHub](https://github.com/krb5/krb5) 
+by [GitHub Organization krb5](https://github.com/krb5). There are a [online documentation](https://web.mit.edu/kerberos/krb5-latest/doc/) 
 and [short guide pdf](http://www.kerberos.org/software/adminkerberos.pdf).
 
 {% include article-image.html title="MIT Kerberos" src="kerberos-logo.jpg" %}
