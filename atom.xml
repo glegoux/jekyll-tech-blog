@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2021-11-17T01:08:01+00:00</updated>
+ <updated>2021-11-17T01:12:42+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -1548,7 +1548,7 @@ also encrypted the communication.&lt;/p&gt;
 
 &lt;p&gt;Massachusetts Institute of Technology (MIT)&lt;/p&gt;
 
-&lt;p&gt;Kerberos is first a protocol and after a implementation. Kerberos builds on&lt;strong&gt;symmetric key cryptography&lt;/strong&gt; to encrypt communication and requires a trusted third party to identify &lt;strong&gt;mutual authentication&lt;/strong&gt; with a system of renewable tickets (each 10 hours by default).&lt;/p&gt;
+&lt;p&gt;Kerberos is first a protocol of communication. Kerberos is built by design from an architecture based on the &lt;strong&gt;symmetric key cryptography&lt;/strong&gt; to authenticate, and to encrypt communication. It requires a trusted third party to guarantee a &lt;strong&gt;mutual authentication&lt;/strong&gt; with a system of secrets and renewable tickets.&lt;/p&gt;
 
 &lt;p&gt;The current important &lt;em&gt;Requests for Comments&lt;/em&gt; (RFC) to understand Kerberos are &lt;a href=&quot;https://www.ietf.org/rfc/rfc4120.txt&quot;&gt;rfc4120&lt;/a&gt; and &lt;a href=&quot;https://www.ietf.org/rfc/rfc6649.txt&quot;&gt;rfc6649&lt;/a&gt;), see &lt;a href=&quot;https://datatracker.ietf.org/doc/search/?name=Kerberos&amp;amp;sort=&amp;amp;rfcs=on&quot;&gt;all Kerberos RFCs&lt;/a&gt;.&lt;/p&gt;
 
