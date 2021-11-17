@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2021-11-17T08:45:47+00:00</updated>
+ <updated>2021-11-17T08:48:36+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -1529,9 +1529,9 @@ https://glegoux.com/contact/email/
    <link href="https://glegoux.com/blog/articles/2019/03/23/kerberos-in-5-minutes.html"/>
    <updated>2019-03-23T00:00:00+00:00</updated>
    <id>https://glegoux.com/blog/articles/2019/03/23/kerberos-in-5-minutes.html</id>
-   <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.kerberos.org/&quot;&gt;Kerberos&lt;/a&gt; is a protocol to guarantee a part of the security of your information infrastructure. 
+   <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.kerberos.org/&quot;&gt;Kerberos&lt;/a&gt; is a protocol of communication to guarantee a part of the security of your information infrastructure. 
 Among the key concepts of security of the CIA triad: Confidentiality, Integrity, and Availability. Kerberos allows setting up 
-communications confidentiality and non-repudiation accesses, it is an &lt;strong&gt;Authentication and Authorization System&lt;/strong&gt; (AAS), although
+communications confidentiality and integrity with non-repudiation, it is an &lt;strong&gt;Authentication and Authorization System&lt;/strong&gt; (AAS), although
 the step of authorization is very limited, it is essentially an authentication system.&lt;/p&gt;
 
 &lt;p&gt;This article is an introduction to Kerberos ecosystem. It can be interesting for a &lt;strong&gt;manager&lt;/strong&gt; to understand key principles of 
@@ -1549,7 +1549,7 @@ transmitter and receiver. Kerberos can also encrypted the communication by excha
 
 &lt;p&gt;Massachusetts Institute of Technology (MIT)&lt;/p&gt;
 
-&lt;p&gt;Kerberos is first a protocol of communication. Kerberos is built by design from an architecture based on the &lt;strong&gt;symmetric key cryptography&lt;/strong&gt; 
+&lt;p&gt;Kerberos is built by design from an architecture based on the &lt;strong&gt;symmetric key cryptography&lt;/strong&gt; 
 to authenticate, and to encrypt communication. It requires a trusted third party to guarantee a &lt;strong&gt;mutual authentication&lt;/strong&gt; 
 with a system of secrets and renewable tickets.&lt;/p&gt;
 
