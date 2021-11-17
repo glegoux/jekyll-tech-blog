@@ -455,13 +455,13 @@ also encrypted the communication.</p>
   <p>Kerberos allows to secure communications on untrusted networks but where each node is trusted</p>
 </blockquote>
 
-<p>MIT</p>
+<p>Massachusetts Institute of Technology (MIT)</p>
 
 <p>Kerberos is first a protocol and after a implementation. Kerberos builds on<strong>symmetric key cryptography</strong> to encrypt communication and requires a trusted third party to identify <strong>mutual authentication</strong> with a system of renewable tickets (each 10 hours by default).</p>
 
 <p>The current important <em>Requests for Comments</em> (RFC) to understand Kerberos are <a href="https://www.ietf.org/rfc/rfc4120.txt">rfc4120</a> and <a href="https://www.ietf.org/rfc/rfc6649.txt">rfc6649</a>), see <a href="https://datatracker.ietf.org/doc/search/?name=Kerberos&amp;sort=&amp;rfcs=on">all Kerberos RFCs</a>.</p>
 
-<p>The latest Kerberos version of Massachusetts Institute of Technology (MIT) implementation is <a href="https://web.mit.edu/kerberos/krb5-latest/">Kerberos V5</a> written in Language C under <a href="https://web.mit.edu/kerberos/krb5-latest/doc/mitK5license.html">MIT License</a>. You can see <a href="http://web.mit.edu/kerberos/dist/">all available releases</a>. The project is Open Source project and published on a <a href="https://github.com/krb5/krb5">git mirror repository on Github</a> by <a href="https://github.com/krb5">Github krb5 Organization</a>. There are a <a href="https://web.mit.edu/kerberos/krb5-latest/doc/">full online documentation</a> and <a href="http://www.kerberos.org/software/adminkerberos.pdf">short guide pdf</a>.</p>
+<p>The latest Kerberos version of MIT implementation is <a href="https://web.mit.edu/kerberos/krb5-latest/">Kerberos V5</a> written in Language C under <a href="https://web.mit.edu/kerberos/krb5-latest/doc/mitK5license.html">MIT License</a>. You can see <a href="http://web.mit.edu/kerberos/dist/">latest available releases</a>. The project is Open Source project and published on a <a href="https://github.com/krb5/krb5">git mirror repository on Github</a> by <a href="https://github.com/krb5">Github krb5 Organization</a>. There are a <a href="https://web.mit.edu/kerberos/krb5-latest/doc/">online documentation</a> and <a href="http://www.kerberos.org/software/adminkerberos.pdf">short guide pdf</a>.</p>
 
 <p>Kerberos’ name comes from Greek mythology, the three-headed guard dog of Hades.This technology is invented at MIT in the 1980s, became an <strong>IETF Standard</strong> in 1993, and the first MIT implementation release in 1987 until present with continuous improvements.</p>
 
@@ -474,9 +474,9 @@ also encrypted the communication.</p>
 
 <p>The MIT <strong>Kerberos Consortium</strong> ensures development and lasting quality of the Kerberos project since 2007 with past and present sponsors of <strong>Apple, Google, Oracle, Stanford University, Microsoft</strong> …</p>
 
-<p>Kerberos is a very famous tool used in the <strong>Hadoop ecosystem</strong> distributed by Cloudera, Hortonworks or MapR for the Linux world to secure a environment <strong>Big Data</strong> for <strong>Spark</strong>, <strong>Hadoop YARN</strong>, <strong>Hadoop Mapreduce</strong>, or <strong>Hadoop Distributed File System</strong> (HDFS) … But it is also famous in the Microsoft world as cornerstone of <strong>Active Directory</strong> tool used a lot of companies as the <strong>Single Sign On</strong> (SSO) solution at large for access to all applications and services, and not only web HTTP API.</p>
+<p>Kerberos is a very famous tool used in the <strong>Hadoop ecosystem</strong> to secure a environment <strong>Big Data</strong> for <strong>Spark</strong>, <strong>Hadoop YARN</strong>, <strong>Hadoop Mapreduce</strong>, or <strong>Hadoop Distributed File System</strong>…  It is used by lot of companies as a <strong>Single Sign On solution</strong> at large for access to all <strong>web UI/API</strong>, <strong>databases</strong>, or <strong>services</strong> and not only web HTTP APIs, for any operating system. But it is also famous in the Microsoft world by the Active Directory cornerstone of your clusters of Windows servers.</p>
 
-<p>Three current widespread implementations are <strong>MIT Kerberos</strong>, <strong>Heimdal</strong>, <strong>Active Directory</strong> (AD) available allowing a multi-platform ecosystem (Windows or Linux server).</p>
+<p>Three current widespread implementations are <a href="https://web.mit.edu/kerberos/">MIT Kerberos</a>, <a href="https://github.com/heimdal/heimdal">Heimdal</a>, <a href="wikipedia.org/wiki/Active_Directory">Active Directory</a> respectively these are native Kerberos implementation for Linux, macOS, and Windows. But they are built also for other operating systems than their native one. For most usages, these implementations are compatible client-server or server-server, but above all for Kerberos communication protocol, the ticket credentials and keytabs are not standardized by the RFC. Some implementations are diverged on some edge aspects, or propose the extra features. The historical implementation is MIT Kerberos, because it has been written by the founders of Kerberos Steve Miller and Clifford Neuman. Another implementation of Kerberos in Java: <a href="https://directory.apache.org/kerby/">Apache Kerby</a> is very interesting. The Java ecosystem integrates very well Kerberos, it is in this standard library, and a lot of Java projects use it.</p>
 
 <p>See <a href="http://www.kerberos.org/about/FAQ.html">Frequently Asked Questions (FAQ)</a>.</p>
 
@@ -814,36 +814,77 @@ The typical format of a typical Kerberos principal is primary/instance@REALM.</p
     <h5>Also read</h5>
 
     <div class="row">
-<a href="/blog/articles/2019/04/01/lighthouse.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
+<a href="/blog/articles/2020/05/15/gnu-privacy-guard.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/posts/2019-04-01-lighthouse.jpg" alt="2019-04-01-lighthouse">
+        <img class="img-fluid lazyload" data-src="/_static/posts/2020-05-15-gnu-privacy-guard.jpg" alt="2020-05-15-gnu-privacy-guard">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          Lighthouse
+          GNU privacy guard
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          Lighthouse is an open-source, automated tool for improving the quality of web pages.
+          How to prove its identity and encrypt its communication?
         </div>
 
         <!-- Article categories -->
         <div class="article-category">
           <ul>
-            <li>Web</li>
+            <li>Security</li>
           </ul>
         </div>
 
         <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>April 01, 2019</span>
+          <span>May 15, 2020</span>
+        </div>
+        <!-- Article reading time -->
+        <div class="reading-time">
+          <i class="far fa-clock"></i>
+          <span>5 min</span>
+        </div>
+      </div>
+
+    </div>
+</div>
+
+</a><a href="/blog/articles/2020/08/24/geo-location.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
+    <!-- Article metadata -->
+    <div class="article-card">
+<!-- Article cover --><div class="article-cover">
+        <img class="img-fluid lazyload" data-src="/_static/posts/2020-08-24-geo-location.jpg" alt="2020-08-24-geo-location">
+      </div>
+
+      <!-- Article details -->
+      <div class="article-details">
+        <!-- Article title -->
+        <div class="article-title">
+          Geo-location
+        </div>
+
+        <!-- Article description -->
+        <div class="article-description">
+          How to compute the distance between 2 points with given latitude and longitude?
+        </div>
+
+        <!-- Article categories -->
+        <div class="article-category">
+          <ul>
+            <li>Applied Mathematics</li>
+          </ul>
+        </div>
+
+        <!-- Article publication date -->
+        <div class="date">
+          <i class="far fa-calendar-alt"></i>
+          <span>August 24, 2020</span>
         </div>
         <!-- Article reading time -->
         <div class="reading-time">
@@ -855,23 +896,23 @@ The typical format of a typical Kerberos principal is primary/instance@REALM.</p
     </div>
 </div>
 
-</a><a href="/blog/articles/2020/03/04/development-environment.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
+</a><a href="/blog/articles/2020/05/04/java-ecosystem.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/posts/2020-03-04-development-environment.jpg" alt="2020-03-04-development-environment">
+        <img class="img-fluid lazyload" data-src="/_static/posts/2020-05-04-java-ecosystem.jpg" alt="2020-05-04-java-ecosystem">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          Development environment
+          Java ecosystem
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          Why isolate its development environment?
+          What is the Java ecosystem from Sun to Oracle?
         </div>
 
         <!-- Article categories -->
@@ -884,53 +925,12 @@ The typical format of a typical Kerberos principal is primary/instance@REALM.</p
         <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>March 04, 2020</span>
+          <span>May 04, 2020</span>
         </div>
         <!-- Article reading time -->
         <div class="reading-time">
           <i class="far fa-clock"></i>
-          <span>5 min</span>
-        </div>
-      </div>
-
-    </div>
-</div>
-
-</a><a href="/blog/articles/2019/02/14/how-to-quote-sources.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
-    <!-- Article metadata -->
-    <div class="article-card">
-<!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/posts/2019-02-14-how-to-quote-sources.jpg" alt="2019-02-14-how-to-quote-sources">
-      </div>
-
-      <!-- Article details -->
-      <div class="article-details">
-        <!-- Article title -->
-        <div class="article-title">
-          How to quote sources
-        </div>
-
-        <!-- Article description -->
-        <div class="article-description">
-          Current standards and rules to respect in order to quote sources.
-        </div>
-
-        <!-- Article categories -->
-        <div class="article-category">
-          <ul>
-            <li>Methodology</li>
-          </ul>
-        </div>
-
-        <!-- Article publication date -->
-        <div class="date">
-          <i class="far fa-calendar-alt"></i>
-          <span>February 14, 2019</span>
-        </div>
-        <!-- Article reading time -->
-        <div class="reading-time">
-          <i class="far fa-clock"></i>
-          <span>5 min</span>
+          <span>10 min</span>
         </div>
       </div>
 
