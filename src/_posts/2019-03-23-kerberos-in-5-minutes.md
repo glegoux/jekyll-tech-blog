@@ -34,11 +34,15 @@ Kerberos’ name comes from Greek mythology, the three-headed guard dog of Hades
 
 {% include article-image.html title="MIT Kerberos" src="kerberos-logo.jpg" %}
 
-The MIT **Kerberos Consortium** ensures development and lasting quality of the Kerberos project since 2007 with past and present sponsors of **Apple, Google, Oracle, Stanford University, Microsoft** ...
+The MIT **Kerberos Consortium** ensures development and lasting quality of the Kerberos project since 2007 with past and present sponsors of **Apple, Google, Oracle, Stanford University, Microsoft** ... but less active now.
 
-Kerberos is a very famous tool used in the **Hadoop ecosystem** to secure a environment **Big Data** for **Spark**, **Hadoop YARN**, **Hadoop Mapreduce**, or **Hadoop Distributed File System**...  It is used by lot of companies as a **Single Sign On solution** at large for access to all **web UI/API**, **databases**, or **services** and not only web HTTP APIs, for any operating system. But it is also famous in the Microsoft world by the Active Directory cornerstone of your clusters of Windows servers. 
+Kerberos is a very famous tool used in the **Hadoop ecosystem** to secure a environment **Big Data** for Spark, Hadoop YARN, Hadoop Mapreduce, or Hadoop Distributed File System...  It is used by lot of companies as a **Single Sign On solution at large** for access to all web UI/API, databases, or services and not only web HTTP APIs, for any operating system. But it is also famous in the Microsoft world by the Active Directory cornerstone of your clusters of Windows servers. 
 
-The current widespread implementations are [MIT Kerberos](https://web.mit.edu/kerberos/), [Heimdal](https://github.com/heimdal/heimdal), and [Active Directory](wikipedia.org/wiki/Active_Directory). These are native Kerberos implementations respectively for **Linux**, **macOS**, and **Windows**. But they are built also for other operating systems than their native one. For most usages, these implementations are compatible client-server or server-server, but above all for Kerberos communication protocol, the ticket credentials and keytabs are not standardized by the RFCs. Some implementations are diverged on some edge aspects, or propose the extra features. The historical implementation is MIT Kerberos, because it has been written by the founders of Kerberos Steve Miller and Clifford Neuman. Another implementation of Kerberos in Java: [Apache Kerby](https://directory.apache.org/kerby/) is very interesting. The **Java ecosystem** integrates very well Kerberos, it is in this standard library, and a lot of Java projects use it. 
+The current widespread implementations are [MIT Kerberos](https://web.mit.edu/kerberos/), [Heimdal](https://github.com/heimdal/heimdal), and [Active Directory](wikipedia.org/wiki/Active_Directory). These are native Kerberos implementations respectively for **Linux**, **macOS**, and **Windows**. But they are built also for other operating systems than their native one. For most usages, these implementations are compatible client-server or server-server, but above all for Kerberos communication protocol, the ticket credentials and keytabs are not standardized by the RFCs. Some implementations are diverged on some edge aspects, or propose the extra features. 
+
+The historical implementation is MIT Kerberos, because it has been written by the founders of Kerberos Steve Miller and Clifford Neuman. 
+
+Another implementation of Kerberos in Java: [Apache Kerby](https://directory.apache.org/kerby/) is very interesting. The **Java ecosystem** integrates very well Kerberos, it is in this standard library, and a lot of Java projects use it. 
 
 See [Frequently Asked Questions (FAQ)](http://www.kerberos.org/about/FAQ.html).
 
