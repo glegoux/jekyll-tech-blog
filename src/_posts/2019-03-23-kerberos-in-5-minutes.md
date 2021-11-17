@@ -49,7 +49,7 @@ The current widespread implementations are [MIT Kerberos](https://web.mit.edu/ke
 and [Active Directory](wikipedia.org/wiki/Active_Directory). These are native Kerberos implementations respectively 
 for **Linux**, **macOS**, and **Windows**. But they are built also for other operating systems than their native one. For most usages, 
 these implementations are compatible between them client-server or server-server for Kerberos communication protocol, but the ticket 
-credentials and keytabs are not standardized by the RFCs. Some implementations are diverged on some edge aspects, or propose the extra 
+credentials and keytabs are not standardized by the RFCs. Some implementations are diverged on some edge aspects, or propose extra 
 features. 
 
 The **historical implementation** is **MIT Kerberos**, because it has been written by the founders of Kerberos Steve Miller and Clifford
