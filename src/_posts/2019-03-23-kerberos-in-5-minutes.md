@@ -24,7 +24,7 @@ also encrypted the communication.
 
 Massachusetts Institute of Technology (MIT)
 
-Kerberos is first a protocol and after a implementation. Kerberos builds on**symmetric key cryptography** to encrypt communication and requires a trusted third party to identify **mutual authentication** with a system of renewable tickets (each 10 hours by default).
+Kerberos is first a protocol of communication. Kerberos is built by design from an architecture based on the **symmetric key cryptography** to authenticate, and to encrypt communication. It requires a trusted third party to guarantee a **mutual authentication** with a system of secrets and renewable tickets.
 
 The current important *Requests for Comments* (RFC) to understand Kerberos are [rfc4120](https://www.ietf.org/rfc/rfc4120.txt) and [rfc6649](https://www.ietf.org/rfc/rfc6649.txt)), see [all Kerberos RFCs](https://datatracker.ietf.org/doc/search/?name=Kerberos&sort=&rfcs=on).
 
