@@ -22,13 +22,13 @@ also encrypted the communication.
 
 > Kerberos allows to secure communications on untrusted networks but where each node is trusted
 
-MIT
+Massachusetts Institute of Technology (MIT)
 
 Kerberos is first a protocol and after a implementation. Kerberos builds on**symmetric key cryptography** to encrypt communication and requires a trusted third party to identify **mutual authentication** with a system of renewable tickets (each 10 hours by default).
 
 The current important *Requests for Comments* (RFC) to understand Kerberos are [rfc4120](https://www.ietf.org/rfc/rfc4120.txt) and [rfc6649](https://www.ietf.org/rfc/rfc6649.txt)), see [all Kerberos RFCs](https://datatracker.ietf.org/doc/search/?name=Kerberos&sort=&rfcs=on).
 
-The latest Kerberos version of Massachusetts Institute of Technology (MIT) implementation is [Kerberos V5](https://web.mit.edu/kerberos/krb5-latest/) written in Language C under [MIT License](https://web.mit.edu/kerberos/krb5-latest/doc/mitK5license.html). You can see [all available releases](http://web.mit.edu/kerberos/dist/). The project is Open Source project and published on a [git mirror repository on Github](https://github.com/krb5/krb5) by [Github krb5 Organization](https://github.com/krb5). There are a [full online documentation](https://web.mit.edu/kerberos/krb5-latest/doc/) and [short guide pdf](http://www.kerberos.org/software/adminkerberos.pdf).
+The latest Kerberos version of MIT implementation is [Kerberos V5](https://web.mit.edu/kerberos/krb5-latest/) written in Language C under [MIT License](https://web.mit.edu/kerberos/krb5-latest/doc/mitK5license.html). You can see [latest available releases](http://web.mit.edu/kerberos/dist/). The project is Open Source project and published on a [git mirror repository on Github](https://github.com/krb5/krb5) by [Github krb5 Organization](https://github.com/krb5). There are a [online documentation](https://web.mit.edu/kerberos/krb5-latest/doc/) and [short guide pdf](http://www.kerberos.org/software/adminkerberos.pdf).
 
 Kerberos’ name comes from Greek mythology, the three-headed guard dog of Hades.This technology is invented at MIT in the 1980s, became an **IETF Standard** in 1993, and the first MIT implementation release in 1987 until present with continuous improvements.
 
@@ -36,9 +36,9 @@ Kerberos’ name comes from Greek mythology, the three-headed guard dog of Hades
 
 The MIT **Kerberos Consortium** ensures development and lasting quality of the Kerberos project since 2007 with past and present sponsors of **Apple, Google, Oracle, Stanford University, Microsoft** ...
 
-Kerberos is a very famous tool used in the **Hadoop ecosystem** distributed by Cloudera, Hortonworks or MapR for the Linux world to secure a environment **Big Data** for **Spark**, **Hadoop YARN**, **Hadoop Mapreduce**, or **Hadoop Distributed File System** (HDFS) ... But it is also famous in the Microsoft world as cornerstone of **Active Directory** tool used a lot of companies as the **Single Sign On** (SSO) solution at large for access to all applications and services, and not only web HTTP API.
+Kerberos is a very famous tool used in the **Hadoop ecosystem** to secure a environment **Big Data** for **Spark**, **Hadoop YARN**, **Hadoop Mapreduce**, or **Hadoop Distributed File System**...  It is used by lot of companies as a **Single Sign On solution** at large for access to all **web UI/API**, **databases**, or **services** and not only web HTTP APIs, for any operating system. But it is also famous in the Microsoft world by the Active Directory cornerstone of your clusters of Windows servers. 
 
-Three current widespread implementations are **MIT Kerberos**, **Heimdal**, **Active Directory** (AD) available allowing a multi-platform ecosystem (Windows or Linux server).
+Three current widespread implementations are [MIT Kerberos](https://web.mit.edu/kerberos/), [Heimdal](https://github.com/heimdal/heimdal), [Active Directory](wikipedia.org/wiki/Active_Directory) respectively these are native Kerberos implementation for Linux, macOS, and Windows. But they are built also for other operating systems than their native one. For most usages, these implementations are compatible client-server or server-server, but above all for Kerberos communication protocol, the ticket credentials and keytabs are not standardized by the RFC. Some implementations are diverged on some edge aspects, or propose the extra features. The historical implementation is MIT Kerberos, because it has been written by the founders of Kerberos Steve Miller and Clifford Neuman. Another implementation of Kerberos in Java: [Apache Kerby](https://directory.apache.org/kerby/) is very interesting. The Java ecosystem integrates very well Kerberos, it is in this standard library, and a lot of Java projects use it. 
 
 See [Frequently Asked Questions (FAQ)](http://www.kerberos.org/about/FAQ.html).
 
