@@ -7,9 +7,9 @@ category: "Security"
 tags: "Kerberos"
 ---
 
-[Kerberos](http://www.kerberos.org/) is a protocol to guarantee a part of the security of your information infrastructure. 
+[Kerberos](http://www.kerberos.org/) is a protocol of communication to guarantee a part of the security of your information infrastructure. 
 Among the key concepts of security of the CIA triad: Confidentiality, Integrity, and Availability. Kerberos allows setting up 
-communications confidentiality and non-repudiation accesses, it is an **Authentication and Authorization System** (AAS), although
+communications confidentiality and integrity with non-repudiation, it is an **Authentication and Authorization System** (AAS), although
 the step of authorization is very limited, it is essentially an authentication system.  
 
 This article is an introduction to Kerberos ecosystem. It can be interesting for a **manager** to understand key principles of 
@@ -25,7 +25,7 @@ transmitter and receiver. Kerberos can also encrypted the communication by excha
 
 Massachusetts Institute of Technology (MIT)
 
-Kerberos is first a protocol of communication. Kerberos is built by design from an architecture based on the **symmetric key cryptography** 
+Kerberos is built by design from an architecture based on the **symmetric key cryptography** 
 to authenticate, and to encrypt communication. It requires a trusted third party to guarantee a **mutual authentication** 
 with a system of secrets and renewable tickets.
 
