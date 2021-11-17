@@ -32,11 +32,10 @@ with a system of secrets and renewable tickets.
 Kerberos’ name comes from Greek mythology, the three-headed guard dog of Hades.This technology is invented at MIT in the 1980s, became an 
 **IETF Standard** in 1993. United States governement classified [Kerberos protocol](https://en.wikipedia.org/wiki/Kerberos_(protocol)) as 
 "Auxiliary Military Equipment" and banned its export until 2000. It continues being used largely today.
-
 The current important Requests for Comments (RFC) to understand Kerberos are [rfc4120](https://www.ietf.org/rfc/rfc4120.txt) and 
 [rfc6649](https://www.ietf.org/rfc/rfc6649.txt), see [all Kerberos RFCs](https://datatracker.ietf.org/doc/search/?name=Kerberos&sort=&rfcs=on).
 
-The **Kerberos Consortium** ensures development and lasting quality of the Kerberos project since 2007 with past and present
+The **MIT Kerberos Consortium** ensures development and lasting quality of the Kerberos project since 2007 with past and present
 sponsors of Apple, Google, Oracle, Stanford University, Microsoft ... but less active now.
 
 Kerberos is a very used in the **Hadoop ecosystem** to secure a environment **Big Data** for Spark, Hadoop YARN, 
