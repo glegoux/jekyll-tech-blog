@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2021-11-17T08:50:47+00:00</updated>
+ <updated>2021-11-17T08:54:39+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -1581,8 +1581,8 @@ Neuman.The first implementation release was in 1987. New releases are pushblishe
 Kerberos version is &lt;a href=&quot;https://web.mit.edu/kerberos/krb5-latest/&quot;&gt;Kerberos V5&lt;/a&gt; written in Language C under
 &lt;a href=&quot;https://web.mit.edu/kerberos/krb5latest/doc/mitK5license.html&quot;&gt;MIT License&lt;/a&gt;. 
 You can see &lt;a href=&quot;https://web.mit.edu/kerberos/dist/historic.html&quot;&gt;all available releases&lt;/a&gt;. 
-The project is Open Source project and published on a &lt;a href=&quot;https://github.com/krb5/krb5&quot;&gt;git mirror repository on Github&lt;/a&gt; 
-by &lt;a href=&quot;https://github.com/krb5&quot;&gt;Github krb5 Organization&lt;/a&gt;. There are a &lt;a href=&quot;https://web.mit.edu/kerberos/krb5-latest/doc/&quot;&gt;online documentation&lt;/a&gt; 
+The project is open source project published on a &lt;a href=&quot;https://github.com/krb5/krb5&quot;&gt;git mirror repository on GitHub&lt;/a&gt; 
+by &lt;a href=&quot;https://github.com/krb5&quot;&gt;GitHub Organization krb5&lt;/a&gt;. There are a &lt;a href=&quot;https://web.mit.edu/kerberos/krb5-latest/doc/&quot;&gt;online documentation&lt;/a&gt; 
 and &lt;a href=&quot;http://www.kerberos.org/software/adminkerberos.pdf&quot;&gt;short guide pdf&lt;/a&gt;.&lt;/p&gt;
 
 &lt;figure title=&quot;MIT Kerberos&quot;&gt;
