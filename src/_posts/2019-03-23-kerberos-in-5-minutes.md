@@ -26,7 +26,7 @@ Massachusetts Institute of Technology (MIT)
 
 Kerberos is first a protocol of communication. Kerberos is built by design from an architecture based on the **symmetric key cryptography** to authenticate, and to encrypt communication. It requires a trusted third party to guarantee a **mutual authentication** with a system of secrets and renewable tickets.
 
-The current important *Requests for Comments* (RFC) to understand Kerberos are [rfc4120](https://www.ietf.org/rfc/rfc4120.txt) and [rfc6649](https://www.ietf.org/rfc/rfc6649.txt)), see [all Kerberos RFCs](https://datatracker.ietf.org/doc/search/?name=Kerberos&sort=&rfcs=on).
+The current important Requests for Comments (RFC) to understand Kerberos are [rfc4120](https://www.ietf.org/rfc/rfc4120.txt) and [rfc6649](https://www.ietf.org/rfc/rfc6649.txt), see [all Kerberos RFCs](https://datatracker.ietf.org/doc/search/?name=Kerberos&sort=&rfcs=on).
 
 The latest Kerberos version of MIT implementation is [Kerberos V5](https://web.mit.edu/kerberos/krb5-latest/) written in Language C under [MIT License](https://web.mit.edu/kerberos/krb5-latest/doc/mitK5license.html). You can see [latest available releases](http://web.mit.edu/kerberos/dist/). The project is Open Source project and published on a [git mirror repository on Github](https://github.com/krb5/krb5) by [Github krb5 Organization](https://github.com/krb5). There are a [online documentation](https://web.mit.edu/kerberos/krb5-latest/doc/) and [short guide pdf](http://www.kerberos.org/software/adminkerberos.pdf).
 
