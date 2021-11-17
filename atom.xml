@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2021-11-17T01:33:06+00:00</updated>
+ <updated>2021-11-17T01:42:54+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -1530,9 +1530,9 @@ https://glegoux.com/contact/email/
    <updated>2019-03-23T00:00:00+00:00</updated>
    <id>https://glegoux.com/blog/articles/2019/03/23/kerberos-in-5-minutes.html</id>
    <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.kerberos.org/&quot;&gt;Kerberos&lt;/a&gt; is a protocol to guarantee a part of the security of your information infrastructure. 
-Among the key concepts of security of the CIA triad: Confidentiality, Integrity, and Availability. Kerberos allows to set up 
+Among the key concepts of security of the CIA triad: Confidentiality, Integrity, and Availability. Kerberos allows setting up 
 communications confidentiality and non-repudiation accesses, it is an &lt;strong&gt;Authentication and Authorization System&lt;/strong&gt; (AAS), although
-the step of authorization is very limited, it is essentially a authentication system.&lt;/p&gt;
+the step of authorization is very limited, it is essentially an authentication system.&lt;/p&gt;
 
 &lt;p&gt;This article is an introduction to Kerberos ecosystem. It can be interesting for a &lt;strong&gt;manager&lt;/strong&gt; to understand key principles of 
 Kerberos, a &lt;strong&gt;non-technical person&lt;/strong&gt; to have a overview of this technology, or for &lt;strong&gt;technical person&lt;/strong&gt; particularly with 
