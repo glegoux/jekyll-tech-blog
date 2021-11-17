@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2021-11-17T08:38:47+00:00</updated>
+ <updated>2021-11-17T08:45:47+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -1553,17 +1553,17 @@ transmitter and receiver. Kerberos can also encrypted the communication by excha
 to authenticate, and to encrypt communication. It requires a trusted third party to guarantee a &lt;strong&gt;mutual authentication&lt;/strong&gt; 
 with a system of secrets and renewable tickets.&lt;/p&gt;
 
+&lt;p&gt;Kerberos’ name comes from Greek mythology, the three-headed guard dog of Hades.This technology is invented at MIT in the 1980s, became an 
+&lt;strong&gt;IETF Standard&lt;/strong&gt; in 1993. United States governement classified &lt;a href=&quot;https://en.wikipedia.org/wiki/Kerberos_(protocol)&quot;&gt;Kerberos protocol&lt;/a&gt; as 
+“Auxiliary Military Equipment” and banned its export until 2000. It continues being used largely today.&lt;/p&gt;
+
 &lt;p&gt;The current important Requests for Comments (RFC) to understand Kerberos are &lt;a href=&quot;https://www.ietf.org/rfc/rfc4120.txt&quot;&gt;rfc4120&lt;/a&gt; and 
 &lt;a href=&quot;https://www.ietf.org/rfc/rfc6649.txt&quot;&gt;rfc6649&lt;/a&gt;, see &lt;a href=&quot;https://datatracker.ietf.org/doc/search/?name=Kerberos&amp;amp;sort=&amp;amp;rfcs=on&quot;&gt;all Kerberos RFCs&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Kerberos’ name comes from Greek mythology, the three-headed guard dog of Hades.This technology is invented at MIT in the 1980s, became an 
-&lt;strong&gt;IETF Standard&lt;/strong&gt; in 1993. United States governement classified [Kerberos protocol](https://en.wikipedia.org/wiki/Kerberos_(protocol) as 
-“Auxiliary Military Equipment” and banned its export until 2000.&lt;/p&gt;
 
 &lt;p&gt;The &lt;strong&gt;Kerberos Consortium&lt;/strong&gt; ensures development and lasting quality of the Kerberos project since 2007 with past and present
 sponsors of Apple, Google, Oracle, Stanford University, Microsoft … but less active now.&lt;/p&gt;
 
-&lt;p&gt;Kerberos is a very famous tool used in the &lt;strong&gt;Hadoop ecosystem&lt;/strong&gt; to secure a environment &lt;strong&gt;Big Data&lt;/strong&gt; for Spark, Hadoop YARN, 
+&lt;p&gt;Kerberos is a very used in the &lt;strong&gt;Hadoop ecosystem&lt;/strong&gt; to secure a environment &lt;strong&gt;Big Data&lt;/strong&gt; for Spark, Hadoop YARN, 
 Hadoop Mapreduce, or Hadoop Distributed File System…  It is used by lot of companies as a &lt;strong&gt;Single Sign On solution at large&lt;/strong&gt;
 to access to web UIs/APIs, databases, services, servers with SSH, or your local system login of your workstation and not only web
 HTTP applications, for any operating system. But it is also famous in the Microsoft world by the Active Directory cornerstone of 
@@ -1572,7 +1572,7 @@ your clusters of Windows servers.&lt;/p&gt;
 &lt;p&gt;The current widespread implementations are &lt;a href=&quot;https://web.mit.edu/kerberos/&quot;&gt;MIT Kerberos&lt;/a&gt;, &lt;a href=&quot;https://github.com/heimdal/heimdal&quot;&gt;Heimdal&lt;/a&gt;, 
 and &lt;a href=&quot;wikipedia.org/wiki/Active_Directory&quot;&gt;Active Directory&lt;/a&gt;. These are native Kerberos implementations respectively 
 for &lt;strong&gt;Linux&lt;/strong&gt;, &lt;strong&gt;macOS&lt;/strong&gt;, and &lt;strong&gt;Windows&lt;/strong&gt;. But they are built also for other operating systems than their native one. For most usages, 
-these implementations are compatible client-server or server-server, but above all for Kerberos communication protocol, the ticket 
+these implementations are compatible between them client-server or server-server for Kerberos communication protocol, but the ticket 
 credentials and keytabs are not standardized by the RFCs. Some implementations are diverged on some edge aspects, or propose the extra 
 features.&lt;/p&gt;
 
@@ -1592,8 +1592,8 @@ and &lt;a href=&quot;http://www.kerberos.org/software/adminkerberos.pdf&quot;&gt
   &lt;figcaption&gt;MIT Kerberos&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;Another interesting implementation of Kerberos is in Java: &lt;a href=&quot;https://directory.apache.org/kerby/&quot;&gt;Apache Kerby&lt;/a&gt;. The &lt;strong&gt;Java 
-ecosystem&lt;/strong&gt; integrates very well Kerberos, it is in the standard library. A lot of Java projects use Kerberos.&lt;/p&gt;
+&lt;p&gt;Another interesting implementation of Kerberos is in Java: &lt;a href=&quot;https://directory.apache.org/kerby/&quot;&gt;Apache Kerby&lt;/a&gt;. The &lt;strong&gt;Java ecosystem&lt;/strong&gt; 
+integrates very well Kerberos, it is in the standard library. A lot of Java projects use Kerberos.&lt;/p&gt;
 
 &lt;p&gt;See &lt;a href=&quot;http://www.kerberos.org/about/FAQ.html&quot;&gt;Frequently Asked Questions (FAQ)&lt;/a&gt;.&lt;/p&gt;
 
