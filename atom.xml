@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2021-11-17T08:54:39+00:00</updated>
+ <updated>2021-11-17T08:54:51+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -1573,7 +1573,7 @@ your clusters of Windows servers.&lt;/p&gt;
 and &lt;a href=&quot;wikipedia.org/wiki/Active_Directory&quot;&gt;Active Directory&lt;/a&gt;. These are native Kerberos implementations respectively 
 for &lt;strong&gt;Linux&lt;/strong&gt;, &lt;strong&gt;macOS&lt;/strong&gt;, and &lt;strong&gt;Windows&lt;/strong&gt;. But they are built also for other operating systems than their native one. For most usages, 
 these implementations are compatible between them client-server or server-server for Kerberos communication protocol, but the ticket 
-credentials and keytabs are not standardized by the RFCs. Some implementations are diverged on some edge aspects, or propose the extra 
+credentials and keytabs are not standardized by the RFCs. Some implementations are diverged on some edge aspects, or propose extra 
 features.&lt;/p&gt;
 
 &lt;p&gt;The &lt;strong&gt;historical implementation&lt;/strong&gt; is &lt;strong&gt;MIT Kerberos&lt;/strong&gt;, because it has been written by the founders of Kerberos Steve Miller and Clifford
