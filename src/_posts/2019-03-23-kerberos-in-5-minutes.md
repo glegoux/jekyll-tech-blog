@@ -32,19 +32,12 @@ with a system of secrets and renewable tickets.
 The current important Requests for Comments (RFC) to understand Kerberos are [rfc4120](https://www.ietf.org/rfc/rfc4120.txt) and 
 [rfc6649](https://www.ietf.org/rfc/rfc6649.txt), see [all Kerberos RFCs](https://datatracker.ietf.org/doc/search/?name=Kerberos&sort=&rfcs=on).
 
-The latest Kerberos version of MIT implementation is [Kerberos V5](https://web.mit.edu/kerberos/krb5-latest/) written in Language 
-C under [MIT License](https://web.mit.edu/kerberos/krb5-latest/doc/mitK5license.html). You can see [latest available releases](http://web.mit.edu/kerberos/dist/). 
-The project is Open Source project and published on a [git mirror repository on Github](https://github.com/krb5/krb5) 
-by [Github krb5 Organization](https://github.com/krb5). There are a [online documentation](https://web.mit.edu/kerberos/krb5-latest/doc/) 
-and [short guide pdf](http://www.kerberos.org/software/adminkerberos.pdf).
-
 Kerberos’ name comes from Greek mythology, the three-headed guard dog of Hades.This technology is invented at MIT in the 1980s, became an 
-**IETF Standard** in 1993, and the first MIT implementation release in 1987 until present with continuous improvements.
+**IETF Standard** in 1993. United States governement classified [Kerberos protocol](https://en.wikipedia.org/wiki/Kerberos_(protocol) as 
+"Auxiliary Military Equipment" and banned its export until 2000.
 
-{% include article-image.html title="MIT Kerberos" src="kerberos-logo.jpg" %}
-
-The MIT **Kerberos Consortium** ensures development and lasting quality of the Kerberos project since 2007 with past and present
-sponsors of **Apple, Google, Oracle, Stanford University, Microsoft** ... but less active now.
+The **Kerberos Consortium** ensures development and lasting quality of the Kerberos project since 2007 with past and present
+sponsors of Apple, Google, Oracle, Stanford University, Microsoft ... but less active now.
 
 Kerberos is a very famous tool used in the **Hadoop ecosystem** to secure a environment **Big Data** for Spark, Hadoop YARN, 
 Hadoop Mapreduce, or Hadoop Distributed File System...  It is used by lot of companies as a **Single Sign On solution at large**
@@ -59,13 +52,19 @@ these implementations are compatible client-server or server-server, but above a
 credentials and keytabs are not standardized by the RFCs. Some implementations are diverged on some edge aspects, or propose the extra 
 features. 
 
-You can use the Kerberos authentication method to access to a , to a web application with HTTP. 
+The **historical implementation** is **MIT Kerberos**, because it has been written by the founders of Kerberos Steve Miller and Clifford
+Neuman.The first implementation release was in 1987. New releases are pushblished until present with continuous improvements. The latest MIT 
+Kerberos version is [Kerberos V5](https://web.mit.edu/kerberos/krb5-latest/) written in Language C under
+[MIT License](https://web.mit.edu/kerberos/krb5latest/doc/mitK5license.html). 
+You can see [all available releases](https://web.mit.edu/kerberos/dist/historic.html). 
+The project is Open Source project and published on a [git mirror repository on Github](https://github.com/krb5/krb5) 
+by [Github krb5 Organization](https://github.com/krb5). There are a [online documentation](https://web.mit.edu/kerberos/krb5-latest/doc/) 
+and [short guide pdf](http://www.kerberos.org/software/adminkerberos.pdf).
 
-The historical implementation is MIT Kerberos, because it has been written by the founders of Kerberos Steve Miller and Clifford
-Neuman. 
+{% include article-image.html title="MIT Kerberos" src="kerberos-logo.jpg" %}
 
-Another implementation of Kerberos in Java: [Apache Kerby](https://directory.apache.org/kerby/) is very interesting. The **Java 
-ecosystem** integrates very well Kerberos, it is in the standard library, and a lot of Java projects use it. 
+Another interesting implementation of Kerberos is in Java: [Apache Kerby](https://directory.apache.org/kerby/). The **Java 
+ecosystem** integrates very well Kerberos, it is in the standard library. A lot of Java projects use Kerberos. 
 
 See [Frequently Asked Questions (FAQ)](http://www.kerberos.org/about/FAQ.html).
 
