@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2021-11-17T09:13:44+00:00</updated>
+ <updated>2021-11-17T09:19:15+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -1556,7 +1556,7 @@ with a system of secrets and renewable tickets.&lt;/p&gt;
 &lt;p&gt;Kerberos’ name comes from Greek mythology, the three-headed guard dog of Hades.This technology is invented at MIT in the 1980s, became an 
 &lt;strong&gt;IETF Standard&lt;/strong&gt; in 1993. United States governement classified &lt;a href=&quot;https://en.wikipedia.org/wiki/Kerberos_(protocol)&quot;&gt;Kerberos protocol&lt;/a&gt; as 
 “Auxiliary Military Equipment” and banned its export until 2000. It continues being used largely today.
-The current important Requests for Comments (RFC) to understand Kerberos are &lt;a href=&quot;https://www.ietf.org/rfc/rfc4120.txt&quot;&gt;rfc4120&lt;/a&gt; and 
+The important Requests for Comments (RFC) to understand Kerberos are &lt;a href=&quot;https://www.ietf.org/rfc/rfc4120.txt&quot;&gt;rfc4120&lt;/a&gt; and 
 &lt;a href=&quot;https://www.ietf.org/rfc/rfc6649.txt&quot;&gt;rfc6649&lt;/a&gt;, see &lt;a href=&quot;https://datatracker.ietf.org/doc/search/?name=Kerberos&amp;amp;sort=&amp;amp;rfcs=on&quot;&gt;all Kerberos RFCs&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;The &lt;strong&gt;MIT Kerberos Consortium&lt;/strong&gt; ensures development and lasting quality of the Kerberos project since 2007 with past and present
