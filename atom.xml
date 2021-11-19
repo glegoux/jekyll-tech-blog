@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2021-11-17T09:19:15+00:00</updated>
+ <updated>2021-11-19T07:41:06+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -2478,23 +2478,29 @@ message=&quot;Hello World!&quot;
 ~~~
 &lt;/pre&gt;
 
-&lt;h1 id=&quot;mathematics-formula&quot;&gt;Mathematics Formula&lt;/h1&gt;
+&lt;h1 id=&quot;mathematics-equation&quot;&gt;Mathematics Equation&lt;/h1&gt;
 
-&lt;p&gt;Use LateX syntax, see &lt;a href=&quot;https://www.latex-project.org&quot;&gt;latex-project.org&lt;/a&gt; .&lt;/p&gt;
+&lt;p&gt;Use LateX syntax, see &lt;a href=&quot;https://www.latex-project.org&quot;&gt;latex-project.org&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&quot;inline-formula&quot;&gt;Inline formula&lt;/h2&gt;
+&lt;p&gt;:warning: The dollar symbol $ becomes a meta symbol, there is conflict with dollar symbol use the html code &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;amp;#36;&lt;/code&gt; to see dollar symbol $.&lt;/p&gt;
 
-&lt;p&gt;This formula $\int_0^1 x^2dx = \frac{1}{3}$ is inline.&lt;/p&gt;
+&lt;h2 id=&quot;in-line-equation&quot;&gt;In-line equation&lt;/h2&gt;
+
+&lt;p&gt;This equation $\int_0^1 x^2dx = \frac{1}{3}$ is in-line.&lt;/p&gt;
 
 &lt;p&gt;Source code:&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$\int_0^1 x^2dx = \frac{1}{3}$
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;This equation $\int_0^1 x^2dx = \frac{1}{3}$ is in-line.
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;:warning: It is a conflict with the dollar symbol, use the html code for that &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;amp;#36;&lt;/code&gt;, that gives you $.&lt;/p&gt;
+&lt;h2 id=&quot;single-line-equation&quot;&gt;Single-line equation&lt;/h2&gt;
 
-&lt;h2 id=&quot;multiline-formula&quot;&gt;Multiline formula&lt;/h2&gt;
+&lt;p&gt;This equation is single-line and centered:&lt;/p&gt;
 
-&lt;p&gt;This formula is multiline and centered:&lt;/p&gt;
+\[\int_0^1 x^2dx = \frac{1}{3}\]
+
+&lt;h2 id=&quot;multi-line-equation&quot;&gt;Multi-line equation&lt;/h2&gt;
+
+&lt;p&gt;This equation is multi-line and centered:&lt;/p&gt;
 
 \[\displaylines{
 \int_0^1 xdx = \frac{1}{2} \\
