@@ -25,7 +25,7 @@ Why using it Markdown? Because it is very handy to use for the reader and the wr
 * **Reader**: The generated HTML content got from the source Markdown content is compatible with all web browsers. 
 * **Writer**: The source Markdown content continue being separated, you can modify the one without interfering with the another one.  But in addition, it is easier to create then modify its article, the content is more human-readable and shorter than the HTML.
 
- See how to create your content with the right syntax through examples in the 3 following sections: `Text`, `Informatics code` and `Mathematics equation`. 
+ See how to create your content with the right syntax through examples in the following sections. 
 
 # Text
 
@@ -547,7 +547,7 @@ message="Hello World!"
 ~~~
 </pre>
 
-# Mathematics Equation
+# Mathematics equation
 
 Use LateX syntax, see [latex-project.org](https://www.latex-project.org).
 
