@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2021-11-19T08:11:09+00:00</updated>
+ <updated>2021-11-19T08:15:55+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -1984,7 +1984,7 @@ with extension &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&g
   &lt;li&gt;&lt;strong&gt;Writer&lt;/strong&gt;: The source Markdown content continue being separated, you can modify the one without interfering with the another one.  But in addition, it is easier to create then modify its article, the content is more human-readable and shorter than the HTML.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;See how to create your content with the right syntax through examples in the 3 following sections: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Text&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Informatics code&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Mathematics equation&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;See how to create your content with the right syntax through examples in the following sections.&lt;/p&gt;
 
 &lt;h1 id=&quot;text&quot;&gt;Text&lt;/h1&gt;
 
@@ -2478,7 +2478,7 @@ message=&quot;Hello World!&quot;
 ~~~
 &lt;/pre&gt;
 
-&lt;h1 id=&quot;mathematics-equation&quot;&gt;Mathematics Equation&lt;/h1&gt;
+&lt;h1 id=&quot;mathematics-equation&quot;&gt;Mathematics equation&lt;/h1&gt;
 
 &lt;p&gt;Use LateX syntax, see &lt;a href=&quot;https://www.latex-project.org&quot;&gt;latex-project.org&lt;/a&gt;.&lt;/p&gt;
 
