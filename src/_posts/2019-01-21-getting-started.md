@@ -25,7 +25,7 @@ Why using it Markdown? Because it is very handy to use for the reader and the wr
 * **Reader**: The generated HTML content got from the source Markdown content is compatible with all web browsers. 
 * **Writer**: The source Markdown content continue being separated, you can modify the one without interfering with the another one.  But in addition, it is easier to create then modify its article, the content is more human-readable and shorter than the HTML.
 
-With the 3 following sections: `Text`, `Informatics code` and `Mathematics equation`, see how to create your content with the right syntax through examples. 
+ See how to create your content with the right syntax through examples in the 3 following sections: `Text`, `Informatics code` and `Mathematics equation`. 
 
 # Text
 
@@ -568,13 +568,18 @@ This equation is single-line and centered:
 
 $$\int_0^1 x^2dx = \frac{1}{3}$$
 
+Source code:
+~~~
+$$\int_0^1 x^2dx = \frac{1}{3}$$
+~~~
+
 ## Multi-line equation
 
 This equation is multi-line and centered:
 
 $$
 \displaylines{
-\int_0^1 xdx = \frac{1}{2} \\
+\int_0^1 x\,dx = \frac{1}{2} \\
 \int_0^1 x^2dx = \frac{1}{3}
 }
 $$
@@ -583,7 +588,7 @@ Source code:
 ~~~
 $$
 \displaylines{
-\int_0^1 xdx = \frac{1}{2} \\
+\int_0^1 x\,dx = \frac{1}{2} \\
 \int_0^1 x^2dx = \frac{1}{3} 
 }
 $$
