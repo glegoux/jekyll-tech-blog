@@ -547,24 +547,30 @@ message="Hello World!"
 ~~~
 </pre>
 
-# Mathematics Formula
+# Mathematics Equation
 
-Use LateX syntax, see [latex-project.org](https://www.latex-project.org) .
+Use LateX syntax, see [latex-project.org](https://www.latex-project.org).
 
-## Inline formula
+:warning: The dollar symbol &#36; becomes a meta symbol, there is conflict with dollar symbol use the html code `&#36;` to see dollar symbol &#36;.
 
-This formula $\int_0^1 x^2dx = \frac{1}{3}$ is inline.
+## In-line equation
+
+This equation $\int_0^1 x^2dx = \frac{1}{3}$ is in-line.
 
 Source code:
 ~~~
-$\int_0^1 x^2dx = \frac{1}{3}$
+This equation $\int_0^1 x^2dx = \frac{1}{3}$ is in-line.
 ~~~
 
-:warning: It is a conflict with the dollar symbol, use the html code for that `&#36;`, that gives you &#36;.
+## Single-line equation
 
-## Multiline formula
+This equation is single-line and centered:
 
-This formula is multiline and centered:
+$$\int_0^1 x^2dx = \frac{1}{3}$$
+
+## Multi-line equation
+
+This equation is multi-line and centered:
 
 $$
 \displaylines{
