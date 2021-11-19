@@ -20,12 +20,12 @@ After the **conversion to a HTML text**, it is decorated and animated by CSS sty
 {% include article-google-drawing.html title="Markdown processor"
 src="https://docs.google.com/drawings/d/e/2PACX-1vRPwfUjnj6bT9B-M4jdzQqOICzCwblxYR5xvgiXYWrpcgpmFddbWR-ErodWf-U0rE8f0aqzUfazXvf8/pub?w=960&amp;h=267" %}
 
-Why using it rather than HTML? Because it is more handy to use for the writer, and all advantages of the HTML are preserved for the:
+Why using it Markdown? Because it is very handy to use for the reader and the writer:
 
-* **Reader**: The generated HTML content is compatible with all web browsers, nothing change. 
-* **Writer**: The structured Markdown content and the style continue being separated, you can modify the one without interfering with the another one.  But in addition, it is easier to create then modify its article, the content is more human-readable and shorter than the HTML.
+* **Reader**: The generated HTML content got from the source Markdown content is compatible with all web browsers. 
+* **Writer**: The source Markdown content continue being separated, you can modify the one without interfering with the another one.  But in addition, it is easier to create then modify its article, the content is more human-readable and shorter than the HTML.
 
-With the 3 following sections: `Text`, `Informatics code` and `Mathematics formula`, see how to create your content with the right syntax through examples. 
+With the 3 following sections: `Text`, `Informatics code` and `Mathematics equation`, see how to create your content with the right syntax through examples. 
 
 # Text
 
