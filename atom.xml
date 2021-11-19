@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2021-11-19T07:41:06+00:00</updated>
+ <updated>2021-11-19T08:08:48+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -1977,14 +1977,14 @@ with extension &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&g
   &lt;figcaption&gt;Markdown processor&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;Why using it rather than HTML? Because it is more handy to use for the writer, and all advantages of the HTML are preserved for the:&lt;/p&gt;
+&lt;p&gt;Why using it Markdown? Because it is very handy to use for the reader and the writer:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Reader&lt;/strong&gt;: The generated HTML content is compatible with all web browsers, nothing change.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Writer&lt;/strong&gt;: The structured Markdown content and the style continue being separated, you can modify the one without interfering with the another one.  But in addition, it is easier to create then modify its article, the content is more human-readable and shorter than the HTML.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Reader&lt;/strong&gt;: The generated HTML content got from the source Markdown content is compatible with all web browsers.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Writer&lt;/strong&gt;: The source Markdown content continue being separated, you can modify the one without interfering with the another one.  But in addition, it is easier to create then modify its article, the content is more human-readable and shorter than the HTML.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;With the 3 following sections: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Text&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Informatics code&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Mathematics formula&lt;/code&gt;, see how to create your content with the right syntax through examples.&lt;/p&gt;
+&lt;p&gt;With the 3 following sections: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Text&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Informatics code&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Mathematics equation&lt;/code&gt;, see how to create your content with the right syntax through examples.&lt;/p&gt;
 
 &lt;h1 id=&quot;text&quot;&gt;Text&lt;/h1&gt;
 
