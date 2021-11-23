@@ -95,7 +95,7 @@ pre-defined list influenced by the constraints and the ads, with few hundreds ty
 let's say $N=300$:
 
 {% include article-image.html
-title="Probability to have 2 identical type of gifts among 300 possible types of Christmas gifts" 
+title="Probability to have 2 identical types of gifts among 300 possible types of Christmas gifts" 
 src="g_n-convergence.png"
 %}
 
