@@ -78,12 +78,14 @@ contains at least 2 identical elements is:
 
 $$g_n = 1 - \frac{N}{N}\,\frac{N-1}{N}\,\frac{N-n+1}{N} = 1 - \dfrac{N!}{(N-n)!}\,\dfrac{1}{N^n}$$
 
-with an approximation $e^{x} \approx 1 +x$ and the sum of young Gauss $\sum_{k=0}^{n}\,k = \frac{n(n+1)}{2}$,
-you can have:
+with an approximation $e^{x} \approx 1 +x$ and the **sum of young Gauss** 
+$\sum_{k=0}^{n}\,k = \frac{n(n+1)}{2}$, you can have:
 
 $$g_n \approx 1 - e^{-\frac{n(n-1)}{2N}}$$
 
-But in any case, you see $\displaystyle\lim_{n\mapsto +\infty}g_n = 0$.
+But in any case, you see:
+
+$$\displaystyle\lim_{n\mapsto +\infty}g_n = 1$$.
 
 Here the element $E$ is the set of possible Christmas gifts, and $n$ the number of guests. 
 Except some guests with a very original gift, suppose that your guest chose in a 
