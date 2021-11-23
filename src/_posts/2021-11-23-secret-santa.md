@@ -67,7 +67,7 @@ but all he has to do is redraw a paper then put the paper back with his/her name
 
 # Birthday paradox
 
-Knowing if 2 invites brings the same gift is equivalent to another famous problem
+Knowing if 2 invites brings the same type of gift is equivalent to another famous problem
 the **birthday paradox**. The probability that 2 people were born on the same day
 in a group of people increases quickly in function of the size of this group. It
 becomes almost certain, that is to say more than $99\%$ of chance to be true for 
