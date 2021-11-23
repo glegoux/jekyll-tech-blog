@@ -78,8 +78,8 @@ contains at least 2 identical elements is:
 
 $$g_n = 1 - \frac{N}{N}\,\frac{N-1}{N}\,\frac{N-n+1}{N} = 1 - \dfrac{N!}{(N-n)!}\,\dfrac{1}{N^n}$$
 
-with an approximation $e^{x} \approx 1 +x$ and the **sum of young Gauss** 
-$\sum_{k=0}^{n}\,k = \frac{n(n+1)}{2}$, you can have:
+with an approximation $e^{x} \approx 1 +x$ when $x$ is close to $0$, and the **sum of young Gauss** 
+$\sum_{k=0}^{n}\,k = \frac{n(n+1)}{2}$, you can get:
 
 $$g_n \approx 1 - e^{-\frac{n(n-1)}{2N}}$$
 
