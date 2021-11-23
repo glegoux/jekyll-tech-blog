@@ -83,9 +83,9 @@ $\sum_{k=0}^{n}\,k = \frac{n(n+1)}{2}$, you can have:
 
 $$g_n \approx 1 - e^{-\frac{n(n-1)}{2N}}$$
 
-But in any case, you see:
+But in any case, you see:  
 
-$$\displaystyle\lim_{n\mapsto +\infty}g_n = 1$$.
+$$\lim_{n\mapsto +\infty}g_n = 1$$  
 
 Here the element $E$ is the set of possible Christmas gifts, and $n$ the number of guests. 
 Except some guests with a very original gift, suppose that your guest chose in a 
