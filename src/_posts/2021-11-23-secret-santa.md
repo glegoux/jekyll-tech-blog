@@ -32,7 +32,7 @@ You can use the probabilities to solve it.
 The probability that at least one guest be drawn his/her name is the inverse of
 the probability that no one be drawn his/her name, that is to say:
 
-$$p_n =  1 - \dfrac{\mathcal{D}_{n}}{n!}$$
+$$p_n =  1 - \dfrac{\mathcal{D}_{n}}{n!} = 1 - u_n$$
 
 where $n$ is the number of guests, $\mathcal{D}_{n}$ is the number of derangements, 
 that is to say the number of permutations without fixed points, knowing that $n!$
