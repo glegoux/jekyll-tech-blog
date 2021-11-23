@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2021-11-23T18:37:19+00:00</updated>
+ <updated>2021-11-23T18:43:40+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -87,12 +87,14 @@ contains at least 2 identical elements is:&lt;/p&gt;
 
 \[g_n = 1 - \frac{N}{N}\,\frac{N-1}{N}\,\frac{N-n+1}{N} = 1 - \dfrac{N!}{(N-n)!}\,\dfrac{1}{N^n}\]
 
-&lt;p&gt;with an approximation $e^{x} \approx 1 +x$ and the sum of young Gauss $\sum_{k=0}^{n}\,k = \frac{n(n+1)}{2}$,
-you can have:&lt;/p&gt;
+&lt;p&gt;with an approximation $e^{x} \approx 1 +x$ and the &lt;strong&gt;sum of young Gauss&lt;/strong&gt; 
+$\sum_{k=0}^{n}\,k = \frac{n(n+1)}{2}$, you can have:&lt;/p&gt;
 
 \[g_n \approx 1 - e^{-\frac{n(n-1)}{2N}}\]
 
-&lt;p&gt;But in any case, you see $\displaystyle\lim_{n\mapsto +\infty}g_n = 0$.&lt;/p&gt;
+&lt;p&gt;But in any case, you see:&lt;/p&gt;
+
+&lt;p&gt;\(\displaystyle\lim_{n\mapsto +\infty}g_n = 1\).&lt;/p&gt;
 
 &lt;p&gt;Here the element $E$ is the set of possible Christmas gifts, and $n$ the number of guests. 
 Except some guests with a very original gift, suppose that your guest chose in a 
