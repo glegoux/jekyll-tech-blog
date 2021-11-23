@@ -102,4 +102,4 @@ src="g_n-convergence.png"
 If you have more than 20 guests, we have more than 1 out of 2 chances, to have
 at least 2 identical types of gifts.
 
-So after these 2 problems, I wish you a good Santa Secret.
+So after explaininig these 2 problems, I wish you a good Secret Santa.
