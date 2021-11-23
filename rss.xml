@@ -5,9 +5,116 @@
     <description>Personal blog about software engineering</description>
     <link>https://glegoux.com/</link>
     <atom:link href="https://glegoux.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 23 Nov 2021 07:54:53 +0000</pubDate>
-    <lastBuildDate>Tue, 23 Nov 2021 07:54:53 +0000</lastBuildDate>
+    <pubDate>Tue, 23 Nov 2021 18:37:19 +0000</pubDate>
+    <lastBuildDate>Tue, 23 Nov 2021 18:37:19 +0000</lastBuildDate>
     <generator>Jekyll v4.2.1</generator>
+    
+      <item>
+        <title>Secret Santa</title>
+        <description>&lt;p&gt;Secret Santa is a traditional event in which each member of a group is randomly
+assigned a person to whom they give a gift. Imagine that you want to organize a 
+lunch with your family, friends or your work teammates before the end of year 
+celebrations: Christmas and New year. Why not do a Secret Santa? You notify your
+guests to choose a gift, and to keep it secret. And you want to attribute the gift 
+with a draw at the beginning of the lunch. But several questions are raised. 
+How to organize this draw ? Are there identical gifts ?&lt;/p&gt;
+
+&lt;h1 id=&quot;hat-check-problem&quot;&gt;Hat-check problem&lt;/h1&gt;
+
+&lt;p&gt;Let’s begin by the first question. Hopefully, each guest has well his/her gift. 
+Of course, the draw could have been done before, and moreover each guest could have 
+known for which guest was its gift. But you decided that it is funnier to do the draw 
+at the last moment without a mobile app, with a traditional way, a piece of 
+paper for each guest where its name is written, you mix it in a Christmas hat.
+Then each one chooses a piece of paper randomly without looking. And all ones 
+at the same time unfolds the piece of paper, and discover the name of the guest
+to whom each one is offering his/her gift. Does a guest draw at random his/her name?&lt;/p&gt;
+
+&lt;p&gt;You see that this concrete problem can be reformulate: Is there a least a fixed point
+in the permutation of a set with $n$ elements? It is the famous &lt;strong&gt;hat-check problem&lt;/strong&gt;.
+You can use the probabilities to solve it.&lt;/p&gt;
+
+&lt;p&gt;The probability that at least one guest be drawn his/her name is the inverse of
+the probability that no one be drawn his/her name, that is to say:&lt;/p&gt;
+
+\[p_n =  1 - \dfrac{\mathcal{D}_{n}}{n!}\]
+
+&lt;p&gt;where $n$ is the number of guests, $\mathcal{D}_{n}$ is the number of derangements, 
+that is to say the number of permutations without fixed points, knowing that $n!$
+is the number of permutation with $n$ elements. You can prove with the &lt;strong&gt;inclusion–exclusion 
+generalized principle&lt;/strong&gt; that:&lt;/p&gt;
+
+\[\mathcal{D}_{n} = n! \sum_{k=0}^{n} \dfrac{(-1)^k}{k!}\]
+
+&lt;p&gt;According to the &lt;strong&gt;Taylor-Maclaurin development&lt;/strong&gt;, we have:&lt;/p&gt;
+
+\[\displaystyle\lim_{n\mapsto +\infty}\sum_{k=0}^{n}\dfrac{(-1)^k}{k!} = \dfrac{1}{e}\]
+
+&lt;p&gt;with $e \approx 2.71828…$. In addition, 
+this suite $(u_n)_{n\in \mathbb{N}}$ has a rate of convergence quick:&lt;/p&gt;
+
+&lt;figure title=&quot;Inverse of the probability that a guest draws randomly his/her name&quot;&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2021-11-23-secret-santa/images/u_n-convergence.png&quot; alt=&quot;Inverse of the probability that a guest draws randomly his/her name&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;Inverse of the probability that a guest draws randomly his/her name&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;So if your number of guest is greater or equal than 4, you have around $0.63\%$ of chance, 
+to have at least one guest who has drawn its name, that is a bit less than 2 out of 3 chances:&lt;/p&gt;
+
+\[p_{n\geq 4} \approx \dfrac{2}{3}\]
+
+&lt;p&gt;It is risky to choose this simultaneous strategy, and it breaks the surprise phenomena 
+when everyone unfolds the paper, if a guest randomly draws his/her own name. Another 
+strategy this time sequential, is a guest takes turns drawing randomly a piece of
+paper and giving the Christmas hat to the person whose name is on the paper. Only
+the first guest could be drawn his/her name, but all he has to do is redraw a paper 
+then put the paper back with his/her name.&lt;/p&gt;
+
+&lt;h1 id=&quot;birthday-paradox&quot;&gt;Birthday paradox&lt;/h1&gt;
+
+&lt;p&gt;Knowing if 2 invites brings the same gift is equivalent to another famous problem
+the &lt;strong&gt;birthday paradox&lt;/strong&gt;. The probability that 2 people were born on the same day
+in a group of people increases quickly in function of the size of this group. It
+becomes almost certain, that is to say more than $99\%$ of chance to be true for 
+a group of 60 people.&lt;/p&gt;
+
+&lt;p&gt;More generally, the probability that a subset of size $n$ of a set $E$ of size $N$
+contains at least 2 identical elements is:&lt;/p&gt;
+
+\[g_n = 1 - \frac{N}{N}\,\frac{N-1}{N}\,\frac{N-n+1}{N} = 1 - \dfrac{N!}{(N-n)!}\,\dfrac{1}{N^n}\]
+
+&lt;p&gt;with an approximation $e^{x} \approx 1 +x$ and the sum of young Gauss $\sum_{k=0}^{n}\,k = \frac{n(n+1)}{2}$,
+you can have:&lt;/p&gt;
+
+\[g_n \approx 1 - e^{-\frac{n(n-1)}{2N}}\]
+
+&lt;p&gt;But in any case, you see $\displaystyle\lim_{n\mapsto +\infty}g_n = 0$.&lt;/p&gt;
+
+&lt;p&gt;Here the element $E$ is the set of possible Christmas gifts, and $n$ the number of guests. 
+Except some guests with a very original gift, suppose that your guest chose in a 
+pre-defined list influenced by the constraints and the ads, with few hundreds items, 
+let’s say $N=300$:&lt;/p&gt;
+
+&lt;figure title=&quot;Probability to have 2 identical gifts among 300 possible Christmas gifts&quot;&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2021-11-23-secret-santa/images/g_n-convergence.png&quot; alt=&quot;Probability to have 2 identical gifts among 300 possible Christmas gifts&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;Probability to have 2 identical gifts among 300 possible Christmas gifts&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;If you have more than 20 guests, we have more than 1 out of 2 chances, to have
+at least 2 identical gifts.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 23 Nov 2021 00:00:00 +0000</pubDate>
+        <link>https://glegoux.com/blog/articles/2021/11/23/secret-santa.html</link>
+        <guid isPermaLink="true">https://glegoux.com/blog/articles/2021/11/23/secret-santa.html</guid>
+        
+        
+        <category>Applied Mathematics</category>
+        
+      </item>
     
       <item>
         <title>Software versioning</title>
@@ -1225,140 +1332,6 @@ rtt min/avg/max/mdev = 13.821/13.821/13.821/0.000 ms
         
         
         <category>Web</category>
-        
-      </item>
-    
-      <item>
-        <title>Java champion</title>
-        <description>&lt;p&gt;Java champion is ambassador of Java ecosystem for the world! It is enough hard to become Java champion.&lt;/p&gt;
-
-&lt;p&gt;Here qualities of Java champion:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;leader&lt;/li&gt;
-  &lt;li&gt;technical luminary&lt;/li&gt;
-  &lt;li&gt;independent-minded and credible&lt;/li&gt;
-  &lt;li&gt;involved in Java technology&lt;/li&gt;
-  &lt;li&gt;influencer&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Currently in the world, there are 282 Java champions in 2019 knowing that in 2012 there are more that 10 millions of Java developers. That is to say about 1 per 30 thousands of Java developers. Here you can see repartition of Java champions in the world:&lt;/p&gt;
-
-&lt;figure&gt;
-    &lt;div id=&quot;java-champions&quot;&gt;&lt;/div&gt;
-    &lt;figcaption&gt;Java champions in the world (Source: https://github.com/aalmiray/java-champions)&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;You can write to Java champions:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;mailto://javachampions@groups.io&quot;&gt;javachampions@groups.io&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;References&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://apex.oracle.com/champions&quot;&gt;Find a Java Champion&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://developer.oracle.com/javachampions&quot;&gt;Who are Java Champions?&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;script type=&quot;text/javascript&quot; src=&quot;https://www.gstatic.com/charts/loader.js&quot;&gt;&lt;/script&gt;
-
-&lt;script type=&quot;text/javascript&quot;&gt;
-jQuery(document).ready(function () {
-    google.charts.load(&apos;current&apos;, {
-        &apos;packages&apos;:[&apos;geochart&apos;],
-        // Note: you will need to get a mapsApiKey for your project.
-        // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
-        &apos;mapsApiKey&apos;: &apos;AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY&apos;
-    });
-    google.charts.setOnLoadCallback(drawRegionsMap);
-    
-    function drawRegionsMap() {
-        var data = google.visualization.arrayToDataTable([
-            [&apos;Country&apos;, &apos;Number&apos;],
-            [&apos;Armenia&apos;,1],
-            [&apos;Australia&apos;,1],
-            [&apos;Australia/USA&apos;,1],
-            [&apos;Austria&apos;,3],
-            [&apos;Belgium&apos;,5],
-            [&apos;Brazil&apos;,14],
-            [&apos;Bulgaria&apos;,2],
-            [&apos;Canada&apos;,4],
-            [&apos;China&apos;,2],
-            [&apos;Colombia&apos;,2],
-            [&apos;Denmark&apos;,2],
-            [&apos;Ecuador&apos;,1],
-            [&apos;Egypt&apos;,2],
-            [&apos;Estonia&apos;,2],
-            [&apos;France&apos;,12],
-            [&apos;Germany&apos;,25],
-            [&apos;Germany/Switzerland&apos;,1],
-            [&apos;Greece&apos;,3],
-            [&apos;Guatemala&apos;,2],
-            [&apos;Hungary&apos;,2],
-            [&apos;India&apos;,3],
-            [&apos;Indonesia&apos;,1],
-            [&apos;Ireland&apos;,1],
-            [&apos;Italy&apos;,7],
-            [&apos;Japan&apos;,5],
-            [&apos;Malaysia&apos;,1],
-            [&apos;Mexico&apos;,2],
-            [&apos;Mexico/Switzerland&apos;,2],
-            [&apos;Morocco&apos;,1],
-            [&apos;New Zealand&apos;,1],
-            [&apos;Norway&apos;,4],
-            [&apos;Perú&apos;,1],
-            [&apos;Poland&apos;,4],
-            [&apos;Portugal&apos;,1],
-            [&apos;Romania&apos;,2],
-            [&apos;Russia&apos;,4],
-            [&apos;Scotland&apos;,2],
-            [&apos;Serbia&apos;,1],
-            [&apos;Slovenia&apos;,1],
-            [&apos;South Africa&apos;,1],
-            [&apos;South Korea&apos;,1],
-            [&apos;Spain&apos;,4],
-            [&apos;Sweden&apos;,5],
-            [&apos;Switzerland&apos;,3],
-            [&apos;Netherlands&apos;,8],
-            [&apos;Turkey&apos;,5],
-            [&apos;United States&apos;,77],
-            [&apos;USA/Germany&apos;,1],
-            [&apos;United Kingdom&apos;,23]
-        ]);
-    
-        var options = {
-            colorAxis: {colors: [&apos;#e6f7ff&apos;, &apos;#00334d&apos;]},
-            width: $(&apos;#content&apos;).width(), // responsive
-            legend: false
-        };
-        
-        var chart = new google.visualization.GeoChart(document.getElementById(&apos;java-champions&apos;));
-        
-         chart.draw(data, options);
-    }
-    
-    // responsive
-    var width = $(window).width();
-    $(window).resize(function(){
-        if ($(this).width() != width) {
-            width = $(this).width();
-            drawRegionsMap();
-        }
-    });
-});
-&lt;/script&gt;
-
-</description>
-        <pubDate>Fri, 24 May 2019 00:00:00 +0000</pubDate>
-        <link>https://glegoux.com/blog/articles/2019/05/24/java-champion.html</link>
-        <guid isPermaLink="true">https://glegoux.com/blog/articles/2019/05/24/java-champion.html</guid>
-        
-        <category>Language</category>
-        
-        <category>Java</category>
-        
-        
-        <category>Development</category>
         
       </item>
     
