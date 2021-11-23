@@ -5,8 +5,8 @@
     <description>Personal blog about software engineering</description>
     <link>https://glegoux.com/</link>
     <atom:link href="https://glegoux.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 23 Nov 2021 22:42:06 +0000</pubDate>
-    <lastBuildDate>Tue, 23 Nov 2021 22:42:06 +0000</lastBuildDate>
+    <pubDate>Tue, 23 Nov 2021 22:47:06 +0000</pubDate>
+    <lastBuildDate>Tue, 23 Nov 2021 22:47:06 +0000</lastBuildDate>
     <generator>Jekyll v4.2.1</generator>
     
       <item>
@@ -101,11 +101,11 @@ Except some guests with a very original gift, suppose that your guest chose in a
 pre-defined list influenced by the constraints and the ads, with few hundreds types of items, 
 let’s say $N=300$:&lt;/p&gt;
 
-&lt;figure title=&quot;Probability to have 2 identical type of gifts among 300 possible types of Christmas gifts&quot;&gt;
+&lt;figure title=&quot;Probability to have 2 identical types of gifts among 300 possible types of Christmas gifts&quot;&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2021-11-23-secret-santa/images/g_n-convergence.png&quot; alt=&quot;Probability to have 2 identical type of gifts among 300 possible types of Christmas gifts&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2021-11-23-secret-santa/images/g_n-convergence.png&quot; alt=&quot;Probability to have 2 identical types of gifts among 300 possible types of Christmas gifts&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;Probability to have 2 identical type of gifts among 300 possible types of Christmas gifts&lt;/figcaption&gt;
+  &lt;figcaption&gt;Probability to have 2 identical types of gifts among 300 possible types of Christmas gifts&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;If you have more than 20 guests, we have more than 1 out of 2 chances, to have
