@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2021-11-23T19:53:05+00:00</updated>
+ <updated>2021-11-23T19:53:51+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -76,7 +76,7 @@ but all he has to do is redraw a paper then put the paper back with his/her name
 
 &lt;h1 id=&quot;birthday-paradox&quot;&gt;Birthday paradox&lt;/h1&gt;
 
-&lt;p&gt;Knowing if 2 invites brings the same gift is equivalent to another famous problem
+&lt;p&gt;Knowing if 2 invites brings the same type of gift is equivalent to another famous problem
 the &lt;strong&gt;birthday paradox&lt;/strong&gt;. The probability that 2 people were born on the same day
 in a group of people increases quickly in function of the size of this group. It
 becomes almost certain, that is to say more than $99\%$ of chance to be true for 
