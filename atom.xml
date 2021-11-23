@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2021-11-23T19:39:50+00:00</updated>
+ <updated>2021-11-23T19:53:05+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -30,14 +30,14 @@ at the last moment without a mobile app, with a traditional way, a piece of
 paper for each guest where its name is written, you mix it in a Christmas hat.
 Then each one chooses a piece of paper randomly without looking. And all ones 
 at the same time unfolds the piece of paper, and discover the name of the guest
-to whom each one is offering his/her gift. Does a guest draw at random his/her name?&lt;/p&gt;
+to whom he/she is offering his/her gift. Does a guest draw at random his/her name?&lt;/p&gt;
 
 &lt;p&gt;You see that this concrete problem can be reformulate: Is there a least a fixed point
 in the permutation of a set with $n$ elements? It is the famous &lt;strong&gt;hat-check problem&lt;/strong&gt;.
 You can use the probabilities to solve it.&lt;/p&gt;
 
-&lt;p&gt;The probability that at least one guest be drawn his/her name is the inverse of
-the probability that no one be drawn his/her name, that is to say:&lt;/p&gt;
+&lt;p&gt;The probability that at least one guest draws his/her name is the inverse of
+the probability that no one drawns his/her name, that is to say:&lt;/p&gt;
 
 \[p_n =  1 - \dfrac{\mathcal{D}_{n}}{n!} = 1 - u_n\]
 
@@ -63,16 +63,16 @@ this suite $(u_n)_{n\in \mathbb{N}}$ has a rate of convergence quick:&lt;/p&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;So if your number of guest is greater or equal than 4, you have around $0.63\%$ of chance, 
-to have at least one guest who has drawn its name, that is a bit less than 2 out of 3 chances:&lt;/p&gt;
+to have at least one guest who drawn its name, that is a bit less than 2 out of 3 chances:&lt;/p&gt;
 
 \[p_{n\geq 4} \approx \dfrac{2}{3}\]
 
 &lt;p&gt;It is risky to choose this simultaneous strategy, and it breaks the surprise phenomena 
-when everyone unfolds the paper, if a guest randomly draws his/her own name. Another 
-strategy this time sequential, is a guest takes turns drawing randomly a piece of
-paper and giving the Christmas hat to the person whose name is on the paper. Only
-the first guest could be drawn his/her name, but all he has to do is redraw a paper 
-then put the paper back with his/her name.&lt;/p&gt;
+when everyone unfolds the paper, if a guest randomly draws his/her own name. An exchange
+of papers or a new drawing of lots must be made. Another strategy this time sequential, 
+is a guest takes turns drawing randomly a piece of paper and giving the Christmas hat to
+the person whose name is on the paper. Only the first guest could be drawn his/her name, 
+but all he has to do is redraw a paper then put the paper back with his/her name.&lt;/p&gt;
 
 &lt;h1 id=&quot;birthday-paradox&quot;&gt;Birthday paradox&lt;/h1&gt;
 
