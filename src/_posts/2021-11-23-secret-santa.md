@@ -23,14 +23,14 @@ at the last moment without a mobile app, with a traditional way, a piece of
 paper for each guest where its name is written, you mix it in a Christmas hat.
 Then each one chooses a piece of paper randomly without looking. And all ones 
 at the same time unfolds the piece of paper, and discover the name of the guest
-to whom each one is offering his/her gift. Does a guest draw at random his/her name?
+to whom he/she is offering his/her gift. Does a guest draw at random his/her name?
 
 You see that this concrete problem can be reformulate: Is there a least a fixed point
 in the permutation of a set with $n$ elements? It is the famous **hat-check problem**.
 You can use the probabilities to solve it.
 
-The probability that at least one guest be drawn his/her name is the inverse of
-the probability that no one be drawn his/her name, that is to say:
+The probability that at least one guest draws his/her name is the inverse of
+the probability that no one drawns his/her name, that is to say:
 
 $$p_n =  1 - \dfrac{\mathcal{D}_{n}}{n!} = 1 - u_n$$
 
@@ -54,16 +54,16 @@ src="u_n-convergence.png"
 %}
 
 So if your number of guest is greater or equal than 4, you have around $0.63\%$ of chance, 
-to have at least one guest who has drawn its name, that is a bit less than 2 out of 3 chances:
+to have at least one guest who drawn its name, that is a bit less than 2 out of 3 chances:
 
 $$p_{n\geq 4} \approx \dfrac{2}{3}$$
 
 It is risky to choose this simultaneous strategy, and it breaks the surprise phenomena 
-when everyone unfolds the paper, if a guest randomly draws his/her own name. Another 
-strategy this time sequential, is a guest takes turns drawing randomly a piece of
-paper and giving the Christmas hat to the person whose name is on the paper. Only
-the first guest could be drawn his/her name, but all he has to do is redraw a paper 
-then put the paper back with his/her name.
+when everyone unfolds the paper, if a guest randomly draws his/her own name. An exchange
+of papers or a new drawing of lots must be made. Another strategy this time sequential, 
+is a guest takes turns drawing randomly a piece of paper and giving the Christmas hat to
+the person whose name is on the paper. Only the first guest could be drawn his/her name, 
+but all he has to do is redraw a paper then put the paper back with his/her name.
 
 # Birthday paradox
 
