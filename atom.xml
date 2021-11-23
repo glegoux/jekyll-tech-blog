@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2021-11-23T18:47:50+00:00</updated>
+ <updated>2021-11-23T18:49:14+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -94,7 +94,7 @@ $\sum_{k=0}^{n}\,k = \frac{n(n+1)}{2}$, you can have:&lt;/p&gt;
 
 &lt;p&gt;But in any case, you see:&lt;/p&gt;
 
-&lt;p&gt;\(\displaystyle\lim_{n\mapsto +\infty}g_n = 1\).&lt;/p&gt;
+\[\lim_{n\mapsto +\infty}g_n = 1\]
 
 &lt;p&gt;Here the element $E$ is the set of possible Christmas gifts, and $n$ the number of guests. 
 Except some guests with a very original gift, suppose that your guest chose in a 
