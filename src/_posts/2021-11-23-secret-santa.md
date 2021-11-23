@@ -12,7 +12,7 @@ lunch with your family, friends or your work teammates before the end of year
 celebrations: Christmas and New year. Why not do a Secret Santa? You notify your
 guests to choose a gift, and to keep it secret. And you want to attribute the gift 
 with a draw at the beginning of the lunch. But several questions are raised. 
-How to organize this draw ? Are there identical gifts ?
+How to organize this draw ? Are there identical type of gifts ?
 
 # Hat-check problem
 
@@ -87,9 +87,9 @@ But in any case, you see:
 
 $$\lim_{n\mapsto +\infty}g_n = 1$$  
 
-Here the element $E$ is the set of possible Christmas gifts, and $n$ the number of guests. 
+Here the element $E$ is the set of possible types of Christmas gifts, and $n$ the number of guests. 
 Except some guests with a very original gift, suppose that your guest chose in a 
-pre-defined list influenced by the constraints and the ads, with few hundreds items, 
+pre-defined list influenced by the constraints and the ads, with few hundreds types of items, 
 let's say $N=300$:
 
 {% include article-image.html
@@ -98,6 +98,6 @@ src="g_n-convergence.png"
 %}
 
 If you have more than 20 guests, we have more than 1 out of 2 chances, to have
-at least 2 identical gifts.
+at least 2 identical types of gifts.
 
 So after these 2 problems, I wish you a good Santa Secret.
