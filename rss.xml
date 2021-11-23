@@ -5,8 +5,8 @@
     <description>Personal blog about software engineering</description>
     <link>https://glegoux.com/</link>
     <atom:link href="https://glegoux.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 23 Nov 2021 18:43:40 +0000</pubDate>
-    <lastBuildDate>Tue, 23 Nov 2021 18:43:40 +0000</lastBuildDate>
+    <pubDate>Tue, 23 Nov 2021 18:47:50 +0000</pubDate>
+    <lastBuildDate>Tue, 23 Nov 2021 18:47:50 +0000</lastBuildDate>
     <generator>Jekyll v4.2.1</generator>
     
       <item>
@@ -37,7 +37,7 @@ You can use the probabilities to solve it.&lt;/p&gt;
 &lt;p&gt;The probability that at least one guest be drawn his/her name is the inverse of
 the probability that no one be drawn his/her name, that is to say:&lt;/p&gt;
 
-\[p_n =  1 - \dfrac{\mathcal{D}_{n}}{n!}\]
+\[p_n =  1 - \dfrac{\mathcal{D}_{n}}{n!} = 1 - u_n\]
 
 &lt;p&gt;where $n$ is the number of guests, $\mathcal{D}_{n}$ is the number of derangements, 
 that is to say the number of permutations without fixed points, knowing that $n!$
