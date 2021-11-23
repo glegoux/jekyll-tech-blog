@@ -99,3 +99,5 @@ src="g_n-convergence.png"
 
 If you have more than 20 guests, we have more than 1 out of 2 chances, to have
 at least 2 identical gifts.
+
+So after these 2 problems, I wish you a good Santa Secret.
