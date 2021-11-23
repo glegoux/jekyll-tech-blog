@@ -5,8 +5,8 @@
     <description>Personal blog about software engineering</description>
     <link>https://glegoux.com/</link>
     <atom:link href="https://glegoux.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 23 Nov 2021 19:53:51 +0000</pubDate>
-    <lastBuildDate>Tue, 23 Nov 2021 19:53:51 +0000</lastBuildDate>
+    <pubDate>Tue, 23 Nov 2021 19:58:05 +0000</pubDate>
+    <lastBuildDate>Tue, 23 Nov 2021 19:58:05 +0000</lastBuildDate>
     <generator>Jekyll v4.2.1</generator>
     
       <item>
@@ -111,7 +111,7 @@ let’s say $N=300$:&lt;/p&gt;
 &lt;p&gt;If you have more than 20 guests, we have more than 1 out of 2 chances, to have
 at least 2 identical types of gifts.&lt;/p&gt;
 
-&lt;p&gt;So after these 2 problems, I wish you a good Santa Secret.&lt;/p&gt;
+&lt;p&gt;So after explaininig these 2 problems, I wish you a good Secret Santa.&lt;/p&gt;
 </description>
         <pubDate>Tue, 23 Nov 2021 00:00:00 +0000</pubDate>
         <link>https://glegoux.com/blog/articles/2021/11/23/secret-santa.html</link>
