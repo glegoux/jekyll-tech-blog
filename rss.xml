@@ -5,8 +5,8 @@
     <description>Personal blog about software engineering</description>
     <link>https://glegoux.com/</link>
     <atom:link href="https://glegoux.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 23 Nov 2021 22:47:06 +0000</pubDate>
-    <lastBuildDate>Tue, 23 Nov 2021 22:47:06 +0000</lastBuildDate>
+    <pubDate>Wed, 24 Nov 2021 13:39:29 +0000</pubDate>
+    <lastBuildDate>Wed, 24 Nov 2021 13:39:29 +0000</lastBuildDate>
     <generator>Jekyll v4.2.1</generator>
     
       <item>
@@ -48,7 +48,7 @@ generalized principle&lt;/strong&gt; that:&lt;/p&gt;
 
 &lt;p&gt;According to the &lt;strong&gt;Taylor-Maclaurin development&lt;/strong&gt;, we have:&lt;/p&gt;
 
-\[\displaystyle\lim_{n\mapsto +\infty}\sum_{k=0}^{n}\dfrac{(-1)^k}{k!} = \dfrac{1}{e}\]
+\[\displaystyle\lim_{n\mapsto +\infty}u_n = \displaystyle\lim_{n\mapsto +\infty}\sum_{k=0}^{n}\dfrac{(-1)^k}{k!} = \dfrac{1}{e}\]
 
 &lt;p&gt;with $e \approx 2.71828…$. In addition, 
 this suite $(u_n)_{n\in \mathbb{N}}$ has a rate of convergence quick:&lt;/p&gt;
