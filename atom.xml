@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2021-11-24T13:39:51+00:00</updated>
+ <updated>2021-11-24T13:51:08+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -89,15 +89,6 @@ contains at least 2 identical elements is:&lt;/p&gt;
 
 &lt;p&gt;It is the inverse of the probability that no of $n$ elements be identical.&lt;/p&gt;
 
-&lt;p&gt;With an approximation $e^{x} \approx 1 +x$ when $x$ is close to $0$, and the &lt;strong&gt;sum of young Gauss&lt;/strong&gt; 
-$\sum_{k=0}^{n}\,k = \frac{n(n+1)}{2}$, you can get:&lt;/p&gt;
-
-\[g_n \approx 1 - e^{-\frac{n(n-1)}{2N}}\]
-
-&lt;p&gt;But in any case, you see:&lt;/p&gt;
-
-\[\displaystyle\lim_{n\mapsto +\infty}g_n = 1\]
-
 &lt;p&gt;Here the element $E$ is the set of possible types of Christmas gifts, and $n$ the number of guests. 
 Except some guests with a very original gift, suppose that your guest chose in a 
 pre-defined list influenced by the constraints and the ads, with few hundreds types of items, 
@@ -109,6 +100,19 @@ let’s say $N=300$:&lt;/p&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;Probability to have 2 identical types of gifts among 300 possible types of Christmas gifts&lt;/figcaption&gt;
 &lt;/figure&gt;
+
+&lt;p&gt;With an approximation $e^{x} \approx 1 +x$ when $x$ is close to $0$, and the &lt;strong&gt;sum of young Gauss&lt;/strong&gt; 
+$\sum_{k=0}^{n}\,k = \frac{n(n+1)}{2}$, you can get:&lt;/p&gt;
+
+\[g_n \approx 1 - e^{-\frac{n(n-1)}{2N}}\]
+
+&lt;p&gt;But in any case, you see:&lt;/p&gt;
+
+\[\displaystyle\lim_{n\mapsto +\infty}g_n = 1\]
+
+&lt;p&gt;And:&lt;/p&gt;
+
+\[g_{n\geq 20} \geq \dfrac{1}{2} \qquad g_{n\geq 60} \approx 1\]
 
 &lt;p&gt;If you have more than 20 guests, we have more than 1 out of 2 chances, to have
 at least 2 identical types of gifts.&lt;/p&gt;
