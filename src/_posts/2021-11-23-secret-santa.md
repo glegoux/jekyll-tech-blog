@@ -43,7 +43,7 @@ $$\mathcal{D}_{n} = n! \sum_{k=0}^{n} \dfrac{(-1)^k}{k!}$$
 
 According to the **Taylor-Maclaurin development**, we have: 
 
-$$\displaystyle\lim_{n\mapsto +\infty}\sum_{k=0}^{n}\dfrac{(-1)^k}{k!} = \dfrac{1}{e}$$
+$$\displaystyle\lim_{n\mapsto +\infty}u_n = \displaystyle\lim_{n\mapsto +\infty}\sum_{k=0}^{n}\dfrac{(-1)^k}{k!} = \dfrac{1}{e}$$
 
 with $e \approx 2.71828...$. In addition, 
 this suite $(u_n)_{n\in \mathbb{N}}$ has a rate of convergence quick:
