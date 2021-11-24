@@ -80,15 +80,6 @@ $$g_n = 1 - \frac{N}{N}\,\frac{N-1}{N}\,\frac{N-n+1}{N} = 1 - \dfrac{N!}{(N-n)!}
 
 It is the inverse of the probability that no of $n$ elements be identical.
 
-With an approximation $e^{x} \approx 1 +x$ when $x$ is close to $0$, and the **sum of young Gauss** 
-$\sum_{k=0}^{n}\,k = \frac{n(n+1)}{2}$, you can get:
-
-$$g_n \approx 1 - e^{-\frac{n(n-1)}{2N}}$$
-
-But in any case, you see:  
-
-$$\displaystyle\lim_{n\mapsto +\infty}g_n = 1$$  
-
 Here the element $E$ is the set of possible types of Christmas gifts, and $n$ the number of guests. 
 Except some guests with a very original gift, suppose that your guest chose in a 
 pre-defined list influenced by the constraints and the ads, with few hundreds types of items, 
@@ -98,6 +89,19 @@ let's say $N=300$:
 title="Probability to have 2 identical types of gifts among 300 possible types of Christmas gifts" 
 src="g_n-convergence.png"
 %}
+
+With an approximation $e^{x} \approx 1 +x$ when $x$ is close to $0$, and the **sum of young Gauss** 
+$\sum_{k=0}^{n}\,k = \frac{n(n+1)}{2}$, you can get:
+
+$$g_n \approx 1 - e^{-\frac{n(n-1)}{2N}}$$
+
+But in any case, you see:  
+
+$$\displaystyle\lim_{n\mapsto +\infty}g_n = 1$$ 
+
+And:
+
+$$g_{n\geq 20} \geq \dfrac{1}{2} \qquad g_{n\geq 60} \approx 1$$
 
 If you have more than 20 guests, we have more than 1 out of 2 chances, to have
 at least 2 identical types of gifts.
