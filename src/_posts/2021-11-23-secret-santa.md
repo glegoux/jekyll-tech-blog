@@ -12,7 +12,7 @@ lunch with your family, friends or your work teammates before the end of year
 celebrations: Christmas and New year. Why not do a Secret Santa? You notify your
 guests to choose a gift, and to keep it secret. And you want to attribute the gift 
 with a draw at the beginning of the lunch. But several questions are raised. 
-How to organize this draw ? Are there identical type of gifts ?
+How to organize this draw? Will any guests bring the same type of gifts?
 
 # Hat-check problem
 
