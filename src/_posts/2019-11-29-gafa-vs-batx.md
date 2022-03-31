@@ -21,9 +21,9 @@ the world there is the big four tech companies **Google, Apple, Facebook, Amazon
 
 {% include article-image.html title="BATX & GAFA" src="batx-gafa.png" %}
 
-# Business
-
-## Business to Customer
+Hence, this market has really 2 groups of companies on a B2B or/and B2C position in function of geolocation.
+**Baidu, Alibaba, Tencent, Xiaomi** for the **APAC hub** mainly where the China has a central role in terms 
+of economical weight, and **Google, Apple, Facebook, Amazon** for the **AMER and EMEA hubs**.
 
 On the **hardware side**, Apple and Xiaomi control the **market of smartphones**, to allow an end user to 
 enter in the digital consummation. On the **software side**, your digital experience consists of 
@@ -32,16 +32,12 @@ searching with engine of Google or Baidu, **buying** with e-commerce platform of
 Messenger & Whatsapp and WeChat. For **spending money online**, WeChat is in competition with Apple Pay 
 and Google Pay.
 
-## Business to Business
-
 The **cloud computing and hosting** is managed by Google Cloud Platform, or Amazon Web Service (AWS), 
 and in China there is Alibaba Cloud, also known as Aliyun.
-
-# Other companies
 
 After the cloud infrastructure, and the web services, each main actor wants to control the markets 
 of **Artificial Intelligence** (AI) and of **Internet of Things** (IoT) what compose the new business 
 opportunities. Of course a lot of companies are forgotten in the artificial classification BATX 
-vs GAFA as (without quoting all other ones): 
+vs GAFA as (without quoting all other ones). Here are some of them with TikTok too now:
 
 {% include article-image.html title="Other big companies" src="other-companies.png" %}
