@@ -5,8 +5,8 @@
     <description>Personal blog about software engineering</description>
     <link>https://glegoux.com/</link>
     <atom:link href="https://glegoux.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 31 Mar 2022 03:52:56 +0000</pubDate>
-    <lastBuildDate>Thu, 31 Mar 2022 03:52:56 +0000</lastBuildDate>
+    <pubDate>Thu, 31 Mar 2022 04:12:00 +0000</pubDate>
+    <lastBuildDate>Thu, 31 Mar 2022 04:12:00 +0000</lastBuildDate>
     <generator>Jekyll v4.2.1</generator>
     
       <item>
@@ -645,14 +645,14 @@ for my datelines, and a &lt;strong&gt;to-do list&lt;/strong&gt; for daily tasks.
 
 &lt;h1 id=&quot;go-further&quot;&gt;Go Further&lt;/h1&gt;
 
-&lt;p&gt;This article is only an introduction of time management. But the situation can
-be &lt;strong&gt;more complex&lt;/strong&gt;. For example, if you could need to think the time management for other people,
-if you are:&lt;/p&gt;
+&lt;p&gt;This article is only an introduction of time management applied to oneself by onself. But the situation can
+be &lt;strong&gt;more complex&lt;/strong&gt;. For example, if you think the time management for other people, if you are:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;a &lt;strong&gt;tech lead&lt;/strong&gt; for a team&lt;/li&gt;
-  &lt;li&gt;a &lt;strong&gt;manager&lt;/strong&gt; for a group of teams (called a department)&lt;/li&gt;
-  &lt;li&gt;a &lt;strong&gt;CEO&lt;/strong&gt; or a &lt;strong&gt;CTO&lt;/strong&gt; for a group of departments …&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Tech lead&lt;/strong&gt; for a team composed of a group of people&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Manager&lt;/strong&gt; for a departement composed of a group of teams&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;CTO&lt;/strong&gt; for a R&amp;amp;D pole composed of departments&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;CEO&lt;/strong&gt; for a company or a group of companies …&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;It requires delegating tasks, understanding the personal context of other people, and driving
