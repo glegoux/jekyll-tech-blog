@@ -50,7 +50,7 @@ Without giving a lot of details, the time management is also linked to the <b>ag
 that is one implementation, like <b>Scrum</b>, <b>Kanban</b> or <b>Pomodoro</b>.
 </div>
 
-# The time
+# How to define the time?
 
 With the meta-physique considerations, the **time** has wondering features: **universal, continuous, unlimited, 
 non-renewable, solid (incompressible/no expansible), perpetually self-generated, no accumulative**. Focus us on the **timescale** of our **human life**.
@@ -109,7 +109,7 @@ does not respect the time features mentioned previously, it is:
 
 But the quantity of time is always available immediately.
 
-# Concepts
+# The concepts of the time management
 
 We defined several ways to conceptualize the time, here I can define more precisely the other
 concepts of time management like the **effort** and the **optimization**.
@@ -135,7 +135,7 @@ I use several concepts above without defining them, here a summary:
 * **Productivity**: measure of your performance that is a combination of effectiveness and
   efficiency.
 
-# A model
+# A model of optimisation
 
 The **time management** can be seen the **modeling of an objective function**
 to optimize. The model of this objective function is fixed by the **definition** of your **goals**
@@ -179,7 +179,7 @@ the tasks are rows of your <b>dataset</b> (training, validation, test) and the m
 With experience on an execution plan, you can predict the speed of execution and the quality of results.
 </div>
 
-# A methodology
+# A methodology of usage
 
 After having modelled and defined the concepts of the time management, I am interested here by
 applying it in practice through a methodology. Firstly, even if you can model the time management,
@@ -289,7 +289,7 @@ Are you a student, a worker or a retiree? Take the example of a worker, more pre
 software engineer full-time working exclusively for a unique company at the beginning of its
 career. By hoping, that it matches to your **auto-introspection**, else the following could help you to do
 the same thing for your personal context. I give you here only a **partial overview** of how it can be done, 
-this example is not necessary my real usage of my personal time which is private.
+this example is not necessary my real usage of my personal time.
 
 {% include article-google-drawing.html title="Timescale of the human life"
 src="https://docs.google.com/drawings/d/e/2PACX-1vTP167tBMm4i3nTOrf72NzpkGNLuTAVMnsQqdasktHiuAnOx-AMG1G9We3qWRADeDgrfCC3EV2Oxwm7/pub?w=537&h=147"
@@ -303,16 +303,15 @@ Each goal should be precise, measurable and reachable.
 
 I split my activities into 3 partitions:
 
-1. **Life activity**: required vital, society or community activities  
+1. **Life activities**: required vital, society or community activities  
    *for example: sleep, eat, wash, practice a physical activity, interact with your environment, do
    the housework, pay the taxes, see your friends ...*
-2. **Work activity**: required activities for your job  
+2. **Work activities**: required activities for your job  
    *for example: commute, work, do a brainstorm, code, participate in a meeting, take break ...*
-3. **Personal activity**: spare and free activities  
+3. **Personal activities**: spare and free activities  
    *for example: practice its development personal, relaxation ...*
 
-I focus me on **life activities** that composes my lifetime. I let on the side the work and personal activity. 
-I want to be extreme and minimize my lifetime and maximize my work and personal time.
+I focus me on the **life activities** that composes my lifetime. I let on the side the work and personal activities, it is the principle. 
 
 For example, for the different timescales, I take long: ~hour and short: ~minute. 
 I try to evaluate the time of each life activity:
