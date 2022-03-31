@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2022-03-31T05:43:45+00:00</updated>
+ <updated>2022-03-31T06:08:43+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -307,7 +307,7 @@ Without giving a lot of details, the time management is also linked to the &lt;b
 that is one implementation, like &lt;b&gt;Scrum&lt;/b&gt;, &lt;b&gt;Kanban&lt;/b&gt; or &lt;b&gt;Pomodoro&lt;/b&gt;.
 &lt;/div&gt;
 
-&lt;h1 id=&quot;the-time&quot;&gt;The time&lt;/h1&gt;
+&lt;h1 id=&quot;how-to-define-the-time&quot;&gt;How to define the time?&lt;/h1&gt;
 
 &lt;p&gt;With the meta-physique considerations, the &lt;strong&gt;time&lt;/strong&gt; has wondering features: &lt;strong&gt;universal, continuous, unlimited, 
 non-renewable, solid (incompressible/no expansible), perpetually self-generated, no accumulative&lt;/strong&gt;. Focus us on the &lt;strong&gt;timescale&lt;/strong&gt; of our &lt;strong&gt;human life&lt;/strong&gt;.
@@ -374,7 +374,7 @@ of time&lt;/li&gt;
 
 &lt;p&gt;But the quantity of time is always available immediately.&lt;/p&gt;
 
-&lt;h1 id=&quot;concepts&quot;&gt;Concepts&lt;/h1&gt;
+&lt;h1 id=&quot;the-concepts-of-the-time-management&quot;&gt;The concepts of the time management&lt;/h1&gt;
 
 &lt;p&gt;We defined several ways to conceptualize the time, here I can define more precisely the other
 concepts of time management like the &lt;strong&gt;effort&lt;/strong&gt; and the &lt;strong&gt;optimization&lt;/strong&gt;.&lt;/p&gt;
@@ -402,7 +402,7 @@ achieve these goals one of the &lt;strong&gt;available resources&lt;/strong&gt; 
 efficiency.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;a-model&quot;&gt;A model&lt;/h1&gt;
+&lt;h1 id=&quot;a-model-of-optimisation&quot;&gt;A model of optimisation&lt;/h1&gt;
 
 &lt;p&gt;The &lt;strong&gt;time management&lt;/strong&gt; can be seen the &lt;strong&gt;modeling of an objective function&lt;/strong&gt;
 to optimize. The model of this objective function is fixed by the &lt;strong&gt;definition&lt;/strong&gt; of your &lt;strong&gt;goals&lt;/strong&gt;
@@ -453,7 +453,7 @@ the tasks are rows of your &lt;b&gt;dataset&lt;/b&gt; (training, validation, tes
 With experience on an execution plan, you can predict the speed of execution and the quality of results.
 &lt;/div&gt;
 
-&lt;h1 id=&quot;a-methodology&quot;&gt;A methodology&lt;/h1&gt;
+&lt;h1 id=&quot;a-methodology-of-usage&quot;&gt;A methodology of usage&lt;/h1&gt;
 
 &lt;p&gt;After having modelled and defined the concepts of the time management, I am interested here by
 applying it in practice through a methodology. Firstly, even if you can model the time management,
@@ -593,7 +593,7 @@ it.&lt;/p&gt;
 software engineer full-time working exclusively for a unique company at the beginning of its
 career. By hoping, that it matches to your &lt;strong&gt;auto-introspection&lt;/strong&gt;, else the following could help you to do
 the same thing for your personal context. I give you here only a &lt;strong&gt;partial overview&lt;/strong&gt; of how it can be done, 
-this example is not necessary my real usage of my personal time which is private.&lt;/p&gt;
+this example is not necessary my real usage of my personal time.&lt;/p&gt;
 
 &lt;figure&gt;
   &lt;div&gt;
@@ -611,17 +611,16 @@ Each goal should be precise, measurable and reachable.&lt;/p&gt;
 &lt;p&gt;I split my activities into 3 partitions:&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Life activity&lt;/strong&gt;: required vital, society or community activities&lt;br /&gt;
+  &lt;li&gt;&lt;strong&gt;Life activities&lt;/strong&gt;: required vital, society or community activities&lt;br /&gt;
 &lt;em&gt;for example: sleep, eat, wash, practice a physical activity, interact with your environment, do
 the housework, pay the taxes, see your friends …&lt;/em&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Work activity&lt;/strong&gt;: required activities for your job&lt;br /&gt;
+  &lt;li&gt;&lt;strong&gt;Work activities&lt;/strong&gt;: required activities for your job&lt;br /&gt;
 &lt;em&gt;for example: commute, work, do a brainstorm, code, participate in a meeting, take break …&lt;/em&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Personal activity&lt;/strong&gt;: spare and free activities&lt;br /&gt;
+  &lt;li&gt;&lt;strong&gt;Personal activities&lt;/strong&gt;: spare and free activities&lt;br /&gt;
 &lt;em&gt;for example: practice its development personal, relaxation …&lt;/em&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;I focus me on &lt;strong&gt;life activities&lt;/strong&gt; that composes my lifetime. I let on the side the work and personal activity. 
-I want to be extreme and minimize my lifetime and maximize my work and personal time.&lt;/p&gt;
+&lt;p&gt;I focus me on the &lt;strong&gt;life activities&lt;/strong&gt; that composes my lifetime. I let on the side the work and personal activities, it is the principle.&lt;/p&gt;
 
 &lt;p&gt;For example, for the different timescales, I take long: ~hour and short: ~minute. 
 I try to evaluate the time of each life activity:&lt;/p&gt;
