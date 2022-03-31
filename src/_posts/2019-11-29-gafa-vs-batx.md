@@ -14,7 +14,7 @@ computer worldwide market is bi-polaire due to the **Internet censorship in Chin
 So the behaviours of consumers are different according to they are in China or not. This Oligopoly 
 constraints the chinese inhabitants to use the digital chinese services, or to be in the illegality 
 by using a Virtual **Network Private** (VPN) to use other blacklisted services. So chinese government 
-controls the chinese digital market with its own private company. 
+controls the chinese digital market with its own private companies. 
 
 In China we have a gang of four with **Baidu, Alibaba, Tencent, Xiaomi** (BATX), and for the rest of 
 the world there is the big four tech companies **Google, Apple, Facebook, Amazon** (GAFA):
