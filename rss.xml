@@ -5,8 +5,8 @@
     <description>Personal blog about software engineering</description>
     <link>https://glegoux.com/</link>
     <atom:link href="https://glegoux.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 31 Mar 2022 05:26:14 +0000</pubDate>
-    <lastBuildDate>Thu, 31 Mar 2022 05:26:14 +0000</lastBuildDate>
+    <pubDate>Thu, 31 Mar 2022 05:43:45 +0000</pubDate>
+    <lastBuildDate>Thu, 31 Mar 2022 05:43:45 +0000</lastBuildDate>
     <generator>Jekyll v4.2.1</generator>
     
       <item>
@@ -311,13 +311,13 @@ that is one implementation, like &lt;b&gt;Scrum&lt;/b&gt;, &lt;b&gt;Kanban&lt;/b
 
 &lt;h1 id=&quot;the-time&quot;&gt;The time&lt;/h1&gt;
 
-&lt;p&gt;With the meta-physique considerations, the &lt;strong&gt;time&lt;/strong&gt; has wondering features: universal, continuous, unlimited, 
-non-renewable, solid (incompressible/no expansible), perpetually self-generated, no accumulative. Focus us on the timescale of our &lt;strong&gt;human life&lt;/strong&gt;.
+&lt;p&gt;With the meta-physique considerations, the &lt;strong&gt;time&lt;/strong&gt; has wondering features: &lt;strong&gt;universal, continuous, unlimited, 
+non-renewable, solid (incompressible/no expansible), perpetually self-generated, no accumulative&lt;/strong&gt;. Focus us on the &lt;strong&gt;timescale&lt;/strong&gt; of our &lt;strong&gt;human life&lt;/strong&gt;.
 These features are immutable, or more precisely their changes are negligible. But we can interpret the time differently.&lt;/p&gt;
 
-&lt;p&gt;Here I am going to interpret the time like a quantizable object like an arbitrary windows in the past, present or future.
-The present moment is seen like a progressive cursor representing a dynamic instant on the timeline. This present instant 
-plays the role of irreversible transformer altering the future into past. The duration of an event is the length of a &lt;strong&gt;windows time&lt;/strong&gt; 
+&lt;p&gt;Here I am going to interpret the time like a &lt;strong&gt;quantizable object&lt;/strong&gt; with an arbitrary windows in the &lt;strong&gt;past, present or future&lt;/strong&gt;.
+The present moment is seen like a progressive cursor representing a dynamic &lt;strong&gt;instant&lt;/strong&gt; on the &lt;strong&gt;timeline&lt;/strong&gt;. This present instant 
+plays the role of irreversible transformer altering the future into past. The &lt;strong&gt;duration&lt;/strong&gt; of an &lt;strong&gt;event&lt;/strong&gt; is the length of a &lt;strong&gt;windows time&lt;/strong&gt; 
 delimited by 2 instants where the event began and finished. For the following, when I speak about time, I refer to this &lt;strong&gt;sliding windows&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;figure&gt;
