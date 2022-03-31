@@ -52,13 +52,13 @@ that is one implementation, like <b>Scrum</b>, <b>Kanban</b> or <b>Pomodoro</b>.
 
 # The time
 
-With the meta-physique considerations, the **time** has wondering features: universal, continuous, unlimited, 
-non-renewable, solid (incompressible/no expansible), perpetually self-generated, no accumulative. Focus us on the timescale of our **human life**.
+With the meta-physique considerations, the **time** has wondering features: **universal, continuous, unlimited, 
+non-renewable, solid (incompressible/no expansible), perpetually self-generated, no accumulative**. Focus us on the **timescale** of our **human life**.
 These features are immutable, or more precisely their changes are negligible. But we can interpret the time differently.
 
-Here I am going to interpret the time like a quantizable object like an arbitrary windows in the past, present or future.
-The present moment is seen like a progressive cursor representing a dynamic instant on the timeline. This present instant 
-plays the role of irreversible transformer altering the future into past. The duration of an event is the length of a **windows time** 
+Here I am going to interpret the time like a **quantizable object** with an arbitrary windows in the **past, present or future**.
+The present moment is seen like a progressive cursor representing a dynamic **instant** on the **timeline**. This present instant 
+plays the role of irreversible transformer altering the future into past. The **duration** of an **event** is the length of a **windows time** 
 delimited by 2 instants where the event began and finished. For the following, when I speak about time, I refer to this **sliding windows**.
 
 {% include article-google-drawing.html title="Time vs Duration"
