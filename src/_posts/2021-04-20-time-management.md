@@ -332,13 +332,13 @@ Now I redo the same things for my personal activities, and my work activities to
 
 # Go Further
 
-This article is only an introduction of time management. But the situation can
-be **more complex**. For example, if you could need to think the time management for other people,
-if you are:
+This article is only an introduction of time management applied to oneself by onself. But the situation can
+be **more complex**. For example, if you think the time management for other people, if you are:
 
-* a **tech lead** for a team
-* a **manager** for a group of teams (called a department)
-* a **CEO** or a **CTO** for a group of departments ...
+* **Tech lead** for a team composed of a group of people
+* **Manager** for a departement composed of a group of teams
+* **CTO** for a R&D pole composed of departments
+* **CEO** for a company or a group of companies ...
 
 It requires delegating tasks, understanding the personal context of other people, and driving
 the time management for a group of people at **different scales**. These organizations can have
