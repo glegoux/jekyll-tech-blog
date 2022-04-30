@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2022-03-31T06:08:43+00:00</updated>
+ <updated>2022-04-30T04:04:39+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -1972,7 +1972,7 @@ If you do not know the users on this machine, you can do &lt;i&gt;ls /home&lt;/i
 &lt;p&gt;You can now turn on the computer normally and log in with the chosen user and password.&lt;/p&gt;
 
 &lt;pre class=&quot;error&quot;&gt;
-Beware the morality of this article is that a person physically accessing your computer does not need login /password to access your computer. If you want to protect yourself from this attack, you must &lt;b&gt;encrypt your hard drive&lt;/b&gt;.
+Beware the morality of this article is that a person physically accessing your computer does not need login/password to access your computer. If you want to protect yourself from this attack, you must &lt;b&gt;encrypt your hard drive&lt;/b&gt;.
 &lt;/pre&gt;
 
 &lt;p&gt;Well done :smile:!&lt;/p&gt;
