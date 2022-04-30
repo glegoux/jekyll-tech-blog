@@ -63,7 +63,7 @@ shutdown -h now
 You can now turn on the computer normally and log in with the chosen user and password.
 
 <pre class="error">
-Beware the morality of this article is that a person physically accessing your computer does not need login /password to access your computer. If you want to protect yourself from this attack, you must <b>encrypt your hard drive</b>.
+Beware the morality of this article is that a person physically accessing your computer does not need login/password to access your computer. If you want to protect yourself from this attack, you must <b>encrypt your hard drive</b>.
 </pre>
 
 Well done :smile:!
