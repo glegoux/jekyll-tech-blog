@@ -44,7 +44,7 @@
 
 {
 "title"       : "Unix timestamp",
-"description" : "What could happen in 2038?",
+"description" : "What could happen in 2038 with the Y2K38 problem?",
 "authors"     : "glegoux",
 "category"    : "Applied Mathematics",
 "tags"        : "Arithmetic",

@@ -5,8 +5,8 @@
     <description>Personal blog about software engineering</description>
     <link>https://glegoux.com/</link>
     <atom:link href="https://glegoux.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 14 Jul 2022 19:07:53 +0000</pubDate>
-    <lastBuildDate>Thu, 14 Jul 2022 19:07:53 +0000</lastBuildDate>
+    <pubDate>Thu, 14 Jul 2022 19:09:39 +0000</pubDate>
+    <lastBuildDate>Thu, 14 Jul 2022 19:09:39 +0000</lastBuildDate>
     <generator>Jekyll v4.2.1</generator>
     
       <item>
@@ -676,9 +676,7 @@ resolve your new needs for &lt;strong&gt;yourself&lt;/strong&gt; and for &lt;str
     
       <item>
         <title>Unix timestamp</title>
-        <description>&lt;h1 id=&quot;what-is-the-y2k38-problem&quot;&gt;What is the Y2K38 problem?&lt;/h1&gt;
-
-&lt;p&gt;2038 is a particular year when a informatics bug could occur, sometimes referred to as the &lt;strong&gt;Y2K38 problem&lt;/strong&gt;. 
+        <description>&lt;p&gt;In fact, 2038 is a particular year when a informatics bug could occur, sometimes referred to as the &lt;strong&gt;Y2K38 problem&lt;/strong&gt;. 
 Because an &lt;strong&gt;arithmetic overflow&lt;/strong&gt; on the Unix timestamp risks appearing, what it means, there are insufficient bits in a 
 binary number representation to portray the result of an arithmetic operation. For example, an arithmetic operation 
 is not closed with respect to addition, subtraction, multiplication, or division.&lt;/p&gt;
