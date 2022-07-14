@@ -128,40 +128,10 @@ layout: default
       </div>
     </div>
 
-    {%- assign article_cover_path = "/_static/posts/" | append: article_id | append: ".jpg" -%}
-    {%- assign article_cover_path_exist = site.static_files | where: "path", article_cover_path |
-    first -%}
-    {%- unless article_cover_path_exist -%}
-    {%- assign article_cover_path = "/_core/static/img/default/article-cover.jpg" -%}
-    {%- endunless -%}
-    <img class="img-fluid lazyload" data-src="{{ article_cover_path }}"
-         alt="{{ article_id }}" title="Cover of this article"/>
-
   </div>
 
   <!-- Article content -->
   <div id="article-content">
-
-    <div class="row no-print">
-      <div class="col-6">
-        {% include page-social-sharing.html %}
-      </div>
-      <div class="col-6 article-browser text-align-right">
-        <a href="/blog/articles" title="See all articles">
-          <i class="fas fa-home"></i>
-        </a>
-        {%- if page.previous.url -%}
-        <a href="{{ page.previous.url }}" title="See the previous article">
-          <i class="fas fa-arrow-left"></i>
-        </a>
-        {%- endif -%}
-        {%- if page.next.url -%}
-        <a href="{{ page.next.url }}" title="See the next article">
-          <i class="fas fa-arrow-right"></i>
-        </a>
-        {%- endif -%}
-      </div>
-    </div>
 
     <hr class="sep no-print"/>
 
