@@ -114,4 +114,3 @@ https://glegoux.com/about/    | 2017-08-17 | 36.36 | 40.18 |  88.57 | 69.23
 - [LightHouse Open Source Code](https://github.com/GoogleChrome/lighthouse)
 - [LightHouse as Google Chrome Extension](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en)
 - [LightHouse as NPM Javascript module](https://www.npmjs.com/package/lighthouse)
-- [LightHouse as NPM Javascript module](https://www.gitbook.com/book/google-developer-training/progressive-web-apps-ilt-codelabs)
