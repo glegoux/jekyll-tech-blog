@@ -7,27 +7,28 @@ category: "Applied Mathematics"
 ---
 
 Secret Santa is a traditional event in which each member of a group is randomly
-assigned a person to whom they give a gift. Imagine that you want to organize a 
-lunch with your family, friends or your work teammates before the end of year 
-celebrations: Christmas and New year. Why not do a Secret Santa? You notify your
-guests to choose a gift, and to keep it secret. And you want to attribute the gift 
-with a draw at the beginning of the lunch. But several questions are raised. 
-How to organize this draw? Will any guests bring the same type of gifts?
+paired to another member to whom they give a gift. Imagine that you want to 
+organize it. You notify your guests to choose a gift without knowming for whom and without
+saying what he/she chooses. And you want to attribute each gift to a person with a draw 
+at the beginning of your event. But several problems are raised, that can be answered 
+by applied mathematics. 
 
 # Hat-check problem
 
-Let's begin by the first question. Hopefully, each guest has well his/her gift. 
-Of course, the draw could have been done before, and moreover each guest could have 
-known for which guest was its gift. But you decided that it is funnier to do the draw 
-at the last moment without a mobile app, with a traditional way, a piece of 
-paper for each guest where its name is written, you mix it in a Christmas hat.
-Then each one chooses a piece of paper randomly without looking. And all ones 
-at the same time unfolds the piece of paper, and discover the name of the guest
-to whom he/she is offering his/her gift. Does a guest draw at random his/her name?
+Let's begin by a first problem. To whom each guest gives his/her gift. Let's suppose 
+each guest has well his/her gift for an unique other guest. Of course, the draw could 
+have been done before and kept secret. But you want to do the draw at the last moment 
+and simultaneously. That is to say, you write the name of each guest on a different 
+piece of paper for each one, you mix it in a Christmas hat. Then each one takes a piece 
+of paper randomly. And finally all ones at the same time unfolds the piece of paper, and 
+discover the name of the guest to whom he/she gives his/her gift.  
 
-You see that this concrete problem can be reformulate: Is there a least a fixed point
-in the permutation of a set with $n$ elements? It is the famous **hat-check problem**.
-You can use the probabilities to solve it.
+Does a guest draw at random his/her name? If it is the case, the suprise effect will be 
+broken, what would imply thant the draw should be redone or gifts should be exchanged. 
+
+This concrete problem can be reformulated: Is there a least a fixed point in the permutation 
+of a set with $n$ elements? It is the famous **hat-check problem**. You can use the 
+probabilities to solve it.
 
 The probability that at least one guest draws his/her name is the inverse of
 the probability that no one drawns his/her name, that is to say:
@@ -67,16 +68,16 @@ but all he has to do is redraw a paper then put the paper back with his/her name
 
 # Birthday paradox
 
-Knowing if 2 invites brings the same type of gift is equivalent to another famous problem
-the **birthday paradox**. The probability that 2 people were born on the same day
-in a group of people increases quickly in function of the size of this group. It
-becomes almost certain, that is to say more than $99\%$ of chance to be true for 
-a group of 60 people. 
+A second problem will to know if 2 invites brings the same type of gift. This one is 
+equivalent to another famous problem the **birthday paradox**. The probability that 
+2 people were born on the same day in a group of people increases quickly in function 
+of the size of this group. It becomes almost certain, that is to say more than $99\%$ 
+of chance to be true for a group of 60 people. 
 
 More generally, the probability that a subset of size $n$ of a set $E$ of size $N$
 contains at least 2 identical elements is:
 
-$$g_n = 1 - \frac{N}{N}\,\frac{N-1}{N}\,\frac{N-n+1}{N} = 1 - \dfrac{N!}{(N-n)!}\,\dfrac{1}{N^n}$$
+$$g_n = 1 - \frac{N}{N}\,\frac{N-1}{N}\,\cdots\,\frac{N-n+1}{N} = 1 - \dfrac{N!}{(N-n)!}\,\dfrac{1}{N^n}$$
 
 It is the inverse of the probability that no of $n$ elements be identical.
 
