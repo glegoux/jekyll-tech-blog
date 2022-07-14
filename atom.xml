@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2022-07-14T19:01:50+00:00</updated>
+ <updated>2022-07-14T19:07:53+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -1426,7 +1426,7 @@ jQuery(document).ready(function () {
    <link href="https://glegoux.com/blog/articles/2019/04/01/lighthouse.html"/>
    <updated>2019-04-01T00:00:00+00:00</updated>
    <id>https://glegoux.com/blog/articles/2019/04/01/lighthouse.html</id>
-   <content type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/GoogleChrome/lighthouse&quot;&gt;LightHouse&lt;/a&gt; is an automated tool for improving the quality of web pages by auditing and analyzing your web pages and give you metrics and advices. You can run it against any web page, public or requiring authentication. It creates reports for performance, accessibility, progressive web apps, and more. It is an &lt;a href=&quot;https://github.com/GoogleChrome/lighthouse&quot;&gt;open-source project&lt;/a&gt; written in Javascript.&lt;/p&gt;
+   <content type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/GoogleChrome/lighthouse&quot;&gt;Lighthouse&lt;/a&gt; is an automated tool for improving the quality of web pages by auditing and analyzing your web pages and give you metrics and advices. You can run it against any web page, public or requiring authentication. It creates reports for performance, accessibility, progressive web apps, and more. It is an &lt;a href=&quot;https://github.com/GoogleChrome/lighthouse&quot;&gt;open-source project&lt;/a&gt; written in Javascript.&lt;/p&gt;
 
 &lt;figure title=&quot;Logo of Lighthouse&quot;&gt;
   &lt;div&gt;
@@ -1437,7 +1437,7 @@ jQuery(document).ready(function () {
 
 &lt;p&gt;You can run Lighthouse as a &lt;a href=&quot;https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en&quot;&gt;Chrome Extension&lt;/a&gt;, from the command line, or as a &lt;a href=&quot;https://www.npmjs.com/package/lighthouse&quot;&gt;Node module&lt;/a&gt;. You give Lighthouse a URL to audit, it runs a series of audits against the page, and then it generates a report on how well the page did. From there, use the failing audits as indicators on how to improve the page. Each audit has a reference doc explaining why the audit is important, as well as how to fix it.&lt;/p&gt;
 
-&lt;h1 id=&quot;lighthouse-reports&quot;&gt;LightHouse reports&lt;/h1&gt;
+&lt;h1 id=&quot;lighthouse-reports&quot;&gt;Lighthouse reports&lt;/h1&gt;
 
 &lt;p&gt;The reports are divided into 4 categories:&lt;/p&gt;
 
@@ -1457,18 +1457,18 @@ jQuery(document).ready(function () {
   &lt;figcaption&gt;Lighthouse scores by report category&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;You can export report under HTML or JSON format, then import these format or see directly report due to &lt;a href=&quot;https://googlechrome.github.io/lighthouse/viewer/&quot;&gt;LightHouse Viewer&lt;/a&gt; (online version). You can install on-premises version directly from the &lt;a href=&quot;https://github.com/GoogleChrome/lighthouse/tree/master/lighthouse-viewer&quot;&gt;Git repository if LightHouse Viewer&lt;/a&gt; .&lt;/p&gt;
+&lt;p&gt;You can export report under HTML or JSON format, then import these format or see directly report due to &lt;a href=&quot;https://googlechrome.github.io/lighthouse/viewer/&quot;&gt;Lighthouse Viewer&lt;/a&gt; (online version). You can install on-premises version directly from the &lt;a href=&quot;https://github.com/GoogleChrome/lighthouse/tree/master/lighthouse-viewer&quot;&gt;Git repository if Lighthouse Viewer&lt;/a&gt; .&lt;/p&gt;
 
-&lt;figure title=&quot;Export, import and view LightHouse report&quot;&gt;
+&lt;figure title=&quot;Export, import and view Lighthouse report&quot;&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-04-01-lighthouse/images/export-import-view.jpg&quot; alt=&quot;Export, import and view LightHouse report&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-04-01-lighthouse/images/export-import-view.jpg&quot; alt=&quot;Export, import and view Lighthouse report&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;Export, import and view LightHouse report&lt;/figcaption&gt;
+  &lt;figcaption&gt;Export, import and view Lighthouse report&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;h1 id=&quot;lighthouse-workflow-and-architecture&quot;&gt;LightHouse workflow and architecture&lt;/h1&gt;
+&lt;h1 id=&quot;lighthouse-workflow-and-architecture&quot;&gt;Lighthouse workflow and architecture&lt;/h1&gt;
 
-&lt;p&gt;The workflow of LightHouse core is described by the following chart:&lt;/p&gt;
+&lt;p&gt;The workflow of Lighthouse core is described by the following chart:&lt;/p&gt;
 
 &lt;figure title=&quot;Architecture of Lighthouse Core&quot;&gt;
   &lt;div&gt;
@@ -1489,9 +1489,9 @@ jQuery(document).ready(function () {
   &lt;li&gt;&lt;strong&gt;lighthouse-viewer&lt;/strong&gt;: allows to see report in your web browser or to import reports under JSON or HTML format.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h1 id=&quot;lighthouse-installation&quot;&gt;LightHouse installation&lt;/h1&gt;
+&lt;h1 id=&quot;lighthouse-installation&quot;&gt;Lighthouse installation&lt;/h1&gt;
 
-&lt;p&gt;Before installing &lt;a href=&quot;https://github.com/GoogleChrome/lighthouse&quot;&gt;LightHouse&lt;/a&gt;, we must have and check the versions of your tools:&lt;/p&gt;
+&lt;p&gt;Before installing &lt;a href=&quot;https://github.com/GoogleChrome/lighthouse&quot;&gt;Lighthouse&lt;/a&gt;, we must have and check the versions of your tools:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://chromereleases.googleblog.com&quot;&gt;Google Chrome&lt;/a&gt; : &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;google-chrome --version&lt;/code&gt;&lt;/li&gt;
@@ -1514,7 +1514,7 @@ It has &lt;a href=&quot;https://www.chromium.org/getting-involved/dev-channel&qu
 
 &lt;h1 id=&quot;example&quot;&gt;Example&lt;/h1&gt;
 
-&lt;p&gt;For example, test LightHouse on this blog. Suppose that you have this file &lt;strong&gt;urls.txt&lt;/strong&gt; containing one URL per line:&lt;/p&gt;
+&lt;p&gt;For example, I tested Lighthouse on this blog. Suppose that you have this file &lt;strong&gt;urls.txt&lt;/strong&gt; containing one URL per line:&lt;/p&gt;
 
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://glegoux.com/
 https://glegoux.com/blog/
@@ -1619,9 +1619,9 @@ https://glegoux.com/contact/email/
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://developers.google.com/web/tools/lighthouse&quot;&gt;User Documentation&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/GoogleChrome/lighthouse&quot;&gt;LightHouse Open Source Code&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en&quot;&gt;LightHouse as Google Chrome Extension&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/lighthouse&quot;&gt;LightHouse as NPM Javascript module&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/GoogleChrome/lighthouse&quot;&gt;Lighthouse Open Source Code&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en&quot;&gt;Lighthouse as Google Chrome Extension&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/lighthouse&quot;&gt;Lighthouse as NPM Javascript module&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content><author>
        <name>glegoux</name>
