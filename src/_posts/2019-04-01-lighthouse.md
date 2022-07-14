@@ -29,7 +29,7 @@ You can export report under HTML or JSON format, then import these format or see
 
 {% include article-image.html title="Export, import and view Lighthouse report" src="export-import-view.jpg" %}
 
-# Lighthouse workflow and architecture
+# Lighthouse architecture
 
 The workflow of Lighthouse core is described by the following chart:
 
