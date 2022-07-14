@@ -54,77 +54,50 @@ layout: default
       {{ page.description }}
     </div>
 
-    <!-- Article details -->
-    <div class="article-details">
-      <ul>
-        <li title="Published date of this article">
-          <i class="far fa-calendar-alt"></i>
-          <span>{{ page.date | date: '%B %d, %Y' }}</span>
-        </li>
-        <li title="Reading time of this article">
-          <i class="far fa-clock"></i>
-          <span>
-            {{ page.time_reading_minutes }} min
-          </span>
-        </li>
-        {%- if n_authors > 0 -%}
-        <li title="Author{%- if n_authors > 1 -%}s{%- endif %} of this article">
-          <i class="far fa-user"></i>
-          <span>
-            {%- for author_name in page.authors -%}
-              {%- assign author = config_article.authors[author_name] -%}
-              <a class="link-strong" href="{{ author.follow_link }}" title="Follow this author">
-                {{ author_name }}
-              </a>
-              {%- unless forloop.last -%},  {%- endunless -%}
-            {%- endfor -%}
-          </span>
-        </li>
-        {%- endif -%}
-      </ul>
-    </div>
-
-    <!-- Article cover -->
-    <div class="article-cover" title="Cover of this article">
-      <div class="article-actions no-print">
-        <ul>
-          <li title="Print this article" style="cursor: pointer" onclick="window.print();">
-            <i class="fas fa-print"></i>
-            <span class="d-none d-md-inline">Print</span>
-          </li>
-          {%- if config_article.source_code.url -%}
-          <li title="See the source code of this article">
-            <a href="{{ config_article.source_code.url }}/{{ article_id }}.md">
-              <i class="far fa-file-code"></i>
-              <span class="d-none d-md-inline">Source</span>
-            </a>
-          </li>
-          {%- endif -%}
-          {%- if config_article.resources.url -%}
-          <li title="See the resources of this article">
-            <a href="{{ config_article.resources.url }}/{{ article_id }}">
-              <i class="fas fa-code-branch"></i>
-              <span class="d-none d-md-inline">Resources</span>
-            </a>
-          </li>
-          {%- endif -%}
-          {%- if config_article.edit.url -%}
-          <li title="Edit this article (if you have permission)">
-            <a href="{{ config_article.edit.url }}/{{ article_id }}.md">
-              <i class="fas fa-edit"></i>
-              <span class="d-none d-md-inline">Edit</span>
-            </a>
-          </li>
-          {%- endif -%}
-          {%- if config_article.issue.url -%}
-          <li title="Report an issue on this article">
-            <a href="{{ config_article.issue.url }}">
-              <i class="fas fa-exclamation-circle"></i>
-              <span class="d-none d-md-inline">Issue</span>
-            </a>
-          </li>
-          {%- endif -%}
-        </ul>
+    <div class="row">
+      <!-- Article details -->
+      <div class="col-8">
+        <div class="article-details">
+          <ul>
+            <li title="Published date of this article">
+              <i class="far fa-calendar-alt"></i>
+              <span>{{ page.date | date: '%B %d, %Y' }}</span>
+            </li>
+            <li title="Reading time of this article">
+              <i class="far fa-clock"></i>
+              <span>
+                {{ page.time_reading_minutes }} min
+              </span>
+            </li>
+            {%- if n_authors > 0 -%}
+            <li title="Author{%- if n_authors > 1 -%}s{%- endif %} of this article">
+              <i class="far fa-user"></i>
+              <span>
+                {%- for author_name in page.authors -%}
+                  {%- assign author = config_article.authors[author_name] -%}
+                  <a class="link-strong" href="{{ author.follow_link }}" title="Follow this author">
+                    {{ author_name }}
+                  </a>
+                  {%- unless forloop.last -%},  {%- endunless -%}
+                {%- endfor -%}
+              </span>
+            </li>
+            {%- endif -%}
+          </ul>
+        </div>
+      </div>
+      <!-- Article license -->
+      <div class="col-4">
+        <div class="article-license" title="See the license">
+          <a href="https://creativecommons.org/licenses/by-nc-sa/4.0">
+            <i class="cc notranslate"><span class="d-none d-md-inline">Creative Commons Attribution 4.0 International</span> License:</i>
+            <br/>
+            <i class="fab fa-creative-commons notranslate" title="CC"></i>
+            <i class="fab fa-creative-commons-by notranslate" title="BY"></i>
+            <i class="fab fa-creative-commons-nc notranslate" title="NC"></i>
+            <i class="fab fa-creative-commons-sa notranslate" title="SA"></i>
+          </a>
+        </div>
       </div>
     </div>
 
@@ -136,24 +109,11 @@ layout: default
     <hr class="sep no-print"/>
 
     <div class="row">
-      <div class="col-8">
+      <div class="col-12">
         <!-- Article table of contents -->
         <div id="table-of-contents" class="no-print" title="See or hide the table of contents">
           <i class="fas fa-list-ul"></i>
           Table of contents
-        </div>
-      </div>
-      <div class="col-4">
-        <!-- Article license -->
-        <div class="article-license" title="See the license">
-          <a href="https://creativecommons.org/licenses/by-nc-sa/4.0">
-            <i class="cc notranslate"><span class="d-none d-md-inline">Creative Commons Attribution 4.0 International</span> License:</i>
-            <br/>
-            <i class="fab fa-creative-commons notranslate" title="CC"></i>
-            <i class="fab fa-creative-commons-by notranslate" title="BY"></i>
-            <i class="fab fa-creative-commons-nc notranslate" title="NC"></i>
-            <i class="fab fa-creative-commons-sa notranslate" title="SA"></i>
-          </a>
         </div>
       </div>
     </div>
@@ -214,6 +174,48 @@ layout: default
     </div>
 
     <hr class="sep"/>
+
+    <!-- Article actions -->
+    <div class="article-actions no-print">
+      <ul>
+        <li title="Print this article" style="cursor: pointer" onclick="window.print();">
+          <i class="fas fa-print"></i>
+          <span class="d-none d-md-inline">Print</span>
+        </li>
+        {%- if config_article.source_code.url -%}
+        <li title="See the source code of this article">
+          <a href="{{ config_article.source_code.url }}/{{ article_id }}.md">
+            <i class="far fa-file-code"></i>
+            <span class="d-none d-md-inline">Source</span>
+          </a>
+        </li>
+        {%- endif -%}
+        {%- if config_article.resources.url -%}
+        <li title="See the resources of this article">
+          <a href="{{ config_article.resources.url }}/{{ article_id }}">
+            <i class="fas fa-code-branch"></i>
+            <span class="d-none d-md-inline">Resources</span>
+          </a>
+        </li>
+        {%- endif -%}
+        {%- if config_article.edit.url -%}
+        <li title="Edit this article (if you have permission)">
+          <a href="{{ config_article.edit.url }}/{{ article_id }}.md">
+            <i class="fas fa-edit"></i>
+            <span class="d-none d-md-inline">Edit</span>
+          </a>
+        </li>
+        {%- endif -%}
+        {%- if config_article.issue.url -%}
+        <li title="Report an issue on this article">
+          <a href="{{ config_article.issue.url }}">
+            <i class="fas fa-exclamation-circle"></i>
+            <span class="d-none d-md-inline">Issue</span>
+          </a>
+        </li>
+        {%- endif -%}
+      </ul>
+    </div>
 
     <!-- Article license -->
     <div class="article-license" title="See the license">
