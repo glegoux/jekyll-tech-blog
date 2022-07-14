@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2022-07-14T18:02:09+00:00</updated>
+ <updated>2022-07-14T18:33:24+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -244,19 +244,25 @@ versions would point to an identical state of the software.&lt;/p&gt;
    <link href="https://glegoux.com/blog/articles/2021/04/20/time-management.html"/>
    <updated>2021-04-20T00:00:00+00:00</updated>
    <id>https://glegoux.com/blog/articles/2021/04/20/time-management.html</id>
-   <content type="html">&lt;h1 id=&quot;what-is-the-time-management&quot;&gt;What is the time management?&lt;/h1&gt;
+   <content type="html">&lt;p&gt;You could need to &lt;strong&gt;optimize the spending of your time&lt;/strong&gt; for &lt;strong&gt;professional or personal activities&lt;/strong&gt;. 
+I am going to explain what means for me the time, and how you can manage it. I have been inspired by my
+knowledge, experiences, readings, and listenings, but it is my personal version of the time management 
+between math, physics, management, philosophy, and operational research. Without giving a lot of details, 
+the time management is also linked to the &lt;b&gt;agile methodology&lt;/b&gt; that is one implementation, 
+like &lt;b&gt;Scrum&lt;/b&gt;, &lt;b&gt;Kanban&lt;/b&gt; or &lt;b&gt;Pomodoro&lt;/b&gt;.&lt;/p&gt;
 
-&lt;p&gt;We are going to study the &lt;strong&gt;time management&lt;/strong&gt; applied for oneself by oneself. The time management is the science of the usage of time, a possible
-definition could be:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Time management is the process of planning and exercising conscious control of time spent on
-specific activities, especially to increase effectiveness, efficiency, and productivity.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;time management&lt;/strong&gt; is the science of the usage of time, a possible definition could be the process of planning and 
+exercising conscious control of time spent on specific activities, especially &lt;strong&gt;to increase effectiveness, efficiency, 
+and productivity&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;The way whose you can &lt;strong&gt;use your time&lt;/strong&gt; depends on a lot of things, among others there are your:&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://docs.google.com/drawings/d/e/2PACX-1vR9gDDDWTNK3btntBfhxsrL18EDGgytkOLDCS2yrgp8ZqxgvJQsCpnyWJwWT4cIk_8z0rLUn1iTS8cG/pub?w=600&amp;amp;h=348&quot; alt=&quot;Time Management&quot; title=&quot;Time Management&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;Time Management&lt;/figcaption&gt;
+&lt;/figure&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;context&lt;/strong&gt;:
@@ -287,25 +293,6 @@ auto-introspections, questionings, doubts…)&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;figure&gt;
-  &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://docs.google.com/drawings/d/e/2PACX-1vR9gDDDWTNK3btntBfhxsrL18EDGgytkOLDCS2yrgp8ZqxgvJQsCpnyWJwWT4cIk_8z0rLUn1iTS8cG/pub?w=600&amp;amp;h=348&quot; alt=&quot;Time Management&quot; title=&quot;Time Management&quot; /&gt;
-  &lt;/div&gt;
-  &lt;figcaption&gt;Time Management&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Now we have an overview of this dynamic system, understand that
-your &lt;strong&gt;time usage&lt;/strong&gt; is &lt;strong&gt;personal&lt;/strong&gt;. But you could need to &lt;strong&gt;optimize the spending of your time&lt;/strong&gt;
-for &lt;strong&gt;professional or personal activities&lt;/strong&gt;. I am going to explain what means for me the time, and how
-you can manage it. I have been inspired by my knowledge, experiences, readings, and listenings, but
-it is my personal version of the time management between math, physics, management, philosophy, and
-operational research.&lt;/p&gt;
-
-&lt;div class=&quot;info&quot;&gt;
-Without giving a lot of details, the time management is also linked to the &lt;b&gt;agile methodology&lt;/b&gt;
-that is one implementation, like &lt;b&gt;Scrum&lt;/b&gt;, &lt;b&gt;Kanban&lt;/b&gt; or &lt;b&gt;Pomodoro&lt;/b&gt;.
-&lt;/div&gt;
 
 &lt;h1 id=&quot;how-to-define-the-time&quot;&gt;How to define the time?&lt;/h1&gt;
 
