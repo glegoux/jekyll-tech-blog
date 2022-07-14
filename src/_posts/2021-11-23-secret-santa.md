@@ -6,12 +6,11 @@ time_reading_minutes: 5
 category: "Applied Mathematics"
 ---
 
-Secret Santa is a traditional event in which each member of a group is randomly
-paired to another member to whom they give a gift. Imagine that you want to 
-organize it. You notify your guests to choose a gift without knowming for whom and without
-saying what he/she chooses. And you want to attribute each gift to a person with a draw 
-at the beginning of your event. But several problems are raised, that can be answered 
-by applied mathematics. 
+Secret Santa is a traditional event in which each guest is randomly paired to another guest 
+to whom he/she gives a gift. Imagine that you want to organize it. You notify your guests 
+to choose a gift without knowing for whom and withoutsaying what he/she chooses. And you 
+would like to attribute each gift to a person with a draw at the beginning of your event. 
+But several problems are raised, that can be answered by applied mathematics. 
 
 # Hat-check problem
 
