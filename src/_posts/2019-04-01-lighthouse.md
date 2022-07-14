@@ -6,13 +6,13 @@ time_reading_minutes: 10
 category: "Web"
 ---
 
-[LightHouse](https://github.com/GoogleChrome/lighthouse) is an automated tool for improving the quality of web pages by auditing and analyzing your web pages and give you metrics and advices. You can run it against any web page, public or requiring authentication. It creates reports for performance, accessibility, progressive web apps, and more. It is an [open-source project](https://github.com/GoogleChrome/lighthouse) written in Javascript.
+[Lighthouse](https://github.com/GoogleChrome/lighthouse) is an automated tool for improving the quality of web pages by auditing and analyzing your web pages and give you metrics and advices. You can run it against any web page, public or requiring authentication. It creates reports for performance, accessibility, progressive web apps, and more. It is an [open-source project](https://github.com/GoogleChrome/lighthouse) written in Javascript.
 
 {% include article-image.html title="Logo of Lighthouse" src="lighthouse-logo.png" %}
 
 You can run Lighthouse as a [Chrome Extension](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en), from the command line, or as a [Node module](https://www.npmjs.com/package/lighthouse). You give Lighthouse a URL to audit, it runs a series of audits against the page, and then it generates a report on how well the page did. From there, use the failing audits as indicators on how to improve the page. Each audit has a reference doc explaining why the audit is important, as well as how to fix it.
 
-# LightHouse reports
+# Lighthouse reports
 
 The reports are divided into 4 categories:
 
@@ -25,13 +25,13 @@ The goal is to have a score of 100 for each category and for each web page of yo
 
 {% include article-image.html title="Lighthouse scores by report category" src="scores.png" %}
 
-You can export report under HTML or JSON format, then import these format or see directly report due to [LightHouse Viewer](https://googlechrome.github.io/lighthouse/viewer/) (online version). You can install on-premises version directly from the [Git repository if LightHouse Viewer](https://github.com/GoogleChrome/lighthouse/tree/master/lighthouse-viewer) .
+You can export report under HTML or JSON format, then import these format or see directly report due to [Lighthouse Viewer](https://googlechrome.github.io/lighthouse/viewer/) (online version). You can install on-premises version directly from the [Git repository if Lighthouse Viewer](https://github.com/GoogleChrome/lighthouse/tree/master/lighthouse-viewer) .
 
-{% include article-image.html title="Export, import and view LightHouse report" src="export-import-view.jpg" %}
+{% include article-image.html title="Export, import and view Lighthouse report" src="export-import-view.jpg" %}
 
-# LightHouse workflow and architecture
+# Lighthouse workflow and architecture
 
-The workflow of LightHouse core is described by the following chart:
+The workflow of Lighthouse core is described by the following chart:
 
 {% include article-image.html title="Architecture of Lighthouse Core" src="architecture.jpg" %}
 
@@ -45,9 +45,9 @@ The project [Lighthouse](https://github.com/GoogleChrome/lighthouse) has 5 main 
 4. **lighthouse-logger**: allows common logs.
 5. **lighthouse-viewer**: allows to see report in your web browser or to import reports under JSON or HTML format.
 
-# LightHouse installation
+# Lighthouse installation
 
-Before installing [LightHouse](https://github.com/GoogleChrome/lighthouse), we must have and check the versions of your tools:
+Before installing [Lighthouse](https://github.com/GoogleChrome/lighthouse), we must have and check the versions of your tools:
 
 - [Google Chrome](https://chromereleases.googleblog.com) : `google-chrome --version`
 - [Node](https://github.com/nodejs/node) : `node --version`
@@ -63,7 +63,7 @@ It has [4 versions](https://www.chromium.org/getting-involved/dev-channel) Stabl
 
 # Example
 
-For example, test LightHouse on this blog. Suppose that you have this file **urls.txt** containing one URL per line:
+For example, I tested Lighthouse on this blog. Suppose that you have this file **urls.txt** containing one URL per line:
 
 ~~~
 https://glegoux.com/
@@ -111,6 +111,6 @@ https://glegoux.com/about/    | 2017-08-17 | 36.36 | 40.18 |  88.57 | 69.23
 # References
 
 - [User Documentation](https://developers.google.com/web/tools/lighthouse)
-- [LightHouse Open Source Code](https://github.com/GoogleChrome/lighthouse)
-- [LightHouse as Google Chrome Extension](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en)
-- [LightHouse as NPM Javascript module](https://www.npmjs.com/package/lighthouse)
+- [Lighthouse Open Source Code](https://github.com/GoogleChrome/lighthouse)
+- [Lighthouse as Google Chrome Extension](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en)
+- [Lighthouse as NPM Javascript module](https://www.npmjs.com/package/lighthouse)
