@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2022-07-14T17:53:08+00:00</updated>
+ <updated>2022-07-14T17:57:08+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -13,12 +13,11 @@
    <link href="https://glegoux.com/blog/articles/2021/11/23/secret-santa.html"/>
    <updated>2021-11-23T00:00:00+00:00</updated>
    <id>https://glegoux.com/blog/articles/2021/11/23/secret-santa.html</id>
-   <content type="html">&lt;p&gt;Secret Santa is a traditional event in which each member of a group is randomly
-paired to another member to whom they give a gift. Imagine that you want to 
-organize it. You notify your guests to choose a gift without knowming for whom and without
-saying what he/she chooses. And you want to attribute each gift to a person with a draw 
-at the beginning of your event. But several problems are raised, that can be answered 
-by applied mathematics.&lt;/p&gt;
+   <content type="html">&lt;p&gt;Secret Santa is a traditional event in which each guest is randomly paired to another guest 
+to whom he/she gives a gift. Imagine that you want to organize it. You notify your guests 
+to choose a gift without knowing for whom and withoutsaying what he/she chooses. And you 
+would like to attribute each gift to a person with a draw at the beginning of your event. 
+But several problems are raised, that can be answered by applied mathematics.&lt;/p&gt;
 
 &lt;h1 id=&quot;hat-check-problem&quot;&gt;Hat-check problem&lt;/h1&gt;
 
