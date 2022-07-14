@@ -66,7 +66,7 @@ is a guest takes turns drawing randomly a piece of paper and giving the Christma
 the person whose name is on the paper. Only the first guest could be drawn his/her name, 
 but all he has to do is redraw a paper then put the paper back with his/her name.
 
-# Birthday paradox
+# Birthday problem
 
 A second problem will to know if 2 invites brings the same type of gift. This one is 
 equivalent to another famous problem the **birthday paradox**. The probability that 
