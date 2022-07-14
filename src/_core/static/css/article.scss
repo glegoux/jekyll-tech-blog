@@ -3,7 +3,6 @@
 #page-article {
 
   .article-metadata {
-    padding-bottom: 0.5em;
 
     ul {
       margin-bottom: 0 !important;
@@ -35,34 +34,29 @@
 
     }
 
-    .article-cover {
-      margin-top: 1em;
-      color: dimgrey;
-      font-weight: 300;
-      font-size: 0.8em;
-
-      .article-actions {
-        text-align: left;
-
-        ul {
-          margin-bottom: 0;
-
-          li {
-            display: inline;
-            margin-right: 1em;
-          }
-        }
-      }
-    }
-
   }
 
+  .article-actions {
+    color: dimgrey;
+    font-weight: 300;
+    font-size: 0.8em;
+    text-align: left;
+
+    ul {
+      margin-bottom: 0;
+
+      li {
+        display: inline;
+        margin-right: 1em;
+      }
+    }
+  }
 
   /* Table of contents */
 
   #table-of-contents {
     cursor:pointer;
-    margin-top: 0.5em;
+    margin-bottom: 1.5em;
   }
 
   #table-of-contents-container {
@@ -109,7 +103,8 @@
   /* Separator */
 
   hr.sep {
-    margin: 0;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
   }
 
   /* Article tags */
@@ -142,7 +137,6 @@
     text-align: right;
     width: 100%;
     font-size: 0.8em !important;
-    margin-bottom: 1em;
 
     span {
       display: inline-block;
