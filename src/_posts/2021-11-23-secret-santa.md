@@ -67,8 +67,8 @@ but all he has to do is redraw a paper then put the paper back with his/her name
 
 # Birthday problem
 
-A second problem will to know if 2 invites brings the same type of gift. This one is 
-equivalent to another famous problem the **birthday paradox**. The probability that 
+A second problem will be to know if 2 guests could bring the same type of gift. This one is 
+equivalent to another famous problem the **birthday problem**. The probability that 
 2 people were born on the same day in a group of people increases quickly in function 
 of the size of this group. It becomes almost certain, that is to say more than $99\%$ 
 of chance to be true for a group of 60 people. 
