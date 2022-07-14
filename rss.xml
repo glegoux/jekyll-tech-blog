@@ -5,8 +5,8 @@
     <description>Personal blog about software engineering</description>
     <link>https://glegoux.com/</link>
     <atom:link href="https://glegoux.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 14 Jul 2022 17:57:08 +0000</pubDate>
-    <lastBuildDate>Thu, 14 Jul 2022 17:57:08 +0000</lastBuildDate>
+    <pubDate>Thu, 14 Jul 2022 18:02:09 +0000</pubDate>
+    <lastBuildDate>Thu, 14 Jul 2022 18:02:09 +0000</lastBuildDate>
     <generator>Jekyll v4.2.1</generator>
     
       <item>
@@ -74,8 +74,8 @@ but all he has to do is redraw a paper then put the paper back with his/her name
 
 &lt;h1 id=&quot;birthday-problem&quot;&gt;Birthday problem&lt;/h1&gt;
 
-&lt;p&gt;A second problem will to know if 2 invites brings the same type of gift. This one is 
-equivalent to another famous problem the &lt;strong&gt;birthday paradox&lt;/strong&gt;. The probability that 
+&lt;p&gt;A second problem will be to know if 2 guests could bring the same type of gift. This one is 
+equivalent to another famous problem the &lt;strong&gt;birthday problem&lt;/strong&gt;. The probability that 
 2 people were born on the same day in a group of people increases quickly in function 
 of the size of this group. It becomes almost certain, that is to say more than $99\%$ 
 of chance to be true for a group of 60 people.&lt;/p&gt;
