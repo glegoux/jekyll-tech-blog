@@ -6,17 +6,22 @@ time_reading_minutes: 10
 category: "Methodology"
 ---
 
-# What is the time management?
+You could need to **optimize the spending of your time** for **professional or personal activities**. 
+I am going to explain what means for me the time, and how you can manage it. I have been inspired by my
+knowledge, experiences, readings, and listenings, but it is my personal version of the time management 
+between math, physics, management, philosophy, and operational research. Without giving a lot of details, 
+the time management is also linked to the <b>agile methodology</b> that is one implementation, 
+like <b>Scrum</b>, <b>Kanban</b> or <b>Pomodoro</b>. 
 
-We are going to study the **time management** applied for oneself by oneself. The time management is the science of the usage of time, a possible
-definition could be:
-
-> Time management is the process of planning and exercising conscious control of time spent on
-> specific activities, especially to increase effectiveness, efficiency, and productivity.
-
-&nbsp;
+The **time management** is the science of the usage of time, a possible definition could be the process of planning and 
+exercising conscious control of time spent on specific activities, especially **to increase effectiveness, efficiency, 
+and productivity**.
 
 The way whose you can **use your time** depends on a lot of things, among others there are your:
+
+{% include article-google-drawing.html title="Time Management"
+src="https://docs.google.com/drawings/d/e/2PACX-1vR9gDDDWTNK3btntBfhxsrL18EDGgytkOLDCS2yrgp8ZqxgvJQsCpnyWJwWT4cIk_8z0rLUn1iTS8cG/pub?w=600&h=348"
+%}
 
 * **context**:
     * which resources you have (knowledge, time, energy, money ...)
@@ -33,22 +38,6 @@ The way whose you can **use your time** depends on a lot of things, among others
     * how you have a projection & strategy coherent of yourself (clairvoyance, honesty, realism ...)
     * how you receive a critical opinion positive or negative on yourself (feedbacks,
       auto-introspections, questionings, doubts...)
-
-{% include article-google-drawing.html title="Time Management"
-src="https://docs.google.com/drawings/d/e/2PACX-1vR9gDDDWTNK3btntBfhxsrL18EDGgytkOLDCS2yrgp8ZqxgvJQsCpnyWJwWT4cIk_8z0rLUn1iTS8cG/pub?w=600&h=348"
-%}
-
-Now we have an overview of this dynamic system, understand that
-your **time usage** is **personal**. But you could need to **optimize the spending of your time**
-for **professional or personal activities**. I am going to explain what means for me the time, and how
-you can manage it. I have been inspired by my knowledge, experiences, readings, and listenings, but
-it is my personal version of the time management between math, physics, management, philosophy, and
-operational research.
-
-<div class="info">
-Without giving a lot of details, the time management is also linked to the <b>agile methodology</b>
-that is one implementation, like <b>Scrum</b>, <b>Kanban</b> or <b>Pomodoro</b>.
-</div>
 
 # How to define the time?
 
