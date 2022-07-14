@@ -5,8 +5,8 @@
     <description>Personal blog about software engineering</description>
     <link>https://glegoux.com/</link>
     <atom:link href="https://glegoux.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 14 Jul 2022 17:39:52 +0000</pubDate>
-    <lastBuildDate>Thu, 14 Jul 2022 17:39:52 +0000</lastBuildDate>
+    <pubDate>Thu, 14 Jul 2022 17:44:44 +0000</pubDate>
+    <lastBuildDate>Thu, 14 Jul 2022 17:44:44 +0000</lastBuildDate>
     <generator>Jekyll v4.2.1</generator>
     
       <item>
@@ -73,7 +73,7 @@ is a guest takes turns drawing randomly a piece of paper and giving the Christma
 the person whose name is on the paper. Only the first guest could be drawn his/her name, 
 but all he has to do is redraw a paper then put the paper back with his/her name.&lt;/p&gt;
 
-&lt;h1 id=&quot;birthday-paradox&quot;&gt;Birthday paradox&lt;/h1&gt;
+&lt;h1 id=&quot;birthday-problem&quot;&gt;Birthday problem&lt;/h1&gt;
 
 &lt;p&gt;A second problem will to know if 2 invites brings the same type of gift. This one is 
 equivalent to another famous problem the &lt;strong&gt;birthday paradox&lt;/strong&gt;. The probability that 
