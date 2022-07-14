@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2022-07-14T19:25:29+00:00</updated>
+ <updated>2022-07-14T23:02:13+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -1464,7 +1464,7 @@ jQuery(document).ready(function () {
   &lt;figcaption&gt;Export, import and view Lighthouse report&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;h1 id=&quot;lighthouse-workflow-and-architecture&quot;&gt;Lighthouse workflow and architecture&lt;/h1&gt;
+&lt;h1 id=&quot;lighthouse-architecture&quot;&gt;Lighthouse architecture&lt;/h1&gt;
 
 &lt;p&gt;The workflow of Lighthouse core is described by the following chart:&lt;/p&gt;
 
