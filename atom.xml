@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2022-07-14T19:01:26+00:00</updated>
+ <updated>2022-07-14T19:01:50+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -1622,7 +1622,6 @@ https://glegoux.com/contact/email/
   &lt;li&gt;&lt;a href=&quot;https://github.com/GoogleChrome/lighthouse&quot;&gt;LightHouse Open Source Code&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en&quot;&gt;LightHouse as Google Chrome Extension&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/lighthouse&quot;&gt;LightHouse as NPM Javascript module&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.gitbook.com/book/google-developer-training/progressive-web-apps-ilt-codelabs&quot;&gt;LightHouse as NPM Javascript module&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content><author>
        <name>glegoux</name>
