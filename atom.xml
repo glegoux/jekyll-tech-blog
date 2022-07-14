@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2022-07-14T18:37:24+00:00</updated>
+ <updated>2022-07-14T19:01:26+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -1426,7 +1426,7 @@ jQuery(document).ready(function () {
    <link href="https://glegoux.com/blog/articles/2019/04/01/lighthouse.html"/>
    <updated>2019-04-01T00:00:00+00:00</updated>
    <id>https://glegoux.com/blog/articles/2019/04/01/lighthouse.html</id>
-   <content type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/GoogleChrome/lighthouse/releases/tag/v5.6.0&quot;&gt;LightHouse 5.6.0&lt;/a&gt; is an &lt;a href=&quot;https://github.com/GoogleChrome/lighthouse&quot;&gt;open-source project&lt;/a&gt; written in Javascript and began in January 2016 under &lt;a href=&quot;https://github.com/GoogleChrome/lighthouse/blob/master/LICENSE&quot;&gt;Apache 2,0 License&lt;/a&gt;. On GitHub, it is a project of the Organisation &lt;a href=&quot;https://github.com/GoogleChrome&quot;&gt;Google Chrome&lt;/a&gt; knows a huge success and counts roughly 10,000 stars and 100 contributors. It is already stable, see  &lt;a href=&quot;https://github.com/GoogleChrome/lighthouse/releases/&quot;&gt;latest release&lt;/a&gt;. It is an automated tool for improving the quality of web pages. You can run it against any web page, public or requiring authentication. It has audits for performance, accessibility, progressive web apps, and more.&lt;/p&gt;
+   <content type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/GoogleChrome/lighthouse&quot;&gt;LightHouse&lt;/a&gt; is an automated tool for improving the quality of web pages by auditing and analyzing your web pages and give you metrics and advices. You can run it against any web page, public or requiring authentication. It creates reports for performance, accessibility, progressive web apps, and more. It is an &lt;a href=&quot;https://github.com/GoogleChrome/lighthouse&quot;&gt;open-source project&lt;/a&gt; written in Javascript.&lt;/p&gt;
 
 &lt;figure title=&quot;Logo of Lighthouse&quot;&gt;
   &lt;div&gt;
@@ -1437,7 +1437,9 @@ jQuery(document).ready(function () {
 
 &lt;p&gt;You can run Lighthouse as a &lt;a href=&quot;https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en&quot;&gt;Chrome Extension&lt;/a&gt;, from the command line, or as a &lt;a href=&quot;https://www.npmjs.com/package/lighthouse&quot;&gt;Node module&lt;/a&gt;. You give Lighthouse a URL to audit, it runs a series of audits against the page, and then it generates a report on how well the page did. From there, use the failing audits as indicators on how to improve the page. Each audit has a reference doc explaining why the audit is important, as well as how to fix it.&lt;/p&gt;
 
-&lt;p&gt;The rapport is divided into 4 categories:&lt;/p&gt;
+&lt;h1 id=&quot;lighthouse-reports&quot;&gt;LightHouse reports&lt;/h1&gt;
+
+&lt;p&gt;The reports are divided into 4 categories:&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;&lt;strong&gt;Progressive Web App&lt;/strong&gt;: tests if your app is corect progressive web app.&lt;/li&gt;
@@ -1464,7 +1466,9 @@ jQuery(document).ready(function () {
   &lt;figcaption&gt;Export, import and view LightHouse report&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;The work flow of LightHouse core is described by the following chart:&lt;/p&gt;
+&lt;h1 id=&quot;lighthouse-workflow-and-architecture&quot;&gt;LightHouse workflow and architecture&lt;/h1&gt;
+
+&lt;p&gt;The workflow of LightHouse core is described by the following chart:&lt;/p&gt;
 
 &lt;figure title=&quot;Architecture of Lighthouse Core&quot;&gt;
   &lt;div&gt;
@@ -1485,16 +1489,17 @@ jQuery(document).ready(function () {
   &lt;li&gt;&lt;strong&gt;lighthouse-viewer&lt;/strong&gt;: allows to see report in your web browser or to import reports under JSON or HTML format.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;Before installing &lt;a href=&quot;https://github.com/GoogleChrome/lighthouse/releases/tag/v2.4.0&quot;&gt;LightHouse 2.4.0&lt;/a&gt;, we must have:&lt;/p&gt;
+&lt;h1 id=&quot;lighthouse-installation&quot;&gt;LightHouse installation&lt;/h1&gt;
+
+&lt;p&gt;Before installing &lt;a href=&quot;https://github.com/GoogleChrome/lighthouse&quot;&gt;LightHouse&lt;/a&gt;, we must have and check the versions of your tools:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://releases.ubuntu.com/16.04/&quot;&gt; Ubtuntu Desktop 16.04 LTS+&lt;/a&gt; : &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cat /ect/issue&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://chromereleases.googleblog.com/2017/08/stable-channel-update-for-desktop.html&quot;&gt;Google Chrome 60.0.3112.90+&lt;/a&gt; : &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;google-chrome --version&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V6.md#6.11.2&quot;&gt;Node 6.11.2 LTS+&lt;/a&gt; : &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;node --version&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/npm/npm/releases/tag/v5.3.0&quot;&gt;NPM 5.3.0+&lt;/a&gt; : &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;npm --version&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://chromereleases.googleblog.com&quot;&gt;Google Chrome&lt;/a&gt; : &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;google-chrome --version&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/nodejs/node&quot;&gt;Node&lt;/a&gt; : &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;node --version&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/npm/cli&quot;&gt;NPM&lt;/a&gt; : &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;npm --version&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;As lighthouse is a very recent project, you can use &lt;a href=&quot;https://www.google.com/chrome/browser/canary.html&quot;&gt;Canary&lt;/a&gt; version for Google Chrome.&lt;/p&gt;
+&lt;p&gt;For the recent versions of lighthouse, you can use &lt;a href=&quot;https://www.google.com/chrome/browser/canary.html&quot;&gt;Canary&lt;/a&gt; version for Google Chrome.&lt;/p&gt;
 
 &lt;figure title=&quot;Google Chrome, Chromium and Canary version&quot;&gt;
   &lt;div&gt;
@@ -1506,6 +1511,8 @@ jQuery(document).ready(function () {
 &lt;p&gt;Reminder you in a nutshell that &lt;a href=&quot;https://www.google.com/chrome/browser&quot;&gt;Google Chrome&lt;/a&gt; is the &lt;a href=&quot;https://github.com/chromium/chromium&quot;&gt;Chromium&lt;/a&gt; open source project built, packaged, 
 and distributed by Google. You can see a few &lt;a href=&quot;https://chromium.googlesource.com/chromium/src/+/master/docs/chromium_browser_vs_google_chrome.md&quot;&gt;differences&lt;/a&gt; . 
 It has &lt;a href=&quot;https://www.chromium.org/getting-involved/dev-channel&quot;&gt;4 versions&lt;/a&gt; Stable, Beta, Dev, Canary for MAC, Windows and Linux for desktops and Android, iOS for smart phones and tablets.&lt;/p&gt;
+
+&lt;h1 id=&quot;example&quot;&gt;Example&lt;/h1&gt;
 
 &lt;p&gt;For example, test LightHouse on this blog. Suppose that you have this file &lt;strong&gt;urls.txt&lt;/strong&gt; containing one URL per line:&lt;/p&gt;
 
@@ -1608,7 +1615,7 @@ https://glegoux.com/contact/email/
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;p&gt;&lt;strong&gt;References&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&quot;references&quot;&gt;References&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://developers.google.com/web/tools/lighthouse&quot;&gt;User Documentation&lt;/a&gt;&lt;/li&gt;

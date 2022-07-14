@@ -349,7 +349,7 @@ window.MathJax = {
     <div id="table-of-contents-container" style="display: none;"></div>
 
     <div class="markdown-body">
-      <p><a href="https://github.com/GoogleChrome/lighthouse/releases/tag/v5.6.0">LightHouse 5.6.0</a> is an <a href="https://github.com/GoogleChrome/lighthouse">open-source project</a> written in Javascript and began in January 2016 under <a href="https://github.com/GoogleChrome/lighthouse/blob/master/LICENSE">Apache 2,0 License</a>. On GitHub, it is a project of the Organisation <a href="https://github.com/GoogleChrome">Google Chrome</a> knows a huge success and counts roughly 10,000 stars and 100 contributors. It is already stable, see  <a href="https://github.com/GoogleChrome/lighthouse/releases/">latest release</a>. It is an automated tool for improving the quality of web pages. You can run it against any web page, public or requiring authentication. It has audits for performance, accessibility, progressive web apps, and more.</p>
+      <p><a href="https://github.com/GoogleChrome/lighthouse">LightHouse</a> is an automated tool for improving the quality of web pages by auditing and analyzing your web pages and give you metrics and advices. You can run it against any web page, public or requiring authentication. It creates reports for performance, accessibility, progressive web apps, and more. It is an <a href="https://github.com/GoogleChrome/lighthouse">open-source project</a> written in Javascript.</p>
 
 <figure title="Logo of Lighthouse">
   <div>
@@ -360,7 +360,9 @@ window.MathJax = {
 
 <p>You can run Lighthouse as a <a href="https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en">Chrome Extension</a>, from the command line, or as a <a href="https://www.npmjs.com/package/lighthouse">Node module</a>. You give Lighthouse a URL to audit, it runs a series of audits against the page, and then it generates a report on how well the page did. From there, use the failing audits as indicators on how to improve the page. Each audit has a reference doc explaining why the audit is important, as well as how to fix it.</p>
 
-<p>The rapport is divided into 4 categories:</p>
+<h1 id="lighthouse-reports">LightHouse reports</h1>
+
+<p>The reports are divided into 4 categories:</p>
 
 <ol>
   <li>
@@ -391,7 +393,9 @@ window.MathJax = {
   <figcaption>Export, import and view LightHouse report</figcaption>
 </figure>
 
-<p>The work flow of LightHouse core is described by the following chart:</p>
+<h1 id="lighthouse-workflow-and-architecture">LightHouse workflow and architecture</h1>
+
+<p>The workflow of LightHouse core is described by the following chart:</p>
 
 <figure title="Architecture of Lighthouse Core">
   <div>
@@ -417,24 +421,23 @@ window.MathJax = {
 <strong>lighthouse-viewer</strong>: allows to see report in your web browser or to import reports under JSON or HTML format.</li>
 </ol>
 
-<p>Before installing <a href="https://github.com/GoogleChrome/lighthouse/releases/tag/v2.4.0">LightHouse 2.4.0</a>, we must have:</p>
+<h1 id="lighthouse-installation">LightHouse installation</h1>
+
+<p>Before installing <a href="https://github.com/GoogleChrome/lighthouse">LightHouse</a>, we must have and check the versions of your tools:</p>
 
 <ul>
   <li>
-<a href="http://releases.ubuntu.com/16.04/"> Ubtuntu Desktop 16.04 LTS+</a> : <code class="language-plaintext highlighter-rouge">cat /ect/issue</code>
+<a href="https://chromereleases.googleblog.com">Google Chrome</a> : <code class="language-plaintext highlighter-rouge">google-chrome --version</code>
 </li>
   <li>
-<a href="https://chromereleases.googleblog.com/2017/08/stable-channel-update-for-desktop.html">Google Chrome 60.0.3112.90+</a> : <code class="language-plaintext highlighter-rouge">google-chrome --version</code>
+<a href="https://github.com/nodejs/node">Node</a> : <code class="language-plaintext highlighter-rouge">node --version</code>
 </li>
   <li>
-<a href="https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V6.md#6.11.2">Node 6.11.2 LTS+</a> : <code class="language-plaintext highlighter-rouge">node --version</code>
-</li>
-  <li>
-<a href="https://github.com/npm/npm/releases/tag/v5.3.0">NPM 5.3.0+</a> : <code class="language-plaintext highlighter-rouge">npm --version</code>
+<a href="https://github.com/npm/cli">NPM</a> : <code class="language-plaintext highlighter-rouge">npm --version</code>
 </li>
 </ul>
 
-<p>As lighthouse is a very recent project, you can use <a href="https://www.google.com/chrome/browser/canary.html">Canary</a> version for Google Chrome.</p>
+<p>For the recent versions of lighthouse, you can use <a href="https://www.google.com/chrome/browser/canary.html">Canary</a> version for Google Chrome.</p>
 
 <figure title="Google Chrome, Chromium and Canary version">
   <div>
@@ -446,6 +449,8 @@ window.MathJax = {
 <p>Reminder you in a nutshell that <a href="https://www.google.com/chrome/browser">Google Chrome</a> is the <a href="https://github.com/chromium/chromium">Chromium</a> open source project built, packaged, 
 and distributed by Google. You can see a few <a href="https://chromium.googlesource.com/chromium/src/+/master/docs/chromium_browser_vs_google_chrome.md">differences</a> . 
 It has <a href="https://www.chromium.org/getting-involved/dev-channel">4 versions</a> Stable, Beta, Dev, Canary for MAC, Windows and Linux for desktops and Android, iOS for smart phones and tablets.</p>
+
+<h1 id="example">Example</h1>
 
 <p>For example, test LightHouse on this blog. Suppose that you have this file <strong>urls.txt</strong> containing one URL per line:</p>
 
@@ -548,7 +553,7 @@ https://glegoux.com/contact/email/
   </tbody>
 </table>
 
-<p><strong>References</strong></p>
+<h1 id="references">References</h1>
 
 <ul>
   <li><a href="https://developers.google.com/web/tools/lighthouse">User Documentation</a></li>
@@ -736,105 +741,23 @@ https://glegoux.com/contact/email/
     <h5>Also read</h5>
 
     <div class="row">
-<a href="/blog/articles/2019/05/24/java-champion.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
+<a href="/blog/articles/2019/03/01/access-to-a-computer-from-usb-key.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/posts/2019-05-24-java-champion.jpg" alt="2019-05-24-java-champion">
+        <img class="img-fluid lazyload" data-src="/_static/posts/2019-03-01-access-to-a-computer-from-usb-key.jpg" alt="2019-03-01-access-to-a-computer-from-usb-key">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          Java champion
+          Access to a computer from USB key
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          How to become a Java champion?
-        </div>
-
-        <!-- Article categories -->
-        <div class="article-category">
-          <ul>
-            <li>Development</li>
-          </ul>
-        </div>
-
-        <!-- Article publication date -->
-        <div class="date">
-          <i class="far fa-calendar-alt"></i>
-          <span>May 24, 2019</span>
-        </div>
-        <!-- Article reading time -->
-        <div class="reading-time">
-          <i class="far fa-clock"></i>
-          <span>1 min</span>
-        </div>
-      </div>
-
-    </div>
-</div>
-
-</a><a href="/blog/articles/2020/05/04/java-ecosystem.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
-    <!-- Article metadata -->
-    <div class="article-card">
-<!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/posts/2020-05-04-java-ecosystem.jpg" alt="2020-05-04-java-ecosystem">
-      </div>
-
-      <!-- Article details -->
-      <div class="article-details">
-        <!-- Article title -->
-        <div class="article-title">
-          Java ecosystem
-        </div>
-
-        <!-- Article description -->
-        <div class="article-description">
-          What is the Java ecosystem from Sun to Oracle?
-        </div>
-
-        <!-- Article categories -->
-        <div class="article-category">
-          <ul>
-            <li>Development</li>
-          </ul>
-        </div>
-
-        <!-- Article publication date -->
-        <div class="date">
-          <i class="far fa-calendar-alt"></i>
-          <span>May 04, 2020</span>
-        </div>
-        <!-- Article reading time -->
-        <div class="reading-time">
-          <i class="far fa-clock"></i>
-          <span>10 min</span>
-        </div>
-      </div>
-
-    </div>
-</div>
-
-</a><a href="/blog/articles/2020/05/15/gnu-privacy-guard.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
-    <!-- Article metadata -->
-    <div class="article-card">
-<!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/posts/2020-05-15-gnu-privacy-guard.jpg" alt="2020-05-15-gnu-privacy-guard">
-      </div>
-
-      <!-- Article details -->
-      <div class="article-details">
-        <!-- Article title -->
-        <div class="article-title">
-          GNU privacy guard
-        </div>
-
-        <!-- Article description -->
-        <div class="article-description">
-          How to prove its identity and encrypt its communication?
+          Somebody with USB key can take control of your computer
         </div>
 
         <!-- Article categories -->
@@ -847,7 +770,89 @@ https://glegoux.com/contact/email/
         <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>May 15, 2020</span>
+          <span>March 01, 2019</span>
+        </div>
+        <!-- Article reading time -->
+        <div class="reading-time">
+          <i class="far fa-clock"></i>
+          <span>5 min</span>
+        </div>
+      </div>
+
+    </div>
+</div>
+
+</a><a href="/blog/articles/2019/02/14/how-to-quote-sources.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
+    <!-- Article metadata -->
+    <div class="article-card">
+<!-- Article cover --><div class="article-cover">
+        <img class="img-fluid lazyload" data-src="/_static/posts/2019-02-14-how-to-quote-sources.jpg" alt="2019-02-14-how-to-quote-sources">
+      </div>
+
+      <!-- Article details -->
+      <div class="article-details">
+        <!-- Article title -->
+        <div class="article-title">
+          How to quote sources
+        </div>
+
+        <!-- Article description -->
+        <div class="article-description">
+          Current standards and rules to respect in order to quote sources.
+        </div>
+
+        <!-- Article categories -->
+        <div class="article-category">
+          <ul>
+            <li>Methodology</li>
+          </ul>
+        </div>
+
+        <!-- Article publication date -->
+        <div class="date">
+          <i class="far fa-calendar-alt"></i>
+          <span>February 14, 2019</span>
+        </div>
+        <!-- Article reading time -->
+        <div class="reading-time">
+          <i class="far fa-clock"></i>
+          <span>5 min</span>
+        </div>
+      </div>
+
+    </div>
+</div>
+
+</a><a href="/blog/articles/2020/11/28/unix-timestamp.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
+    <!-- Article metadata -->
+    <div class="article-card">
+<!-- Article cover --><div class="article-cover">
+        <img class="img-fluid lazyload" data-src="/_static/posts/2020-11-28-unix-timestamp.jpg" alt="2020-11-28-unix-timestamp">
+      </div>
+
+      <!-- Article details -->
+      <div class="article-details">
+        <!-- Article title -->
+        <div class="article-title">
+          Unix timestamp
+        </div>
+
+        <!-- Article description -->
+        <div class="article-description">
+          What could happen in 2038?
+        </div>
+
+        <!-- Article categories -->
+        <div class="article-category">
+          <ul>
+            <li>Applied Mathematics</li>
+          </ul>
+        </div>
+
+        <!-- Article publication date -->
+        <div class="date">
+          <i class="far fa-calendar-alt"></i>
+          <span>November 28, 2020</span>
         </div>
         <!-- Article reading time -->
         <div class="reading-time">
