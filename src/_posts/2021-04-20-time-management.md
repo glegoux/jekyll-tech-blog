@@ -17,11 +17,11 @@ The **time management** is the science of the usage of time, a possible definiti
 exercising conscious control of time spent on specific activities, especially **to increase effectiveness, efficiency, 
 and productivity**.
 
-The way whose you can **use your time** depends on a lot of things, among others there are your:
-
 {% include article-google-drawing.html title="Time Management"
 src="https://docs.google.com/drawings/d/e/2PACX-1vR9gDDDWTNK3btntBfhxsrL18EDGgytkOLDCS2yrgp8ZqxgvJQsCpnyWJwWT4cIk_8z0rLUn1iTS8cG/pub?w=600&h=348"
 %}
+
+The way whose you can **use your time** depends on a lot of things, among others there are your:
 
 * **context**:
     * which resources you have (knowledge, time, energy, money ...)
