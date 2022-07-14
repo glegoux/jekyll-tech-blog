@@ -1,15 +1,13 @@
 ---
 title: "Unix timestamp"
-description: "What could happen in 2038?"
+description: "What could happen in 2038 with the Y2K38 problem?"
 authors: ["glegoux"]
 time_reading_minutes: 5
 category: "Applied Mathematics"
 tags: ["Arithmetic"]
 ---
 
-# What is the Y2K38 problem? 
-
-2038 is a particular year when a informatics bug could occur, sometimes referred to as the **Y2K38 problem**. 
+In fact, 2038 is a particular year when a informatics bug could occur, sometimes referred to as the **Y2K38 problem**. 
 Because an **arithmetic overflow** on the Unix timestamp risks appearing, what it means, there are insufficient bits in a 
 binary number representation to portray the result of an arithmetic operation. For example, an arithmetic operation 
 is not closed with respect to addition, subtraction, multiplication, or division.  
