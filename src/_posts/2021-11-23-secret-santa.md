@@ -23,8 +23,8 @@ piece of paper for each one, you mix it in a Christmas hat. Then each one takes 
 of paper randomly. And finally all ones at the same time unfolds the piece of paper, and 
 discover the name of the guest to whom he/she gives his/her gift.  
 
-Does a guest draw at random his/her name? If it is the case, the suprise effect will be 
-broken, what would imply thant the draw should be redone or gifts should be exchanged. 
+Does a guest draw at random his/her name? If it is the case, the surprise effect will be 
+broken, and what would imply to redo the draw or to exchange gifts. What we want to avoid.
 
 This concrete problem can be reformulated: Is there a least a fixed point in the permutation 
 of a set with $n$ elements? It is the famous **hat-check problem**. You can use the 
