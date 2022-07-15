@@ -10,8 +10,8 @@ You could need to **optimize the spending of your time** for **professional or p
 I am going to explain what means for me the time, and how you can manage it. I have been inspired by my
 knowledge, experiences, readings, and listenings, but it is my personal version of the time management 
 between math, physics, management, philosophy, and operational research. Without giving a lot of details, 
-the time management is also linked to the <b>agile methodology</b> that is one implementation, 
-like <b>Scrum</b>, <b>Kanban</b> or <b>Pomodoro</b>. 
+the time management is also linked to the **agile methodologies** that is one implementation, 
+like **Scrum**, **Kanban** or **Pomodoro**. 
 
 The **time management** is the science of the usage of time, a possible definition could be the process of planning and 
 exercising conscious control of time spent on specific activities, especially **to increase effectiveness, efficiency, 
