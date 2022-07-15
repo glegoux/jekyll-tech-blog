@@ -5,8 +5,8 @@
     <description>Personal blog about software engineering</description>
     <link>https://glegoux.com/</link>
     <atom:link href="https://glegoux.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 15 Jul 2022 00:14:26 +0000</pubDate>
-    <lastBuildDate>Fri, 15 Jul 2022 00:14:26 +0000</lastBuildDate>
+    <pubDate>Fri, 15 Jul 2022 00:16:05 +0000</pubDate>
+    <lastBuildDate>Fri, 15 Jul 2022 00:16:05 +0000</lastBuildDate>
     <generator>Jekyll v4.2.1</generator>
     
       <item>
@@ -250,8 +250,8 @@ versions would point to an identical state of the software.&lt;/p&gt;
 I am going to explain what means for me the time, and how you can manage it. I have been inspired by my
 knowledge, experiences, readings, and listenings, but it is my personal version of the time management 
 between math, physics, management, philosophy, and operational research. Without giving a lot of details, 
-the time management is also linked to the &lt;b&gt;agile methodology&lt;/b&gt; that is one implementation, 
-like &lt;b&gt;Scrum&lt;/b&gt;, &lt;b&gt;Kanban&lt;/b&gt; or &lt;b&gt;Pomodoro&lt;/b&gt;.&lt;/p&gt;
+the time management is also linked to the &lt;strong&gt;agile methodologies&lt;/strong&gt; that is one implementation, 
+like &lt;strong&gt;Scrum&lt;/strong&gt;, &lt;strong&gt;Kanban&lt;/strong&gt; or &lt;strong&gt;Pomodoro&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;The &lt;strong&gt;time management&lt;/strong&gt; is the science of the usage of time, a possible definition could be the process of planning and 
 exercising conscious control of time spent on specific activities, especially &lt;strong&gt;to increase effectiveness, efficiency, 
