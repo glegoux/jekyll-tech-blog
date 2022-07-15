@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2022-07-15T00:09:48+00:00</updated>
+ <updated>2022-07-15T00:14:26+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -672,7 +672,7 @@ resolve your new needs for &lt;strong&gt;yourself&lt;/strong&gt; and for &lt;str
    <link href="https://glegoux.com/blog/articles/2020/11/28/unix-timestamp.html"/>
    <updated>2020-11-28T00:00:00+00:00</updated>
    <id>https://glegoux.com/blog/articles/2020/11/28/unix-timestamp.html</id>
-   <content type="html">&lt;p&gt;In fact, 2038 is a particular year when a informatics bug could occur, sometimes referred to as the &lt;strong&gt;Y2K38 problem&lt;/strong&gt;. 
+   <content type="html">&lt;p&gt;In fact, 2038 is a particular year when an informatics bug could occur, sometimes referred as the &lt;strong&gt;Y2K38 problem&lt;/strong&gt;. 
 Because an &lt;strong&gt;arithmetic overflow&lt;/strong&gt; on the Unix timestamp risks appearing, what it means, there are insufficient bits in a 
 binary number representation to portray the result of an arithmetic operation. For example, an arithmetic operation 
 is not closed with respect to addition, subtraction, multiplication, or division.&lt;/p&gt;
