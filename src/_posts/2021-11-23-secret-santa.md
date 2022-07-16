@@ -6,38 +6,39 @@ time_reading_minutes: 5
 category: "Applied Mathematics"
 ---
 
-Secret Santa is a traditional event in which each guest is randomly paired to another guest 
-to whom he/she gives a gift. Imagine that you want to organize it. You notify your guests 
-to choose a gift without knowing for whom and withoutsaying what he/she chooses. And you 
-would like to attribute each gift to a person with a draw at the beginning of your event. 
-But several problems are raised, that can be answered by applied mathematics. 
+Secret Santa is a traditional event in which each guest gives a gift to another guest 
+without knowing to whom. Imagine that you want to organize it. You notify your guests 
+to choose a gift by keeping it secret. And you would like to attribute each gift to 
+a guest with a draw at the beginning of your event. But several problems are raised, 
+that can be answered by applied mathematics. 
 
 # Hat-check problem
 
-Let's begin by a first problem. To whom each guest gives his/her gift. Let's suppose 
-each guest has well his/her gift for an unique other guest. Of course, the draw could 
+Let's begin by a first problem: to whom each guest gives his/her gift. Let's suppose 
+each guest has well his/her gift for a unique other guest. Of course, the draw could 
 have been done before and kept secret. But you want to do the draw at the last moment 
-and simultaneously. That is to say, you write the name of each guest on a different 
-piece of paper for each one, you mix it in a Christmas hat. Then each one takes a piece 
-of paper randomly. And finally all ones at the same time unfolds the piece of paper, and 
-discover the name of the guest to whom he/she gives his/her gift.  
+and by revealing simultaneously who gives his/her gift to whom. That is to say, you 
+write the name of each guest on a different piece of paper for each one, you mix it in 
+a Christmas hat. Then each one takes a piece of paper randomly. And finally all ones at 
+the same time unfolds the piece of paper, and discover the name of the guest to whom 
+he/she gives his/her gift.  
 
-Does a guest draw at random his/her name? If it is the case, the surprise effect will be 
-broken, and what would imply to redo the draw or to exchange gifts. What we want to avoid.
+Will a guest draw at random his/her name? If it is the case, the surprise effect will be 
+broken for him/her, and what would imply to redo the draw or to exchange gifts. What we 
+want to avoid.
 
 This concrete problem can be reformulated: Is there a least a fixed point in the permutation 
-of a set with $n$ elements? It is the famous **hat-check problem**. You can use the 
-probabilities to solve it.
+of a set with $n$ elements? Where $n$ is the number of guests. It is the famous **hat-check problem**. 
+You can use the probabilities to solve it.
 
 The probability that at least one guest draws his/her name is the inverse of
 the probability that no one drawns his/her name, that is to say:
 
 $$p_n =  1 - \dfrac{\mathcal{D}_{n}}{n!} = 1 - u_n$$
 
-where $n$ is the number of guests, $\mathcal{D}_{n}$ is the number of derangements, 
-that is to say the number of permutations without fixed points, knowing that $n!$
-is the number of permutation with $n$ elements. You can prove with the **inclusion–exclusion 
-generalized principle** that:
+$\mathcal{D}_{n}$ is the number of derangements, that is to say the number of permutations 
+without fixed points, knowing that $n!$ is the number of permutation with $n$ elements. 
+You can prove with the **inclusion–exclusion generalized principle** that:
 
 $$\mathcal{D}_{n} = n! \sum_{k=0}^{n} \dfrac{(-1)^k}{k!}$$
 
