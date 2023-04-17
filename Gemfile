@@ -16,7 +16,7 @@ end
 
 # Others gems
 gem "addressable", ">= 2.8.0"
-gem "rack", ">= 2.1.4"
+gem "rack", ">= 3.0.7"
 gem "kramdown", ">= 2.3.1"
 gem 'liquid', '4.0.4'
 gem 'minima', '2.5.1'

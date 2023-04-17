@@ -117,7 +117,7 @@ DEPENDENCIES
   liquid (= 4.0.4)
   minima (= 2.5.1)
   nokogiri (>= 1.12.5)
-  rack (>= 2.1.4)
+  rack (>= 3.0.7)
   rouge (= 3.0)
   safe_yaml (= 1.0.5)
   webrick (~> 1.7)
