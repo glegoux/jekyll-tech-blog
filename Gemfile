@@ -2,7 +2,7 @@
 source 'https://rubygems.org'
 ruby File.read('.ruby-version', mode: 'rb').chomp
 
-gem 'jekyll', '4.2.1'
+gem 'jekyll', '4.3.2'
 
 # Jekyll plugins
 group :jekyll_plugins do
@@ -18,7 +18,7 @@ end
 gem "addressable", ">= 2.8.0"
 gem "rack", ">= 2.1.4"
 gem "kramdown", ">= 2.3.1"
-gem 'liquid', '4.0.3'
+gem 'liquid', '4.0.4'
 gem 'minima', '2.5.1'
 gem "nokogiri", ">= 1.12.5"
 gem 'rouge', '3.0'
