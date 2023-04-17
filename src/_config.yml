@@ -43,16 +43,6 @@ project:
       - name: "Contact"
         link: "/contact/"
         class_icon: "fas fa-address-card"
-    lang:
-      header_text: "Translates from English"
-      original:
-        code: "en"
-        display_name: "English"
-      others:
-        - code: "zh-CN"
-          display_name: "中文"
-        - code: "fr"
-          display_name: "Français"
     title: "Software Engineering"
     keywords: [ "Research", "Development", "Algorithm", "Data", "Machine Learning", "Web", "Security", "Applied Mathematics", "Reliability", "Infrastructure", "Design", "System", "Methodology", "Business" ]
     socials:
