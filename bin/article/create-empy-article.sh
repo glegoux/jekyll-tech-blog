@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
-#
-# Create an article according
 
 cd $(dirname "$0")
 
