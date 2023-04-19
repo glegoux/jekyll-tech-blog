@@ -373,14 +373,14 @@ window.MathJax = {
       <p>Imagine that you are in one of the following situations:</p>
 
 <ol>
-  <li>You have forgotten your password to connect to personal workspace of your computer, but you want reset it.</li>
-  <li>After a wrong manipulation, you can not access to personal data of your computer, but you want retrieve this access.</li>
-  <li>You found a computer without supervision whom you are not the owner, but you want see the content of the file system.</li>
+  <li>You have forgotten your password to connect to the personal workspace of your computer, and you want to reset it.</li>
+  <li>After a wrong manipulation, you can not access to personal data of your computer, and you want to retrieve this access.</li>
+  <li>You found a computer without supervision for whom you are not the owner but want to see the file system’s content.</li>
 </ol>
 
 <p>With a bootable USB key on Ubuntu, you can resolve these situations, first by mounting the file system of the targeted computer with all permissions, then by changing the password of any local user, and finally by connecting to the targeted workspace and exploring the file system.</p>
 
-<p>First, plug your USB drive into the target computer, choose your key as the boot device for the target computer to boot to the Ubuntu system on your USB drive. On a DELL computer, press <code class="language-plaintext highlighter-rouge">F12</code> to access this selection. This information is visible on the welcome screen of the manufacturer of your computer.</p>
+<p>First, plug your USB drive into the target computer, and choose your key as the boot device for the target computer to boot to the Ubuntu system on your USB drive. On a DELL computer, press <code class="language-plaintext highlighter-rouge">F12</code> to access this selection. This information is visible on the welcome screen of your computer’s manufacturer.</p>
 
 <figure title="DELL welcome screen">
   <div>
@@ -422,7 +422,7 @@ window.MathJax = {
 If you need to access the internet, select the network entry before. To verify that you have access to the web you can <i>ping 8.8.8.8</i> on the Google DNS server, then make <i>nslookup  8.8.8.8</i> to check that the DNS resolution works. If that does not work, add this line <i>nameserver 8.8.8.8</i> to the file <i>/etc/resolv.conf</i> (this will be deleted when you restart the computer) and restart your service <i>network-manager</i> with <i>service network-manager restart</i>.
 </pre>
 
-<p>For the moment the file system is only in <code class="language-plaintext highlighter-rouge">read only</code>, type the following command to mount the file system in<code class="language-plaintext highlighter-rouge"> read / write</code> at the root of your key:</p>
+<p>For the moment, the file system is only in <code class="language-plaintext highlighter-rouge">read only</code>, type the following command to mount the file system in<code class="language-plaintext highlighter-rouge"> read / write</code> at the root of your key:</p>
 
 <div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">mount -o remount, rw /
 </span></code></pre></div></div>
@@ -433,7 +433,7 @@ If you need to access the internet, select the network entry before. To verify t
 </code></pre></div></div>
 
 <pre class="info">
-If you do not know the users on this machine, you can do <i>ls /home</i>. Certainly a user of this machine corresponds to a directory name in <i>/home/</i>, or even view the file <i>/etc/passwd</i>, or else you can create a user as you are <i>root</i>.
+If you do not know the users on this machine, you can do <i>ls /home</i>. Certainly, a user of this machine corresponds to a directory name in <i>/home/</i>, or even view the file <i>/etc/passwd</i>, or else you can create a user as you are <i>root</i>.
 </pre>
 
 <p>Type in the new password and confirm.</p>
@@ -446,7 +446,7 @@ If you do not know the users on this machine, you can do <i>ls /home</i>. Certai
 <p>You can now turn on the computer normally and log in with the chosen user and password.</p>
 
 <pre class="error">
-Beware the morality of this article is that a person physically accessing your computer does not need login/password to access your computer. If you want to protect yourself from this attack, you must <b>encrypt your hard drive</b>.
+Beware, the morality of this article is that a person physically accessing your computer does not need login/password to access your computer. If you want to protect yourself from this attack, you must <b>encrypt your hard drive</b>.
 </pre>
 
 <p>Well done <img class="emoji" title=":smile:" alt=":smile:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png" height="20" width="20">!</p>
@@ -631,23 +631,64 @@ Beware the morality of this article is that a person physically accessing your c
     <h5>Also read</h5>
 
     <div class="row">
-<a href="/blog/articles/2020/05/15/gnu-privacy-guard.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
+<a href="/blog/articles/2019/01/21/getting-started.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/posts/2020-05-15-gnu-privacy-guard.jpg" alt="2020-05-15-gnu-privacy-guard">
+        <img class="img-fluid lazyload" data-src="/_static/posts/2019-01-21-getting-started.jpg" alt="2019-01-21-getting-started">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          GNU privacy guard
+          Getting started
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          How to prove its identity and encrypt its communication?
+          How to write articles on this blog from a easy-to-use and rich syntax?
+        </div>
+
+        <!-- Article categories -->
+        <div class="article-category">
+          <ul>
+            <li>Methodology</li>
+          </ul>
+        </div>
+
+        <!-- Article publication date -->
+        <div class="date">
+          <i class="far fa-calendar-alt"></i>
+          <span>January 21, 2019</span>
+        </div>
+        <!-- Article reading time -->
+        <div class="reading-time">
+          <i class="far fa-clock"></i>
+          <span>10 min</span>
+        </div>
+      </div>
+
+    </div>
+</div>
+
+</a><a href="/blog/articles/2019/03/23/kerberos-in-5-minutes.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
+    <!-- Article metadata -->
+    <div class="article-card">
+<!-- Article cover --><div class="article-cover">
+        <img class="img-fluid lazyload" data-src="/_static/posts/2019-03-23-kerberos-in-5-minutes.jpg" alt="2019-03-23-kerberos-in-5-minutes">
+      </div>
+
+      <!-- Article details -->
+      <div class="article-details">
+        <!-- Article title -->
+        <div class="article-title">
+          Kerberos in 5 minutes
+        </div>
+
+        <!-- Article description -->
+        <div class="article-description">
+          Kerberos is an authentication protocol for trusted hosts on untrusted networks.
         </div>
 
         <!-- Article categories -->
@@ -660,53 +701,12 @@ Beware the morality of this article is that a person physically accessing your c
         <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>May 15, 2020</span>
+          <span>March 23, 2019</span>
         </div>
         <!-- Article reading time -->
         <div class="reading-time">
           <i class="far fa-clock"></i>
           <span>5 min</span>
-        </div>
-      </div>
-
-    </div>
-</div>
-
-</a><a href="/blog/articles/2021/11/13/software-versioning.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"><div class="article-card-container">
-    <!-- Article metadata -->
-    <div class="article-card">
-<!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/posts/2021-11-13-software-versioning.jpg" alt="2021-11-13-software-versioning">
-      </div>
-
-      <!-- Article details -->
-      <div class="article-details">
-        <!-- Article title -->
-        <div class="article-title">
-          Software versioning
-        </div>
-
-        <!-- Article description -->
-        <div class="article-description">
-          How is assigned a version to a software?
-        </div>
-
-        <!-- Article categories -->
-        <div class="article-category">
-          <ul>
-            <li>Development</li>
-          </ul>
-        </div>
-
-        <!-- Article publication date -->
-        <div class="date">
-          <i class="far fa-calendar-alt"></i>
-          <span>November 13, 2021</span>
-        </div>
-        <!-- Article reading time -->
-        <div class="reading-time">
-          <i class="far fa-clock"></i>
-          <span>10 min</span>
         </div>
       </div>
 
