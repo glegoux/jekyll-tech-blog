@@ -1,6 +1,20 @@
 [
 
 {
+"title"       : "My tech blog has moved",
+"description" : "Migration to https://medium.com/@glegoux",
+"authors"     : "glegoux",
+"category"    : "News",
+"tags"        : "",
+"url"         : "/blog/articles/2022/11/01/my-tech-blog-has-moved.html",
+"date"        : "2022-11-01 00:00:00 +0000",
+"year"        : "2022",
+"month"       : "11",
+"yearMonth"   : "2022-11",
+"yearMonthDay"   : "2022-11-01"
+} ,
+
+{
 "title"       : "Secret Santa",
 "description" : "What can be the applied mathematics behind a secret santa?",
 "authors"     : "glegoux",

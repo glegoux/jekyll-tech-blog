@@ -4,9 +4,24 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2023-04-19T06:12:52+00:00</updated>
+ <updated>2023-04-19T06:36:15+00:00</updated>
  <id>https://glegoux.com/</id>
 
+ 
+ <entry>
+   <title>My tech blog has moved</title>
+   <link href="https://glegoux.com/blog/articles/2022/11/01/my-tech-blog-has-moved.html"/>
+   <updated>2022-11-01T00:00:00+00:00</updated>
+   <id>https://glegoux.com/blog/articles/2022/11/01/my-tech-blog-has-moved.html</id>
+   <content type="html">&lt;p&gt;I migrated my tech blog to &lt;a href=&quot;https://medium.com/@glegoux&quot;&gt;https://medium.com/@glegoux&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I will continue writing sometimes blog posts here, but mainly 
+they will be published with Medium.&lt;/p&gt;
+
+</content><author>
+       <name>glegoux</name>
+       <uri></uri>
+   </author></entry>
  
  <entry>
    <title>Secret Santa</title>
