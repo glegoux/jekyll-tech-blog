@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2023-07-31T04:33:57+00:00</updated>
+ <updated>2023-08-05T07:03:19+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -2211,10 +2211,14 @@ Linus Torvalds, creator of the Linux operating system
 
 &lt;p&gt;Use emoji, with &lt;a href=&quot;https://github.com/github/gemoji&quot;&gt;gemoji&lt;/a&gt; see &lt;a href=&quot;https://www.webfx.com/tools/emoji-cheat-sheet/&quot;&gt;emoji cheat sheet&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;For example: :smile: :scream: :yum:&lt;/p&gt;
+&lt;p&gt;For example: with shortcode :smile: :scream: :yum: or unicode directly 😀 😱 😋.&lt;/p&gt;
 
-&lt;p&gt;Source code:&lt;/p&gt;
+&lt;p&gt;Source code for emoji with shortcode:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-@escape&quot;&gt;:smile: :scream: :yum:
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Source code for emoji with unicode:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-@escape&quot;&gt;😀 😱 😋
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id=&quot;links&quot;&gt;Links&lt;/h2&gt;
