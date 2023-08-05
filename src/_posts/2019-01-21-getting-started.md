@@ -1,15 +1,15 @@
 ---
 title: "Getting started"
-description: "How to write articles on this blog from a easy-to-use and rich syntax?"
+description: "How to write articles on this blog from an easy-to-use and rich syntax?"
 authors: ["glegoux"]
 time_reading_minutes: 10
 category: "Methodology"
 tags: ["Markdown"]
 ---
 
-Discover the **Markdown syntax** used on this blog to write articles, or to generate static pages, and more generally on the web. 
+Discover the extension of the **Markdown syntax** used on this blog to write articles, or generate static pages, and more generally on the web. 
 When you click on the button: <i class="far fa-file-code"></i> Source, you can see the **original source code of an article**. 
-More precisely on this blog, a superset of Markdown is used and called [Kramdown](https://kramdown.gettalong.org/), the syntax is available [here](https://kramdown.gettalong.org/syntax.html). Each following section gives an overview and examples for each usage.
+More precisely on this blog, a superset of Markdown is used and called [Kramdown](https://kramdown.gettalong.org/), the syntax is available [here](https://kramdown.gettalong.org/syntax.html) with a custom extension via the HTML paired tag `pre`. Each following section gives an overview and examples for each usage.
 But before, what is exactly the Markdown?
 
 [Markdown](https://daringfireball.net/projects/markdown/) is a lightweight and popular text metalanguage that is a writing standard
@@ -22,8 +22,8 @@ src="https://docs.google.com/drawings/d/e/2PACX-1vRPwfUjnj6bT9B-M4jdzQqOICzCwblx
 
 Why using it Markdown? Because it is very handy to use for the reader and the writer:
 
-* **Reader**: The generated HTML content got from the source Markdown content is compatible with all web browsers. 
-* **Writer**: The source Markdown content continues being separated, you can modify the one without interfering with the another one.  But in addition, it is easier to create then modify its article, the content is more human-readable and shorter than the HTML.
+* **Reader**: The generated HTML content got from the Markdown content is compatible with all web browsers that can render it for the final reader. 
+* **Writer**: The Markdown content continues to be separated from the rendering. In addition, it is easy to learn and use syntax, with the pros of portability and compatibility, flexibility and customizability, and readability and maintainability. Modify its article, the content is more human-writable/readable and shorter than the HTML code, less expressive but sufficient for a blog post.
 
  See how to create your content with the right syntax through examples in the following sections. 
 
