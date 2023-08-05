@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2023-08-05T07:22:25+00:00</updated>
+ <updated>2023-08-05T09:39:07+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -2079,7 +2079,7 @@ Beware, the morality of this article is that a person physically accessing your 
    <link href="https://glegoux.com/blog/articles/2019/01/21/getting-started.html"/>
    <updated>2019-01-21T00:00:00+00:00</updated>
    <id>https://glegoux.com/blog/articles/2019/01/21/getting-started.html</id>
-   <content type="html">&lt;p&gt;Discover the extension of the &lt;strong&gt;Markdown syntax&lt;/strong&gt; used on this blog to write articles, or generate static pages, and more generally on the web. 
+   <content type="html">&lt;p&gt;Discover the &lt;strong&gt;extension of the Markdown syntax used on this blog&lt;/strong&gt; to write articles, or generate static pages, and more generally on the web. 
 When you click on the button: &lt;i class=&quot;far fa-file-code&quot;&gt;&lt;/i&gt; Source, you can see the &lt;strong&gt;original source code of an article&lt;/strong&gt;. 
 More precisely on this blog, a superset of Markdown is used and called &lt;a href=&quot;https://kramdown.gettalong.org/&quot;&gt;Kramdown&lt;/a&gt;, the syntax is available &lt;a href=&quot;https://kramdown.gettalong.org/syntax.html&quot;&gt;here&lt;/a&gt; with a custom extension via the HTML paired tag &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pre&lt;/code&gt;. Each following section gives an overview and examples for each usage.
 But before, what is exactly the Markdown?&lt;/p&gt;
