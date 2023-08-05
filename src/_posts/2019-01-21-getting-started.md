@@ -12,10 +12,10 @@ When you click on the button: <i class="far fa-file-code"></i> Source, you can s
 More precisely on this blog, a superset of Markdown is used and called [Kramdown](https://kramdown.gettalong.org/), the syntax is available [here](https://kramdown.gettalong.org/syntax.html). Each following section gives an overview and examples for each usage.
 But before, what is exactly the Markdown?
 
-[Markdown](https://daringfireball.net/projects/markdown/) is a lightweight and popular text metalanguage which is a writing standard
-with extension `.md` or `.markdown`. It is often converted into HTML what allows it to be easily shared on the web :spider_web:.
+[Markdown](https://daringfireball.net/projects/markdown/) is a lightweight and popular text metalanguage that is a writing standard
+with the extension `.md` or `.markdown`. It is often converted into HTML which allows it to be easily shared on the web :spider_web:.
 
-After the **conversion to a HTML text**, it is decorated and animated by CSS style sheets and/or JS scripts: 
+After the **conversion to HTML text**, it is decorated and animated by CSS style sheets and/or JS scripts: 
 
 {% include article-google-drawing.html title="Markdown processor"
 src="https://docs.google.com/drawings/d/e/2PACX-1vRPwfUjnj6bT9B-M4jdzQqOICzCwblxYR5xvgiXYWrpcgpmFddbWR-ErodWf-U0rE8f0aqzUfazXvf8/pub?w=960&amp;h=267" %}
@@ -23,7 +23,7 @@ src="https://docs.google.com/drawings/d/e/2PACX-1vRPwfUjnj6bT9B-M4jdzQqOICzCwblx
 Why using it Markdown? Because it is very handy to use for the reader and the writer:
 
 * **Reader**: The generated HTML content got from the source Markdown content is compatible with all web browsers. 
-* **Writer**: The source Markdown content continue being separated, you can modify the one without interfering with the another one.  But in addition, it is easier to create then modify its article, the content is more human-readable and shorter than the HTML.
+* **Writer**: The source Markdown content continues being separated, you can modify the one without interfering with the another one.  But in addition, it is easier to create then modify its article, the content is more human-readable and shorter than the HTML.
 
  See how to create your content with the right syntax through examples in the following sections. 
 
@@ -51,7 +51,7 @@ Inline code: `code`
 
 ## New line & paragraph
 
-Let 2 trailing spaces to have an end of line, and let a empty line for a new paragraph:
+Let 2 trailing spaces have an end of the line, and let an empty line for a new paragraph:
 
 Hello,  
 
@@ -69,7 +69,7 @@ World!\n
 
 ## Headings
 
-Make a part, a subpart and a sub-subpart:
+Make a part, a subpart, and a sub-subpart:
 
 Source code:
 
@@ -102,7 +102,7 @@ Source code:
 3. item
 ~~~
 
-Build a unordered list:
+Build an unordered list:
 
 * item
 * item
@@ -147,7 +147,7 @@ Source code for emoji with unicode:
 
 ## Links
 
-It works with absolute and relative link:
+It works with absolute and relative links:
 
 * A simple link:
 
@@ -166,14 +166,14 @@ Source code:
 [Google](https://www.google.com)
 ~~~
 
-* A link with a name and a title: [Google](https://www.google.com "Google's Homepage") with title `Google's Homepage`.
+* A link with a name and a title: [Google](https://www.google.com "Google's Homepage") with the title `Google's Homepage`.
 
 Source code:
 ~~~
 [Google](https://www.google.com "Google's Homepage")
 ~~~
 
-You can use shortcut for your links to use that several times on article or to centralize links:
+You can use shortcuts for your links to use that several times on the article or to centralize links:
 
 [Google1][1] [Google2][1]
 
@@ -255,7 +255,7 @@ SUCCESS
 
 ## Comment
 
-If you want to put a hidden text not displayed in the article but present in the written source, that is to say a comment, simply do a HTML comment:
+If you want to put a hidden text not displayed in the article but present in the written source, that is to say, a comment, simply do an HTML comment:
 
 Source code:
 ~~~
@@ -556,7 +556,7 @@ message="Hello World!"
 
 Use LateX syntax, see [latex-project.org](https://www.latex-project.org).
 
-:warning: The dollar symbol &#36; becomes a meta symbol, there is conflict with dollar symbol use the html code `&#36;` to see dollar symbol &#36;.
+:warning: The dollar symbol &#36; becomes a meta symbol, so there is a conflict with the dollar symbol use the HTML code `&#36;` to see the dollar symbol &#36;.
 
 ## In-line equation
 
