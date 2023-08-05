@@ -133,11 +133,16 @@ Linus Torvalds, creator of the Linux operating system
 
 Use emoji, with [gemoji](https://github.com/github/gemoji) see [emoji cheat sheet](https://www.webfx.com/tools/emoji-cheat-sheet/).
 
-For example: :smile: :scream: :yum:
+For example: with shortcode :smile: :scream: :yum: or unicode directly 😀 😱 😋.
 
-Source code:
+Source code for emoji with shortcode:
 ~~~ @escape
 :smile: :scream: :yum:
+~~~
+
+Source code for emoji with unicode:
+~~~ @escape
+😀 😱 😋
 ~~~
 
 ## Links
