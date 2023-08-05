@@ -7,7 +7,7 @@ category: "Methodology"
 tags: ["Markdown"]
 ---
 
-Discover the extension of the **Markdown syntax** used on this blog to write articles, or generate static pages, and more generally on the web. 
+Discover the **extension of the Markdown syntax used on this blog** to write articles, or generate static pages, and more generally on the web. 
 When you click on the button: <i class="far fa-file-code"></i> Source, you can see the **original source code of an article**. 
 More precisely on this blog, a superset of Markdown is used and called [Kramdown](https://kramdown.gettalong.org/), the syntax is available [here](https://kramdown.gettalong.org/syntax.html) with a custom extension via the HTML paired tag `pre`. Each following section gives an overview and examples for each usage.
 But before, what is exactly the Markdown?
