@@ -5,8 +5,8 @@
     <description>Personal blog about software engineering</description>
     <link>https://glegoux.com/</link>
     <atom:link href="https://glegoux.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 05 Aug 2023 09:39:07 +0000</pubDate>
-    <lastBuildDate>Sat, 05 Aug 2023 09:39:07 +0000</lastBuildDate>
+    <pubDate>Tue, 15 Aug 2023 10:17:07 +0000</pubDate>
+    <lastBuildDate>Tue, 15 Aug 2023 10:17:07 +0000</lastBuildDate>
     <generator>Jekyll v4.3.2</generator>
     
       <item>
@@ -266,11 +266,11 @@ versions would point to an identical state of the software.&lt;/p&gt;
       <item>
         <title>Time management</title>
         <description>&lt;p&gt;You could need to &lt;strong&gt;optimize the spending of your time&lt;/strong&gt; for &lt;strong&gt;professional or personal activities&lt;/strong&gt;. 
-I am going to explain what means for me the time, and how you can manage it. I have been inspired by my
-knowledge, experiences, readings, and listenings, but it is my personal version of the time management 
+I am going to explain what means to me the time, and how you can manage it. I have been inspired by my
+knowledge, experiences, readings, and listenings, but it is my personal version of time management 
 between math, physics, management, philosophy, and operational research. Without giving a lot of details, 
-the time management is also linked to the &lt;strong&gt;agile methodologies&lt;/strong&gt; that is one implementation, 
-like &lt;strong&gt;Scrum&lt;/strong&gt;, &lt;strong&gt;Kanban&lt;/strong&gt; or &lt;strong&gt;Pomodoro&lt;/strong&gt;.&lt;/p&gt;
+time management is also linked to the &lt;strong&gt;agile methodologies&lt;/strong&gt; that are one implementation, 
+like &lt;strong&gt;Scrum&lt;/strong&gt;, &lt;strong&gt;Kanban&lt;/strong&gt;, or &lt;strong&gt;Pomodoro&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;The &lt;strong&gt;time management&lt;/strong&gt; is the science of the usage of time, a possible definition could be the process of planning and 
 exercising conscious control of time spent on specific activities, especially &lt;strong&gt;to increase effectiveness, efficiency, 
@@ -283,33 +283,33 @@ and productivity&lt;/strong&gt;.&lt;/p&gt;
   &lt;figcaption&gt;Time Management&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;The way whose you can &lt;strong&gt;use your time&lt;/strong&gt; depends on a lot of things, among others there are your:&lt;/p&gt;
+&lt;p&gt;The way you can &lt;strong&gt;use your time&lt;/strong&gt; depends on a lot of things, among others, there are your:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;context&lt;/strong&gt;:
     &lt;ul&gt;
-      &lt;li&gt;which resources you have (knowledge, time, energy, money …)&lt;/li&gt;
-      &lt;li&gt;what are your features (skills, experiences, character traits …)&lt;/li&gt;
-      &lt;li&gt;what are your constraints (costs, exigencies, …)&lt;/li&gt;
+      &lt;li&gt;Which resources do you have (knowledge, time, energy, money …)&lt;/li&gt;
+      &lt;li&gt;What are your features (skills, experiences, character traits …)&lt;/li&gt;
+      &lt;li&gt;What are your constraints (costs, exigencies, …)&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;projection&lt;/strong&gt;:
     &lt;ul&gt;
-      &lt;li&gt;what you want to do (ambitions, preferences, choices …)&lt;/li&gt;
-      &lt;li&gt;what are your goals (objectives, key results, tasks, sub-tasks, projects, missions …)&lt;/li&gt;
+      &lt;li&gt;What you want to do (ambitions, preferences, choices …)&lt;/li&gt;
+      &lt;li&gt;What are your goals (objectives, key results, tasks, sub-tasks, projects, missions …)&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;strategy&lt;/strong&gt;:
     &lt;ul&gt;
-      &lt;li&gt;how you organize your activities (priorities, hierarchies, dependencies, sizing, partitioning
+      &lt;li&gt;How do you organize your activities (priorities, hierarchies, dependencies, sizing, partitioning
 …)&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;analysis&lt;/strong&gt;:
     &lt;ul&gt;
-      &lt;li&gt;how you know yourself (strong points, weak points, personal will and effort …)&lt;/li&gt;
-      &lt;li&gt;how you have a projection &amp;amp; strategy coherent of yourself (clairvoyance, honesty, realism …)&lt;/li&gt;
-      &lt;li&gt;how you receive a critical opinion positive or negative on yourself (feedbacks,
+      &lt;li&gt;How you know yourself (strong points, weak points, personal will, and effort …)&lt;/li&gt;
+      &lt;li&gt;How you have a projection &amp;amp; strategy coherent of yourself (clairvoyance, honesty, realism …)&lt;/li&gt;
+      &lt;li&gt;How you receive a critical opinion positive or negative on yourself (feedback,
 auto-introspections, questionings, doubts…)&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
@@ -318,13 +318,13 @@ auto-introspections, questionings, doubts…)&lt;/li&gt;
 &lt;h1 id=&quot;how-to-define-the-time&quot;&gt;How to define the time?&lt;/h1&gt;
 
 &lt;p&gt;With the meta-physique considerations, the &lt;strong&gt;time&lt;/strong&gt; has wondering features: &lt;strong&gt;universal, continuous, unlimited, 
-non-renewable, solid (incompressible/no expansible), perpetually self-generated, no accumulative&lt;/strong&gt;. Focus us on the &lt;strong&gt;timescale&lt;/strong&gt; of our &lt;strong&gt;human life&lt;/strong&gt;.
+non-renewable, solid (incompressible/no expansible), perpetually self-generated, no accumulative&lt;/strong&gt;. Focus is on the &lt;strong&gt;timescale&lt;/strong&gt; of our &lt;strong&gt;human life&lt;/strong&gt;.
 These features are immutable, or more precisely their changes are negligible. But we can interpret the time differently.&lt;/p&gt;
 
-&lt;p&gt;Here I am going to interpret the time like a &lt;strong&gt;quantizable object&lt;/strong&gt; with an arbitrary windows in the &lt;strong&gt;past, present or future&lt;/strong&gt;.
+&lt;p&gt;Here I am going to interpret the time like a &lt;strong&gt;quantizable object&lt;/strong&gt; with an arbitrary window in the &lt;strong&gt;past, present or future&lt;/strong&gt;.
 The present moment is seen like a progressive cursor representing a dynamic &lt;strong&gt;instant&lt;/strong&gt; on the &lt;strong&gt;timeline&lt;/strong&gt;. This present instant 
-plays the role of irreversible transformer altering the future into past. The &lt;strong&gt;duration&lt;/strong&gt; of an &lt;strong&gt;event&lt;/strong&gt; is the length of a &lt;strong&gt;windows time&lt;/strong&gt; 
-delimited by 2 instants where the event began and finished. For the following, when I speak about time, I refer to this &lt;strong&gt;sliding windows&lt;/strong&gt;.&lt;/p&gt;
+plays the role of an irreversible transformer altering the future into the past. The &lt;strong&gt;duration&lt;/strong&gt; of an &lt;strong&gt;event&lt;/strong&gt; is the length of a &lt;strong&gt;windows time&lt;/strong&gt; 
+delimited by 2 instants where the event began and finished. For the following, when I speak about time, I refer to these &lt;strong&gt;sliding windows&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;figure&gt;
   &lt;div&gt;
@@ -334,29 +334,28 @@ delimited by 2 instants where the event began and finished. For the following, w
 &lt;/figure&gt;
 
 &lt;div class=&quot;info&quot;&gt;
-The &lt;b&gt;time&lt;/b&gt; :clock2: is one of our &lt;b&gt;most valuable resources&lt;/b&gt;, for me more important than the
-knowledge, the money or the energy, because all ones depend on time.
+The &lt;b&gt;time&lt;/b&gt; :clock2: is one of our &lt;b&gt;most valuable resources&lt;/b&gt;, for me more important than 
+knowledge, money or energy, because all ones depend on time.
 &lt;/div&gt;
 
 &lt;p&gt;It is important to distinguish the &lt;strong&gt;absolute time&lt;/strong&gt;, and the &lt;strong&gt;subjective time&lt;/strong&gt;. The quantity of
 elapsed time to carry out an activity can be &lt;strong&gt;viewed and interpreted subjectively&lt;/strong&gt;. The same
 quantity of time measured objectively in &lt;strong&gt;seconds&lt;/strong&gt; could be lived differently by 2 different
-people esteemed like &lt;strong&gt;short or long&lt;/strong&gt;. Take into account this subjectivity, because the time
+people esteemed like &lt;strong&gt;short or long&lt;/strong&gt;. Take into account this subjectivity, because time
 management is more relevant if it is applied individually with your sensibility.&lt;/p&gt;
 
-&lt;p&gt;For example, &lt;strong&gt;a sharp mind&lt;/strong&gt; on a particular situation will have the feeling to life in accelerated
+&lt;p&gt;For example, &lt;strong&gt;a sharp mind&lt;/strong&gt; in a particular situation will have the feeling of life in accelerated
 time by interacting with a less sharp mind, because he compares his thinking speed to that of his
 interlocutor, and this one is faster, and reciprocally. Another example is when you are doing a
 &lt;strong&gt;passionate activity&lt;/strong&gt;. The time seems to go faster, because you forget the feeling of elapsed
 time, and inversely with the boredom.&lt;/p&gt;
 
-&lt;p&gt;The absolute time allows to compare the duration between 2 activities objectively, but when you want
+&lt;p&gt;The absolute time allows you to compare the duration between 2 activities objectively, but when you want
 to organize or optimize your time, you need to adjust your efforts with your personal consideration
 of an elapsed time for a given activity. The &lt;strong&gt;elapsed time&lt;/strong&gt; can be interpreted as a &lt;strong&gt;sum of done
 activities&lt;/strong&gt;. The &lt;strong&gt;unit measure of an activity&lt;/strong&gt; is subjective, and could be called &lt;strong&gt;weight&lt;/strong&gt;,
-where are mixed the &lt;strong&gt;quantities of used resources&lt;/strong&gt; to do the activity (for example the quantities
-of time, energy or money). Here more the activity has a light color, more the activity has a light
-weight:&lt;/p&gt;
+where mixed the &lt;strong&gt;quantities of used resources&lt;/strong&gt; to do the activity (for example the quantities
+of time, energy, or money). Here more the activity has a light color, the more the activity has a lightweight:&lt;/p&gt;
 
 &lt;figure&gt;
   &lt;div&gt;
@@ -371,13 +370,13 @@ does not respect the time features mentioned previously, it is:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;personal&lt;/strong&gt;: you have a personal context and subjective time&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;discrete&lt;/strong&gt;: you have a minimum time of reactivity your frequency sample to measure the elapsed time&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;discrete&lt;/strong&gt;: you have a minimum time of reactivity for your frequency sample to measure the elapsed time&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;limited&lt;/strong&gt;: you have a life length and resources which are finite&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;renewable&lt;/strong&gt;: you can renew some activities in the future&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;compressible/expansible&lt;/strong&gt;: you feel of elapsed time differently for a given activity in function
+  &lt;li&gt;&lt;strong&gt;compressible/expansible&lt;/strong&gt;: you feel elapsed time differently for a given activity in function
 of time&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;occasionally generated by you&lt;/strong&gt;: you make your choices, and your organization to free of time&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;cumulative&lt;/strong&gt;: we interpret the time with a quantity now, no only an instant&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;cumulative&lt;/strong&gt;: we interpret the time with a quantity now, not only an instant&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;But the quantity of time is always available immediately.&lt;/p&gt;
@@ -387,32 +386,32 @@ of time&lt;/li&gt;
 &lt;p&gt;We defined several ways to conceptualize the time, here I can define more precisely the other
 concepts of time management like the &lt;strong&gt;effort&lt;/strong&gt; and the &lt;strong&gt;optimization&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;The &lt;strong&gt;effort&lt;/strong&gt; to do an activity is like the &lt;strong&gt;way of consummation of a quantity of resources&lt;/strong&gt;.
-Your resources are renewed perpetually and has a &lt;strong&gt;potential&lt;/strong&gt;, the activity has also a &lt;strong&gt;potential&lt;/strong&gt;.
-You need to create a resources flow, called the &lt;strong&gt;intensity&lt;/strong&gt; of the effort, to do the activity.
+&lt;p&gt;The &lt;strong&gt;effort&lt;/strong&gt; to do an activity is like the &lt;strong&gt;way of consummation of a number of resources&lt;/strong&gt;.
+Your resources are renewed perpetually and have a &lt;strong&gt;potential&lt;/strong&gt;, the activity has also a &lt;strong&gt;potential&lt;/strong&gt;.
+You need to create a resource flow, called the &lt;strong&gt;intensity&lt;/strong&gt; of the effort, to do the activity.
 The awareness to practice an extreme effort in quantity (too much or too few) or quality (too easy or
-to difficult) slows down the feeling of elapsed time, and extends the time. This reduces your
-endurance on this activity. But the practice and the training allow you to reduce the feeling of
-effort, you consume less and/or have more of resources.&lt;/p&gt;
+too difficult) slows down the feeling of elapsed time and extends the time. This reduces your
+endurance in this activity. But the practice and the training allow you to reduce the feeling of
+effort, you consume less and/or have more resources.&lt;/p&gt;
 
 &lt;p&gt;It is important to observe that the optimization of the &lt;strong&gt;time usage&lt;/strong&gt; is in fact the optimization
 of future projection of the productivity of an activity on a time range. This
 &lt;strong&gt;optimization&lt;/strong&gt; is &lt;strong&gt;under constraints&lt;/strong&gt; and depends on &lt;strong&gt;objectives&lt;/strong&gt;, called also goals. To
-achieve these goals one of the &lt;strong&gt;available resources&lt;/strong&gt; to use and save is the time.&lt;/p&gt;
+achieve these goals one of the &lt;strong&gt;available resources&lt;/strong&gt; to use and save is time.&lt;/p&gt;
 
-&lt;p&gt;I use several concepts above without defining them, here a summary:&lt;/p&gt;
+&lt;p&gt;I use several concepts above without defining them, here is a summary:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;Goal&lt;/strong&gt;: definition of result(s) that you want to get, called also objective.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Task&lt;/strong&gt;: definition of action(s) that you want to mean to achieve at least one goal.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Activity&lt;/strong&gt;: execution at least one task over time.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Productivity&lt;/strong&gt;: measure of your performance that is a combination of effectiveness and
+  &lt;li&gt;&lt;strong&gt;Activity&lt;/strong&gt;: execution of at least one task over time.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Productivity&lt;/strong&gt;: a measure of your performance that is a combination of effectiveness and
 efficiency.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;a-model-of-optimisation&quot;&gt;A model of optimisation&lt;/h1&gt;
+&lt;h1 id=&quot;a-model-of-optimization&quot;&gt;A model of optimization&lt;/h1&gt;
 
-&lt;p&gt;The &lt;strong&gt;time management&lt;/strong&gt; can be seen the &lt;strong&gt;modeling of an objective function&lt;/strong&gt;
+&lt;p&gt;The &lt;strong&gt;time management&lt;/strong&gt; can be seen in the &lt;strong&gt;modeling of an objective function&lt;/strong&gt;
 to optimize. The model of this objective function is fixed by the &lt;strong&gt;definition&lt;/strong&gt; of your &lt;strong&gt;goals&lt;/strong&gt;
 (split into &lt;strong&gt;tasks&lt;/strong&gt;) and of the &lt;strong&gt;execution plan&lt;/strong&gt;. Then its optimization is determined by the
 duality between the &lt;strong&gt;minimization&lt;/strong&gt; of the &lt;strong&gt;cost of executions&lt;/strong&gt; and the &lt;strong&gt;maximization&lt;/strong&gt; of 
@@ -445,33 +444,33 @@ a set of tasks&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;div class=&quot;warning&quot;&gt;
-But the stability, the evolution of the objective function depends on your &lt;b&gt;regularity&lt;/b&gt;, your &lt;b&gt;implication&lt;/b&gt; and your &lt;b&gt;progress&lt;/b&gt;.
+But the stability, the evolution of the objective function depends on your &lt;b&gt;regularity&lt;/b&gt;, your &lt;b&gt;implication&lt;/b&gt;, and your &lt;b&gt;progress&lt;/b&gt;.
 &lt;/div&gt;
 
 &lt;p&gt;The functions $c$ and $q$ are often linked, and it influences generally each one negatively for the
 optimization: reducing the cost reduces the quality, and increasing the quality increases the cost.
-While our optimization consists in reducing the cost, be &lt;strong&gt;efficient&lt;/strong&gt;, and in increasing the quality,
-be &lt;strong&gt;effective&lt;/strong&gt;. It is often more performant to be firstly effective, then efficient for a given
-task. Learning to do correctly a task before doing it faster. But it is clear, that be
+While our optimization consists in reducing the cost, being &lt;strong&gt;efficient&lt;/strong&gt;, and increasing the quality,
+to be &lt;strong&gt;effective&lt;/strong&gt;. It is often more performant to be firstly effective, than efficient for a given
+task. Learning to do correctly a task before doing it faster. But it is clear, that being
 effective and efficient (at the same time and in good proportion) is the final goal for each task.&lt;/p&gt;
 
 &lt;div class=&quot;info&quot;&gt;
 You can do an analogy with the &lt;b&gt;machine learning&lt;/b&gt; algorithm. The execution plan is your &lt;b&gt;model&lt;/b&gt; owning &lt;b&gt;hyper-parameters&lt;/b&gt;, 
 the tasks are rows of your &lt;b&gt;dataset&lt;/b&gt; (training, validation, test) and the maximization of the objection function is the step of &lt;b&gt;learning&lt;/b&gt;. 
-With experience on an execution plan, you can predict the speed of execution and the quality of results.
+With experience in an execution plan, you can predict the speed of execution and the quality of results.
 &lt;/div&gt;
 
 &lt;h1 id=&quot;a-methodology-of-usage&quot;&gt;A methodology of usage&lt;/h1&gt;
 
-&lt;p&gt;After having modelled and defined the concepts of the time management, I am interested here by
+&lt;p&gt;After having modeled and defined the concepts of time management, I am interested here by
 applying it in practice through a methodology. Firstly, even if you can model the time management,
 in my point of view it is an &lt;strong&gt;empirical science&lt;/strong&gt;. That is to say, you need a methodology to test
 it, and your knowledge about this science will be provided by your experiences and your
 observations.&lt;/p&gt;
 
 &lt;div class=&quot;info&quot;&gt;
-Here the &lt;b&gt;main considered resource&lt;/b&gt; is &lt;b&gt;the time&lt;/b&gt;, but in practice the methodology could be more complex you could consider 
-other inter-dependent resources to spend like the money or the energy.
+Here the &lt;b&gt;main considered resource&lt;/b&gt; is &lt;b&gt;the time&lt;/b&gt;, but in practice, the methodology could be more complex you could consider 
+other inter-dependent resources to spend like money or energy.
 &lt;/div&gt;
 
 &lt;h2 id=&quot;define-your-personal-context&quot;&gt;Define your personal context&lt;/h2&gt;
@@ -480,11 +479,11 @@ other inter-dependent resources to spend like the money or the energy.
 
 &lt;h2 id=&quot;define-your-projection&quot;&gt;Define your projection&lt;/h2&gt;
 
-&lt;p&gt;After you need to define what you want to do, and build your &lt;strong&gt;goals&lt;/strong&gt; each one with a &lt;strong&gt;dateline&lt;/strong&gt;.
+&lt;p&gt;After you need to define what you want to do and build your &lt;strong&gt;goals&lt;/strong&gt; each one with a &lt;strong&gt;dateline&lt;/strong&gt;.
 Do a first pass of the following section strategy applied to your goals (replace activities with
-goals). Once your goals are partitioned, hierarchized, sized, prioritize, sequenced. Your destructed
-goals should now fill in a &lt;strong&gt;coherent structure&lt;/strong&gt;. Then split each goal in tasks. You can repeat
-this operation to split each tasks into smaller activities to pass &lt;strong&gt;from a macro timescale to a
+goals). Once your goals are partitioned, hierarchized, sized, prioritized, and sequenced. Your destructed
+goals should now fill in a &lt;strong&gt;coherent structure&lt;/strong&gt;. Then split each goal into tasks. You can repeat
+this operation to split each task into smaller activities to pass &lt;strong&gt;from a macro timescale to a
 micro timescale&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;define-your-strategy&quot;&gt;Define your strategy&lt;/h2&gt;
@@ -495,10 +494,10 @@ micro timescale&lt;/strong&gt;.&lt;/p&gt;
   &lt;li&gt;&lt;strong&gt;Partition your activities&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Partition your activities which has same &lt;strong&gt;type&lt;/strong&gt; in &lt;strong&gt;independent class&lt;/strong&gt; between them the more
+&lt;p&gt;Partition your activities which have the same &lt;strong&gt;type&lt;/strong&gt; in &lt;strong&gt;independent class&lt;/strong&gt; between them the more
 possible. Of course, the content of each &lt;strong&gt;partition&lt;/strong&gt;
 is subjective for some activities, you can classify your activities into these partitions
-differently in function of your sensitivities and interests. You can already give an important
+differently in the function of your sensitivities and interests. You can already give an important
 weight to each partition.&lt;/p&gt;
 
 &lt;figure&gt;
@@ -514,7 +513,7 @@ weight to each partition.&lt;/p&gt;
 
 &lt;p&gt;Here the goal is to estimate roughly the weight of an activity to have its order of magnitude.&lt;/p&gt;
 
-&lt;p&gt;Each goal should be realist, reachable, measurable with success keys, and sized in difficulty and
+&lt;p&gt;Each goal should be realistic, reachable, measurable with success keys, and sized in difficulty and
 required time to achieve it. You can play on &lt;strong&gt;several scales&lt;/strong&gt; for your future projections:
 &lt;strong&gt;very long term, long term, middle term, short term, and very short term&lt;/strong&gt;.&lt;/p&gt;
 
@@ -529,7 +528,7 @@ required time to achieve it. You can play on &lt;strong&gt;several scales&lt;/st
   &lt;li&gt;&lt;strong&gt;Size your activities&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Now you can size more precisely each task. You can measure absolutely, if it is complicated, you can
+&lt;p&gt;Now you can size more precisely each task. You can measure absolutely if it is complicated, you can
 also measure relatively the ones in relation to the other ones. You need to choose the unit of the *
 weight* of your activity.&lt;/p&gt;
 
@@ -587,21 +586,21 @@ steps and your other constraints:&lt;/p&gt;
 
 &lt;h2 id=&quot;have-an-auto-analysis&quot;&gt;Have an auto-analysis&lt;/h2&gt;
 
-&lt;p&gt;Now you can execute your plan. But you need to &lt;strong&gt;monitor&lt;/strong&gt; it, and have logs, metrics and traces,
-and have dashboards to visualize it. You need to do regularly &lt;strong&gt;retrospectives&lt;/strong&gt; and &lt;strong&gt;plannings&lt;/strong&gt;.
-Respectively to adjust your strategy in function of time, and continue to converge to the filling of
-your goals. Then to define new goals or delete goals in order to avoid the shortage of tasks, the
-overload, or the accumulation of deprecated goals. Then you need to measure with your &lt;strong&gt;KPI&lt;/strong&gt; your
+&lt;p&gt;Now you can execute your plan. But you need to &lt;strong&gt;monitor&lt;/strong&gt; it, have logs, metrics, and traces,
+and have dashboards to visualize it. You need to do regular &lt;strong&gt;retrospectives&lt;/strong&gt; and &lt;strong&gt;plans&lt;/strong&gt;.
+Respectively adjust your strategy in the function of time, and continue to converge to the filling of
+your goals. Then define new goals or delete goals in order to avoid the shortage of tasks, the
+overload, or the accumulation of deprecated goals. Then you need to measure your &lt;strong&gt;KPI&lt;/strong&gt; and your
 productivity. You need to have a &lt;strong&gt;feedback loop&lt;/strong&gt; to build your &lt;strong&gt;virtuous circle&lt;/strong&gt;, and iterate on
 it.&lt;/p&gt;
 
 &lt;h1 id=&quot;for-example-for-your-lifetime&quot;&gt;For example for your lifetime&lt;/h1&gt;
 
-&lt;p&gt;Are you a student, a worker or a retiree? Take the example of a worker, more precisely a professional
-software engineer full-time working exclusively for a unique company at the beginning of its
-career. By hoping, that it matches to your &lt;strong&gt;auto-introspection&lt;/strong&gt;, else the following could help you to do
+&lt;p&gt;Are you a student, a worker, or a retiree? Take the example of a worker, more precisely a professional
+software engineer full-time working exclusively for a unique company at the beginning of their
+career. By hoping, that it matches your &lt;strong&gt;auto-introspection&lt;/strong&gt;, else the following could help you to do
 the same thing for your personal context. I give you here only a &lt;strong&gt;partial overview&lt;/strong&gt; of how it can be done, 
-this example is not necessary my real usage of my personal time.&lt;/p&gt;
+this example is not necessarily my real usage of my personal time.&lt;/p&gt;
 
 &lt;figure&gt;
   &lt;div&gt;
@@ -613,36 +612,36 @@ this example is not necessary my real usage of my personal time.&lt;/p&gt;
 &lt;p&gt;I analyze my resources, my constraints, and my features (hard skills and soft skills, …).&lt;/p&gt;
 
 &lt;p&gt;Above all, I define what I want to do and my ambitions: following conferences, coding an open-source project, having a side project, 
-becoming a speaker, losing weight, finishing TV series, reading books, following trainings, giving courses …
-Each goal should be precise, measurable and reachable.&lt;/p&gt;
+becoming a speaker, losing weight, finishing TV series, reading books, following training, giving courses …
+Each goal should be precise, measurable, and reachable.&lt;/p&gt;
 
 &lt;p&gt;I split my activities into 3 partitions:&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;&lt;strong&gt;Life activities&lt;/strong&gt;: required vital, society or community activities&lt;br /&gt;
-&lt;em&gt;for example: sleep, eat, wash, practice a physical activity, interact with your environment, do
+&lt;em&gt;for example sleep, eat, wash, practice a physical activity, interact with your environment, do
 the housework, pay the taxes, see your friends …&lt;/em&gt;&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Work activities&lt;/strong&gt;: required activities for your job&lt;br /&gt;
-&lt;em&gt;for example: commute, work, do a brainstorm, code, participate in a meeting, take break …&lt;/em&gt;&lt;/li&gt;
+&lt;em&gt;for example commute, work, do brainstorm, code, participate in a meeting, take a break …&lt;/em&gt;&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Personal activities&lt;/strong&gt;: spare and free activities&lt;br /&gt;
 &lt;em&gt;for example: practice its development personal, relaxation …&lt;/em&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;I focus me on the &lt;strong&gt;life activities&lt;/strong&gt; that composes my lifetime. I let on the side the work and personal activities, it is the principle.&lt;/p&gt;
+&lt;p&gt;I focus on the &lt;strong&gt;life activities&lt;/strong&gt; that compose my lifetime. I let on side work and personal activities, it is the principle.&lt;/p&gt;
 
 &lt;p&gt;For example, for the different timescales, I take long: ~hour and short: ~minute. 
 I try to evaluate the time of each life activity:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;sleeping: 7 hours per day&lt;/li&gt;
-  &lt;li&gt;washing yourself: 2 times 3 minutes per day for teeth and 15min per day for body&lt;/li&gt;
+  &lt;li&gt;washing: 2 times 3 minutes per day for teeth and 15min per day for body&lt;/li&gt;
   &lt;li&gt;eating: 2 times 20 minutes per day for lunch and dinner with 10 minutes per day for the breakfast&lt;/li&gt;
   &lt;li&gt;seeing friends: at least one time per week for several hours&lt;/li&gt;
   &lt;li&gt;practicing sport: 3 hours per week&lt;/li&gt;
   &lt;li&gt;doing the other tasks: several hours per week (taking out the trash, preparing the meals, doing housework, shopping, do-it-yourself …)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;These activities are not really dependent, and with the same priority for me. Now I sequence them for each period of a day and of a week.&lt;/p&gt;
+&lt;p&gt;These activities are not really dependent and with the same priority for me. Now I sequence them for each period of a day and of a week.&lt;/p&gt;
 
 &lt;p&gt;I have a &lt;strong&gt;calendar&lt;/strong&gt; where I can monitor each timescale and put my tasks, a &lt;strong&gt;weekly planning&lt;/strong&gt;
 for my datelines, and a &lt;strong&gt;to-do list&lt;/strong&gt; for daily tasks.&lt;/p&gt;
@@ -651,20 +650,20 @@ for my datelines, and a &lt;strong&gt;to-do list&lt;/strong&gt; for daily tasks.
 
 &lt;h1 id=&quot;go-further&quot;&gt;Go Further&lt;/h1&gt;
 
-&lt;p&gt;This article is only an introduction of time management applied to oneself by onself. But the situation can
+&lt;p&gt;This article is only an introduction to time management applied to oneself by oneself. But the situation can
 be &lt;strong&gt;more complex&lt;/strong&gt;. For example, if you think the time management for other people, if you are:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;Tech lead&lt;/strong&gt; for a team composed of a group of people&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Manager&lt;/strong&gt; for a departement composed of a group of teams&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Manager&lt;/strong&gt; for a department composed of a group of teams&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;CTO&lt;/strong&gt; for a R&amp;amp;D pole composed of departments&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;CEO&lt;/strong&gt; for a company or a group of companies …&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;It requires delegating tasks, understanding the personal context of other people, and driving
 the time management for a group of people at &lt;strong&gt;different scales&lt;/strong&gt;. These organizations can have
-different structures and different stakes. For it, you must re-define the &lt;strong&gt;time management&lt;/strong&gt; to
-resolve your new needs for &lt;strong&gt;yourself&lt;/strong&gt; and for &lt;strong&gt;another people&lt;/strong&gt;.&lt;/p&gt;
+different structures and different stakes. For it, you must redefine the &lt;strong&gt;time management&lt;/strong&gt; to
+resolve your new needs for &lt;strong&gt;yourself&lt;/strong&gt; and for &lt;strong&gt;other people&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;h1 id=&quot;references&quot;&gt;References&lt;/h1&gt;
 
@@ -680,7 +679,7 @@ resolve your new needs for &lt;strong&gt;yourself&lt;/strong&gt; and for &lt;str
   &lt;li&gt;ANDERSON, David J. &lt;strong&gt;Kanban: Successful Evolutionary …&lt;/strong&gt; Blue Hole Press, 2010. 278 pages. ISBN: 978-0-9845214-1-8.&lt;/li&gt;
   &lt;li&gt;CIRILLO, Francesco. &lt;strong&gt;The Pomodoro Technique&lt;/strong&gt;. 2018. 160 pages. ISBN: 1524760706.&lt;/li&gt;
   &lt;li&gt;OHNO, Taiichi. &lt;strong&gt;Toyota Production System&lt;/strong&gt;. Synermage, 2020. 150 pages. ISBN: 106992329X.&lt;/li&gt;
-  &lt;li&gt;New York University. &lt;strong&gt;Time Management&lt;/strong&gt;. NYC, April 2021. &lt;a href=&quot;https://www.nyu.edu/students/academic-services/undergraduate-advisement/academic-resource-center/tutoring-and-learning/academic-skills-workshops/time-management.html&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;New York University. &lt;strong&gt;Time Management&lt;/strong&gt;. NYC, January 2023. &lt;a href=&quot;https://meet.nyu.edu/academics/time-management-101-guide-to-reclaim-your-time/&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;KOLMAR, Chris. &lt;strong&gt;Efficiency vs Effectiveness&lt;/strong&gt;. Zippia, April 2021. &lt;a href=&quot;https://www.zippia.com/advice/efficiency-vs-effectiveness/&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
