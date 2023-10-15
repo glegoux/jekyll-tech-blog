@@ -3,6 +3,8 @@
 header {
   z-index: 1000;
   padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
   color: black !important;
 
   .flex-container {
@@ -57,7 +59,7 @@ header {
   #menu-icon {
     z-index: 1001;
     position: fixed;
-    top: 1.5em;
+    top: 0.25em;
     right: 1em;
     background: rgba(144, 144, 144, 0.65);
     border-radius: 4px;
