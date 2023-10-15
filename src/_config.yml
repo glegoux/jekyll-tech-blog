@@ -35,7 +35,7 @@ project:
     logo_header: "/_static/config/img/site-logo.png"
     menu_items:
       - name: "Home"
-        link: "/home/"
+        link: "/"
         class_icon: "fa fa-home"
       - name: "Blog"
         link: "/blog/"

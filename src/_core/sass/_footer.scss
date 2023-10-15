@@ -35,17 +35,17 @@ footer {
       height: 1em;
       width: 1em;
     }
-
-    .focus {
-      font-weight: bold;
-      color: white;
-      border-bottom: 1px solid white;
-    }
   }
 
   .menu {
     text-align: center;
     font-size: 1.2em;
+  }
+
+  .menu-item.focus {
+    font-weight: bold;
+    color: white;
+    border-bottom: 1px solid white;
   }
 
   hr {
