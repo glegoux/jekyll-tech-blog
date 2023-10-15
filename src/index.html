@@ -5,72 +5,115 @@ redirect_from:
 ---
 {%- assign config_blog = site.project.blog -%}
 
-<div id="page-home">
+<div id="page-home" style="text-align:justify">
 
-  <!-- Blog title -->
-  <div class="blog-header">
+    <p style="text-align:center">
+        Hello :wave:, I am a <b class="notranslate">senior software engineer</b>. I share on this
+        blog
+        <b><a href="/blog/"><img width="25" height="25" src="/_static/common/img/post.png" alt="post"> <u>posts</u></a></b> about my works and interests:
+    </p>
 
-    <div class="row">
-      <div class="col-6 blog-avatar">
-        {% include project/avatar.html %}
-      </div>
+    <div class="blog-header">
 
-      <div class="col-6 text-left">
-        <h2 class="notranslate blog-title">{{ config_blog.title }}</h2>
+        <div class="row">
+            <div class="col-lg-6 blog-avatar">
+                {% include project/avatar.html %}
+            </div>
 
-        <p class="typewrite notranslate blog-keywords" data-period="1000"
-           data-type='["{{ config_blog.keywords | join: '", "' }}"]'>
-        <span class="blinker"></span>
-        </p>
-      </div>
+            <div class="col-lg-6" style="text-align:center;margin-top:1em;margin-bottom:1em">
+                <h2 class="notranslate blog-title">{{ config_blog.title }}</h2>
+
+                <p class="typewrite notranslate blog-keywords" data-period="1000"
+                   data-type='["{{ config_blog.keywords | join: '", "' }}"]'>
+                <span class="blinker"></span>
+                </p>
+
+                <a href="/blog/">
+                    <button class="btn btn-dark">
+                        <b class="black">Read blog posts</b>
+                    </button>
+                </a>
+            </div>
+        </div>
+
     </div>
 
-  </div>
+    {% include separator.html %}
 
-  <p style="text-align:justify">
-    Briefly, I am a <b class="notranslate">Senior Software Engineer</b>. I love coding algorithms
-    or/and doing
-    applied mathematics. I worked as <span class="notranslate"> web full stack developer</span>
-    <img width="25" height="25" src="/_static/common/img/web-icon.png" alt="web-icon"> and
-    <span class="notranslate"> software reliability engineer</span>
-    <img width="25" height="25" src="/_static/common/img/infra.png" alt="infra"> for platforms and
-    infrastructures,
-    and now I work as data engineer with machine learning at scale.
-    I have had several professional experiences by working successively in a <b>start-up</b> and
-    in a <b>multinational organization</b>. I am very excited by the start-up company world
-    <img width="25" height="25" src="/_static/common/img/startup.png" alt="startup"> and the process
-    of creation.
-    I am passionate about the computer science and the data science
-    <img width="25" height="25" src="/_static/common/img/data-science.png" alt="data-science">, and
-    more generally about
-    <b>informatics and mathematics</b>. One of my preferred formulae is the Euler's identity:
-    <span class="notranslate"> $ e^{i\pi} + 1 = 0 $ </span>. My favorite programming languages are
-    Java <img width="25" height="25" src="/_static/common/img/java.png" alt="java">,
-    Scala <img width="25" height="25" src="/_static/common/img/scala.png" alt="scala">,
-    Python <img width="25" height="25" src="/_static/common/img/python.png" alt="python">, and
-    Bash <img width="25" height="25" src="/_static/common/img/bash.png" alt="bash">.
-    I am a Linux user <img width="25" height="25" src="/_static/common/img/linux.png" alt="linux">
-    using mainly Ubuntu <img width="25" height="25" src="/_static/common/img/ubuntu.png"
-                             alt="ubuntu">
-    for the development.
-  </p>
-
-  <div style="text-align:justify">
-    <p>
-      Here my <b>technical stack</b>, that is to say some technologies that I have already used. It
-      is
-      non-exhaustive, new technologies occurs and disappears over time, and the list continues to
-      increase,
-      and I use only some of them in function of the project on which I work:
+    <p style="text-align:justify">
+        I work as <b><img width="25" height="25" src="/_static/common/img/data.png" alt="data"> data engineer with
+        <img width="25" height="25" src="/_static/common/img/ai.png" alt="artificial-intelligence"> artificial intelligence at scale</b> now, before I worked as
+        <span class="notranslate"> web full stack developer</span> and <span class="notranslate"> software reliability engineer</span>
+        for platforms and infrastructures. I have had several professional experiences by working successively
+        in <img width="25" height="25" src="/_static/common/img/startup.png" alt="startup"> <b>start-up and
+        <img width="25" height="25" src="/_static/common/img/multinational-company.png" alt="multinational-company"> multinational organization</b>
+        for years. I am very excited by the start-up company world and the process of creation until it becoming a responsible and large company.
     </p>
-    {% include project/tech-stack.html %}
-  </div>
 
-  <div style="text-align:justify">
-    <p>
-      You can follow me on these different platforms, my pseudo is either <b>glegoux</b> and/or <b>gilleslegoux</b>:
+    <div>
+        <p>
+            Here my <img width="25" height="25" src="/_static/common/img/stack.png" alt="stack"> <b>technical stack</b>,
+            that is to say some technologies that I have already used. It is non-exhaustive, new technologies occurs and disappears over time, and the list continues to
+            increase, and I use only some of them in function of the project on which I work:
+        </p>
+        {% include project/tech-stack.html %}
+    </div>
+
+    {% include separator.html %}
+
+    <p style="text-align:justify">
+        I love coding algorithms or/and doing applied mathematics. I am passionate about the
+        <b><img width="25" height="25" src="/_static/common/img/computer-science.png" alt="computer-science"> computer science and
+            <img width="25" height="25" src="/_static/common/img/data-science.png" alt="data-science"> data science</b>,
+        and more generally about informatics and mathematics.
+        My favorite programming languages, among those I use, are:
     </p>
-    {% include social.html %}
-  </div>
+
+    <p style="text-align: center">
+        Java <img width="25" height="25" src="/_static/common/img/java.png" alt="java"> |
+        Scala <img width="25" height="25" src="/_static/common/img/scala.png" alt="scala"> |
+        Python <img width="25" height="25" src="/_static/common/img/python.png" alt="python"> |
+        Bash <img width="25" height="25" src="/_static/common/img/bash.png" alt="bash">
+        under <img width="25" height="25" src="/_static/common/img/linux.png" alt="linux"> Linux
+        and <img width="25" height="25" src="/_static/common/img/ubuntu.png" alt="ubuntu"> Ubuntu
+        for the development.
+    </p>
+
+    <p>
+        One of my preferred formulae is the Euler's identity:
+    </p>
+
+    <p style="text-align: center">
+        <span class="notranslate"> $ e^{i\pi} + 1 = 0 $ </span>.
+    <p>
+
+    <p>
+        Else, I like :rugby_football: rugby, :soccer: soccer, <img width="25" height="25" src="/_static/common/img/mtga.png" alt="mtga">
+        magic the gathering arena, and the juggling, especially the <img width="25" height="25" src="/_static/common/img/diabolo.png" alt="diabolo"> “diabolo”.
+    </p>
+
+    {% include separator.html %}
+
+    <div class="row">
+        <div class="col-lg-6">
+            <p>
+                Follow me on these different platforms, my pseudo is either <b>glegoux</b> and/or <b>gilleslegoux</b>:
+            </p>
+            {% include social.html %}
+        </div>
+
+        <div class="col-lg-6">
+            Contact me, and I will answer you in under 24h and often more quickly again:
+            <p style="text-align: center">
+                <a href="/contact/">
+                    <button class="btn btn-dark">
+                        <b class="black">Contact me</b>
+                    </button>
+                </a>
+            </p>
+        </div>
+    </div>
+
+    {% include project/why-contact-me.html %}
 
 </div>
