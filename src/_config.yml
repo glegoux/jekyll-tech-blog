@@ -47,7 +47,7 @@ project:
         link: "/contact/"
         class_icon: "fas fa-address-card"
     title: "Software Engineering"
-    keywords: [ "Research", "Development", "Algorithm", "Data", "Machine Learning", "Web", "Security", "Applied Mathematics", "Reliability", "Infrastructure", "Design", "System", "Methodology", "Business" ]
+    keywords: [ "Research", "Development / Software", "Algorithm", "Design", "Data", "AI / Machine Learning", "Applied Mathematics", "Computer science", "Web", "Security", "Reliability", "Infrastructure / Hardware", "System", "Methodology", "Business" ]
     socials:
       - name: "LinkedIn"
         link: "https://www.linkedin.com/in/gilleslegoux"
