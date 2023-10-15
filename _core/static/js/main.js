@@ -39,13 +39,21 @@ jQuery(document).ready(function () {
 
   // focus for menu
 
-  $("header li a").each(function () {
+  $("a.menu-item").each(function () {
     let urlPath = window.location.pathname;
     let focusPath = $(this).attr("href");
-    if (urlPath.startsWith(focusPath)) {
-      $(this).addClass("focus");
+    if (focusPath === "/") {
+        if (urlPath === focusPath) {
+            $(this).addClass("focus");
+        } else {
+            $(this).removeClass("focus");
+        }
     } else {
-      $(this).removeClass("focus");
+        if (urlPath !== "/" && urlPath.startsWith(focusPath)) {
+            $(this).addClass("focus");
+        } else {
+            $(this).removeClass("focus");
+        }
     }
   });
 
