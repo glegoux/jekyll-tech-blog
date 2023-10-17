@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2023-10-17T21:02:25+00:00</updated>
+ <updated>2023-10-17T21:08:22+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -33,7 +33,7 @@
 
 &lt;p&gt;❎ Pros:&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;Medium editor is quicker and more handy in updating a post with simple assets like text and images&lt;/li&gt;
+  &lt;li&gt;Medium editor is quicker and more handy in updating a post with simple assets like text and images, more intuitive than YAFIYGI, and with instant updates without delay during the deployment of new content with Jekyll&lt;/li&gt;
   &lt;li&gt;Medium has advanced collaborations with co-writers, readers with claps, peer comments, and followers, not available on my blog&lt;/li&gt;
   &lt;li&gt;Medium decorates the post with an estimation of reading, no need to fill manually, and the listen generation, not available on my blog&lt;/li&gt;
   &lt;li&gt;Medium offers stats with custom metrics (reads, …) for each story more relevant than using Google Analytics&lt;/li&gt;
