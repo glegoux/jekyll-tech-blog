@@ -18,7 +18,7 @@ With the evolution of practices and tools of online blogging these last years, I
 After evaluating the market of online editors, and testing Medium, here are the pros and cons of using Medium vs. my personal blog that explains my choice:
 
 ❎ Pros:  
-* Medium editor is quicker and more handy in updating a post with simple assets like text and images  
+* Medium editor is quicker and more handy in updating a post with simple assets like text and images, more intuitive than YAFIYGI, and with instant updates without delay during the deployment of new content with Jekyll  
 * Medium has advanced collaborations with co-writers, readers with claps, peer comments, and followers, not available on my blog
 * Medium decorates the post with an estimation of reading, no need to fill manually, and the listen generation, not available on my blog
 * Medium offers stats with custom metrics (reads, ...) for each story more relevant than using Google Analytics
