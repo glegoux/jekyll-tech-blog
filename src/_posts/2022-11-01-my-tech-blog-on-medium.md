@@ -10,7 +10,7 @@ I will continue writing blog posts here, but mainly they will be published on Me
 
 With the evolution of practices and tools, I wanted to overcome a gap in my tech writer experience. Be more efficient and effective in writing content by allocating less time to maintain tools to write content. So, I needed to make the choice between using only this blog, using only Medium, using both, or something else. I chose to use both ones. The top and popular blog posts will be on Medium in priority to gain visibility and the other ones on this blog. After evaluating the market of editors for tech blogs, and testing Medium, here were my pros and cons of using Medium:
 
-{% include article-google-drawing.html title="Migration from glegoux.com and Medium" src="https://docs.google.com/drawings/d/e/2PACX-1vRwK7XcVBBYBxZhx3_nqSjUF4boYbf9BBdHP-HJYOlx2vX2Pe_scKcZTZFys9K5BEaaYmrGPN_3WziZ/pub?w=798&h=100" %}
+{% include article-google-drawing.html title="Migration from glegoux.com to Medium" src="https://docs.google.com/drawings/d/e/2PACX-1vRwK7XcVBBYBxZhx3_nqSjUF4boYbf9BBdHP-HJYOlx2vX2Pe_scKcZTZFys9K5BEaaYmrGPN_3WziZ/pub?w=798&h=100" %}
 
 ❎ Pros:  
 * Medium editor being quicker and handy in updating a post with simple assets like text and images  
