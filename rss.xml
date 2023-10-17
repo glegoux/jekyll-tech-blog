@@ -5,8 +5,8 @@
     <description>Personal blog about software engineering</description>
     <link>https://glegoux.com/</link>
     <atom:link href="https://glegoux.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 17 Oct 2023 07:36:11 +0000</pubDate>
-    <lastBuildDate>Tue, 17 Oct 2023 07:36:11 +0000</lastBuildDate>
+    <pubDate>Tue, 17 Oct 2023 07:42:01 +0000</pubDate>
+    <lastBuildDate>Tue, 17 Oct 2023 07:42:01 +0000</lastBuildDate>
     <generator>Jekyll v4.3.2</generator>
     
       <item>
@@ -17,9 +17,9 @@
 
 &lt;figure&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://docs.google.com/drawings/d/e/2PACX-1vRwK7XcVBBYBxZhx3_nqSjUF4boYbf9BBdHP-HJYOlx2vX2Pe_scKcZTZFys9K5BEaaYmrGPN_3WziZ/pub?w=798&amp;amp;h=100&quot; alt=&quot;Migration from glegoux.com and Medium&quot; title=&quot;Migration from glegoux.com and Medium&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://docs.google.com/drawings/d/e/2PACX-1vRwK7XcVBBYBxZhx3_nqSjUF4boYbf9BBdHP-HJYOlx2vX2Pe_scKcZTZFys9K5BEaaYmrGPN_3WziZ/pub?w=798&amp;amp;h=100&quot; alt=&quot;Migration from glegoux.com to Medium&quot; title=&quot;Migration from glegoux.com to Medium&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;Migration from glegoux.com and Medium&lt;/figcaption&gt;
+  &lt;figcaption&gt;Migration from glegoux.com to Medium&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;❎ Pros:&lt;/p&gt;
