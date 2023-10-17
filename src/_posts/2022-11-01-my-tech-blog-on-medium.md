@@ -19,7 +19,7 @@ After evaluating the market of online editors, and testing Medium, here are the 
 
 ❎ Pros:  
 * Medium editor is quicker and more handy in updating a post with simple assets like text and images, more intuitive than YAFIYGI, and with instant updates without delay during the deployment of new content with Jekyll  
-* Medium has advanced collaborations with co-writers, readers with claps, peer comments, and followers, not available on my blog
+* Medium has advanced features of collaboration with co-writers, claps, peer comments, and followers, not available on my blog
 * Medium decorates the post with an estimation of reading, no need to fill manually, and the listen generation, not available on my blog
 * Medium offers stats with custom metrics (reads, ...) for each story more relevant than using Google Analytics
 
