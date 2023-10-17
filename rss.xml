@@ -5,8 +5,8 @@
     <description>Personal blog about software engineering</description>
     <link>https://glegoux.com/</link>
     <atom:link href="https://glegoux.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 17 Oct 2023 06:59:23 +0000</pubDate>
-    <lastBuildDate>Tue, 17 Oct 2023 06:59:23 +0000</lastBuildDate>
+    <pubDate>Tue, 17 Oct 2023 07:24:13 +0000</pubDate>
+    <lastBuildDate>Tue, 17 Oct 2023 07:24:13 +0000</lastBuildDate>
     <generator>Jekyll v4.3.2</generator>
     
       <item>
@@ -41,8 +41,8 @@
 &lt;div style=&quot;height: 500px&quot;&gt;&lt;/div&gt;
 </description>
         <pubDate>Tue, 01 Nov 2022 00:00:00 +0000</pubDate>
-        <link>https://glegoux.com/blog/articles/2022/11/01/my-tech-blog-has-moved.html</link>
-        <guid isPermaLink="true">https://glegoux.com/blog/articles/2022/11/01/my-tech-blog-has-moved.html</guid>
+        <link>https://glegoux.com/blog/articles/2022/11/01/my-tech-blog-on-medium.html</link>
+        <guid isPermaLink="true">https://glegoux.com/blog/articles/2022/11/01/my-tech-blog-on-medium.html</guid>
         
         
         <category>News</category>
