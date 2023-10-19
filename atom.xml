@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2023-10-17T22:37:36+00:00</updated>
+ <updated>2023-10-19T06:11:14+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -29,7 +29,7 @@
   &lt;figcaption&gt;Migration from glegoux.com to Medium&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;After evaluating the market of online editors, and testing Medium, here are the pros and cons of using Medium vs. my personal blog that explains my choice:&lt;/p&gt;
+&lt;p&gt;After evaluating the market of online editors, and testing Medium, here are the pros and cons of using Medium vs. my personal blog that explain my choice:&lt;/p&gt;
 
 &lt;p&gt;❎ Pros:&lt;/p&gt;
 &lt;ul&gt;
@@ -41,16 +41,18 @@
 
 &lt;p&gt;❌ Cons:&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;Medium remains less advanced in pushing varied content like dynamic technical diagrams, and mathematics formulae while some workarounds exist&lt;/li&gt;
+  &lt;li&gt;The Medium features remain less advanced in pushing varied content like dynamic technical diagrams, and mathematics formulae while some workarounds exist&lt;/li&gt;
   &lt;li&gt;Medium has partial propriety of the written content and limits the number of readings for non-members while my blog is open&lt;/li&gt;
-  &lt;li&gt;Medium is not highly customizable like the content on my blog&lt;/li&gt;
+  &lt;li&gt;The Medium content has a pre-defined style of design, it is not highly customizable like the content on my blog&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;For all these reasons, I find that the right choice is a consensus by keeping the best of these 2 worlds. Also, I prefer remaining independent for the long term, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;glegoux.com&lt;/code&gt; is not only a tech blog but a hub of centralized online activities.&lt;/p&gt;
 
 &lt;p&gt;Don’t worry, I am going to keep maintaining this website and the open-source template behind it. To avoid all breaking changes, the past blog posts will remain accessible without broken web links.&lt;/p&gt;
 
-&lt;p&gt;However, it seems difficult to synchronize bi-directionally the content between Medium and this blog. I can import a post to Medium, but exporting from Medium is manual, long, and tedious. The synchronization in case of the update of a blog post becomes a nightmare to maintain. As I said some articles would be only on Medium, and other ones only on this blog, never a full post will be at both locations (to avoid divergences and heavy maintenance in case of edition). I will use web links between them, with a partial post redirecting to the full post.&lt;/p&gt;
+&lt;p&gt;However, it seems difficult to synchronize bi-directionally the content between Medium and this blog. I can import a post to Medium by copying manually the link, but exporting from Medium is long, and tedious. The synchronization in case of the update of a blog post done from Medium becomes a nightmare to maintain. While I want to use more Medium editor quicker and more handy. So as I explained, I foresee to have some articles would be only on Medium, and other ones only on this blog. Instead of having a full post will be at both locations, I will use web links between them, with a partial post redirecting to the full post (to avoid divergences and heavy maintenance in case of edition).&lt;/p&gt;
+
+&lt;p&gt;Thanks for your understanding, and your readings.&lt;/p&gt;
 
 &lt;div style=&quot;height: 500px&quot;&gt;&lt;/div&gt;
 </content><author>
