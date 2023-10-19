@@ -15,7 +15,7 @@ With the evolution of practices and tools of online blogging these last years, I
 
 {% include article-google-drawing.html title="Migration from glegoux.com to Medium" src="https://docs.google.com/drawings/d/e/2PACX-1vRwK7XcVBBYBxZhx3_nqSjUF4boYbf9BBdHP-HJYOlx2vX2Pe_scKcZTZFys9K5BEaaYmrGPN_3WziZ/pub?w=798&h=100" %}
 
-After evaluating the market of online editors, and testing Medium, here are the pros and cons of using Medium vs. my personal blog that explains my choice:
+After evaluating the market of online editors, and testing Medium, here are the pros and cons of using Medium vs. my personal blog that explain my choice:
 
 ❎ Pros:  
 * Medium editor is quicker and more handy in updating a post with simple assets like text and images, more intuitive than YAFIYGI, and with instant updates without delay during the deployment of new content with Jekyll  
@@ -24,14 +24,16 @@ After evaluating the market of online editors, and testing Medium, here are the 
 * Medium offers stats with custom metrics (reads, ...) for each story more relevant than using Google Analytics
 
 ❌ Cons:  
-* Medium remains less advanced in pushing varied content like dynamic technical diagrams, and mathematics formulae while some workarounds exist 
+* The Medium features remain less advanced in pushing varied content like dynamic technical diagrams, and mathematics formulae while some workarounds exist 
 * Medium has partial propriety of the written content and limits the number of readings for non-members while my blog is open
-* Medium is not highly customizable like the content on my blog
+* The Medium content has a pre-defined style of design, it is not highly customizable like the content on my blog
 
 For all these reasons, I find that the right choice is a consensus by keeping the best of these 2 worlds. Also, I prefer remaining independent for the long term, and `glegoux.com` is not only a tech blog but a hub of centralized online activities.
 
 Don't worry, I am going to keep maintaining this website and the open-source template behind it. To avoid all breaking changes, the past blog posts will remain accessible without broken web links. 
 
-However, it seems difficult to synchronize bi-directionally the content between Medium and this blog. I can import a post to Medium, but exporting from Medium is manual, long, and tedious. The synchronization in case of the update of a blog post becomes a nightmare to maintain. As I said some articles would be only on Medium, and other ones only on this blog, never a full post will be at both locations (to avoid divergences and heavy maintenance in case of edition). I will use web links between them, with a partial post redirecting to the full post.
+However, it seems difficult to synchronize bi-directionally the content between Medium and this blog. I can import a post to Medium by copying manually the link, but exporting from Medium is long, and tedious. The synchronization in case of the update of a blog post done from Medium becomes a nightmare to maintain. While I want to use more Medium editor quicker and more handy. So as I explained, I foresee to have some articles would be only on Medium, and other ones only on this blog. Instead of having a full post will be at both locations, I will use web links between them, with a partial post redirecting to the full post (to avoid divergences and heavy maintenance in case of edition).
+
+Thanks for your understanding, and your readings.
 
 <div style="height: 500px"></div>
