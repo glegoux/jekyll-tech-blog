@@ -5,8 +5,8 @@
     <description>Personal blog about software engineering</description>
     <link>https://glegoux.com/</link>
     <atom:link href="https://glegoux.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 19 Oct 2023 06:11:14 +0000</pubDate>
-    <lastBuildDate>Thu, 19 Oct 2023 06:11:14 +0000</lastBuildDate>
+    <pubDate>Sat, 21 Oct 2023 09:31:13 +0000</pubDate>
+    <lastBuildDate>Sat, 21 Oct 2023 09:31:13 +0000</lastBuildDate>
     <generator>Jekyll v4.3.2</generator>
     
       <item>
@@ -46,9 +46,9 @@
 
 &lt;p&gt;For all these reasons, I find that the right choice is a consensus by keeping the best of these 2 worlds. Also, I prefer remaining independent for the long term, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;glegoux.com&lt;/code&gt; is not only a tech blog but a hub of centralized online activities.&lt;/p&gt;
 
-&lt;p&gt;Don’t worry, I am going to keep maintaining this website and the open-source template behind it. To avoid all breaking changes, the past blog posts will remain accessible without broken web links.&lt;/p&gt;
+&lt;p&gt;Don’t worry, I am going to keep maintaining this website and the open-source template behind it. To avoid all breaking changes, the past blog posts will remain accessible without breaking their web links.&lt;/p&gt;
 
-&lt;p&gt;However, it seems difficult to synchronize bi-directionally the content between Medium and this blog. I can import a post to Medium by copying manually the link, but exporting from Medium is long, and tedious. The synchronization in case of the update of a blog post done from Medium becomes a nightmare to maintain. While I want to use more Medium editor quicker and more handy. So as I explained, I foresee to have some articles would be only on Medium, and other ones only on this blog. Instead of having a full post will be at both locations, I will use web links between them, with a partial post redirecting to the full post (to avoid divergences and heavy maintenance in case of edition).&lt;/p&gt;
+&lt;p&gt;However, it seems difficult to synchronize bi-directionally the content between Medium and this blog. I can import a post to Medium by copying manually the link, but exporting from Medium is long, and tedious. The synchronization in case of the update of a blog post done from Medium becomes a nightmare to maintain. While I want to use more Medium editor quicker and more handy. So as I explained, I foresee to have some articles would be only on Medium, and other ones only on this blog. If necessary, if I want to have one at both locations, instead of having a full post everywhere, I will use web links between them, with a partial post redirecting to the full post (to avoid divergences and too heavy maintenance in case of multiple post-editions).&lt;/p&gt;
 
 &lt;p&gt;Thanks for your understanding, and your readings.&lt;/p&gt;
 
