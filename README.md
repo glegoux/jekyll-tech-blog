@@ -1,4 +1,4 @@
-# glegoux.com
+# Jekyll Tech Blog
 
 [![Deploy static website](https://github.com/glegoux/glegoux.github.io/workflows/Deploy%20static%20website/badge.svg)](https://github.com/glegoux/glegoux.github.io/actions?query=workflow%3A%22Deploy+static+website%22)
 
