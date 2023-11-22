@@ -2,7 +2,7 @@ name: Deploy static website
 
 on:
   push:
-    branches: [ develop ]
+    branches: [ glegoux.com ]
 
 jobs:
   build:
