@@ -2,7 +2,7 @@
 <div class="container">
   <div class="row">
     {%- if config_blog.menu_items %}
-    <div class="contact col-md-6 col-12">
+    <div class="contact col-md-4 col-12">
       <table>
         <tr>
           <td colspan="2">
@@ -26,16 +26,21 @@
       </table>
     </div>
     {% else %}
-    <div class="col-md-6 col-12"></div>
+    <div class="col-md-4 col-12"></div>
     {% endif %}
 
+    <div class="follow col-md-4 col-12">
+      <img class="img-fluid lazyload" data-src="{{ config_blog.logo_header }}" alt="site logo"/>
+    </div>
+
+
     {%- if config_blog.socials %}
-    <div class="follow col-md-6 col-12">
+    <div class="follow col-md-4 col-12">
       <h1 class="title">Follow me</h1>
       {% include social.html %}
     </div>
     {% else %}
-    <div class="col-md-6 col-12"></div>
+    <div class="col-md-4 col-12"></div>
     {% endif %}
   </div>
 

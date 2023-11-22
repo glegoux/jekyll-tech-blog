@@ -3,7 +3,7 @@
 
 # Server
 
-url: "https://glegoux.com"
+url: "http://localhost:4000" # change by https://your.domain.name
 baseurl: ""
 
 # SEO
@@ -86,3 +86,9 @@ project:
         job: "Software Engineer"
         company: ""
         follow_link: "<link>"
+      glegoux:
+        firstname: "Gilles"
+        lastname: "LEGOUX"
+        job: "Software Engineer"
+        company: ""
+        follow_link: "/<link>"
