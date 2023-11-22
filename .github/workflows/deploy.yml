@@ -2,7 +2,7 @@ name: Deploy static website
 
 on:
   push:
-    branches: [ develop ]
+    branches: [ your-branch ]
 
 jobs:
   build:
