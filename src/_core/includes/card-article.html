@@ -1,9 +1,10 @@
-{%- assign article_id = post.date | date: '%Y-%m-%d-' | append: post.title | slugify -%}
-<div class="article-card-container">
+{%- assign article_id = include.date | date: '%Y-%m-%d-' | append: include.title | slugify -%}
+<a href="{{ include.url }}" title="Read this article" style="display: block">
+  <div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 
-      {%- if post.draft -%}
+      {%- if include.draft -%}
       <span class="article-draft">
         <ul>
           <li title="Article will not deployed in production (only visible on development mode)">
@@ -14,10 +15,12 @@
       {%- endif -%}
 
       <!-- Article cover -->
-      {%- assign article_cover_path = "/_static/posts/" | append: article_id | append: ".jpg" -%}
-      {%- assign article_cover_path_exist = site.static_files | where: "path", article_cover_path | first -%}
+      {%- assign article_cover_path = "/_static/posts/" | append: article_id | append:
+      ".jpg" -%}
+      {%- assign article_cover_path_exist = site.static_files | where: "path", article_cover_path |
+      first -%}
       {%- unless article_cover_path_exist -%}
-        {%- assign article_cover_path = "/_core/static/img/default/article-cover.jpg" -%}
+      {%- assign article_cover_path = "/_core/static/img/default/article-cover.jpg" -%}
       {%- endunless -%}
       <div class="article-cover">
         <img class="img-fluid lazyload" data-src="{{ article_cover_path }}"
@@ -28,33 +31,40 @@
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          {{ post.title }}
+          {{ include.title }}
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          {{ post.description }}
+          {{ include.description }}
         </div>
 
+        {%- if include.category -%}
         <!-- Article categories -->
         <div class="article-category">
           <ul>
-            <li>{{ post.category }}</li>
+            <li>{{ include.category }}</li>
           </ul>
         </div>
+        {%- endif -%}
 
+        {%- if include.date -%}
         <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>{{ post.date | date: '%B %d, %Y' }}</span>
+          <span>{{ include.date | date: '%B %d, %Y' }}</span>
         </div>
+        {%- endif -%}
+
+        {%- if include.time_reading_minutes -%}
         <!-- Article reading time -->
         <div class="reading-time">
           <i class="far fa-clock"></i>
-          <span>{{ post.time_reading_minutes }} min</span>
+          <span>{{ include.time_reading_minutes }} min</span>
         </div>
+        {%- endif -%}
       </div>
 
     </div>
-</div>
-
+  </div>
+</a>

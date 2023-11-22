@@ -85,6 +85,27 @@ div.error, div.warning, div.info, div.question, div.success {
   width: 100%;
 }
 
+/* Blog title */
+
+.blog-title {
+  margin-top: 0.5em;
+  color: black;
+}
+
+.blog-keywords {
+  color: cornflowerblue;
+
+  .blinker {
+    font-weight: 400;
+    font-size: 1.5em;
+  }
+}
+
+.blog-quote {
+  color: grey;
+  font-weight: 300;
+}
+
 /* Article */
 
 .article-card-container {

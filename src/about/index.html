@@ -1,7 +1,13 @@
 ---
 layout: default
 ---
+{%- assign config_blog = site.project.blog -%}
+
 <div id="page-about">
+
+  <p>
+    <b style="font-size: 2em">About this blog</b>
+  </p>
 
   <p style="text-align:justify">
     I created this blog to share my <b>knowledge</b> and <b>experiences</b> with you
@@ -14,6 +20,39 @@ layout: default
     are available <a class="underline link-strong" href="https://github.com/glegoux/articles-glegoux-com">here</a>.
     Also, I write blog posts on Medium <a class="underline link-strong" href="https://medium.com/@glegoux">https://medium.com/@glegoux</a>.
   </p>
+
+  <div class="row" style="text-align: center">
+    <div class="col-xs-12 col-md-6 col-lg-4">
+      <p style="font-size: 1.5em">Readers</p>
+      <p>
+        Read the published content
+      </p>
+      {% include read-blog-posts.html %}
+    </div>
+    <div class="col-xs-12 col-md-6 col-lg-4">
+      <p style="font-size: 1.5em">Writers</p>
+      <p>
+        Co-write content or create your own blog
+      </p>
+      {% include card-article.html
+      url="/blog/articles/2019/01/21/getting-started.html"
+      title="Getting Started"
+      date="2019/01/21"
+      description="How to write articles on this blog from an easy-to-use and rich syntax?"
+      %}
+    </div>
+    <div class="col-xs-12 col-md-6 col-lg-4">
+      <p style="font-size: 1.5em">Contributors</p>
+      <p>
+        Contribute to open-source project
+      </p>
+      <a href="https://github.com/glegoux/jekyll-blog" title="Contribute to open-source project">
+        <img src="/_core/static/img/meta/jekyll-tech-blog.png" alt="Jekyll Tech Blog features"
+             style="border: 1px solid lightgrey; border-radius: 10px"
+             class="img-fluid ls-is-cached lazyloaded" />
+      </a>
+    </div>
+  </div>
 
   <p style="text-align:justify">
     The logo of this blog is composed of a <b>buffer logic gate</b> and <b>uppercase sigma</b> to represent respectively the relation between computer science and applied mathematics.
@@ -30,5 +69,13 @@ layout: default
     This blog is a <b>web application responsive</b>. You can access that from any device <b>computer, tablet or mobile</b>. As you can add this website in your <b>favorites of your web browser</b>,
     you can add a link in the <b>desktop of your computer</b> or add an icon in the <b>home screen of your tablet/mobile</b> like your other applications.
   </p>
+
+  <p>
+    <b style="font-size: 2em">About me</b>
+  </p>
+
+  {% include project/avatar.html %}
+  <br>
+  {% include project/about-me.html %}
 
 </div>

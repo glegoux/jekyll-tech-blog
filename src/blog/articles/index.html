@@ -80,10 +80,17 @@ redirect_from:
     <div class="row">
       {%- assign posts = paginator.posts -%}
       {%- for post in posts %}
-      <a href="{{ post.url }}" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"
-         style="display: block">
-        {% include card-article.html %}
-      </a>
+      <div class="col-xs-12 col-md-6 col-lg-4">
+        {% include card-article.html
+            url=post.url
+            date=post.date
+            title=post.title
+            description=post.description
+            category=post.category
+            time_reading_minutes=post.time_reading_minutes
+            draft=post.draft
+        %}
+      </div>
       {%- else -%}
       <p>No one available article</p>
       {%- endfor %}
