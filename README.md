@@ -1,6 +1,6 @@
 # 🧪 Jekyll Tech Blog
 
-[![Deploy static website](https://github.com/glegoux/glegoux.github.io/workflows/Deploy%20static%20website/badge.svg)](https://github.com/glegoux/glegoux.github.io/actions?query=workflow%3A%22Deploy+static+website%22)
+[![Test](https://github.com/glegoux/jekyll-tech-blog/workflows/Test/badge.svg)](https://github.com/glegoux/jekyll-tech-blog/actions?query=workflow%3A%22Test)
 
 You can use this static website as a template to build your own blog.
 
