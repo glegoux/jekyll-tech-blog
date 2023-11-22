@@ -4,6 +4,8 @@ articles: true
 redirect_from:
 - /blog/
 - /blog/articles/page/1/
+- /
+- /home/
 ---
 {%- assign config_blog = site.project.blog -%}
 <div id="page-articles">
@@ -15,13 +17,6 @@ redirect_from:
     </div>
     {% endif %}
   {% endif %}
-
-  <!-- Tech stack -->
-  {% include project/tech-stack.html %}
-
-  <p style="text-align: center">
-    I write also blog posts on Medium, see <a href="https://medium.com/@glegoux" target="_blank"><b><u>https://medium.com/@glegoux</u></b></a>.
-  </p>
 
   <!-- Articles advanced search -->
   <div id="articles-text-search">

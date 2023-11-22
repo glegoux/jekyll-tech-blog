@@ -31,64 +31,58 @@ unpublished: false
 
 project:
   blog:
-    name_header: "@GillesLegoux (glegoux)"
+    name_header: "@Bob (bob)"
     logo_header: "/_static/config/img/site-logo.png"
     menu_items:
-      - name: "Home"
-        link: "/"
-        class_icon: "fa fa-home"
       - name: "Blog"
         link: "/blog/"
         class_icon: "fas fa-newspaper"
       - name: "About"
         link: "/about/"
         class_icon: "fas fa-user"
-      - name: "Contact"
-        link: "/contact/"
-        class_icon: "fas fa-address-card"
     title: "Software Engineering"
     keywords: [ "Research", "Development / Software", "Algorithm", "Design", "Data", "AI / Machine Learning", "Applied Mathematics", "Computer science", "Web", "Security", "Reliability", "Infrastructure / Hardware", "System", "Methodology", "Business" ]
     socials:
       - name: "LinkedIn"
-        link: "https://www.linkedin.com/in/gilleslegoux"
+        link: "<link>"
         class_icon:  "fab fa-linkedin"
       - name: "Twitter"
-        link: "https://twitter.com/gilleslegoux"
+        link: "<link>"
         class_icon: "fab fa-twitter"
       - name: "GitHub"
-        link: "https://github.com/glegoux"
+        link: "<link>"
         class_icon:  "fab fa-github"
       - name: "SlideShare"
-        link: "https://www.slideshare.net/gilleslegoux"
+        link: "<link>"
         class_icon: "fab fa-slideshare"
       - name: "Medium"
-        link: "https://medium.com/@glegoux"
+        link: "<link>"
         class_icon: "fab fa-medium"
       - name: "Email"
-        link: "https://www.glegoux.com/contact/email"
+        link: "<link>"
         class_icon:  "fas fa-paper-plane"
-    link_status_availability: "http://status.glegoux.com"
-    google_analytics_code: "UA-102138582-1"
-    disqus_name: "glegoux-com"
+    link_status_availability: "<link>"
+    google_analytics_code: "<id>"
+    disqus_name: "<id>"
     theme_color: "#383b43"
   article:
     source_code:
-      url: "https://raw.githubusercontent.com/glegoux/jekyll-blog/develop/src/_posts"
+      url: "https://raw.githubusercontent.com/glegoux/jekyll-tech-blog/main/src/_posts"
     resources:
-      url: "https://github.com/glegoux/articles-glegoux-com/tree/master/articles"
+      url: "https://raw.githubusercontent.com/glegoux/jekyll-tech-blog/main/resources"
     issue:
-      url: "https://github.com/glegoux/jekyll-blog/issues"
+      url: "https://github.com/glegoux/jekyll-tech-blog/issues"
     edit:
-      url: "https://github.com/glegoux/jekyll-blog/edit/develop/src/_posts/"
+      url: "https://github.com/glegoux/jekyll-tech-blog/edit/main/src/_posts/"
     static:
       url: "https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles"
       image:
         path: "images"
         suffix: ""
     authors:
-      glegoux:
-        firstname: "Gilles"
-        lastname: "LEGOUX"
+      bob:
+        firstname: "Bob"
+        lastname: ""
         job: "Software Engineer"
-        company: "Criteo"
-        follow_link: "https://www.linkedin.com/in/gilleslegoux"
+        company: ""
+        follow_link: "<link>"
