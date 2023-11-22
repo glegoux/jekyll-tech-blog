@@ -7,7 +7,7 @@ You can use this static website as a template to build your own blog.
 <table>
   <tr>
     <td>
-        <img src="https://github.com/glegoux/glegoux.github.io/blob/develop/src/_core/static/img/meta/jekyll-tech-blog.png?raw=true"
+        <img src="https://github.com/glegoux/jekyll-tech-blog/blob/main/src/_core/static/img/meta/jekyll-tech-blog.png?raw=true"
              alt="Jekyll Tech Blog features" />
     </td>
   </tr>
