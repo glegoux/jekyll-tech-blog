@@ -7,7 +7,7 @@ Build your tech blog deployed on-premise, cloud, or directly with [GitHub Pages]
 <table>
   <tr>
     <td>
-        <img src="https://raw.githubusercontent.com/glegoux/jekyll-tech-blog/main/doc/img/jekyll-tech-blog.png"
+        <img src="https://raw.githubusercontent.com/glegoux/jekyll-tech-blog/main/doc/img/jekyll-tech-blog-features.png"
              alt="Jekyll Tech Blog features" />
     </td>
   </tr>
