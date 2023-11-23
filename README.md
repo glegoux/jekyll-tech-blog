@@ -7,7 +7,7 @@ Build your tech blog deployed on-premise, cloud, or directly with [GitHub Pages]
 <table>
   <tr>
     <td>
-        <img src="/doc/img/jekyll-tech-blog-features.png"
+        <img src="https://github.com/glegoux/raw/main/doc/img/jekyll-tech-blog-features.png"
              alt="Jekyll Tech Blog features" />
     </td>
   </tr>
@@ -27,4 +27,4 @@ Go to [Documentation](https://github.com/glegoux/jekyll-tech-blog/wiki).
 
 # License
 
-See [License](/LICENSE.txt?raw=true).
+See [License](https://github.com/glegoux/jekyll-tech-blog/raw/main/LICENSE.txt).
