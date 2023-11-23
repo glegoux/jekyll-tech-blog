@@ -1,6 +1,6 @@
 # 🧪 Jekyll Tech Blog
 
-[![Test](https://github.com/glegoux/jekyll-tech-blog/workflows/Test/badge.svg)](/actions?query=workflow%3A%22Test%22)
+[![Test](https://github.com/glegoux/jekyll-tech-blog/workflows/Test/badge.svg)](https://github.com/glegoux/jekyll-tech-blog/actions?query=workflow%3A%22Test%22)
 
 Build your tech blog deployed on-premise, cloud, or directly with [GitHub Pages](https://pages.github.com/).
 
@@ -19,11 +19,11 @@ See an advanced usage of this website template on my blog: https://glegoux.com.
 
 # Quick started
 
-Go to [Quick started](/wiki/Quick-started).
+Go to [Quick started](https://github.com/glegoux/jekyll-tech-blog/wiki/Quick-started).
 
 # Documentation
 
-Go to [Documentation](/wiki).
+Go to [Documentation](https://github.com/glegoux/jekyll-tech-blog/wiki).
 
 # License
 
