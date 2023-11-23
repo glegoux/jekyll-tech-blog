@@ -2,7 +2,7 @@
 
 [![Test](https://github.com/glegoux/jekyll-tech-blog/workflows/Test/badge.svg)](https://github.com/glegoux/jekyll-tech-blog/actions?query=workflow%3A%22Test%22)
 
-Build your own tech blog deployed on-premise, cloud, or directly with [GitHub Pages](https://pages.github.com/).
+Build your tech blog deployed on-premise, cloud, or directly with [GitHub Pages](https://pages.github.com/).
 
 <table>
   <tr>
