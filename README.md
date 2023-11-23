@@ -2,7 +2,7 @@
 
 [![Test](https://github.com/glegoux/jekyll-tech-blog/workflows/Test/badge.svg)](https://github.com/glegoux/jekyll-tech-blog/actions?query=workflow%3A%22Test%22)
 
-You can use this static website as a template to build your own blog.
+Build your own tech blog deployed on-premise, cloud, or directly with [GitHub Pages](https://pages.github.com/).
 
 <table>
   <tr>
@@ -15,15 +15,16 @@ You can use this static website as a template to build your own blog.
 
 # Demo
 
-See the demo of this website template with a usage on my own blog: https://glegoux.com.
-
-This project uses [GitHub Pages](https://pages.github.com/) with Jekyll to render this website available at https://glegoux.com .
-Related resources for the articles are in another repository: https://github.com/glegoux/articles-glegoux-com .
+See an advanced usage of this website template on my own blog: https://glegoux.com.
 
 # Quick started
 
-Go to [Quick started](https://github.com/glegoux/glegoux.github.io/wiki/Quick-started).
+Go to [Quick started](https://github.com/glegoux/jekyll-tech-blog/wiki/Quick-started).
 
-# Know more
+# Documentation
 
-Go to [Wiki](https://github.com/glegoux/glegoux.github.io/wiki).
+Go to [Documentation](https://github.com/glegoux/jekyll-tech-blog/wiki).
+
+# License
+
+See the [License](https://raw.githubusercontent.com/glegoux/jekyll-blog/main/LICENSE.txt) file.
