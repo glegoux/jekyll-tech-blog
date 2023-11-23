@@ -15,7 +15,7 @@ Build your tech blog deployed on-premise, cloud, or directly with [GitHub Pages]
 
 # Demo
 
-See an advanced usage of this website template on my own blog: https://glegoux.com.
+See an advanced usage of this website template on my blog: https://glegoux.com.
 
 # Quick started
 
@@ -27,4 +27,4 @@ Go to [Documentation](https://github.com/glegoux/jekyll-tech-blog/wiki).
 
 # License
 
-See the [License](https://raw.githubusercontent.com/glegoux/jekyll-blog/main/LICENSE.txt) file.
+See [License](https://raw.githubusercontent.com/glegoux/jekyll-blog/main/LICENSE.txt).
