@@ -27,4 +27,4 @@ Go to [Documentation](https://github.com/glegoux/jekyll-tech-blog/wiki).
 
 # License
 
-See [License](/LICENSE.txt).
+See [License](/LICENSE.txt?raw=true).
