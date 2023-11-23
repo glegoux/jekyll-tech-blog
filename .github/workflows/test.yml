@@ -8,19 +8,19 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Show environment
+      - name: (project) Show environment
         run: |
           echo "Operating System: $(cat /etc/issue.net)"
           echo "Working Directory: $(pwd)"
           echo "User: $(id)"
           echo "Shell: $SHELL"
+      - uses: actions/checkout@v4
       - uses: ruby/setup-ruby@v1 # use .ruby-version
-      - name: Install project
+      - name: (project) Install
         run: |
           echo "** Install ruby dependencies:"
           make install
-      - name: Show versions
+      - name: (project) Show versions
         run: |
           source ~/.profile
           echo "** Context ecosystem:"
@@ -32,14 +32,14 @@ jobs:
           echo "bundle version: $(bundle --version)"
           echo "jekyll version: $(jekyll --version 2> /dev/null)"
           echo -e "gem version:\n$(gem list)"
-      - name: Build static website
+      - name: (project) Build
         run: |
           source ~/.profile
           make build
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v4
         with:
-          node-version: '16'
-      - name: Test project
+          node-version: '18'
+      - name: (project) Test
         run: |
           echo "** Install test dependencies:"
           npm install -global stylelint
@@ -49,5 +49,5 @@ jobs:
           echo "npm version: $(npm --version)"
           echo "stylelint version: $(npx stylelint --version)"
           echo "jq version: $(jq --version)"
-          echo "** Run:"
+          echo "** Run tests:"
           make test
