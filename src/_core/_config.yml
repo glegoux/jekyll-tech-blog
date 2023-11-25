@@ -86,3 +86,9 @@ project_core:
       fuse: "3.4.6"
       lazysizes: "5.2.0"
       mathjax: "3.1.2"
+  links:
+    project: "https://github.com/glegoux/jekyll-tech-blog"
+    doc: "https://github.com/glegoux/jekyll-tech-blog/wiki"
+    code: "https://github.com/glegoux/jekyll-tech-blog"
+    bug: "https://github.com/glegoux/jekyll-tech-blog/issues"
+    license: "https://raw.githubusercontent.com/glegoux/jekyll-tech-blog/main/LICENSE.txt"

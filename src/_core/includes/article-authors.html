@@ -1,0 +1,61 @@
+<!-- Article author(s) -->
+{%- assign n_authors = page.authors | size -%}
+{%- if n_authors > 0 -%}
+<div class="article-authors">
+<h5>
+  Author{%- if n_authors > 1 -%}s{%- endif %}
+</h5>
+
+<hr/>
+
+<div class="row">
+  {%- for author_name in page.authors -%}
+  {%- assign author = config_article.authors[author_name] %}
+  <div
+    class="{% if n_authors == 1 %}w-100 {% endif %}col-xs-12{% if n_authors > 1 %} col-md-6{% endif %}{% if n_authors > 2 %} col-lg-4{% endif %}">
+    <table class="article-author">
+      <tbody>
+      <tr>
+        <td rowspan="2">
+          {%- assign author_avatar_path = '/_static/authors/' | append: author_name | append:
+          '.jpg' -%}
+          {%- assign author_avatar_path_exist = site.static_files | where: "path",
+          author_avatar_path | first -%}
+          {%- unless author_avatar_path_exist -%}
+          {%- assign author_avatar_path = '/_core/static/img/default/author.png' -%}
+          {%- endunless -%}
+          <img src="{{ author_avatar_path }}" alt="picture of {{ author_name }}"
+               title="picture of this author"/>
+        </td>
+        <td>
+          <b>
+            {{ author.firstname | capitalize }}
+            {{ author.lastname | uppercase }}
+          </b>
+          ({{ author_name }})
+        </td>
+      <tr>
+        <td>
+          <span class="notranslate job">
+          {{ author.job | capitalize }}
+          {%- if author.company and author.company != '' -%} @{{ author.company | capitalize }} {%- endif -%}
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align: center">
+          <a href="{{ author.follow_link }}" title="Follow this author">
+            <br>
+            <button class="btn btn-dark">
+              <b>Follow</b>
+            </button>
+          </a>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  {%- endfor -%}
+</div>
+</div>
+{%- endif -%}

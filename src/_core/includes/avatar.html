@@ -1,0 +1,34 @@
+{%- assign config_avatar = site.project.avatar -%}
+{%- assign links = site.data.project.links -%}
+<div class="text-center">
+    {%- assign avatar_path = "/_core/static/img/default/avatar.png" -%}
+    {%- assign avatar_path_exist = site.static_files | where: "path", avatar_path | first -%}
+    {%- unless avatar_path_exist -%}
+      {%- assign avatar_path = "/_core/static/img/default/avatar.png" -%}
+    {%- endunless -%}
+    <img class="link-light icon-avatar" src="{{ avatar_path }}" alt="avatar"/>
+    <br>
+    <span class="notranslate font-weight-bold h4">
+        {{ config_avatar.name }}
+    </span>
+    <br>
+    <span class="notranslate text-secondary">
+        {{config_avatar.job }}
+    </span>
+    <br>
+    <a href="{{ links.github }}" aria-label="GitHub">
+        <img class="notranslate" width="25" height="25" src="/_core/static/img/social/github.png" title="GitHub" alt="GitHub"/>
+    </a>
+    &nbsp;
+    <a href="{{ links.linkedin }}" aria-label="LinkedIn">
+        <img class="notranslate" width="25" height="25" src="/_core/static/img/social/linkedin.png" title="LinkedIn" alt="LinkedIn"/>
+    </a>
+    &nbsp;
+    <a href="{{ links.stackoverflow }}" aria-label="Stack Overflow">
+        <img class="notranslate" width="25" height="25" src="/_core/static/img/social/stackoverflow.png" title="Stack Overflow" alt="Stack Overflow"/>
+    </a>
+    &nbsp;
+    <a href="{{ links.medium }}" aria-label="Medium">
+      <img class="notranslate" width="25" height="25" src="/_core/static/img/social/medium.png" title="Medium" alt="Medium"/>
+    </a>
+</div>

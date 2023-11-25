@@ -26,14 +26,14 @@
   </header>
 
   {%- if jekyll.environment == 'development' -%}
-  {% include banner-dev.html %}
+    {% include banner-dev.html %}
   {%- endif %}
 
   <div id="content" class="container">
     <div class="row">
       {% include loader.html %}
       {{ content }}
-      {% include disqus.html %}
+      {% include comment-disqus.html %}
     </div>
   </div>
 
@@ -44,7 +44,6 @@
   {% include go-to-top.html %}
 
   {%- if config_blog.google_analytics_code %} {% include google-analytics.html %} {% endif %}
-  {%- if config_blog.lang %} {% include google-translate.html %} {% endif %}
 
 </div>
 
