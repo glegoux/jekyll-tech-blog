@@ -1,0 +1,40 @@
+{%- assign config_blog = site.project.blog -%}
+<!-- No Script -->
+<noscript>
+  <style type="text/css">
+    div#blog {
+      display: none;
+    }
+
+    .noscript {
+      text-align: center;
+    }
+  </style>
+</noscript>
+
+<noscript><p></p></noscript>
+
+<noscript class="noscript">
+  <p>
+    {%- if config_blog.logo_header %}
+    <img class="img-fluid" src="{{ config_blog.logo_header }}" alt="site logo"/>
+    {% endif %}
+  </p>
+</noscript>
+
+<noscript class="noscript">
+  <p>
+    <u><a href="{{ site.url }}">{{ site.url }}</a></u>
+  </p>
+</noscript>
+<noscript class="noscript">
+  <p>
+    Oops, JavaScript is unsupported or is disabled on this page.
+  </p>
+</noscript>
+
+<noscript class="noscript">
+  <p>
+    Please activate it, to use this web application.
+  </p>
+</noscript>

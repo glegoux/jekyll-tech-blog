@@ -2,7 +2,7 @@ SHELL = /usr/bin/env bash
 
 .PHONY: usage
 usage:
-	@echo "usage install update clean doctor build test run-prod run"
+	@echo "usage install update clean build build-example doctor test run-prod run"
 
 .PHONY: all
 all: install clean build doctor test run
@@ -27,6 +27,12 @@ doctor:
 build:
 	@JEKYLL_ENV=production bundle exec jekyll build \
 		--config "src/_core/_config.yml,src/_config.yml" \
+		--trace
+
+.PHONY: build-example
+build-example:
+	@JEKYLL_ENV=production bundle exec jekyll build \
+		--config "src/_core/_config.yml,src/_config.yml,_config_deploy_template.yml" \
 		--trace
 
 .PHONY: test

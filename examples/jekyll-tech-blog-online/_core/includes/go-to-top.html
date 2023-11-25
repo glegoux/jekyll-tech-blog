@@ -1,0 +1,97 @@
+<!-- Go Top -->
+<div id="goto-top" class="no-print" style="display:none;">
+  <a href="#" class="fas fa-arrow-up" title="Go to top page"></a>
+</div>
+
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+
+        /* Go to top or to element with id */
+
+        function goToIdorTop() {
+            $('a[href^="#"]').click(function () {
+                var destId = $(this).attr("href");
+                var srcId = $(this).attr("id");
+                if (destId === "#") {
+                    $("html, body").animate({scrollTop: 0}, 'slow');
+                } else {
+                    if (srcId && srcId.startsWith('go-to-ref')) {
+                        srcId = '#' + srcId;
+                        $('.come-back').remove();
+                        $(destId).prepend('<a class="come-back" href="' + srcId + '">&uarr;</a>');
+                        goToIdorTop();
+                    }
+                    var offset = $(destId).offset().top;
+                    $('html, body').animate({scrollTop: offset}, 'slow');
+                }
+                return false;
+            });
+        }
+
+        goToIdorTop();
+
+        /* Show or hide menu */
+
+        var scrollticker;
+
+        $(window).scroll(function () {
+            function hide() {
+                $('#goto-top').css('display', 'inline').hide();
+                if ($('.sharing-platform').is(':hidden')) {
+                    $('.show-sharing-platform').hide();
+                }
+                $('.menu-article').css('display', 'inline').hide();
+            }
+
+            function show() {
+                $('#goto-top').css('display', 'inline').show();
+                $('.menu-article').css('display', 'inline').show();
+                $('.show-sharing-platform').show();
+            }
+
+            if (scrollticker) {
+                window.clearTimeout(scrollticker);
+                scrollticker = null;
+            }
+
+            var pos = $(window).scrollTop();
+
+            if (pos !== 0) {
+                show();
+                scrollticker = window.setTimeout(function () {
+                    hide();
+                }, 2000);
+            } else {
+                hide();
+            }
+        });
+
+    });
+</script>
+
+<style type="text/css">
+  #goto-top {
+    z-index: 9999;
+    width: 2.25em;
+    height: 2.25em;
+    position: fixed;
+    bottom: 0.5em;
+    margin-right: 0.5em;
+    right: 15px;
+    background-color: rgba(144, 144, 144, 0.65);
+    border-radius: 100%;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding-top: 0.25em;
+  }
+
+  #goto-top a:before {
+    font-size: 2em;
+  }
+
+  #goto-top a {
+    display: block;
+    font-size: 0.75em;
+  }
+</style>
