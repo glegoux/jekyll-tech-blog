@@ -28,13 +28,13 @@
 <meta property="og:locale" content="en" />
 <meta name="description" content="Personal blog about software engineering" />
 <meta property="og:description" content="Personal blog about software engineering" />
-<link rel="canonical" href="tiny-taiyaki-1427a8.netlify.app/404.html" />
-<meta property="og:url" content="tiny-taiyaki-1427a8.netlify.app/404.html" />
+<link rel="canonical" href="https://jekyll-tech-blog.netlify.app/blog/articles/" />
+<meta property="og:url" content="https://jekyll-tech-blog.netlify.app/blog/articles/" />
 <meta property="og:site_name" content="Software Engineering Blog - Bob" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Software Engineering Blog - Bob" />
 <script type="application/ld+json">
-{"author":{"@type":"Person","name":"Bob"},"@type":"WebPage","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"tiny-taiyaki-1427a8.netlify.app/_static/config/img/icon-iphone.png"},"name":"Bob"},"description":"Personal blog about software engineering","headline":"Software Engineering Blog - Bob","url":"tiny-taiyaki-1427a8.netlify.app/404.html","@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"Bob"},"@type":"WebPage","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://jekyll-tech-blog.netlify.app/_static/config/img/icon-iphone.png"},"name":"Bob"},"description":"Personal blog about software engineering","headline":"Software Engineering Blog - Bob","url":"https://jekyll-tech-blog.netlify.app/blog/articles/","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   <!-- Preconnect -->
@@ -53,8 +53,8 @@
 <link rel="preload" as="style" href="/_core/static/libs/font-awesome/5.11.2/css/all.min.css"/>
 
 <link rel="preload" as="script" href="/_core/static/js/typing-text.min.js"/>
-<link rel="preload"  as="style" href="/_core/static/css/main.css"/><link rel="preload" as="script" href="/404.js"/>
-<link rel="preload" as="style" href="/404.css"/>
+<link rel="preload"  as="style" href="/_core/static/css/main.css"/><link rel="preload" as="script" href="/_core/static/js/articles.js"/>
+<link rel="preload" as="style" href="/_core/static/css/articles.css"/>
   <!-- Load before DOMContentLoaded (<script> markup harcoded, ...) -->
 <!-- Third-party JS -->
 <script type="text/javascript" src="/_core/static/libs/jquery/3.5.1/js/jquery.min.js"></script>
@@ -75,13 +75,13 @@ window.MathJax = {
 <script type="text/javascript" defer src="/_core/static/libs/moment/2.24.0/js/moment.min.js"></script>
 <script type="text/javascript" defer src="/_core/static/libs/fuse/3.4.6/js/fuse.min.js"></script>
 <!-- Local JS -->
-<script type="text/javascript" defer src="/_core/static/js/typing-text.min.js"></script><script type="text/javascript" defer src="/404.js"></script>
+<script type="text/javascript" defer src="/_core/static/js/typing-text.min.js"></script><script type="text/javascript" defer src="/_core/static/js/articles.js"></script>
 
   <!-- Third-party CSS -->
 <link type="text/css" rel="stylesheet" href="/_core/static/libs/bootstrap/4.3.1/css/bootstrap.min.css"/>
 <link type="text/css" rel="stylesheet" href="/_core/static/libs/font-awesome/5.11.2/css/all.min.css"/>
 <!-- Local CSS -->
-<link type="text/css" rel="stylesheet" href="/_core/static/css/main.css"/><link type="text/css" rel="stylesheet" href="/404.css"/>
+<link type="text/css" rel="stylesheet" href="/_core/static/css/main.css"/><link type="text/css" rel="stylesheet" href="/_core/static/css/articles.css"/>
 
 
 </head>
@@ -112,7 +112,7 @@ window.MathJax = {
 
 <noscript class="noscript">
   <p>
-    <u><a href="tiny-taiyaki-1427a8.netlify.app">tiny-taiyaki-1427a8.netlify.app</a></u>
+    <u><a href="https://jekyll-tech-blog.netlify.app">https://jekyll-tech-blog.netlify.app</a></u>
   </p>
 </noscript>
 <noscript class="noscript">
@@ -230,23 +230,153 @@ window.MathJax = {
 
 
 
-      <div id="page-404" style="text-align: center;width: 100%;">
+      <div id="page-articles">
 
-  <h1 class="notranslate">404 - Not Found</h1>
+  <!-- Articles advanced search -->
+  <div id="articles-text-search">
+    <span title="Launch a search articles">
+      <i class="fa fa-search"></i>
+    </span>
+    <input type="text" title="Type your search">
+  </div>
 
-  <p>Oops, this page doesn't exist.</p>
+  <ul class="articles-advanced-search">
+    <li class="articles-categories-button" title="Search an article by category">
+      <i class="fa fa-tags" aria-hidden="true"></i>
+      <span class="link-strong">
+        Categories
+      </span>
+    </li>
+    <li class="articles-archive-button" title="Search an article by published date">
+      <span class="link-strong">
+        <i class="fa fa-archive" aria-hidden="true"></i>
+        Archives
+      </span>
+    </li>
+  </ul>
 
-  <p>Looks like you followed a bad link. If you think that it is not the case,
-    <a class="link" href="/contact/email/">let me know this issue</a>.
-  </p>
 
-  <p>
-    <a href="/">
-      <button class="btn btn-dark">
-        <b>Go to home page</b>
-      </button>
-    </a>
-  </p>
+  <div id="articles-archive-container" class="filter-result-advanced-search" style="display: none">
+  </div>
+  <div id="articles-categories-container" class="filter-result-advanced-search" style="display: none">
+  </div>
+
+  <div id="result-advanced-search"></div>
+
+  <hr>
+
+  <!-- Articles subscriptions -->
+  <ul class="articles-subscription">
+    <li>
+      <i class="fa fa-rss" aria-hidden="true"></i>
+      Subscribe:
+    </li>
+    <li>
+      <a href="/rss.xml" class="link-strong" title="Subscribe to RSS feed">
+        <span class="notranslate">RSS</span>
+      </a>
+      |
+      <a href="/atom.xml" class="link-strong" title="Subscribe to Atom feed">
+        <span class="notranslate">Atom</span>
+      </a>
+    </li>
+  </ul>
+
+  <!-- Articles list -->
+  <div class="list-articles">
+    <div class="row">
+      <div class="col-xs-12 col-md-6 col-lg-4">
+        <a href="/blog/articles/2019/02/22/my-first-blog-post.html" title="Read this article" style="display: block">
+  <div class="article-card-container">
+    <!-- Article metadata -->
+    <div class="article-card">
+<!-- Article cover --><div class="article-cover">
+        <img class="img-fluid lazyload" data-src="/_core/static/img/default/article-cover.jpg" alt="2019-02-22-my-first-blog-post">
+      </div>
+
+      <!-- Article details -->
+      <div class="article-details">
+        <!-- Article title -->
+        <div class="article-title">
+          My First Blog Post
+        </div>
+
+        <!-- Article description -->
+        <div class="article-description">
+          My first description?
+        </div>
+<!-- Article categories -->
+        <div class="article-category">
+          <ul>
+            <li>Tech</li>
+          </ul>
+        </div>
+<!-- Article publication date -->
+        <div class="date">
+          <i class="far fa-calendar-alt"></i>
+          <span>February 22, 2019</span>
+        </div>
+<!-- Article reading time -->
+        <div class="reading-time">
+          <i class="far fa-clock"></i>
+          <span>5 min</span>
+        </div>
+</div>
+
+    </div>
+  </div>
+</a>
+
+      </div>
+      <div class="col-xs-12 col-md-6 col-lg-4">
+        <a href="/blog/articles/2019/01/21/getting-started.html" title="Read this article" style="display: block">
+  <div class="article-card-container">
+    <!-- Article metadata -->
+    <div class="article-card">
+<!-- Article cover --><div class="article-cover">
+        <img class="img-fluid lazyload" data-src="/_static/posts/2019-01-21-getting-started.jpg" alt="2019-01-21-getting-started">
+      </div>
+
+      <!-- Article details -->
+      <div class="article-details">
+        <!-- Article title -->
+        <div class="article-title">
+          Getting started
+        </div>
+
+        <!-- Article description -->
+        <div class="article-description">
+          How to write articles on this blog from an easy-to-use and rich syntax?
+        </div>
+<!-- Article categories -->
+        <div class="article-category">
+          <ul>
+            <li>Methodology</li>
+          </ul>
+        </div>
+<!-- Article publication date -->
+        <div class="date">
+          <i class="far fa-calendar-alt"></i>
+          <span>January 21, 2019</span>
+        </div>
+<!-- Article reading time -->
+        <div class="reading-time">
+          <i class="far fa-clock"></i>
+          <span>10 min</span>
+        </div>
+</div>
+
+    </div>
+  </div>
+</a>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  
+
 
 </div>
 

@@ -28,13 +28,13 @@
 <meta property="og:locale" content="en" />
 <meta name="description" content="Personal blog about software engineering" />
 <meta property="og:description" content="Personal blog about software engineering" />
-<link rel="canonical" href="tiny-taiyaki-1427a8.netlify.app/blog/articles/" />
-<meta property="og:url" content="tiny-taiyaki-1427a8.netlify.app/blog/articles/" />
+<link rel="canonical" href="https://jekyll-tech-blog.netlify.app/_core/layouts/article.html" />
+<meta property="og:url" content="https://jekyll-tech-blog.netlify.app/_core/layouts/article.html" />
 <meta property="og:site_name" content="Software Engineering Blog - Bob" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Software Engineering Blog - Bob" />
 <script type="application/ld+json">
-{"author":{"@type":"Person","name":"Bob"},"@type":"WebPage","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"tiny-taiyaki-1427a8.netlify.app/_static/config/img/icon-iphone.png"},"name":"Bob"},"description":"Personal blog about software engineering","headline":"Software Engineering Blog - Bob","url":"tiny-taiyaki-1427a8.netlify.app/blog/articles/","@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"Bob"},"@type":"WebPage","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://jekyll-tech-blog.netlify.app/_static/config/img/icon-iphone.png"},"name":"Bob"},"description":"Personal blog about software engineering","headline":"Software Engineering Blog - Bob","url":"https://jekyll-tech-blog.netlify.app/_core/layouts/article.html","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   <!-- Preconnect -->
@@ -53,8 +53,8 @@
 <link rel="preload" as="style" href="/_core/static/libs/font-awesome/5.11.2/css/all.min.css"/>
 
 <link rel="preload" as="script" href="/_core/static/js/typing-text.min.js"/>
-<link rel="preload"  as="style" href="/_core/static/css/main.css"/><link rel="preload" as="script" href="/_core/static/js/articles.js"/>
-<link rel="preload" as="style" href="/_core/static/css/articles.css"/>
+<link rel="preload"  as="style" href="/_core/static/css/main.css"/><link rel="preload" as="script" href="/_core/layouts/article.js"/>
+<link rel="preload" as="style" href="/_core/layouts/article.css"/>
   <!-- Load before DOMContentLoaded (<script> markup harcoded, ...) -->
 <!-- Third-party JS -->
 <script type="text/javascript" src="/_core/static/libs/jquery/3.5.1/js/jquery.min.js"></script>
@@ -75,13 +75,13 @@ window.MathJax = {
 <script type="text/javascript" defer src="/_core/static/libs/moment/2.24.0/js/moment.min.js"></script>
 <script type="text/javascript" defer src="/_core/static/libs/fuse/3.4.6/js/fuse.min.js"></script>
 <!-- Local JS -->
-<script type="text/javascript" defer src="/_core/static/js/typing-text.min.js"></script><script type="text/javascript" defer src="/_core/static/js/articles.js"></script>
+<script type="text/javascript" defer src="/_core/static/js/typing-text.min.js"></script><script type="text/javascript" defer src="/_core/layouts/article.js"></script>
 
   <!-- Third-party CSS -->
 <link type="text/css" rel="stylesheet" href="/_core/static/libs/bootstrap/4.3.1/css/bootstrap.min.css"/>
 <link type="text/css" rel="stylesheet" href="/_core/static/libs/font-awesome/5.11.2/css/all.min.css"/>
 <!-- Local CSS -->
-<link type="text/css" rel="stylesheet" href="/_core/static/css/main.css"/><link type="text/css" rel="stylesheet" href="/_core/static/css/articles.css"/>
+<link type="text/css" rel="stylesheet" href="/_core/static/css/main.css"/><link type="text/css" rel="stylesheet" href="/_core/layouts/article.css"/>
 
 
 </head>
@@ -112,7 +112,7 @@ window.MathJax = {
 
 <noscript class="noscript">
   <p>
-    <u><a href="tiny-taiyaki-1427a8.netlify.app">tiny-taiyaki-1427a8.netlify.app</a></u>
+    <u><a href="https://jekyll-tech-blog.netlify.app">https://jekyll-tech-blog.netlify.app</a></u>
   </p>
 </noscript>
 <noscript class="noscript">
@@ -230,153 +230,335 @@ window.MathJax = {
 
 
 
-      <div id="page-articles">
+      <div id="page-article" class="col-12">
 
-  <!-- Articles advanced search -->
-  <div id="articles-text-search">
-    <span title="Launch a search articles">
-      <i class="fa fa-search"></i>
+  <!-- Article metadata -->
+  <div class="article-metadata">
+
+    <!-- Article browser -->
+    <span class="article-browser">
+      <a href="/blog/articles" title="See all articles">
+        <i class="fas fa-home"></i>
+        <span>»</span>
+      </a>
     </span>
-    <input type="text" title="Type your search">
-  </div>
 
-  <ul class="articles-advanced-search">
-    <li class="articles-categories-button" title="Search an article by category">
-      <i class="fa fa-tags" aria-hidden="true"></i>
-      <span class="link-strong">
-        Categories
-      </span>
-    </li>
-    <li class="articles-archive-button" title="Search an article by published date">
-      <span class="link-strong">
-        <i class="fa fa-archive" aria-hidden="true"></i>
-        Archives
-      </span>
-    </li>
-  </ul>
+    <!-- Article category -->
+    <span class="article-category">
+      <ul>
+        <li title="Category of this article">
+      </ul>
+    </span>
 
+    <!-- Article title -->
+    <div class="article-title" title="Title of this article">
+      
+    </div>
 
-  <div id="articles-archive-container" class="filter-result-advanced-search" style="display: none">
-  </div>
-  <div id="articles-categories-container" class="filter-result-advanced-search" style="display: none">
-  </div>
+    <!-- Article description -->
+    <div class="article-description" title="Description of this article">
+      
+    </div>
 
-  <div id="result-advanced-search"></div>
-
-  <hr>
-
-  <!-- Articles subscriptions -->
-  <ul class="articles-subscription">
-    <li>
-      <i class="fa fa-rss" aria-hidden="true"></i>
-      Subscribe:
-    </li>
-    <li>
-      <a href="/rss.xml" class="link-strong" title="Subscribe to RSS feed">
-        <span class="notranslate">RSS</span>
-      </a>
-      |
-      <a href="/atom.xml" class="link-strong" title="Subscribe to Atom feed">
-        <span class="notranslate">Atom</span>
-      </a>
-    </li>
-  </ul>
-
-  <!-- Articles list -->
-  <div class="list-articles">
     <div class="row">
-      <div class="col-xs-12 col-md-6 col-lg-4">
-        <a href="/blog/articles/2019/02/22/my-first-blog-post.html" title="Read this article" style="display: block">
+      <!-- Article details -->
+      <div class="col-8">
+        <div class="article-details">
+          <ul>
+            <li title="Published date of this article">
+              <i class="far fa-calendar-alt"></i>
+              <span></span>
+            </li>
+            <li title="Reading time of this article">
+              <i class="far fa-clock"></i>
+              <span>
+                 min
+              </span>
+            </li>
+</ul>
+        </div>
+      </div>
+      <!-- Article license -->
+      <div class="col-4">
+        <div class="article-license" title="See the license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0">
+      <i class="cc notranslate"><span class="d-none d-md-inline">Creative Commons Attribution 4.0 International</span> License:</i>
+      <i class="fab fa-creative-commons notranslate" title="CC"></i>
+      <i class="fab fa-creative-commons-by notranslate" title="BY"></i>
+      <i class="fab fa-creative-commons-nc notranslate" title="NC"></i>
+      <i class="fab fa-creative-commons-sa notranslate" title="SA"></i>
+    </a>
+</div>
+
+      </div>
+    </div>
+
+    <hr class="sep no-print">
+
+    <div class="row">
+      <div class="col-6 col-md-4">
+        <!-- Article table of contents -->
+        <div id="table-of-contents" class="no-print" title="See or hide the table of contents">
+          <i class="fas fa-list-ul"></i>
+          Table of contents
+        </div>
+      </div>
+      <div class="col-6 col-md-8">
+        <!-- Article actions -->
+        <div class="article-actions no-print">
+  <ul>
+    <li title="Print this article" style="cursor: pointer" onclick="window.print();">
+      <i class="fas fa-print"></i>
+      <span class="d-none d-md-inline">Print</span>
+    </li>
+<li title="See the source code of this article">
+      <a href="https://raw.githubusercontent.com/glegoux/jekyll-tech-blog/main/src/_posts/.md">
+        <i class="far fa-file-code"></i>
+        <span class="d-none d-md-inline">Source</span>
+      </a>
+    </li>
+<li title="See the resources of this article">
+      <a href="https://raw.githubusercontent.com/glegoux/jekyll-tech-blog/main/resources/">
+        <i class="fas fa-code-branch"></i>
+        <span class="d-none d-md-inline">Resources</span>
+      </a>
+    </li>
+<li title="Edit this article (if you have permission)">
+      <a href="https://github.com/glegoux/jekyll-tech-blog/edit/main/src/_posts//.md">
+        <i class="fas fa-edit"></i>
+        <span class="d-none d-md-inline">Edit</span>
+      </a>
+    </li>
+<li title="Report an issue on this article">
+      <a href="https://github.com/glegoux/jekyll-tech-blog/issues">
+        <i class="fas fa-exclamation-circle"></i>
+        <span class="d-none d-md-inline">Issue</span>
+      </a>
+    </li>
+</ul>
+</div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Article content -->
+  <div id="article-content">
+
+    <!-- Article table of contents container -->
+    <div id="table-of-contents-container" style="display: none;"></div>
+
+    <div class="markdown-body">
+      <div id="page-404" style="text-align: center;width: 100%;">
+
+  <h1 class="notranslate">404 - Not Found</h1>
+
+  <p>Oops, this page doesn't exist.</p>
+
+  <p>Looks like you followed a bad link. If you think that it is not the case,
+    <a class="link" href="/contact/email/">let me know this issue</a>.
+  </p>
+
+  <p>
+    <a href="/">
+      <button class="btn btn-dark">
+        <b>Go to home page</b>
+      </button>
+    </a>
+  </p>
+
+</div>
+
+    </div>
+
+    <div class="article-category-tags">
+      <ul>
+        <li>
+          <!-- Article category -->
+          <span>Category: </span>
+          <span class="article-category">
+            <ul>
+              <li title="Category of this article">
+            </ul>
+          </span>
+        </li>
+        
+      </ul>
+    </div>
+
+    <div class="row no-print">
+      <div class="col-6">
+        <div class="social-sharing">
+  <ul>
+    <li title="Share page on LinkedIn">
+      <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://jekyll-tech-blog.netlify.app/_core/layouts/article.html&amp;title=&amp;summary=&amp;source=https://jekyll-tech-blog.netlify.app">
+        <i class="fab fa-linkedin" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li title="Share page on Twitter">
+      <a href="https://twitter.com/intent/tweet/?text=%20-%20&amp;url=https://jekyll-tech-blog.netlify.app/_core/layouts/article.html">
+        <i class="fab fa-twitter" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li title="Share page on Facebook">
+      <a href="https://facebook.com/sharer/sharer.php?u=https://jekyll-tech-blog.netlify.app/_core/layouts/article.html">
+        <i class="fab fa-facebook" aria-hidden="true"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<style type="text/css">
+  .social-sharing {
+    font-size: 1.3em;
+    width: 100%;
+    color: black;
+  }
+
+  .social-sharing a {
+    color: black !important;
+  }
+
+  .social-sharing ul {
+    display: inline;
+  }
+
+  .social-sharing ul li {
+    margin-left: 0.5em;
+    font-size: 1em;
+    display: inline;
+  }
+</style>
+
+      </div>
+      <!-- Article license -->
+      <div class="col-6">
+        <div class="article-license" title="See the license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0">
+      <i class="cc notranslate"><span class="d-none d-md-inline">Creative Commons Attribution 4.0 International</span> License:</i>
+      <i class="fab fa-creative-commons notranslate" title="CC"></i>
+      <i class="fab fa-creative-commons-by notranslate" title="BY"></i>
+      <i class="fab fa-creative-commons-nc notranslate" title="NC"></i>
+      <i class="fab fa-creative-commons-sa notranslate" title="SA"></i>
+    </a>
+</div>
+
+      </div>
+    </div>
+
+    <hr class="sep">
+
+    <div class="row">
+      <!-- Article browser -->
+      <div class="col-4 article-browser">
+        <a href="/blog/articles" title="See all articles">
+          <i class="fa fa-home"></i>
+        </a>
+</div>
+      <!-- Article actions -->
+      <div class="col-8">
+        <div class="article-actions no-print">
+  <ul>
+    <li title="Print this article" style="cursor: pointer" onclick="window.print();">
+      <i class="fas fa-print"></i>
+      <span class="d-none d-md-inline">Print</span>
+    </li>
+<li title="See the source code of this article">
+      <a href="https://raw.githubusercontent.com/glegoux/jekyll-tech-blog/main/src/_posts/.md">
+        <i class="far fa-file-code"></i>
+        <span class="d-none d-md-inline">Source</span>
+      </a>
+    </li>
+<li title="See the resources of this article">
+      <a href="https://raw.githubusercontent.com/glegoux/jekyll-tech-blog/main/resources/">
+        <i class="fas fa-code-branch"></i>
+        <span class="d-none d-md-inline">Resources</span>
+      </a>
+    </li>
+<li title="Edit this article (if you have permission)">
+      <a href="https://github.com/glegoux/jekyll-tech-blog/edit/main/src/_posts//.md">
+        <i class="fas fa-edit"></i>
+        <span class="d-none d-md-inline">Edit</span>
+      </a>
+    </li>
+<li title="Report an issue on this article">
+      <a href="https://github.com/glegoux/jekyll-tech-blog/issues">
+        <i class="fas fa-exclamation-circle"></i>
+        <span class="d-none d-md-inline">Issue</span>
+      </a>
+    </li>
+</ul>
+</div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Article author(s) --><!-- Other articles -->
+  <div class="article-others no-print">
+    <h5>Also read</h5>
+
+    <div class="row">
+<a href="/blog/articles/2019/02/22/my-first-blog-post.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"></a><a href="" title="Read this article" style="display: block">
   <div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_core/static/img/default/article-cover.jpg" alt="2019-02-22-my-first-blog-post">
+        <img class="img-fluid lazyload" data-src="/_core/static/img/default/article-cover.jpg" alt="">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          My First Blog Post
+          
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          My first description?
-        </div>
-<!-- Article categories -->
-        <div class="article-category">
-          <ul>
-            <li>Tech</li>
-          </ul>
-        </div>
-<!-- Article publication date -->
-        <div class="date">
-          <i class="far fa-calendar-alt"></i>
-          <span>February 22, 2019</span>
-        </div>
-<!-- Article reading time -->
-        <div class="reading-time">
-          <i class="far fa-clock"></i>
-          <span>5 min</span>
+          
         </div>
 </div>
 
     </div>
   </div>
 </a>
-
-      </div>
-      <div class="col-xs-12 col-md-6 col-lg-4">
-        <a href="/blog/articles/2019/01/21/getting-started.html" title="Read this article" style="display: block">
+<a href="/blog/articles/2019/01/21/getting-started.html" title="Read this article" class="col-xs-12 col-md-6 col-lg-4"></a><a href="" title="Read this article" style="display: block">
   <div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/posts/2019-01-21-getting-started.jpg" alt="2019-01-21-getting-started">
+        <img class="img-fluid lazyload" data-src="/_core/static/img/default/article-cover.jpg" alt="">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          Getting started
+          
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          How to write articles on this blog from an easy-to-use and rich syntax?
-        </div>
-<!-- Article categories -->
-        <div class="article-category">
-          <ul>
-            <li>Methodology</li>
-          </ul>
-        </div>
-<!-- Article publication date -->
-        <div class="date">
-          <i class="far fa-calendar-alt"></i>
-          <span>January 21, 2019</span>
-        </div>
-<!-- Article reading time -->
-        <div class="reading-time">
-          <i class="far fa-clock"></i>
-          <span>10 min</span>
+          
         </div>
 </div>
 
     </div>
   </div>
 </a>
+</div>
 
-      </div>
+    <div class="article-list-all no-print">
+      <a href="/blog/articles/">
+        <button class="btn btn-dark" title="List all articles">
+          <b>List all</b>
+        </button>
+      </a>
     </div>
   </div>
-
-  <!-- Pagination -->
-  
-
 
 </div>
 

@@ -32,7 +32,7 @@ build:
 .PHONY: build-example
 build-example:
 	@JEKYLL_ENV=production bundle exec jekyll build \
-		--config "src/_core/_config.yml,src/_config.yml,_config_deploy_template.yml" \
+		--config "src/_core/_config.yml,src/_config.yml,examples/jekyll-tech-blog-online/_config.yml" \
 		--trace
 
 .PHONY: test

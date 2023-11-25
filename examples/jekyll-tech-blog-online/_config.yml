@@ -1,0 +1,7 @@
+# Site configuration for examples/jekyll-tech-blog-online
+# See default configuration: https://jekyllrb.com/docs/configuration/default
+
+# Server
+
+url: "https://jekyll-tech-blog.netlify.app"
+baseurl: ""
