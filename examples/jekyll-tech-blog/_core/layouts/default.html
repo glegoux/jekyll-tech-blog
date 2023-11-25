@@ -1,0 +1,53 @@
+{%- assign config_blog = site.project.blog -%}
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+
+<head>
+  {% include meta.html %}
+  {% include link.html %}
+  {% include js.html %}
+  {% include css.html %}
+</head>
+
+<body>
+
+{% include no-script.html %}
+
+<div id="blog">
+
+  {%- if config_blog.lang.header_text %}
+  <div id="original-lang" style="display: none;">
+    {{ config_blog.lang.header_text }}
+  </div>
+  {%- endif %}
+
+  <header class="no-print">
+    {% include header.html %}
+  </header>
+
+  {%- if jekyll.environment == 'development' -%}
+  {% include banner-dev.html %}
+  {%- endif %}
+
+  <div id="content" class="container">
+    <div class="row">
+      {% include loader.html %}
+      {{ content }}
+      {% include disqus.html %}
+    </div>
+  </div>
+
+  <footer class="no-print">
+    {% include footer.html %}
+  </footer>
+
+  {% include go-to-top.html %}
+
+  {%- if config_blog.google_analytics_code %} {% include google-analytics.html %} {% endif %}
+  {%- if config_blog.lang %} {% include google-translate.html %} {% endif %}
+
+</div>
+
+</body>
+
+</html>

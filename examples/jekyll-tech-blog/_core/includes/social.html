@@ -1,0 +1,16 @@
+{%- assign config_social = site.project.blog.socials -%}
+<div class="social notranslate">
+  {%- for social in config_social %}
+  {%- assign new_bucket_index = forloop.index | minus: 1 | modulo: 3 -%}
+  {%- if new_bucket_index == 0 -%}
+  <ul>
+  {%- endif %}
+    <li>
+      <a class="icon rounded {{ social.class_icon }}" title="{{ social.name }}" href="{{ social.link }}">
+      </a>
+    </li>
+    {%- if new_bucket_index == 2 -%}
+    </ul>
+    {%- endif %}
+  {%- endfor %}
+</div>

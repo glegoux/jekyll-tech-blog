@@ -1,0 +1,30 @@
+{%- assign libs_version = site.project_core.libs.version -%}
+<!-- Load before DOMContentLoaded (<script> markup harcoded, ...) -->
+<!-- Third-party JS -->
+<script type="text/javascript" src="/_core/static/libs/jquery/{{ libs_version.jquery }}/js/jquery.min.js"></script>
+<script type="text/javascript" src="/_core/static/libs/lazysizes/{{ libs_version.lazysizes }}/js/lazysizes.min.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
+<script type="text/javascript" src='/_core/static/libs/mathjax/{{ libs_version.mathjax }}/js/tex-chtml.min.js'></script>
+<script type="text/javascript" src="/_core/static/js/main.js"></script>
+<!-- Load after DOMContentLoaded -->
+<!-- Third-party JS -->
+<script type="text/javascript" defer src="/_core/static/libs/popper/{{ libs_version.popper }}/js/popper.min.js"></script>
+<script type="text/javascript" defer src="/_core/static/libs/bootstrap/{{ libs_version.bootstrap }}/js/bootstrap.min.js"></script>
+<script type="text/javascript" defer src="/_core/static/libs/moment/{{ libs_version.moment }}/js/moment.min.js"></script>
+<script type="text/javascript" defer src="/_core/static/libs/fuse/{{ libs_version.fuse }}/js/fuse.min.js"></script>
+<!-- Local JS -->
+<script type="text/javascript" defer src="/_core/static/js/typing-text.min.js"></script>
+{%- if page.article -%}
+<script type="text/javascript" defer src="/_core/static/js/article.js"></script>
+{%- elsif page.articles -%}
+<script type="text/javascript" defer src="/_core/static/js/articles.js"></script>
+{%- else -%}
+<script type="text/javascript" defer src="/{{ page.path | replace: '.html', '.js' }}"></script>
+{%- endif %}
+{% include project/js.html -%}

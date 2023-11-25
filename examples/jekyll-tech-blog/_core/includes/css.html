@@ -1,0 +1,14 @@
+{%- assign libs_version = site.project_core.libs.version -%}
+<!-- Third-party CSS -->
+<link type="text/css" rel="stylesheet" href="/_core/static/libs/bootstrap/{{ libs_version.bootstrap }}/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet" href="/_core/static/libs/font-awesome/{{ libs_version.font-awesome }}/css/all.min.css"/>
+<!-- Local CSS -->
+<link type="text/css" rel="stylesheet" href="/_core/static/css/main.css"/>
+{%- if page.article -%}
+<link type="text/css" rel="stylesheet" href="/_core/static/css/article.css"/>
+{%- elsif page.articles -%}
+<link type="text/css" rel="stylesheet" href="/_core/static/css/articles.css"/>
+{%- else -%}
+<link type="text/css" rel="stylesheet" href="/{{ page.path | replace: '.html', '.css' }}"/>
+{%- endif %}
+{% include project/css.html %}

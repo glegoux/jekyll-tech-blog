@@ -1,0 +1,38 @@
+{%- if paginator.total_pages > 1 %}
+<div class="articles-pagination">
+  <ul>
+    {%- assign total_pages = paginator.total_pages -%}
+    {%- assign min_show_page = 5 -%}
+    {%- assign prev_last_page = total_pages | minus:1 -%}
+    {%- assign current_page = paginator.page -%}
+    {%- assign prev_current_page = current_page | minus:1 -%}
+    {%- assign next_current_page = current_page | plus:1 -%}
+    {%- if paginator.previous_page %}
+    <li><a href="{{ paginator.previous_page_path }}" title="go to previous articles page" class="previous">«</a></li>
+    {%- endif %}
+    {%- for page in (1..total_pages) %}
+    {%- assign page_path = site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page -%}
+    {%- if page == 1 and page != current_page %}
+    <li><a href="{{ page_path }}" title="go to this articles page">{{ page }}</a></li>
+    {%- elsif page != 1 and page != current_page and page != total_pages and total_pages <= min_show_page %}
+    <li><a href="{{ page_path }}" title="go to this articles page">{{ page }}</a></li>
+    {%- elsif page == 2 and prev_current_page > 2 and total_pages > min_show_page %}
+    <li>...</li>
+    {%- elsif page == prev_current_page and total_pages > min_show_page %}
+    <li><a href="{{ page_path }}" title="go to this articles page">{{ page }}</a></li>
+    {%- elsif page == current_page %}
+    <li class="current-page"><a href="{{ page_path }}" title="current articles page">{{ page }}</a></li>
+    {%- elsif page == next_current_page and total_pages > min_show_page %}
+    <li><a href="{{ page_path }}" title="go to this articles page">{{ page }}</a></li>
+    {%- elsif page == prev_last_page and next_current_page < prev_last_page and total_pages > min_show_page %}
+    <li>...</li>
+    {%- elsif page == total_pages and page != current_page  %}
+    <li><a href="{{ page_path }}" title="go to this articles page">{{ page }}</a></li>
+    {%- endif %}
+    {%- endfor %}
+    {%- if paginator.next_page -%}
+    <li><a href="{{ paginator.next_page_path }}" title="go to next articles page" class="next">»</a><li>
+    {%- endif %}
+  </ul>
+</div>
+{%- endif %}

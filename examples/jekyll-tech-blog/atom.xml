@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>Software Engineering Blog - Bob</title>
+ <link href="http://localhost:4000/atom.xml" rel="self"/>
+ <link href="http://localhost:4000/"/>
+ <updated>2023-11-25T08:32:06+01:00</updated>
+ <id>http://localhost:4000/</id>
+
+ 
+ <entry>
+   <title>My First Blog Post</title>
+   <link href="http://localhost:4000/blog/articles/2019/02/22/my-first-blog-post.html"/>
+   <updated>2019-02-22T00:00:00+01:00</updated>
+   <id>http://localhost:4000/blog/articles/2019/02/22/my-first-blog-post.html</id>
+   <content type="html">
+</content><author>
+       <name>bob</name>
+       <uri></uri>
+   </author></entry>
+ 
+ <entry>
+   <title>Getting started</title>
+   <link href="http://localhost:4000/blog/articles/2019/01/21/getting-started.html"/>
+   <updated>2019-01-21T00:00:00+01:00</updated>
+   <id>http://localhost:4000/blog/articles/2019/01/21/getting-started.html</id>
+   <content type="html">&lt;p&gt;Discover the &lt;strong&gt;extension of the Markdown syntax used on this blog&lt;/strong&gt; to write articles, or generate static pages, and more generally on the web. 
+When you click on the button: &lt;i class=&quot;far fa-file-code&quot;&gt;&lt;/i&gt; Source, you can see the &lt;strong&gt;original source code of an article&lt;/strong&gt;. 
+More precisely on this blog, a superset of Markdown is used and called &lt;a href=&quot;https://kramdown.gettalong.org/&quot;&gt;Kramdown&lt;/a&gt;, the syntax is available &lt;a href=&quot;https://kramdown.gettalong.org/syntax.html&quot;&gt;here&lt;/a&gt; with a custom extension via the HTML paired tag &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pre&lt;/code&gt;. Each following section gives an overview and examples for each usage.
+But before, what is exactly the Markdown?&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://daringfireball.net/projects/markdown/&quot;&gt;Markdown&lt;/a&gt; is a lightweight and popular text metalanguage that is a writing standard
+with the extension &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.md&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.markdown&lt;/code&gt;. It is often converted into HTML which allows it to be easily shared on the web :spider_web:.&lt;/p&gt;
+
+&lt;p&gt;After the &lt;strong&gt;conversion to HTML text&lt;/strong&gt;, it is decorated and animated by CSS style sheets and/or JS scripts:&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://docs.google.com/drawings/d/e/2PACX-1vRPwfUjnj6bT9B-M4jdzQqOICzCwblxYR5xvgiXYWrpcgpmFddbWR-ErodWf-U0rE8f0aqzUfazXvf8/pub?w=960&amp;amp;h=267&quot; alt=&quot;Markdown processor&quot; title=&quot;Markdown processor&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;Markdown processor&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Why using it Markdown? Because it is very handy to use for the reader and the writer:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Reader&lt;/strong&gt;: The generated HTML content got from the Markdown content is compatible with all web browsers that can render it for the final reader.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Writer&lt;/strong&gt;: The Markdown content continues to be separated from the rendering. In addition, it is easy to learn and use syntax, with the pros of portability and compatibility, flexibility and customizability, and readability and maintainability. Modify its article, the content is more human-writable/readable and shorter than the HTML code, less expressive but sufficient for a blog post.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;See how to create your content with the right syntax through examples in the following sections.&lt;/p&gt;
+
+&lt;h1 id=&quot;text&quot;&gt;Text&lt;/h1&gt;
+
+&lt;h2 id=&quot;highlight&quot;&gt;Highlight&lt;/h2&gt;
+
+&lt;p&gt;Enhance your text:&lt;/p&gt;
+
+&lt;p&gt;Italics: &lt;em&gt;italics&lt;/em&gt; or &lt;em&gt;italics&lt;/em&gt;&lt;br /&gt;
+Bold:	&lt;strong&gt;bold&lt;/strong&gt; or &lt;strong&gt;bold&lt;/strong&gt;&lt;br /&gt;
+Strikethrough: &lt;del&gt;Strikethrough&lt;/del&gt;&lt;br /&gt;
+Bold &amp;amp; Italics: &lt;strong&gt;&lt;em&gt;bold italics&lt;/em&gt;&lt;/strong&gt; or &lt;strong&gt;&lt;em&gt;bold italics&lt;/em&gt;&lt;/strong&gt;&lt;br /&gt;
+Inline code: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;code&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Italics: *italics* or _italics_  
+Bold:	**bold** or __bold__ 
+Strikethrough: ~~Strikethrough~~
+Bold &amp;amp; Italics: **_bold italics_** or __*bold italics*__
+Inline code: `code`
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;new-line--paragraph&quot;&gt;New line &amp;amp; paragraph&lt;/h2&gt;
+
+&lt;p&gt;Let 2 trailing spaces have an end of the line, and let an empty line for a new paragraph:&lt;/p&gt;
+
+&lt;p&gt;Hello,&lt;/p&gt;
+
+&lt;p&gt;World!&lt;/p&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-whitespace&quot;&gt;Hello,␣␣\n
+\n
+World!\n
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;em&gt;Note: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\n&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;␣&lt;/code&gt; represent respectively a new line character and a space character.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;headings&quot;&gt;Headings&lt;/h2&gt;
+
+&lt;p&gt;Make a part, a subpart, and a sub-subpart:&lt;/p&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# H1
+## H2
+### H3
+
+
+H1
+======
+
+H2
+------
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;list&quot;&gt;List&lt;/h2&gt;
+
+&lt;p&gt;Build an ordered list:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;item&lt;/li&gt;
+  &lt;li&gt;item&lt;/li&gt;
+  &lt;li&gt;item&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1. item
+2. item
+3. item
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Build an unordered list:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;item&lt;/li&gt;
+  &lt;li&gt;item&lt;/li&gt;
+  &lt;li&gt;item&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; * item
+ * item
+ * item
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;quote&quot;&gt;Quote&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Talk is cheap. Show me the code.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Linus Torvalds, creator of the Linux operating system&lt;/p&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-@escape&quot;&gt;&amp;gt; Talk is cheap. Show me the code.
+
+Linus Torvalds, creator of the Linux operating system
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;emoticon&quot;&gt;Emoticon&lt;/h2&gt;
+
+&lt;p&gt;Use emoji, with &lt;a href=&quot;https://github.com/github/gemoji&quot;&gt;gemoji&lt;/a&gt; see &lt;a href=&quot;https://www.webfx.com/tools/emoji-cheat-sheet/&quot;&gt;emoji cheat sheet&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;For example: with shortcode :smile: :scream: :yum: or unicode directly 😀 😱 😋.&lt;/p&gt;
+
+&lt;p&gt;Source code for emoji with shortcode:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-@escape&quot;&gt;:smile: :scream: :yum:
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Source code for emoji with unicode:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-@escape&quot;&gt;😀 😱 😋
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;links&quot;&gt;Links&lt;/h2&gt;
+
+&lt;p&gt;It works with absolute and relative links:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A simple link:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.google.com&quot;&gt;https://www.google.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;https://www.google.com&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A link with a name: &lt;a href=&quot;https://www.google.com&quot;&gt;Google&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[Google](https://www.google.com)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A link with a name and a title: &lt;a href=&quot;https://www.google.com&quot; title=&quot;Google&apos;s Homepage&quot;&gt;Google&lt;/a&gt; with the title &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Google&apos;s Homepage&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[Google](https://www.google.com &quot;Google&apos;s Homepage&quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You can use shortcuts for your links to use that several times on the article or to centralize links:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.google.com&quot;&gt;Google1&lt;/a&gt; &lt;a href=&quot;https://www.google.com&quot;&gt;Google2&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[Google1][1] [Google2][1]
+
+[1]: https://www.google.com
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;notes&quot;&gt;Notes&lt;/h2&gt;
+
+&lt;h3 id=&quot;info&quot;&gt;Info&lt;/h3&gt;
+
+&lt;pre class=&quot;info&quot;&gt;
+INFO
+&lt;/pre&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;pre class=&quot;info&quot;&amp;gt;
+INFO
+&amp;lt;/pre&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;question&quot;&gt;Question&lt;/h3&gt;
+
+&lt;pre class=&quot;question&quot;&gt;
+QUESTION
+&lt;/pre&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;pre class=&quot;question&quot;&amp;gt;
+QUESTION
+&amp;lt;/pre&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;warning&quot;&gt;Warning&lt;/h3&gt;
+
+&lt;pre class=&quot;warning&quot;&gt;
+WARNING
+&lt;/pre&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;pre class=&quot;warning&quot;&amp;gt;
+WARNING
+&amp;lt;/pre&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;error&quot;&gt;Error&lt;/h3&gt;
+
+&lt;pre class=&quot;error&quot;&gt;
+ERROR
+&lt;/pre&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;pre class=&quot;error&quot;&amp;gt;
+ERROR
+&amp;lt;/pre&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;success&quot;&gt;Success&lt;/h3&gt;
+
+&lt;pre class=&quot;success&quot;&gt;
+SUCCESS
+&lt;/pre&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;pre class=&quot;success&quot;&amp;gt;
+SUCCESS
+&amp;lt;/pre&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;comment&quot;&gt;Comment&lt;/h2&gt;
+
+&lt;p&gt;If you want to put a hidden text not displayed in the article but present in the written source, that is to say, a comment, simply do an HTML comment:&lt;/p&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;!-- comments --&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;informatics-code&quot;&gt;Informatics code&lt;/h1&gt;
+
+&lt;h2 id=&quot;programming-language&quot;&gt;Programming language&lt;/h2&gt;
+
+&lt;p&gt;The used syntax highlighter is Rouge, see the &lt;a href=&quot;https://github.com/rouge-ruby/rouge/wiki/List-of-supported-languages-and-lexers&quot;&gt;list of supported languages and lexers&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;python&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;Python&lt;/span&gt;&lt;/h3&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello world!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+
+&lt;pre&gt;
+~~~ python
+print(&quot;Hello world!&quot;)
+~~~
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;java&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;Java&lt;/span&gt;&lt;/h3&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello world!&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;pre&gt;
+~~~ java 
+System.out.println(&quot;Hello world!&quot;);
+~~~
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;scala&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;Scala&lt;/span&gt;&lt;/h3&gt;
+
+&lt;div class=&quot;language-scala highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello world!&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;pre&gt;
+~~~ scala 
+println(&quot;Hello world!&quot;)
+~~~
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;c-net&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;C# .NET&lt;/span&gt;&lt;/h3&gt;
+
+&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;Console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;WriteLine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello world!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;pre&gt;
+~~~ csharp 
+Console.WriteLine(&quot;Hello world!&quot;)
+~~~
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;rust&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;Rust&lt;/span&gt;&lt;/h3&gt;
+
+&lt;div class=&quot;language-rust highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nd&quot;&gt;println!&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello World!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;pre&gt;
+~~~ rust
+println!(&quot;Hello World!&quot;);
+~~~
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;c&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;C++&lt;/span&gt;&lt;/h3&gt;
+
+&lt;div class=&quot;language-c++ highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Hello World!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;pre&gt;
+~~~ c++
+std::cout &amp;lt;&amp;lt; &quot;Hello World!&quot;;
+~~~
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;c-1&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;C&lt;/span&gt;&lt;/h3&gt;
+
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello, World!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;pre&gt;
+~~~ c 
+printf(&quot;Hello, World!&quot;);
+~~~
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;bash&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;Bash&lt;/span&gt;&lt;/h3&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hello world!&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+
+&lt;pre&gt;
+~~~ bash 
+echo &quot;Hello world!&quot;
+~~~
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;ruby&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;Ruby&lt;/span&gt;&lt;/h3&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hello world!&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;pre&gt;
+~~~ ruby 
+puts &quot;Hello world!&quot;
+~~~
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;go&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;Go&lt;/span&gt;&lt;/h3&gt;
+
+&lt;div class=&quot;language-go highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;fmt&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fmt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Println&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello world!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;pre&gt;
+~~~ go
+import(&quot;fmt&quot;)
+
+fmt.Println(&quot;Hello world!&quot;)
+~~~
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;typescript&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;TypeScript&lt;/span&gt;&lt;/h3&gt;
+
+&lt;div class=&quot;language-typescript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Hello world!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;pre&gt;
+~~~ typescript
+console.log(&quot;Hello world!&quot;);
+~~~
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;javascript&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;JavaScript&lt;/span&gt;&lt;/h3&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Hello world!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;pre&gt;
+~~~ javascript
+console.log(&quot;Hello world!&quot;);
+~~~
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;html&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;HTML&lt;/span&gt;&lt;/h3&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Hello world!&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+
+&lt;pre&gt;
+~~~ html
+&amp;lt;p&amp;gt;Hello world&amp;lt;/p&amp;gt;
+~~~
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;css&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;CSS&lt;/span&gt;&lt;/h3&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;.hello-world&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;text-align&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;center&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+
+&lt;pre&gt;
+~~~ css
+.hello-world {
+  text-align: center
+}
+~~~
+&lt;/pre&gt;
+
+&lt;h2 id=&quot;terminal&quot;&gt;Terminal&lt;/h2&gt;
+
+&lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;command&lt;/span&gt;
+&lt;span class=&quot;go&quot;&gt;result
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+
+&lt;pre&gt;
+~~~ terminal
+$ command
+result
+~~~
+&lt;/pre&gt;
+
+&lt;h2 id=&quot;text-file&quot;&gt;Text file&lt;/h2&gt;
+
+&lt;h3 id=&quot;plain-text&quot;&gt;Plain text&lt;/h3&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&quot;Hello World!&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;pre&gt;
+~~~
+&quot;Hello World!&quot;
+~~~
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;json&quot;&gt;JSON&lt;/h3&gt;
+
+&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;message&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Hello World!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;pre&gt;
+~~~ json
+{&quot;message&quot;: &quot;Hello World!&quot;}
+~~~
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;yaml&quot;&gt;YAML&lt;/h3&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;world&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Hello&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;World!&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;pre&gt;
+~~~ yaml
+hello:
+  world: &quot;Hello World!&quot;
+~~~
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;xml&quot;&gt;XML&lt;/h3&gt;
+
+&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;message&amp;gt;&lt;/span&gt;Hello World!&lt;span class=&quot;nt&quot;&gt;&amp;lt;/message&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;pre&gt;
+~~~ xml
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;message&gt;Hello World!&lt;/message&gt;
+~~~
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;ini&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;INI&lt;/span&gt;&lt;/h3&gt;
+
+&lt;div class=&quot;language-ini highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nn&quot;&gt;[message]&lt;/span&gt;
+&lt;span class=&quot;py&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello World!&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;pre&gt;
+~~~ ini
+[message]
+message=&quot;Hello World!&quot;
+~~~
+&lt;/pre&gt;
+
+&lt;h1 id=&quot;mathematics-equation&quot;&gt;Mathematics equation&lt;/h1&gt;
+
+&lt;p&gt;Use LateX syntax, see &lt;a href=&quot;https://www.latex-project.org&quot;&gt;latex-project.org&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;:warning: The dollar symbol $ becomes a meta symbol, so there is a conflict with the dollar symbol use the HTML code &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;amp;#36;&lt;/code&gt; to see the dollar symbol $.&lt;/p&gt;
+
+&lt;h2 id=&quot;in-line-equation&quot;&gt;In-line equation&lt;/h2&gt;
+
+&lt;p&gt;This equation $\int_0^1 x^2dx = \frac{1}{3}$ is in-line.&lt;/p&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;This equation $\int_0^1 x^2dx = \frac{1}{3}$ is in-line.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;single-line-equation&quot;&gt;Single-line equation&lt;/h2&gt;
+
+&lt;p&gt;This equation is single-line and centered:&lt;/p&gt;
+
+\[\int_0^1 x^2dx = \frac{1}{3}\]
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$$\int_0^1 x^2dx = \frac{1}{3}$$
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;multi-line-equation&quot;&gt;Multi-line equation&lt;/h2&gt;
+
+&lt;p&gt;This equation is multi-line and centered:&lt;/p&gt;
+
+\[\displaylines{
+\int_0^1 x\,dx = \frac{1}{2} \\
+\int_0^1 x^2dx = \frac{1}{3}
+}\]
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$$
+\displaylines{
+\int_0^1 x\,dx = \frac{1}{2} \\
+\int_0^1 x^2dx = \frac{1}{3} 
+}
+$$
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+</content><author>
+       <name>glegoux</name>
+       <uri></uri>
+   </author></entry>
+ 
+
+</feed>
