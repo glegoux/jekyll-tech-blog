@@ -91,4 +91,5 @@ project_core:
     doc: "https://github.com/glegoux/jekyll-tech-blog/wiki"
     code: "https://github.com/glegoux/jekyll-tech-blog"
     bug: "https://github.com/glegoux/jekyll-tech-blog/issues"
+    fork: "https://github.com/glegoux/jekyll-tech-blog/fork"
     license: "https://raw.githubusercontent.com/glegoux/jekyll-tech-blog/main/LICENSE.txt"
