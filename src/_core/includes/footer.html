@@ -15,15 +15,12 @@
           </td>
         </tr>
         {%- for menu_item in config_blog.menu_items %}
-        <tr title="Go to this page">
+        <tr>
           <td>
-            <a class="link-strong" href="{{ menu_item.link }}">
-              <i class="icon {{ menu_item.class_icon }}"></i>
-            </a>
-          </td>
-          <td>
-            <a class="link-strong menu-item" href="{{ menu_item.link }}" title="Go to this page">
-              {{ menu_item.name }}
+            <a class="link-strong menu-item"
+               href="{{ menu_item.link }}"
+               title="{% if menu_item.tooltip and menu_item.tooltip != '' %} {{ menu_item.tooltip }} {% else %}Go to this page{% endif %}">
+              <span class="fs-">{{ menu_item.name }}</span>
             </a>
           </td>
         </tr>
