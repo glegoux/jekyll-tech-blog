@@ -27,7 +27,7 @@ doctor:
 build:
 	@JEKYLL_ENV=production bundle exec jekyll build \
 		--config "src/_core/_config.yml,src/_config.yml" \
-		 --trace
+		--trace
 
 .PHONY: test
 test:
@@ -43,6 +43,6 @@ run-prod:
 .PHONY: run
 run:
 	@JEKYLL_ENV=development bundle exec jekyll serve \
-        --host localhost --port 4000 \
 		--config "src/_core/_config.yml,src/_config.yml,src/_config_dev.yml" \
+                --host localhost --port 4000 \
 		--incremental --drafts --unpublished --livereload
