@@ -37,9 +37,14 @@ footer {
     }
   }
 
-  .menu {
+  .links {
     text-align: center;
     font-size: 1.2em;
+  }
+
+  .menu-item {
+    font-size: 1.1em;
+    padding-bottom: 0.5em;
   }
 
   .menu-item.focus {

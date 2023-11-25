@@ -15,9 +15,9 @@
           </td>
         </tr>
         {%- for menu_item in config_blog.menu_items %}
-        <tr>
+        <tr class="menu-item">
           <td>
-            <a class="link-strong menu-item"
+            <a class="link-strong"
                href="{{ menu_item.link }}"
                title="{% if menu_item.tooltip and menu_item.tooltip != '' %} {{ menu_item.tooltip }} {% else %}Go to this page{% endif %}">
               <span class="fs-">{{ menu_item.name }}</span>
@@ -47,7 +47,7 @@
   </div>
 
   <div class="row">
-    <div class="menu col-12">
+    <div class="links col-12">
       <p>
         {% if config_blog.link_status_availability %}
         <a class="link-strong" href="{{ config_blog.link_status_availability }}" title="See the status and availability">Status & Availability</a> |
