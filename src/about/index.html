@@ -1,11 +1,57 @@
 ---
 layout: default
 ---
+{%- assign config_blog = site.project.blog -%}
+{%- assign config_core = site.project_core -%}
 <div id="page-about" class="w-100 text-center">
+
   {% include avatar.html %}
+
   <br>
+
   <p>
     Hello :wave:, I am a software engineer. I share :bookmark_tabs: my
     <a href="/blog/articles"><b><u>post blog posts</u></b></a> about my works and interests.
   </p>
+
+  <div class="row text-center">
+    <div class="col-xs-12 col-md-6 col-lg-4">
+      <p style="font-size: 1.5em">Readers</p>
+      <p>
+        Read the published content
+      </p>
+      {% include blog-info.html
+          title=config_blog.title
+          keywords=config_blog.keywords
+          link="/blog/articles"
+          link-text="Read blog posts"
+          link-tooltip="Read the published blog posts"
+      %}
+    </div>
+    <div class="col-xs-12 col-md-6 col-lg-4">
+      <p style="font-size: 1.5em">Writers</p>
+      <p>
+        Co-write content or create your own blog
+      </p>
+      {% include card-article.html
+          url="/blog/articles/2023/01/01/getting-started.html"
+          title="Getting Started"
+          date="2023/01/01"
+          description="How to write articles on this blog from an easy-to-use and rich syntax?"
+      %}
+    </div>
+    <div class="col-xs-12 col-md-6 col-lg-4">
+      <p style="font-size: 1.5em">Contributors</p>
+      <p>
+        Contribute to open-source project
+      </p>
+      <a href="{{ config_core.links.project }}" title="Contribute to open-source project">
+        <img src="{{ config_core.links.cover }}" alt="Jekyll Tech Blog features"
+             style="border: 1px solid lightgrey; border-radius: 10px"
+             class="img-fluid ls-is-cached lazyloaded" />
+      </a>
+    </div>
+  </div>
+
 </div>
+
