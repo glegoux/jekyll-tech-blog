@@ -23,6 +23,7 @@ footer {
     }
 
     .plan {
+      padding-bottom: 1em;
 
       ul {
         display: inline-block;
@@ -38,14 +39,15 @@ footer {
           border-bottom: 1px solid white;
         }
       }
-
-      .logo {
-      }
-
-      .follow {
-      }
     }
 
+    .logo {
+      padding-bottom: 1em;
+    }
+
+    .follow {
+      padding-bottom: 1em;
+    }
   }
 
   .links {
