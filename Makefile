@@ -46,7 +46,7 @@ test:
 run:
 	@JEKYLL_ENV=development bundle exec jekyll serve \
 		--config "src/_core/_config.yml,src/_config.yml,src/_config_dev.yml" \
-        --host localhost --port 4000 \
+		--host localhost --port 4000 \
 		--incremental --drafts --unpublished --livereload
 
 .PHONY: run-prod
