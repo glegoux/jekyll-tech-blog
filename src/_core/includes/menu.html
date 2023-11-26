@@ -1,0 +1,28 @@
+<ul class="menu-content">
+  {%- for menu_item in include.menu_items %}
+  <li>
+    <a class="link-strong menu-item"
+       href="{{ menu_item.link }}"
+       title="{% if menu_item.tooltip and menu_item.tooltip != '' %} {{ menu_item.tooltip }} {% else %}Go to this page{% endif %}">
+      {{ menu_item.name }}
+    </a>
+  </li>
+  {%- endfor %}
+  {%- if site.jekyll_tech_blog.demo -%}
+  <li>
+    {%- if jekyll.environment == 'production' -%}
+    <a class="link-strong menu-item"
+       href="https://jekyll-tech-blog-dev.netlify.app"
+       title="See the content of the website in development mode">
+      <i class="fas fa-dev"></i> Dev mode
+    </a>
+    {% else %}
+    <a class="link-strong menu-item"
+       href="https://jekyll-tech-blog.netlify.app"
+       title="See the content of the website in production mode">
+      <i class="fab fa-rocket"></i> Prod mode
+    </a>
+    {% endif %}
+  </li>
+  {%- endif -%}
+</ul>

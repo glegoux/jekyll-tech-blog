@@ -9,17 +9,7 @@
     {%- if config_blog.menu_items %}
     <div class="col-md-4 col-12 plan">
       <h1>Plan</h1>
-      <ul>
-        {%- for menu_item in config_blog.menu_items %}
-        <li>
-          <a class="link-strong menu-item"
-             href="{{ menu_item.link }}"
-             title="{% if menu_item.tooltip and menu_item.tooltip != '' %} {{ menu_item.tooltip }} {% else %}Go to this page{% endif %}">
-            <span class="fs-">{{ menu_item.name }}</span>
-          </a>
-        </li>
-        {%- endfor %}
-      </ul>
+      {%- include menu.html menu_items=config_blog.menu_items %}
     </div>
     {% else %}
     <div class="col-md-4 col-12 plan"></div>

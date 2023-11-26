@@ -45,9 +45,6 @@ project:
       - name: "<i class='far fa-file'></i> Documentation"
         link: "https://github.com/glegoux/jekyll-tech-blog/wiki"
         tooltip: "Read the documentation"
-      - name: "<i class='fab fa-dev'></i> Dev mode"
-        link: "https://jekyll-tech-blog-dev.netlify.app"
-        tooltip: "See the content of the website in development mode"
     title: "Software Engineering"
     keywords: [ "Research", "Development / Software", "Algorithm", "Design", "Data", "AI / Machine Learning", "Applied Mathematics", "Computer science", "Web", "Security", "Reliability", "Infrastructure / Hardware", "System", "Methodology", "Business" ]
     socials:
