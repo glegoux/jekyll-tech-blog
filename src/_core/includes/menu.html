@@ -9,26 +9,25 @@
   </li>
   {%- endfor %}
   {%- if site.project.env -%}
+  <li>—</li>
+  {%- if jekyll.environment == 'production' -%}
+  <li title="The website is in production mode">🔴 <b><u>Prod</u></b></li>
   <li>
-    {%- if jekyll.environment == 'production' -%}
-    <div class="btn-group btn-group-toggle" data-toggle="buttons">
-      <label class="btn btn-light active">🔴 Prod</label>
-      <label class="btn btn-light"> 🟢 Dev</label>
-      <a class="link-strong menu-item"
-         href="{{ site.project.env.dev.link }}"
-         title="See the content of the website in development mode">
-      </a>
-    </div>
-    {% else %}
-    <div class="btn-group btn-group-toggle" data-toggle="buttons">
-      <a class="link-strong menu-item"
-         href="{{ site.project.env.prod.link }}"
-         title="See the content of the website in production mode">
-        <label class="btn btn-light">🔴 Prod</label>
-      </a>
-      <label class="btn btn-light active">🟢 Dev</label>
-    </div>
-    {% endif %}
+    <a class="link-strong menu-item"
+       href="{{ site.project.env.dev.link }}"
+       title="See the website in development mode">
+      🟢 Dev
+    </a>
   </li>
+  {% else %}
+  <li class="focus">
+    <a class="link-strong menu-item"
+       href="{{ site.project.env.prod.link }}"
+       title="See the website in production mode">
+      🔴 Prod
+    </a>
+  </li>
+  <li title="The website is in development mode">🟢 <b><u>Dev</u></b></li>
+  {% endif %}
   {%- endif -%}
 </ul>
