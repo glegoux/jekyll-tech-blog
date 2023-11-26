@@ -15,9 +15,9 @@
           </td>
         </tr>
         {%- for menu_item in config_blog.menu_items %}
-        <tr class="menu-item">
+        <tr>
           <td>
-            <a class="link-strong"
+            <a class="link-strong menu-item"
                href="{{ menu_item.link }}"
                title="{% if menu_item.tooltip and menu_item.tooltip != '' %} {{ menu_item.tooltip }} {% else %}Go to this page{% endif %}">
               <span class="fs-">{{ menu_item.name }}</span>
