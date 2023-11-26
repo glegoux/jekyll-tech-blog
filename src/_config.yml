@@ -69,7 +69,6 @@ project:
         class_icon:  "fas fa-paper-plane"
     link_status_availability: "https://github.com/glegoux/jekyll-tech-blog/wiki/Configuration"
     google_analytics_code: ""
-    disqus_name: ""
   avatar:
     name: "Bob"
     job: "Software Engineer"
@@ -79,6 +78,8 @@ project:
       stackoverflow: "https://github.com/glegoux/jekyll-tech-blog/wiki/Configuration"
       medium: "https://github.com/glegoux/jekyll-tech-blog/wiki/Configuration"
   article:
+    comment:
+      disqus_code: ""
     source_code:
       url: "https://raw.githubusercontent.com/glegoux/jekyll-tech-blog/main/src/_posts"
     resources:

@@ -31,7 +31,6 @@
     {%- endif %}
     {% include loader.html %}
     {{ content }}
-    {% include comment-disqus.html %}
   </div>
 
   <footer class="no-print">
@@ -40,7 +39,9 @@
 
   {% include go-to-top.html %}
 
-  {%- if config_blog.google_analytics_code %} {% include google-analytics.html %} {% endif %}
+  {%- if config_blog.google_analytics_code %}
+    {% include google-analytics.html %}
+  {% endif %}
 
 </div>
 

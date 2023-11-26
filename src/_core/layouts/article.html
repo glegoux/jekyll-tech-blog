@@ -185,4 +185,9 @@ layout: default
   {%- include article-authors.html -%}
 
   {%- include article-other-articles.html -%}
+
+  {%- if config_article.comment.disqus_code %}
+    {% include article-comment-disqus.html %}
+  {%- endif -%}
+
 </div>
