@@ -12,29 +12,21 @@
   <li>
     {%- if jekyll.environment == 'production' -%}
     <div class="btn-group btn-group-toggle" data-toggle="buttons">
-      <label class="btn btn-light active">
-        🔴 Prod
-      </label>
-      <label class="btn btn-light">
-        <a class="link-strong menu-item"
-           href="{{ site.project.env.dev.link }}"
-           title="See the content of the website in development mode">
-          🟢 Dev
-        </a>
-      </label>
+      <label class="btn btn-light active">🔴 Prod</label>
+      <label class="btn btn-light"> 🟢 Dev</label>
+      <a class="link-strong menu-item"
+         href="{{ site.project.env.dev.link }}"
+         title="See the content of the website in development mode">
+      </a>
     </div>
     {% else %}
     <div class="btn-group btn-group-toggle" data-toggle="buttons">
-      <label class="btn btn-light">
-        <a class="link-strong menu-item"
-           href="{{ site.project.env.prod.link }}"
-           title="See the content of the website in production mode">
-          🔴 Prod
-        </a>
-      </label>
-      <label class="btn btn-light active">
-          🟢 Dev
-      </label>
+      <a class="link-strong menu-item"
+         href="{{ site.project.env.prod.link }}"
+         title="See the content of the website in production mode">
+        <label class="btn btn-light">🔴 Prod</label>
+      </a>
+      <label class="btn btn-light active">🟢 Dev</label>
     </div>
     {% endif %}
   </li>
