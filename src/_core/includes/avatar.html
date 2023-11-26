@@ -8,27 +8,36 @@
     {%- endunless -%}
     <img class="link-light icon-avatar" src="{{ avatar_path }}" alt="avatar"/>
     <br>
+    {%- if config_avatar.name and config_avatar.name != '' -%}
     <span class="notranslate font-weight-bold h4">
         {{ config_avatar.name }}
     </span>
     <br>
+    {%- endif -%}
+    {%- if config_avatar.job and config_avatar.job != '' -%}
     <span class="notranslate text-secondary">
-        {{config_avatar.job }}
+        {{ config_avatar.job }}
     </span>
     <br>
-    <a href="{{ links.github }}" aria-label="GitHub">
+    {%- endif -%}
+    {%- if config_avatar.links.github and config_avatar.links.github != '' -%}
+    <a href="{{ config_avatar.links.github }}" aria-label="GitHub">
         <img class="notranslate" width="25" height="25" src="/_core/static/img/social/github.png" title="GitHub" alt="GitHub"/>
     </a>
-    &nbsp;
-    <a href="{{ links.linkedin }}" aria-label="LinkedIn">
+    {%- endif -%}
+    {%- if config_avatar.links.linkedin and config_avatar.links.linkedin != '' -%}
+    <a href="{{ config_avatar.links.linkedin }}" aria-label="LinkedIn">
         <img class="notranslate" width="25" height="25" src="/_core/static/img/social/linkedin.png" title="LinkedIn" alt="LinkedIn"/>
     </a>
-    &nbsp;
-    <a href="{{ links.stackoverflow }}" aria-label="Stack Overflow">
+    {%- endif -%}
+    {%- if config_avatar.links.stackoverflow and config_avatar.links.stackoverflow != '' -%}
+    <a href="{{ config_avatar.links.stackoverflow }}" aria-label="Stack Overflow">
         <img class="notranslate" width="25" height="25" src="/_core/static/img/social/stackoverflow.png" title="Stack Overflow" alt="Stack Overflow"/>
     </a>
-    &nbsp;
-    <a href="{{ links.medium }}" aria-label="Medium">
+    {%- endif -%}
+    {%- if config_avatar.links.medium and config_avatar.links.medium != '' -%}
+    <a href="{{ config_avatar.links.medium }}" aria-label="Medium">
       <img class="notranslate" width="25" height="25" src="/_core/static/img/social/medium.png" title="Medium" alt="Medium"/>
     </a>
+    {%- endif -%}
 </div>
