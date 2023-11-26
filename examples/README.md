@@ -1,4 +1,4 @@
 # Examples
 
-* jekyll-tech-blog: A simple example built from the template for production and development mode, see https://jekyll-tech-blog.netlify.app.
-* glegoux.com: An advanced example based on the template, see https://glegoux.com.
+* [jekyll-tech-blog](./jekyll-tech-blog/README.md): A simple example built from the template for production and development mode. 
+* [glegoux.com](./glegoux.com/README.md): An advanced example based on the template.
