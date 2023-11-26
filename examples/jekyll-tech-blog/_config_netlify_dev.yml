@@ -6,7 +6,11 @@
 url: "https://jekyll-tech-blog-dev.netlify.app"
 baseurl: ""
 
-# Demo
+# Specific to project
 
-jekyll_tech_blog:
-  demo: true
+project:
+  env:
+    prod:
+      link: "https://jekyll-tech-blog.netlify.app"
+    dev:
+      link: "https://jekyll-tech-blog-dev.netlify.app"

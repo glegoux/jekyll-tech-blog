@@ -8,20 +8,34 @@
     </a>
   </li>
   {%- endfor %}
-  {%- if site.jekyll_tech_blog.demo -%}
+  {%- if site.project.env -%}
   <li>
     {%- if jekyll.environment == 'production' -%}
-    <a class="link-strong menu-item"
-       href="https://jekyll-tech-blog-dev.netlify.app"
-       title="See the content of the website in development mode">
-      🟢 Dev mode
-    </a>
+    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+      <label class="btn btn-light active">
+        🔴 Prod
+      </label>
+      <label class="btn btn-light">
+        <a class="link-strong menu-item"
+           href="{{ site.project.env.dev.link }}"
+           title="See the content of the website in development mode">
+          🟢 Dev
+        </a>
+      </label>
+    </div>
     {% else %}
-    <a class="link-strong menu-item"
-       href="https://jekyll-tech-blog.netlify.app"
-       title="See the content of the website in production mode">
-      🔴 Prod mode
-    </a>
+    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+      <label class="btn btn-light">
+        <a class="link-strong menu-item"
+           href="{{ site.project.env.prod.link }}"
+           title="See the content of the website in production mode">
+          🔴 Prod
+        </a>
+      </label>
+      <label class="btn btn-light active">
+          🟢 Dev
+      </label>
+    </div>
     {% endif %}
   </li>
   {%- endif -%}
