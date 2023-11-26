@@ -80,16 +80,17 @@ project:
   article:
     comment:
       disqus_code: ""
-    source_code:
-      url: "https://raw.githubusercontent.com/glegoux/jekyll-tech-blog/main/src/_posts"
-    resources:
+    actions:
+      source_code:
+        url: "https://raw.githubusercontent.com/glegoux/jekyll-tech-blog/main/src/_posts"
+      resources:
+        url: "https://raw.githubusercontent.com/glegoux/jekyll-tech-blog/main/resources"
+      issue:
+        url: "https://github.com/glegoux/jekyll-tech-blog/issues"
+      edit:
+        url: "https://github.com/glegoux/jekyll-tech-blog/edit/main/src/_posts/"
+    attachment:
       url: "https://raw.githubusercontent.com/glegoux/jekyll-tech-blog/main/resources"
-    issue:
-      url: "https://github.com/glegoux/jekyll-tech-blog/issues"
-    edit:
-      url: "https://github.com/glegoux/jekyll-tech-blog/edit/main/src/_posts/"
-    static:
-      url: "https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles"
       image:
         path: "images"
         suffix: ""

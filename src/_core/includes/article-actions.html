@@ -1,36 +1,37 @@
+{%- assign config_article = site.project.article -%}
 <div class="article-actions no-print">
   <ul>
     <li title="Print this article" style="cursor: pointer" onclick="window.print();">
       <i class="fas fa-print"></i>
       <span class="d-none d-md-inline">Print</span>
     </li>
-    {%- if config_article.source_code.url -%}
+    {%- if config_article.actions.source_code.url -%}
     <li title="See the source code of this article">
-      <a href="{{ config_article.source_code.url }}/{{ article_id }}.md">
+      <a href="{{ config_article.actions.source_code.url }}/{{ article_id }}.md">
         <i class="far fa-file-code"></i>
         <span class="d-none d-md-inline">Source</span>
       </a>
     </li>
     {%- endif -%}
-    {%- if config_article.resources.url -%}
+    {%- if config_article.actions.resources.url -%}
     <li title="See the resources of this article">
-      <a href="{{ config_article.resources.url }}/{{ article_id }}">
+      <a href="{{ config_article.actions.resources.url }}/{{ article_id }}">
         <i class="fas fa-code-branch"></i>
         <span class="d-none d-md-inline">Resources</span>
       </a>
     </li>
     {%- endif -%}
-    {%- if config_article.edit.url -%}
+    {%- if config_article.actions.edit.url -%}
     <li title="Edit this article (if you have permission)">
-      <a href="{{ config_article.edit.url }}/{{ article_id }}.md">
+      <a href="{{ config_article.actions.edit.url }}/{{ article_id }}.md">
         <i class="fas fa-edit"></i>
         <span class="d-none d-md-inline">Edit</span>
       </a>
     </li>
     {%- endif -%}
-    {%- if config_article.issue.url -%}
+    {%- if config_article.actions.issue.url -%}
     <li title="Report an issue on this article">
-      <a href="{{ config_article.issue.url }}">
+      <a href="{{ config_article.actions.issue.url }}">
         <i class="fas fa-exclamation-circle"></i>
         <span class="d-none d-md-inline">Issue</span>
       </a>
