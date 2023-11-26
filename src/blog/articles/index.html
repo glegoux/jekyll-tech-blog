@@ -15,17 +15,13 @@ redirect_from:
 
     <div class="row">
       <div class="col-lg-6">
-        {% include avatar.html %}
-      </div>
-
-      <div class="col-lg-6">
-        {% include blog-info.html
+        {% include blinker-info.html
           title=config_blog.title
           keywords=config_blog.keywords
-          link=config_core.links.fork
-          link-text="Fork me!"
-          link-tooltip="Use this blog template to build yours!"
         %}
+      </div>
+      <div class="col-lg-6">
+        {% include avatar.html %}
       </div>
     </div>
 

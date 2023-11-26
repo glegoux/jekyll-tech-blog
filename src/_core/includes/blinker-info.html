@@ -6,9 +6,11 @@
   <span class="blinker"></span>
   </p>
 
+  {%- if include.link -%}
   <a href="{{ include.link }}" title="{{ include.link-tooltip }}">
     <button class="btn btn-dark">
       <b class="black">{{ include.link-text }}</b>
     </button>
   </a>
+  {%- endif -%}
 </div>
