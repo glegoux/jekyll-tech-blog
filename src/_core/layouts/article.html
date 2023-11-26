@@ -4,24 +4,22 @@ layout: default
 {%- assign config_article = site.project.article -%}
 {%- assign article_id = page.date | date: '%Y-%m-%d-' | append: page.title | slugify -%}
 {%- assign n_tags = page.tags | size -%}
-<div id="page-article" class="col-12">
+<div id="page-article">
 
   {%- if jekyll.environment == 'development' -%}
-  <div title="Only visible in development mode">
-    <div class="container no-print" title="Only visible in development mode">
-      <div class="row">
-        {%- if page.draft -%}
-        <div class="warning">
-          This article is a <b>draft</b> visible only in <b>development</b> mode which will not
-          deployed
-          on production.
-        </div>
-        {% else %}
-        <div class="success">
-          This article is <b>ready</b> or is <b>already</b> deployed on <b>production</b>.
-        </div>
-        {% endif %}
+  <div class="container no-print" title="Only visible in development mode">
+    <div class="row">
+      {%- if page.draft -%}
+      <div class="warning">
+        This article is a <b>draft</b> visible only in <b>development mode</b> which will not
+        deployed
+        on production.
       </div>
+      {% else %}
+      <div class="success">
+        This article is <b>ready</b> or is <b>already</b> deployed on <b>production</b>.
+      </div>
+      {% endif %}
     </div>
   </div>
   {% endif %}
@@ -184,7 +182,7 @@ layout: default
 
   </div>
 
- {%- include article-authors.html -%}
+  {%- include article-authors.html -%}
 
- {%- include article-other-articles.html -%}
+  {%- include article-other-articles.html -%}
 </div>
