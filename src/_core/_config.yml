@@ -41,6 +41,10 @@ include:
 # Force to exclude some files for the watcher (with --watch option) in the Jekyll::Watcher
 # See https://help.github.jp/enterprise/2.11/user/articles/files-that-start-with-an-underscore-are-missing/
 exclude:
+  - "_core/data"
+  - "_core/includes"
+  - "_core/layouts"
+  - "_core/sass"
   - ".sass-cache"
   - ".jekyll-metadata"
   - ".jekyll-cache"
