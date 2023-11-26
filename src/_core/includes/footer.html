@@ -1,56 +1,51 @@
 {%- assign config_core = site.project_core -%}
 {%- assign config_blog = site.project.blog -%}
 <div class="container">
-  <div class="row">
-    <div class="follow d-md-none col-md-12 text-center">
+  <div class="row footer-info">
+    <div class="follow d-md-none col-md-12 logo">
       <img class="img-fluid lazyload  w-50" data-src="{{ config_blog.logo_header }}" alt="site logo"/>
     </div>
 
     {%- if config_blog.menu_items %}
-    <div class="contact col-md-4 col-12">
-      <table>
-        <tr>
-          <td colspan="2">
-            <h1>Plan</h1>
-          </td>
-        </tr>
+    <div class="col-md-4 col-12 plan">
+      <h1>Plan</h1>
+      <ul>
         {%- for menu_item in config_blog.menu_items %}
-        <tr>
-          <td>
-            <a class="link-strong menu-item"
-               href="{{ menu_item.link }}"
-               title="{% if menu_item.tooltip and menu_item.tooltip != '' %} {{ menu_item.tooltip }} {% else %}Go to this page{% endif %}">
-              <span class="fs-">{{ menu_item.name }}</span>
-            </a>
-          </td>
-        </tr>
+        <li>
+          <a class="link-strong menu-item"
+             href="{{ menu_item.link }}"
+             title="{% if menu_item.tooltip and menu_item.tooltip != '' %} {{ menu_item.tooltip }} {% else %}Go to this page{% endif %}">
+            <span class="fs-">{{ menu_item.name }}</span>
+          </a>
+        </li>
         {%- endfor %}
-      </table>
+      </ul>
     </div>
     {% else %}
-    <div class="col-md-4 col-12"></div>
+    <div class="col-md-4 col-12 plan"></div>
     {% endif %}
 
-    <div class="follow d-none d-md-block col-md-4 text-center">
+    <div class="d-none d-md-block col-md-4 logo">
       <img class="img-fluid lazyload" data-src="{{ config_blog.logo_header }}" alt="site logo"/>
     </div>
 
 
     {%- if config_blog.socials %}
-    <div class="follow col-md-4 col-12">
+    <div class="col-md-4 col-12 follow">
       <h1 class="title">Follow</h1>
       {% include social.html %}
     </div>
     {% else %}
-    <div class="col-md-4 col-12"></div>
+    <div class="col-md-4 col-12 follow"></div>
     {% endif %}
   </div>
 
-  <div class="row">
-    <div class="links col-12">
+  <div class="row links">
+    <div class="col-12">
       <p>
         {% if config_blog.link_status_availability %}
-        <a class="link-strong" href="{{ config_blog.link_status_availability }}" title="See the status and availability">Status & Availability</a> |
+        <a class="link-strong" href="{{ config_blog.link_status_availability }}"
+           title="See the status and availability">Status & Availability</a> |
         {% endif %}
         <a class="link-strong" href="/sitemap.xml" title="See the site map">Sitemap</a> |
         <a class="link-strong" href="/rss.xml" title="Subscribe to RSS feed"><span class="notranslate">RSS</span></a> |
@@ -61,14 +56,17 @@
 
 
   <!-- Please don't remove that due to license rules -->
-  <div class="row notranslate">
-    <div class="copyright col-12">
+  <div class="row copyright notranslate">
+    <div class="col-12">
       <hr>
       <p>
-        Powered by <a class="link-strong" href="{{ config_core_blog.links.project }}" title="See the original project">🧪 Jekyll Tech Blog</a> - ©Copyright {{ 'now' | date: "%Y" }}.
+        Powered by <a class="link-strong" href="{{ config_core_blog.links.project }}" title="See the original project">🧪
+        Jekyll Tech Blog</a> - ©Copyright {{ 'now' | date: "%Y" }}.
         <br>
-        <a class="link-strong" href="{{ config_core_blog.links.code }}" title="Explore the source code">Source code</a> |
-        <a class="link-strong" href="{{ config_core_blog.links.doc }}" title="Read the documentation">Documentation</a> |
+        <a class="link-strong" href="{{ config_core_blog.links.code }}" title="Explore the source code">Source code</a>
+        |
+        <a class="link-strong" href="{{ config_core_blog.links.doc }}" title="Read the documentation">Documentation</a>
+        |
         <a class="link-strong" href="{{ config_core_blog.links.bug }}" title="Report a bug">Bug</a> |
         <a class="link-strong" href="{{ config_core_blog.links.license }}" title="See the license">License</a>
         <br>
