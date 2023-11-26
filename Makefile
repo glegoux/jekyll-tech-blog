@@ -2,10 +2,13 @@ SHELL = /usr/bin/env bash
 
 .PHONY: usage
 usage:
-	@echo "usage install update clean build build-example doctor test run-prod run"
+	@echo "usage all all-prod install update clean build build-prod doctor test run run-prod"
 
 .PHONY: all
 all: install clean build doctor test run
+
+.PHONY: all-prod
+all: install clean build-prod doctor test run-prod
 
 .PHONY: install
 install:
@@ -24,27 +27,20 @@ doctor:
 	@bundle exec jekyll doctor --config "src/_core/_config.yml,src/_config.yml"
 
 .PHONY: build
-build:
-	@JEKYLL_ENV=production bundle exec jekyll build \
-		--config "src/_core/_config.yml,src/_config.yml" \
+build-example:
+	@JEKYLL_ENV=development bundle exec jekyll build \
+		--config "src/_core/_config.yml,src/_config.yml,src/_config_dev.yml" \
 		--trace
 
-.PHONY: build-example
-build-example:
+.PHONY: build-prod
+build-prod:
 	@JEKYLL_ENV=production bundle exec jekyll build \
-		--config "src/_core/_config.yml,src/_config.yml,examples/jekyll-tech-blog-online/_config.yml" \
+		--config "src/_core/_config.yml,src/_config.yml" \
 		--trace
 
 .PHONY: test
 test:
 	@JEKYLL_ENV=production ./test/run_tests.sh
-
-.PHONY: run-prod
-run-prod:
-	@JEKYLL_ENV=production bundle exec jekyll serve \
-		--config "src/_core/_config.yml,src/_config.yml" \
-		--host localhost --port 4000 \
-		--no-watch
 
 .PHONY: run
 run:
@@ -52,3 +48,10 @@ run:
 		--config "src/_core/_config.yml,src/_config.yml,src/_config_dev.yml" \
                 --host localhost --port 4000 \
 		--incremental --drafts --unpublished --livereload
+
+.PHONY: run-prod
+run-prod:
+	@JEKYLL_ENV=production bundle exec jekyll serve \
+		--config "src/_core/_config.yml,src/_config.yml" \
+		--host localhost --port 4000 \
+		--no-watch
