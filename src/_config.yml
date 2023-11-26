@@ -31,7 +31,10 @@ unpublished: false
 
 project:
   blog:
+    title: "Software Engineering"
+    keywords: [ "Research", "Development / Software", "Algorithm", "Design", "Data", "AI / Machine Learning", "Applied Mathematics", "Computer science", "Web", "Security", "Reliability", "Infrastructure / Hardware", "System", "Methodology", "Business" ]
     logo_header: "/_static/config/img/site-logo.png"
+    theme_color: "#383b43"
     menu_items:
       - name: "Blog"
         link: "/blog/"
@@ -45,8 +48,6 @@ project:
       - name: "🗂️ Documentation"
         link: "https://github.com/glegoux/jekyll-tech-blog/wiki"
         tooltip: "Read the documentation"
-    title: "Software Engineering"
-    keywords: [ "Research", "Development / Software", "Algorithm", "Design", "Data", "AI / Machine Learning", "Applied Mathematics", "Computer science", "Web", "Security", "Reliability", "Infrastructure / Hardware", "System", "Methodology", "Business" ]
     socials:
       - name: "LinkedIn"
         link: "<link>"
@@ -67,9 +68,8 @@ project:
         link: "<link>"
         class_icon:  "fas fa-paper-plane"
     link_status_availability: "<link>"
-    google_analytics_code: "<id>"
-    disqus_name: "<id>"
-    theme_color: "#383b43"
+    google_analytics_code: ""
+    disqus_name: ""
   avatar:
     name: "Bob"
     job: "Software Engineer"
@@ -99,4 +99,4 @@ project:
         lastname: "LEGOUX"
         job: "Software Engineer"
         company: ""
-        follow_link: "/<link>"
+        follow_link: "<link>"

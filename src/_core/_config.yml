@@ -75,6 +75,7 @@ defaults:
 # Specific to project core
 
 project_core:
+  title: "🧪 Jekyll Tech Blog"
   libs:
     version:
       jquery: "3.5.1"

@@ -50,15 +50,17 @@
     <div class="col-12">
       <hr>
       <p>
-        Powered by <a class="link-strong" href="{{ config_core_blog.links.project }}" title="See the original project">🧪
-        Jekyll Tech Blog</a> - ©Copyright {{ 'now' | date: "%Y" }}.
+        Powered by
+        <a class="link-strong" href="{{ config_core.links.project }}" title="See the original project">
+          {{ config_core.title }}
+        </a> - ©Copyright {{ 'now' | date: "%Y" }}.
         <br>
-        <a class="link-strong" href="{{ config_core_blog.links.code }}" title="Explore the source code">Source code</a>
+        <a class="link-strong" href="{{ config_core.links.code }}" title="Explore the source code">Source code</a>
         |
-        <a class="link-strong" href="{{ config_core_blog.links.doc }}" title="Read the documentation">Documentation</a>
+        <a class="link-strong" href="{{ config_core.links.doc }}" title="Read the documentation">Documentation</a>
         |
-        <a class="link-strong" href="{{ config_core_blog.links.bug }}" title="Report a bug">Bug</a> |
-        <a class="link-strong" href="{{ config_core_blog.links.license }}" title="See the license">License</a>
+        <a class="link-strong" href="{{ config_core.links.bug }}" title="Report a bug">Bug</a> |
+        <a class="link-strong" href="{{ config_core.links.license }}" title="See the license">License</a>
         <br>
         Version: <span class="notranslate">{% include VERSION %}</span>
       </p>
