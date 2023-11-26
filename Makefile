@@ -27,7 +27,7 @@ doctor:
 	@bundle exec jekyll doctor --config "src/_core/_config.yml,src/_config.yml"
 
 .PHONY: build
-build-example:
+build:
 	@JEKYLL_ENV=development bundle exec jekyll build \
 		--config "src/_core/_config.yml,src/_config.yml,src/_config_dev.yml" \
 		--trace
