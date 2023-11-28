@@ -23,7 +23,7 @@ jobs:
       - name: Build static website with domain name
         run: |
           source ~/.profile
-          make build
+          make build-prod
           cp .github/files/* dest/
       - name: Deploy static website
         run: |
