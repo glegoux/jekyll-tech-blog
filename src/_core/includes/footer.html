@@ -3,7 +3,9 @@
 <div class="container">
   <div class="row footer-info">
     <div class="d-md-none col-md-12 logo">
-      <img class="img-fluid lazyload  w-50" data-src="{{ config_blog.logo_header }}" alt="site logo"/>
+      <a href="/" title="Go to the home page">
+        <img class="img-fluid lazyload  w-50" data-src="{{ config_blog.logo_header }}" alt="site logo"/>
+      </a>
     </div>
 
     {%- if config_blog.menu_items %}
@@ -16,7 +18,9 @@
     {% endif %}
 
     <div class="d-none d-md-block col-md-4 logo">
-      <img class="img-fluid lazyload" data-src="{{ config_blog.logo_header }}" alt="site logo"/>
+      <a href="/" title="Go to the home page">
+        <img class="img-fluid lazyload" data-src="{{ config_blog.logo_header }}" alt="site logo"/>
+      </a>
     </div>
 
 
