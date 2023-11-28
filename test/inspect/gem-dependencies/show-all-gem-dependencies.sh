@@ -6,7 +6,6 @@
 # Store the output in a fle: file.dot, then use to visualize the graph:
 #   cat file.dot | dot -Tpng -o file.png | xdg-open file.png
 #
-#
 # usage:
 #   ./show-all-gem-dependencies.sh jekyll
 #   ./show-all-gem-dependencies.sh jekyll jekyll-sitemap
