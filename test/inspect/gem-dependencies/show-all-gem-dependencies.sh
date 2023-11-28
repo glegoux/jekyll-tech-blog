@@ -24,7 +24,11 @@ direct_runtime_dependencies() {
 version() {
   local gem_name="$1"
   local direct_dependencies="$(bundle exec gem dep "^${gem_name}\$")"
-  echo "${direct_dependencies}" | grep -E "^Gem" | rev | cut -f1 -d"-" | rev 
+  echo "${direct_dependencies}" | grep -E "^Gem" | rev | cut -f1 -d"-" | rev
+}
+
+to_key() {
+  echo "$1" | sed 's/\./_/g'
 }
 
 # main
@@ -32,7 +36,7 @@ version() {
 if [[ "$BASH_SOURCE" != "$0" ]]; then
   return 0
 fi
-	
+
 set -e
 
 cd "$(git rev-parse --show-toplevel)"
@@ -41,26 +45,26 @@ gem_names="$@"
 
 for gem_name in ${gem_names}; do
   if ! bundle exec gem list -i "^${gem_name}\$" > /dev/null; then
-    >&2 echo "ERROR: gem '${gem_name}' does not exist!"	   
+    >&2 echo "ERROR: gem '${gem_name}' does not exist!"
     exit 1
-  fi	   
-done	  
+  fi
+done
 
-dependencies=(${gem_names})
+dependencies=($gem_names)
+index=0
 cache=()
 output=""
 while [[ ${#dependencies[@]} != 0 ]]; do
-  dependency="${dependencies[0]}"
-  for d in $(direct_runtime_dependencies "${dependency}"); do
-    output="${output}\\n  \"${dependency} $(version ${dependency})\" -> \"${d} $(version ${d})\";"
-    if [[ ! ${cache[@]} =~ ${dependency} ]]; then
+  dependency="${dependencies[$index]}"
+  for d in $(direct_runtime_dependencies "$dependency"); do
+    output+="\\n  \"$dependency $(version "$dependency")\" -> \"$d $(version "$d")\";"
+    if [[ -z ${cache[$(to_key "$dependency")]} ]]; then
       dependencies+=("${d}")
     fi
   done
-  dependencies=("${dependencies[@]:1}")
-  if [[ ! ${cache[@]} =~ ${dependency} ]]; then
-    cache+=("${dependency}")
-  fi
+  unset "dependencies[$index]"
+  (( index+=1 ))
+  cache[$(to_key "$dependency")]=$dependency
 done
 
 echo "digraph gems {"
