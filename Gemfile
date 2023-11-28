@@ -1,4 +1,4 @@
-# See https://bundler.io/gemfile.html
+# See https://bundler.io/guides/gemfile.html
 source 'https://rubygems.org'
 ruby File.read('.ruby-version', mode: 'rb').chomp
 
