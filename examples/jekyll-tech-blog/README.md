@@ -6,4 +6,4 @@ Deployed with [Netlify](https://www.netlify.com/) at https://jekyll-tech-blog.ne
 - source code: see the Git branch [branch:main](https://github.com/glegoux/jekyll-tech-blog/tree/main) 
 - static files: not available because built server-side, but you can rebuild and see it locally by running
 at the repository root for production mode `make build-prod` and for development mode with `make build`, the result
-will be in the `./dest` folder. Go to this folder and run: `../bin/static-http-server.sh`.
+will be in the `./dest` folder. Go to this folder and run: `../bin/static-http-server.sh` (or use `make run-prod` and `make run` directly).
