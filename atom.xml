@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>Software Engineering Blog - Gilles Legoux</title>
- <link href="https://glegoux.com/atom.xml" rel="self"/>
- <link href="https://glegoux.com/"/>
- <updated>2023-11-28T18:47:35+00:00</updated>
- <id>https://glegoux.com/</id>
+ <title>Software Engineering Blog - Bob</title>
+ <link href="http://localhost:4000/atom.xml" rel="self"/>
+ <link href="http://localhost:4000/"/>
+ <updated>2023-11-28T21:25:30+00:00</updated>
+ <id>http://localhost:4000/</id>
 
  
  <entry>
    <title>My tech blog on Medium</title>
-   <link href="https://glegoux.com/blog/articles/2022/11/01/my-tech-blog-on-medium.html"/>
+   <link href="http://localhost:4000/blog/articles/2022/11/01/my-tech-blog-on-medium.html"/>
    <updated>2022-11-01T00:00:00+00:00</updated>
-   <id>https://glegoux.com/blog/articles/2022/11/01/my-tech-blog-on-medium.html</id>
+   <id>http://localhost:4000/blog/articles/2022/11/01/my-tech-blog-on-medium.html</id>
    <content type="html">&lt;p&gt;I will continue writing blog posts here, but mainly they will be published on Medium under the user &lt;a href=&quot;https://medium.com/@glegoux&amp;gt;&quot;&gt;@glegoux&lt;/a&gt;. The goal is always to improve the experience of readers and my experience of writing. The Medium platform is mature, then more and more popular, becoming one of the leaders among the editors of tech blogs. It provides a full WYSIWYG user interface when editing online, with various options for formatting provided as the user edits. It allows publishing blog posts (called stories) to capture large audiences and communities.&lt;/p&gt;
 
 &lt;p&gt;With the evolution of practices and tools of online blogging these last years, I wanted to cross a threshold in my tech writer experience: be more efficient and effective in writing content, by allocating less time to maintain editor tools and more time to write content. So, I needed to make the choice between continuing to use only this blog, starting to use only Medium, using both, or something else. I chose to use both ones:&lt;/p&gt;
@@ -68,9 +68,9 @@ and &lt;a href=&quot;https://glegoux.com&quot;&gt;https://glegoux.com&lt;/a&gt; 
  
  <entry>
    <title>Secret Santa</title>
-   <link href="https://glegoux.com/blog/articles/2021/11/23/secret-santa.html"/>
+   <link href="http://localhost:4000/blog/articles/2021/11/23/secret-santa.html"/>
    <updated>2021-11-23T00:00:00+00:00</updated>
-   <id>https://glegoux.com/blog/articles/2021/11/23/secret-santa.html</id>
+   <id>http://localhost:4000/blog/articles/2021/11/23/secret-santa.html</id>
    <content type="html">&lt;p&gt;Secret Santa is a traditional event in December with family, friends, or office colleagues, 
 in which each guest gives a gift to another guest without knowing who will give him/her a gift. 
 Imagine that you want to organize it. You notify your guests to choose a gift by keeping it secret. 
@@ -117,7 +117,7 @@ this suite $(u_n)_{n\in \mathbb{N}}$ has a rate of convergence quick:&lt;/p&gt;
 
 &lt;figure title=&quot;Inverse of the probability that a guest draws randomly his/her name&quot;&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2021-11-23-secret-santa/images/u_n-convergence.png&quot; alt=&quot;Inverse of the probability that a guest draws randomly his/her name&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2021-11-23-secret-santa/images/u_n-convergence.png&quot; title=&quot;Inverse of the probability that a guest draws randomly his/her name&quot; alt=&quot;Inverse of the probability that a guest draws randomly his/her name&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;Inverse of the probability that a guest draws randomly his/her name&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -156,7 +156,7 @@ let’s say $N=300$:&lt;/p&gt;
 
 &lt;figure title=&quot;Probability to have 2 identical types of gifts among 300 possible types of Christmas gifts&quot;&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2021-11-23-secret-santa/images/g_n-convergence.png&quot; alt=&quot;Probability to have 2 identical types of gifts among 300 possible types of Christmas gifts&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2021-11-23-secret-santa/images/g_n-convergence.png&quot; title=&quot;Probability to have 2 identical types of gifts among 300 possible types of Christmas gifts&quot; alt=&quot;Probability to have 2 identical types of gifts among 300 possible types of Christmas gifts&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;Probability to have 2 identical types of gifts among 300 possible types of Christmas gifts&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -185,9 +185,9 @@ at least 2 identical types of gifts.&lt;/p&gt;
  
  <entry>
    <title>Software versioning</title>
-   <link href="https://glegoux.com/blog/articles/2021/11/13/software-versioning.html"/>
+   <link href="http://localhost:4000/blog/articles/2021/11/13/software-versioning.html"/>
    <updated>2021-11-13T00:00:00+00:00</updated>
-   <id>https://glegoux.com/blog/articles/2021/11/13/software-versioning.html</id>
+   <id>http://localhost:4000/blog/articles/2021/11/13/software-versioning.html</id>
    <content type="html">&lt;h1 id=&quot;what-is-a-software-version&quot;&gt;What is a software version?&lt;/h1&gt;
 
 &lt;p&gt;A software is a dynamic set of lines of code, that evolves discretely from state to state in function 
@@ -301,9 +301,9 @@ versions would point to an identical state of the software.&lt;/p&gt;
  
  <entry>
    <title>Time management</title>
-   <link href="https://glegoux.com/blog/articles/2021/04/20/time-management.html"/>
+   <link href="http://localhost:4000/blog/articles/2021/04/20/time-management.html"/>
    <updated>2021-04-20T00:00:00+00:00</updated>
-   <id>https://glegoux.com/blog/articles/2021/04/20/time-management.html</id>
+   <id>http://localhost:4000/blog/articles/2021/04/20/time-management.html</id>
    <content type="html">&lt;p&gt;You could need to &lt;strong&gt;optimize the spending of your time&lt;/strong&gt; for &lt;strong&gt;professional or personal activities&lt;/strong&gt;. 
 I am going to explain what means to me the time, and how you can manage it. I have been inspired by my
 knowledge, experiences, readings, and listenings, but it is my personal version of time management 
@@ -728,9 +728,9 @@ resolve your new needs for &lt;strong&gt;yourself&lt;/strong&gt; and for &lt;str
  
  <entry>
    <title>Unix timestamp</title>
-   <link href="https://glegoux.com/blog/articles/2020/11/28/unix-timestamp.html"/>
+   <link href="http://localhost:4000/blog/articles/2020/11/28/unix-timestamp.html"/>
    <updated>2020-11-28T00:00:00+00:00</updated>
-   <id>https://glegoux.com/blog/articles/2020/11/28/unix-timestamp.html</id>
+   <id>http://localhost:4000/blog/articles/2020/11/28/unix-timestamp.html</id>
    <content type="html">&lt;p&gt;In fact, 2038 is a particular year when an informatics bug could occur, sometimes referred as the &lt;strong&gt;Y2K38 problem&lt;/strong&gt;. 
 Because an &lt;strong&gt;arithmetic overflow&lt;/strong&gt; on the Unix timestamp risks appearing, what it means, there are insufficient bits in a 
 binary number representation to portray the result of an arithmetic operation. For example, an arithmetic operation 
@@ -754,7 +754,7 @@ and New Year’s Day, 1970, seemed most convenient.&lt;/p&gt;
 
 &lt;p&gt;As you can see:&lt;/p&gt;
 
-&lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;s &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;seq 0 3&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do &lt;/span&gt;date &lt;span class=&quot;nt&quot;&gt;--date&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;1970-01-01 00:00:00 UTC &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$s&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; seconds&quot;&lt;/span&gt; +%s&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;
+&lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;s &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;seq &lt;/span&gt;0 3&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;date&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--date&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;1970-01-01 00:00:00 UTC &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$s&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; seconds&quot;&lt;/span&gt; +%s&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;
 &lt;span class=&quot;go&quot;&gt;0
 1
 2
@@ -776,14 +776,14 @@ originally at its creation. That is to say, its maximum value is $ 2^{31} - 1 $.
 $ (inclusive) are used by convention for representing a duration from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1970-01-01 00:00:00 UTC&lt;/code&gt; to an anterior date. 
 Then the maximum duration time supported by a such Unix timestamp will be reach out at &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2038-01-19 03:14:07 UTC&lt;/code&gt;:&lt;/p&gt;
 
-&lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt; date &lt;span class=&quot;nt&quot;&gt;--date&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;@&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$((&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;31&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--utc&lt;/span&gt;
+&lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;date&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--date&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;@&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$((&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;31&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--utc&lt;/span&gt;
 &lt;span class=&quot;go&quot;&gt;Tue Jan 19 03:14:07 UTC 2038
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;The &lt;strong&gt;adding of 1 second at this date&lt;/strong&gt; raises an arithmetic overflow error. For a representation on &lt;strong&gt;32-bits 
 as an unsigned integer&lt;/strong&gt;. The problem will be the same in 2106:&lt;/p&gt;
 
-&lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt; date &lt;span class=&quot;nt&quot;&gt;--date&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;@&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$((&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;32&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--utc&lt;/span&gt;
+&lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;date&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--date&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;@&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$((&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;32&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--utc&lt;/span&gt;
 &lt;span class=&quot;go&quot;&gt;Sun Feb  7 06:28:15 UTC 2106
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -791,7 +791,7 @@ as an unsigned integer&lt;/strong&gt;. The problem will be the same in 2106:&lt;
 this problem is rescheduled for around in 290 billions of years, in other words in a &lt;strong&gt;quantity quasi-infinity of time&lt;/strong&gt;, knowing the 
 age of the universe is estimated around 13 billions of years, or around 20 times less. With the approximate computation:&lt;/p&gt;
 
-&lt;div class=&quot;language-scala highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;scala&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Long&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;MaxValue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;365&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;24&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3600&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)/&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;div class=&quot;language-scala highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;scala&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Long&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;MaxValue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;365&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;24&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3600&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)/&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;pow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Double&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;292.471208677&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -815,16 +815,16 @@ suddenly could no longer work.&lt;/p&gt;
 &lt;p&gt;While currently Java/Scala ecosystem is not exposed to this problem in the standard library, 
 with a signed 64-bits representation for an Unix timestamp:&lt;/p&gt;
 
-&lt;div class=&quot;language-scala highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;scala&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.time.Instant&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Instant&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;now&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getEpochSecond&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;isInstanceOf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Long&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+&lt;div class=&quot;language-scala highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;scala&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.time.Instant&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Instant&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;now&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;getEpochSecond&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;isInstanceOf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Long&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Boolean&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;A Unix timestamp is well represented by a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Long&lt;/code&gt; from $-2^{63}$ to $2^{63} - 1$. Let’s study together, what it could happen, if it was a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Int&lt;/code&gt;.&lt;br /&gt;
 The range of values will be between $-2^{31}$ and $2^{31} - 1$ for a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Int&lt;/code&gt;.&lt;/p&gt;
 
-&lt;div class=&quot;language-scala highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;scala&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;MinValue&lt;/span&gt;
+&lt;div class=&quot;language-scala highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;scala&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;MinValue&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Int&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2147483648&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;scala&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;MaxValue&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;scala&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;MaxValue&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Int&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2147483647&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -835,13 +835,13 @@ Here, you have a odd number instead of an even number, and typically an arithmet
 
 &lt;p&gt;In addition we have:&lt;/p&gt;
 
-&lt;div class=&quot;language-scala highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;scala&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;MaxValue&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;MinValue&lt;/span&gt;
+&lt;div class=&quot;language-scala highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;scala&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;MaxValue&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;MinValue&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Boolean&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;The adding of 1 second after &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Tue Jan 19 03:14:07 UTC 2038&lt;/code&gt; gives:&lt;/p&gt;
 
-&lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt; date &lt;span class=&quot;nt&quot;&gt;--date&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;@&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$((&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;31&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--utc&lt;/span&gt;
+&lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;date&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--date&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;@&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$((&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;31&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--utc&lt;/span&gt;
 &lt;span class=&quot;go&quot;&gt;Fri Dec 13 20:45:52 UTC 1901
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -854,19 +854,19 @@ Here the relation between the base 10 and the two’s complement binary represen
 &lt;p&gt;with the notation &lt;strong&gt;little endian&lt;/strong&gt; for the order of the bits, the most significant bit (MSB) $ b_{31} $ is the &lt;strong&gt;sign bit&lt;/strong&gt; 
 and the least significant (LSB) bit $ b_{0} $ the &lt;strong&gt;unit bit&lt;/strong&gt;. It the sign bit is 1, the number is stricly negative. And if the unit bit is 1, the numbder is odd. For example:&lt;/p&gt;
 
-&lt;div class=&quot;language-scala highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;toBinaryRepresentation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;toBinaryString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;reverse&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;padTo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;32&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;&apos;0&apos;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;reverse&lt;/span&gt;
+&lt;div class=&quot;language-scala highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;toBinaryRepresentation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;toBinaryString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;reverse&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;padTo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;32&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;&apos;0&apos;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;reverse&lt;/span&gt;
 
-&lt;span class=&quot;n&quot;&gt;scala&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;toBinaryRepresentation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;MinValue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;scala&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;toBinaryRepresentation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;MinValue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10000000000000000000000000000000&lt;/span&gt;
 
-&lt;span class=&quot;n&quot;&gt;scala&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;toBinaryRepresentation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;scala&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;toBinaryRepresentation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;11111111111111111111111111111111&lt;/span&gt;
 
-&lt;span class=&quot;n&quot;&gt;scala&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;toBinaryRepresentation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;scala&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;toBinaryRepresentation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;00000000000000000000000000000000&lt;/span&gt;
 
-&lt;span class=&quot;n&quot;&gt;scala&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;toBinaryRepresentation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;MaxValue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;scala&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;toBinaryRepresentation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;MaxValue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;01111111111111111111111111111111&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -888,9 +888,9 @@ it is important to be aware of this kind of behavior when a technology is used.&
  
  <entry>
    <title>Geo-location</title>
-   <link href="https://glegoux.com/blog/articles/2020/08/24/geo-location.html"/>
+   <link href="http://localhost:4000/blog/articles/2020/08/24/geo-location.html"/>
    <updated>2020-08-24T00:00:00+00:00</updated>
-   <id>https://glegoux.com/blog/articles/2020/08/24/geo-location.html</id>
+   <id>http://localhost:4000/blog/articles/2020/08/24/geo-location.html</id>
    <content type="html">&lt;p&gt;We can model the surface of the earth as a sphere of radius $R$. Even if in reality, the earth is more a kind of ellipsoid with an irregular surface, where each point of its surface owns an altitude in relation to the sea level.&lt;/p&gt;
 
 &lt;figure&gt;
@@ -1011,9 +1011,9 @@ respecting the triangle inegality.&lt;/p&gt;
  
  <entry>
    <title>GNU privacy guard</title>
-   <link href="https://glegoux.com/blog/articles/2020/05/15/gnu-privacy-guard.html"/>
+   <link href="http://localhost:4000/blog/articles/2020/05/15/gnu-privacy-guard.html"/>
    <updated>2020-05-15T00:00:00+00:00</updated>
-   <id>https://glegoux.com/blog/articles/2020/05/15/gnu-privacy-guard.html</id>
+   <id>http://localhost:4000/blog/articles/2020/05/15/gnu-privacy-guard.html</id>
    <content type="html">&lt;p&gt;First, it is important to distinguish: &lt;strong&gt;PGP&lt;/strong&gt; (Pretty Good Privacy), &lt;strong&gt;OpenPGP&lt;/strong&gt; and &lt;strong&gt;GnuPG&lt;/strong&gt; also named &lt;strong&gt;GPG&lt;/strong&gt; (Gnu Privacy Guard).
 Phil Zimmerman made up PGP in 1991 as a way for people to communicate without eavesdropping. Going further 
 back into the 1990s, there used to be a law in the US that restricted the export of cryptographic technology 
@@ -1051,9 +1051,9 @@ Particularly, you can:&lt;/p&gt;
  
  <entry>
    <title>Java ecosystem</title>
-   <link href="https://glegoux.com/blog/articles/2020/05/04/java-ecosystem.html"/>
+   <link href="http://localhost:4000/blog/articles/2020/05/04/java-ecosystem.html"/>
    <updated>2020-05-04T00:00:00+00:00</updated>
-   <id>https://glegoux.com/blog/articles/2020/05/04/java-ecosystem.html</id>
+   <id>http://localhost:4000/blog/articles/2020/05/04/java-ecosystem.html</id>
    <content type="html">&lt;p&gt;The Java language is initiated by &lt;strong&gt;James Gosling&lt;/strong&gt;, &lt;strong&gt;Mike Sheridan&lt;/strong&gt; and &lt;strong&gt;Patrick Naughton&lt;/strong&gt; is June &lt;strong&gt;1991&lt;/strong&gt;. After several years,
 the company &lt;strong&gt;Sun Microsystems&lt;/strong&gt; released the first version of Java. Here its principles:&lt;/p&gt;
 
@@ -1067,7 +1067,7 @@ the company &lt;strong&gt;Sun Microsystems&lt;/strong&gt; released the first ver
 
 &lt;figure title=&quot;Java logo&quot;&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2020-05-04-java-ecosystem/images/java-logo.png&quot; alt=&quot;Java logo&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2020-05-04-java-ecosystem/images/java-logo.png&quot; title=&quot;Java logo&quot; alt=&quot;Java logo&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;Java logo&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -1091,7 +1091,7 @@ that performed tasks for the user:&lt;/p&gt;
 
 &lt;figure title=&quot;Duke the Java mascot&quot;&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2020-05-04-java-ecosystem/images/duke.png&quot; alt=&quot;Duke the Java mascot&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2020-05-04-java-ecosystem/images/duke.png&quot; title=&quot;Duke the Java mascot&quot; alt=&quot;Duke the Java mascot&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;Duke the Java mascot&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -1107,7 +1107,7 @@ consists of first learning the rules and then learning when to break them.&lt;/p
 
 &lt;figure title=&quot;Effective Java book&quot;&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2020-05-04-java-ecosystem/images/effective-java-book-cover.jpg&quot; alt=&quot;Effective Java book&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2020-05-04-java-ecosystem/images/effective-java-book-cover.jpg&quot; title=&quot;Effective Java book&quot; alt=&quot;Effective Java book&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;Effective Java book&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -1153,9 +1153,9 @@ with the Snyk company survey, or the Jrebel company survey.&lt;/p&gt;
  
  <entry>
    <title>Development environment</title>
-   <link href="https://glegoux.com/blog/articles/2020/03/04/development-environment.html"/>
+   <link href="http://localhost:4000/blog/articles/2020/03/04/development-environment.html"/>
    <updated>2020-03-04T00:00:00+00:00</updated>
-   <id>https://glegoux.com/blog/articles/2020/03/04/development-environment.html</id>
+   <id>http://localhost:4000/blog/articles/2020/03/04/development-environment.html</id>
    <content type="html">&lt;p&gt;It is a good practice to isolate the used technologies for your development environment, because:&lt;/p&gt;
 
 &lt;ol&gt;
@@ -1191,15 +1191,15 @@ reason, these environments should be isolated and partitioned with a segregation
  
  <entry>
    <title>Gafa vs Batx</title>
-   <link href="https://glegoux.com/blog/articles/2019/11/29/gafa-vs-batx.html"/>
+   <link href="http://localhost:4000/blog/articles/2019/11/29/gafa-vs-batx.html"/>
    <updated>2019-11-29T00:00:00+00:00</updated>
-   <id>https://glegoux.com/blog/articles/2019/11/29/gafa-vs-batx.html</id>
+   <id>http://localhost:4000/blog/articles/2019/11/29/gafa-vs-batx.html</id>
    <content type="html">&lt;p&gt;The business world is split into 3 regions with the acronyms: &lt;strong&gt;AMER, EMEA, APAC&lt;/strong&gt;. But the web and 
 computer worldwide market is bi-polaire due to the &lt;strong&gt;Internet censorship in China&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;figure title=&quot;Business regions and computer technology areas&quot;&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-11-29-gafa-vs-batx/images/business-area.png&quot; alt=&quot;Business regions and computer technology areas&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-11-29-gafa-vs-batx/images/business-area.png&quot; title=&quot;Business regions and computer technology areas&quot; alt=&quot;Business regions and computer technology areas&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;Business regions and computer technology areas&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -1214,7 +1214,7 @@ the world there is the big four tech companies &lt;strong&gt;Google, Apple, Face
 
 &lt;figure title=&quot;BATX &amp;amp; GAFA&quot;&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-11-29-gafa-vs-batx/images/batx-gafa.png&quot; alt=&quot;BATX &amp;amp; GAFA&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-11-29-gafa-vs-batx/images/batx-gafa.png&quot; title=&quot;BATX &amp;amp; GAFA&quot; alt=&quot;BATX &amp;amp; GAFA&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;BATX &amp;amp; GAFA&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -1240,7 +1240,7 @@ vs GAFA as (without quoting all other ones). Here are some of them with TikTok t
 
 &lt;figure title=&quot;Other big companies&quot;&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-11-29-gafa-vs-batx/images/other-companies.png&quot; alt=&quot;Other big companies&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-11-29-gafa-vs-batx/images/other-companies.png&quot; title=&quot;Other big companies&quot; alt=&quot;Other big companies&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;Other big companies&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -1252,9 +1252,9 @@ vs GAFA as (without quoting all other ones). Here are some of them with TikTok t
  
  <entry>
    <title>Trace a request path</title>
-   <link href="https://glegoux.com/blog/articles/2019/07/14/trace-a-request-path.html"/>
+   <link href="http://localhost:4000/blog/articles/2019/07/14/trace-a-request-path.html"/>
    <updated>2019-07-14T00:00:00+00:00</updated>
-   <id>https://glegoux.com/blog/articles/2019/07/14/trace-a-request-path.html</id>
+   <id>http://localhost:4000/blog/articles/2019/07/14/trace-a-request-path.html</id>
    <content type="html">&lt;p&gt;What are the used path of HTTP request generated by your web browser to load a web page between your computer and a server web? I suppose each time DNS resolution is done, that is to say the web browser knows IP server.&lt;/p&gt;
 
 &lt;figure&gt;
@@ -1266,14 +1266,14 @@ vs GAFA as (without quoting all other ones). Here are some of them with TikTok t
 
 &lt;p&gt;Internet is a network of routers. When your web browser is sending one HTTP request your computer uses by default the destination &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0.0.0.0&lt;/code&gt; if no one sub-network matches with your original destination IP address in its route table.&lt;/p&gt;
 
-&lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt; route &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt;
+&lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;route &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt;
 &lt;span class=&quot;go&quot;&gt;Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
 0.0.0.0         192.168.1.254   0.0.0.0         UG    600    0        0 wlp6s0
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Here the gateway &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;192.168.1.254&lt;/code&gt;  is my Internet box related to network interface &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;wlp6s0&lt;/code&gt;.&lt;/p&gt;
 
-&lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt; nslookup 192.168.1.254
+&lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;nslookup 192.168.1.254
 &lt;span class=&quot;go&quot;&gt;Server:		127.0.1.1
 &lt;/span&gt;&lt;span class=&quot;gp&quot;&gt;Address:	127.0.1.1#&lt;/span&gt;53
 &lt;span class=&quot;go&quot;&gt;name = bbox.lan.
@@ -1292,7 +1292,7 @@ vs GAFA as (without quoting all other ones). Here are some of them with TikTok t
 
 &lt;p&gt;For example, you can get TTL minimum by successive ping commands, see details in &lt;a href=&quot;https://github.com/glegoux/glegoux.com/blob/master/articles/6PmiK7b/n_routers.sh&quot;&gt;n_routers.sh&lt;/a&gt; bash script. Each router must decrement TTL value and if TTL is 0, it refuses to transmit message. The minimum TTL is length path in the network to reach the server (by excluding source machine for number of nodes or is directly number of edges). Here one time to live of 4 is insufficient to reach glegoux.com from my machine location:&lt;/p&gt;
 
-&lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt; ping &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; 1 &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; 4 glegoux.com
+&lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;ping &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; 1 &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; 4 glegoux.com
 &lt;span class=&quot;go&quot;&gt;PING glegoux.com (195.164.48.181) 56(84) bytes of data.
 From 10.125.135.205 icmp_seq=1 Time to live exceeded
 
@@ -1302,7 +1302,7 @@ From 10.125.135.205 icmp_seq=1 Time to live exceeded
 
 &lt;p&gt;This is valid for outward network path your TTL must be sufficient, you can see your current TTL &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cat /proc/sys/net/ipv4/ip_default_ttl&lt;/code&gt; or with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ping -c 1 localhost&lt;/code&gt; (for Linux default value is 64), and change that without persistence &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo sysctl net.ipv4.ip_default_ttl=128&lt;/code&gt;. Targeted server must have also sufficient TTL for return network path, this value is decremented (until value 56 here, but we don’t know initial value a priori):&lt;/p&gt;
 
-&lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt; ping &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; 1 glegoux.com
+&lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;ping &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; 1 glegoux.com
 &lt;span class=&quot;go&quot;&gt;PING glegoux.com (195.164.48.181) 56(84) bytes of data.
 64 bytes from 10.125.135.205.rev.poneytelecom.eu (10.125.135.205): icmp_seq=1 ttl=56 time=13.8 ms
 
@@ -1329,7 +1329,7 @@ rtt min/avg/max/mdev = 13.821/13.821/13.821/0.000 ms
 
 &lt;figure title=&quot;Map of Regional Internet Registry&quot;&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-07-14-trace-a-request-path/images/rir.png&quot; alt=&quot;Map of Regional Internet Registry&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-07-14-trace-a-request-path/images/rir.png&quot; title=&quot;Map of Regional Internet Registry&quot; alt=&quot;Map of Regional Internet Registry&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;Map of Regional Internet Registry&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -1340,7 +1340,7 @@ rtt min/avg/max/mdev = 13.821/13.821/13.821/0.000 ms
 
 &lt;figure title=&quot;Geo-location of request path from Paris to glegoux.com&quot;&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-07-14-trace-a-request-path/images/map.png&quot; alt=&quot;Geo-location of request path from Paris to glegoux.com&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-07-14-trace-a-request-path/images/map.png&quot; title=&quot;Geo-location of request path from Paris to glegoux.com&quot; alt=&quot;Geo-location of request path from Paris to glegoux.com&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;Geo-location of request path from Paris to glegoux.com&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -1352,9 +1352,9 @@ rtt min/avg/max/mdev = 13.821/13.821/13.821/0.000 ms
  
  <entry>
    <title>Java champion</title>
-   <link href="https://glegoux.com/blog/articles/2019/05/24/java-champion.html"/>
+   <link href="http://localhost:4000/blog/articles/2019/05/24/java-champion.html"/>
    <updated>2019-05-24T00:00:00+00:00</updated>
-   <id>https://glegoux.com/blog/articles/2019/05/24/java-champion.html</id>
+   <id>http://localhost:4000/blog/articles/2019/05/24/java-champion.html</id>
    <content type="html">&lt;p&gt;Java champion is ambassador of Java ecosystem for the world! It is enough hard to become Java champion.&lt;/p&gt;
 
 &lt;p&gt;Here qualities of Java champion:&lt;/p&gt;
@@ -1480,14 +1480,14 @@ jQuery(document).ready(function () {
  
  <entry>
    <title>Lighthouse</title>
-   <link href="https://glegoux.com/blog/articles/2019/04/01/lighthouse.html"/>
+   <link href="http://localhost:4000/blog/articles/2019/04/01/lighthouse.html"/>
    <updated>2019-04-01T00:00:00+00:00</updated>
-   <id>https://glegoux.com/blog/articles/2019/04/01/lighthouse.html</id>
+   <id>http://localhost:4000/blog/articles/2019/04/01/lighthouse.html</id>
    <content type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/GoogleChrome/lighthouse&quot;&gt;Lighthouse&lt;/a&gt; is an automated tool for improving the quality of web pages by auditing and analyzing your web pages and give you metrics and advices. You can run it against any web page, public or requiring authentication. It creates reports for performance, accessibility, progressive web apps, and more. It is an &lt;a href=&quot;https://github.com/GoogleChrome/lighthouse&quot;&gt;open-source project&lt;/a&gt; written in Javascript.&lt;/p&gt;
 
 &lt;figure title=&quot;Logo of Lighthouse&quot;&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-04-01-lighthouse/images/lighthouse-logo.png&quot; alt=&quot;Logo of Lighthouse&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-04-01-lighthouse/images/lighthouse-logo.png&quot; title=&quot;Logo of Lighthouse&quot; alt=&quot;Logo of Lighthouse&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;Logo of Lighthouse&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -1509,7 +1509,7 @@ jQuery(document).ready(function () {
 
 &lt;figure title=&quot;Lighthouse scores by report category&quot;&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-04-01-lighthouse/images/scores.png&quot; alt=&quot;Lighthouse scores by report category&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-04-01-lighthouse/images/scores.png&quot; title=&quot;Lighthouse scores by report category&quot; alt=&quot;Lighthouse scores by report category&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;Lighthouse scores by report category&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -1518,7 +1518,7 @@ jQuery(document).ready(function () {
 
 &lt;figure title=&quot;Export, import and view Lighthouse report&quot;&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-04-01-lighthouse/images/export-import-view.jpg&quot; alt=&quot;Export, import and view Lighthouse report&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-04-01-lighthouse/images/export-import-view.jpg&quot; title=&quot;Export, import and view Lighthouse report&quot; alt=&quot;Export, import and view Lighthouse report&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;Export, import and view Lighthouse report&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -1529,7 +1529,7 @@ jQuery(document).ready(function () {
 
 &lt;figure title=&quot;Architecture of Lighthouse Core&quot;&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-04-01-lighthouse/images/architecture.jpg&quot; alt=&quot;Architecture of Lighthouse Core&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-04-01-lighthouse/images/architecture.jpg&quot; title=&quot;Architecture of Lighthouse Core&quot; alt=&quot;Architecture of Lighthouse Core&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;Architecture of Lighthouse Core&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -1560,7 +1560,7 @@ jQuery(document).ready(function () {
 
 &lt;figure title=&quot;Google Chrome, Chromium and Canary version&quot;&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-04-01-lighthouse/images/chrome-version.jpg&quot; alt=&quot;Google Chrome, Chromium and Canary version&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-04-01-lighthouse/images/chrome-version.jpg&quot; title=&quot;Google Chrome, Chromium and Canary version&quot; alt=&quot;Google Chrome, Chromium and Canary version&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;Google Chrome, Chromium and Canary version&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -1584,9 +1584,9 @@ https://glegoux.com/contact/email/
 &lt;p&gt;Run this bash script to get one report by url:&lt;/p&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0
-&lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;url &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cat &lt;/span&gt;urls.txt&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do
+&lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;url &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cat &lt;/span&gt;urls.txt&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do
   &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;--&quot;&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$i&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; | tee &lt;span class=&quot;nt&quot;&gt;-a&lt;/span&gt; matching_url_report.txt
+  &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$i&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; | &lt;span class=&quot;nb&quot;&gt;tee&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-a&lt;/span&gt; matching_url_report.txt
   &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;--&quot;&lt;/span&gt;
   lighthouse &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--output&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;json &lt;span class=&quot;nt&quot;&gt;--output-path&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;report-&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$i&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;.json&quot;&lt;/span&gt;
   &lt;span class=&quot;k&quot;&gt;$((&lt;/span&gt;i++&lt;span class=&quot;k&quot;&gt;))&lt;/span&gt;
@@ -1604,7 +1604,7 @@ https://glegoux.com/contact/email/
 
 &lt;figure title=&quot; Charts of scores for a set of URLs&quot;&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-04-01-lighthouse/images/plot_scores.png&quot; alt=&quot; Charts of scores for a set of URLs&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-04-01-lighthouse/images/plot_scores.png&quot; title=&quot; Charts of scores for a set of URLs&quot; alt=&quot; Charts of scores for a set of URLs&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt; Charts of scores for a set of URLs&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -1687,9 +1687,9 @@ https://glegoux.com/contact/email/
  
  <entry>
    <title>Kerberos in 5 minutes</title>
-   <link href="https://glegoux.com/blog/articles/2019/03/23/kerberos-in-5-minutes.html"/>
+   <link href="http://localhost:4000/blog/articles/2019/03/23/kerberos-in-5-minutes.html"/>
    <updated>2019-03-23T00:00:00+00:00</updated>
-   <id>https://glegoux.com/blog/articles/2019/03/23/kerberos-in-5-minutes.html</id>
+   <id>http://localhost:4000/blog/articles/2019/03/23/kerberos-in-5-minutes.html</id>
    <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.kerberos.org/&quot;&gt;Kerberos&lt;/a&gt; is a protocol of communication to guarantee a part of the security of your information infrastructure. 
 Among the key concepts of security of the CIA triad: Confidentiality, Integrity, and Availability. Kerberos allows setting up 
 communications with confidentiality, integrity and non-repudiation, it is an &lt;strong&gt;Authentication and Authorization System&lt;/strong&gt; (AAS), although
@@ -1747,7 +1747,7 @@ and &lt;a href=&quot;http://www.kerberos.org/software/adminkerberos.pdf&quot;&gt
 
 &lt;figure title=&quot;MIT Kerberos&quot;&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-03-23-kerberos-in-5-minutes/images/kerberos-logo.jpg&quot; alt=&quot;MIT Kerberos&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-03-23-kerberos-in-5-minutes/images/kerberos-logo.jpg&quot; title=&quot;MIT Kerberos&quot; alt=&quot;MIT Kerberos&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;MIT Kerberos&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -1943,9 +1943,9 @@ The typical format of a typical Kerberos principal is primary/instance@REALM.&lt
  
  <entry>
    <title>Access to a computer from USB key</title>
-   <link href="https://glegoux.com/blog/articles/2019/03/01/access-to-a-computer-from-usb-key.html"/>
+   <link href="http://localhost:4000/blog/articles/2019/03/01/access-to-a-computer-from-usb-key.html"/>
    <updated>2019-03-01T00:00:00+00:00</updated>
-   <id>https://glegoux.com/blog/articles/2019/03/01/access-to-a-computer-from-usb-key.html</id>
+   <id>http://localhost:4000/blog/articles/2019/03/01/access-to-a-computer-from-usb-key.html</id>
    <content type="html">&lt;p&gt;Imagine that you are in one of the following situations:&lt;/p&gt;
 
 &lt;ol&gt;
@@ -1960,7 +1960,7 @@ The typical format of a typical Kerberos principal is primary/instance@REALM.&lt
 
 &lt;figure title=&quot;DELL welcome screen&quot;&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-03-01-access-to-a-computer-from-usb-key/images/welcome-screen-dell.png&quot; alt=&quot;DELL welcome screen&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-03-01-access-to-a-computer-from-usb-key/images/welcome-screen-dell.png&quot; title=&quot;DELL welcome screen&quot; alt=&quot;DELL welcome screen&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;DELL welcome screen&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -1969,7 +1969,7 @@ The typical format of a typical Kerberos principal is primary/instance@REALM.&lt
 
 &lt;figure title=&quot;Advanced startup options&quot;&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-03-01-access-to-a-computer-from-usb-key/images/hack1.png&quot; alt=&quot;Advanced startup options&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-03-01-access-to-a-computer-from-usb-key/images/hack1.png&quot; title=&quot;Advanced startup options&quot; alt=&quot;Advanced startup options&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;Advanced startup options&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -1978,7 +1978,7 @@ The typical format of a typical Kerberos principal is primary/instance@REALM.&lt
 
 &lt;figure title=&quot;Getting started in recovery mode&quot;&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-03-01-access-to-a-computer-from-usb-key/images/hack2.png&quot; alt=&quot;Getting started in recovery mode&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-03-01-access-to-a-computer-from-usb-key/images/hack2.png&quot; title=&quot;Getting started in recovery mode&quot; alt=&quot;Getting started in recovery mode&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;Getting started in recovery mode&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -1987,7 +1987,7 @@ The typical format of a typical Kerberos principal is primary/instance@REALM.&lt
 
 &lt;figure title=&quot;Choosing the root shell&quot;&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-03-01-access-to-a-computer-from-usb-key/images/hack3.png&quot; alt=&quot;Choosing the root shell&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-03-01-access-to-a-computer-from-usb-key/images/hack3.png&quot; title=&quot;Choosing the root shell&quot; alt=&quot;Choosing the root shell&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;Choosing the root shell&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -2005,8 +2005,8 @@ If you need to access the internet, select the network entry before. To verify t
 
 &lt;p&gt;Now you can copy the file system to an external hard drive, and then you can choose the new user password by typing:&lt;/p&gt;
 
-&lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;passwd &amp;lt;username&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;passwd &amp;lt;username&amp;gt;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;pre class=&quot;info&quot;&gt;
 If you do not know the users on this machine, you can do &lt;i&gt;ls /home&lt;/i&gt;. Certainly, a user of this machine corresponds to a directory name in &lt;i&gt;/home/&lt;/i&gt;, or even view the file &lt;i&gt;/etc/passwd&lt;/i&gt;, or else you can create a user as you are &lt;i&gt;root&lt;/i&gt;.
@@ -2033,9 +2033,9 @@ Beware, the morality of this article is that a person physically accessing your 
  
  <entry>
    <title>How to quote sources</title>
-   <link href="https://glegoux.com/blog/articles/2019/02/14/how-to-quote-sources.html"/>
+   <link href="http://localhost:4000/blog/articles/2019/02/14/how-to-quote-sources.html"/>
    <updated>2019-02-14T00:00:00+00:00</updated>
-   <id>https://glegoux.com/blog/articles/2019/02/14/how-to-quote-sources.html</id>
+   <id>http://localhost:4000/blog/articles/2019/02/14/how-to-quote-sources.html</id>
    <content type="html">&lt;p&gt;The standard in force is mainly Afnor Standard Z 44-005, December 1987 (ISO 690). Here is a link of the website of the Ministry of Culture and Communication which presents in a synthetic way the standards in force for the writing of bibliographical references:&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
@@ -2118,9 +2118,9 @@ Beware, the morality of this article is that a person physically accessing your 
  
  <entry>
    <title>Getting started</title>
-   <link href="https://glegoux.com/blog/articles/2019/01/21/getting-started.html"/>
+   <link href="http://localhost:4000/blog/articles/2019/01/21/getting-started.html"/>
    <updated>2019-01-21T00:00:00+00:00</updated>
-   <id>https://glegoux.com/blog/articles/2019/01/21/getting-started.html</id>
+   <id>http://localhost:4000/blog/articles/2019/01/21/getting-started.html</id>
    <content type="html">&lt;p&gt;Discover the &lt;strong&gt;extension of the Markdown syntax used on this blog&lt;/strong&gt; to write articles, or generate static pages, and more generally on the web. 
 When you click on the button: &lt;i class=&quot;far fa-file-code&quot;&gt;&lt;/i&gt; Source, you can see the &lt;strong&gt;original source code of an article&lt;/strong&gt;. 
 More precisely on this blog, a superset of Markdown is used and called &lt;a href=&quot;https://kramdown.gettalong.org/&quot;&gt;Kramdown&lt;/a&gt;, the syntax is available &lt;a href=&quot;https://kramdown.gettalong.org/syntax.html&quot;&gt;here&lt;/a&gt; with a custom extension via the HTML paired tag &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pre&lt;/code&gt;. Each following section gives an overview and examples for each usage.
@@ -2382,7 +2382,7 @@ SUCCESS
 
 &lt;h3 id=&quot;python&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;Python&lt;/span&gt;&lt;/h3&gt;
 
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello world!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nf&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Hello world!&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Source code:&lt;/p&gt;
@@ -2395,7 +2395,7 @@ print(&quot;Hello world!&quot;)
 
 &lt;h3 id=&quot;java&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;Java&lt;/span&gt;&lt;/h3&gt;
 
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello world!&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello world!&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Source code:&lt;/p&gt;
@@ -2407,7 +2407,7 @@ System.out.println(&quot;Hello world!&quot;);
 
 &lt;h3 id=&quot;scala&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;Scala&lt;/span&gt;&lt;/h3&gt;
 
-&lt;div class=&quot;language-scala highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello world!&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;div class=&quot;language-scala highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nf&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello world!&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Source code:&lt;/p&gt;
@@ -2492,10 +2492,10 @@ puts &quot;Hello world!&quot;
 
 &lt;h3 id=&quot;go&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;Go&lt;/span&gt;&lt;/h3&gt;
 
-&lt;div class=&quot;language-go highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;fmt&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
+&lt;div class=&quot;language-go highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;fmt&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fmt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Println&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello world!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;span class=&quot;n&quot;&gt;fmt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Println&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello world!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Source code:&lt;/p&gt;
 &lt;pre&gt;
@@ -2508,7 +2508,7 @@ fmt.Println(&quot;Hello world!&quot;)
 
 &lt;h3 id=&quot;typescript&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;TypeScript&lt;/span&gt;&lt;/h3&gt;
 
-&lt;div class=&quot;language-typescript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Hello world!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;div class=&quot;language-typescript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Hello world!&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Source code:&lt;/p&gt;
@@ -2520,7 +2520,7 @@ console.log(&quot;Hello world!&quot;);
 
 &lt;h3 id=&quot;javascript&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;JavaScript&lt;/span&gt;&lt;/h3&gt;
 
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Hello world!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Hello world!&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Source code:&lt;/p&gt;
@@ -2562,7 +2562,7 @@ console.log(&quot;Hello world!&quot;);
 
 &lt;h2 id=&quot;terminal&quot;&gt;Terminal&lt;/h2&gt;
 
-&lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;command&lt;/span&gt;
+&lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;command&lt;/span&gt;
 &lt;span class=&quot;go&quot;&gt;result
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -2591,7 +2591,7 @@ result
 
 &lt;h3 id=&quot;json&quot;&gt;JSON&lt;/h3&gt;
 
-&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;message&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Hello World!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;message&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Hello World!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Source code:&lt;/p&gt;
