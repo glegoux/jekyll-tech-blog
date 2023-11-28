@@ -5,6 +5,7 @@
 # usage: ./update.sh
 
 git fetch origin main:main
+# without committing it automatically if no conflict exists in the merge results
 git merge --no-commit --no-ff main
 # git reset -- /path/to/folder # revert updates from path
 
