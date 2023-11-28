@@ -11,7 +11,6 @@
 #   ./show-all-gem-dependencies.sh jekyll jekyll-sitemap
 #   ./show-all-gem-dependencies.sh $(bundle exec gem list | cut -f1 -d" ")
 
-
 # helper
 
 direct_runtime_dependencies() {
