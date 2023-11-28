@@ -17,22 +17,15 @@ With the evolution of practices and tools of online blogging these last years, I
 
 After evaluating the market of online editors, and testing Medium, here are the pros and cons of using Medium vs. my personal blog that explain my choice:
 
-❎ Pros:  
-* Medium editor is quicker and more handy in updating a post with simple assets like text and images, more intuitive than YAFIYGI, and with instant updates without delay during the deployment of new content with Jekyll  
-* Medium has advanced features of collaboration with co-writers, claps, peer comments, and followers, not available on my blog
-* Medium decorates the post with an estimation of reading, no need to fill manually, and the listen generation, not available on my blog
-* Medium offers stats with custom metrics (reads, ...) for each story more relevant than using Google Analytics
-
-❌ Cons:  
-* The Medium features remain less advanced in pushing varied content like dynamic technical diagrams, and mathematics formulae while some workarounds exist 
-* Medium has partial propriety of the written content and limits the number of readings for non-members while my blog is open
-* The Medium content has a pre-defined style of design, it is not highly customizable like the content on my blog
+| ❎ Pros | ❌ Cons |
+| ---     | ---     |
+| <p>&bull; Medium editor is quicker and handier in updating a post with simple assets like text and images, more intuitive than YAFIYGI, and with instant updates without delay during the deployment of new content with Jekyll</p> <p>&bull; Medium has advanced features of collaboration with co-writers, claps, peer comments, and followers, not available on my blog</p> <p>&bull; Medium decorates the post with an estimation of reading, no need to fill manually, and the listen generation, is not available on my blog</p> <p>&bull; Medium offers stats with custom metrics (reads, ...) for each story more relevant than using Google Analytics</p> | <p>&bull; Medium has partial propriety of the written content and limits the number of readings for non-members while my blog is open</p> <p>&bull; The Medium content has a pre-defined style of design, it is not highly customizable like the content on my blog</p> <p>&bull; The Medium features remain less advanced in pushing varied content like dynamic technical diagrams, and mathematics formulae while some workarounds exist</p> |
 
 For all these reasons, I find that the right choice is a consensus by keeping the best of these 2 worlds. Also, I prefer remaining independent for the long term, and `glegoux.com` is not only a tech blog but a hub of centralized online activities.
 
 Don't worry, I am going to keep maintaining this website and the open-source template behind it. To avoid all breaking changes, the past blog posts will remain accessible without breaking their web links. 
 
-However, it seems difficult to synchronize bi-directionally the content between Medium and this blog. I can import a post to Medium by copying manually the link, but exporting from Medium is long, and tedious. The synchronization in case of the update of a blog post done from Medium becomes a nightmare to maintain. While I want to use more Medium editor quicker and more handy. So as I explained, I foresee to have some articles would be only on Medium, and other ones only on this blog. If necessary, if I want to have one at both locations, instead of having a full post everywhere, I will use web links between them, with a partial post redirecting to the full post (to avoid divergences and too heavy maintenance in case of multiple post-editions).
+However, it seems difficult to synchronize bi-directionally the content between Medium and this blog. I can import a post to Medium by copying manually the link, but exporting from Medium is long, and tedious. The synchronization in case of the update of a blog post done from Medium becomes a nightmare to maintain. While I want to use more Medium editor quicker and more handy. So as I explained, I foresee that some articles will be only on Medium, and other ones only on this blog. If necessary, if I want to have one at both locations, instead of having a full post everywhere, I will use web links between them, with a partial post redirecting to the full post (to avoid divergences and too heavy maintenance in case of multiple post-editions).
 
 Thanks for your understanding, and your readings.
 
