@@ -1,5 +1,5 @@
-{%- assign disqus_name = site.project.blog.disqus_name -%}
-{%- if disqus_name -%}
+{%- assign disqus_code = site.project.article.comment.disqus_code -%}
+{%- if disqus_code and disqus_code != '' -%}
 {%- if page.comment -%}
 <!-- Disqus -->
 <div class="comments col-12 no-print">
