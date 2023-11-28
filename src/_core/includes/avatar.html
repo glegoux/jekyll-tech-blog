@@ -1,7 +1,7 @@
 {%- assign config_avatar = site.project.avatar -%}
 {%- assign links = site.data.project.links -%}
 <div class="text-center">
-    {%- assign avatar_path = "/_core/static/img/default/avatar.png" -%}
+    {%- assign avatar_path = "/_static/config/img/avatar.png" -%}
     {%- assign avatar_path_exist = site.static_files | where: "path", avatar_path | first -%}
     {%- unless avatar_path_exist -%}
       {%- assign avatar_path = "/_core/static/img/default/avatar.png" -%}
