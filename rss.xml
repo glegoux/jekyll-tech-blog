@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Software Engineering Blog - Bob</title>
+    <title>Software Engineering Blog - Gilles Legoux (glegoux)</title>
     <description>Personal blog about software engineering</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 28 Nov 2023 21:55:35 +0000</pubDate>
-    <lastBuildDate>Tue, 28 Nov 2023 21:55:35 +0000</lastBuildDate>
+    <link>https://glegoux.com/</link>
+    <atom:link href="https://glegoux.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 28 Nov 2023 22:09:08 +0000</pubDate>
+    <lastBuildDate>Tue, 28 Nov 2023 22:09:08 +0000</lastBuildDate>
     <generator>Jekyll v4.3.2</generator>
     
       <item>
@@ -61,8 +61,8 @@ and &lt;a href=&quot;https://glegoux.com&quot;&gt;https://glegoux.com&lt;/a&gt; 
 &lt;div style=&quot;height: 200px&quot;&gt;&lt;/div&gt;
 </description>
         <pubDate>Tue, 01 Nov 2022 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/blog/articles/2022/11/01/my-tech-blog-on-medium.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/articles/2022/11/01/my-tech-blog-on-medium.html</guid>
+        <link>https://glegoux.com/blog/articles/2022/11/01/my-tech-blog-on-medium.html</link>
+        <guid isPermaLink="true">https://glegoux.com/blog/articles/2022/11/01/my-tech-blog-on-medium.html</guid>
         
         
         <category>News</category>
@@ -180,8 +180,8 @@ at least 2 identical types of gifts.&lt;/p&gt;
 &lt;p&gt;So after explaining these 2 problems, I wish you a good Secret Santa.&lt;/p&gt;
 </description>
         <pubDate>Tue, 23 Nov 2021 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/blog/articles/2021/11/23/secret-santa.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/articles/2021/11/23/secret-santa.html</guid>
+        <link>https://glegoux.com/blog/articles/2021/11/23/secret-santa.html</link>
+        <guid isPermaLink="true">https://glegoux.com/blog/articles/2021/11/23/secret-santa.html</guid>
         
         
         <category>Applied Mathematics</category>
@@ -298,8 +298,8 @@ versions would point to an identical state of the software.&lt;/p&gt;
 &lt;/ul&gt;
 </description>
         <pubDate>Sat, 13 Nov 2021 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/blog/articles/2021/11/13/software-versioning.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/articles/2021/11/13/software-versioning.html</guid>
+        <link>https://glegoux.com/blog/articles/2021/11/13/software-versioning.html</link>
+        <guid isPermaLink="true">https://glegoux.com/blog/articles/2021/11/13/software-versioning.html</guid>
         
         
         <category>Development</category>
@@ -727,8 +727,8 @@ resolve your new needs for &lt;strong&gt;yourself&lt;/strong&gt; and for &lt;str
 &lt;/ul&gt;
 </description>
         <pubDate>Tue, 20 Apr 2021 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/blog/articles/2021/04/20/time-management.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/articles/2021/04/20/time-management.html</guid>
+        <link>https://glegoux.com/blog/articles/2021/04/20/time-management.html</link>
+        <guid isPermaLink="true">https://glegoux.com/blog/articles/2021/04/20/time-management.html</guid>
         
         
         <category>Methodology</category>
@@ -889,8 +889,8 @@ it is important to be aware of this kind of behavior when a technology is used.&
 &lt;/ul&gt;
 </description>
         <pubDate>Sat, 28 Nov 2020 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/blog/articles/2020/11/28/unix-timestamp.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/articles/2020/11/28/unix-timestamp.html</guid>
+        <link>https://glegoux.com/blog/articles/2020/11/28/unix-timestamp.html</link>
+        <guid isPermaLink="true">https://glegoux.com/blog/articles/2020/11/28/unix-timestamp.html</guid>
         
         <category>Arithmetic</category>
         
@@ -1016,8 +1016,8 @@ respecting the triangle inegality.&lt;/p&gt;
 &lt;p&gt;In practice, the radius of the earth is  $R = 6371\,km$, and the latitude and longitude are given often in decimal degree and not in radian.&lt;/p&gt;
 </description>
         <pubDate>Mon, 24 Aug 2020 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/blog/articles/2020/08/24/geo-location.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/articles/2020/08/24/geo-location.html</guid>
+        <link>https://glegoux.com/blog/articles/2020/08/24/geo-location.html</link>
+        <guid isPermaLink="true">https://glegoux.com/blog/articles/2020/08/24/geo-location.html</guid>
         
         <category>Geometry</category>
         
@@ -1060,8 +1060,8 @@ Particularly, you can:&lt;/p&gt;
 &lt;/ul&gt;
 </description>
         <pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/blog/articles/2020/05/15/gnu-privacy-guard.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/articles/2020/05/15/gnu-privacy-guard.html</guid>
+        <link>https://glegoux.com/blog/articles/2020/05/15/gnu-privacy-guard.html</link>
+        <guid isPermaLink="true">https://glegoux.com/blog/articles/2020/05/15/gnu-privacy-guard.html</guid>
         
         
         <category>Security</category>
@@ -1164,8 +1164,8 @@ with the Snyk company survey, or the Jrebel company survey.&lt;/p&gt;
 
 </description>
         <pubDate>Mon, 04 May 2020 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/blog/articles/2020/05/04/java-ecosystem.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/articles/2020/05/04/java-ecosystem.html</guid>
+        <link>https://glegoux.com/blog/articles/2020/05/04/java-ecosystem.html</link>
+        <guid isPermaLink="true">https://glegoux.com/blog/articles/2020/05/04/java-ecosystem.html</guid>
         
         <category>Language</category>
         
@@ -1208,8 +1208,8 @@ the contract of interface.&lt;/p&gt;
 reason, these environments should be isolated and partitioned with a segregation of permission. It is another subject.&lt;/p&gt;
 </description>
         <pubDate>Wed, 04 Mar 2020 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/blog/articles/2020/03/04/development-environment.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/articles/2020/03/04/development-environment.html</guid>
+        <link>https://glegoux.com/blog/articles/2020/03/04/development-environment.html</link>
+        <guid isPermaLink="true">https://glegoux.com/blog/articles/2020/03/04/development-environment.html</guid>
         
         <category> Working environment</category>
         
@@ -1273,8 +1273,8 @@ vs GAFA as (without quoting all other ones). Here are some of them with TikTok t
 
 </description>
         <pubDate>Fri, 29 Nov 2019 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/blog/articles/2019/11/29/gafa-vs-batx.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/articles/2019/11/29/gafa-vs-batx.html</guid>
+        <link>https://glegoux.com/blog/articles/2019/11/29/gafa-vs-batx.html</link>
+        <guid isPermaLink="true">https://glegoux.com/blog/articles/2019/11/29/gafa-vs-batx.html</guid>
         
         
         <category>Business</category>

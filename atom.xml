@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>Software Engineering Blog - Bob</title>
- <link href="http://localhost:4000/atom.xml" rel="self"/>
- <link href="http://localhost:4000/"/>
- <updated>2023-11-28T21:55:35+00:00</updated>
- <id>http://localhost:4000/</id>
+ <title>Software Engineering Blog - Gilles Legoux (glegoux)</title>
+ <link href="https://glegoux.com/atom.xml" rel="self"/>
+ <link href="https://glegoux.com/"/>
+ <updated>2023-11-28T22:09:08+00:00</updated>
+ <id>https://glegoux.com/</id>
 
  
  <entry>
    <title>My tech blog on Medium</title>
-   <link href="http://localhost:4000/blog/articles/2022/11/01/my-tech-blog-on-medium.html"/>
+   <link href="https://glegoux.com/blog/articles/2022/11/01/my-tech-blog-on-medium.html"/>
    <updated>2022-11-01T00:00:00+00:00</updated>
-   <id>http://localhost:4000/blog/articles/2022/11/01/my-tech-blog-on-medium.html</id>
+   <id>https://glegoux.com/blog/articles/2022/11/01/my-tech-blog-on-medium.html</id>
    <content type="html">&lt;p&gt;I will continue writing blog posts here, but mainly they will be published on Medium under the user &lt;a href=&quot;https://medium.com/@glegoux&amp;gt;&quot;&gt;@glegoux&lt;/a&gt;. The goal is always to improve the experience of readers and my experience of writing. The Medium platform is mature, then more and more popular, becoming one of the leaders among the editors of tech blogs. It provides a full WYSIWYG user interface when editing online, with various options for formatting provided as the user edits. It allows publishing blog posts (called stories) to capture large audiences and communities.&lt;/p&gt;
 
 &lt;p&gt;With the evolution of practices and tools of online blogging these last years, I wanted to cross a threshold in my tech writer experience: be more efficient and effective in writing content, by allocating less time to maintain editor tools and more time to write content. So, I needed to make the choice between continuing to use only this blog, starting to use only Medium, using both, or something else. I chose to use both ones:&lt;/p&gt;
@@ -68,9 +68,9 @@ and &lt;a href=&quot;https://glegoux.com&quot;&gt;https://glegoux.com&lt;/a&gt; 
  
  <entry>
    <title>Secret Santa</title>
-   <link href="http://localhost:4000/blog/articles/2021/11/23/secret-santa.html"/>
+   <link href="https://glegoux.com/blog/articles/2021/11/23/secret-santa.html"/>
    <updated>2021-11-23T00:00:00+00:00</updated>
-   <id>http://localhost:4000/blog/articles/2021/11/23/secret-santa.html</id>
+   <id>https://glegoux.com/blog/articles/2021/11/23/secret-santa.html</id>
    <content type="html">&lt;p&gt;Secret Santa is a traditional event in December with family, friends, or office colleagues, 
 in which each guest gives a gift to another guest without knowing who will give him/her a gift. 
 Imagine that you want to organize it. You notify your guests to choose a gift by keeping it secret. 
@@ -185,9 +185,9 @@ at least 2 identical types of gifts.&lt;/p&gt;
  
  <entry>
    <title>Software versioning</title>
-   <link href="http://localhost:4000/blog/articles/2021/11/13/software-versioning.html"/>
+   <link href="https://glegoux.com/blog/articles/2021/11/13/software-versioning.html"/>
    <updated>2021-11-13T00:00:00+00:00</updated>
-   <id>http://localhost:4000/blog/articles/2021/11/13/software-versioning.html</id>
+   <id>https://glegoux.com/blog/articles/2021/11/13/software-versioning.html</id>
    <content type="html">&lt;h1 id=&quot;what-is-a-software-version&quot;&gt;What is a software version?&lt;/h1&gt;
 
 &lt;p&gt;A software is a dynamic set of lines of code, that evolves discretely from state to state in function 
@@ -301,9 +301,9 @@ versions would point to an identical state of the software.&lt;/p&gt;
  
  <entry>
    <title>Time management</title>
-   <link href="http://localhost:4000/blog/articles/2021/04/20/time-management.html"/>
+   <link href="https://glegoux.com/blog/articles/2021/04/20/time-management.html"/>
    <updated>2021-04-20T00:00:00+00:00</updated>
-   <id>http://localhost:4000/blog/articles/2021/04/20/time-management.html</id>
+   <id>https://glegoux.com/blog/articles/2021/04/20/time-management.html</id>
    <content type="html">&lt;p&gt;You could need to &lt;strong&gt;optimize the spending of your time&lt;/strong&gt; for &lt;strong&gt;professional or personal activities&lt;/strong&gt;. 
 I am going to explain what means to me the time, and how you can manage it. I have been inspired by my
 knowledge, experiences, readings, and listenings, but it is my personal version of time management 
@@ -728,9 +728,9 @@ resolve your new needs for &lt;strong&gt;yourself&lt;/strong&gt; and for &lt;str
  
  <entry>
    <title>Unix timestamp</title>
-   <link href="http://localhost:4000/blog/articles/2020/11/28/unix-timestamp.html"/>
+   <link href="https://glegoux.com/blog/articles/2020/11/28/unix-timestamp.html"/>
    <updated>2020-11-28T00:00:00+00:00</updated>
-   <id>http://localhost:4000/blog/articles/2020/11/28/unix-timestamp.html</id>
+   <id>https://glegoux.com/blog/articles/2020/11/28/unix-timestamp.html</id>
    <content type="html">&lt;p&gt;In fact, 2038 is a particular year when an informatics bug could occur, sometimes referred as the &lt;strong&gt;Y2K38 problem&lt;/strong&gt;. 
 Because an &lt;strong&gt;arithmetic overflow&lt;/strong&gt; on the Unix timestamp risks appearing, what it means, there are insufficient bits in a 
 binary number representation to portray the result of an arithmetic operation. For example, an arithmetic operation 
@@ -888,9 +888,9 @@ it is important to be aware of this kind of behavior when a technology is used.&
  
  <entry>
    <title>Geo-location</title>
-   <link href="http://localhost:4000/blog/articles/2020/08/24/geo-location.html"/>
+   <link href="https://glegoux.com/blog/articles/2020/08/24/geo-location.html"/>
    <updated>2020-08-24T00:00:00+00:00</updated>
-   <id>http://localhost:4000/blog/articles/2020/08/24/geo-location.html</id>
+   <id>https://glegoux.com/blog/articles/2020/08/24/geo-location.html</id>
    <content type="html">&lt;p&gt;We can model the surface of the earth as a sphere of radius $R$. Even if in reality, the earth is more a kind of ellipsoid with an irregular surface, where each point of its surface owns an altitude in relation to the sea level.&lt;/p&gt;
 
 &lt;figure&gt;
@@ -1011,9 +1011,9 @@ respecting the triangle inegality.&lt;/p&gt;
  
  <entry>
    <title>GNU privacy guard</title>
-   <link href="http://localhost:4000/blog/articles/2020/05/15/gnu-privacy-guard.html"/>
+   <link href="https://glegoux.com/blog/articles/2020/05/15/gnu-privacy-guard.html"/>
    <updated>2020-05-15T00:00:00+00:00</updated>
-   <id>http://localhost:4000/blog/articles/2020/05/15/gnu-privacy-guard.html</id>
+   <id>https://glegoux.com/blog/articles/2020/05/15/gnu-privacy-guard.html</id>
    <content type="html">&lt;p&gt;First, it is important to distinguish: &lt;strong&gt;PGP&lt;/strong&gt; (Pretty Good Privacy), &lt;strong&gt;OpenPGP&lt;/strong&gt; and &lt;strong&gt;GnuPG&lt;/strong&gt; also named &lt;strong&gt;GPG&lt;/strong&gt; (Gnu Privacy Guard).
 Phil Zimmerman made up PGP in 1991 as a way for people to communicate without eavesdropping. Going further 
 back into the 1990s, there used to be a law in the US that restricted the export of cryptographic technology 
@@ -1051,9 +1051,9 @@ Particularly, you can:&lt;/p&gt;
  
  <entry>
    <title>Java ecosystem</title>
-   <link href="http://localhost:4000/blog/articles/2020/05/04/java-ecosystem.html"/>
+   <link href="https://glegoux.com/blog/articles/2020/05/04/java-ecosystem.html"/>
    <updated>2020-05-04T00:00:00+00:00</updated>
-   <id>http://localhost:4000/blog/articles/2020/05/04/java-ecosystem.html</id>
+   <id>https://glegoux.com/blog/articles/2020/05/04/java-ecosystem.html</id>
    <content type="html">&lt;p&gt;The Java language is initiated by &lt;strong&gt;James Gosling&lt;/strong&gt;, &lt;strong&gt;Mike Sheridan&lt;/strong&gt; and &lt;strong&gt;Patrick Naughton&lt;/strong&gt; is June &lt;strong&gt;1991&lt;/strong&gt;. After several years,
 the company &lt;strong&gt;Sun Microsystems&lt;/strong&gt; released the first version of Java. Here its principles:&lt;/p&gt;
 
@@ -1153,9 +1153,9 @@ with the Snyk company survey, or the Jrebel company survey.&lt;/p&gt;
  
  <entry>
    <title>Development environment</title>
-   <link href="http://localhost:4000/blog/articles/2020/03/04/development-environment.html"/>
+   <link href="https://glegoux.com/blog/articles/2020/03/04/development-environment.html"/>
    <updated>2020-03-04T00:00:00+00:00</updated>
-   <id>http://localhost:4000/blog/articles/2020/03/04/development-environment.html</id>
+   <id>https://glegoux.com/blog/articles/2020/03/04/development-environment.html</id>
    <content type="html">&lt;p&gt;It is a good practice to isolate the used technologies for your development environment, because:&lt;/p&gt;
 
 &lt;ol&gt;
@@ -1191,9 +1191,9 @@ reason, these environments should be isolated and partitioned with a segregation
  
  <entry>
    <title>Gafa vs Batx</title>
-   <link href="http://localhost:4000/blog/articles/2019/11/29/gafa-vs-batx.html"/>
+   <link href="https://glegoux.com/blog/articles/2019/11/29/gafa-vs-batx.html"/>
    <updated>2019-11-29T00:00:00+00:00</updated>
-   <id>http://localhost:4000/blog/articles/2019/11/29/gafa-vs-batx.html</id>
+   <id>https://glegoux.com/blog/articles/2019/11/29/gafa-vs-batx.html</id>
    <content type="html">&lt;p&gt;The business world is split into 3 regions with the acronyms: &lt;strong&gt;AMER, EMEA, APAC&lt;/strong&gt;. But the web and 
 computer worldwide market is bi-polaire due to the &lt;strong&gt;Internet censorship in China&lt;/strong&gt;.&lt;/p&gt;
 
@@ -1252,9 +1252,9 @@ vs GAFA as (without quoting all other ones). Here are some of them with TikTok t
  
  <entry>
    <title>Trace a request path</title>
-   <link href="http://localhost:4000/blog/articles/2019/07/14/trace-a-request-path.html"/>
+   <link href="https://glegoux.com/blog/articles/2019/07/14/trace-a-request-path.html"/>
    <updated>2019-07-14T00:00:00+00:00</updated>
-   <id>http://localhost:4000/blog/articles/2019/07/14/trace-a-request-path.html</id>
+   <id>https://glegoux.com/blog/articles/2019/07/14/trace-a-request-path.html</id>
    <content type="html">&lt;p&gt;What are the used path of HTTP request generated by your web browser to load a web page between your computer and a server web? I suppose each time DNS resolution is done, that is to say the web browser knows IP server.&lt;/p&gt;
 
 &lt;figure&gt;
@@ -1352,9 +1352,9 @@ rtt min/avg/max/mdev = 13.821/13.821/13.821/0.000 ms
  
  <entry>
    <title>Java champion</title>
-   <link href="http://localhost:4000/blog/articles/2019/05/24/java-champion.html"/>
+   <link href="https://glegoux.com/blog/articles/2019/05/24/java-champion.html"/>
    <updated>2019-05-24T00:00:00+00:00</updated>
-   <id>http://localhost:4000/blog/articles/2019/05/24/java-champion.html</id>
+   <id>https://glegoux.com/blog/articles/2019/05/24/java-champion.html</id>
    <content type="html">&lt;p&gt;Java champion is ambassador of Java ecosystem for the world! It is enough hard to become Java champion.&lt;/p&gt;
 
 &lt;p&gt;Here qualities of Java champion:&lt;/p&gt;
@@ -1480,9 +1480,9 @@ jQuery(document).ready(function () {
  
  <entry>
    <title>Lighthouse</title>
-   <link href="http://localhost:4000/blog/articles/2019/04/01/lighthouse.html"/>
+   <link href="https://glegoux.com/blog/articles/2019/04/01/lighthouse.html"/>
    <updated>2019-04-01T00:00:00+00:00</updated>
-   <id>http://localhost:4000/blog/articles/2019/04/01/lighthouse.html</id>
+   <id>https://glegoux.com/blog/articles/2019/04/01/lighthouse.html</id>
    <content type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/GoogleChrome/lighthouse&quot;&gt;Lighthouse&lt;/a&gt; is an automated tool for improving the quality of web pages by auditing and analyzing your web pages and give you metrics and advices. You can run it against any web page, public or requiring authentication. It creates reports for performance, accessibility, progressive web apps, and more. It is an &lt;a href=&quot;https://github.com/GoogleChrome/lighthouse&quot;&gt;open-source project&lt;/a&gt; written in Javascript.&lt;/p&gt;
 
 &lt;figure title=&quot;Logo of Lighthouse&quot;&gt;
@@ -1687,9 +1687,9 @@ https://glegoux.com/contact/email/
  
  <entry>
    <title>Kerberos in 5 minutes</title>
-   <link href="http://localhost:4000/blog/articles/2019/03/23/kerberos-in-5-minutes.html"/>
+   <link href="https://glegoux.com/blog/articles/2019/03/23/kerberos-in-5-minutes.html"/>
    <updated>2019-03-23T00:00:00+00:00</updated>
-   <id>http://localhost:4000/blog/articles/2019/03/23/kerberos-in-5-minutes.html</id>
+   <id>https://glegoux.com/blog/articles/2019/03/23/kerberos-in-5-minutes.html</id>
    <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.kerberos.org/&quot;&gt;Kerberos&lt;/a&gt; is a protocol of communication to guarantee a part of the security of your information infrastructure. 
 Among the key concepts of security of the CIA triad: Confidentiality, Integrity, and Availability. Kerberos allows setting up 
 communications with confidentiality, integrity and non-repudiation, it is an &lt;strong&gt;Authentication and Authorization System&lt;/strong&gt; (AAS), although
@@ -1943,9 +1943,9 @@ The typical format of a typical Kerberos principal is primary/instance@REALM.&lt
  
  <entry>
    <title>Access to a computer from USB key</title>
-   <link href="http://localhost:4000/blog/articles/2019/03/01/access-to-a-computer-from-usb-key.html"/>
+   <link href="https://glegoux.com/blog/articles/2019/03/01/access-to-a-computer-from-usb-key.html"/>
    <updated>2019-03-01T00:00:00+00:00</updated>
-   <id>http://localhost:4000/blog/articles/2019/03/01/access-to-a-computer-from-usb-key.html</id>
+   <id>https://glegoux.com/blog/articles/2019/03/01/access-to-a-computer-from-usb-key.html</id>
    <content type="html">&lt;p&gt;Imagine that you are in one of the following situations:&lt;/p&gt;
 
 &lt;ol&gt;
@@ -2033,9 +2033,9 @@ Beware, the morality of this article is that a person physically accessing your 
  
  <entry>
    <title>How to quote sources</title>
-   <link href="http://localhost:4000/blog/articles/2019/02/14/how-to-quote-sources.html"/>
+   <link href="https://glegoux.com/blog/articles/2019/02/14/how-to-quote-sources.html"/>
    <updated>2019-02-14T00:00:00+00:00</updated>
-   <id>http://localhost:4000/blog/articles/2019/02/14/how-to-quote-sources.html</id>
+   <id>https://glegoux.com/blog/articles/2019/02/14/how-to-quote-sources.html</id>
    <content type="html">&lt;p&gt;The standard in force is mainly Afnor Standard Z 44-005, December 1987 (ISO 690). Here is a link of the website of the Ministry of Culture and Communication which presents in a synthetic way the standards in force for the writing of bibliographical references:&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
@@ -2118,9 +2118,9 @@ Beware, the morality of this article is that a person physically accessing your 
  
  <entry>
    <title>Getting started</title>
-   <link href="http://localhost:4000/blog/articles/2019/01/21/getting-started.html"/>
+   <link href="https://glegoux.com/blog/articles/2019/01/21/getting-started.html"/>
    <updated>2019-01-21T00:00:00+00:00</updated>
-   <id>http://localhost:4000/blog/articles/2019/01/21/getting-started.html</id>
+   <id>https://glegoux.com/blog/articles/2019/01/21/getting-started.html</id>
    <content type="html">&lt;p&gt;Discover the &lt;strong&gt;extension of the Markdown syntax used on this blog&lt;/strong&gt; to write articles, or generate static pages, and more generally on the web. 
 When you click on the button: &lt;i class=&quot;far fa-file-code&quot;&gt;&lt;/i&gt; Source, you can see the &lt;strong&gt;original source code of an article&lt;/strong&gt;. 
 More precisely on this blog, a superset of Markdown is used and called &lt;a href=&quot;https://kramdown.gettalong.org/&quot;&gt;Kramdown&lt;/a&gt;, the syntax is available &lt;a href=&quot;https://kramdown.gettalong.org/syntax.html&quot;&gt;here&lt;/a&gt; with a custom extension via the HTML paired tag &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pre&lt;/code&gt;. Each following section gives an overview and examples for each usage.
