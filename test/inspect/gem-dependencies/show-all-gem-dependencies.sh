@@ -11,9 +11,8 @@
 #   ./show-all-gem-dependencies.sh jekyll jekyll-sitemap
 #   ./show-all-gem-dependencies.sh $(bundle exec gem list | cut -f1 -d" ")
 
-set -e
 
-gem_name="$@"
+# helper
 
 direct_runtime_dependencies() {
   local gem_name="$1"
@@ -29,8 +28,28 @@ version() {
   echo "${direct_dependencies}" | grep -E "^Gem" | rev | cut -f1 -d"-" | rev 
 }
 
-dependencies=(${gem_name})
+# main
+
+if [[ "$BASH_SOURCE" != "$0" ]]; then
+  return 0
+fi
+	
+set -e
+
+cd "$(git rev-parse --show-toplevel)"
+
+gem_names="$@"
+
+for gem_name in ${gem_names}; do
+  if ! bundle exec gem list -i "^${gem_name}\$" > /dev/null; then
+    >&2 echo "ERROR: gem '${gem_name}' does not exist!"	   
+    exit 1
+  fi	   
+done	  
+
+dependencies=(${gem_names})
 cache=()
+output=""
 while [[ ${#dependencies[@]} != 0 ]]; do
   dependency="${dependencies[0]}"
   for d in $(direct_runtime_dependencies "${dependency}"); do

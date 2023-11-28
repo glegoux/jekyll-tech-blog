@@ -2,7 +2,7 @@
 #
 # Open generated image with xdg-open all-gem-dependencies.png
 
-cd $(git rev-parse --show-toplevel)
+cd "$(git rev-parse --show-toplevel)"
 
 output_folder="./test/inspect/gem-dependencies"
 
