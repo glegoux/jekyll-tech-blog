@@ -35,7 +35,7 @@ jobs:
     - name: Build static website
       run: |
         source ~/.profile
-        make build
+        make build-prod
         cp .github/files/* dest/
     - uses: actions/setup-node@v2
       with:
