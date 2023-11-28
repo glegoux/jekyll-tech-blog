@@ -16,7 +16,7 @@ the company **Sun Microsystems** released the first version of Java. Here its pr
 4. It must execute with high performance.
 5. It must be interpreted, threaded, and dynamic.
 
-{% include article-image.html title="Java logo" src="java-logo.png" %}
+{% include article/image.html title="Java logo" src="java-logo.png" %}
 
 That is to say:
 
@@ -33,7 +33,7 @@ annual report of Github that counts the number of unique contributors of java pr
 But the mascot of Java is [Duke](https://www.oracle.com/java/duke.html) that plays the role of a *software agent* 
 that performed tasks for the user:
 
-{% include article-image.html title="Duke the Java mascot" src="duke.png" %}
+{% include article/image.html title="Duke the Java mascot" src="duke.png" %}
 
 The best resource about Java is surely the *Effective Java* book with its different editions:
 
@@ -42,7 +42,7 @@ The best resource about Java is surely the *Effective Java* book with its differ
 
 Joshua Bloch, author of Effective Java
 
-{% include article-image.html title="Effective Java book" src="effective-java-book-cover.jpg" %}
+{% include article/image.html title="Effective Java book" src="effective-java-book-cover.jpg" %}
 
 But Sun Microsystems had an issue a business model, and **Oracle acquired Java in January 2010**. 
 Now the project has 2 main versions, an **open source version with OpenJDK** and **commercial version with Oracle JDK**.

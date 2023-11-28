@@ -8,7 +8,7 @@ category: "Web"
 
 [Lighthouse](https://github.com/GoogleChrome/lighthouse) is an automated tool for improving the quality of web pages by auditing and analyzing your web pages and give you metrics and advices. You can run it against any web page, public or requiring authentication. It creates reports for performance, accessibility, progressive web apps, and more. It is an [open-source project](https://github.com/GoogleChrome/lighthouse) written in Javascript.
 
-{% include article-image.html title="Logo of Lighthouse" src="lighthouse-logo.png" %}
+{% include article/image.html title="Logo of Lighthouse" src="lighthouse-logo.png" %}
 
 You can run Lighthouse as a [Chrome Extension](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en), from the command line, or as a [Node module](https://www.npmjs.com/package/lighthouse). You give Lighthouse a URL to audit, it runs a series of audits against the page, and then it generates a report on how well the page did. From there, use the failing audits as indicators on how to improve the page. Each audit has a reference doc explaining why the audit is important, as well as how to fix it.
 
@@ -23,17 +23,17 @@ The reports are divided into 4 categories:
 
 The goal is to have a score of 100 for each category and for each web page of your website:
 
-{% include article-image.html title="Lighthouse scores by report category" src="scores.png" %}
+{% include article/image.html title="Lighthouse scores by report category" src="scores.png" %}
 
 You can export report under HTML or JSON format, then import these format or see directly report due to [Lighthouse Viewer](https://googlechrome.github.io/lighthouse/viewer/) (online version). You can install on-premises version directly from the [Git repository if Lighthouse Viewer](https://github.com/GoogleChrome/lighthouse/tree/master/lighthouse-viewer) .
 
-{% include article-image.html title="Export, import and view Lighthouse report" src="export-import-view.jpg" %}
+{% include article/image.html title="Export, import and view Lighthouse report" src="export-import-view.jpg" %}
 
 # Lighthouse architecture
 
 The workflow of Lighthouse core is described by the following chart:
 
-{% include article-image.html title="Architecture of Lighthouse Core" src="architecture.jpg" %}
+{% include article/image.html title="Architecture of Lighthouse Core" src="architecture.jpg" %}
 
 [See details of the architecture](https://github.com/GoogleChrome/lighthouse/blob/master/docs/architecture.md).
 
@@ -55,7 +55,7 @@ Before installing [Lighthouse](https://github.com/GoogleChrome/lighthouse), we m
 
 For the recent versions of lighthouse, you can use [Canary](https://www.google.com/chrome/browser/canary.html) version for Google Chrome.
 
-{% include article-image.html title="Google Chrome, Chromium and Canary version" src="chrome-version.jpg" %}
+{% include article/image.html title="Google Chrome, Chromium and Canary version" src="chrome-version.jpg" %}
 
 Reminder you in a nutshell that [Google Chrome](https://www.google.com/chrome/browser) is the [Chromium](https://github.com/chromium/chromium) open source project built, packaged, 
 and distributed by Google. You can see a few [differences](https://chromium.googlesource.com/chromium/src/+/master/docs/chromium_browser_vs_google_chrome.md) . 
@@ -97,7 +97,7 @@ python3 lighthouse.py urls.txt reports.csv
 
 You get this csv file **reports.csv**. Visualize with **matplotlib** library:
 
- {% include article-image.html title=" Charts of scores for a set of URLs" src="plot_scores.png" %}
+ {% include article/image.html title=" Charts of scores for a set of URLs" src="plot_scores.png" %}
 
 | url | date | pwa | performance | accessibility | best-practices |
 | --- |  --- |  --- |  --- |  --- |  --- |

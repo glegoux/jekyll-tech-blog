@@ -9,11 +9,11 @@ tags: ["Geometry"]
 
 We can model the surface of the earth as a sphere of radius $R$. Even if in reality, the earth is more a kind of ellipsoid with an irregular surface, where each point of its surface owns an altitude in relation to the sea level.
 
-{% include article-google-drawing.html title="Coordinates on earth with latitude and longitude" src="https://docs.google.com/drawings/d/e/2PACX-1vRdm2uIt-uhISovgxlwTgP6w08Lq8LPqX-vpNz8RVt7cr_sHn8k1Fb5-3d8kVV5Z2K5-Ys8gwEYLfy9/pub?w=480&amp;h=360" %}
+{% include article/google-drawing.html title="Coordinates on earth with latitude and longitude" src="https://docs.google.com/drawings/d/e/2PACX-1vRdm2uIt-uhISovgxlwTgP6w08Lq8LPqX-vpNz8RVt7cr_sHn8k1Fb5-3d8kVV5Z2K5-Ys8gwEYLfy9/pub?w=480&amp;h=360" %}
 
 Let $p1 = (\text{lat1}, \text{long1})$, $p2 = (\text{lat2}, \text{long2})$ be 2 points on the surface of the earth with a latitude and a longitude given in radian respectively. The latitude has a value between $[-\frac{\pi}{2}, \frac{\pi}{2}]$, and the longitude between $]-\pi, \pi]$. So each point is identified by unique way with this tuple: latitude and longitude. There is at least a great circle of the sphere passing both through $p1$ and $p2$, either an infinity if $p1$, $p2$ and the center of the sphere are aligned in the ambient space, or an unique one. The smallest length of a path joining $p1$ and $p2$ on the earth surface is the size of the minor circular arc of a great circle. A such arc is called a geodesic, that we note $d(p1, p2)$ its size. We put $\alpha \in [0, \pi]$ is the smallest central angle, to avoid all ambiguities, because $p1$ and $p2$ belong to a circle, and define 2 circular arcs: the minor one and the major one, respectively with a size $d(p1, p2)$ and $2\pi R - d(p1, p2)$. If $\alpha = 0$, then $p1$ and $p2$ are confused, and if $\alpha = \pi$, then $p1$ is the antipode of $p2$ (diametrically opposite, and reciprocally).  
 
-{% include article-google-drawing.html title="Smallest distance between 2 points on the earth surface" src="https://docs.google.com/drawings/d/e/2PACX-1vQptEFbx1SxwX-p1QFsK94CvkoJwbVAKXpiQ8FaL9-BJbZnEUw4PYZqce7UnUtD-Hcm01ZRV4vOornF/pub?w=480&amp;h=360" %} 
+{% include article/google-drawing.html title="Smallest distance between 2 points on the earth surface" src="https://docs.google.com/drawings/d/e/2PACX-1vQptEFbx1SxwX-p1QFsK94CvkoJwbVAKXpiQ8FaL9-BJbZnEUw4PYZqce7UnUtD-Hcm01ZRV4vOornF/pub?w=480&amp;h=360" %} 
 
 So:
 
@@ -35,7 +35,7 @@ $$
 
 Indeed, even if it means changing reference points, we can always by symmetry come back to this diagram:
 
-{% include article-google-drawing.html title="Cartesian coordinates on earth" src="https://docs.google.com/drawings/d/e/2PACX-1vSo-qbr70ZR3v_49gXzE7HI6cv0jgPXLEANpuZaNszi0QAL3NLIzjAd34V-s-2nCAtSaiW3AXno0urI/pub?w=529&h=323" %} 
+{% include article/google-drawing.html title="Cartesian coordinates on earth" src="https://docs.google.com/drawings/d/e/2PACX-1vSo-qbr70ZR3v_49gXzE7HI6cv0jgPXLEANpuZaNszi0QAL3NLIzjAd34V-s-2nCAtSaiW3AXno0urI/pub?w=529&h=323" %} 
 
 Then, we have also:
 

@@ -1,16 +1,8 @@
 {%- assign config_blog = site.project.blog -%}
 <div class="flex-container">
-  {%- if config_blog.name_header %}
-  <!-- Name -->
-  <div id="name">
-    <a href="/" title="Go to the home page">
-      <span class="notranslate">{{ config_blog.name_header }}</span>
-    </a>
-  </div>
-  {% endif %}
   {%- if config_blog.logo_header %}
   <!-- Logo -->
-  <div id="logo" class="d-none d-lg-block">
+  <div id="logo" class="text-left">
     <a href="/" aria-label="Logo" title="Go to the home page">
       <img class="img-fluid lazyload" data-src="{{ config_blog.logo_header }}" alt="site logo"/>
     </a>
@@ -19,15 +11,7 @@
   {%- if config_blog.menu_items %}
   <!-- Menu -->
   <div id="menu" class="d-none d-lg-block">
-    <ul class="menu-content">
-      {%- for menu_item in config_blog.menu_items %}
-      <li>
-        <a class="link-strong menu-item" href="{{ menu_item.link }}" title="Go to this page">
-          {{ menu_item.name }}
-        </a>
-      </li>
-      {%- endfor %}
-    </ul>
+    {%- include menu.html menu_items=config_blog.menu_items %}
   </div>
   {% endif %}
 </div>

@@ -2,7 +2,7 @@
 
 header {
   z-index: 1000;
-  padding-top: 0.5em;
+  padding-top: 0.2em;
   padding-bottom: 0.5em;
   margin-bottom: 1em;
   color: black !important;
@@ -16,7 +16,7 @@ header {
     }
 
     #logo {
-      margin-left: 4em;
+      margin-left: 0.5em;
       flex-grow: 1;
       img {
         height: 40px;
@@ -47,7 +47,7 @@ header {
   ul li {
     text-transform: capitalize;
     display: inline-block;
-    padding-right: 2em;
+    padding-right: 1em;
     vertical-align: top;
   }
 

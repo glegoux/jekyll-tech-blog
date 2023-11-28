@@ -13,7 +13,7 @@ With the evolution of practices and tools of online blogging these last years, I
 * The top and popular blog posts will be published on Medium in priority to gain visibility
 * While the other ones will remain on this blog.
 
-{% include article-google-drawing.html 
+{% include article/google-drawing.html 
   title="Migration from glegoux.com to Medium" 
   src="https://docs.google.com/drawings/d/e/2PACX-1vRwK7XcVBBYBxZhx3_nqSjUF4boYbf9BBdHP-HJYOlx2vX2Pe_scKcZTZFys9K5BEaaYmrGPN_3WziZ/pub?w=798&h=100" 
 %}

@@ -50,7 +50,7 @@ $$\displaystyle\lim_{n\mapsto +\infty}u_n = \displaystyle\lim_{n\mapsto +\infty}
 with $e \approx 2.71828...$. In addition, 
 this suite $(u_n)_{n\in \mathbb{N}}$ has a rate of convergence quick:
 
-{% include article-image.html
+{% include article/image.html
 title="Inverse of the probability that a guest draws randomly his/her name"
 src="u_n-convergence.png"
 %}
@@ -87,7 +87,7 @@ Except for some guests with a very original gift, suppose that your guest chose 
 pre-defined list influenced by the constraints and the ads, with a few hundred types of items, 
 let's say $N=300$:
 
-{% include article-image.html
+{% include article/image.html
 title="Probability to have 2 identical types of gifts among 300 possible types of Christmas gifts" 
 src="g_n-convergence.png"
 %}

@@ -1,0 +1,33 @@
+<ul class="menu-content">
+  {%- for menu_item in include.menu_items %}
+  <li>
+    <a class="link-strong menu-item"
+       href="{{ menu_item.link }}"
+       title="{% if menu_item.tooltip and menu_item.tooltip != '' %} {{ menu_item.tooltip }} {% else %}Go to this page{% endif %}">
+      {{ menu_item.name }}
+    </a>
+  </li>
+  {%- endfor %}
+  {%- if site.project.env -%}
+  <li>—</li>
+  {%- if jekyll.environment == 'production' -%}
+  <li title="The website is in production mode">🔴 <b><u>Prod</u></b></li>
+  <li>
+    <a class="link-strong menu-item"
+       href="{{ site.project.env.dev.link }}"
+       title="See the website in development mode">
+      🟢 Dev
+    </a>
+  </li>
+  {% else %}
+  <li class="focus">
+    <a class="link-strong menu-item"
+       href="{{ site.project.env.prod.link }}"
+       title="See the website in production mode">
+      🔴 Prod
+    </a>
+  </li>
+  <li title="The website is in development mode">🟢 <b><u>Dev</u></b></li>
+  {% endif %}
+  {%- endif -%}
+</ul>

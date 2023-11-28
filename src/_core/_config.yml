@@ -41,6 +41,10 @@ include:
 # Force to exclude some files for the watcher (with --watch option) in the Jekyll::Watcher
 # See https://help.github.jp/enterprise/2.11/user/articles/files-that-start-with-an-underscore-are-missing/
 exclude:
+  - "_core/data"
+  - "_core/includes"
+  - "_core/layouts"
+  - "_core/sass"
   - ".sass-cache"
   - ".jekyll-metadata"
   - ".jekyll-cache"
@@ -75,6 +79,7 @@ defaults:
 # Specific to project core
 
 project_core:
+  title: "🧪 Jekyll Tech Blog"
   libs:
     version:
       jquery: "3.5.1"
@@ -86,3 +91,11 @@ project_core:
       fuse: "3.4.6"
       lazysizes: "5.2.0"
       mathjax: "3.1.2"
+  links:
+    project: "https://github.com/glegoux/jekyll-tech-blog"
+    cover: "https://github.com/glegoux/jekyll-tech-blog/raw/main/doc/img/jekyll-tech-blog-features.png"
+    doc: "https://github.com/glegoux/jekyll-tech-blog/wiki"
+    code: "https://github.com/glegoux/jekyll-tech-blog"
+    bug: "https://github.com/glegoux/jekyll-tech-blog/issues"
+    fork: "https://github.com/glegoux/jekyll-tech-blog/fork"
+    license: "https://raw.githubusercontent.com/glegoux/jekyll-tech-blog/main/LICENSE.txt"

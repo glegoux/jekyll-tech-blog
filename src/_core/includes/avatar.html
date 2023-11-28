@@ -1,0 +1,43 @@
+{%- assign config_avatar = site.project.avatar -%}
+{%- assign links = site.data.project.links -%}
+<div class="text-center">
+    {%- assign avatar_path = "/_core/static/img/default/avatar.png" -%}
+    {%- assign avatar_path_exist = site.static_files | where: "path", avatar_path | first -%}
+    {%- unless avatar_path_exist -%}
+      {%- assign avatar_path = "/_core/static/img/default/avatar.png" -%}
+    {%- endunless -%}
+    <img class="link-light icon-avatar" src="{{ avatar_path }}" alt="avatar"/>
+    <br>
+    {%- if config_avatar.name and config_avatar.name != '' -%}
+    <span class="notranslate font-weight-bold h4">
+        {{ config_avatar.name }}
+    </span>
+    <br>
+    {%- endif -%}
+    {%- if config_avatar.job and config_avatar.job != '' -%}
+    <span class="notranslate text-secondary">
+        {{ config_avatar.job }}
+    </span>
+    <br>
+    {%- endif -%}
+    {%- if config_avatar.links.github and config_avatar.links.github != '' -%}
+    <a href="{{ config_avatar.links.github }}" aria-label="GitHub">
+        <img class="notranslate" width="25" height="25" src="/_core/static/img/social/github.png" title="GitHub" alt="GitHub"/>
+    </a>
+    {%- endif -%}
+    {%- if config_avatar.links.linkedin and config_avatar.links.linkedin != '' -%}
+    <a href="{{ config_avatar.links.linkedin }}" aria-label="LinkedIn">
+        <img class="notranslate" width="25" height="25" src="/_core/static/img/social/linkedin.png" title="LinkedIn" alt="LinkedIn"/>
+    </a>
+    {%- endif -%}
+    {%- if config_avatar.links.stackoverflow and config_avatar.links.stackoverflow != '' -%}
+    <a href="{{ config_avatar.links.stackoverflow }}" aria-label="Stack Overflow">
+        <img class="notranslate" width="25" height="25" src="/_core/static/img/social/stackoverflow.png" title="Stack Overflow" alt="Stack Overflow"/>
+    </a>
+    {%- endif -%}
+    {%- if config_avatar.links.medium and config_avatar.links.medium != '' -%}
+    <a href="{{ config_avatar.links.medium }}" aria-label="Medium">
+      <img class="notranslate" width="25" height="25" src="/_core/static/img/social/medium.png" title="Medium" alt="Medium"/>
+    </a>
+    {%- endif -%}
+</div>

@@ -1,0 +1,42 @@
+<!-- Other article(s) -->
+{%- assign related_posts = site.posts | sample:4 -%}
+{%- assign other_articles_index = 0 -%}
+{%- assign n_max_other_articles = 3 -%}
+{%- for post in related_posts -%}
+{%- if other_articles_index == n_max_other_articles -%}
+{%- break -%}
+{%- endif -%}
+{%- assign other_article_id = post.date | date: '%Y-%m-%d-' | append: post.title | slugify -%}
+{%- if other_article_id != article_id -%}
+{%- assign other_articles_index = other_articles_index | plus: 1 -%}
+{%- if other_articles_index == 1 -%}
+<div class="article-others no-print">
+  <h5>Also read</h5>
+  <div class="row">
+    {%- endif -%}
+    <div class="col-xs-12 col-md-6 col-lg-4">
+      {%- include card-article.html
+      url=post.url
+      date=post.date
+      title=post.title
+      description=post.description
+      category=post.category
+      time_reading_minutes=post.time_reading_minutes
+      draft=post.draft
+      -%}
+    </div>
+    {%- else -%}
+    {%- continue -%}
+    {%- endif -%}
+    {%- endfor -%}
+    {%- if other_articles_index >= 1 -%}
+    <div class="article-list-all no-print">
+      <a href="/blog/articles/">
+        <button class="btn btn-dark" title="List all articles">
+          <b>List all</b>
+        </button>
+      </a>
+    </div>
+  </div>
+</div>
+{%- endif -%}

@@ -1,4 +1,4 @@
-# See https://bundler.io/gemfile.html
+# See https://bundler.io/guides/gemfile.html
 source 'https://rubygems.org'
 ruby File.read('.ruby-version', mode: 'rb').chomp
 
@@ -7,21 +7,9 @@ gem 'jekyll', '4.3.2'
 # Jekyll plugins
 group :jekyll_plugins do
   gem 'jekyll-sitemap', '1.4.0'
-  gem 'jekyll-seo-tag', '2.7.1'
+  gem 'jekyll-seo-tag', '2.8.0'
   gem 'jekyll-paginate', '1.1.0'
   gem 'jekyll-mentions', '1.6.0'
   gem 'jekyll-redirect-from', '0.16.0'
-  gem 'jemoji', '0.12.0'
+  gem 'jemoji', '0.13.0'
 end
-
-# Others gems
-gem "addressable", ">= 2.8.0"
-gem "rack", ">= 3.0.7"
-gem "kramdown", ">= 2.3.1"
-gem 'liquid', '4.0.4'
-gem 'minima', '2.5.1'
-gem "nokogiri", ">= 1.12.5"
-gem 'rouge', '3.0'
-gem 'safe_yaml', '1.0.5'
-gem 'html-pipeline', '2.12.3'
-gem "webrick", "~> 1.7"

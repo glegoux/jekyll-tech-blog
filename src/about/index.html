@@ -27,7 +27,14 @@ layout: default
       <p>
         Read the published content
       </p>
-      {% include read-blog-posts.html %}
+      {% include blinker-info.html
+            title=config_blog.title
+            keywords=config_blog.keywords
+            link="/blog/articles"
+            link-text="Read blog posts"
+            link-tooltip="Read the published blog posts"
+      %}
+      <br>
     </div>
     <div class="col-xs-12 col-md-6 col-lg-4">
       <p style="font-size: 1.5em">Writers</p>
@@ -35,10 +42,10 @@ layout: default
         Co-write content or create your own blog
       </p>
       {% include card-article.html
-      url="/blog/articles/2019/01/21/getting-started.html"
-      title="Getting Started"
-      date="2019/01/21"
-      description="How to write articles on this blog from an easy-to-use and rich syntax?"
+            url="/blog/articles/2019/01/21/getting-started.html"
+            title="Getting Started"
+            date="2019/01/21"
+            description="How to write articles on this blog from an easy-to-use and rich syntax?"
       %}
     </div>
     <div class="col-xs-12 col-md-6 col-lg-4">
@@ -46,8 +53,8 @@ layout: default
       <p>
         Contribute to open-source project
       </p>
-      <a href="https://github.com/glegoux/jekyll-blog" title="Contribute to open-source project">
-        <img src="/_core/static/img/meta/jekyll-tech-blog.png" alt="Jekyll Tech Blog features"
+      <a href="https://github.com/glegoux/jekyll-tech-blog" title="Contribute to open-source project">
+        <img src="https://github.com/glegoux/jekyll-tech-blog/raw/main/doc/img/jekyll-tech-blog-features.png" alt="Jekyll Tech Blog features"
              style="border: 1px solid lightgrey; border-radius: 10px"
              class="img-fluid ls-is-cached lazyloaded" />
       </a>
@@ -74,7 +81,7 @@ layout: default
     <b style="font-size: 2em">About me</b>
   </p>
 
-  {% include project/avatar.html %}
+  {% include avatar.html %}
   <br>
   {% include project/about-me.html %}
 

@@ -60,7 +60,7 @@ The project is open source project published on a [git mirror repository on GitH
 by [GitHub Organization krb5](https://github.com/krb5). There are a [online documentation](https://web.mit.edu/kerberos/krb5-latest/doc/) 
 and [short guide pdf](http://www.kerberos.org/software/adminkerberos.pdf).
 
-{% include article-image.html title="MIT Kerberos" src="kerberos-logo.jpg" %}
+{% include article/image.html title="MIT Kerberos" src="kerberos-logo.jpg" %}
 
 Another interesting implementation of Kerberos is in Java: [Apache Kerby](https://directory.apache.org/kerby/). The **Java ecosystem** 
 integrates very well Kerberos, it is in the standard library. A lot of Java projects use Kerberos. 
@@ -97,7 +97,7 @@ Imagine that a client wishes to access to a service through a Kerberos Authentic
 
 Here client (identified as user) and service are already registered in the Kerberos database in the same Realm (understanding same Kerberos perimeter), respectively as User Principal Name (UPN) and Service Principal Name (SPN). 
 
-{% include article-google-drawing.html title="Kerberos authentication architecture" 
+{% include article/google-drawing.html title="Kerberos authentication architecture" 
 src="https://docs.google.com/drawings/d/e/2PACX-1vRFoa0U8YarJybG_tJJ4bxSaDj000n8XduoQyDVJQ77XHTovCd4EuGArkG9JhGDqATybKOHV9TSCVSh/pub?w=959&h=535" %}
 
 You can use **Lightweight Directory Access Protocol** (LDAP) as principal database to store users and groups of your organization. Now you have a nice **Authentication, Authorization** and **Accounting** System (AAAS) :
@@ -106,7 +106,7 @@ You can use **Lightweight Directory Access Protocol** (LDAP) as principal databa
 * `Authorization` is controlled by the Service directly to authorize access (you can also use Access Control List (ACL) for other permissions)
 * `Accounting` is allowed by LDAP server.
 
-{% include article-google-drawing.html title=" Kerberos authentication workflow with LDAP" 
+{% include article/google-drawing.html title=" Kerberos authentication workflow with LDAP" 
 src="https://docs.google.com/drawings/d/e/2PACX-1vRmsLxbS-kwQOzK20d0i3PZGADr1dmoWbG2ld-M2hIyXYjw1pGPuXtWO8LmBv9VaYJVh-E1aJOU7xoF/pub?w=959&h=542" %}
 
 # How to test?
@@ -115,11 +115,11 @@ I suppose that you are comfortable with docker containers and command-line inter
 
 To do that, just consult this Open Source project [kerberos-docker](https://github.com/criteo/kerberos-docker).
 
-{% include article-google-drawing.html title="Kerberos/Docker icon" src="kerberos-docker-logo.png" %}
+{% include article/google-drawing.html title="Kerberos/Docker icon" src="kerberos-docker-logo.png" %}
 
 This servers cluster is deployed automatically with only one command. 
 
-{% include article-google-drawing.html title="Kerberos architecture on docker for Kerberos/Docker project" 
+{% include article/google-drawing.html title="Kerberos architecture on docker for Kerberos/Docker project" 
 src="https://docs.google.com/drawings/d/e/2PACX-1vSWzlGsP6c2XMkKZnJ8ncLx5rfaqR9vWJlvG8ksr5CxAKc1zeJ4aFUC-Zw4KpZt-ipcGJRcoY4P2q-o/pub?w=695&h=421" %}
 
 Thanks to GSS-API implementation in C, OpenSSH use one method based on Kerberos authentication: **gssapi-with-mic**. That is a Message Authentication Code (MAC) methods renamed in Message Integrated Code (MIC) for disambiguation MAC address. Thus the suffix with-mic is used. But SSH continue to manage authorization (using Linux-PAM or/and AllowsUser, Allowsgroup,PermitRootLogin in /etc/ssh/sshd_config), and accounting is managed by the Operating System.

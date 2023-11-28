@@ -1,0 +1,16 @@
+# Site configuration for production
+# See default configuration: https://jekyllrb.com/docs/configuration/default
+
+# Server
+
+url: "https://jekyll-tech-blog.netlify.app"
+baseurl: ""
+
+# Specific to project
+
+project:
+  env:
+    prod:
+      link: "https://jekyll-tech-blog.netlify.app"
+    dev:
+      link: "https://jekyll-tech-blog-dev.netlify.app"

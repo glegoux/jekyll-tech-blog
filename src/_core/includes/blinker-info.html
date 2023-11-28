@@ -1,0 +1,16 @@
+<div class="text-center">
+  <h2 class="notranslate blog-title">{{ include.title }}</h2>
+
+  <p class="typewrite notranslate blog-keywords" data-period="1000"
+     data-type='["{{ include.keywords | join: '", "' }}"]'>
+  <span class="blinker"></span>
+  </p>
+
+  {%- if include.link -%}
+  <a href="{{ include.link }}" title="{{ include.link-tooltip }}">
+    <button class="btn btn-dark">
+      <b class="black">{{ include.link-text }}</b>
+    </button>
+  </a>
+  {%- endif -%}
+</div>
