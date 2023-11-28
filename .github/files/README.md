@@ -1,2 +1,3 @@
-/!\ Here there are only **static files generated for GitHub Pages deployment**,
-go to the [branch by default](https://github.com/glegoux/jekyll-tech-blog) to see the source code.
+⚠️ Here are the **static files generated for GitHub Pages deployment**.  
+Go to the [branch:your.domain.name](<source code link>) 
+to see the source code.
