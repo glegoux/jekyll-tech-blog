@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #
-# Open generated image with xdg-open all-gem-dependencies.png
+# See the latest available version of each gem according the version constraints of the project
 
-cd "$(git rev-parse --show-toplevel)"
+cd "$(git rev-parse --show-toplevel)" || exit 1
 
 bundle exec gem outdated

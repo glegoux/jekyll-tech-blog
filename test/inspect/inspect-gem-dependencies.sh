@@ -1,12 +1,16 @@
 #!/usr/bin/env bash
 #
-# Open generated image with xdg-open all-gem-dependencies.png
+# Generate an DOT file with graph of all the runtime dependencies of the project with its image
+#
+# usage: ./inspect-gem-dependencies.sh
 
-cd "$(git rev-parse --show-toplevel)"
+cd "$(git rev-parse --show-toplevel)" || exit 1
 
-output_folder="./test/inspect/gem-dependencies"
+output_folder="./doc/gem-dependencies"
 
-bash ${output_folder}/show-all-gem-dependencies.sh \
+mkdir -pv "${output_folder}"
+
+bash test/inspect/gem-dependencies/show-all-gem-dependencies.sh \
   $(bundle exec gem list | cut -f1 -d" ") \
   > ${output_folder}/all-gem-dependencies.dot
 

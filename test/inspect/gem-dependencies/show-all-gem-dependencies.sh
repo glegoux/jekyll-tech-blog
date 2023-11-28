@@ -1,15 +1,9 @@
 #!/usr/bin/env bash
 #
-# Build DOT graph output for all the runtime dependencies of the given gems
-# format: see https://graphviz.org/doc/info/lang.html
+# Build a text file with the graph of all the runtime dependencies of the given gems
+# with the format DOT (https://graphviz.org/doc/info/lang.html)
 #
-# Store the output in a fle: file.dot, then use to visualize the graph:
-#   cat file.dot | dot -Tpng -o file.png | xdg-open file.png
-#
-# usage:
-#   ./show-all-gem-dependencies.sh jekyll
-#   ./show-all-gem-dependencies.sh jekyll jekyll-sitemap
-#   ./show-all-gem-dependencies.sh $(bundle exec gem list | cut -f1 -d" ")
+# usage: ./show-all-gem-dependencies.sh jekyll jekyll-sitemap
 
 # helper
 
@@ -39,7 +33,7 @@ fi
 
 set -e
 
-cd "$(git rev-parse --show-toplevel)"
+cd "$(git rev-parse --show-toplevel)" || exit 1
 
 gem_names="$@"
 
