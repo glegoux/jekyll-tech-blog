@@ -5,8 +5,8 @@
     <description>Personal blog about software engineering</description>
     <link>https://glegoux.com/</link>
     <atom:link href="https://glegoux.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 22 Nov 2023 22:46:41 +0000</pubDate>
-    <lastBuildDate>Wed, 22 Nov 2023 22:46:41 +0000</lastBuildDate>
+    <pubDate>Tue, 28 Nov 2023 17:48:15 +0000</pubDate>
+    <lastBuildDate>Tue, 28 Nov 2023 17:48:15 +0000</lastBuildDate>
     <generator>Jekyll v4.3.2</generator>
     
       <item>
@@ -29,26 +29,26 @@
 
 &lt;p&gt;After evaluating the market of online editors, and testing Medium, here are the pros and cons of using Medium vs. my personal blog that explain my choice:&lt;/p&gt;
 
-&lt;p&gt;❎ Pros:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Medium editor is quicker and more handy in updating a post with simple assets like text and images, more intuitive than YAFIYGI, and with instant updates without delay during the deployment of new content with Jekyll&lt;/li&gt;
-  &lt;li&gt;Medium has advanced features of collaboration with co-writers, claps, peer comments, and followers, not available on my blog&lt;/li&gt;
-  &lt;li&gt;Medium decorates the post with an estimation of reading, no need to fill manually, and the listen generation, not available on my blog&lt;/li&gt;
-  &lt;li&gt;Medium offers stats with custom metrics (reads, …) for each story more relevant than using Google Analytics&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;❌ Cons:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;The Medium features remain less advanced in pushing varied content like dynamic technical diagrams, and mathematics formulae while some workarounds exist&lt;/li&gt;
-  &lt;li&gt;Medium has partial propriety of the written content and limits the number of readings for non-members while my blog is open&lt;/li&gt;
-  &lt;li&gt;The Medium content has a pre-defined style of design, it is not highly customizable like the content on my blog&lt;/li&gt;
-&lt;/ul&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;❎ Pros&lt;/th&gt;
+      &lt;th&gt;❌ Cons&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;lt;p&amp;gt;• Medium editor is quicker and handier in updating a post with simple assets like text and images, more intuitive than YAFIYGI, and with instant updates without delay during the deployment of new content with Jekyll&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;• Medium has advanced features of collaboration with co-writers, claps, peer comments, and followers, not available on my blog&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;• Medium decorates the post with an estimation of reading, no need to fill manually, and the listen generation, is not available on my blog&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;• Medium offers stats with custom metrics (reads, …) for each story more relevant than using Google Analytics&amp;lt;/p&amp;gt;&lt;/td&gt;
+      &lt;td&gt;&amp;lt;p&amp;gt;• Medium has partial propriety of the written content and limits the number of readings for non-members while my blog is open&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;• The Medium content has a pre-defined style of design, it is not highly customizable like the content on my blog&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;• The Medium features remain less advanced in pushing varied content like dynamic technical diagrams, and mathematics formulae while some workarounds exist&amp;lt;/p&amp;gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 
 &lt;p&gt;For all these reasons, I find that the right choice is a consensus by keeping the best of these 2 worlds. Also, I prefer remaining independent for the long term, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;glegoux.com&lt;/code&gt; is not only a tech blog but a hub of centralized online activities.&lt;/p&gt;
 
 &lt;p&gt;Don’t worry, I am going to keep maintaining this website and the open-source template behind it. To avoid all breaking changes, the past blog posts will remain accessible without breaking their web links.&lt;/p&gt;
 
-&lt;p&gt;However, it seems difficult to synchronize bi-directionally the content between Medium and this blog. I can import a post to Medium by copying manually the link, but exporting from Medium is long, and tedious. The synchronization in case of the update of a blog post done from Medium becomes a nightmare to maintain. While I want to use more Medium editor quicker and more handy. So as I explained, I foresee to have some articles would be only on Medium, and other ones only on this blog. If necessary, if I want to have one at both locations, instead of having a full post everywhere, I will use web links between them, with a partial post redirecting to the full post (to avoid divergences and too heavy maintenance in case of multiple post-editions).&lt;/p&gt;
+&lt;p&gt;However, it seems difficult to synchronize bi-directionally the content between Medium and this blog. I can import a post to Medium by copying manually the link, but exporting from Medium is long, and tedious. The synchronization in case of the update of a blog post done from Medium becomes a nightmare to maintain. While I want to use more Medium editor quicker and more handy. So as I explained, I foresee that some articles will be only on Medium, and other ones only on this blog. If necessary, if I want to have one at both locations, instead of having a full post everywhere, I will use web links between them, with a partial post redirecting to the full post (to avoid divergences and too heavy maintenance in case of multiple post-editions).&lt;/p&gt;
 
 &lt;p&gt;Thanks for your understanding, and your readings.&lt;/p&gt;
 
