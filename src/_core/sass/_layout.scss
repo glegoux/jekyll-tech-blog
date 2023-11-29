@@ -369,8 +369,16 @@ a, a:visited, a:active, a:link, a:hover {
 
 /* Text */
 
-.text-align-right {
-  text-align: right;
+.text-justify-with-hyphens {
+  // hyphenation rules are language-specific, it needs lang HTML attribute
+  text-align: justify;
+  hyphens: auto;
+}
+
+.text-justify-with-work-break-all {
+  // but break words
+  text-align: justify;
+  word-break: break-all
 }
 
 /* Print */
