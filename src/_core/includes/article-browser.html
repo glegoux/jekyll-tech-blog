@@ -1,0 +1,12 @@
+<div class="article-browser">
+  {%- if page.previous.url -%}
+  <a href="{{ page.previous.url }}" title="See the previous article">
+    <i class="fa fa-arrow-left"></i>
+  </a>
+  {%- endif -%}
+  {%- if page.next.url -%}
+  <a href="{{ page.next.url }}" title="See the next article">
+    <i class="fa fa-arrow-right"></i>
+  </a>
+  {%- endif -%}
+</div>

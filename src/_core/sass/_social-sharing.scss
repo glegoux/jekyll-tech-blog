@@ -1,0 +1,22 @@
+.social-sharing {
+  font-size: 1.3em;
+  width: 100%;
+  color: black;
+
+  a {
+    color: black !important;
+  }
+
+  ul {
+    display: inline;
+  }
+
+  ul li {
+    font-size: 1em;
+    display: inline;
+  }
+
+  ul li:not(:first-of-type) {
+    margin-left: 0.5em;
+  }
+}

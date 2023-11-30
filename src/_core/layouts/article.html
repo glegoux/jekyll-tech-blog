@@ -26,20 +26,24 @@ layout: default
   <!-- Article metadata -->
   <div class="article-metadata">
 
-    <!-- Article browser -->
-    <span class="article-browser">
-      <a href="/blog/articles" title="See all articles">
-        <i class="fas fa-home"></i>
+    <div class="row">
+      <div class="col-8 text-left">
+        <!-- Article category -->
+        <a href="/blog/articles" title="See all articles">
+          <i class="fa fa-newspaper"></i>
+        </a>
         <span>&#xbb;</span>
-      </a>
-    </span>
-
-    <!-- Article category -->
-    <span class="article-category">
-      <ul>
-        <li title="Category of this article">{{ page.category }}</li>
-      </ul>
-    </span>
+        <span class="article-category text-left">
+        <ul>
+          <li title="Category of this article">{{ page.category }}</li>
+        </ul>
+      </span>
+      </div>
+      <!-- Article browser -->
+      <div class="col-4 text-right">
+        {% include article-browser.html %}
+      </div>
+    </div>
 
     <!-- Article title -->
     <div class="article-title" title="Title of this article">
@@ -49,6 +53,11 @@ layout: default
     <!-- Article description -->
     <div class="article-description" title="Description of this article">
       {{ page.description }}
+    </div>
+
+    <!-- Socials sharing -->
+    <div>
+      {% include article-social-sharing.html %}
     </div>
 
     <div class="row">
@@ -92,14 +101,14 @@ layout: default
     <hr class="sep no-print"/>
 
     <div class="row">
-      <div class="col-2 text-left">
+      <div class="col-4 text-left">
         <!-- Article table of contents -->
         <div id="table-of-contents" class="no-print" title="See or hide the table of contents">
           <i class="fas fa-list-ul"></i>
           <span class="d-none d-md-inline">Table of contents</span>
         </div>
       </div>
-      <div class="col-10 text-right">
+      <div class="col-8 text-right">
         <!-- Article actions -->
         {% include article-actions.html %}
       </div>
@@ -158,23 +167,11 @@ layout: default
 
     <div class="row">
       <!-- Article browser -->
-      <div class="col-2 article-browser text-left">
-        <a href="/blog/articles" title="See all articles">
-          <i class="fa fa-home"></i>
-        </a>
-        {%- if page.previous.url -%}
-        <a href="{{ page.previous.url }}" title="See the previous article">
-          <i class="fa fa-arrow-left"></i>
-        </a>
-        {%- endif -%}
-        {%- if page.next.url -%}
-        <a href="{{ page.next.url }}" title="See the next article">
-          <i class="fa fa-arrow-right"></i>
-        </a>
-        {%- endif -%}
+      <div class="col-4 text-left">
+        {% include article-browser.html %}
       </div>
       <!-- Article actions -->
-      <div class="col-10 text-right">
+      <div class="col-8 text-right">
         {% include article-actions.html %}
       </div>
     </div>
