@@ -2,7 +2,7 @@
 #
 # Show git log of the current branch without the main branch commits of the template
 #
-# usage: ./git-log.sh
+# usage: ./git-log.sh [file]
 
 cd "$(git rev-parse --show-toplevel)" || exit 1
 
