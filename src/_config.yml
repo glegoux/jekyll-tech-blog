@@ -112,6 +112,6 @@ project:
         firstname: "Gilles"
         lastname: "LEGOUX"
         job: "Software Engineer"
-        company: ""
+        company: "Freelance"
         follow:
           link: "https://glegoux.com"
