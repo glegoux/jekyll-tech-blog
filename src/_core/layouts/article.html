@@ -12,8 +12,7 @@ layout: default
       {%- if page.draft -%}
       <div class="warning">
         This article is a <b>draft</b> visible only in <b>development mode</b> which will not
-        deployed
-        on production.
+        deployed on production.
       </div>
       {% else %}
       <div class="success">
@@ -93,14 +92,14 @@ layout: default
     <hr class="sep no-print"/>
 
     <div class="row">
-      <div class="col-6 col-md-4">
+      <div class="col-2 text-left">
         <!-- Article table of contents -->
         <div id="table-of-contents" class="no-print" title="See or hide the table of contents">
           <i class="fas fa-list-ul"></i>
           <span class="d-none d-md-inline">Table of contents</span>
         </div>
       </div>
-      <div class="col-6 col-md-8">
+      <div class="col-10 text-right">
         <!-- Article actions -->
         {% include article-actions.html %}
       </div>
@@ -159,7 +158,7 @@ layout: default
 
     <div class="row">
       <!-- Article browser -->
-      <div class="col-4 article-browser">
+      <div class="col-2 article-browser text-left">
         <a href="/blog/articles" title="See all articles">
           <i class="fa fa-home"></i>
         </a>
@@ -175,7 +174,7 @@ layout: default
         {%- endif -%}
       </div>
       <!-- Article actions -->
-      <div class="col-10">
+      <div class="col-10 text-right">
         {% include article-actions.html %}
       </div>
     </div>
