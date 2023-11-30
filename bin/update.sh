@@ -7,9 +7,9 @@
 cd "$(git rev-parse --show-toplevel)" || exit 1
 
 changes="$(git status -s | cut -c4-)"
-[[ -z $(git status -s | cut -c4-) ]] || \
-  >&2 echo "ERROR: cannot update due to local changes, stash or commit them!" && \
-  exit 1
+[[ -n "${changes}" ]] && \
+  >&2 echo "ERROR: cannot update due to local changes, stash or commit them!" \
+  && exit 1
 
 git fetch origin main:main
 # without committing it automatically if no conflict exists in the merge results
