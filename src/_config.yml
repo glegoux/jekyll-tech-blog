@@ -67,28 +67,35 @@ project:
       - name: "Email"
         link: "https://www.glegoux.com/contact/email"
         class_icon:  "fas fa-paper-plane"
-    link_status_availability: "http://status.glegoux.com"
-    google_analytics_code: "UA-102138582-1"
+    link_status_availability:
+      link: "https://github.com/glegoux/jekyll-tech-blog/wiki/Configuration"
+    google_analytics_code: ""
   avatar:
-    name: "Gilles Legoux"
-    job: "Senior Software Engineer"
-    links:
-      github: "https://github.com/glegoux"
-      linkedin: "https://www.linkedin.com/in/gilleslegoux"
-      stackoverflow: "https://stackoverflow.com/users/8071126/glegoux"
-      medium: "https://medium.com/@glegoux"
+    name: "Bob"
+    job: "Software Engineer"
+    github:
+      link: "https://github.com/glegoux/jekyll-tech-blog/wiki/Configuration"
+    linkedin:
+      link: "https://github.com/glegoux/jekyll-tech-blog/wiki/Configuration"
+    stackoverflow:
+      link: "https://github.com/glegoux/jekyll-tech-blog/wiki/Configuration"
+    medium:
+      link: "https://github.com/glegoux/jekyll-tech-blog/wiki/Configuration"
   article:
     comment:
       disqus_code: "glegoux-com"
     actions:
       source_code:
         url: "https://raw.githubusercontent.com/glegoux/jekyll-blog/glegoux.com/src/_posts"
+        link: "https://raw.githubusercontent.com/glegoux/jekyll-tech-blog/main/src/_posts"
       resources:
-        url: "https://github.com/glegoux/articles-glegoux-com/tree/master/articles"
-      issue:
-        url: "https://github.com/glegoux/jekyll-tech-blog/issues"
+        link: "https://raw.githubusercontent.com/glegoux/jekyll-tech-blog/main/resources"
       edit:
-        url: "https://github.com/glegoux/jekyll-tech-blog/edit/glegoux.com/src/_posts/"
+        link: "https://github.com/glegoux/jekyll-tech-blog/edit/glegoux.com/src/_posts/"
+      issue:
+        link: "https://github.com/glegoux/jekyll-tech-blog/issues"
+      help:
+        link: "https://github.com/glegoux/jekyll-tech-blog/wiki/Help"
     attachment:
       url: "https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles"
       image:
@@ -100,4 +107,5 @@ project:
         lastname: "LEGOUX"
         job: "Senior Software Engineer"
         company: "Criteo"
-        follow_link: "https://glegoux.com"
+        follow:
+          link: "https://glegoux.com"

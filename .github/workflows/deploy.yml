@@ -54,14 +54,14 @@ jobs:
         make test
     - name: Deploy static website
       run: |
-        git add --force dest/
+        git add --force ./build/static-files
         git stash --keep-index --include-untracked
         git stash save -m "Deploy static website"
         git fetch --all
         git checkout gh-pages
         git rm -rf --quiet .
         git stash pop --quiet
-        mv dest/* .
+        mv ./build/static-files/* .
         git add -A
         # Use ssh to push to gh-pages branch
         mkdir -p ~/.ssh/
@@ -72,4 +72,3 @@ jobs:
         git config user.name "GitHub Actions"
         git commit -m "Deploy static website" --author="GitHub Actions <>" --quiet
         git push
-
