@@ -71,16 +71,16 @@ project:
       link: "https://status.glegoux.com"
     google_analytics_code: "UA-102138582-1"
   avatar:
-    name: "Bob"
-    job: "Software Engineer"
+    name: "Gilles Legoux"
+    job: "Senior Software Engineer"
     github:
-      link: "https://github.com/glegoux/jekyll-tech-blog/wiki/Configuration"
+      link: "https://github.com/glegoux"
     linkedin:
-      link: "https://github.com/glegoux/jekyll-tech-blog/wiki/Configuration"
+      link: "https://www.linkedin.com/in/gilleslegoux"
     stackoverflow:
-      link: "https://github.com/glegoux/jekyll-tech-blog/wiki/Configuration"
+      link: "https://stackoverflow.com/users/8071126/glegoux"
     medium:
-      link: "https://github.com/glegoux/jekyll-tech-blog/wiki/Configuration"
+      link: "https://medium.com/@glegoux"
   article:
     comment:
       disqus_code: "glegoux-com"
