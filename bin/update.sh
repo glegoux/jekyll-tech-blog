@@ -32,6 +32,6 @@ done
 if [[ -n $(git status -s | cut -c4-) ]]; then
   echo "INFO: Fix potential conflicts and run 'git commit' to validate the changes of the update!"
 else
-  git merge --abort
+  [[ -n "${MERGE_HEAD}" ]] && git merge --abort
   echo "INFO: No change, already up to date from the template!"
 fi
