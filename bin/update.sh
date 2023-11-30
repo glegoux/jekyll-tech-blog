@@ -19,7 +19,7 @@ project_resources="$(find src/* -maxdepth 0 ! \( -name "_core" -type d \))"
 other_resources=".github/ resources/ README.md"
 for change in $(git status -s | cut -c4-); do
   for resource in ${core_project_resources} ${project_resources} ${other_resources}; do
-    if [[ $resource =~ $change ]]; then
+    if [[ $change =~ ^$resource ]]; then
         echo "INFO: Ignore this change: ${change}"
         git add "${change}" &> /dev/null && \
         git reset "${change}" &> /dev/null && \
@@ -29,5 +29,9 @@ for change in $(git status -s | cut -c4-); do
   done
 done
 
-[[ -n $(git status -s | cut -c4-) ]]  && \
-  echo "Use 'git commit' to validate the changes of the update!"
+if [[ -n $(git status -s | cut -c4-) ]]; then
+  echo "INFO: Use 'git commit' to validate the changes of the update!"
+else
+  git merge --abort
+  echo "INFO: No change, already up to date from the template!"
+fi
