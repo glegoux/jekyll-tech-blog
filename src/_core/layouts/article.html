@@ -32,11 +32,8 @@ layout: default
           <i class="fa fa-newspaper"></i>
         </a>
         <span>&#xbb;</span>
-        <span class="article-category text-left">
-        <ul>
-          <li title="Category of this article">{{ page.category }}</li>
-        </ul>
-      </span>
+        <!-- Article category -->
+        {% include article-category.html %}
       </div>
       <!-- Article browser -->
       <div class="col-4 text-right">
@@ -52,6 +49,11 @@ layout: default
     <!-- Article description -->
     <div class="article-description" title="Description of this article">
       {{ page.description }}
+    </div>
+
+    <!-- Article tags -->
+    <div>
+      {% include article-tags.html %}
     </div>
 
     <!-- Socials sharing -->
@@ -130,23 +132,13 @@ layout: default
         <li>
           <!-- Article category -->
           <span>Category: </span>
-          <span class="article-category">
-            <ul>
-              <li title="Category of this article">{{ page.category }}</li>
-            </ul>
-          </span>
+          {% include article-category.html %}
         </li>
         {% if n_tags > 0 %}
         <li>
           <!-- Article tags -->
           <span>Tags: </span>
-          <span class="article-labels">
-            <ul>
-              {% for tag in page.tags %}
-              <li title="Tag of this article">{{ tag }}</li>
-              {% endfor %}
-            </ul>
-          </span>
+          {% include article-tags.html %}
         </li>
         {% endif %}
       </ul>
