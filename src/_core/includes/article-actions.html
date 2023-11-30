@@ -37,5 +37,13 @@
       </a>
     </li>
     {%- endif -%}
+    {%- if config_article.actions.help.url -%}
+    <li title="See help">
+      <a href="{{ config_article.actions.help.url }}">
+        <i class="fa fa-question"></i>
+        <span class="d-none d-md-inline">Help</span>
+      </a>
+    </li>
+    {%- endif -%}
   </ul>
 </div>

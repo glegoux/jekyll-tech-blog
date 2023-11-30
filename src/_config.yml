@@ -89,6 +89,8 @@ project:
         url: "https://github.com/glegoux/jekyll-tech-blog/issues"
       edit:
         url: "https://github.com/glegoux/jekyll-tech-blog/edit/main/src/_posts/"
+      help:
+        url: "https://github.com/glegoux/jekyll-tech-blog/wiki/Help"
     attachment:
       url: "https://raw.githubusercontent.com/glegoux/jekyll-tech-blog/main/resources"
       image:
