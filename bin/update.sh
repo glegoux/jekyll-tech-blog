@@ -30,7 +30,7 @@ for change in $(git status -s | cut -c4-); do
 done
 
 if [[ -n $(git status -s | cut -c4-) ]]; then
-  echo "INFO: Use 'git commit' to validate the changes of the update!"
+  echo "INFO: Fix potential conflicts and run 'git commit' to validate the changes of the update!"
 else
   git merge --abort
   echo "INFO: No change, already up to date from the template!"
