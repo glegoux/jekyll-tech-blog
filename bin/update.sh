@@ -7,7 +7,7 @@
 cd "$(git rev-parse --show-toplevel)" || exit 1
 
 changes="$(git status -s | cut -c4-)"
-[[ -z $(git status -s | cut -c4-) ]] || \
+[[ -n "${changes}" ]] && \
   >&2 echo "ERROR: cannot update due to local changes, stash or commit them!" \
   && exit 1
 
