@@ -67,8 +67,8 @@ project:
       - name: "Email"
         link: "https://www.glegoux.com/contact/email"
         class_icon:  "fas fa-paper-plane"
-    link_status_availability:
-      link: "https://github.com/glegoux/jekyll-tech-blog/wiki/Configuration"
+    status_availability:
+      link: "https://status.glegoux.com"
     google_analytics_code: ""
   avatar:
     name: "Bob"
@@ -86,10 +86,9 @@ project:
       disqus_code: "glegoux-com"
     actions:
       source_code:
-        url: "https://raw.githubusercontent.com/glegoux/jekyll-blog/glegoux.com/src/_posts"
-        link: "https://raw.githubusercontent.com/glegoux/jekyll-tech-blog/main/src/_posts"
+        link: "https://raw.githubusercontent.com/glegoux/jekyll-blog/glegoux.com/src/_posts"
       resources:
-        link: "https://raw.githubusercontent.com/glegoux/jekyll-tech-blog/main/resources"
+        link: "https://github.com/glegoux/articles-glegoux-com/tree/master/articles"
       edit:
         link: "https://github.com/glegoux/jekyll-tech-blog/edit/glegoux.com/src/_posts/"
       issue:

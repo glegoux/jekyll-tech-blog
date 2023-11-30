@@ -8,6 +8,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+<<<<<<< HEAD
     - uses: actions/checkout@v4
     - name: Show environment
       run: |
@@ -72,3 +73,36 @@ jobs:
         git config user.name "GitHub Actions"
         git commit -m "Deploy static website" --author="GitHub Actions <>" --quiet
         git push
+=======
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1 # use .ruby-version
+      - name: Install project
+        run: |
+          echo "** Install ruby dependencies:"
+          make install
+      - name: Build static website with domain name
+        run: |
+          source ~/.profile
+          make build-prod
+          cp .github/files/* build/static-files/
+      - name: Deploy static website
+        run: |
+          git add --force build/static-files/
+          git stash --keep-index --include-untracked
+          git stash save -m "Deploy static website"
+          git fetch --all
+          git checkout gh-pages
+          git rm -rf --quiet .
+          git stash pop --quiet
+          mv build/static-files/* .
+          git add -A
+          # Use ssh to push to gh-pages branch
+          mkdir -p ~/.ssh/
+          echo "${{ secrets.PRIVATE_SSH_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          git config url."git@github.com:".insteadOf "https://github.com/"
+          git config user.email ""
+          git config user.name "GitHub Actions"
+          git commit -m "Deploy static website" --author="GitHub Actions <>" --quiet
+          git push
+>>>>>>> main
