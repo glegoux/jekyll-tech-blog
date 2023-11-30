@@ -37,7 +37,7 @@
   <div class="row links">
     <div class="col-12">
       <p>
-        {% if config_blog.status_availability.link %}
+        {% if config_blog.status_availability.link and config_blog.status_availability.link != '' %}
         <a class="link-strong" href="{{ config_blog.status_availability.link }}"
            title="See the status and availability">Status & Availability</a> |
         {% endif %}
