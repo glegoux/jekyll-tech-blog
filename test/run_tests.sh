@@ -16,7 +16,7 @@ run_test() {
   fi
 }
 
-project_dir="dest/"
+project_dir="./build/static-files"
 
 echo "Check:"
 run_test  "CSS files" "./test/checker/checker_css.sh \"${project_dir}\""

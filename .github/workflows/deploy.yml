@@ -24,17 +24,17 @@ jobs:
         run: |
           source ~/.profile
           make build-prod
-          cp .github/files/* dest/
+          cp .github/files/* build/static-files/
       - name: Deploy static website
         run: |
-          git add --force dest/
+          git add --force build/static-files/
           git stash --keep-index --include-untracked
           git stash save -m "Deploy static website"
           git fetch --all
           git checkout gh-pages
           git rm -rf --quiet .
           git stash pop --quiet
-          mv dest/* .
+          mv build/static-files/* .
           git add -A
           # Use ssh to push to gh-pages branch
           mkdir -p ~/.ssh/

@@ -2,7 +2,7 @@
 
 # Jekyll - web server
 _site/
-dest/
+build/
 .sass-cache
 .jekyll-metadata
 .jekyll-cache
