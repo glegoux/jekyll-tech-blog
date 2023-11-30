@@ -69,7 +69,7 @@ project:
         class_icon:  "fas fa-paper-plane"
     status_availability:
       link: "https://status.glegoux.com"
-    google_analytics_code: ""
+    google_analytics_code: "UA-102138582-1"
   avatar:
     name: "Bob"
     job: "Software Engineer"
