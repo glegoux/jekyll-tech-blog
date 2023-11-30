@@ -37,8 +37,8 @@
   <div class="row links">
     <div class="col-12">
       <p>
-        {% if config_blog.link_status_availability %}
-        <a class="link-strong" href="{{ config_blog.link_status_availability }}"
+        {% if config_blog.status_availability.link %}
+        <a class="link-strong" href="{{ config_blog.status_availability.link }}"
            title="See the status and availability">Status & Availability</a> |
         {% endif %}
         <a class="link-strong" href="/sitemap.xml" title="See the site map">Sitemap</a> |

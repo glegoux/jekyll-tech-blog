@@ -67,7 +67,7 @@ project:
       - name: "Email"
         link: "https://github.com/glegoux/jekyll-tech-blog/wiki/Configuration"
         class_icon:  "fas fa-paper-plane"
-    link_status_availability:
+    status_availability:
       link: "https://github.com/glegoux/jekyll-tech-blog/wiki/Configuration"
     google_analytics_code: ""
   avatar:
