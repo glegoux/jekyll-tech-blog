@@ -60,7 +60,7 @@
   /* Table of contents */
 
   #table-of-contents {
-    cursor:pointer;
+    cursor: pointer;
     margin-bottom: 1.5em;
   }
 
@@ -122,6 +122,15 @@
 
   /* Article browser */
 
+<<<<<<< HEAD
+=======
+  .article-browser-container {
+    display: flex;
+    align-items: center;
+    color: grey;
+  }
+
+>>>>>>> main
   .article-browser {
     a {
       color: grey !important;
