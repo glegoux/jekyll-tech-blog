@@ -1,6 +1,6 @@
 # See https://git-scm.com/docs/gitignore
 
-# Jekyll - web server
+# Jekyll - static site generator
 _site/
 build/
 .sass-cache
