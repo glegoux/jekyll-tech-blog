@@ -1,5 +1,4 @@
 {%- assign config_avatar = site.project.avatar -%}
-{%- assign links = site.data.project.links -%}
 <div class="text-center">
     {%- assign avatar_path = "/_static/config/img/avatar.png" -%}
     {%- assign avatar_path_exist = site.static_files | where: "path", avatar_path | first -%}
@@ -20,23 +19,23 @@
     </span>
     <br>
     {%- endif -%}
-    {%- if config_avatar.links.github and config_avatar.links.github != '' -%}
-    <a href="{{ config_avatar.links.github }}" aria-label="GitHub">
+    {%- if config_avatar.github.link and config_avatar.github.link != '' -%}
+    <a href="{{ config_avatar.github.link }}" aria-label="GitHub">
         <img class="notranslate" width="25" height="25" src="/_core/static/img/social/github.png" title="GitHub" alt="GitHub"/>
     </a>
     {%- endif -%}
-    {%- if config_avatar.links.linkedin and config_avatar.links.linkedin != '' -%}
-    <a href="{{ config_avatar.links.linkedin }}" aria-label="LinkedIn">
+    {%- if config_avatar.linkedin.link and config_avatar.linkedin.link != '' -%}
+    <a href="{{ config_avatar.linkedin.link }}" aria-label="LinkedIn">
         <img class="notranslate" width="25" height="25" src="/_core/static/img/social/linkedin.png" title="LinkedIn" alt="LinkedIn"/>
     </a>
     {%- endif -%}
-    {%- if config_avatar.links.stackoverflow and config_avatar.links.stackoverflow != '' -%}
-    <a href="{{ config_avatar.links.stackoverflow }}" aria-label="Stack Overflow">
+    {%- if config_avatar.stackoverflow.link and config_avatar.stackoverflow.link != '' -%}
+    <a href="{{ config_avatar.stackoverflow.link }}" aria-label="Stack Overflow">
         <img class="notranslate" width="25" height="25" src="/_core/static/img/social/stackoverflow.png" title="Stack Overflow" alt="Stack Overflow"/>
     </a>
     {%- endif -%}
-    {%- if config_avatar.links.medium and config_avatar.links.medium != '' -%}
-    <a href="{{ config_avatar.links.medium }}" aria-label="Medium">
+    {%- if config_avatar.medium.link and config_avatar.medium.link != '' -%}
+    <a href="{{ config_avatar.medium.link }}" aria-label="Medium">
       <img class="notranslate" width="25" height="25" src="/_core/static/img/social/medium.png" title="Medium" alt="Medium"/>
     </a>
     {%- endif -%}

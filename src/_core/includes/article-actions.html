@@ -5,41 +5,41 @@
       <i class="fas fa-print"></i>
       <span class="d-none d-md-inline">Print</span>
     </li>
-    {%- if config_article.actions.source_code.url -%}
+    {%- if config_article.actions.source_code.link -%}
     <li title="See the source code of this article">
-      <a href="{{ config_article.actions.source_code.url }}/{{ article_id }}.md">
+      <a href="{{ config_article.actions.source_code.link }}/{{ article_id }}.md">
         <i class="far fa-file-code"></i>
         <span class="d-none d-md-inline">Source</span>
       </a>
     </li>
     {%- endif -%}
-    {%- if config_article.actions.resources.url -%}
+    {%- if config_article.actions.resources.link -%}
     <li title="See the resources of this article">
-      <a href="{{ config_article.actions.resources.url }}/{{ article_id }}">
+      <a href="{{ config_article.actions.resources.link }}/{{ article_id }}">
         <i class="fas fa-code-branch"></i>
         <span class="d-none d-md-inline">Resources</span>
       </a>
     </li>
     {%- endif -%}
-    {%- if config_article.actions.edit.url -%}
+    {%- if config_article.actions.edit.link -%}
     <li title="Edit this article (if you have permission)">
-      <a href="{{ config_article.actions.edit.url }}/{{ article_id }}.md">
+      <a href="{{ config_article.actions.edit.link }}/{{ article_id }}.md">
         <i class="fas fa-edit"></i>
         <span class="d-none d-md-inline">Edit</span>
       </a>
     </li>
     {%- endif -%}
-    {%- if config_article.actions.issue.url -%}
+    {%- if config_article.actions.issue.link -%}
     <li title="Report an issue on this article">
-      <a href="{{ config_article.actions.issue.url }}">
+      <a href="{{ config_article.actions.issue.link }}">
         <i class="fas fa-exclamation-circle"></i>
         <span class="d-none d-md-inline">Issue</span>
       </a>
     </li>
     {%- endif -%}
-    {%- if config_article.actions.help.url -%}
+    {%- if config_article.actions.help.link -%}
     <li title="See help">
-      <a href="{{ config_article.actions.help.url }}">
+      <a href="{{ config_article.actions.help.link }}">
         <i class="fa fa-question"></i>
         <span class="d-none d-md-inline">Help</span>
       </a>

@@ -67,30 +67,34 @@ project:
       - name: "Email"
         link: "https://github.com/glegoux/jekyll-tech-blog/wiki/Configuration"
         class_icon:  "fas fa-paper-plane"
-    link_status_availability: "https://github.com/glegoux/jekyll-tech-blog/wiki/Configuration"
+    link_status_availability:
+      link: "https://github.com/glegoux/jekyll-tech-blog/wiki/Configuration"
     google_analytics_code: ""
   avatar:
     name: "Bob"
     job: "Software Engineer"
-    links:
-      github: "https://github.com/glegoux/jekyll-tech-blog/wiki/Configuration"
-      linkedin: "https://github.com/glegoux/jekyll-tech-blog/wiki/Configuration"
-      stackoverflow: "https://github.com/glegoux/jekyll-tech-blog/wiki/Configuration"
-      medium: "https://github.com/glegoux/jekyll-tech-blog/wiki/Configuration"
+    github:
+      link: "https://github.com/glegoux/jekyll-tech-blog/wiki/Configuration"
+    linkedin:
+      link: "https://github.com/glegoux/jekyll-tech-blog/wiki/Configuration"
+    stackoverflow:
+      link: "https://github.com/glegoux/jekyll-tech-blog/wiki/Configuration"
+    medium:
+      link: "https://github.com/glegoux/jekyll-tech-blog/wiki/Configuration"
   article:
     comment:
       disqus_code: ""
     actions:
       source_code:
-        url: "https://raw.githubusercontent.com/glegoux/jekyll-tech-blog/main/src/_posts"
+        link: "https://raw.githubusercontent.com/glegoux/jekyll-tech-blog/main/src/_posts"
       resources:
-        url: "https://raw.githubusercontent.com/glegoux/jekyll-tech-blog/main/resources"
+        link: "https://raw.githubusercontent.com/glegoux/jekyll-tech-blog/main/resources"
       issue:
-        url: "https://github.com/glegoux/jekyll-tech-blog/issues"
+        link: "https://github.com/glegoux/jekyll-tech-blog/issues"
       edit:
-        url: "https://github.com/glegoux/jekyll-tech-blog/edit/main/src/_posts/"
+        link: "https://github.com/glegoux/jekyll-tech-blog/edit/main/src/_posts/"
       help:
-        url: "https://github.com/glegoux/jekyll-tech-blog/wiki/Help"
+        link: "https://github.com/glegoux/jekyll-tech-blog/wiki/Help"
     attachment:
       url: "https://raw.githubusercontent.com/glegoux/jekyll-tech-blog/main/resources"
       image:
@@ -102,10 +106,12 @@ project:
         lastname: ""
         job: "Software Engineer"
         company: ""
-        follow_link: "https://github.com/glegoux/jekyll-tech-blog/wiki/Configuration"
+        follow:
+          link: "https://github.com/glegoux/jekyll-tech-blog/wiki/Configuration"
       glegoux:
         firstname: "Gilles"
         lastname: "LEGOUX"
         job: "Software Engineer"
         company: ""
-        follow_link: "https://glegoux.com"
+        follow:
+          link: "https://glegoux.com"
