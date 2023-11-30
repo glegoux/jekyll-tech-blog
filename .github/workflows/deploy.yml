@@ -36,7 +36,7 @@ jobs:
       run: |
         source ~/.profile
         make build-prod
-        cp .github/files/* dest/
+        cp .github/files/* ./build/static-files/
     - uses: actions/setup-node@v2
       with:
         node-version: '16'
