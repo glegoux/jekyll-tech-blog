@@ -76,13 +76,14 @@ layout: default
                 {{ page.time_reading_minutes }} min
               </span>
             </li>
+            {%- assign n_authors = page.authors | size -%}
             {%- if n_authors > 0 -%}
             <li title="Author{%- if n_authors > 1 -%}s{%- endif %} of this article">
               <i class="far fa-user"></i>
               <span>
                 {%- for author_name in page.authors -%}
                   {%- assign author = config_article.authors[author_name] -%}
-                  <a class="link-strong" href="{{ author.follow_link }}" title="Follow this author">
+                  <a class="link-strong" href="{{ author.follow.link }}" title="Follow this author">
                     {{ author_name }}
                   </a>
                   {%- unless forloop.last -%},  {%- endunless -%}
