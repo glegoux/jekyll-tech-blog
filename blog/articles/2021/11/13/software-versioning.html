@@ -246,20 +246,31 @@ window.MathJax = {
   <!-- Article metadata -->
   <div class="article-metadata">
 
-    <!-- Article browser -->
-    <span class="article-browser">
-      <a href="/blog/articles" title="See all articles">
-        <i class="fas fa-home"></i>
+    <div class="row">
+      <div class="col-8 text-left">
+        <!-- Article category -->
+        <a href="/blog/articles" title="See all articles">
+          <i class="fa fa-newspaper"></i>
+        </a>
         <span>»</span>
-      </a>
-    </span>
+        <span class="article-category text-left">
+        <ul>
+          <li title="Category of this article">Development</li>
+        </ul>
+      </span>
+      </div>
+      <!-- Article browser -->
+      <div class="col-4 text-right">
+        <div class="article-browser">
+<a href="/blog/articles/2021/04/20/time-management.html" title="See the previous article">
+    <i class="fa fa-arrow-left"></i>
+  </a><a href="/blog/articles/2021/11/23/secret-santa.html" title="See the next article">
+    <i class="fa fa-arrow-right"></i>
+  </a>
+</div>
 
-    <!-- Article category -->
-    <span class="article-category">
-      <ul>
-        <li title="Category of this article">Development</li>
-      </ul>
-    </span>
+      </div>
+    </div>
 
     <!-- Article title -->
     <div class="article-title" title="Title of this article">
@@ -269,6 +280,30 @@ window.MathJax = {
     <!-- Article description -->
     <div class="article-description" title="Description of this article">
       How is assigned a version to a software?
+    </div>
+
+    <!-- Socials sharing -->
+    <div>
+      <div class="social-sharing">
+  <ul>
+    <li title="Share page on LinkedIn">
+      <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://glegoux.com/blog/articles/2021/11/13/software-versioning.html&amp;title=Software%20versioning&amp;summary=How%20is%20assigned%20a%20version%20to%20a%20software?&amp;source=https://glegoux.com">
+        <i class="fab fa-linkedin" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li title="Share page on Twitter">
+      <a href="https://twitter.com/intent/tweet/?text=Software%20versioning%20-%20How%20is%20assigned%20a%20version%20to%20a%20software?&amp;url=https://glegoux.com/blog/articles/2021/11/13/software-versioning.html">
+        <i class="fab fa-twitter" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li title="Share page on Facebook">
+      <a href="https://facebook.com/sharer/sharer.php?u=https://glegoux.com/blog/articles/2021/11/13/software-versioning.html">
+        <i class="fab fa-facebook" aria-hidden="true"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
     </div>
 
     <div class="row">
@@ -307,14 +342,14 @@ window.MathJax = {
     <hr class="sep no-print">
 
     <div class="row">
-      <div class="col-2 text-left">
+      <div class="col-4 text-left">
         <!-- Article table of contents -->
         <div id="table-of-contents" class="no-print" title="See or hide the table of contents">
           <i class="fas fa-list-ul"></i>
           <span class="d-none d-md-inline">Table of contents</span>
         </div>
       </div>
-      <div class="col-10 text-right">
+      <div class="col-8 text-right">
         <!-- Article actions -->
         <div class="article-actions no-print">
   <ul>
@@ -516,28 +551,6 @@ versions would point to an identical state of the software.</p>
   </ul>
 </div>
 
-<style type="text/css">
-  .social-sharing {
-    font-size: 1.3em;
-    width: 100%;
-    color: black;
-  }
-
-  .social-sharing a {
-    color: black !important;
-  }
-
-  .social-sharing ul {
-    display: inline;
-  }
-
-  .social-sharing ul li {
-    margin-left: 0.5em;
-    font-size: 1em;
-    display: inline;
-  }
-</style>
-
       </div>
       <!-- Article license -->
       <div class="col-6">
@@ -558,17 +571,18 @@ versions would point to an identical state of the software.</p>
 
     <div class="row">
       <!-- Article browser -->
-      <div class="col-2 article-browser text-left">
-        <a href="/blog/articles" title="See all articles">
-          <i class="fa fa-home"></i>
-        </a><a href="/blog/articles/2021/04/20/time-management.html" title="See the previous article">
-          <i class="fa fa-arrow-left"></i>
-        </a><a href="/blog/articles/2021/11/23/secret-santa.html" title="See the next article">
-          <i class="fa fa-arrow-right"></i>
-        </a>
+      <div class="col-4 text-left">
+        <div class="article-browser">
+<a href="/blog/articles/2021/04/20/time-management.html" title="See the previous article">
+    <i class="fa fa-arrow-left"></i>
+  </a><a href="/blog/articles/2021/11/23/secret-santa.html" title="See the next article">
+    <i class="fa fa-arrow-right"></i>
+  </a>
 </div>
+
+      </div>
       <!-- Article actions -->
-      <div class="col-10 text-right">
+      <div class="col-8 text-right">
         <div class="article-actions no-print">
   <ul>
     <li title="Print this article" style="cursor: pointer" onclick="window.print();">
@@ -660,77 +674,35 @@ versions would point to an identical state of the software.</p>
   <h5>Also read</h5>
   <div class="row">
 <div class="col-xs-12 col-md-6 col-lg-4">
-<a href="/blog/articles/2019/11/29/gafa-vs-batx.html" title="Read this article" style="display: block">
+<a href="/blog/articles/2019/01/21/getting-started.html" title="Read this article" style="display: block">
   <div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2019-11-29-gafa-vs-batx.jpg" alt="2019-11-29-gafa-vs-batx">
+        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2019-01-21-getting-started.jpg" alt="2019-01-21-getting-started">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          Gafa vs Batx
+          Getting started
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          What is the difference?
+          How to write articles on this blog from an easy-to-use and rich syntax?
         </div>
 <!-- Article categories -->
         <div class="article-category">
           <ul>
-            <li>Business</li>
+            <li>Methodology</li>
           </ul>
         </div>
 <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>November 29, 2019</span>
-        </div>
-<!-- Article reading time -->
-        <div class="reading-time">
-          <i class="far fa-clock"></i>
-          <span>5 min</span>
-        </div>
-</div>
-
-    </div>
-  </div>
-</a>
-</div>
-<div class="col-xs-12 col-md-6 col-lg-4">
-<a href="/blog/articles/2021/11/13/software-versioning.html" title="Read this article" style="display: block">
-  <div class="article-card-container">
-    <!-- Article metadata -->
-    <div class="article-card">
-<!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2021-11-13-software-versioning.jpg" alt="2021-11-13-software-versioning">
-      </div>
-
-      <!-- Article details -->
-      <div class="article-details">
-        <!-- Article title -->
-        <div class="article-title">
-          Software versioning
-        </div>
-
-        <!-- Article description -->
-        <div class="article-description">
-          How is assigned a version to a software?
-        </div>
-<!-- Article categories -->
-        <div class="article-category">
-          <ul>
-            <li>Development</li>
-          </ul>
-        </div>
-<!-- Article publication date -->
-        <div class="date">
-          <i class="far fa-calendar-alt"></i>
-          <span>November 13, 2021</span>
+          <span>January 21, 2019</span>
         </div>
 <!-- Article reading time -->
         <div class="reading-time">
@@ -744,24 +716,66 @@ versions would point to an identical state of the software.</p>
 </a>
 </div>
 <div class="col-xs-12 col-md-6 col-lg-4">
-<a href="/blog/articles/2020/05/15/gnu-privacy-guard.html" title="Read this article" style="display: block">
+<a href="/blog/articles/2020/08/24/geo-location.html" title="Read this article" style="display: block">
   <div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2020-05-15-gnu-privacy-guard.jpg" alt="2020-05-15-gnu-privacy-guard">
+        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2020-08-24-geo-location.jpg" alt="2020-08-24-geo-location">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          GNU privacy guard
+          Geo-location
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          How to prove its identity and encrypt its communication?
+          How to compute the distance between 2 points with given latitude and longitude?
+        </div>
+<!-- Article categories -->
+        <div class="article-category">
+          <ul>
+            <li>Applied Mathematics</li>
+          </ul>
+        </div>
+<!-- Article publication date -->
+        <div class="date">
+          <i class="far fa-calendar-alt"></i>
+          <span>August 24, 2020</span>
+        </div>
+<!-- Article reading time -->
+        <div class="reading-time">
+          <i class="far fa-clock"></i>
+          <span>10 min</span>
+        </div>
+</div>
+
+    </div>
+  </div>
+</a>
+</div>
+<div class="col-xs-12 col-md-6 col-lg-4">
+<a href="/blog/articles/2019/03/01/access-to-a-computer-from-usb-key.html" title="Read this article" style="display: block">
+  <div class="article-card-container">
+    <!-- Article metadata -->
+    <div class="article-card">
+<!-- Article cover --><div class="article-cover">
+        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2019-03-01-access-to-a-computer-from-usb-key.jpg" alt="2019-03-01-access-to-a-computer-from-usb-key">
+      </div>
+
+      <!-- Article details -->
+      <div class="article-details">
+        <!-- Article title -->
+        <div class="article-title">
+          Access to a computer from USB key
+        </div>
+
+        <!-- Article description -->
+        <div class="article-description">
+          Somebody with USB key can take control of your computer
         </div>
 <!-- Article categories -->
         <div class="article-category">
@@ -772,7 +786,7 @@ versions would point to an identical state of the software.</p>
 <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>May 15, 2020</span>
+          <span>March 01, 2019</span>
         </div>
 <!-- Article reading time -->
         <div class="reading-time">

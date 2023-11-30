@@ -246,20 +246,31 @@ window.MathJax = {
   <!-- Article metadata -->
   <div class="article-metadata">
 
-    <!-- Article browser -->
-    <span class="article-browser">
-      <a href="/blog/articles" title="See all articles">
-        <i class="fas fa-home"></i>
+    <div class="row">
+      <div class="col-8 text-left">
+        <!-- Article category -->
+        <a href="/blog/articles" title="See all articles">
+          <i class="fa fa-newspaper"></i>
+        </a>
         <span>»</span>
-      </a>
-    </span>
+        <span class="article-category text-left">
+        <ul>
+          <li title="Category of this article">Development</li>
+        </ul>
+      </span>
+      </div>
+      <!-- Article browser -->
+      <div class="col-4 text-right">
+        <div class="article-browser">
+<a href="/blog/articles/2019/11/29/gafa-vs-batx.html" title="See the previous article">
+    <i class="fa fa-arrow-left"></i>
+  </a><a href="/blog/articles/2020/05/04/java-ecosystem.html" title="See the next article">
+    <i class="fa fa-arrow-right"></i>
+  </a>
+</div>
 
-    <!-- Article category -->
-    <span class="article-category">
-      <ul>
-        <li title="Category of this article">Development</li>
-      </ul>
-    </span>
+      </div>
+    </div>
 
     <!-- Article title -->
     <div class="article-title" title="Title of this article">
@@ -269,6 +280,30 @@ window.MathJax = {
     <!-- Article description -->
     <div class="article-description" title="Description of this article">
       Why isolate its development environment?
+    </div>
+
+    <!-- Socials sharing -->
+    <div>
+      <div class="social-sharing">
+  <ul>
+    <li title="Share page on LinkedIn">
+      <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://glegoux.com/blog/articles/2020/03/04/development-environment.html&amp;title=Development%20environment&amp;summary=Why%20isolate%20its%20development%20environment?&amp;source=https://glegoux.com">
+        <i class="fab fa-linkedin" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li title="Share page on Twitter">
+      <a href="https://twitter.com/intent/tweet/?text=Development%20environment%20-%20Why%20isolate%20its%20development%20environment?&amp;url=https://glegoux.com/blog/articles/2020/03/04/development-environment.html">
+        <i class="fab fa-twitter" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li title="Share page on Facebook">
+      <a href="https://facebook.com/sharer/sharer.php?u=https://glegoux.com/blog/articles/2020/03/04/development-environment.html">
+        <i class="fab fa-facebook" aria-hidden="true"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
     </div>
 
     <div class="row">
@@ -307,14 +342,14 @@ window.MathJax = {
     <hr class="sep no-print">
 
     <div class="row">
-      <div class="col-2 text-left">
+      <div class="col-4 text-left">
         <!-- Article table of contents -->
         <div id="table-of-contents" class="no-print" title="See or hide the table of contents">
           <i class="fas fa-list-ul"></i>
           <span class="d-none d-md-inline">Table of contents</span>
         </div>
       </div>
-      <div class="col-10 text-right">
+      <div class="col-8 text-right">
         <!-- Article actions -->
         <div class="article-actions no-print">
   <ul>
@@ -447,28 +482,6 @@ reason, these environments should be isolated and partitioned with a segregation
   </ul>
 </div>
 
-<style type="text/css">
-  .social-sharing {
-    font-size: 1.3em;
-    width: 100%;
-    color: black;
-  }
-
-  .social-sharing a {
-    color: black !important;
-  }
-
-  .social-sharing ul {
-    display: inline;
-  }
-
-  .social-sharing ul li {
-    margin-left: 0.5em;
-    font-size: 1em;
-    display: inline;
-  }
-</style>
-
       </div>
       <!-- Article license -->
       <div class="col-6">
@@ -489,17 +502,18 @@ reason, these environments should be isolated and partitioned with a segregation
 
     <div class="row">
       <!-- Article browser -->
-      <div class="col-2 article-browser text-left">
-        <a href="/blog/articles" title="See all articles">
-          <i class="fa fa-home"></i>
-        </a><a href="/blog/articles/2019/11/29/gafa-vs-batx.html" title="See the previous article">
-          <i class="fa fa-arrow-left"></i>
-        </a><a href="/blog/articles/2020/05/04/java-ecosystem.html" title="See the next article">
-          <i class="fa fa-arrow-right"></i>
-        </a>
+      <div class="col-4 text-left">
+        <div class="article-browser">
+<a href="/blog/articles/2019/11/29/gafa-vs-batx.html" title="See the previous article">
+    <i class="fa fa-arrow-left"></i>
+  </a><a href="/blog/articles/2020/05/04/java-ecosystem.html" title="See the next article">
+    <i class="fa fa-arrow-right"></i>
+  </a>
 </div>
+
+      </div>
       <!-- Article actions -->
-      <div class="col-10 text-right">
+      <div class="col-8 text-right">
         <div class="article-actions no-print">
   <ul>
     <li title="Print this article" style="cursor: pointer" onclick="window.print();">
@@ -591,35 +605,35 @@ reason, these environments should be isolated and partitioned with a segregation
   <h5>Also read</h5>
   <div class="row">
 <div class="col-xs-12 col-md-6 col-lg-4">
-<a href="/blog/articles/2021/11/23/secret-santa.html" title="Read this article" style="display: block">
+<a href="/blog/articles/2020/05/15/gnu-privacy-guard.html" title="Read this article" style="display: block">
   <div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2021-11-23-secret-santa.jpg" alt="2021-11-23-secret-santa">
+        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2020-05-15-gnu-privacy-guard.jpg" alt="2020-05-15-gnu-privacy-guard">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          Secret Santa
+          GNU privacy guard
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          What can be the applied mathematics behind a secret santa?
+          How to prove its identity and encrypt its communication?
         </div>
 <!-- Article categories -->
         <div class="article-category">
           <ul>
-            <li>Applied Mathematics</li>
+            <li>Security</li>
           </ul>
         </div>
 <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>November 23, 2021</span>
+          <span>May 15, 2020</span>
         </div>
 <!-- Article reading time -->
         <div class="reading-time">
@@ -633,35 +647,35 @@ reason, these environments should be isolated and partitioned with a segregation
 </a>
 </div>
 <div class="col-xs-12 col-md-6 col-lg-4">
-<a href="/blog/articles/2019/03/23/kerberos-in-5-minutes.html" title="Read this article" style="display: block">
+<a href="/blog/articles/2019/02/14/how-to-quote-sources.html" title="Read this article" style="display: block">
   <div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2019-03-23-kerberos-in-5-minutes.jpg" alt="2019-03-23-kerberos-in-5-minutes">
+        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2019-02-14-how-to-quote-sources.jpg" alt="2019-02-14-how-to-quote-sources">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          Kerberos in 5 minutes
+          How to quote sources
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          Kerberos is an authentication protocol for trusted hosts on untrusted networks.
+          Current standards and rules to respect in order to quote sources.
         </div>
 <!-- Article categories -->
         <div class="article-category">
           <ul>
-            <li>Security</li>
+            <li>Methodology</li>
           </ul>
         </div>
 <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>March 23, 2019</span>
+          <span>February 14, 2019</span>
         </div>
 <!-- Article reading time -->
         <div class="reading-time">
@@ -675,40 +689,40 @@ reason, these environments should be isolated and partitioned with a segregation
 </a>
 </div>
 <div class="col-xs-12 col-md-6 col-lg-4">
-<a href="/blog/articles/2019/03/01/access-to-a-computer-from-usb-key.html" title="Read this article" style="display: block">
+<a href="/blog/articles/2019/05/24/java-champion.html" title="Read this article" style="display: block">
   <div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2019-03-01-access-to-a-computer-from-usb-key.jpg" alt="2019-03-01-access-to-a-computer-from-usb-key">
+        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2019-05-24-java-champion.jpg" alt="2019-05-24-java-champion">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          Access to a computer from USB key
+          Java champion
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          Somebody with USB key can take control of your computer
+          How to become a Java champion?
         </div>
 <!-- Article categories -->
         <div class="article-category">
           <ul>
-            <li>Security</li>
+            <li>Development</li>
           </ul>
         </div>
 <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>March 01, 2019</span>
+          <span>May 24, 2019</span>
         </div>
 <!-- Article reading time -->
         <div class="reading-time">
           <i class="far fa-clock"></i>
-          <span>5 min</span>
+          <span>1 min</span>
         </div>
 </div>
 

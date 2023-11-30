@@ -246,20 +246,31 @@ window.MathJax = {
   <!-- Article metadata -->
   <div class="article-metadata">
 
-    <!-- Article browser -->
-    <span class="article-browser">
-      <a href="/blog/articles" title="See all articles">
-        <i class="fas fa-home"></i>
+    <div class="row">
+      <div class="col-8 text-left">
+        <!-- Article category -->
+        <a href="/blog/articles" title="See all articles">
+          <i class="fa fa-newspaper"></i>
+        </a>
         <span>»</span>
-      </a>
-    </span>
+        <span class="article-category text-left">
+        <ul>
+          <li title="Category of this article">Web</li>
+        </ul>
+      </span>
+      </div>
+      <!-- Article browser -->
+      <div class="col-4 text-right">
+        <div class="article-browser">
+<a href="/blog/articles/2019/03/23/kerberos-in-5-minutes.html" title="See the previous article">
+    <i class="fa fa-arrow-left"></i>
+  </a><a href="/blog/articles/2019/05/24/java-champion.html" title="See the next article">
+    <i class="fa fa-arrow-right"></i>
+  </a>
+</div>
 
-    <!-- Article category -->
-    <span class="article-category">
-      <ul>
-        <li title="Category of this article">Web</li>
-      </ul>
-    </span>
+      </div>
+    </div>
 
     <!-- Article title -->
     <div class="article-title" title="Title of this article">
@@ -269,6 +280,30 @@ window.MathJax = {
     <!-- Article description -->
     <div class="article-description" title="Description of this article">
       Lighthouse is an open-source, automated tool for improving the quality of web pages.
+    </div>
+
+    <!-- Socials sharing -->
+    <div>
+      <div class="social-sharing">
+  <ul>
+    <li title="Share page on LinkedIn">
+      <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://glegoux.com/blog/articles/2019/04/01/lighthouse.html&amp;title=Lighthouse&amp;summary=Lighthouse%20is%20an%20open-source,%20automated%20tool%20for%20improving%20the%20quality%20of%20web%20pages.&amp;source=https://glegoux.com">
+        <i class="fab fa-linkedin" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li title="Share page on Twitter">
+      <a href="https://twitter.com/intent/tweet/?text=Lighthouse%20-%20Lighthouse%20is%20an%20open-source,%20automated%20tool%20for%20improving%20the%20quality%20of%20web%20pages.&amp;url=https://glegoux.com/blog/articles/2019/04/01/lighthouse.html">
+        <i class="fab fa-twitter" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li title="Share page on Facebook">
+      <a href="https://facebook.com/sharer/sharer.php?u=https://glegoux.com/blog/articles/2019/04/01/lighthouse.html">
+        <i class="fab fa-facebook" aria-hidden="true"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
     </div>
 
     <div class="row">
@@ -307,14 +342,14 @@ window.MathJax = {
     <hr class="sep no-print">
 
     <div class="row">
-      <div class="col-2 text-left">
+      <div class="col-4 text-left">
         <!-- Article table of contents -->
         <div id="table-of-contents" class="no-print" title="See or hide the table of contents">
           <i class="fas fa-list-ul"></i>
           <span class="d-none d-md-inline">Table of contents</span>
         </div>
       </div>
-      <div class="col-10 text-right">
+      <div class="col-8 text-right">
         <!-- Article actions -->
         <div class="article-actions no-print">
   <ul>
@@ -619,28 +654,6 @@ https://glegoux.com/contact/email/
   </ul>
 </div>
 
-<style type="text/css">
-  .social-sharing {
-    font-size: 1.3em;
-    width: 100%;
-    color: black;
-  }
-
-  .social-sharing a {
-    color: black !important;
-  }
-
-  .social-sharing ul {
-    display: inline;
-  }
-
-  .social-sharing ul li {
-    margin-left: 0.5em;
-    font-size: 1em;
-    display: inline;
-  }
-</style>
-
       </div>
       <!-- Article license -->
       <div class="col-6">
@@ -661,17 +674,18 @@ https://glegoux.com/contact/email/
 
     <div class="row">
       <!-- Article browser -->
-      <div class="col-2 article-browser text-left">
-        <a href="/blog/articles" title="See all articles">
-          <i class="fa fa-home"></i>
-        </a><a href="/blog/articles/2019/03/23/kerberos-in-5-minutes.html" title="See the previous article">
-          <i class="fa fa-arrow-left"></i>
-        </a><a href="/blog/articles/2019/05/24/java-champion.html" title="See the next article">
-          <i class="fa fa-arrow-right"></i>
-        </a>
+      <div class="col-4 text-left">
+        <div class="article-browser">
+<a href="/blog/articles/2019/03/23/kerberos-in-5-minutes.html" title="See the previous article">
+    <i class="fa fa-arrow-left"></i>
+  </a><a href="/blog/articles/2019/05/24/java-champion.html" title="See the next article">
+    <i class="fa fa-arrow-right"></i>
+  </a>
 </div>
+
+      </div>
       <!-- Article actions -->
-      <div class="col-10 text-right">
+      <div class="col-8 text-right">
         <div class="article-actions no-print">
   <ul>
     <li title="Print this article" style="cursor: pointer" onclick="window.print();">
@@ -763,35 +777,77 @@ https://glegoux.com/contact/email/
   <h5>Also read</h5>
   <div class="row">
 <div class="col-xs-12 col-md-6 col-lg-4">
-<a href="/blog/articles/2020/05/15/gnu-privacy-guard.html" title="Read this article" style="display: block">
+<a href="/blog/articles/2019/05/24/java-champion.html" title="Read this article" style="display: block">
   <div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2020-05-15-gnu-privacy-guard.jpg" alt="2020-05-15-gnu-privacy-guard">
+        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2019-05-24-java-champion.jpg" alt="2019-05-24-java-champion">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          GNU privacy guard
+          Java champion
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          How to prove its identity and encrypt its communication?
+          How to become a Java champion?
         </div>
 <!-- Article categories -->
         <div class="article-category">
           <ul>
-            <li>Security</li>
+            <li>Development</li>
           </ul>
         </div>
 <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>May 15, 2020</span>
+          <span>May 24, 2019</span>
+        </div>
+<!-- Article reading time -->
+        <div class="reading-time">
+          <i class="far fa-clock"></i>
+          <span>1 min</span>
+        </div>
+</div>
+
+    </div>
+  </div>
+</a>
+</div>
+<div class="col-xs-12 col-md-6 col-lg-4">
+<a href="/blog/articles/2021/11/23/secret-santa.html" title="Read this article" style="display: block">
+  <div class="article-card-container">
+    <!-- Article metadata -->
+    <div class="article-card">
+<!-- Article cover --><div class="article-cover">
+        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2021-11-23-secret-santa.jpg" alt="2021-11-23-secret-santa">
+      </div>
+
+      <!-- Article details -->
+      <div class="article-details">
+        <!-- Article title -->
+        <div class="article-title">
+          Secret Santa
+        </div>
+
+        <!-- Article description -->
+        <div class="article-description">
+          What can be the applied mathematics behind a secret santa?
+        </div>
+<!-- Article categories -->
+        <div class="article-category">
+          <ul>
+            <li>Applied Mathematics</li>
+          </ul>
+        </div>
+<!-- Article publication date -->
+        <div class="date">
+          <i class="far fa-calendar-alt"></i>
+          <span>November 23, 2021</span>
         </div>
 <!-- Article reading time -->
         <div class="reading-time">
@@ -805,77 +861,35 @@ https://glegoux.com/contact/email/
 </a>
 </div>
 <div class="col-xs-12 col-md-6 col-lg-4">
-<a href="/blog/articles/2019/11/29/gafa-vs-batx.html" title="Read this article" style="display: block">
+<a href="/blog/articles/2021/11/13/software-versioning.html" title="Read this article" style="display: block">
   <div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2019-11-29-gafa-vs-batx.jpg" alt="2019-11-29-gafa-vs-batx">
+        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2021-11-13-software-versioning.jpg" alt="2021-11-13-software-versioning">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          Gafa vs Batx
+          Software versioning
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          What is the difference?
+          How is assigned a version to a software?
         </div>
 <!-- Article categories -->
         <div class="article-category">
           <ul>
-            <li>Business</li>
+            <li>Development</li>
           </ul>
         </div>
 <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>November 29, 2019</span>
-        </div>
-<!-- Article reading time -->
-        <div class="reading-time">
-          <i class="far fa-clock"></i>
-          <span>5 min</span>
-        </div>
-</div>
-
-    </div>
-  </div>
-</a>
-</div>
-<div class="col-xs-12 col-md-6 col-lg-4">
-<a href="/blog/articles/2019/04/01/lighthouse.html" title="Read this article" style="display: block">
-  <div class="article-card-container">
-    <!-- Article metadata -->
-    <div class="article-card">
-<!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2019-04-01-lighthouse.jpg" alt="2019-04-01-lighthouse">
-      </div>
-
-      <!-- Article details -->
-      <div class="article-details">
-        <!-- Article title -->
-        <div class="article-title">
-          Lighthouse
-        </div>
-
-        <!-- Article description -->
-        <div class="article-description">
-          Lighthouse is an open-source, automated tool for improving the quality of web pages.
-        </div>
-<!-- Article categories -->
-        <div class="article-category">
-          <ul>
-            <li>Web</li>
-          </ul>
-        </div>
-<!-- Article publication date -->
-        <div class="date">
-          <i class="far fa-calendar-alt"></i>
-          <span>April 01, 2019</span>
+          <span>November 13, 2021</span>
         </div>
 <!-- Article reading time -->
         <div class="reading-time">

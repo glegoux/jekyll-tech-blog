@@ -246,20 +246,31 @@ window.MathJax = {
   <!-- Article metadata -->
   <div class="article-metadata">
 
-    <!-- Article browser -->
-    <span class="article-browser">
-      <a href="/blog/articles" title="See all articles">
-        <i class="fas fa-home"></i>
+    <div class="row">
+      <div class="col-8 text-left">
+        <!-- Article category -->
+        <a href="/blog/articles" title="See all articles">
+          <i class="fa fa-newspaper"></i>
+        </a>
         <span>»</span>
-      </a>
-    </span>
+        <span class="article-category text-left">
+        <ul>
+          <li title="Category of this article">Web</li>
+        </ul>
+      </span>
+      </div>
+      <!-- Article browser -->
+      <div class="col-4 text-right">
+        <div class="article-browser">
+<a href="/blog/articles/2019/05/24/java-champion.html" title="See the previous article">
+    <i class="fa fa-arrow-left"></i>
+  </a><a href="/blog/articles/2019/11/29/gafa-vs-batx.html" title="See the next article">
+    <i class="fa fa-arrow-right"></i>
+  </a>
+</div>
 
-    <!-- Article category -->
-    <span class="article-category">
-      <ul>
-        <li title="Category of this article">Web</li>
-      </ul>
-    </span>
+      </div>
+    </div>
 
     <!-- Article title -->
     <div class="article-title" title="Title of this article">
@@ -269,6 +280,30 @@ window.MathJax = {
     <!-- Article description -->
     <div class="article-description" title="Description of this article">
       How to know for which routers a HTTP request browses?
+    </div>
+
+    <!-- Socials sharing -->
+    <div>
+      <div class="social-sharing">
+  <ul>
+    <li title="Share page on LinkedIn">
+      <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://glegoux.com/blog/articles/2019/07/14/trace-a-request-path.html&amp;title=Trace%20a%20request%20path&amp;summary=How%20to%20know%20for%20which%20routers%20a%20HTTP%20request%20browses?&amp;source=https://glegoux.com">
+        <i class="fab fa-linkedin" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li title="Share page on Twitter">
+      <a href="https://twitter.com/intent/tweet/?text=Trace%20a%20request%20path%20-%20How%20to%20know%20for%20which%20routers%20a%20HTTP%20request%20browses?&amp;url=https://glegoux.com/blog/articles/2019/07/14/trace-a-request-path.html">
+        <i class="fab fa-twitter" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li title="Share page on Facebook">
+      <a href="https://facebook.com/sharer/sharer.php?u=https://glegoux.com/blog/articles/2019/07/14/trace-a-request-path.html">
+        <i class="fab fa-facebook" aria-hidden="true"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
     </div>
 
     <div class="row">
@@ -307,14 +342,14 @@ window.MathJax = {
     <hr class="sep no-print">
 
     <div class="row">
-      <div class="col-2 text-left">
+      <div class="col-4 text-left">
         <!-- Article table of contents -->
         <div id="table-of-contents" class="no-print" title="See or hide the table of contents">
           <i class="fas fa-list-ul"></i>
           <span class="d-none d-md-inline">Table of contents</span>
         </div>
       </div>
-      <div class="col-10 text-right">
+      <div class="col-8 text-right">
         <!-- Article actions -->
         <div class="article-actions no-print">
   <ul>
@@ -511,28 +546,6 @@ rtt min/avg/max/mdev = 13.821/13.821/13.821/0.000 ms
   </ul>
 </div>
 
-<style type="text/css">
-  .social-sharing {
-    font-size: 1.3em;
-    width: 100%;
-    color: black;
-  }
-
-  .social-sharing a {
-    color: black !important;
-  }
-
-  .social-sharing ul {
-    display: inline;
-  }
-
-  .social-sharing ul li {
-    margin-left: 0.5em;
-    font-size: 1em;
-    display: inline;
-  }
-</style>
-
       </div>
       <!-- Article license -->
       <div class="col-6">
@@ -553,17 +566,18 @@ rtt min/avg/max/mdev = 13.821/13.821/13.821/0.000 ms
 
     <div class="row">
       <!-- Article browser -->
-      <div class="col-2 article-browser text-left">
-        <a href="/blog/articles" title="See all articles">
-          <i class="fa fa-home"></i>
-        </a><a href="/blog/articles/2019/05/24/java-champion.html" title="See the previous article">
-          <i class="fa fa-arrow-left"></i>
-        </a><a href="/blog/articles/2019/11/29/gafa-vs-batx.html" title="See the next article">
-          <i class="fa fa-arrow-right"></i>
-        </a>
+      <div class="col-4 text-left">
+        <div class="article-browser">
+<a href="/blog/articles/2019/05/24/java-champion.html" title="See the previous article">
+    <i class="fa fa-arrow-left"></i>
+  </a><a href="/blog/articles/2019/11/29/gafa-vs-batx.html" title="See the next article">
+    <i class="fa fa-arrow-right"></i>
+  </a>
 </div>
+
+      </div>
       <!-- Article actions -->
-      <div class="col-10 text-right">
+      <div class="col-8 text-right">
         <div class="article-actions no-print">
   <ul>
     <li title="Print this article" style="cursor: pointer" onclick="window.print();">
@@ -697,40 +711,40 @@ rtt min/avg/max/mdev = 13.821/13.821/13.821/0.000 ms
 </a>
 </div>
 <div class="col-xs-12 col-md-6 col-lg-4">
-<a href="/blog/articles/2020/08/24/geo-location.html" title="Read this article" style="display: block">
+<a href="/blog/articles/2019/03/23/kerberos-in-5-minutes.html" title="Read this article" style="display: block">
   <div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2020-08-24-geo-location.jpg" alt="2020-08-24-geo-location">
+        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2019-03-23-kerberos-in-5-minutes.jpg" alt="2019-03-23-kerberos-in-5-minutes">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          Geo-location
+          Kerberos in 5 minutes
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          How to compute the distance between 2 points with given latitude and longitude?
+          Kerberos is an authentication protocol for trusted hosts on untrusted networks.
         </div>
 <!-- Article categories -->
         <div class="article-category">
           <ul>
-            <li>Applied Mathematics</li>
+            <li>Security</li>
           </ul>
         </div>
 <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>August 24, 2020</span>
+          <span>March 23, 2019</span>
         </div>
 <!-- Article reading time -->
         <div class="reading-time">
           <i class="far fa-clock"></i>
-          <span>10 min</span>
+          <span>5 min</span>
         </div>
 </div>
 
