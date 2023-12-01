@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux (glegoux)</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2023-12-01T10:24:13+00:00</updated>
+ <updated>2023-12-01T10:51:54+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -2122,12 +2122,11 @@ Beware, the morality of this article is that a person physically accessing your 
    <updated>2019-01-21T00:00:00+00:00</updated>
    <id>https://glegoux.com/blog/articles/2019/01/21/getting-started.html</id>
    <content type="html">&lt;p&gt;Discover the &lt;strong&gt;extended Markdown syntax&lt;/strong&gt; used on this blog, generated from the template &lt;a href=&quot;https://github.com/glegoux/jekyll-tech-blog&quot;&gt;🧪 Jekyll Tech blog&lt;/a&gt;, to write articles or to generate static pages. 
-This syntax is based on &lt;a href=&quot;https://kramdown.gettalong.org/syntax.html&quot;&gt;Kramdown&lt;/a&gt; with a light and custom extension. Besides this article is written with this syntax, click on the button: &lt;i class=&quot;far fa-file-code&quot;&gt;&lt;/i&gt; to explore its &lt;strong&gt;source code&lt;/strong&gt;. 
-Each following section gives an overview and examples for each usage.&lt;/p&gt;
+This syntax is based on &lt;a href=&quot;https://kramdown.gettalong.org/syntax.html&quot;&gt;Kramdown&lt;/a&gt; with a light and custom extension. Besides, this article is written with this syntax, click on the button: &lt;b&gt;&lt;i class=&quot;far fa-file-code&quot;&gt;&lt;/i&gt;Source&lt;/b&gt; to explore its &lt;strong&gt;source code&lt;/strong&gt;. Each following section gives an overview and examples for each usage.&lt;/p&gt;
 
 &lt;p&gt;But before, what is precisely the Markdown? &lt;a href=&quot;https://daringfireball.net/projects/markdown/&quot;&gt;Markdown&lt;/a&gt; is a lightweight and popular text metalanguage that is a writing standard
-with the extension &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.md&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.markdown&lt;/code&gt;. It is often converted into HTML, allowing it to be easily shared on the web :spider_web:. After the &lt;strong&gt;conversion to HTML text&lt;/strong&gt;, it 
-is decorated and animated by CSS style sheets and/or JS scripts.&lt;/p&gt;
+with the extension &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.md&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.markdown&lt;/code&gt;. It is often converted into HTML, allowing it to be easily shared on the web :spider_web:. After converting to HTML, it 
+is decorated and animated by CSS style sheets and/or JS scripts. See more details on this &lt;a href=&quot;https://www.markdownguide.org&quot;&gt;Markdown Guide&lt;/a&gt;&lt;/p&gt;
 
 &lt;figure&gt;
   &lt;div&gt;
@@ -2139,8 +2138,8 @@ is decorated and animated by CSS style sheets and/or JS scripts.&lt;/p&gt;
 &lt;p&gt;Why use Markdown? Because it is very handy to use for the reader and the writer:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Reader&lt;/strong&gt;: The generated HTML content got from the Markdown content is compatible with all web browsers that can render it for the final reader.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Writer&lt;/strong&gt;: The Markdown content continues to be separated from the rendering. In addition, it is easy to learn and use syntax, with the pros of portability and compatibility, flexibility and customizability, and readability and maintainability. Modify its article so the content is more human-writable/readable and shorter than the HTML code, less expressive but sufficient for a blog post.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Reader&lt;/strong&gt;: The generated HTML content from the Markdown content is compatible with all web browsers that can render it for the final reader.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Writer&lt;/strong&gt;: The Markdown content continues to be separated from the rendering. In addition, it is easy to learn and use syntax, with the pros of portability and compatibility, flexibility and customizability, and readability and maintainability. Modify its article so the content is more human-writable/readable and shorter than the HTML code, less expressive, but sufficient for a blog post.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;See how to create your content with the right syntax through examples in the following sections.&lt;/p&gt;
