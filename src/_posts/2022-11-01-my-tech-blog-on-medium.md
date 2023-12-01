@@ -8,7 +8,7 @@ category: "News"
 
 I will continue writing blog posts here, but mainly they will be published on Medium under the user [@glegoux](https://medium.com/@glegoux). The goal is always to improve the experience of readers and my experience of writing. The Medium platform is mature, then more and more popular, becoming one of the leaders among the editors of tech blogs. It provides a full WYSIWYG user interface when editing online, with various options for formatting provided as the user edits. It allows publishing blog posts (called stories) to capture large audiences and communities.
 
-With the evolution of practices and tools of online blogging these last years, I wanted to cross a threshold in my tech writer experience: be more efficient and effective in writing content, by allocating less time to maintain editor tools and more time to write content. So, I needed to make the choice between continuing to use only this blog, starting to use only Medium, using both, or something else. I chose to use both ones:
+With the evolution of practices and tools of online blogging these last years, I wanted to cross a threshold in my tech writer experience: be more efficient and effective in writing content, by allocating less time to maintain editor tools and more time to write content. So, I needed to make the choice between continuing to use only this blog, starting to use only Medium, using both, or something else. I chose to use both:
 
 * The top and popular blog posts will be published on Medium in priority to gain visibility
 * While the other ones will remain on this blog.
@@ -18,7 +18,7 @@ With the evolution of practices and tools of online blogging these last years, I
   src="https://docs.google.com/drawings/d/e/2PACX-1vRwK7XcVBBYBxZhx3_nqSjUF4boYbf9BBdHP-HJYOlx2vX2Pe_scKcZTZFys9K5BEaaYmrGPN_3WziZ/pub?w=798&h=100" 
 %}
 
-After evaluating the market of online editors, and testing Medium, here are the pros and cons of using Medium vs. my personal blog that explain my choice:
+After evaluating the market of online editors, and testing Medium, here are the pros and cons of using Medium vs. my blog:
 
 <table>
   <tr class="text-center" style="background-color: #f0f0f0">
