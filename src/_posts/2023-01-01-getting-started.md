@@ -1,75 +1,112 @@
 ---
 title: "Getting started"
 description: "How to write articles on this blog from an easy-to-use and rich syntax?"
-authors: ["glegoux"]
+authors: [ "glegoux" ]
 time_reading_minutes: 10
 category: "Methodology"
-tags: ["Markdown"]
+tags: [ "Markdown" ]
 ---
 
-Discover the **extension of the Markdown syntax used on this blog** to write articles, or generate static pages, and more generally on the web. 
-When you click on the button: <i class="far fa-file-code"></i> Source, you can see the **original source code of an article**. 
-More precisely on this blog, a superset of Markdown is used and called [Kramdown](https://kramdown.gettalong.org/), the syntax is available [here](https://kramdown.gettalong.org/syntax.html) with a custom extension via the HTML paired tag `pre`. Each following section gives an overview and examples for each usage.
-But before, what is exactly the Markdown?
+Discover the **extended Markdown syntax** used on this blog, generated from the template [🧪 Jekyll Tech blog](https://github.com/glegoux/jekyll-tech-blog),
+to write articles or to generate static pages. It is based on [Kramdown syntax](https://kramdown.gettalong.org/syntax.html) with a light and
+custom extension for rendering. Besides, this article is written with this syntax, at the top of the web page, click on
+<b><i class="far fa-file-code"></i> Source</b> to explore its source code and on <b><i class="fas fa-list-ul"></i> Table of contents</b> to browse
+the supported features.
 
-[Markdown](https://daringfireball.net/projects/markdown/) is a lightweight and popular text metalanguage that is a writing standard
-with the extension `.md` or `.markdown`. It is often converted into HTML which allows it to be easily shared on the web :spider_web:.
+<details>
+  <summary><b>Summary of supported features by the extended Markdown syntax</b></summary>
+  <p markdown="1">
+    Read the documentation of the [Kramdown syntax](https://kramdown.gettalong.org/syntax.html).
+    All contents, even if not available with the extended Markdown syntax, can be showed thanks to embedded HTML, JS, CSS,
+    or includes and tags of the Liquid template.
+  </p>
+  <div>
+      <table class="text-center">
+        <thead>
+          <tr>
+            <th>Feature name</th>
+            <th>Extended Markdown syntax</th>
+            <th>Comment</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Abbreviation</td>
+            <td>✅</td>
+            <td>Soon available!</td>
+          </tr>
+          <tr>
+            <td>Image</td>
+            <td>✅</td>
+            <td>Soon available!</td>
+          </tr>
+          <tr>
+            <td>Video</td>
+            <td>❌</td>
+            <td>Soon available!</td>
+          </tr>
+          <tr>
+            <td>Presentation</td>
+            <td>❌</td>
+            <td>Soon available!</td>
+          </tr>
+          <tr>
+            <td>Diagram</td>
+            <td>❌</td>
+            <td>Soon available!</td>
+          </tr>
+          <tr>
+            <td>HTML</td>
+            <td>❌</td>
+            <td>Soon available! Put native HTML when the Markdown syntax is not available</td>
+          </tr>
+          <tr>
+            <td>Others</td>
+            <td>❌</td>
+            <td>Soon available!</td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+</details>
 
-After the **conversion to HTML text**, it is decorated and animated by CSS style sheets and/or JS scripts: 
+# How it works?
 
-{% include article/google-drawing.html title="Markdown processor"
-src="https://docs.google.com/drawings/d/e/2PACX-1vRPwfUjnj6bT9B-M4jdzQqOICzCwblxYR5xvgiXYWrpcgpmFddbWR-ErodWf-U0rE8f0aqzUfazXvf8/pub?w=960&amp;h=267" %}
+What is the
+[Markdown syntax](https://daringfireball.net/projects/markdown/)?
+It is a lightweight and popular text metalanguage that is a writing standard. It is often converted into HTML,
+allowing it to be easily shared on the web :spider_web:. After converting to
+HTML, it is decorated and animated by CSS style sheets and/or JS scripts. See
+more details on this [Markdown Guide](https://www.markdownguide.org).
 
-Why using it Markdown? Because it is very handy to use for the reader and the writer:
+Why use Markdown? Because it is very handy to use for the reader and the writer:
 
-* **Reader**: The generated HTML content got from the Markdown content is compatible with all web browsers that can render it for the final reader. 
-* **Writer**: The Markdown content continues to be separated from the rendering. In addition, it is easy to learn and use syntax, with the pros of portability and compatibility, flexibility and customizability, and readability and maintainability. Modify its article, the content is more human-writable/readable and shorter than the HTML code, less expressive but sufficient for a blog post.
+* **Reader**: The generated HTML content from the Markdown content is compatible
+  with all web browsers that can render it for the final reader.
+* **Writer**: The Markdown content continues to be separated from the rendering.
+  In addition, it is easy to learn and use syntax, with the pros of portability
+  and compatibility, flexibility and customizable, and readability and
+  maintainability. Modify its article so the content is more
+  human-writable/readable and shorter than the HTML code, less expressive, but
+  sufficient for a blog post.
 
- See how to create your content with the right syntax through examples in the following sections. 
+Why use the [Kramdown syntax](https://kramdown.gettalong.org/syntax.html)? Markdown has a basic syntax, that is limited
+for more advanced use cases (like tables, code blocks, syntax highlighting, footnotes and so one...). This extension
+is **Markdown compatible**, so all articles written in Markdown can be used directly in this blog without breaking
+changes, and **largely used** by an **active community**.
 
-# Text
+The files with the Markdown extension `.md` or `.markdown` are processed to HTML:
 
-## Highlight
+{% include article/google-drawing.html
+title="Extended Markdown to HTML"
+src="https://docs.google.com/drawings/d/e/2PACX-1vRPwfUjnj6bT9B-M4jdzQqOICzCwblxYR5xvgiXYWrpcgpmFddbWR-ErodWf-U0rE8f0aqzUfazXvf8/pub?w=960&amp;h=267"
+%}
 
-Enhance your text:
+The following sections give examples for each usage to create your content with the right syntax.
 
-Italics: *italics* or _italics_  
-Bold:	**bold** or __bold__  
-Strikethrough: ~~Strikethrough~~  
-Bold & Italics: **_bold italics_** or __*bold italics*__  
-Inline code: `code`
+# Headings
 
-Source code:
-
-~~~
-Italics: *italics* or _italics_  
-Bold:	**bold** or __bold__ 
-Strikethrough: ~~Strikethrough~~
-Bold & Italics: **_bold italics_** or __*bold italics*__
-Inline code: `code`
-~~~
-
-## New line & paragraph
-
-Let 2 trailing spaces have an end of the line, and let an empty line for a new paragraph:
-
-Hello,  
-
-World!
-
-Source code:
-
-~~~ whitespace
-Hello,␣␣\n
-\n
-World!\n
-~~~
-
-*Note: `\n` and `␣` represent respectively a new line character and a space character.*
-
-## Headings
-
-Make a part, a subpart, and a sub-subpart:
+Make a part, a subpart, and a sub-subpart.
 
 Source code:
 
@@ -86,7 +123,47 @@ H2
 ------
 ~~~
 
-## List
+# New line & Paragraph
+
+Let 2 trailing spaces have an end of the line, and let an empty line for a new
+paragraph:
+
+Hello,
+
+World!
+
+Source code:
+
+~~~ whitespace
+Hello,␣␣\n
+\n
+World!\n
+~~~
+
+*Note: `\n` and `␣` represent respectively a new line character and a space
+character.*
+
+# Text Highlighting
+
+Enhance your text:
+
+Italics: *italics* or _italics_  
+Bold:    **bold** or __bold__  
+Strikethrough: ~~Strikethrough~~  
+Bold & Italics: **_bold italics_** or __*bold italics*__  
+Inline code: `code`
+
+Source code:
+
+~~~
+Italics: *italics* or _italics_  
+Bold:	**bold** or __bold__ 
+Strikethrough: ~~Strikethrough~~
+Bold & Italics: **_bold italics_** or __*bold italics*__
+Inline code: `code`
+~~~
+
+# List
 
 Build an ordered list:
 
@@ -116,36 +193,40 @@ Source code:
  * item
 ~~~
 
-## Quote
+# Quote
 
 > Talk is cheap. Show me the code.
 
 Linus Torvalds, creator of the Linux operating system
 
 Source code:
+
 ~~~ @escape
 > Talk is cheap. Show me the code.
 
 Linus Torvalds, creator of the Linux operating system
 ~~~
 
-## Emoticon
+# Emoticon
 
-Use emoji, with [gemoji](https://github.com/github/gemoji) see [emoji cheat sheet](https://www.webfx.com/tools/emoji-cheat-sheet/).
+Use emoji, with [gemoji](https://github.com/github/gemoji)
+see [emoji cheat sheet](https://www.webfx.com/tools/emoji-cheat-sheet/).
 
 For example: with shortcode :smile: :scream: :yum: or unicode directly 😀 😱 😋.
 
 Source code for emoji with shortcode:
+
 ~~~ @escape
 :smile: :scream: :yum:
 ~~~
 
 Source code for emoji with unicode:
+
 ~~~ @escape
 😀 😱 😋
 ~~~
 
-## Links
+# Links
 
 It works with absolute and relative links:
 
@@ -162,113 +243,119 @@ Source code:
 * A link with a name: [Google](https://www.google.com).
 
 Source code:
+
 ~~~
 [Google](https://www.google.com)
 ~~~
 
-* A link with a name and a title: [Google](https://www.google.com "Google's Homepage") with the title `Google's Homepage`.
+* A link with a name and a
+  title: [Google](https://www.google.com "Google's Homepage") with the
+  title `Google's Homepage`.
 
 Source code:
+
 ~~~
 [Google](https://www.google.com "Google's Homepage")
 ~~~
 
-You can use shortcuts for your links to use that several times on the article or to centralize links:
+You can use shortcuts for your links to use that several times on the article or
+to centralize links:
 
 [Google1][1] [Google2][1]
 
 [1]: https://www.google.com
 
 Source code:
+
 ~~~
 [Google1][1] [Google2][1]
 
 [1]: https://www.google.com
 ~~~
 
-## Notes
+# Notes
 
-### Info
+Add your notes: info, question, warning, error, and success etc.
 
 <pre class="info">
 INFO
 </pre>
 
 Source code:
+
 ~~~
 <pre class="info">
 INFO
 </pre>
 ~~~
 
-### Question
-
 <pre class="question">
 QUESTION
 </pre>
 
 Source code:
+
 ~~~
 <pre class="question">
 QUESTION
 </pre>
 ~~~
-
-### Warning
 
 <pre class="warning">
 WARNING
 </pre>
 
 Source code:
+
 ~~~
 <pre class="warning">
 WARNING
 </pre>
 ~~~
 
-### Error
-
 <pre class="error">
 ERROR
 </pre>
 
 Source code:
+
 ~~~
 <pre class="error">
 ERROR
 </pre>
 ~~~
-
-### Success
 
 <pre class="success">
 SUCCESS
 </pre>
 
 Source code:
+
 ~~~
 <pre class="success">
 SUCCESS
 </pre>
 ~~~
 
-## Comment
+# Comment
 
-If you want to put a hidden text not displayed in the article but present in the written source, that is to say, a comment, simply do an HTML comment:
+If you want to put a hidden text not displayed in the article but present in the
+written source, that is to say, a comment, simply do an HTML comment:
 
 Source code:
+
 ~~~
 <!-- comments -->
 ~~~
 
-# Informatics code
+# Informatics Code
 
-## Programming language
+## Programming Language
 
-The used syntax highlighter is Rouge, see the [list of supported languages and lexers](https://github.com/rouge-ruby/rouge/wiki/List-of-supported-languages-and-lexers).
-
-### <span class="notranslate">Python</span>
+The used syntax highlighter is Rouge, see
+the [list of supported languages and lexers](https://github.com/rouge-ruby/rouge/wiki/List-of-supported-languages-and-lexers),
+with python, java, scala, rust, c#, c++, c, bash, ruby, go, typescript,
+javascript, html, css etc.
 
 ~~~ python
 print("Hello world!")
@@ -282,8 +369,6 @@ print("Hello world!")
 ~~~
 </pre>
 
-### <span class="notranslate">Java</span>
-
 ~~~ java 
 System.out.println("Hello world!");
 ~~~
@@ -294,8 +379,6 @@ Source code:
 System.out.println("Hello world!");
 ~~~
 </pre>
-
-### <span class="notranslate">Scala</span>
 
 ~~~ scala 
 println("Hello world!")
@@ -308,8 +391,6 @@ println("Hello world!")
 ~~~
 </pre>
 
-### <span class="notranslate">C# .NET</span>
-
 ~~~ csharp 
 Console.WriteLine("Hello world!")
 ~~~
@@ -320,8 +401,6 @@ Source code:
 Console.WriteLine("Hello world!")
 ~~~
 </pre>
-
-### <span class="notranslate">Rust</span>
 
 ~~~ rust
 println!("Hello World!");
@@ -334,8 +413,6 @@ println!("Hello World!");
 ~~~
 </pre>
 
-### <span class="notranslate">C++</span>
-
 ~~~ c++
 std::cout << "Hello World!";
 ~~~
@@ -346,8 +423,6 @@ Source code:
 std::cout << "Hello World!";
 ~~~
 </pre>
-
-### <span class="notranslate">C</span>
 
 ~~~ c
 printf("Hello, World!");
@@ -359,8 +434,6 @@ Source code:
 printf("Hello, World!");
 ~~~
 </pre>
-
-### <span class="notranslate">Bash</span>
 
 ~~~ bash
 echo "Hello world!"
@@ -374,8 +447,6 @@ echo "Hello world!"
 ~~~
 </pre>
 
-### <span class="notranslate">Ruby</span>
-
 ~~~ ruby 
 puts "Hello world!"
 ~~~
@@ -386,8 +457,6 @@ Source code:
 puts "Hello world!"
 ~~~
 </pre>
-
-### <span class="notranslate">Go</span>
 
 ~~~ go
 import("fmt")
@@ -404,8 +473,6 @@ fmt.Println("Hello world!")
 ~~~
 </pre>
 
-### <span class="notranslate">TypeScript</span>
-
 ~~~ typescript
 console.log("Hello world!");
 ~~~
@@ -417,8 +484,6 @@ console.log("Hello world!");
 ~~~
 </pre>
 
-### <span class="notranslate">JavaScript</span>
-
 ~~~ javascript
 console.log("Hello world!");
 ~~~
@@ -429,8 +494,6 @@ Source code:
 console.log("Hello world!");
 ~~~
 </pre>
-
-### <span class="notranslate">HTML</span>
 
 ~~~ html
 <p>Hello world!</p>
@@ -443,8 +506,6 @@ Source code:
 &lt;p&gt;Hello world&lt;/p&gt;
 ~~~
 </pre>
-
-### <span class="notranslate">CSS</span>
 
 ~~~ css
 .hello-world {
@@ -464,6 +525,8 @@ Source code:
 
 ## Terminal
 
+Have a dark terminal container:
+
 ~~~ terminal
 $ command
 result
@@ -478,9 +541,9 @@ result
 ~~~
 </pre>
 
-## Text file
+## Text File
 
-### Plain text 
+Highlight your text file content: plain, json, yaml, xml, ini etc.
 
 ~~~
 "Hello World!"
@@ -493,9 +556,6 @@ Source code:
 ~~~
 </pre>
 
-
-### JSON
-
 ~~~ json
 {"message": "Hello World!"}
 ~~~
@@ -506,8 +566,6 @@ Source code:
 {"message": "Hello World!"}
 ~~~
 </pre>
-
-### YAML
 
 ~~~ yaml
 hello:
@@ -522,8 +580,6 @@ hello:
 ~~~
 </pre>
 
-### XML
-
 ~~~ xml
 <?xml version="1.0" encoding="UTF-8"?>
 <message>Hello World!</message>
@@ -536,8 +592,6 @@ Source code:
 <message>Hello World!</message>
 ~~~
 </pre>
-
-### <span class="notranslate">INI</span>
 
 ~~~ ini
 [message]
@@ -552,33 +606,36 @@ message="Hello World!"
 ~~~
 </pre>
 
-# Mathematics equation
+# Mathematics Equation
 
 Use LateX syntax, see [latex-project.org](https://www.latex-project.org).
 
-:warning: The dollar symbol &#36; becomes a meta symbol, so there is a conflict with the dollar symbol use the HTML code `&#36;` to see the dollar symbol &#36;.
+:warning: The dollar symbol &#36; becomes a meta symbol, so there is a conflict
+with the dollar symbol use the HTML code `&#36;` to see the dollar symbol &#36;.
 
-## In-line equation
+## In-line Equation
 
 This equation $\int_0^1 x^2dx = \frac{1}{3}$ is in-line.
 
 Source code:
+
 ~~~
 This equation $\int_0^1 x^2dx = \frac{1}{3}$ is in-line.
 ~~~
 
-## Single-line equation
+## Single-line Equation
 
 This equation is single-line and centered:
 
 $$\int_0^1 x^2dx = \frac{1}{3}$$
 
 Source code:
+
 ~~~
 $$\int_0^1 x^2dx = \frac{1}{3}$$
 ~~~
 
-## Multi-line equation
+## Multi-line Equation
 
 This equation is multi-line and centered:
 
@@ -590,6 +647,7 @@ $$
 $$
 
 Source code:
+
 ~~~
 $$
 \displaylines{
@@ -598,7 +656,3 @@ $$
 }
 $$
 ~~~
-
-
-
-
