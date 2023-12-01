@@ -1,7 +1,10 @@
 # Site core configuration
-# See default configuration: https://jekyllrb.com/docs/configuration/default
+# See configuration options: https://jekyllrb.com/docs/configuration/options with their default values:
+# https://jekyllrb.com/docs/configuration/default
 # /!\ don't override the elements of this configuration in src/_config.yml or src/_config_dev.yml
 #     except if you know what you do
+
+### JEKYLL ###
 
 # Server
 
@@ -11,14 +14,8 @@ encoding: "utf-8"
 lsi: false
 safe: true
 incremental: false
-highlighter: rouge
-gist:
-  noscript: false
-kramdown:
-  math_engine: mathjax
-  syntax_highlighter: rouge
 
-# Build
+# Build - static files
 
 data_dir: "_core/data"
 includes_dir: "_core/includes"
@@ -50,21 +47,6 @@ exclude:
   - ".jekyll-cache"
   - ".jekyll-config-debug.json" # project file for debugging
 
-# Plugins
-
-plugins:
-  - "jekyll-sitemap"
-  - "jekyll-seo-tag"
-  - "jekyll-paginate"
-  - "jekyll-mentions"
-  - "jekyll-redirect-from"
-  - "jemoji"
-
-# Redirect
-
-redirect_from:
-  json: false
-
 # Layout
 
 defaults:
@@ -76,7 +58,36 @@ defaults:
       article: true
       comment: true
 
-# Specific to project core
+# Markdown - generation and syntax
+
+highlighter: rouge
+
+markdown: kramdown
+kramdown:
+  input: kramdown
+  math_engine: mathjax
+  syntax_highlighter: rouge
+
+# Plugins
+
+plugins:
+  - "jekyll-sitemap"
+  - "jekyll-seo-tag"
+  - "jekyll-paginate"
+  - "jekyll-mentions"
+  - "jekyll-redirect-from"
+  - "jemoji"
+
+### JEKYLL PLUGINS ###
+
+# jekyll-redirect-from
+
+redirect_from:
+  json: false
+
+### PROJECT ###
+
+# Core
 
 project_core:
   title: "🧪 Jekyll Tech Blog"
