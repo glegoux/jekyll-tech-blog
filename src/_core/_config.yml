@@ -60,9 +60,9 @@ defaults:
 
 # Markdown - generation and syntax
 
-highlighter: rouge
-
 markdown: kramdown
+markdown_ext : "md,markdown"
+highlighter: rouge
 kramdown:
   input: kramdown
   math_engine: mathjax
