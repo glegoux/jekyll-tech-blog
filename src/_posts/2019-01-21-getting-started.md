@@ -12,7 +12,7 @@ This syntax is based on [Kramdown](https://kramdown.gettalong.org/syntax.html) w
 
 But before, what is precisely the Markdown? [Markdown](https://daringfireball.net/projects/markdown/) is a lightweight and popular text metalanguage that is a writing standard
 with the extension `.md` or `.markdown`. It is often converted into HTML, allowing it to be easily shared on the web :spider_web:. After converting to HTML, it 
-is decorated and animated by CSS style sheets and/or JS scripts. See more details on this [Markdown Guide](https://www.markdownguide.org)
+is decorated and animated by CSS style sheets and/or JS scripts. See more details on this [Markdown Guide](https://www.markdownguide.org).
 
 {% include article/google-drawing.html title="Markdown processor"
 src="https://docs.google.com/drawings/d/e/2PACX-1vRPwfUjnj6bT9B-M4jdzQqOICzCwblxYR5xvgiXYWrpcgpmFddbWR-ErodWf-U0rE8f0aqzUfazXvf8/pub?w=960&amp;h=267" %}
