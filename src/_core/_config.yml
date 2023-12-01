@@ -60,13 +60,13 @@ defaults:
 
 # Markdown - generation and syntax
 
-markdown: kramdown
+markdown: kramdown # See https://kramdown.gettalong.org
 markdown_ext : "md,markdown"
-highlighter: rouge
+highlighter: rouge # See https://rouge.jneen.net/
 kramdown:
-  input: kramdown
-  math_engine: mathjax
-  syntax_highlighter: rouge
+  input: GFM # See https://kramdown.gettalong.org/parser/gfm.html
+  math_engine: mathjax # See https://www.mathjax.org/
+  syntax_highlighter: rouge # See https://rouge.jneen.net/
 
 # Plugins
 

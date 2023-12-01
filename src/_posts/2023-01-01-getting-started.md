@@ -8,69 +8,174 @@ tags: [ "Markdown" ]
 ---
 
 Discover the **extended Markdown syntax** used on this blog, generated from the template [🧪 Jekyll Tech blog](https://github.com/glegoux/jekyll-tech-blog),
-to write articles or to generate static pages. It is based on [Kramdown syntax](https://kramdown.gettalong.org/syntax.html) with a light and
+to write articles or to generate static pages. It is based on [Kramdown syntax](https://kramdown.gettalong.org/syntax.html) with [GFM parser](https://kramdown.gettalong.org/parser/gfm.html) and a light
 custom extension for rendering. Besides, this article is written with this syntax, at the top of the web page, click on
 <b><i class="far fa-file-code"></i> Source</b> to explore its source code and on <b><i class="fas fa-list-ul"></i> Table of contents</b> to browse
-the supported features.
+the supported features. As you see, you can mix this syntax, with **existing macro** and **native HTML syntaxes** to write any types of content. As this blog is **highly-configurable**, you can **build** your **custom macros**. Each article
+has also **metadata** to inject constants of configurations.
 
-<details>
-  <summary><b>Summary of supported features by the extended Markdown syntax</b></summary>
+<details open="true">
+  <summary title="Click to expand and collapse the content"><b>Summary of supported features by the extended Markdown syntax</b></summary>
   <p markdown="1">
     Read the documentation of the [Kramdown syntax](https://kramdown.gettalong.org/syntax.html).
-    All contents, even if not available with the extended Markdown syntax, can be showed thanks to embedded HTML, JS, CSS,
-    or includes and tags of the Liquid template.
+    All contents, even if not available with the extended Markdown syntax, can be showed thanks to embedded native content: HTML, JS, CSS, or macros: includes and tags of the Liquid template.
   </p>
   <div>
       <table class="text-center">
         <thead>
           <tr>
             <th>Feature name</th>
-            <th>Extended Markdown syntax</th>
             <th>Comment</th>
+            <th>Extended Markdown syntax</th>
+            <th>Existing Macro syntax</th>
+            <th>Native HTML syntax</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Abbreviation</td>
+            <td><a href="#headings">Headings</a></td>
+            <td>Organize your content with part, subpart and sub-subpart</td>
             <td>✅</td>
-            <td>Soon available!</td>
-          </tr>
-          <tr>
-            <td>Image</td>
+            <td>❌</td>
             <td>✅</td>
-            <td>Soon available!</td>
           </tr>
           <tr>
-            <td>Video</td>
+            <td><a href="#new-line--paragraph">New line & Paragraph</a></td>
+            <td>Organize the content in a part</td>
+            <td>✅</td>
             <td>❌</td>
-            <td>Soon available!</td>
+            <td>✅</td>
           </tr>
           <tr>
-            <td>Presentation</td>
+            <td><a href="#enchanced-text">Enchanced Text</a></td>
+            <td>Enhance your text: italics, bold, strikethrough, inline code or a combination</td>
+            <td>✅</td>
             <td>❌</td>
-            <td>Soon available!</td>
+            <td>✅</td>
           </tr>
           <tr>
-            <td>Diagram</td>
+            <td><a href="#list">List</a></td>
+            <td>Build an ordered, unordered, definition or task lists and sublists</td>
+            <td>✅</td>
             <td>❌</td>
-            <td>Soon available!</td>
+            <td>✅</td>
           </tr>
           <tr>
-            <td>HTML</td>
+            <td><a href="#quote">Quote</a></td>
+            <td>Soon refactored! Quote your authors</td>
+            <td>✅</td>
             <td>❌</td>
-            <td>Soon available! Put native HTML when the Markdown syntax is not available</td>
+            <td>✅</td>
           </tr>
           <tr>
-            <td>Others</td>
+            <td><a href="#emoticon">Emoticon</a></td>
+            <td>Use emoticons</td>
+            <td>✅</td>
             <td>❌</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td><a href="#links">Links</a></td>
+            <td>Use absolute and relative links named or not and re-usable</td>
+            <td>✅</td>
+            <td>❌</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td><a href="#notes">Notes</a></td>
+            <td>Soon refactored! Add your notes: info, question, warning, error, and success etc.</td>
+            <td>❌</td>
+            <td>❌</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td><a href="#comment">Comment</a></td>
+            <td>Comment content</td>
+            <td>❌</td>
+            <td>❌</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td><a href="#informatics-code">Informatics Code</a></td>
+            <td>Highligh code: python, java, scala, rust, c#, c++, c, bash, ruby, go, typescript, javascript, html, css etc., terminal, or text content: plain, json, yaml, xml, ini etc</td>
+            <td>✅</td>
+            <td>❌</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td><a href="#mathematics-equation">Mathematics Equation</a></td>
+            <td>Use LateX syntax for in-line, single-line or multi-line equation</td>
+            <td>✅</td>
+            <td>❌</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td><a href="#escape">Escape</a></td>
             <td>Soon available!</td>
+            <td>✅</td>
+            <td>❌</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td><a href="#footnotes">Footnotes</a></td>
+            <td>Soon available!</td>
+            <td>✅</td>
+            <td>❌</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td><a href="#abbreviation">Abbreviation</a></td>
+            <td>Soon available!</td>
+            <td>✅</td>
+            <td>❌</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td><a href="#image">Image</a></td>
+            <td>Soon available!</td>
+            <td>✅</td>
+            <td>✅</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td><a href="#video">Video</a></td>
+            <td>Soon available!</td>
+            <td>❌</td>
+            <td>✅</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td><a href="#presentation">Presentation</a></td>
+            <td>Soon available!</td>
+            <td>❌</td>
+            <td>✅</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td><a href="#diagram">Diagram</a></td>
+            <td>Soon available!</td>
+            <td>❌</td>
+            <td>✅</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td><a href="#html">HTML</a></td>
+            <td>Put native HTML when the Markdown syntax is not available, it can contain Markdown in its markups</td>
+            <td>❌</td>
+            <td>❌</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td><a href="#others">Others</a></td>
+            <td>Create your macros, extend the project or the tools everything is open-source</td>
+            <td>❌</td>
+            <td>❌</td>
+            <td>✅</td>
           </tr>
         </tbody>
       </table>
   </div>
 </details>
-
-# How it works?
 
 What is the
 [Markdown syntax](https://daringfireball.net/projects/markdown/)?
@@ -90,12 +195,12 @@ Why use Markdown? Because it is very handy to use for the reader and the writer:
   human-writable/readable and shorter than the HTML code, less expressive, but
   sufficient for a blog post.
 
-Why use the [Kramdown syntax](https://kramdown.gettalong.org/syntax.html)? Markdown has a basic syntax, that is limited
+Why use an extended Markdown syntax? Markdown has a basic syntax, that is limited
 for more advanced use cases (like tables, code blocks, syntax highlighting, footnotes and so one...). This extension
 is **Markdown compatible**, so all articles written in Markdown can be used directly in this blog without breaking
 changes, and **largely used** by an **active community**.
 
-The files with the Markdown extension `.md` or `.markdown` are processed to HTML:
+How it works? The files with the Markdown extension `.md` or `.markdown` are processed to HTML:
 
 {% include article/google-drawing.html
 title="Extended Markdown to HTML"
@@ -107,6 +212,8 @@ The following sections give examples for each usage to create your content with 
 # Headings
 
 Make a part, a subpart, and a sub-subpart.
+
+It is used for each section here.
 
 Source code:
 
@@ -143,29 +250,35 @@ World!\n
 *Note: `\n` and `␣` represent respectively a new line character and a space
 character.*
 
-# Text Highlighting
+# Enchanced Text
 
 Enhance your text:
 
-Italics: *italics* or _italics_  
-Bold:    **bold** or __bold__  
-Strikethrough: ~~Strikethrough~~  
-Bold & Italics: **_bold italics_** or __*bold italics*__  
-Inline code: `code`
+- Italics: *italics* or _italics_  
+- Bold:    **bold** or __bold__  
+- Strikethrough: ~~strikethrough~~  
+- Bold & Italics: **_bold italics_** or __*bold italics*__  
+- Inline code: `code`
+- Highlight: <mark>highlight</mark>
+- Supscript: sup<sup>sup</sup>
+- Subscript: sub<sub>sub</sub>
 
 Source code:
 
 ~~~
-Italics: *italics* or _italics_  
-Bold:	**bold** or __bold__ 
-Strikethrough: ~~Strikethrough~~
-Bold & Italics: **_bold italics_** or __*bold italics*__
-Inline code: `code`
+- Italics: *italics* or _italics_  
+- Bold:	**bold** or __bold__ 
+- Strikethrough: ~~strikethrough~~
+- Bold & Italics: **_bold italics_** or __*bold italics*__
+- Inline code: `code`
+- Highlight: <mark>highlight</mark>
+- Supscript: sup<sup>sup</sup>
+- Subscript: sub<sub>sub</sub>
 ~~~
 
 # List
 
-Build an ordered list:
+**An ordered list**
 
 1. item
 2. item
@@ -179,10 +292,18 @@ Source code:
 3. item
 ~~~
 
-Build an unordered list:
+<div class="info" markdown="1">
+  Use `+`, `*` and `-` indifferently.
+</div>
+
+**Unordered list**
 
 * item
+  * subitem
+  * ...
 * item
+  * subitem
+  * ...
 * item
 
 Source code:
@@ -192,8 +313,44 @@ Source code:
  * item
  * item
 ~~~
+
+**Definition list**
+
+item
+: definition
+
+item
+: definition
+
+Source code:
+
+~~~
+item
+: definition
+
+item
+: definition
+~~~
+
+**Task list**
+
+- [x] item
+- [x] item
+- [ ] item
+
+Source code:
+
+~~~
+- [x] item
+- [x] item
+- [ ] item
+~~~
+
+
 
 # Quote
+
+Quote authors:
 
 > Talk is cheap. Show me the code.
 
@@ -230,111 +387,115 @@ Source code for emoji with unicode:
 
 It works with absolute and relative links:
 
-* A simple link:
+**Simple link**
 
-<https://www.google.com>
-
-Source code:
-
-~~~
-<https://www.google.com>
-~~~
-
-* A link with a name: [Google](https://www.google.com).
+<https://www.glegoux.com>
 
 Source code:
 
 ~~~
-[Google](https://www.google.com)
+<https://www.glegoux.com>
 ~~~
 
-* A link with a name and a
-  title: [Google](https://www.google.com "Google's Homepage") with the
-  title `Google's Homepage`.
+**Named Link** 
+
+[glegoux](https://www.glegoux.com)
 
 Source code:
 
 ~~~
-[Google](https://www.google.com "Google's Homepage")
+[glegoux](https://www.glegoux.com)
 ~~~
 
-You can use shortcuts for your links to use that several times on the article or
-to centralize links:
+**Named Link with a Title** 
 
-[Google1][1] [Google2][1]
-
-[1]: https://www.google.com
+[glegoux1](https://www.glegoux.com "glegoux's Homepage") (with the
+  title `glegoux's Homepage`)
 
 Source code:
 
 ~~~
-[Google1][1] [Google2][1]
+[glegoux](https://www.glegoux.com "glegoux's Homepage")
+~~~
 
-[1]: https://www.google.com
+**Multi-used Link**
+
+You can use shortcuts for your links to use that several times on the article or to centralize links:
+
+[glegoux1][1] [glegoux2][1]
+
+[1]: https://www.glegoux.com "glegoux's Homepage"
+
+Source code:
+
+~~~
+[glegoux1][1] [glegoux2][1]
+
+[1]: https://www.glegoux.com "glegoux's Homepage"
 ~~~
 
 # Notes
 
 Add your notes: info, question, warning, error, and success etc.
 
-<pre class="info">
+<div class="info">
 INFO
-</pre>
+</div>
 
 Source code:
 
 ~~~
-<pre class="info">
+<div class="info">
 INFO
-</pre>
+</div>
 ~~~
 
-<pre class="question">
+<div class="question">
 QUESTION
-</pre>
+</div>
 
 Source code:
 
 ~~~
-<pre class="question">
+<div class="question">
 QUESTION
-</pre>
+</div>
 ~~~
 
-<pre class="warning">
+<div class="warning">
 WARNING
-</pre>
+</div>
 
 Source code:
 
 ~~~
-<pre class="warning">
+<div class="warning">
 WARNING
-</pre>
+</div>
 ~~~
 
-<pre class="error">
+<div class="error">
 ERROR
-</pre>
+</div>
 
 Source code:
 
 ~~~
-<pre class="error">
+<div class="error">
 ERROR
-</pre>
+</div>
 ~~~
 
-<pre class="success">
+<div class="success">
 SUCCESS
-</pre>
+</div>
 
 Source code:
 
 ~~~
-<pre class="success">
+<div class="success">
 SUCCESS
-</pre>
+</div>
 ~~~
 
 # Comment
@@ -610,8 +771,10 @@ message="Hello World!"
 
 Use LateX syntax, see [latex-project.org](https://www.latex-project.org).
 
-:warning: The dollar symbol &#36; becomes a meta symbol, so there is a conflict
-with the dollar symbol use the HTML code `&#36;` to see the dollar symbol &#36;.
+<div class="warning" markdown="1">
+  The dollar symbol &#36; becomes a meta symbol, so there is a conflict
+  with the dollar symbol use the HTML code `&#36;` to see the dollar symbol &#36;.
+</div>
 
 ## In-line Equation
 
@@ -656,3 +819,59 @@ $$
 }
 $$
 ~~~
+
+# Escape
+
+TODO
+
+# Footnotes
+
+That's some text with a footnote[^1].
+
+[^1]: And that's the footnote.
+
+Source code:
+
+~~~
+That's some text with a footnote.[^1]
+
+[^1]: And that's the footnote.
+~~~
+
+# Abbreviation
+
+The HTML specification is maintained by the W3C.
+
+*[HTML]: Hyper Text Markup Language
+
+Source code:
+
+~~~
+The HTML specification is maintained by the W3C.
+
+*[HTML]: Hyper Text Markup Language
+~~~
+
+# Image
+
+TODO
+
+# Video
+
+TODO
+
+# Presentation
+
+TODO
+
+# Diagram
+
+TODO
+
+# HTML
+
+TODO
+
+# Others
+
+TODO
