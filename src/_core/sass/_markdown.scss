@@ -325,6 +325,9 @@
 
 .markdown-body p {
   text-indent: 1em;
+  i {
+    text-indent: 0;
+  }
 }
 
 .markdown-body p,
@@ -971,6 +974,18 @@ body {
 .markdown-body ol li {
   line-height: 1.5em;
   counter-increment: li;
+}
+
+/* Details */
+.markdown-body {
+  details {
+    margin-bottom: 16px;
+
+    summary {
+      margin-top: 16px;
+      margin-bottom: 16px;
+    }
+  }
 }
 
 /* iframe */
