@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux (glegoux)</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2023-12-01T10:51:54+00:00</updated>
+ <updated>2023-12-01T10:52:17+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -2126,7 +2126,7 @@ This syntax is based on &lt;a href=&quot;https://kramdown.gettalong.org/syntax.h
 
 &lt;p&gt;But before, what is precisely the Markdown? &lt;a href=&quot;https://daringfireball.net/projects/markdown/&quot;&gt;Markdown&lt;/a&gt; is a lightweight and popular text metalanguage that is a writing standard
 with the extension &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.md&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.markdown&lt;/code&gt;. It is often converted into HTML, allowing it to be easily shared on the web :spider_web:. After converting to HTML, it 
-is decorated and animated by CSS style sheets and/or JS scripts. See more details on this &lt;a href=&quot;https://www.markdownguide.org&quot;&gt;Markdown Guide&lt;/a&gt;&lt;/p&gt;
+is decorated and animated by CSS style sheets and/or JS scripts. See more details on this &lt;a href=&quot;https://www.markdownguide.org&quot;&gt;Markdown Guide&lt;/a&gt;.&lt;/p&gt;
 
 &lt;figure&gt;
   &lt;div&gt;
