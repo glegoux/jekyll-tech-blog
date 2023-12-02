@@ -11,7 +11,7 @@ Discover the **extended Markdown syntax** used on this blog, generated from the 
 to write articles or to generate static pages. It is based on [Kramdown syntax](https://kramdown.gettalong.org/syntax.html) with [GFM parser](https://kramdown.gettalong.org/parser/gfm.html) and a light
 custom extension for rendering. Besides, this article is written with this syntax. At the top of the web page, click on
 <b><i class="far fa-file-code"></i> Source</b> to explore its source code and on <b><i class="fas fa-list-ul"></i> Table of contents</b> to browse
-the supported features. As you see, you can mix this syntax, with **existing macro** and **native HTML syntaxes** to write any content. As this blog is **highly configurable**, you can **build** your **custom macros**. Each article
+the supported features. So, you can mix this syntax with **existing macro** and **native HTML syntaxes** to write any content. As this blog is **highly configurable**, you can **build** your **custom macros**. Each article
 also has **metadata** to inject constants of configurations.
 
 <details open="true">
@@ -26,7 +26,6 @@ also has **metadata** to inject constants of configurations.
           <tr>
             <th>Feature name</th>
             <th>Comment</th>
-            <th>Markdown syntax</th>
             <th>Extended Markdown syntax</th>
             <th>Existing Macro syntax</th>
             <th>Native HTML syntax</th>
@@ -97,6 +96,13 @@ also has **metadata** to inject constants of configurations.
             <td>✅</td>
           </tr>
           <tr>
+            <td><a href="#escape">Escape</a></td>
+            <td>Escape meta or special characters</td>
+            <td>✅</td>
+            <td>❌</td>
+            <td>✅</td>
+          </tr>
+          <tr>
             <td><a href="#informatics-code">Informatics Code</a></td>
             <td>Highligh code: python, java, scala, rust, c#, c++, c, bash, ruby, go, typescript, javascript, html, css etc., terminal, or text content: plain, json, yaml, xml, ini etc</td>
             <td>✅</td>
@@ -106,13 +112,6 @@ also has **metadata** to inject constants of configurations.
           <tr>
             <td><a href="#mathematics-equation">Mathematics Equation</a></td>
             <td>Use LateX syntax for in-line, single-line or multi-line equation</td>
-            <td>✅</td>
-            <td>❌</td>
-            <td>✅</td>
-          </tr>
-          <tr>
-            <td><a href="#escape">Escape</a></td>
-            <td>Soon available!</td>
             <td>✅</td>
             <td>❌</td>
             <td>✅</td>
@@ -510,6 +509,16 @@ Source code:
 <!-- comments -->
 ~~~
 
+# Escape
+
+**A character**
+
+Use a backslash `\`, see the [list of all the characters that can be escaped](https://kramdown.gettalong.org/syntax.html#automatic-and-manual-escaping), or HTML entities like `&lt;` or `&gt;`.
+
+**A block of characters**
+
+Use `\`**escaped characters**\``, or `<pre>escaped characters</pre>`, or `~~~escaped characters~~~`
+
 # Informatics Code
 
 ## Programming Language
@@ -820,10 +829,6 @@ $$
 }
 $$
 ~~~
-
-# Escape
-
-TODO
 
 # Footnotes
 
