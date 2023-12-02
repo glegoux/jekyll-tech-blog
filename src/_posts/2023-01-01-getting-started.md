@@ -9,16 +9,16 @@ tags: [ "Markdown" ]
 
 Discover the **extended Markdown syntax** used on this blog, generated from the template [🧪 Jekyll Tech blog](https://github.com/glegoux/jekyll-tech-blog),
 to write articles or to generate static pages. It is based on [Kramdown syntax](https://kramdown.gettalong.org/syntax.html) with [GFM parser](https://kramdown.gettalong.org/parser/gfm.html) and a light
-custom extension for rendering. Besides, this article is written with this syntax, at the top of the web page, click on
+custom extension for rendering. Besides, this article is written with this syntax. At the top of the web page, click on
 <b><i class="far fa-file-code"></i> Source</b> to explore its source code and on <b><i class="fas fa-list-ul"></i> Table of contents</b> to browse
-the supported features. As you see, you can mix this syntax, with **existing macro** and **native HTML syntaxes** to write any types of content. As this blog is **highly-configurable**, you can **build** your **custom macros**. Each article
-has also **metadata** to inject constants of configurations.
+the supported features. As you see, you can mix this syntax, with **existing macro** and **native HTML syntaxes** to write any content. As this blog is **highly configurable**, you can **build** your **custom macros**. Each article
+also has **metadata** to inject constants of configurations.
 
 <details open="true">
   <summary title="Click to expand and collapse the content"><b>Summary of supported features by the extended Markdown syntax</b></summary>
   <p markdown="1">
     Read the documentation of the [Kramdown syntax](https://kramdown.gettalong.org/syntax.html).
-    All contents, even if not available with the extended Markdown syntax, can be showed thanks to embedded native content: HTML, JS, CSS, or macros: includes and tags of the Liquid template.
+    All contents, even if unavailable with the extended Markdown syntax, can be shown thanks to embedded native content: HTML, JS, CSS, or macros: `includes` and `tags` of the Liquid template.
   </p>
   <div>
       <table class="text-center">
@@ -26,6 +26,7 @@ has also **metadata** to inject constants of configurations.
           <tr>
             <th>Feature name</th>
             <th>Comment</th>
+            <th>Markdown syntax</th>
             <th>Extended Markdown syntax</th>
             <th>Existing Macro syntax</th>
             <th>Native HTML syntax</th>
@@ -34,7 +35,7 @@ has also **metadata** to inject constants of configurations.
         <tbody>
           <tr>
             <td><a href="#headings">Headings</a></td>
-            <td>Organize your content with part, subpart and sub-subpart</td>
+            <td>Organize your content with part, subpart, sub-subpart, etc.</td>
             <td>✅</td>
             <td>❌</td>
             <td>✅</td>
@@ -48,7 +49,7 @@ has also **metadata** to inject constants of configurations.
           </tr>
           <tr>
             <td><a href="#enchanced-text">Enchanced Text</a></td>
-            <td>Enhance your text: italics, bold, strikethrough, inline code or a combination</td>
+            <td>Enhance your text: italics, bold, strikethrough, inline code, highlight, superscript, subscript, etc.</td>
             <td>✅</td>
             <td>❌</td>
             <td>✅</td>
@@ -69,7 +70,7 @@ has also **metadata** to inject constants of configurations.
           </tr>
           <tr>
             <td><a href="#emoticon">Emoticon</a></td>
-            <td>Use emoticons</td>
+            <td>Use emoticons with shortcode or unicode</td>
             <td>✅</td>
             <td>❌</td>
             <td>✅</td>
@@ -83,7 +84,7 @@ has also **metadata** to inject constants of configurations.
           </tr>
           <tr>
             <td><a href="#notes">Notes</a></td>
-            <td>Soon refactored! Add your notes: info, question, warning, error, and success etc.</td>
+            <td>Soon refactored! Add your notes: info, question, warning, error, success, etc.</td>
             <td>❌</td>
             <td>❌</td>
             <td>✅</td>
@@ -118,14 +119,14 @@ has also **metadata** to inject constants of configurations.
           </tr>
           <tr>
             <td><a href="#footnotes">Footnotes</a></td>
-            <td>Soon available!</td>
+            <td>Put extra information at the bottom of the article referencing inside content</td>
             <td>✅</td>
             <td>❌</td>
             <td>✅</td>
           </tr>
           <tr>
             <td><a href="#abbreviation">Abbreviation</a></td>
-            <td>Soon available!</td>
+            <td>Shorten used word or concept by keeping the accessible meaning</td>
             <td>✅</td>
             <td>❌</td>
             <td>✅</td>
@@ -825,6 +826,9 @@ $$
 TODO
 
 # Footnotes
+
+Footnotes work mostly like reference-style links. A footnote is made of two things: a marker in the text that will become a superscript number; 
+a footnote definition that will be placed in a list of footnotes at the end of the document. A footnote looks like this:
 
 That's some text with a footnote[^1].
 
