@@ -511,13 +511,13 @@ Source code:
 
 # Escape
 
-**A character**
+**Character by character**
 
 Use a backslash `\`, see the [list of all the characters that can be escaped](https://kramdown.gettalong.org/syntax.html#automatic-and-manual-escaping), or HTML entities like `&lt;` or `&gt;`.
 
-**A block of characters**
+**Multiple characters**
 
-Use `\`**escaped characters**\``, or `<pre>escaped characters</pre>`, or `~~~escaped characters~~~`
+Instead of using multiple backslashes, use \`inline or single line\` for multiple characters inline and composing a single line. For multiline use: `<pre>multi-lines</pre>`, or `~~~ multi-lines ~~~`
 
 # Informatics Code
 
