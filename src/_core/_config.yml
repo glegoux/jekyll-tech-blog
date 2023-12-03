@@ -67,6 +67,11 @@ kramdown:
   input: GFM # See https://kramdown.gettalong.org/parser/gfm.html
   math_engine: mathjax # See https://www.mathjax.org/
   syntax_highlighter: rouge # See https://rouge.jneen.net/
+  syntax_highlighter_opts:
+    default_lang: text
+    span:
+    block:
+      line_numbers: false
 
 # Plugins
 
