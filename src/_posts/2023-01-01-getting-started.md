@@ -33,6 +33,9 @@ also has **metadata** to inject constants of configurations.
         </thead>
         <tbody>
           <tr>
+            <td colspan="5"><b>Structure</b></td>
+          </tr>  
+          <tr>
             <td><a href="#headings">Headings</a></td>
             <td>Organize your content with part, subpart, sub-subpart, etc.</td>
             <td>✅</td>
@@ -209,7 +212,9 @@ src="https://docs.google.com/drawings/d/e/2PACX-1vRPwfUjnj6bT9B-M4jdzQqOICzCwblx
 
 The following sections give examples for each usage to create your content with the right syntax.
 
-# Headings
+# Structure
+
+## Heading
 
 Make a part, a subpart, and a sub-subpart.
 
@@ -230,7 +235,7 @@ H2
 ------
 ~~~
 
-# New line & Paragraph
+## New line & Paragraph
 
 Let 2 trailing spaces have an end of the line, and let an empty line for a new
 paragraph:
@@ -250,7 +255,77 @@ World!\n
 *Note: `\n` and `␣` represent respectively a new line character and a space
 character.*
 
-# Enchanced Text
+## Horizontal rule
+
+TODO
+
+## Note
+
+Add your notes: info, question, warning, error, and success etc.
+
+<div class="info">
+INFO
+</div>
+
+Source code:
+
+~~~
+<div class="info">
+INFO
+</div>
+~~~
+
+<div class="question">
+QUESTION
+</div>
+
+Source code:
+
+~~~
+<div class="question">
+QUESTION
+</div>
+~~~
+
+<div class="warning">
+WARNING
+</div>
+
+Source code:
+
+~~~
+<div class="warning">
+WARNING
+</div>
+~~~
+
+<div class="error">
+ERROR
+</div>
+
+Source code:
+
+~~~
+<div class="error">
+ERROR
+</div>
+~~~
+
+<div class="success">
+SUCCESS
+</div>
+
+Source code:
+
+~~~
+<div class="success">
+SUCCESS
+</div>
+~~~
+
+# Textual content
+
+## Enchanced Text
 
 Enhance your text:
 
@@ -276,7 +351,77 @@ Source code:
 - Subscript: sub<sub>sub</sub>
 ~~~
 
-# List
+## Links
+
+It works with absolute and relative links:
+
+**Simple link**
+
+<https://www.glegoux.com>
+
+Source code:
+
+~~~
+<https://www.glegoux.com>
+~~~
+
+**Named Link** 
+
+[glegoux](https://www.glegoux.com)
+
+Source code:
+
+~~~
+[glegoux](https://www.glegoux.com)
+~~~
+
+with a title:
+
+[glegoux1](https://www.glegoux.com "glegoux's Homepage") (with the
+  title `glegoux's Homepage`)
+
+Source code:
+
+~~~
+[glegoux](https://www.glegoux.com "glegoux's Homepage")
+~~~
+
+**Reference-style Link**
+
+You can use shortcuts for your links to use that several times on the article or to centralize links:
+
+[glegoux1][1] [glegoux2][1]
+
+[1]: https://www.glegoux.com "glegoux's Homepage"
+
+Source code:
+
+~~~
+[glegoux1][1] [glegoux2][1]
+
+[1]: https://www.glegoux.com "glegoux's Homepage"
+~~~
+
+## Emoticon
+
+Use emoji, with [gemoji](https://github.com/github/gemoji)
+see [emoji cheat sheet](https://www.webfx.com/tools/emoji-cheat-sheet/).
+
+For example: with shortcode :smile: :scream: :yum: or unicode directly 😀 😱 😋.
+
+Source code for emoji with shortcode:
+
+~~~ @escape
+:smile: :scream: :yum:
+~~~
+
+Source code for emoji with unicode:
+
+~~~ @escape
+😀 😱 😋
+~~~
+
+## List
 
 **An ordered list**
 
@@ -346,9 +491,11 @@ Source code:
 - [ ] item
 ~~~
 
+## Table
 
+## Blockquote
 
-# Quote
+## Quote
 
 Quote authors:
 
@@ -364,181 +511,54 @@ Source code:
 Linus Torvalds, creator of the Linux operating system
 ~~~
 
-# Emoticon
+## Footnote
 
-Use emoji, with [gemoji](https://github.com/github/gemoji)
-see [emoji cheat sheet](https://www.webfx.com/tools/emoji-cheat-sheet/).
+Footnotes work mostly like reference-style links. A footnote is made of two things: a marker in the text that will become a superscript number; 
+a footnote definition that will be placed in a list of footnotes at the end of the document. A footnote looks like this:
 
-For example: with shortcode :smile: :scream: :yum: or unicode directly 😀 😱 😋.
+That's some text with a footnote[^1].
 
-Source code for emoji with shortcode:
-
-~~~ @escape
-:smile: :scream: :yum:
-~~~
-
-Source code for emoji with unicode:
-
-~~~ @escape
-😀 😱 😋
-~~~
-
-# Links
-
-It works with absolute and relative links:
-
-**Simple link**
-
-<https://www.glegoux.com>
+[^1]: And that's the footnote.
 
 Source code:
 
 ~~~
-<https://www.glegoux.com>
+That's some text with a footnote.[^1]
+
+[^1]: And that's the footnote.
 ~~~
 
-**Named Link** 
+## Abbreviation
 
-[glegoux](https://www.glegoux.com)
+The HTML specification is maintained by the W3C.
+
+*[HTML]: Hyper Text Markup Language
 
 Source code:
 
 ~~~
-[glegoux](https://www.glegoux.com)
+The HTML specification is maintained by the W3C.
+
+*[HTML]: Hyper Text Markup Language
 ~~~
 
-with a title:
+# Illustration content
 
-[glegoux1](https://www.glegoux.com "glegoux's Homepage") (with the
-  title `glegoux's Homepage`)
+## Image
 
-Source code:
+TODO
 
-~~~
-[glegoux](https://www.glegoux.com "glegoux's Homepage")
-~~~
+## Video
 
-**Reference-style Link**
+TODO
 
-You can use shortcuts for your links to use that several times on the article or to centralize links:
+## Presentation
 
-[glegoux1][1] [glegoux2][1]
+TODO
 
-[1]: https://www.glegoux.com "glegoux's Homepage"
+## Diagram
 
-Source code:
-
-~~~
-[glegoux1][1] [glegoux2][1]
-
-[1]: https://www.glegoux.com "glegoux's Homepage"
-~~~
-
-# Notes
-
-Add your notes: info, question, warning, error, and success etc.
-
-<div class="info">
-INFO
-</div>
-
-Source code:
-
-~~~
-<div class="info">
-INFO
-</div>
-~~~
-
-<div class="question">
-QUESTION
-</div>
-
-Source code:
-
-~~~
-<div class="question">
-QUESTION
-</div>
-~~~
-
-<div class="warning">
-WARNING
-</div>
-
-Source code:
-
-~~~
-<div class="warning">
-WARNING
-</div>
-~~~
-
-<div class="error">
-ERROR
-</div>
-
-Source code:
-
-~~~
-<div class="error">
-ERROR
-</div>
-~~~
-
-<div class="success">
-SUCCESS
-</div>
-
-Source code:
-
-~~~
-<div class="success">
-SUCCESS
-</div>
-~~~
-
-# Comment
-
-If you want to put a hidden text not displayed in the article but present in the
-written source, that is to say, a comment, simply do an HTML comment:
-
-Source code:
-
-~~~
-<!-- comments -->
-~~~
-
-# Escape
-
-**Character by Character**
-
-Use a backslash `\`, see the [list of all the characters that can be escaped](https://kramdown.gettalong.org/syntax.html#automatic-and-manual-escaping), or HTML entities like `&lt;` or `&gt;`.
-
-**Inline and Single Line Characters**
-
-Instead of using multiple backslashes, use for multiple characters inline and composing a single line, these syntaxes:
-
-
-* <code>&lt;code&gt;inline or single line&lt;/code&gt;<code>
-
-If you have to display reserved characters such as `<`, and `>` within the `<code>` section, the characters must be escaped using their respective HTML entity:
-`<: &lt;`, and `>: &gt;`. But you cannot escape `&`.
-
-* <code>`inline or single line`</code>
-
-But you cannot display <code>`</code> inside a section delimited by <code>`</code>.
-
-**Multi-line Characters**
-
-* <code><pre>multi-lines</pre></code>
-
-If you have to display reserved characters such as `<`,`>`, `&`, and `"` within the `<pre>` section, the characters must be escaped using their respective HTML entity:
-`<: &lt;`, `>: &gt;`, `&: &amp;`, and `": &quot;`.
-
-* <code>~~~ multi-lines ~~~</code>
-
-But you cannot to display reserved sequence of characters `~~~` within a section delimited by `~~~`.
+TODO
 
 
 # Informatics Code
@@ -831,7 +851,7 @@ Source code:
 $$\int_0^1 x^2dx = \frac{1}{3}$$
 ~~~
 
-## Multi-line Equation
+## Multi-lines Equation
 
 This equation is multi-line and centered:
 
@@ -853,56 +873,58 @@ $$
 $$
 ~~~
 
-# Footnotes
-
-Footnotes work mostly like reference-style links. A footnote is made of two things: a marker in the text that will become a superscript number; 
-a footnote definition that will be placed in a list of footnotes at the end of the document. A footnote looks like this:
-
-That's some text with a footnote[^1].
-
-[^1]: And that's the footnote.
-
-Source code:
-
-~~~
-That's some text with a footnote.[^1]
-
-[^1]: And that's the footnote.
-~~~
-
-# Abbreviation
-
-The HTML specification is maintained by the W3C.
-
-*[HTML]: Hyper Text Markup Language
-
-Source code:
-
-~~~
-The HTML specification is maintained by the W3C.
-
-*[HTML]: Hyper Text Markup Language
-~~~
-
-# Image
-
-TODO
-
-# Video
-
-TODO
-
-# Presentation
-
-TODO
-
-# Diagram
-
-TODO
-
 # HTML
 
 TODO
+
+# Comment
+
+If you want to put a hidden text not displayed in the article but present in the
+written source, that is to say, a comment, simply do an HTML comment:
+
+Source code:
+
+~~~
+<!-- comments -->
+~~~
+
+# Escape
+
+<div class="info" markdown="1">
+All described multi-lines escapes can work to escape inline and single line characters.
+</div>
+
+**Character by Character**
+
+Use a backslash `\`, see the [list of all the characters that can be escaped](https://kramdown.gettalong.org/syntax.html#automatic-and-manual-escaping), or HTML entities like `&lt;` or `&gt;`.
+
+**Inline and Single Line Characters**
+
+Instead of using multiple backslashes, use for multiple characters inline and composing a single line, these syntaxes:
+
+* <code>`inline or single line`</code> 
+
+But you cannot display <code>`</code> inside a section delimited by <code>`</code>.
+
+**Multi-lines Characters**
+
+* <code>&lt;code&gt;inline or single line&lt;/code&gt;<code>
+
+If you have to display reserved characters such as `<`, and `>` within the `<code>` section, the characters must be escaped using their respective HTML entity:
+`<: &lt;`, and `>: &gt;`. But you cannot escape `&`.
+
+* <code><pre>multi-lines</pre></code>
+
+If you have to display reserved characters such as `<`,`>`, `&`, and `"` within the `<pre>` section, the characters must be escaped using their respective HTML entity:
+`<: &lt;`, `>: &gt;`, `&: &amp;`, and `": &quot;`.
+
+* <code>~~~ multi-lines ~~~</code>
+
+But you cannot to display reserved sequence of characters `~~~` within a section delimited by `~~~`.
+
+* <code>``` multi-lines ```</code>
+
+But you cannot to display reserved sequence of characters <code>```</code> within a section delimited by <code>```</code>.
 
 # Others
 
