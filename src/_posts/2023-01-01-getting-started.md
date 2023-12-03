@@ -536,7 +536,7 @@ But you cannot display <code>`</code> inside a section delimited by <code>`</cod
 If you have to display reserved characters such as `<`,`>`, `&`, and `"` within the `<pre>` section, the characters must be escaped using their respective HTML entity:  
 `<: &lt;`, `>: &gt;`, `&: &amp;`, and `": &quot;`.
 
-* `~~~ multi-lines ~~~`
+* <code>~~~ multi-lines ~~~</code>
 
 But you cannot to display reserved sequence of characters `~~~` within a section delimited by `~~~`.
 
