@@ -522,7 +522,7 @@ Instead of using multiple backslashes, use for multiple characters inline and co
 
 * <code>&lt;code&gt;inline or single line&lt;/code&gt;<code>
 
-If you have to display reserved characters such as `<`, and `>` within the `<code>` section, the characters must be escaped using their respective HTML entity:  
+If you have to display reserved characters such as `<`, and `>` within the `<code>` section, the characters must be escaped using their respective HTML entity:
 `<: &lt;`, and `>: &gt;`. But you cannot escape `&`.
 
 * <code>`inline or single line`</code>
@@ -533,7 +533,7 @@ But you cannot display <code>`</code> inside a section delimited by <code>`</cod
 
 * <code><pre>multi-lines</pre></code>
 
-If you have to display reserved characters such as `<`,`>`, `&`, and `"` within the `<pre>` section, the characters must be escaped using their respective HTML entity:  
+If you have to display reserved characters such as `<`,`>`, `&`, and `"` within the `<pre>` section, the characters must be escaped using their respective HTML entity:
 `<: &lt;`, `>: &gt;`, `&: &amp;`, and `": &quot;`.
 
 * <code>~~~ multi-lines ~~~</code>
