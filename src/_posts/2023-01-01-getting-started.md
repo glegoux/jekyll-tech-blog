@@ -407,7 +407,7 @@ Source code:
 [glegoux](https://www.glegoux.com)
 ~~~
 
-**Named Link with a Title** 
+with a title:
 
 [glegoux1](https://www.glegoux.com "glegoux's Homepage") (with the
   title `glegoux's Homepage`)
@@ -418,7 +418,7 @@ Source code:
 [glegoux](https://www.glegoux.com "glegoux's Homepage")
 ~~~
 
-**Multi-used Link**
+**Reference-style Link**
 
 You can use shortcuts for your links to use that several times on the article or to centralize links:
 
@@ -511,13 +511,35 @@ Source code:
 
 # Escape
 
-**Character by character**
+**Character by Character**
 
 Use a backslash `\`, see the [list of all the characters that can be escaped](https://kramdown.gettalong.org/syntax.html#automatic-and-manual-escaping), or HTML entities like `&lt;` or `&gt;`.
 
-**Multiple characters**
+**Inline and Single Line Characters**
 
-Instead of using multiple backslashes, use \`inline or single line\` for multiple characters inline and composing a single line. For multiline use: `<pre>multi-lines</pre>`, or `~~~ multi-lines ~~~`
+Instead of using multiple backslashes, use for multiple characters inline and composing a single line, these syntaxes:
+
+
+* <code>&lt;code&gt;inline or single line&lt;/code&gt;<code>
+
+If you have to display reserved characters such as `<`, and `>` within the `<code>` section, the characters must be escaped using their respective HTML entity:  
+`<: &lt;`, and `>: &gt;`. But you cannot escape `&`.
+
+* <code>`inline or single line`</code>
+
+But you cannot display <code>`</code> inside a section delimited by <code>`</code>.
+
+**Multi-line Characters**
+
+* <code><pre>multi-lines</pre></code>
+
+If you have to display reserved characters such as `<`,`>`, `&`, and `"` within the `<pre>` section, the characters must be escaped using their respective HTML entity:  
+`<: &lt;`, `>: &gt;`, `&: &amp;`, and `": &quot;`.
+
+* `~~~ multi-lines ~~~`
+
+But you cannot to display reserved sequence of characters `~~~` within a section delimited by `~~~`.
+
 
 # Informatics Code
 
@@ -757,10 +779,11 @@ hello:
 ~~~
 
 Source code:
+
 <pre>
 ~~~ xml
-<?xml version="1.0" encoding="UTF-8"?>
-<message>Hello World!</message>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;message&gt;Hello World!&lt;/message&gt;
 ~~~
 </pre>
 
