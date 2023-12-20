@@ -16,11 +16,31 @@ redirect_from:
     {% endif %}
   {% endif %}
 
-  <!-- Tech stack -->
-  {% include project/tech-stack.html %}
+  <div class="row">
+      <!-- Topic blog posts -->
+      <div class="col-lg-6" style="text-align:center;margin-top:1em;margin-bottom:1em">
+        {% include blinker-info.html
+              title=config_blog.title
+              keywords=config_blog.keywords
+        %}
+      </div>
+    <div class="col-6">
+      <!-- Tech stack -->
+      {% include project/tech-stack.html %}
+    </div>
+  </div>
+
 
   <p style="text-align: center">
-    I write also blog posts on Medium, see <a href="https://medium.com/@glegoux" target="_blank"><b><u>https://medium.com/@glegoux</u></b></a>.
+    &ldquo; I write also blog posts on
+    <a href="https://medium.com/@glegoux" target="_blank">
+      <img width="25" height="25" src="/_core/static/img/social/medium.png" alt="Medium"/> 
+      <b><u>Medium</u></b>
+    </a> with the username  
+    <a href="https://medium.com/@glegoux" target="_blank">
+      <img style="width:25px; height:25px" class="icon-avatar" src="/_static/common/img/avatar.jpg" alt="avatar">
+      <b><u>@glegoux</u></b>
+    </a>. &rdquo;
   </p>
 
   <!-- Articles advanced search -->
