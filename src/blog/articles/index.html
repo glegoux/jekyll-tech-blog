@@ -16,15 +16,19 @@ redirect_from:
     {% endif %}
   {% endif %}
 
+  <p class="text-center">
+    <b style="font-size: 2em">Read tech blog posts</b>
+  </p>
+
   <div class="row">
       <!-- Topic blog posts -->
-      <div class="col-lg-6" style="text-align:center;margin-top:1em;margin-bottom:1em">
+      <div class="col-12 col-md-6" style="text-align:center;margin-top:1em;margin-bottom:1em">
         {% include blinker-info.html
               title=config_blog.title
               keywords=config_blog.keywords
         %}
       </div>
-    <div class="col-6">
+    <div class="col-12 col-md-6" style="text-align:center;margin: auto;margin-bottom:1em">
       <!-- Tech stack -->
       {% include project/tech-stack.html %}
     </div>
@@ -34,7 +38,7 @@ redirect_from:
   <p style="text-align: center">
     &ldquo; I write also blog posts on
     <a href="https://medium.com/@glegoux" target="_blank">
-      <img width="25" height="25" src="/_core/static/img/social/medium.png" alt="Medium"/> 
+      <img style="width:25px; height:25px" src="/_core/static/img/social/medium.png" alt="Medium"/> 
       <b><u>Medium</u></b>
     </a> with the username  
     <a href="https://medium.com/@glegoux" target="_blank">
