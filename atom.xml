@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux (glegoux)</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2023-12-21T00:55:04+00:00</updated>
+ <updated>2023-12-21T07:04:01+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -444,10 +444,10 @@ achieve these goals one of the &lt;strong&gt;available resources&lt;/strong&gt; 
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;Goal&lt;/strong&gt;: definition of result(s) that you want to get, called also objective.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Task&lt;/strong&gt;: definition of action(s) that you want to mean to achieve at least one goal.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Activity&lt;/strong&gt;: execution of at least one task over time.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Productivity&lt;/strong&gt;: a measure of your performance that is a combination of effectiveness and
-efficiency.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Task&lt;/strong&gt;: definition of action(s) that you need to achieve a goal.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Activity&lt;/strong&gt;: execution of task(s) over time.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Productivity&lt;/strong&gt;: a measure of your performance (that is a combination of effectiveness and
+efficiency) of your activities.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;a-model-of-optimization&quot;&gt;A model of optimization&lt;/h1&gt;
