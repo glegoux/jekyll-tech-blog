@@ -118,10 +118,10 @@ achieve these goals one of the **available resources** to use and save is time.
 I use several concepts above without defining them, here is a summary:
 
 * **Goal**: definition of result(s) that you want to get, called also objective.
-* **Task**: definition of action(s) that you want to mean to achieve at least one goal.
-* **Activity**: execution of at least one task over time.
-* **Productivity**: a measure of your performance that is a combination of effectiveness and
-  efficiency.
+* **Task**: definition of action(s) that you need to achieve a goal.
+* **Activity**: execution of task(s) over time.
+* **Productivity**: a measure of your performance (that is a combination of effectiveness and
+  efficiency) of your activities.
 
 # A model of optimization
 
