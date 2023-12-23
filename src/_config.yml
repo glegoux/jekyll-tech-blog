@@ -32,7 +32,7 @@ unpublished: false
 project:
   blog:
     title: "Software Engineering"
-    keywords: [ "Research", "Development / Software", "Algorithm", "Design", "Data", "AI / Machine Learning", "Applied Mathematics", "Computer science", "Web", "Security", "Reliability", "Infrastructure / Hardware", "System", "Methodology", "Business" ]
+    keywords: [ "Research", "Computer science", "Development", "Software", "Algorithm", "Design", "Data", "AI / Machine Learning", "Applied Mathematics", "Web", "Security", "Reliability", "System", "Network", "Infrastructure", "Hardware", "Methodology", "Business", "Management", "Communication", "Documentation" ]
     logo_header: "/_static/config/img/site-logo.png"
     theme_color: "#383b43"
     menu_items:
