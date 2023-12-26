@@ -31,7 +31,9 @@
     {%- endif %}
     {% include loader.html %}
     {{ content }}
-    {% include comment-disqus.html %}
+    {%- if jekyll.environment == 'production' -%}
+      {% include comment-disqus.html %}
+    {%- endif %}  
   </div>
 
   <footer class="no-print">
@@ -40,10 +42,9 @@
 
   {% include go-to-top.html %}
 
-  {%- if config_blog.google_analytics_code %}
+  {%- if jekyll.environment == 'production' -%}
     {% include google-analytics.html %}
-  {% endif %}
-
+  {%- endif %}  
 </div>
 
 </body>
