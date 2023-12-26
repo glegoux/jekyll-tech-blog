@@ -1,11 +1,13 @@
 {%- assign libs_version = site.project_core.libs.version -%}
 <!-- Preconnect -->
+{%- if jekyll.environment == 'production' -%}
 <link rel="preconnect" href="https://marketingplatform.google.com/about/analytics/" crossorigin="anonymous"/>
 <link rel="preconnect" href="https://www.google.com" crossorigin="anonymous"/>
-{%- if page.comment -%}
+    {%- if page.comment -%}
 <link rel="preconnect" href="https://disquscdn.com" crossorigin="anonymous"/>
 <link rel="preconnect" href="https://a.disquscdn.com" crossorigin="anonymous"/>
 <link rel="preconnect" href="https://c.disquscdn.com" crossorigin="anonymous"/>
+    {%- endif -%}
 {%- endif -%}
 <!-- Preload Font -->
 <link rel="preload" as="font" href="/_core/static/libs/font-awesome/{{ libs_version.font-awesome }}/webfonts/fa-regular-400.woff2" crossorigin="anonymous"/>
