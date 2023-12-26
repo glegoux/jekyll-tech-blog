@@ -11,9 +11,9 @@
       {%- assign author_avatar_path = '/_core/static/img/default/author.png' -%}
       {%- endunless -%}
       <span class="d-inline-block">
-        <img src="{{ author_avatar_path }}" alt="picture of {{ author_name }}"
-            title="picture of this author"  style="width:25px; height:25px" class="icon-avatar"/>
-        <a class="link-strong" href="{{ author.follow_link }}" title="Follow this author">
+        <a class="link-strong" href="{{ author.follow.link }}" title="Follow this author">
+          <img src="{{ author_avatar_path }}" alt="picture of {{ author_name }}"
+          title="picture of this author" class="icon-avatar"/>
           {{ author.firstname | capitalize }}
           {{ author.lastname | uppercase }}
         </a>
