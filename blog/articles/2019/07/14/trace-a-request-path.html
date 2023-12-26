@@ -257,7 +257,7 @@ window.MathJax = {
       </span>
       </div>
       <!-- Article browser -->
-      <div class="col-4 text-right">
+      <div class="col-4 text-right no-print">
         <div class="article-browser">
 <a href="/blog/articles/2019/05/24/java-champion.html" title="See the previous article">
     <i class="fa fa-arrow-left"></i>
@@ -270,17 +270,31 @@ window.MathJax = {
     </div>
 
     <!-- Article title -->
-    <div class="article-title" title="Title of this article">
+    <div class="row article-title" title="Title of this article">
       Trace a request path
     </div>
 
     <!-- Article description -->
-    <div class="article-description" title="Description of this article">
+    <div class="row article-description" title="Description of this article">
       How to know for which routers a HTTP request browses?
     </div>
 
+    <!-- Article tags -->
+    <div class="row">
+      <span class="article-labels">
+  <ul>
+    
+    <li title="Tag of this article">Internet</li>
+    
+    <li title="Tag of this article">Network</li>
+    
+  </ul>
+</span>
+
+    </div>
+
     <!-- Socials sharing -->
-    <div>
+    <div class="row article-social">
       <div class="social-sharing">
   <ul>
     <li title="Share page on LinkedIn">
@@ -303,26 +317,34 @@ window.MathJax = {
 
     </div>
 
+    <!-- Inline author(s) -->
+    <div class="row article-authors-inline">
+      <div title="Author of this article" style="margin-bottom: 0.5em;"><span class="d-inline-block">
+        <a class="link-strong" href="https://glegoux.com" title="Follow this author">
+          <img src="/_static/authors/glegoux.jpg" alt="picture of glegoux" title="picture of this author" class="icon-avatar">
+          Gilles
+          LEGOUX
+        </a></span></div>
+    </div>
+
     <div class="row">
       <!-- Article details -->
-      <div class="col-8">
-        <div class="article-details">
-          <ul>
-            <li title="Published date of this article">
-              <i class="far fa-calendar-alt"></i>
-              <span>July 14, 2019</span>
-            </li>
-            <li title="Reading time of this article">
-              <i class="far fa-clock"></i>
-              <span>
-                5 min
-              </span>
-            </li>
-</ul>
-        </div>
+      <div class="article-details col-6">
+        <ul>
+          <li title="Published date of this article">
+            <i class="far fa-calendar-alt"></i>
+            <span>July 14, 2019</span>
+          </li>
+          <li title="Reading time of this article">
+            <i class="far fa-clock"></i>
+            <span>
+              5 min
+            </span>
+          </li>
+        </ul>
       </div>
       <!-- Article license -->
-      <div class="col-4">
+      <div class="col-6">
         <div class="article-license" title="See the license">
     <a href="https://creativecommons.org/licenses/by-nc-sa/4.0">
       <i class="cc notranslate"><span class="d-none d-md-inline">Creative Commons Attribution 4.0 International</span> License:</i>
@@ -408,14 +430,14 @@ window.MathJax = {
   <figcaption>Request path from your laptop to web server</figcaption>
 </figure>
 
-<p>Internet is a network of routers. When your web browser is sending one HTTP request your computer uses by default the destination <code class="language-plaintext highlighter-rouge">0.0.0.0</code> if no one sub-network matches with your original destination IP address in its route table.</p>
+<p>Internet is a network of routers. When your web browser is sending one HTTP request your computer uses by default the destination <code class="language-text highlighter-rouge">0.0.0.0</code> if no one sub-network matches with your original destination IP address in its route table.</p>
 
 <div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>route <span class="nt">-n</span>
 <span class="go">Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
 0.0.0.0         192.168.1.254   0.0.0.0         UG    600    0        0 wlp6s0
 </span></code></pre></div></div>
 
-<p>Here the gateway <code class="language-plaintext highlighter-rouge">192.168.1.254</code>  is my Internet box related to network interface <code class="language-plaintext highlighter-rouge">wlp6s0</code>.</p>
+<p>Here the gateway <code class="language-text highlighter-rouge">192.168.1.254</code>  is my Internet box related to network interface <code class="language-text highlighter-rouge">wlp6s0</code>.</p>
 
 <div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>nslookup 192.168.1.254
 <span class="go">Server:		127.0.1.1
@@ -423,7 +445,7 @@ window.MathJax = {
 <span class="go">name = bbox.lan.
 </span></code></pre></div></div>
 
-<p>Your request is sent to box of your Internet Service Provider (ISP), for me it is a French ISP: Bouygues Telecom. Leaving your Local Area Network (LAN) to the Wide Area Network (WAN) of Internet, thanks to  Network Address Translation  (NAT), your box replaces IP address source in the header of your HTTP request (equals to your private IP, see <code class="language-plaintext highlighter-rouge">ifconfig wlp6s0</code>) by its public IP address (see <code class="language-plaintext highlighter-rouge">dig +short myip.opendns.com @resolver1.opendns.com</code>), and keeps in memory this matching only for this request in order to it comes from your computer by doing reverse translation.</p>
+<p>Your request is sent to box of your Internet Service Provider (ISP), for me it is a French ISP: Bouygues Telecom. Leaving your Local Area Network (LAN) to the Wide Area Network (WAN) of Internet, thanks to  Network Address Translation  (NAT), your box replaces IP address source in the header of your HTTP request (equals to your private IP, see <code class="language-text highlighter-rouge">ifconfig wlp6s0</code>) by its public IP address (see <code class="language-text highlighter-rouge">dig +short myip.opendns.com @resolver1.opendns.com</code>), and keeps in memory this matching only for this request in order to it comes from your computer by doing reverse translation.</p>
 
 <p>The Time to live (TTL) of your request allows to know how many maximally your request can cross routers before arriving at destination. It prevents infinite cycle of routers in the network, by default a value of 64 is recommended depending of diameter of Internet. By modifying this value from 1 to N, you can get the IP address of each router on the path of your request: it will be the IP source of the response of your request HTTP.</p>
 
@@ -444,7 +466,7 @@ From 10.125.135.205 icmp_seq=1 Time to live exceeded
 1 packets transmitted, 0 received, +1 errors, 100% packet loss, time 0ms
 </span></code></pre></div></div>
 
-<p>This is valid for outward network path your TTL must be sufficient, you can see your current TTL <code class="language-plaintext highlighter-rouge">cat /proc/sys/net/ipv4/ip_default_ttl</code> or with <code class="language-plaintext highlighter-rouge">ping -c 1 localhost</code> (for Linux default value is 64), and change that without persistence <code class="language-plaintext highlighter-rouge">sudo sysctl net.ipv4.ip_default_ttl=128</code>. Targeted server must have also sufficient TTL for return network path, this value is decremented (until value 56 here, but we don’t know initial value a priori):</p>
+<p>This is valid for outward network path your TTL must be sufficient, you can see your current TTL <code class="language-text highlighter-rouge">cat /proc/sys/net/ipv4/ip_default_ttl</code> or with <code class="language-text highlighter-rouge">ping -c 1 localhost</code> (for Linux default value is 64), and change that without persistence <code class="language-text highlighter-rouge">sudo sysctl net.ipv4.ip_default_ttl=128</code>. Targeted server must have also sufficient TTL for return network path, this value is decremented (until value 56 here, but we don’t know initial value a priori):</p>
 
 <div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>ping <span class="nt">-c</span> 1 glegoux.com
 <span class="go">PING glegoux.com (195.164.48.181) 56(84) bytes of data.
@@ -455,7 +477,7 @@ From 10.125.135.205 icmp_seq=1 Time to live exceeded
 rtt min/avg/max/mdev = 13.821/13.821/13.821/0.000 ms
 </span></code></pre></div></div>
 
-<p>While ping command uses ICMP protocol, the system command <code class="language-plaintext highlighter-rouge">traceroute</code> realizes that directly with TCP protocol more easily. If there are stars instead of one IP address it means router refused to give its identity.</p>
+<p>While ping command uses ICMP protocol, the system command <code class="language-text highlighter-rouge">traceroute</code> realizes that directly with TCP protocol more easily. If there are stars instead of one IP address it means router refused to give its identity.</p>
 
 <p>There is no rule to guarantee that outward path and return path are identical. This is sometimes useful to get traceroute from both ends of your network. Here I am considering only outward path.</p>
 
@@ -480,7 +502,7 @@ rtt min/avg/max/mdev = 13.821/13.821/13.821/0.000 ms
 
 <p>But an constant update and smart analysis of the network is required to locate any IP address (IPv4 or IPv6), because of dynamic IP addresses and moving connected objects for instance in the Internet of Things (IoT) or mobile networks. In addition, this location could not be too precised to respect private life of each Internet surfer, even if this one shares its location via its web browser.</p>
 
-<p>With this <a href="https://github.com/glegoux/articles-glegoux-com/tree/master/articles/2019-07-14-geo-location-of-request-path/code">Proof of Concept (PoC)</a>, you can run <code class="language-plaintext highlighter-rouge">get_route.sh glegoux.com</code> to get IP locations in csv file <code class="language-plaintext highlighter-rouge">route.csv</code> and see the result via Google Maps (just <a href="https://developers.google.com/maps/documentation/javascript/get-api-key">get your own API token</a>) and a python web server by executing <code class="language-plaintext highlighter-rouge">httpserver.sh</code> and by visualizing <code class="language-plaintext highlighter-rouge">index.html</code> in your favorite web browser.</p>
+<p>With this <a href="https://github.com/glegoux/articles-glegoux-com/tree/master/articles/2019-07-14-geo-location-of-request-path/code">Proof of Concept (PoC)</a>, you can run <code class="language-text highlighter-rouge">get_route.sh glegoux.com</code> to get IP locations in csv file <code class="language-text highlighter-rouge">route.csv</code> and see the result via Google Maps (just <a href="https://developers.google.com/maps/documentation/javascript/get-api-key">get your own API token</a>) and a python web server by executing <code class="language-text highlighter-rouge">httpserver.sh</code> and by visualizing <code class="language-text highlighter-rouge">index.html</code> in your favorite web browser.</p>
 
 <figure title="Geo-location of request path from Paris to glegoux.com">
   <div>
@@ -559,9 +581,9 @@ rtt min/avg/max/mdev = 13.821/13.821/13.821/0.000 ms
       </div>
     </div>
 
-    <hr class="sep">
+    <hr class="sep no-print">
 
-    <div class="row">
+    <div class="row no-print">
       <!-- Article browser -->
       <div class="col-4 text-left">
         <div class="article-browser">
@@ -666,35 +688,35 @@ rtt min/avg/max/mdev = 13.821/13.821/13.821/0.000 ms
   <h5>Also read</h5>
   <div class="row">
 <div class="col-xs-12 col-md-6 col-lg-4">
-<a href="/blog/articles/2019/04/01/lighthouse.html" title="Read this article" style="display: block">
+<a href="/blog/articles/2021/04/20/time-management.html" title="Read this article" style="display: block">
   <div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2019-04-01-lighthouse.jpg" alt="2019-04-01-lighthouse">
+        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2021-04-20-time-management.jpg" alt="2021-04-20-time-management">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          Lighthouse
+          Time management
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          Lighthouse is an open-source, automated tool for improving the quality of web pages.
+          How to optimize your time &amp; work?
         </div>
 <!-- Article categories -->
         <div class="article-category">
           <ul>
-            <li>Web</li>
+            <li>Methodology</li>
           </ul>
         </div>
 <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>April 01, 2019</span>
+          <span>April 20, 2021</span>
         </div>
 <!-- Article reading time -->
         <div class="reading-time">
@@ -708,24 +730,24 @@ rtt min/avg/max/mdev = 13.821/13.821/13.821/0.000 ms
 </a>
 </div>
 <div class="col-xs-12 col-md-6 col-lg-4">
-<a href="/blog/articles/2019/03/01/access-to-a-computer-from-usb-key.html" title="Read this article" style="display: block">
+<a href="/blog/articles/2020/05/15/gnu-privacy-guard.html" title="Read this article" style="display: block">
   <div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2019-03-01-access-to-a-computer-from-usb-key.jpg" alt="2019-03-01-access-to-a-computer-from-usb-key">
+        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2020-05-15-gnu-privacy-guard.jpg" alt="2020-05-15-gnu-privacy-guard">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          Access to a computer from USB key
+          GNU privacy guard
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          Somebody with USB key can take control of your computer
+          How to prove its identity and encrypt its communication?
         </div>
 <!-- Article categories -->
         <div class="article-category">
@@ -736,7 +758,7 @@ rtt min/avg/max/mdev = 13.821/13.821/13.821/0.000 ms
 <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>March 01, 2019</span>
+          <span>May 15, 2020</span>
         </div>
 <!-- Article reading time -->
         <div class="reading-time">
@@ -750,40 +772,40 @@ rtt min/avg/max/mdev = 13.821/13.821/13.821/0.000 ms
 </a>
 </div>
 <div class="col-xs-12 col-md-6 col-lg-4">
-<a href="/blog/articles/2020/05/04/java-ecosystem.html" title="Read this article" style="display: block">
+<a href="/blog/articles/2019/11/29/gafa-vs-batx.html" title="Read this article" style="display: block">
   <div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2020-05-04-java-ecosystem.jpg" alt="2020-05-04-java-ecosystem">
+        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2019-11-29-gafa-vs-batx.jpg" alt="2019-11-29-gafa-vs-batx">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          Java ecosystem
+          Gafa vs Batx
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          What is the Java ecosystem from Sun to Oracle?
+          What is the difference?
         </div>
 <!-- Article categories -->
         <div class="article-category">
           <ul>
-            <li>Development</li>
+            <li>Business</li>
           </ul>
         </div>
 <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>May 04, 2020</span>
+          <span>November 29, 2019</span>
         </div>
 <!-- Article reading time -->
         <div class="reading-time">
           <i class="far fa-clock"></i>
-          <span>10 min</span>
+          <span>5 min</span>
         </div>
 </div>
 

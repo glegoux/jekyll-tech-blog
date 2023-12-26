@@ -5,8 +5,8 @@
     <description>Personal blog about software engineering</description>
     <link>https://glegoux.com/</link>
     <atom:link href="https://glegoux.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 26 Dec 2023 11:02:20 +0000</pubDate>
-    <lastBuildDate>Tue, 26 Dec 2023 11:02:20 +0000</lastBuildDate>
+    <pubDate>Tue, 26 Dec 2023 12:27:36 +0000</pubDate>
+    <lastBuildDate>Tue, 26 Dec 2023 12:27:36 +0000</lastBuildDate>
     <generator>Jekyll v4.3.2</generator>
     
       <item>
@@ -283,7 +283,7 @@ versions would point to an identical state of the software.&lt;/p&gt;
 &lt;h1 id=&quot;example-for-javascala&quot;&gt;Example for Java/Scala&lt;/h1&gt;
 
 &lt;p&gt;A Java/Scala library is compiled to a platform-independent format called JVM bytecode and stored in 
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.class&lt;/code&gt; files. These class files are zipped in JAR files for distribution.&lt;/p&gt;
+&lt;code class=&quot;language-text highlighter-rouge&quot;&gt;.class&lt;/code&gt; files. These class files are zipped in JAR files for distribution.&lt;/p&gt;
 
 &lt;h1 id=&quot;references&quot;&gt;References&lt;/h1&gt;
 
@@ -755,7 +755,7 @@ the Unix timestamp as a signed 32-bits integer. It could produce a huge chaos.&l
 
 &lt;p&gt;Effectively, the &lt;strong&gt;Unix timestamp&lt;/strong&gt;, used largely in informatics systems, represents the number of
 elapsed seconds since January 1st, 1970 at midnight in the Coordinated Universal Time (UTC) time standard.
-This value is incremented every second. And the date &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1970-01-01 00:00:00 UTC&lt;/code&gt;, usually called &lt;strong&gt;epoch date&lt;/strong&gt;, 
+This value is incremented every second. And the date &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;1970-01-01 00:00:00 UTC&lt;/code&gt;, usually called &lt;strong&gt;epoch date&lt;/strong&gt;, 
 is a particular date in a lot of informatics system representing the origin time, inherited of the Unix operating system
 an POSIX standard. The Unix engineers picked this date arbitrarily, because they needed to set a uniform date for the start of time, 
 and New Year’s Day, 1970, seemed most convenient.&lt;/p&gt;
@@ -781,8 +781,8 @@ username of Dennis MacAlistair Ritchie, famous computer scientist having worked 
 
 &lt;p&gt;But the arithmetic binary representation of this Unix timestamp is sometimes on &lt;strong&gt;32-bits as a signed integer&lt;/strong&gt; again as 
 originally at its creation. That is to say, its maximum value is $ 2^{31} - 1 $. The negative values until $ -2^{31} 
-$ (inclusive) are used by convention for representing a duration from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1970-01-01 00:00:00 UTC&lt;/code&gt; to an anterior date. 
-Then the maximum duration time supported by a such Unix timestamp will be reach out at &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2038-01-19 03:14:07 UTC&lt;/code&gt;:&lt;/p&gt;
+$ (inclusive) are used by convention for representing a duration from &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;1970-01-01 00:00:00 UTC&lt;/code&gt; to an anterior date. 
+Then the maximum duration time supported by a such Unix timestamp will be reach out at &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;2038-01-19 03:14:07 UTC&lt;/code&gt;:&lt;/p&gt;
 
 &lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;date&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--date&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;@&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$((&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;31&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--utc&lt;/span&gt;
 &lt;span class=&quot;go&quot;&gt;Tue Jan 19 03:14:07 UTC 2038
@@ -827,8 +827,8 @@ with a signed 64-bits representation for an Unix timestamp:&lt;/p&gt;
 &lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Boolean&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;A Unix timestamp is well represented by a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Long&lt;/code&gt; from $-2^{63}$ to $2^{63} - 1$. Let’s study together, what it could happen, if it was a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Int&lt;/code&gt;.&lt;br /&gt;
-The range of values will be between $-2^{31}$ and $2^{31} - 1$ for a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Int&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;A Unix timestamp is well represented by a &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;Long&lt;/code&gt; from $-2^{63}$ to $2^{63} - 1$. Let’s study together, what it could happen, if it was a &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;Int&lt;/code&gt;.&lt;br /&gt;
+The range of values will be between $-2^{31}$ and $2^{31} - 1$ for a &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;Int&lt;/code&gt;.&lt;/p&gt;
 
 &lt;div class=&quot;language-scala highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;scala&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;MinValue&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Int&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2147483648&lt;/span&gt;
@@ -847,14 +847,14 @@ Here, you have a odd number instead of an even number, and typically an arithmet
 &lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Boolean&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;The adding of 1 second after &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Tue Jan 19 03:14:07 UTC 2038&lt;/code&gt; gives:&lt;/p&gt;
+&lt;p&gt;The adding of 1 second after &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;Tue Jan 19 03:14:07 UTC 2038&lt;/code&gt; gives:&lt;/p&gt;
 
 &lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;date&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--date&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;@&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$((&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;31&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--utc&lt;/span&gt;
 &lt;span class=&quot;go&quot;&gt;Fri Dec 13 20:45:52 UTC 1901
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Weird, how could we explain that. The error is silent no exception raised, the addition provoking the arithmetic overflow is cyclic on the 
-arithmetic representation. Because, here a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Int&lt;/code&gt; has a &lt;strong&gt;two’s complement binary representation&lt;/strong&gt; (2C) in Scala.
+arithmetic representation. Because, here a &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;Int&lt;/code&gt; has a &lt;strong&gt;two’s complement binary representation&lt;/strong&gt; (2C) in Scala.
 Here the relation between the base 10 and the two’s complement binary representation on 32-bits is:&lt;/p&gt;
 
 \[[N]_{10} = [b_{31}\,...\,b_{1}\,b_{0}]_{2C} = - b_{31}\,2^{31} + \sum_{i=0}^{30} b_{i}\,2^{i} \text{ where } b_k \,\in\, \{ 0,1 \}\]
@@ -1137,7 +1137,7 @@ These both Java Development Kit are available respectively at &lt;a href=&quot;h
 &lt;p&gt;There are &lt;strong&gt;several JDK vendors among AdoptOpenJDK, Amazon Correto, SAP, Red Hat, Azul, IBM&lt;/strong&gt;. 
 The most of the vendors have a project based on OpenJDK. The Java Community Process (JCP) 
 provides a &lt;strong&gt;Technology Compatibility Kit&lt;/strong&gt; (TCK) to certify whether a JDK build meets 
-the Java standards. Once a build passes the TCK, it can be referred to as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Java SE compatible&lt;/code&gt;.
+the Java standards. Once a build passes the TCK, it can be referred to as &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;Java SE compatible&lt;/code&gt;.
 The certification process requires a commercial license from Oracle.&lt;/p&gt;
 
 &lt;p&gt;You can see, what is the usage of the Java ecosystem in terms of IDE, Java vendors, Java version, Java 
@@ -1195,8 +1195,8 @@ these different environment.&lt;/p&gt;
 &lt;p&gt;Of course, it depends on which kind of projects you work. You don’t need to have always a full isolated environment by setting up 
 another physical machine (bare metal), a virtual machine or a container. Because, the computer ecosystem is composed of layers.&lt;/p&gt;
 
-&lt;p&gt;If you use only a high-level layer for writing applications in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Python&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Java&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ruby&lt;/code&gt; …, you can use a tool of version management 
-as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Pyenv&lt;/code&gt;,  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Sdkman&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Rvm&lt;/code&gt;, it is sufficient. Like that you can use your project language in the correct version for your project, 
+&lt;p&gt;If you use only a high-level layer for writing applications in &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;Python&lt;/code&gt;, &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;Java&lt;/code&gt; or &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;Ruby&lt;/code&gt; …, you can use a tool of version management 
+as &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;Pyenv&lt;/code&gt;,  &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;Sdkman&lt;/code&gt; and &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;Rvm&lt;/code&gt;, it is sufficient. Like that you can use your project language in the correct version for your project, 
 directly on your host machine that you be on Windows, WSL, macOS, or a Linux distribution and regardless of the environment ecosystem … 
 because these languages are cross platform. You need also that related dependencies libraries be installed in dedicated locations, 
 but these tools do that as well.&lt;/p&gt;

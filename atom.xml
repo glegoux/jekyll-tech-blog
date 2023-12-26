@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux (glegoux)</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2023-12-26T11:02:20+00:00</updated>
+ <updated>2023-12-26T12:27:36+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -281,7 +281,7 @@ versions would point to an identical state of the software.&lt;/p&gt;
 &lt;h1 id=&quot;example-for-javascala&quot;&gt;Example for Java/Scala&lt;/h1&gt;
 
 &lt;p&gt;A Java/Scala library is compiled to a platform-independent format called JVM bytecode and stored in 
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.class&lt;/code&gt; files. These class files are zipped in JAR files for distribution.&lt;/p&gt;
+&lt;code class=&quot;language-text highlighter-rouge&quot;&gt;.class&lt;/code&gt; files. These class files are zipped in JAR files for distribution.&lt;/p&gt;
 
 &lt;h1 id=&quot;references&quot;&gt;References&lt;/h1&gt;
 
@@ -749,7 +749,7 @@ the Unix timestamp as a signed 32-bits integer. It could produce a huge chaos.&l
 
 &lt;p&gt;Effectively, the &lt;strong&gt;Unix timestamp&lt;/strong&gt;, used largely in informatics systems, represents the number of
 elapsed seconds since January 1st, 1970 at midnight in the Coordinated Universal Time (UTC) time standard.
-This value is incremented every second. And the date &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1970-01-01 00:00:00 UTC&lt;/code&gt;, usually called &lt;strong&gt;epoch date&lt;/strong&gt;, 
+This value is incremented every second. And the date &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;1970-01-01 00:00:00 UTC&lt;/code&gt;, usually called &lt;strong&gt;epoch date&lt;/strong&gt;, 
 is a particular date in a lot of informatics system representing the origin time, inherited of the Unix operating system
 an POSIX standard. The Unix engineers picked this date arbitrarily, because they needed to set a uniform date for the start of time, 
 and New Year’s Day, 1970, seemed most convenient.&lt;/p&gt;
@@ -775,8 +775,8 @@ username of Dennis MacAlistair Ritchie, famous computer scientist having worked 
 
 &lt;p&gt;But the arithmetic binary representation of this Unix timestamp is sometimes on &lt;strong&gt;32-bits as a signed integer&lt;/strong&gt; again as 
 originally at its creation. That is to say, its maximum value is $ 2^{31} - 1 $. The negative values until $ -2^{31} 
-$ (inclusive) are used by convention for representing a duration from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1970-01-01 00:00:00 UTC&lt;/code&gt; to an anterior date. 
-Then the maximum duration time supported by a such Unix timestamp will be reach out at &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2038-01-19 03:14:07 UTC&lt;/code&gt;:&lt;/p&gt;
+$ (inclusive) are used by convention for representing a duration from &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;1970-01-01 00:00:00 UTC&lt;/code&gt; to an anterior date. 
+Then the maximum duration time supported by a such Unix timestamp will be reach out at &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;2038-01-19 03:14:07 UTC&lt;/code&gt;:&lt;/p&gt;
 
 &lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;date&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--date&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;@&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$((&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;31&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--utc&lt;/span&gt;
 &lt;span class=&quot;go&quot;&gt;Tue Jan 19 03:14:07 UTC 2038
@@ -821,8 +821,8 @@ with a signed 64-bits representation for an Unix timestamp:&lt;/p&gt;
 &lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Boolean&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;A Unix timestamp is well represented by a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Long&lt;/code&gt; from $-2^{63}$ to $2^{63} - 1$. Let’s study together, what it could happen, if it was a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Int&lt;/code&gt;.&lt;br /&gt;
-The range of values will be between $-2^{31}$ and $2^{31} - 1$ for a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Int&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;A Unix timestamp is well represented by a &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;Long&lt;/code&gt; from $-2^{63}$ to $2^{63} - 1$. Let’s study together, what it could happen, if it was a &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;Int&lt;/code&gt;.&lt;br /&gt;
+The range of values will be between $-2^{31}$ and $2^{31} - 1$ for a &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;Int&lt;/code&gt;.&lt;/p&gt;
 
 &lt;div class=&quot;language-scala highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;scala&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;MinValue&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Int&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2147483648&lt;/span&gt;
@@ -841,14 +841,14 @@ Here, you have a odd number instead of an even number, and typically an arithmet
 &lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Boolean&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;The adding of 1 second after &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Tue Jan 19 03:14:07 UTC 2038&lt;/code&gt; gives:&lt;/p&gt;
+&lt;p&gt;The adding of 1 second after &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;Tue Jan 19 03:14:07 UTC 2038&lt;/code&gt; gives:&lt;/p&gt;
 
 &lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;date&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--date&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;@&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$((&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;31&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--utc&lt;/span&gt;
 &lt;span class=&quot;go&quot;&gt;Fri Dec 13 20:45:52 UTC 1901
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Weird, how could we explain that. The error is silent no exception raised, the addition provoking the arithmetic overflow is cyclic on the 
-arithmetic representation. Because, here a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Int&lt;/code&gt; has a &lt;strong&gt;two’s complement binary representation&lt;/strong&gt; (2C) in Scala.
+arithmetic representation. Because, here a &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;Int&lt;/code&gt; has a &lt;strong&gt;two’s complement binary representation&lt;/strong&gt; (2C) in Scala.
 Here the relation between the base 10 and the two’s complement binary representation on 32-bits is:&lt;/p&gt;
 
 \[[N]_{10} = [b_{31}\,...\,b_{1}\,b_{0}]_{2C} = - b_{31}\,2^{31} + \sum_{i=0}^{30} b_{i}\,2^{i} \text{ where } b_k \,\in\, \{ 0,1 \}\]
@@ -1121,7 +1121,7 @@ These both Java Development Kit are available respectively at &lt;a href=&quot;h
 &lt;p&gt;There are &lt;strong&gt;several JDK vendors among AdoptOpenJDK, Amazon Correto, SAP, Red Hat, Azul, IBM&lt;/strong&gt;. 
 The most of the vendors have a project based on OpenJDK. The Java Community Process (JCP) 
 provides a &lt;strong&gt;Technology Compatibility Kit&lt;/strong&gt; (TCK) to certify whether a JDK build meets 
-the Java standards. Once a build passes the TCK, it can be referred to as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Java SE compatible&lt;/code&gt;.
+the Java standards. Once a build passes the TCK, it can be referred to as &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;Java SE compatible&lt;/code&gt;.
 The certification process requires a commercial license from Oracle.&lt;/p&gt;
 
 &lt;p&gt;You can see, what is the usage of the Java ecosystem in terms of IDE, Java vendors, Java version, Java 
@@ -1173,8 +1173,8 @@ these different environment.&lt;/p&gt;
 &lt;p&gt;Of course, it depends on which kind of projects you work. You don’t need to have always a full isolated environment by setting up 
 another physical machine (bare metal), a virtual machine or a container. Because, the computer ecosystem is composed of layers.&lt;/p&gt;
 
-&lt;p&gt;If you use only a high-level layer for writing applications in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Python&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Java&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ruby&lt;/code&gt; …, you can use a tool of version management 
-as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Pyenv&lt;/code&gt;,  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Sdkman&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Rvm&lt;/code&gt;, it is sufficient. Like that you can use your project language in the correct version for your project, 
+&lt;p&gt;If you use only a high-level layer for writing applications in &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;Python&lt;/code&gt;, &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;Java&lt;/code&gt; or &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;Ruby&lt;/code&gt; …, you can use a tool of version management 
+as &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;Pyenv&lt;/code&gt;,  &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;Sdkman&lt;/code&gt; and &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;Rvm&lt;/code&gt;, it is sufficient. Like that you can use your project language in the correct version for your project, 
 directly on your host machine that you be on Windows, WSL, macOS, or a Linux distribution and regardless of the environment ecosystem … 
 because these languages are cross platform. You need also that related dependencies libraries be installed in dedicated locations, 
 but these tools do that as well.&lt;/p&gt;
@@ -1266,14 +1266,14 @@ vs GAFA as (without quoting all other ones). Here are some of them with TikTok t
   &lt;figcaption&gt;Request path from your laptop to web server&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;Internet is a network of routers. When your web browser is sending one HTTP request your computer uses by default the destination &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0.0.0.0&lt;/code&gt; if no one sub-network matches with your original destination IP address in its route table.&lt;/p&gt;
+&lt;p&gt;Internet is a network of routers. When your web browser is sending one HTTP request your computer uses by default the destination &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;0.0.0.0&lt;/code&gt; if no one sub-network matches with your original destination IP address in its route table.&lt;/p&gt;
 
 &lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;route &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt;
 &lt;span class=&quot;go&quot;&gt;Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
 0.0.0.0         192.168.1.254   0.0.0.0         UG    600    0        0 wlp6s0
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Here the gateway &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;192.168.1.254&lt;/code&gt;  is my Internet box related to network interface &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;wlp6s0&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Here the gateway &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;192.168.1.254&lt;/code&gt;  is my Internet box related to network interface &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;wlp6s0&lt;/code&gt;.&lt;/p&gt;
 
 &lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;nslookup 192.168.1.254
 &lt;span class=&quot;go&quot;&gt;Server:		127.0.1.1
@@ -1281,7 +1281,7 @@ vs GAFA as (without quoting all other ones). Here are some of them with TikTok t
 &lt;span class=&quot;go&quot;&gt;name = bbox.lan.
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Your request is sent to box of your Internet Service Provider (ISP), for me it is a French ISP: Bouygues Telecom. Leaving your Local Area Network (LAN) to the Wide Area Network (WAN) of Internet, thanks to  Network Address Translation  (NAT), your box replaces IP address source in the header of your HTTP request (equals to your private IP, see &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ifconfig wlp6s0&lt;/code&gt;) by its public IP address (see &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dig +short myip.opendns.com @resolver1.opendns.com&lt;/code&gt;), and keeps in memory this matching only for this request in order to it comes from your computer by doing reverse translation.&lt;/p&gt;
+&lt;p&gt;Your request is sent to box of your Internet Service Provider (ISP), for me it is a French ISP: Bouygues Telecom. Leaving your Local Area Network (LAN) to the Wide Area Network (WAN) of Internet, thanks to  Network Address Translation  (NAT), your box replaces IP address source in the header of your HTTP request (equals to your private IP, see &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;ifconfig wlp6s0&lt;/code&gt;) by its public IP address (see &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;dig +short myip.opendns.com @resolver1.opendns.com&lt;/code&gt;), and keeps in memory this matching only for this request in order to it comes from your computer by doing reverse translation.&lt;/p&gt;
 
 &lt;p&gt;The Time to live (TTL) of your request allows to know how many maximally your request can cross routers before arriving at destination. It prevents infinite cycle of routers in the network, by default a value of 64 is recommended depending of diameter of Internet. By modifying this value from 1 to N, you can get the IP address of each router on the path of your request: it will be the IP source of the response of your request HTTP.&lt;/p&gt;
 
@@ -1302,7 +1302,7 @@ From 10.125.135.205 icmp_seq=1 Time to live exceeded
 1 packets transmitted, 0 received, +1 errors, 100% packet loss, time 0ms
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;This is valid for outward network path your TTL must be sufficient, you can see your current TTL &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cat /proc/sys/net/ipv4/ip_default_ttl&lt;/code&gt; or with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ping -c 1 localhost&lt;/code&gt; (for Linux default value is 64), and change that without persistence &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo sysctl net.ipv4.ip_default_ttl=128&lt;/code&gt;. Targeted server must have also sufficient TTL for return network path, this value is decremented (until value 56 here, but we don’t know initial value a priori):&lt;/p&gt;
+&lt;p&gt;This is valid for outward network path your TTL must be sufficient, you can see your current TTL &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;cat /proc/sys/net/ipv4/ip_default_ttl&lt;/code&gt; or with &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;ping -c 1 localhost&lt;/code&gt; (for Linux default value is 64), and change that without persistence &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;sudo sysctl net.ipv4.ip_default_ttl=128&lt;/code&gt;. Targeted server must have also sufficient TTL for return network path, this value is decremented (until value 56 here, but we don’t know initial value a priori):&lt;/p&gt;
 
 &lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;ping &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; 1 glegoux.com
 &lt;span class=&quot;go&quot;&gt;PING glegoux.com (195.164.48.181) 56(84) bytes of data.
@@ -1313,7 +1313,7 @@ From 10.125.135.205 icmp_seq=1 Time to live exceeded
 rtt min/avg/max/mdev = 13.821/13.821/13.821/0.000 ms
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;While ping command uses ICMP protocol, the system command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;traceroute&lt;/code&gt; realizes that directly with TCP protocol more easily. If there are stars instead of one IP address it means router refused to give its identity.&lt;/p&gt;
+&lt;p&gt;While ping command uses ICMP protocol, the system command &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;traceroute&lt;/code&gt; realizes that directly with TCP protocol more easily. If there are stars instead of one IP address it means router refused to give its identity.&lt;/p&gt;
 
 &lt;p&gt;There is no rule to guarantee that outward path and return path are identical. This is sometimes useful to get traceroute from both ends of your network. Here I am considering only outward path.&lt;/p&gt;
 
@@ -1338,7 +1338,7 @@ rtt min/avg/max/mdev = 13.821/13.821/13.821/0.000 ms
 
 &lt;p&gt;But an constant update and smart analysis of the network is required to locate any IP address (IPv4 or IPv6), because of dynamic IP addresses and moving connected objects for instance in the Internet of Things (IoT) or mobile networks. In addition, this location could not be too precised to respect private life of each Internet surfer, even if this one shares its location via its web browser.&lt;/p&gt;
 
-&lt;p&gt;With this &lt;a href=&quot;https://github.com/glegoux/articles-glegoux-com/tree/master/articles/2019-07-14-geo-location-of-request-path/code&quot;&gt;Proof of Concept (PoC)&lt;/a&gt;, you can run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;get_route.sh glegoux.com&lt;/code&gt; to get IP locations in csv file &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;route.csv&lt;/code&gt; and see the result via Google Maps (just &lt;a href=&quot;https://developers.google.com/maps/documentation/javascript/get-api-key&quot;&gt;get your own API token&lt;/a&gt;) and a python web server by executing &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;httpserver.sh&lt;/code&gt; and by visualizing &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;index.html&lt;/code&gt; in your favorite web browser.&lt;/p&gt;
+&lt;p&gt;With this &lt;a href=&quot;https://github.com/glegoux/articles-glegoux-com/tree/master/articles/2019-07-14-geo-location-of-request-path/code&quot;&gt;Proof of Concept (PoC)&lt;/a&gt;, you can run &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;get_route.sh glegoux.com&lt;/code&gt; to get IP locations in csv file &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;route.csv&lt;/code&gt; and see the result via Google Maps (just &lt;a href=&quot;https://developers.google.com/maps/documentation/javascript/get-api-key&quot;&gt;get your own API token&lt;/a&gt;) and a python web server by executing &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;httpserver.sh&lt;/code&gt; and by visualizing &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;index.html&lt;/code&gt; in your favorite web browser.&lt;/p&gt;
 
 &lt;figure title=&quot;Geo-location of request path from Paris to glegoux.com&quot;&gt;
   &lt;div&gt;
@@ -1553,9 +1553,9 @@ jQuery(document).ready(function () {
 &lt;p&gt;Before installing &lt;a href=&quot;https://github.com/GoogleChrome/lighthouse&quot;&gt;Lighthouse&lt;/a&gt;, we must have and check the versions of your tools:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://chromereleases.googleblog.com&quot;&gt;Google Chrome&lt;/a&gt; : &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;google-chrome --version&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/nodejs/node&quot;&gt;Node&lt;/a&gt; : &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;node --version&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/npm/cli&quot;&gt;NPM&lt;/a&gt; : &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;npm --version&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://chromereleases.googleblog.com&quot;&gt;Google Chrome&lt;/a&gt; : &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;google-chrome --version&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/nodejs/node&quot;&gt;Node&lt;/a&gt; : &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;node --version&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/npm/cli&quot;&gt;NPM&lt;/a&gt; : &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;npm --version&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;For the recent versions of lighthouse, you can use &lt;a href=&quot;https://www.google.com/chrome/browser/canary.html&quot;&gt;Canary&lt;/a&gt; version for Google Chrome.&lt;/p&gt;
@@ -1575,7 +1575,7 @@ It has &lt;a href=&quot;https://www.chromium.org/getting-involved/dev-channel&qu
 
 &lt;p&gt;For example, I tested Lighthouse on this blog. Suppose that you have this file &lt;strong&gt;urls.txt&lt;/strong&gt; containing one URL per line:&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://glegoux.com/
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://glegoux.com/
 https://glegoux.com/blog/
 https://glegoux.com/blog/articles/
 https://glegoux.com/about/
@@ -1805,9 +1805,9 @@ integrates very well Kerberos, it is in the standard library. A lot of Java proj
 &lt;p&gt;You can use &lt;strong&gt;Lightweight Directory Access Protocol&lt;/strong&gt; (LDAP) as principal database to store users and groups of your organization. Now you have a nice &lt;strong&gt;Authentication, Authorization&lt;/strong&gt; and &lt;strong&gt;Accounting&lt;/strong&gt; System (AAAS) :&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Authentication&lt;/code&gt; is managed by the KDC to guarantee the identity of an entity.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Authorization&lt;/code&gt; is controlled by the Service directly to authorize access (you can also use Access Control List (ACL) for other permissions)&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Accounting&lt;/code&gt; is allowed by LDAP server.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-text highlighter-rouge&quot;&gt;Authentication&lt;/code&gt; is managed by the KDC to guarantee the identity of an entity.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-text highlighter-rouge&quot;&gt;Authorization&lt;/code&gt; is controlled by the Service directly to authorize access (you can also use Access Control List (ACL) for other permissions)&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-text highlighter-rouge&quot;&gt;Accounting&lt;/code&gt; is allowed by LDAP server.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;figure&gt;
@@ -1853,79 +1853,79 @@ integrates very well Kerberos, it is in the standard library. A lot of Java proj
 
 &lt;h2 id=&quot;key-concepts&quot;&gt;Key Concepts&lt;/h2&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Authentication&lt;/code&gt;: Action of checking that an entity is really this entity without impersonating another entity.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text highlighter-rouge&quot;&gt;Authentication&lt;/code&gt;: Action of checking that an entity is really this entity without impersonating another entity.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Authorization&lt;/code&gt;: Action of verifying that an entity have sufficient rights to access a system.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text highlighter-rouge&quot;&gt;Authorization&lt;/code&gt;: Action of verifying that an entity have sufficient rights to access a system.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Accounting&lt;/code&gt;: Management of defined groups and users.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text highlighter-rouge&quot;&gt;Accounting&lt;/code&gt;: Management of defined groups and users.&lt;/p&gt;
 
 &lt;h2 id=&quot;general-concepts&quot;&gt;General concepts&lt;/h2&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Mutual authentication&lt;/code&gt;: It is also called two-way authentication, is a process or technology in which both entities in a communications link authenticate each other. In a network environment, the client authenticates the server and vice-versa.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text highlighter-rouge&quot;&gt;Mutual authentication&lt;/code&gt;: It is also called two-way authentication, is a process or technology in which both entities in a communications link authenticate each other. In a network environment, the client authenticates the server and vice-versa.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AAS&lt;/code&gt;: Authentication and Authorization System.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text highlighter-rouge&quot;&gt;AAS&lt;/code&gt;: Authentication and Authorization System.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AAAS&lt;/code&gt;: Authentication, Authorization, Accounting/Auditing System.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text highlighter-rouge&quot;&gt;AAAS&lt;/code&gt;: Authentication, Authorization, Accounting/Auditing System.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Client&lt;/code&gt;: An entity that can obtain a ticket. This entity is usually either a user or a host.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text highlighter-rouge&quot;&gt;Client&lt;/code&gt;: An entity that can obtain a ticket. This entity is usually either a user or a host.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Host&lt;/code&gt;: A computer that can be accessed over a network.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text highlighter-rouge&quot;&gt;Host&lt;/code&gt;: A computer that can be accessed over a network.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DNS&lt;/code&gt;: The Domain Name System is a hierarchical decentralized naming system for computers.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text highlighter-rouge&quot;&gt;DNS&lt;/code&gt;: The Domain Name System is a hierarchical decentralized naming system for computers.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Service&lt;/code&gt;: Any program or computer you access over a network. Examples of services include “host” (a host, e.g., when you use telnet and rsh), “ftp” (FTP), “krbtgt” (authentication; cf. ticket-granting ticket), and “pop” (email).&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text highlighter-rouge&quot;&gt;Service&lt;/code&gt;: Any program or computer you access over a network. Examples of services include “host” (a host, e.g., when you use telnet and rsh), “ftp” (FTP), “krbtgt” (authentication; cf. ticket-granting ticket), and “pop” (email).&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;RFC&lt;/code&gt;: A Request for Comments (RFC) is a type of publication from the Internet Engineering Task Force (IETF) and the Internet Society (ISOC), the principal technical development and standards-setting bodies for the Internet.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text highlighter-rouge&quot;&gt;RFC&lt;/code&gt;: A Request for Comments (RFC) is a type of publication from the Internet Engineering Task Force (IETF) and the Internet Society (ISOC), the principal technical development and standards-setting bodies for the Internet.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;LDAP&lt;/code&gt;: Lightweight Directory Access Protocol is a directory service protocol that runs on a layer above the TCP/IP stack. It provides a mechanism used to connect to, search, and modify Internet directories. It is essentially a database that contains information about users and groups in a tree structure&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text highlighter-rouge&quot;&gt;LDAP&lt;/code&gt;: Lightweight Directory Access Protocol is a directory service protocol that runs on a layer above the TCP/IP stack. It provides a mechanism used to connect to, search, and modify Internet directories. It is essentially a database that contains information about users and groups in a tree structure&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;HDFS&lt;/code&gt;:  Hadoop Distributed File System is a Java-based file system that provides scalable and reliable data storage, and it was designed to span large clusters of commodity servers.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text highlighter-rouge&quot;&gt;HDFS&lt;/code&gt;:  Hadoop Distributed File System is a Java-based file system that provides scalable and reliable data storage, and it was designed to span large clusters of commodity servers.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SSO&lt;/code&gt;: Single Sign On is a method allowing to an user to access to several applications thanks to one unique authentication.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text highlighter-rouge&quot;&gt;SSO&lt;/code&gt;: Single Sign On is a method allowing to an user to access to several applications thanks to one unique authentication.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OpenSSH&lt;/code&gt;: Implementation Open Source of Secure SHell (SSH) is a cryptographic network protocol for operating network services securely over an unsecured network.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text highlighter-rouge&quot;&gt;OpenSSH&lt;/code&gt;: Implementation Open Source of Secure SHell (SSH) is a cryptographic network protocol for operating network services securely over an unsecured network.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ACL&lt;/code&gt;: Access Control List allows to manage permissions attached to an object.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text highlighter-rouge&quot;&gt;ACL&lt;/code&gt;: Access Control List allows to manage permissions attached to an object.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PAM&lt;/code&gt;: A Pluggable Authentication Module allows to standardize security layer dynamically though system of same customizable modules for all applications.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text highlighter-rouge&quot;&gt;PAM&lt;/code&gt;: A Pluggable Authentication Module allows to standardize security layer dynamically though system of same customizable modules for all applications.&lt;/p&gt;
 
 &lt;h2 id=&quot;kerberos-concepts&quot;&gt;Kerberos concepts&lt;/h2&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Kerberos&lt;/code&gt;: In Greek mythology, the three-headed dog that guards the entrance to the underworld. In the computing world, Kerberos is a network security package that was developed at MIT.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text highlighter-rouge&quot;&gt;Kerberos&lt;/code&gt;: In Greek mythology, the three-headed dog that guards the entrance to the underworld. In the computing world, Kerberos is a network security package that was developed at MIT.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;KDC&lt;/code&gt;: Key Distribution Center. A machine that issues Kerberos tickets composed of Ticket-Granting Server (TGS), Authentication Server (AS) and database instances.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text highlighter-rouge&quot;&gt;KDC&lt;/code&gt;: Key Distribution Center. A machine that issues Kerberos tickets composed of Ticket-Granting Server (TGS), Authentication Server (AS) and database instances.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AS&lt;/code&gt;: Authentication Service gives Ticket-Granting Ticket (TGT) to authenticate a client.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text highlighter-rouge&quot;&gt;AS&lt;/code&gt;: Authentication Service gives Ticket-Granting Ticket (TGT) to authenticate a client.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AD&lt;/code&gt;: Active Directory is a Microsoft product which makes use of a Kerberos implementation.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text highlighter-rouge&quot;&gt;AD&lt;/code&gt;: Active Directory is a Microsoft product which makes use of a Kerberos implementation.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Keytab&lt;/code&gt;: Shortcut for key table a key tab is the file containing one or more keys. A host or service uses a keytab file in much the same way as a user uses his/her password.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text highlighter-rouge&quot;&gt;Keytab&lt;/code&gt;: Shortcut for key table a key tab is the file containing one or more keys. A host or service uses a keytab file in much the same way as a user uses his/her password.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Realm&lt;/code&gt;: A REALM is in Kerberos terms equivalent to a Domain in Domain Name Server (DNS) by convention in UPPERCASE.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text highlighter-rouge&quot;&gt;Realm&lt;/code&gt;: A REALM is in Kerberos terms equivalent to a Domain in Domain Name Server (DNS) by convention in UPPERCASE.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Principal&lt;/code&gt;: You can understand that as UNIX username. There 2 types of principles: Service Principal Name (SPN) and User Principal Name (UPN). It is a string that names a specific entity to which a set of credentials may be assigned. 
+&lt;p&gt;&lt;code class=&quot;language-text highlighter-rouge&quot;&gt;Principal&lt;/code&gt;: You can understand that as UNIX username. There 2 types of principles: Service Principal Name (SPN) and User Principal Name (UPN). It is a string that names a specific entity to which a set of credentials may be assigned. 
 It can have an arbitrary number of components:
 component1/component2/…@REALM
 The typical format of a typical Kerberos principal is primary/instance@REALM.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;primary&lt;/code&gt;: The first part of a Kerberos principal. In the case of a user, it is the username. In the case of a service, it is the name of the service.
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;instance&lt;/code&gt;: The second part of a Kerberos principal. It gives information that qualifies the primary. The instance may be null. In the case of a user, the instance is often used to describe the intended use of the corresponding credentials. In the case of a host, the instance is the fully qualified hostname.
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;realm&lt;/code&gt;: The logical network served by a single Kerberos database and a set of Key Distribution Centers. By convention, realm names are generally all uppercase letters, to differentiate the realm from the internet domain.
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ticket&lt;/code&gt;: A temporary set of electronic credentials that verify the identity of a client for a particular service (typically 8 or 10 hours of life time).&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text highlighter-rouge&quot;&gt;primary&lt;/code&gt;: The first part of a Kerberos principal. In the case of a user, it is the username. In the case of a service, it is the name of the service.
+&lt;code class=&quot;language-text highlighter-rouge&quot;&gt;instance&lt;/code&gt;: The second part of a Kerberos principal. It gives information that qualifies the primary. The instance may be null. In the case of a user, the instance is often used to describe the intended use of the corresponding credentials. In the case of a host, the instance is the fully qualified hostname.
+&lt;code class=&quot;language-text highlighter-rouge&quot;&gt;realm&lt;/code&gt;: The logical network served by a single Kerberos database and a set of Key Distribution Centers. By convention, realm names are generally all uppercase letters, to differentiate the realm from the internet domain.
+&lt;code class=&quot;language-text highlighter-rouge&quot;&gt;Ticket&lt;/code&gt;: A temporary set of electronic credentials that verify the identity of a client for a particular service (typically 8 or 10 hours of life time).&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TGT&lt;/code&gt;: Ticket-Granting Ticket. A special Kerberos ticket to guarantee authentication that permits the client to obtain additional Kerberos tickets within the same Kerberos realm given by Authentication Service (AS).&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text highlighter-rouge&quot;&gt;TGT&lt;/code&gt;: Ticket-Granting Ticket. A special Kerberos ticket to guarantee authentication that permits the client to obtain additional Kerberos tickets within the same Kerberos realm given by Authentication Service (AS).&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TGS&lt;/code&gt;: Ticket-Granting Service or Ticket-Granting Server (depends on context). The TGS exchange is initiated by a client when it wishes to obtain authentication credentials for a given server&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text highlighter-rouge&quot;&gt;TGS&lt;/code&gt;: Ticket-Granting Service or Ticket-Granting Server (depends on context). The TGS exchange is initiated by a client when it wishes to obtain authentication credentials for a given server&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GSS-API&lt;/code&gt;: Acronym for Generic Security Service Application Program Interface (GSSAPI, also GSS-API) is an application programming interface for programs to access security services.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text highlighter-rouge&quot;&gt;GSS-API&lt;/code&gt;: Acronym for Generic Security Service Application Program Interface (GSSAPI, also GSS-API) is an application programming interface for programs to access security services.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Session Key&lt;/code&gt;:  Random number generated by the KDC when it builds a ticket. It is the shared secret that the KDC, the client, and the validating server have in common.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text highlighter-rouge&quot;&gt;Session Key&lt;/code&gt;:  Random number generated by the KDC when it builds a ticket. It is the shared secret that the KDC, the client, and the validating server have in common.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;KVNO&lt;/code&gt;: It is an acronym for Key version number. Kerberos can hold multiple keys for a principal. To distinguish between those keys every key has version number. The number is incremented by one when the password or encryption is changed.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text highlighter-rouge&quot;&gt;KVNO&lt;/code&gt;: It is an acronym for Key version number. Kerberos can hold multiple keys for a principal. To distinguish between those keys every key has version number. The number is incremented by one when the password or encryption is changed.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;KRBTGT Account&lt;/code&gt;: This is a special account to create Ticket Granting Tickets.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text highlighter-rouge&quot;&gt;KRBTGT Account&lt;/code&gt;: This is a special account to create Ticket Granting Tickets.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Key salt&lt;/code&gt;: The salt is a string concatenated to the password to make sure the string2key function creates a unique encryption key, via a one-way hash. In Kerberos 5 the salt is the complete principal name including the realm. The reason the salt is used is to make sure the outcome of the one way hash is unique across realms.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text highlighter-rouge&quot;&gt;Key salt&lt;/code&gt;: The salt is a string concatenated to the password to make sure the string2key function creates a unique encryption key, via a one-way hash. In Kerberos 5 the salt is the complete principal name including the realm. The reason the salt is used is to make sure the outcome of the one way hash is unique across realms.&lt;/p&gt;
 
 &lt;h1 id=&quot;references&quot;&gt;References&lt;/h1&gt;
 
@@ -1958,7 +1958,7 @@ The typical format of a typical Kerberos principal is primary/instance@REALM.&lt
 
 &lt;p&gt;With a bootable USB key on Ubuntu, you can resolve these situations, first by mounting the file system of the targeted computer with all permissions, then by changing the password of any local user, and finally by connecting to the targeted workspace and exploring the file system.&lt;/p&gt;
 
-&lt;p&gt;First, plug your USB drive into the target computer, and choose your key as the boot device for the target computer to boot to the Ubuntu system on your USB drive. On a DELL computer, press &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;F12&lt;/code&gt; to access this selection. This information is visible on the welcome screen of your computer’s manufacturer.&lt;/p&gt;
+&lt;p&gt;First, plug your USB drive into the target computer, and choose your key as the boot device for the target computer to boot to the Ubuntu system on your USB drive. On a DELL computer, press &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;F12&lt;/code&gt; to access this selection. This information is visible on the welcome screen of your computer’s manufacturer.&lt;/p&gt;
 
 &lt;figure title=&quot;DELL welcome screen&quot;&gt;
   &lt;div&gt;
@@ -1976,7 +1976,7 @@ The typical format of a typical Kerberos principal is primary/instance@REALM.&lt
   &lt;figcaption&gt;Advanced startup options&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;Then select the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;recovery mode&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;Then select the &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;recovery mode&lt;/code&gt;:&lt;/p&gt;
 
 &lt;figure title=&quot;Getting started in recovery mode&quot;&gt;
   &lt;div&gt;
@@ -1985,7 +1985,7 @@ The typical format of a typical Kerberos principal is primary/instance@REALM.&lt
   &lt;figcaption&gt;Getting started in recovery mode&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;Launch a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;root shell&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;Launch a &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;root shell&lt;/code&gt;:&lt;/p&gt;
 
 &lt;figure title=&quot;Choosing the root shell&quot;&gt;
   &lt;div&gt;
@@ -1994,13 +1994,13 @@ The typical format of a typical Kerberos principal is primary/instance@REALM.&lt
   &lt;figcaption&gt;Choosing the root shell&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;You access a device as a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;root&lt;/code&gt; user.&lt;/p&gt;
+&lt;p&gt;You access a device as a &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;root&lt;/code&gt; user.&lt;/p&gt;
 
 &lt;pre class=&quot;info&quot;&gt;
 If you need to access the internet, select the network entry before. To verify that you have access to the web you can &lt;i&gt;ping 8.8.8.8&lt;/i&gt; on the Google DNS server, then make &lt;i&gt;nslookup  8.8.8.8&lt;/i&gt; to check that the DNS resolution works. If that does not work, add this line &lt;i&gt;nameserver 8.8.8.8&lt;/i&gt; to the file &lt;i&gt;/etc/resolv.conf&lt;/i&gt; (this will be deleted when you restart the computer) and restart your service &lt;i&gt;network-manager&lt;/i&gt; with &lt;i&gt;service network-manager restart&lt;/i&gt;.
 &lt;/pre&gt;
 
-&lt;p&gt;For the moment, the file system is only in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;read only&lt;/code&gt;, type the following command to mount the file system in&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt; read / write&lt;/code&gt; at the root of your key:&lt;/p&gt;
+&lt;p&gt;For the moment, the file system is only in &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;read only&lt;/code&gt;, type the following command to mount the file system in&lt;code class=&quot;language-text highlighter-rouge&quot;&gt; read / write&lt;/code&gt; at the root of your key:&lt;/p&gt;
 
 &lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;go&quot;&gt;mount -o remount, rw /
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -2127,7 +2127,7 @@ Beware, the morality of this article is that a person physically accessing your 
 This syntax is based on &lt;a href=&quot;https://kramdown.gettalong.org/syntax.html&quot;&gt;Kramdown&lt;/a&gt; with a light and custom extension. Besides, this article is written with this syntax, click on the button: &lt;b&gt;&lt;i class=&quot;far fa-file-code&quot;&gt;&lt;/i&gt;Source&lt;/b&gt; to explore its &lt;strong&gt;source code&lt;/strong&gt;. Each following section gives an overview and examples for each usage.&lt;/p&gt;
 
 &lt;p&gt;But before, what is precisely the Markdown? &lt;a href=&quot;https://daringfireball.net/projects/markdown/&quot;&gt;Markdown&lt;/a&gt; is a lightweight and popular text metalanguage that is a writing standard
-with the extension &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.md&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.markdown&lt;/code&gt;. It is often converted into HTML, allowing it to be easily shared on the web :spider_web:. After converting to HTML, it 
+with the extension &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;.md&lt;/code&gt; or &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;.markdown&lt;/code&gt;. It is often converted into HTML, allowing it to be easily shared on the web :spider_web:. After converting to HTML, it 
 is decorated and animated by CSS style sheets and/or JS scripts. See more details on this &lt;a href=&quot;https://www.markdownguide.org&quot;&gt;Markdown Guide&lt;/a&gt;.&lt;/p&gt;
 
 &lt;figure&gt;
@@ -2156,11 +2156,11 @@ is decorated and animated by CSS style sheets and/or JS scripts. See more detail
 Bold:	&lt;strong&gt;bold&lt;/strong&gt; or &lt;strong&gt;bold&lt;/strong&gt;&lt;br /&gt;
 Strikethrough: &lt;del&gt;Strikethrough&lt;/del&gt;&lt;br /&gt;
 Bold &amp;amp; Italics: &lt;strong&gt;&lt;em&gt;bold italics&lt;/em&gt;&lt;/strong&gt; or &lt;strong&gt;&lt;em&gt;bold italics&lt;/em&gt;&lt;/strong&gt;&lt;br /&gt;
-Inline code: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;code&lt;/code&gt;&lt;/p&gt;
+Inline code: &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;code&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;Source code:&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Italics: *italics* or _italics_  
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Italics: *italics* or _italics_  
 Bold:	**bold** or __bold__ 
 Strikethrough: ~~Strikethrough~~
 Bold &amp;amp; Italics: **_bold italics_** or __*bold italics*__
@@ -2182,7 +2182,7 @@ Inline code: `code`
 World!\n
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;em&gt;Note: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;\n&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;␣&lt;/code&gt; represent respectively a new line character and a space character.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note: &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;\n&lt;/code&gt; and &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;␣&lt;/code&gt; represent respectively a new line character and a space character.&lt;/em&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;headings&quot;&gt;Headings&lt;/h2&gt;
 
@@ -2190,7 +2190,7 @@ World!\n
 
 &lt;p&gt;Source code:&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# H1
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# H1
 ## H2
 ### H3
 
@@ -2214,7 +2214,7 @@ H2
 
 &lt;p&gt;Source code:&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1. item
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1. item
 2. item
 3. item
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -2229,7 +2229,7 @@ H2
 
 &lt;p&gt;Source code:&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; * item
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; * item
  * item
  * item
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -2274,7 +2274,7 @@ Linus Torvalds, creator of the Linux operating system
 
 &lt;p&gt;Source code:&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;https://www.google.com&amp;gt;
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;https://www.google.com&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ul&gt;
@@ -2282,15 +2282,15 @@ Linus Torvalds, creator of the Linux operating system
 &lt;/ul&gt;
 
 &lt;p&gt;Source code:&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[Google](https://www.google.com)
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[Google](https://www.google.com)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;A link with a name and a title: &lt;a href=&quot;https://www.google.com&quot; title=&quot;Google&apos;s Homepage&quot;&gt;Google&lt;/a&gt; with the title &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Google&apos;s Homepage&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;A link with a name and a title: &lt;a href=&quot;https://www.google.com&quot; title=&quot;Google&apos;s Homepage&quot;&gt;Google&lt;/a&gt; with the title &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;Google&apos;s Homepage&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Source code:&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[Google](https://www.google.com &quot;Google&apos;s Homepage&quot;)
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[Google](https://www.google.com &quot;Google&apos;s Homepage&quot;)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;You can use shortcuts for your links to use that several times on the article or to centralize links:&lt;/p&gt;
@@ -2298,7 +2298,7 @@ Linus Torvalds, creator of the Linux operating system
 &lt;p&gt;&lt;a href=&quot;https://www.google.com&quot;&gt;Google1&lt;/a&gt; &lt;a href=&quot;https://www.google.com&quot;&gt;Google2&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Source code:&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[Google1][1] [Google2][1]
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[Google1][1] [Google2][1]
 
 [1]: https://www.google.com
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -2312,7 +2312,7 @@ INFO
 &lt;/pre&gt;
 
 &lt;p&gt;Source code:&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;pre class=&quot;info&quot;&amp;gt;
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;pre class=&quot;info&quot;&amp;gt;
 INFO
 &amp;lt;/pre&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -2324,7 +2324,7 @@ QUESTION
 &lt;/pre&gt;
 
 &lt;p&gt;Source code:&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;pre class=&quot;question&quot;&amp;gt;
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;pre class=&quot;question&quot;&amp;gt;
 QUESTION
 &amp;lt;/pre&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -2336,7 +2336,7 @@ WARNING
 &lt;/pre&gt;
 
 &lt;p&gt;Source code:&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;pre class=&quot;warning&quot;&amp;gt;
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;pre class=&quot;warning&quot;&amp;gt;
 WARNING
 &amp;lt;/pre&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -2348,7 +2348,7 @@ ERROR
 &lt;/pre&gt;
 
 &lt;p&gt;Source code:&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;pre class=&quot;error&quot;&amp;gt;
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;pre class=&quot;error&quot;&amp;gt;
 ERROR
 &amp;lt;/pre&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -2360,7 +2360,7 @@ SUCCESS
 &lt;/pre&gt;
 
 &lt;p&gt;Source code:&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;pre class=&quot;success&quot;&amp;gt;
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;pre class=&quot;success&quot;&amp;gt;
 SUCCESS
 &amp;lt;/pre&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -2370,7 +2370,7 @@ SUCCESS
 &lt;p&gt;If you want to put a hidden text not displayed in the article but present in the written source, that is to say, a comment, simply do an HTML comment:&lt;/p&gt;
 
 &lt;p&gt;Source code:&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;!-- comments --&amp;gt;
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;!-- comments --&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h1 id=&quot;informatics-code&quot;&gt;Informatics code&lt;/h1&gt;
@@ -2578,7 +2578,7 @@ result
 
 &lt;h3 id=&quot;plain-text&quot;&gt;Plain text&lt;/h3&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&quot;Hello World!&quot;
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&quot;Hello World!&quot;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Source code:&lt;/p&gt;
@@ -2646,14 +2646,14 @@ message=&quot;Hello World!&quot;
 
 &lt;p&gt;Use LateX syntax, see &lt;a href=&quot;https://www.latex-project.org&quot;&gt;latex-project.org&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;:warning: The dollar symbol $ becomes a meta symbol, so there is a conflict with the dollar symbol use the HTML code &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;amp;#36;&lt;/code&gt; to see the dollar symbol $.&lt;/p&gt;
+&lt;p&gt;:warning: The dollar symbol $ becomes a meta symbol, so there is a conflict with the dollar symbol use the HTML code &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;&amp;amp;#36;&lt;/code&gt; to see the dollar symbol $.&lt;/p&gt;
 
 &lt;h2 id=&quot;in-line-equation&quot;&gt;In-line equation&lt;/h2&gt;
 
 &lt;p&gt;This equation $\int_0^1 x^2dx = \frac{1}{3}$ is in-line.&lt;/p&gt;
 
 &lt;p&gt;Source code:&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;This equation $\int_0^1 x^2dx = \frac{1}{3}$ is in-line.
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;This equation $\int_0^1 x^2dx = \frac{1}{3}$ is in-line.
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;single-line-equation&quot;&gt;Single-line equation&lt;/h2&gt;
@@ -2663,7 +2663,7 @@ message=&quot;Hello World!&quot;
 \[\int_0^1 x^2dx = \frac{1}{3}\]
 
 &lt;p&gt;Source code:&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$$\int_0^1 x^2dx = \frac{1}{3}$$
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$$\int_0^1 x^2dx = \frac{1}{3}$$
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;multi-line-equation&quot;&gt;Multi-line equation&lt;/h2&gt;
@@ -2676,7 +2676,7 @@ message=&quot;Hello World!&quot;
 }\]
 
 &lt;p&gt;Source code:&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$$
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$$
 \displaylines{
 \int_0^1 x\,dx = \frac{1}{2} \\
 \int_0^1 x^2dx = \frac{1}{3} 

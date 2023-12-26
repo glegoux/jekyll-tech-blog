@@ -257,7 +257,7 @@ window.MathJax = {
       </span>
       </div>
       <!-- Article browser -->
-      <div class="col-4 text-right">
+      <div class="col-4 text-right no-print">
         <div class="article-browser">
 <a href="/blog/articles/2019/02/14/how-to-quote-sources.html" title="See the previous article">
     <i class="fa fa-arrow-left"></i>
@@ -270,17 +270,27 @@ window.MathJax = {
     </div>
 
     <!-- Article title -->
-    <div class="article-title" title="Title of this article">
+    <div class="row article-title" title="Title of this article">
       Access to a computer from USB key
     </div>
 
     <!-- Article description -->
-    <div class="article-description" title="Description of this article">
+    <div class="row article-description" title="Description of this article">
       Somebody with USB key can take control of your computer
     </div>
 
+    <!-- Article tags -->
+    <div class="row">
+      <span class="article-labels">
+  <ul>
+    
+  </ul>
+</span>
+
+    </div>
+
     <!-- Socials sharing -->
-    <div>
+    <div class="row article-social">
       <div class="social-sharing">
   <ul>
     <li title="Share page on LinkedIn">
@@ -303,26 +313,34 @@ window.MathJax = {
 
     </div>
 
+    <!-- Inline author(s) -->
+    <div class="row article-authors-inline">
+      <div title="Author of this article" style="margin-bottom: 0.5em;"><span class="d-inline-block">
+        <a class="link-strong" href="https://glegoux.com" title="Follow this author">
+          <img src="/_static/authors/glegoux.jpg" alt="picture of glegoux" title="picture of this author" class="icon-avatar">
+          Gilles
+          LEGOUX
+        </a></span></div>
+    </div>
+
     <div class="row">
       <!-- Article details -->
-      <div class="col-8">
-        <div class="article-details">
-          <ul>
-            <li title="Published date of this article">
-              <i class="far fa-calendar-alt"></i>
-              <span>March 01, 2019</span>
-            </li>
-            <li title="Reading time of this article">
-              <i class="far fa-clock"></i>
-              <span>
-                5 min
-              </span>
-            </li>
-</ul>
-        </div>
+      <div class="article-details col-6">
+        <ul>
+          <li title="Published date of this article">
+            <i class="far fa-calendar-alt"></i>
+            <span>March 01, 2019</span>
+          </li>
+          <li title="Reading time of this article">
+            <i class="far fa-clock"></i>
+            <span>
+              5 min
+            </span>
+          </li>
+        </ul>
       </div>
       <!-- Article license -->
-      <div class="col-4">
+      <div class="col-6">
         <div class="article-license" title="See the license">
     <a href="https://creativecommons.org/licenses/by-nc-sa/4.0">
       <i class="cc notranslate"><span class="d-none d-md-inline">Creative Commons Attribution 4.0 International</span> License:</i>
@@ -409,7 +427,7 @@ window.MathJax = {
 
 <p>With a bootable USB key on Ubuntu, you can resolve these situations, first by mounting the file system of the targeted computer with all permissions, then by changing the password of any local user, and finally by connecting to the targeted workspace and exploring the file system.</p>
 
-<p>First, plug your USB drive into the target computer, and choose your key as the boot device for the target computer to boot to the Ubuntu system on your USB drive. On a DELL computer, press <code class="language-plaintext highlighter-rouge">F12</code> to access this selection. This information is visible on the welcome screen of your computer’s manufacturer.</p>
+<p>First, plug your USB drive into the target computer, and choose your key as the boot device for the target computer to boot to the Ubuntu system on your USB drive. On a DELL computer, press <code class="language-text highlighter-rouge">F12</code> to access this selection. This information is visible on the welcome screen of your computer’s manufacturer.</p>
 
 <figure title="DELL welcome screen">
   <div>
@@ -427,7 +445,7 @@ window.MathJax = {
   <figcaption>Advanced startup options</figcaption>
 </figure>
 
-<p>Then select the <code class="language-plaintext highlighter-rouge">recovery mode</code>:</p>
+<p>Then select the <code class="language-text highlighter-rouge">recovery mode</code>:</p>
 
 <figure title="Getting started in recovery mode">
   <div>
@@ -436,7 +454,7 @@ window.MathJax = {
   <figcaption>Getting started in recovery mode</figcaption>
 </figure>
 
-<p>Launch a <code class="language-plaintext highlighter-rouge">root shell</code>:</p>
+<p>Launch a <code class="language-text highlighter-rouge">root shell</code>:</p>
 
 <figure title="Choosing the root shell">
   <div>
@@ -445,13 +463,13 @@ window.MathJax = {
   <figcaption>Choosing the root shell</figcaption>
 </figure>
 
-<p>You access a device as a <code class="language-plaintext highlighter-rouge">root</code> user.</p>
+<p>You access a device as a <code class="language-text highlighter-rouge">root</code> user.</p>
 
 <pre class="info">
 If you need to access the internet, select the network entry before. To verify that you have access to the web you can <i>ping 8.8.8.8</i> on the Google DNS server, then make <i>nslookup  8.8.8.8</i> to check that the DNS resolution works. If that does not work, add this line <i>nameserver 8.8.8.8</i> to the file <i>/etc/resolv.conf</i> (this will be deleted when you restart the computer) and restart your service <i>network-manager</i> with <i>service network-manager restart</i>.
 </pre>
 
-<p>For the moment, the file system is only in <code class="language-plaintext highlighter-rouge">read only</code>, type the following command to mount the file system in<code class="language-plaintext highlighter-rouge"> read / write</code> at the root of your key:</p>
+<p>For the moment, the file system is only in <code class="language-text highlighter-rouge">read only</code>, type the following command to mount the file system in<code class="language-text highlighter-rouge"> read / write</code> at the root of your key:</p>
 
 <div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">mount -o remount, rw /
 </span></code></pre></div></div>
@@ -535,9 +553,9 @@ Beware, the morality of this article is that a person physically accessing your 
       </div>
     </div>
 
-    <hr class="sep">
+    <hr class="sep no-print">
 
-    <div class="row">
+    <div class="row no-print">
       <!-- Article browser -->
       <div class="col-4 text-left">
         <div class="article-browser">
@@ -642,77 +660,35 @@ Beware, the morality of this article is that a person physically accessing your 
   <h5>Also read</h5>
   <div class="row">
 <div class="col-xs-12 col-md-6 col-lg-4">
-<a href="/blog/articles/2020/05/04/java-ecosystem.html" title="Read this article" style="display: block">
+<a href="/blog/articles/2020/11/28/unix-timestamp.html" title="Read this article" style="display: block">
   <div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2020-05-04-java-ecosystem.jpg" alt="2020-05-04-java-ecosystem">
+        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2020-11-28-unix-timestamp.jpg" alt="2020-11-28-unix-timestamp">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          Java ecosystem
+          Unix timestamp
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          What is the Java ecosystem from Sun to Oracle?
+          What could happen in 2038 with the Y2K38 problem?
         </div>
 <!-- Article categories -->
         <div class="article-category">
           <ul>
-            <li>Development</li>
+            <li>Applied Mathematics</li>
           </ul>
         </div>
 <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>May 04, 2020</span>
-        </div>
-<!-- Article reading time -->
-        <div class="reading-time">
-          <i class="far fa-clock"></i>
-          <span>10 min</span>
-        </div>
-</div>
-
-    </div>
-  </div>
-</a>
-</div>
-<div class="col-xs-12 col-md-6 col-lg-4">
-<a href="/blog/articles/2019/02/14/how-to-quote-sources.html" title="Read this article" style="display: block">
-  <div class="article-card-container">
-    <!-- Article metadata -->
-    <div class="article-card">
-<!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2019-02-14-how-to-quote-sources.jpg" alt="2019-02-14-how-to-quote-sources">
-      </div>
-
-      <!-- Article details -->
-      <div class="article-details">
-        <!-- Article title -->
-        <div class="article-title">
-          How to quote sources
-        </div>
-
-        <!-- Article description -->
-        <div class="article-description">
-          Current standards and rules to respect in order to quote sources.
-        </div>
-<!-- Article categories -->
-        <div class="article-category">
-          <ul>
-            <li>Methodology</li>
-          </ul>
-        </div>
-<!-- Article publication date -->
-        <div class="date">
-          <i class="far fa-calendar-alt"></i>
-          <span>February 14, 2019</span>
+          <span>November 28, 2020</span>
         </div>
 <!-- Article reading time -->
         <div class="reading-time">
@@ -726,40 +702,82 @@ Beware, the morality of this article is that a person physically accessing your 
 </a>
 </div>
 <div class="col-xs-12 col-md-6 col-lg-4">
-<a href="/blog/articles/2022/11/01/my-tech-blog-on-medium.html" title="Read this article" style="display: block">
+<a href="/blog/articles/2020/03/04/development-environment.html" title="Read this article" style="display: block">
   <div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2022-11-01-my-tech-blog-on-medium.jpg" alt="2022-11-01-my-tech-blog-on-medium">
+        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2020-03-04-development-environment.jpg" alt="2020-03-04-development-environment">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          My tech blog on Medium
+          Development environment
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          Migration blog posts to Medium under the user @glegoux
+          Why isolate its development environment?
         </div>
 <!-- Article categories -->
         <div class="article-category">
           <ul>
-            <li>News</li>
+            <li>Development</li>
           </ul>
         </div>
 <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>November 01, 2022</span>
+          <span>March 04, 2020</span>
         </div>
 <!-- Article reading time -->
         <div class="reading-time">
           <i class="far fa-clock"></i>
-          <span>1 min</span>
+          <span>5 min</span>
+        </div>
+</div>
+
+    </div>
+  </div>
+</a>
+</div>
+<div class="col-xs-12 col-md-6 col-lg-4">
+<a href="/blog/articles/2021/11/13/software-versioning.html" title="Read this article" style="display: block">
+  <div class="article-card-container">
+    <!-- Article metadata -->
+    <div class="article-card">
+<!-- Article cover --><div class="article-cover">
+        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2021-11-13-software-versioning.jpg" alt="2021-11-13-software-versioning">
+      </div>
+
+      <!-- Article details -->
+      <div class="article-details">
+        <!-- Article title -->
+        <div class="article-title">
+          Software versioning
+        </div>
+
+        <!-- Article description -->
+        <div class="article-description">
+          How is assigned a version to a software?
+        </div>
+<!-- Article categories -->
+        <div class="article-category">
+          <ul>
+            <li>Development</li>
+          </ul>
+        </div>
+<!-- Article publication date -->
+        <div class="date">
+          <i class="far fa-calendar-alt"></i>
+          <span>November 13, 2021</span>
+        </div>
+<!-- Article reading time -->
+        <div class="reading-time">
+          <i class="far fa-clock"></i>
+          <span>10 min</span>
         </div>
 </div>
 

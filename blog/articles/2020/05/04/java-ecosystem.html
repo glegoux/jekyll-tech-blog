@@ -257,7 +257,7 @@ window.MathJax = {
       </span>
       </div>
       <!-- Article browser -->
-      <div class="col-4 text-right">
+      <div class="col-4 text-right no-print">
         <div class="article-browser">
 <a href="/blog/articles/2020/03/04/development-environment.html" title="See the previous article">
     <i class="fa fa-arrow-left"></i>
@@ -270,17 +270,31 @@ window.MathJax = {
     </div>
 
     <!-- Article title -->
-    <div class="article-title" title="Title of this article">
+    <div class="row article-title" title="Title of this article">
       Java ecosystem
     </div>
 
     <!-- Article description -->
-    <div class="article-description" title="Description of this article">
+    <div class="row article-description" title="Description of this article">
       What is the Java ecosystem from Sun to Oracle?
     </div>
 
+    <!-- Article tags -->
+    <div class="row">
+      <span class="article-labels">
+  <ul>
+    
+    <li title="Tag of this article">Language</li>
+    
+    <li title="Tag of this article">Java</li>
+    
+  </ul>
+</span>
+
+    </div>
+
     <!-- Socials sharing -->
-    <div>
+    <div class="row article-social">
       <div class="social-sharing">
   <ul>
     <li title="Share page on LinkedIn">
@@ -303,26 +317,34 @@ window.MathJax = {
 
     </div>
 
+    <!-- Inline author(s) -->
+    <div class="row article-authors-inline">
+      <div title="Author of this article" style="margin-bottom: 0.5em;"><span class="d-inline-block">
+        <a class="link-strong" href="https://glegoux.com" title="Follow this author">
+          <img src="/_static/authors/glegoux.jpg" alt="picture of glegoux" title="picture of this author" class="icon-avatar">
+          Gilles
+          LEGOUX
+        </a></span></div>
+    </div>
+
     <div class="row">
       <!-- Article details -->
-      <div class="col-8">
-        <div class="article-details">
-          <ul>
-            <li title="Published date of this article">
-              <i class="far fa-calendar-alt"></i>
-              <span>May 04, 2020</span>
-            </li>
-            <li title="Reading time of this article">
-              <i class="far fa-clock"></i>
-              <span>
-                10 min
-              </span>
-            </li>
-</ul>
-        </div>
+      <div class="article-details col-6">
+        <ul>
+          <li title="Published date of this article">
+            <i class="far fa-calendar-alt"></i>
+            <span>May 04, 2020</span>
+          </li>
+          <li title="Reading time of this article">
+            <i class="far fa-clock"></i>
+            <span>
+              10 min
+            </span>
+          </li>
+        </ul>
       </div>
       <!-- Article license -->
-      <div class="col-4">
+      <div class="col-6">
         <div class="article-license" title="See the license">
     <a href="https://creativecommons.org/licenses/by-nc-sa/4.0">
       <i class="cc notranslate"><span class="d-none d-md-inline">Creative Commons Attribution 4.0 International</span> License:</i>
@@ -464,7 +486,7 @@ These both Java Development Kit are available respectively at <a href="https://o
 <p>There are <strong>several JDK vendors among AdoptOpenJDK, Amazon Correto, SAP, Red Hat, Azul, IBM</strong>. 
 The most of the vendors have a project based on OpenJDK. The Java Community Process (JCP) 
 provides a <strong>Technology Compatibility Kit</strong> (TCK) to certify whether a JDK build meets 
-the Java standards. Once a build passes the TCK, it can be referred to as <code class="language-plaintext highlighter-rouge">Java SE compatible</code>.
+the Java standards. Once a build passes the TCK, it can be referred to as <code class="language-text highlighter-rouge">Java SE compatible</code>.
 The certification process requires a commercial license from Oracle.</p>
 
 <p>You can see, what is the usage of the Java ecosystem in terms of IDE, Java vendors, Java version, Java 
@@ -561,9 +583,9 @@ with the Snyk company survey, or the Jrebel company survey.</p>
       </div>
     </div>
 
-    <hr class="sep">
+    <hr class="sep no-print">
 
-    <div class="row">
+    <div class="row no-print">
       <!-- Article browser -->
       <div class="col-4 text-left">
         <div class="article-browser">
@@ -668,35 +690,35 @@ with the Snyk company survey, or the Jrebel company survey.</p>
   <h5>Also read</h5>
   <div class="row">
 <div class="col-xs-12 col-md-6 col-lg-4">
-<a href="/blog/articles/2020/11/28/unix-timestamp.html" title="Read this article" style="display: block">
+<a href="/blog/articles/2019/03/23/kerberos-in-5-minutes.html" title="Read this article" style="display: block">
   <div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2020-11-28-unix-timestamp.jpg" alt="2020-11-28-unix-timestamp">
+        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2019-03-23-kerberos-in-5-minutes.jpg" alt="2019-03-23-kerberos-in-5-minutes">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          Unix timestamp
+          Kerberos in 5 minutes
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          What could happen in 2038 with the Y2K38 problem?
+          Kerberos is an authentication protocol for trusted hosts on untrusted networks.
         </div>
 <!-- Article categories -->
         <div class="article-category">
           <ul>
-            <li>Applied Mathematics</li>
+            <li>Security</li>
           </ul>
         </div>
 <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>November 28, 2020</span>
+          <span>March 23, 2019</span>
         </div>
 <!-- Article reading time -->
         <div class="reading-time">
@@ -710,35 +732,35 @@ with the Snyk company survey, or the Jrebel company survey.</p>
 </a>
 </div>
 <div class="col-xs-12 col-md-6 col-lg-4">
-<a href="/blog/articles/2020/05/04/java-ecosystem.html" title="Read this article" style="display: block">
+<a href="/blog/articles/2019/01/21/getting-started.html" title="Read this article" style="display: block">
   <div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2020-05-04-java-ecosystem.jpg" alt="2020-05-04-java-ecosystem">
+        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2019-01-21-getting-started.jpg" alt="2019-01-21-getting-started">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          Java ecosystem
+          Getting started
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          What is the Java ecosystem from Sun to Oracle?
+          How to write articles on this blog from an easy-to-use and rich syntax?
         </div>
 <!-- Article categories -->
         <div class="article-category">
           <ul>
-            <li>Development</li>
+            <li>Methodology</li>
           </ul>
         </div>
 <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>May 04, 2020</span>
+          <span>January 21, 2019</span>
         </div>
 <!-- Article reading time -->
         <div class="reading-time">
@@ -752,35 +774,35 @@ with the Snyk company survey, or the Jrebel company survey.</p>
 </a>
 </div>
 <div class="col-xs-12 col-md-6 col-lg-4">
-<a href="/blog/articles/2021/04/20/time-management.html" title="Read this article" style="display: block">
+<a href="/blog/articles/2019/04/01/lighthouse.html" title="Read this article" style="display: block">
   <div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2021-04-20-time-management.jpg" alt="2021-04-20-time-management">
+        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2019-04-01-lighthouse.jpg" alt="2019-04-01-lighthouse">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          Time management
+          Lighthouse
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          How to optimize your time &amp; work?
+          Lighthouse is an open-source, automated tool for improving the quality of web pages.
         </div>
 <!-- Article categories -->
         <div class="article-category">
           <ul>
-            <li>Methodology</li>
+            <li>Web</li>
           </ul>
         </div>
 <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>April 20, 2021</span>
+          <span>April 01, 2019</span>
         </div>
 <!-- Article reading time -->
         <div class="reading-time">

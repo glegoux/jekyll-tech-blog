@@ -257,7 +257,7 @@ window.MathJax = {
       </span>
       </div>
       <!-- Article browser -->
-      <div class="col-4 text-right">
+      <div class="col-4 text-right no-print">
         <div class="article-browser">
 <a href="/blog/articles/2020/08/24/geo-location.html" title="See the previous article">
     <i class="fa fa-arrow-left"></i>
@@ -270,17 +270,29 @@ window.MathJax = {
     </div>
 
     <!-- Article title -->
-    <div class="article-title" title="Title of this article">
+    <div class="row article-title" title="Title of this article">
       Unix timestamp
     </div>
 
     <!-- Article description -->
-    <div class="article-description" title="Description of this article">
+    <div class="row article-description" title="Description of this article">
       What could happen in 2038 with the Y2K38 problem?
     </div>
 
+    <!-- Article tags -->
+    <div class="row">
+      <span class="article-labels">
+  <ul>
+    
+    <li title="Tag of this article">Arithmetic</li>
+    
+  </ul>
+</span>
+
+    </div>
+
     <!-- Socials sharing -->
-    <div>
+    <div class="row article-social">
       <div class="social-sharing">
   <ul>
     <li title="Share page on LinkedIn">
@@ -303,26 +315,34 @@ window.MathJax = {
 
     </div>
 
+    <!-- Inline author(s) -->
+    <div class="row article-authors-inline">
+      <div title="Author of this article" style="margin-bottom: 0.5em;"><span class="d-inline-block">
+        <a class="link-strong" href="https://glegoux.com" title="Follow this author">
+          <img src="/_static/authors/glegoux.jpg" alt="picture of glegoux" title="picture of this author" class="icon-avatar">
+          Gilles
+          LEGOUX
+        </a></span></div>
+    </div>
+
     <div class="row">
       <!-- Article details -->
-      <div class="col-8">
-        <div class="article-details">
-          <ul>
-            <li title="Published date of this article">
-              <i class="far fa-calendar-alt"></i>
-              <span>November 28, 2020</span>
-            </li>
-            <li title="Reading time of this article">
-              <i class="far fa-clock"></i>
-              <span>
-                5 min
-              </span>
-            </li>
-</ul>
-        </div>
+      <div class="article-details col-6">
+        <ul>
+          <li title="Published date of this article">
+            <i class="far fa-calendar-alt"></i>
+            <span>November 28, 2020</span>
+          </li>
+          <li title="Reading time of this article">
+            <i class="far fa-clock"></i>
+            <span>
+              5 min
+            </span>
+          </li>
+        </ul>
       </div>
       <!-- Article license -->
-      <div class="col-4">
+      <div class="col-6">
         <div class="article-license" title="See the license">
     <a href="https://creativecommons.org/licenses/by-nc-sa/4.0">
       <i class="cc notranslate"><span class="d-none d-md-inline">Creative Commons Attribution 4.0 International</span> License:</i>
@@ -415,7 +435,7 @@ the Unix timestamp as a signed 32-bits integer. It could produce a huge chaos.</
 
 <p>Effectively, the <strong>Unix timestamp</strong>, used largely in informatics systems, represents the number of
 elapsed seconds since January 1st, 1970 at midnight in the Coordinated Universal Time (UTC) time standard.
-This value is incremented every second. And the date <code class="language-plaintext highlighter-rouge">1970-01-01 00:00:00 UTC</code>, usually called <strong>epoch date</strong>, 
+This value is incremented every second. And the date <code class="language-text highlighter-rouge">1970-01-01 00:00:00 UTC</code>, usually called <strong>epoch date</strong>, 
 is a particular date in a lot of informatics system representing the origin time, inherited of the Unix operating system
 an POSIX standard. The Unix engineers picked this date arbitrarily, because they needed to set a uniform date for the start of time, 
 and New Year’s Day, 1970, seemed most convenient.</p>
@@ -441,8 +461,8 @@ username of Dennis MacAlistair Ritchie, famous computer scientist having worked 
 
 <p>But the arithmetic binary representation of this Unix timestamp is sometimes on <strong>32-bits as a signed integer</strong> again as 
 originally at its creation. That is to say, its maximum value is $ 2^{31} - 1 $. The negative values until $ -2^{31} 
-$ (inclusive) are used by convention for representing a duration from <code class="language-plaintext highlighter-rouge">1970-01-01 00:00:00 UTC</code> to an anterior date. 
-Then the maximum duration time supported by a such Unix timestamp will be reach out at <code class="language-plaintext highlighter-rouge">2038-01-19 03:14:07 UTC</code>:</p>
+$ (inclusive) are used by convention for representing a duration from <code class="language-text highlighter-rouge">1970-01-01 00:00:00 UTC</code> to an anterior date. 
+Then the maximum duration time supported by a such Unix timestamp will be reach out at <code class="language-text highlighter-rouge">2038-01-19 03:14:07 UTC</code>:</p>
 
 <div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span><span class="nb">date</span> <span class="nt">--date</span> <span class="s2">"@</span><span class="k">$((</span><span class="m">2</span><span class="o">**</span><span class="m">31</span> <span class="o">-</span> <span class="m">1</span><span class="k">))</span><span class="s2">"</span> <span class="nt">--utc</span>
 <span class="go">Tue Jan 19 03:14:07 UTC 2038
@@ -487,8 +507,8 @@ with a signed 64-bits representation for an Unix timestamp:</p>
 <span class="n">res</span><span class="k">:</span> <span class="kt">Boolean</span> <span class="o">=</span> <span class="kc">true</span>
 </code></pre></div></div>
 
-<p>A Unix timestamp is well represented by a <code class="language-plaintext highlighter-rouge">Long</code> from $-2^{63}$ to $2^{63} - 1$. Let’s study together, what it could happen, if it was a <code class="language-plaintext highlighter-rouge">Int</code>.<br>
-The range of values will be between $-2^{31}$ and $2^{31} - 1$ for a <code class="language-plaintext highlighter-rouge">Int</code>.</p>
+<p>A Unix timestamp is well represented by a <code class="language-text highlighter-rouge">Long</code> from $-2^{63}$ to $2^{63} - 1$. Let’s study together, what it could happen, if it was a <code class="language-text highlighter-rouge">Int</code>.<br>
+The range of values will be between $-2^{31}$ and $2^{31} - 1$ for a <code class="language-text highlighter-rouge">Int</code>.</p>
 
 <div class="language-scala highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">scala</span><span class="o">&gt;</span> <span class="nv">Int</span><span class="o">.</span><span class="py">MinValue</span>
 <span class="n">res</span><span class="k">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="o">-</span><span class="mi">2147483648</span>
@@ -507,14 +527,14 @@ Here, you have a odd number instead of an even number, and typically an arithmet
 <span class="n">res</span><span class="k">:</span> <span class="kt">Boolean</span> <span class="o">=</span> <span class="kc">true</span>
 </code></pre></div></div>
 
-<p>The adding of 1 second after <code class="language-plaintext highlighter-rouge">Tue Jan 19 03:14:07 UTC 2038</code> gives:</p>
+<p>The adding of 1 second after <code class="language-text highlighter-rouge">Tue Jan 19 03:14:07 UTC 2038</code> gives:</p>
 
 <div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span><span class="nb">date</span> <span class="nt">--date</span> <span class="s2">"@</span><span class="k">$((</span><span class="o">-</span><span class="m">2</span><span class="o">**</span><span class="m">31</span><span class="k">))</span><span class="s2">"</span> <span class="nt">--utc</span>
 <span class="go">Fri Dec 13 20:45:52 UTC 1901
 </span></code></pre></div></div>
 
 <p>Weird, how could we explain that. The error is silent no exception raised, the addition provoking the arithmetic overflow is cyclic on the 
-arithmetic representation. Because, here a <code class="language-plaintext highlighter-rouge">Int</code> has a <strong>two’s complement binary representation</strong> (2C) in Scala.
+arithmetic representation. Because, here a <code class="language-text highlighter-rouge">Int</code> has a <strong>two’s complement binary representation</strong> (2C) in Scala.
 Here the relation between the base 10 and the two’s complement binary representation on 32-bits is:</p>
 
 \[[N]_{10} = [b_{31}\,...\,b_{1}\,b_{0}]_{2C} = - b_{31}\,2^{31} + \sum_{i=0}^{30} b_{i}\,2^{i} \text{ where } b_k \,\in\, \{ 0,1 \}\]
@@ -617,9 +637,9 @@ it is important to be aware of this kind of behavior when a technology is used.<
       </div>
     </div>
 
-    <hr class="sep">
+    <hr class="sep no-print">
 
-    <div class="row">
+    <div class="row no-print">
       <!-- Article browser -->
       <div class="col-4 text-left">
         <div class="article-browser">
@@ -724,35 +744,35 @@ it is important to be aware of this kind of behavior when a technology is used.<
   <h5>Also read</h5>
   <div class="row">
 <div class="col-xs-12 col-md-6 col-lg-4">
-<a href="/blog/articles/2021/11/13/software-versioning.html" title="Read this article" style="display: block">
+<a href="/blog/articles/2019/04/01/lighthouse.html" title="Read this article" style="display: block">
   <div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2021-11-13-software-versioning.jpg" alt="2021-11-13-software-versioning">
+        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2019-04-01-lighthouse.jpg" alt="2019-04-01-lighthouse">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          Software versioning
+          Lighthouse
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          How is assigned a version to a software?
+          Lighthouse is an open-source, automated tool for improving the quality of web pages.
         </div>
 <!-- Article categories -->
         <div class="article-category">
           <ul>
-            <li>Development</li>
+            <li>Web</li>
           </ul>
         </div>
 <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>November 13, 2021</span>
+          <span>April 01, 2019</span>
         </div>
 <!-- Article reading time -->
         <div class="reading-time">
@@ -766,35 +786,35 @@ it is important to be aware of this kind of behavior when a technology is used.<
 </a>
 </div>
 <div class="col-xs-12 col-md-6 col-lg-4">
-<a href="/blog/articles/2020/11/28/unix-timestamp.html" title="Read this article" style="display: block">
+<a href="/blog/articles/2019/07/14/trace-a-request-path.html" title="Read this article" style="display: block">
   <div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2020-11-28-unix-timestamp.jpg" alt="2020-11-28-unix-timestamp">
+        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2019-07-14-trace-a-request-path.jpg" alt="2019-07-14-trace-a-request-path">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          Unix timestamp
+          Trace a request path
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          What could happen in 2038 with the Y2K38 problem?
+          How to know for which routers a HTTP request browses?
         </div>
 <!-- Article categories -->
         <div class="article-category">
           <ul>
-            <li>Applied Mathematics</li>
+            <li>Web</li>
           </ul>
         </div>
 <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>November 28, 2020</span>
+          <span>July 14, 2019</span>
         </div>
 <!-- Article reading time -->
         <div class="reading-time">
@@ -808,40 +828,40 @@ it is important to be aware of this kind of behavior when a technology is used.<
 </a>
 </div>
 <div class="col-xs-12 col-md-6 col-lg-4">
-<a href="/blog/articles/2020/05/04/java-ecosystem.html" title="Read this article" style="display: block">
+<a href="/blog/articles/2019/03/23/kerberos-in-5-minutes.html" title="Read this article" style="display: block">
   <div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2020-05-04-java-ecosystem.jpg" alt="2020-05-04-java-ecosystem">
+        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2019-03-23-kerberos-in-5-minutes.jpg" alt="2019-03-23-kerberos-in-5-minutes">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          Java ecosystem
+          Kerberos in 5 minutes
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          What is the Java ecosystem from Sun to Oracle?
+          Kerberos is an authentication protocol for trusted hosts on untrusted networks.
         </div>
 <!-- Article categories -->
         <div class="article-category">
           <ul>
-            <li>Development</li>
+            <li>Security</li>
           </ul>
         </div>
 <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>May 04, 2020</span>
+          <span>March 23, 2019</span>
         </div>
 <!-- Article reading time -->
         <div class="reading-time">
           <i class="far fa-clock"></i>
-          <span>10 min</span>
+          <span>5 min</span>
         </div>
 </div>
 

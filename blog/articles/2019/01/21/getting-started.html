@@ -257,7 +257,7 @@ window.MathJax = {
       </span>
       </div>
       <!-- Article browser -->
-      <div class="col-4 text-right">
+      <div class="col-4 text-right no-print">
         <div class="article-browser"><a href="/blog/articles/2019/02/14/how-to-quote-sources.html" title="See the next article">
     <i class="fa fa-arrow-right"></i>
   </a></div>
@@ -266,17 +266,29 @@ window.MathJax = {
     </div>
 
     <!-- Article title -->
-    <div class="article-title" title="Title of this article">
+    <div class="row article-title" title="Title of this article">
       Getting started
     </div>
 
     <!-- Article description -->
-    <div class="article-description" title="Description of this article">
+    <div class="row article-description" title="Description of this article">
       How to write articles on this blog from an easy-to-use and rich syntax?
     </div>
 
+    <!-- Article tags -->
+    <div class="row">
+      <span class="article-labels">
+  <ul>
+    
+    <li title="Tag of this article">Markdown</li>
+    
+  </ul>
+</span>
+
+    </div>
+
     <!-- Socials sharing -->
-    <div>
+    <div class="row article-social">
       <div class="social-sharing">
   <ul>
     <li title="Share page on LinkedIn">
@@ -299,26 +311,34 @@ window.MathJax = {
 
     </div>
 
+    <!-- Inline author(s) -->
+    <div class="row article-authors-inline">
+      <div title="Author of this article" style="margin-bottom: 0.5em;"><span class="d-inline-block">
+        <a class="link-strong" href="https://glegoux.com" title="Follow this author">
+          <img src="/_static/authors/glegoux.jpg" alt="picture of glegoux" title="picture of this author" class="icon-avatar">
+          Gilles
+          LEGOUX
+        </a></span></div>
+    </div>
+
     <div class="row">
       <!-- Article details -->
-      <div class="col-8">
-        <div class="article-details">
-          <ul>
-            <li title="Published date of this article">
-              <i class="far fa-calendar-alt"></i>
-              <span>January 21, 2019</span>
-            </li>
-            <li title="Reading time of this article">
-              <i class="far fa-clock"></i>
-              <span>
-                10 min
-              </span>
-            </li>
-</ul>
-        </div>
+      <div class="article-details col-6">
+        <ul>
+          <li title="Published date of this article">
+            <i class="far fa-calendar-alt"></i>
+            <span>January 21, 2019</span>
+          </li>
+          <li title="Reading time of this article">
+            <i class="far fa-clock"></i>
+            <span>
+              10 min
+            </span>
+          </li>
+        </ul>
       </div>
       <!-- Article license -->
-      <div class="col-4">
+      <div class="col-6">
         <div class="article-license" title="See the license">
     <a href="https://creativecommons.org/licenses/by-nc-sa/4.0">
       <i class="cc notranslate"><span class="d-none d-md-inline">Creative Commons Attribution 4.0 International</span> License:</i>
@@ -399,7 +419,7 @@ window.MathJax = {
 This syntax is based on <a href="https://kramdown.gettalong.org/syntax.html">Kramdown</a> with a light and custom extension. Besides, this article is written with this syntax, click on the button: <b><i class="far fa-file-code"></i>Source</b> to explore its <strong>source code</strong>. Each following section gives an overview and examples for each usage.</p>
 
 <p>But before, what is precisely the Markdown? <a href="https://daringfireball.net/projects/markdown/">Markdown</a> is a lightweight and popular text metalanguage that is a writing standard
-with the extension <code class="language-plaintext highlighter-rouge">.md</code> or <code class="language-plaintext highlighter-rouge">.markdown</code>. It is often converted into HTML, allowing it to be easily shared on the web <img class="emoji" title=":spider_web:" alt=":spider_web:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f578.png" height="20" width="20">. After converting to HTML, it 
+with the extension <code class="language-text highlighter-rouge">.md</code> or <code class="language-text highlighter-rouge">.markdown</code>. It is often converted into HTML, allowing it to be easily shared on the web <img class="emoji" title=":spider_web:" alt=":spider_web:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f578.png" height="20" width="20">. After converting to HTML, it 
 is decorated and animated by CSS style sheets and/or JS scripts. See more details on this <a href="https://www.markdownguide.org">Markdown Guide</a>.</p>
 
 <figure>
@@ -430,11 +450,11 @@ is decorated and animated by CSS style sheets and/or JS scripts. See more detail
 Bold:	<strong>bold</strong> or <strong>bold</strong><br>
 Strikethrough: <del>Strikethrough</del><br>
 Bold &amp; Italics: <strong><em>bold italics</em></strong> or <strong><em>bold italics</em></strong><br>
-Inline code: <code class="language-plaintext highlighter-rouge">code</code></p>
+Inline code: <code class="language-text highlighter-rouge">code</code></p>
 
 <p>Source code:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Italics: *italics* or _italics_  
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Italics: *italics* or _italics_  
 Bold:	**bold** or __bold__ 
 Strikethrough: ~~Strikethrough~~
 Bold &amp; Italics: **_bold italics_** or __*bold italics*__
@@ -456,7 +476,7 @@ Inline code: `code`
 World!\n
 </code></pre>
 
-<p><em>Note: <code class="language-plaintext highlighter-rouge">\n</code> and <code class="language-plaintext highlighter-rouge">␣</code> represent respectively a new line character and a space character.</em></p>
+<p><em>Note: <code class="language-text highlighter-rouge">\n</code> and <code class="language-text highlighter-rouge">␣</code> represent respectively a new line character and a space character.</em></p>
 
 <h2 id="headings">Headings</h2>
 
@@ -464,7 +484,7 @@ World!\n
 
 <p>Source code:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># H1
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code># H1
 ## H2
 ### H3
 
@@ -488,7 +508,7 @@ H2
 
 <p>Source code:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. item
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. item
 2. item
 3. item
 </code></pre></div></div>
@@ -503,7 +523,7 @@ H2
 
 <p>Source code:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> * item
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code> * item
  * item
  * item
 </code></pre></div></div>
@@ -548,7 +568,7 @@ Linus Torvalds, creator of the Linux operating system
 
 <p>Source code:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;https://www.google.com&gt;
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;https://www.google.com&gt;
 </code></pre></div></div>
 
 <ul>
@@ -556,15 +576,15 @@ Linus Torvalds, creator of the Linux operating system
 </ul>
 
 <p>Source code:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Google](https://www.google.com)
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Google](https://www.google.com)
 </code></pre></div></div>
 
 <ul>
-  <li>A link with a name and a title: <a href="https://www.google.com" title="Google's Homepage">Google</a> with the title <code class="language-plaintext highlighter-rouge">Google's Homepage</code>.</li>
+  <li>A link with a name and a title: <a href="https://www.google.com" title="Google's Homepage">Google</a> with the title <code class="language-text highlighter-rouge">Google's Homepage</code>.</li>
 </ul>
 
 <p>Source code:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Google](https://www.google.com "Google's Homepage")
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Google](https://www.google.com "Google's Homepage")
 </code></pre></div></div>
 
 <p>You can use shortcuts for your links to use that several times on the article or to centralize links:</p>
@@ -572,7 +592,7 @@ Linus Torvalds, creator of the Linux operating system
 <p><a href="https://www.google.com">Google1</a> <a href="https://www.google.com">Google2</a></p>
 
 <p>Source code:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Google1][1] [Google2][1]
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Google1][1] [Google2][1]
 
 [1]: https://www.google.com
 </code></pre></div></div>
@@ -586,7 +606,7 @@ INFO
 </pre>
 
 <p>Source code:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;pre class="info"&gt;
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;pre class="info"&gt;
 INFO
 &lt;/pre&gt;
 </code></pre></div></div>
@@ -598,7 +618,7 @@ QUESTION
 </pre>
 
 <p>Source code:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;pre class="question"&gt;
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;pre class="question"&gt;
 QUESTION
 &lt;/pre&gt;
 </code></pre></div></div>
@@ -610,7 +630,7 @@ WARNING
 </pre>
 
 <p>Source code:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;pre class="warning"&gt;
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;pre class="warning"&gt;
 WARNING
 &lt;/pre&gt;
 </code></pre></div></div>
@@ -622,7 +642,7 @@ ERROR
 </pre>
 
 <p>Source code:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;pre class="error"&gt;
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;pre class="error"&gt;
 ERROR
 &lt;/pre&gt;
 </code></pre></div></div>
@@ -634,7 +654,7 @@ SUCCESS
 </pre>
 
 <p>Source code:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;pre class="success"&gt;
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;pre class="success"&gt;
 SUCCESS
 &lt;/pre&gt;
 </code></pre></div></div>
@@ -644,7 +664,7 @@ SUCCESS
 <p>If you want to put a hidden text not displayed in the article but present in the written source, that is to say, a comment, simply do an HTML comment:</p>
 
 <p>Source code:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;!-- comments --&gt;
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;!-- comments --&gt;
 </code></pre></div></div>
 
 <h1 id="informatics-code">Informatics code</h1>
@@ -852,7 +872,7 @@ result
 
 <h3 id="plain-text">Plain text</h3>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"Hello World!"
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"Hello World!"
 </code></pre></div></div>
 
 <p>Source code:</p>
@@ -920,14 +940,14 @@ message="Hello World!"
 
 <p>Use LateX syntax, see <a href="https://www.latex-project.org">latex-project.org</a>.</p>
 
-<p><img class="emoji" title=":warning:" alt=":warning:" src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png" height="20" width="20"> The dollar symbol $ becomes a meta symbol, so there is a conflict with the dollar symbol use the HTML code <code class="language-plaintext highlighter-rouge">&amp;#36;</code> to see the dollar symbol $.</p>
+<p><img class="emoji" title=":warning:" alt=":warning:" src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png" height="20" width="20"> The dollar symbol $ becomes a meta symbol, so there is a conflict with the dollar symbol use the HTML code <code class="language-text highlighter-rouge">&amp;#36;</code> to see the dollar symbol $.</p>
 
 <h2 id="in-line-equation">In-line equation</h2>
 
 <p>This equation $\int_0^1 x^2dx = \frac{1}{3}$ is in-line.</p>
 
 <p>Source code:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This equation $\int_0^1 x^2dx = \frac{1}{3}$ is in-line.
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This equation $\int_0^1 x^2dx = \frac{1}{3}$ is in-line.
 </code></pre></div></div>
 
 <h2 id="single-line-equation">Single-line equation</h2>
@@ -937,7 +957,7 @@ message="Hello World!"
 \[\int_0^1 x^2dx = \frac{1}{3}\]
 
 <p>Source code:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$$\int_0^1 x^2dx = \frac{1}{3}$$
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$$\int_0^1 x^2dx = \frac{1}{3}$$
 </code></pre></div></div>
 
 <h2 id="multi-line-equation">Multi-line equation</h2>
@@ -950,7 +970,7 @@ message="Hello World!"
 }\]
 
 <p>Source code:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$$
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$$
 \displaylines{
 \int_0^1 x\,dx = \frac{1}{2} \\
 \int_0^1 x^2dx = \frac{1}{3} 
@@ -1026,9 +1046,9 @@ $$
       </div>
     </div>
 
-    <hr class="sep">
+    <hr class="sep no-print">
 
-    <div class="row">
+    <div class="row no-print">
       <!-- Article browser -->
       <div class="col-4 text-left">
         <div class="article-browser"><a href="/blog/articles/2019/02/14/how-to-quote-sources.html" title="See the next article">
@@ -1129,35 +1149,77 @@ $$
   <h5>Also read</h5>
   <div class="row">
 <div class="col-xs-12 col-md-6 col-lg-4">
-<a href="/blog/articles/2019/07/14/trace-a-request-path.html" title="Read this article" style="display: block">
+<a href="/blog/articles/2019/05/24/java-champion.html" title="Read this article" style="display: block">
   <div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2019-07-14-trace-a-request-path.jpg" alt="2019-07-14-trace-a-request-path">
+        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2019-05-24-java-champion.jpg" alt="2019-05-24-java-champion">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          Trace a request path
+          Java champion
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          How to know for which routers a HTTP request browses?
+          How to become a Java champion?
         </div>
 <!-- Article categories -->
         <div class="article-category">
           <ul>
-            <li>Web</li>
+            <li>Development</li>
           </ul>
         </div>
 <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>July 14, 2019</span>
+          <span>May 24, 2019</span>
+        </div>
+<!-- Article reading time -->
+        <div class="reading-time">
+          <i class="far fa-clock"></i>
+          <span>1 min</span>
+        </div>
+</div>
+
+    </div>
+  </div>
+</a>
+</div>
+<div class="col-xs-12 col-md-6 col-lg-4">
+<a href="/blog/articles/2019/03/01/access-to-a-computer-from-usb-key.html" title="Read this article" style="display: block">
+  <div class="article-card-container">
+    <!-- Article metadata -->
+    <div class="article-card">
+<!-- Article cover --><div class="article-cover">
+        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2019-03-01-access-to-a-computer-from-usb-key.jpg" alt="2019-03-01-access-to-a-computer-from-usb-key">
+      </div>
+
+      <!-- Article details -->
+      <div class="article-details">
+        <!-- Article title -->
+        <div class="article-title">
+          Access to a computer from USB key
+        </div>
+
+        <!-- Article description -->
+        <div class="article-description">
+          Somebody with USB key can take control of your computer
+        </div>
+<!-- Article categories -->
+        <div class="article-category">
+          <ul>
+            <li>Security</li>
+          </ul>
+        </div>
+<!-- Article publication date -->
+        <div class="date">
+          <i class="far fa-calendar-alt"></i>
+          <span>March 01, 2019</span>
         </div>
 <!-- Article reading time -->
         <div class="reading-time">
@@ -1171,77 +1233,35 @@ $$
 </a>
 </div>
 <div class="col-xs-12 col-md-6 col-lg-4">
-<a href="/blog/articles/2020/05/04/java-ecosystem.html" title="Read this article" style="display: block">
+<a href="/blog/articles/2019/02/14/how-to-quote-sources.html" title="Read this article" style="display: block">
   <div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2020-05-04-java-ecosystem.jpg" alt="2020-05-04-java-ecosystem">
+        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2019-02-14-how-to-quote-sources.jpg" alt="2019-02-14-how-to-quote-sources">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          Java ecosystem
+          How to quote sources
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          What is the Java ecosystem from Sun to Oracle?
+          Current standards and rules to respect in order to quote sources.
         </div>
 <!-- Article categories -->
         <div class="article-category">
           <ul>
-            <li>Development</li>
+            <li>Methodology</li>
           </ul>
         </div>
 <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>May 04, 2020</span>
-        </div>
-<!-- Article reading time -->
-        <div class="reading-time">
-          <i class="far fa-clock"></i>
-          <span>10 min</span>
-        </div>
-</div>
-
-    </div>
-  </div>
-</a>
-</div>
-<div class="col-xs-12 col-md-6 col-lg-4">
-<a href="/blog/articles/2019/03/23/kerberos-in-5-minutes.html" title="Read this article" style="display: block">
-  <div class="article-card-container">
-    <!-- Article metadata -->
-    <div class="article-card">
-<!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2019-03-23-kerberos-in-5-minutes.jpg" alt="2019-03-23-kerberos-in-5-minutes">
-      </div>
-
-      <!-- Article details -->
-      <div class="article-details">
-        <!-- Article title -->
-        <div class="article-title">
-          Kerberos in 5 minutes
-        </div>
-
-        <!-- Article description -->
-        <div class="article-description">
-          Kerberos is an authentication protocol for trusted hosts on untrusted networks.
-        </div>
-<!-- Article categories -->
-        <div class="article-category">
-          <ul>
-            <li>Security</li>
-          </ul>
-        </div>
-<!-- Article publication date -->
-        <div class="date">
-          <i class="far fa-calendar-alt"></i>
-          <span>March 23, 2019</span>
+          <span>February 14, 2019</span>
         </div>
 <!-- Article reading time -->
         <div class="reading-time">

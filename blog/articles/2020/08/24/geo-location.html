@@ -257,7 +257,7 @@ window.MathJax = {
       </span>
       </div>
       <!-- Article browser -->
-      <div class="col-4 text-right">
+      <div class="col-4 text-right no-print">
         <div class="article-browser">
 <a href="/blog/articles/2020/05/15/gnu-privacy-guard.html" title="See the previous article">
     <i class="fa fa-arrow-left"></i>
@@ -270,17 +270,29 @@ window.MathJax = {
     </div>
 
     <!-- Article title -->
-    <div class="article-title" title="Title of this article">
+    <div class="row article-title" title="Title of this article">
       Geo-location
     </div>
 
     <!-- Article description -->
-    <div class="article-description" title="Description of this article">
+    <div class="row article-description" title="Description of this article">
       How to compute the distance between 2 points with given latitude and longitude?
     </div>
 
+    <!-- Article tags -->
+    <div class="row">
+      <span class="article-labels">
+  <ul>
+    
+    <li title="Tag of this article">Geometry</li>
+    
+  </ul>
+</span>
+
+    </div>
+
     <!-- Socials sharing -->
-    <div>
+    <div class="row article-social">
       <div class="social-sharing">
   <ul>
     <li title="Share page on LinkedIn">
@@ -303,26 +315,34 @@ window.MathJax = {
 
     </div>
 
+    <!-- Inline author(s) -->
+    <div class="row article-authors-inline">
+      <div title="Author of this article" style="margin-bottom: 0.5em;"><span class="d-inline-block">
+        <a class="link-strong" href="https://glegoux.com" title="Follow this author">
+          <img src="/_static/authors/glegoux.jpg" alt="picture of glegoux" title="picture of this author" class="icon-avatar">
+          Gilles
+          LEGOUX
+        </a></span></div>
+    </div>
+
     <div class="row">
       <!-- Article details -->
-      <div class="col-8">
-        <div class="article-details">
-          <ul>
-            <li title="Published date of this article">
-              <i class="far fa-calendar-alt"></i>
-              <span>August 24, 2020</span>
-            </li>
-            <li title="Reading time of this article">
-              <i class="far fa-clock"></i>
-              <span>
-                10 min
-              </span>
-            </li>
-</ul>
-        </div>
+      <div class="article-details col-6">
+        <ul>
+          <li title="Published date of this article">
+            <i class="far fa-calendar-alt"></i>
+            <span>August 24, 2020</span>
+          </li>
+          <li title="Reading time of this article">
+            <i class="far fa-clock"></i>
+            <span>
+              10 min
+            </span>
+          </li>
+        </ul>
       </div>
       <!-- Article license -->
-      <div class="col-4">
+      <div class="col-6">
         <div class="article-license" title="See the license">
     <a href="https://creativecommons.org/licenses/by-nc-sa/4.0">
       <i class="cc notranslate"><span class="d-none d-md-inline">Creative Commons Attribution 4.0 International</span> License:</i>
@@ -580,9 +600,9 @@ respecting the triangle inegality.</p>
       </div>
     </div>
 
-    <hr class="sep">
+    <hr class="sep no-print">
 
-    <div class="row">
+    <div class="row no-print">
       <!-- Article browser -->
       <div class="col-4 text-left">
         <div class="article-browser">
@@ -687,35 +707,35 @@ respecting the triangle inegality.</p>
   <h5>Also read</h5>
   <div class="row">
 <div class="col-xs-12 col-md-6 col-lg-4">
-<a href="/blog/articles/2019/02/14/how-to-quote-sources.html" title="Read this article" style="display: block">
+<a href="/blog/articles/2019/11/29/gafa-vs-batx.html" title="Read this article" style="display: block">
   <div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2019-02-14-how-to-quote-sources.jpg" alt="2019-02-14-how-to-quote-sources">
+        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2019-11-29-gafa-vs-batx.jpg" alt="2019-11-29-gafa-vs-batx">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          How to quote sources
+          Gafa vs Batx
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          Current standards and rules to respect in order to quote sources.
+          What is the difference?
         </div>
 <!-- Article categories -->
         <div class="article-category">
           <ul>
-            <li>Methodology</li>
+            <li>Business</li>
           </ul>
         </div>
 <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>February 14, 2019</span>
+          <span>November 29, 2019</span>
         </div>
 <!-- Article reading time -->
         <div class="reading-time">
@@ -729,40 +749,40 @@ respecting the triangle inegality.</p>
 </a>
 </div>
 <div class="col-xs-12 col-md-6 col-lg-4">
-<a href="/blog/articles/2019/04/01/lighthouse.html" title="Read this article" style="display: block">
+<a href="/blog/articles/2020/05/15/gnu-privacy-guard.html" title="Read this article" style="display: block">
   <div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2019-04-01-lighthouse.jpg" alt="2019-04-01-lighthouse">
+        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2020-05-15-gnu-privacy-guard.jpg" alt="2020-05-15-gnu-privacy-guard">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          Lighthouse
+          GNU privacy guard
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          Lighthouse is an open-source, automated tool for improving the quality of web pages.
+          How to prove its identity and encrypt its communication?
         </div>
 <!-- Article categories -->
         <div class="article-category">
           <ul>
-            <li>Web</li>
+            <li>Security</li>
           </ul>
         </div>
 <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>April 01, 2019</span>
+          <span>May 15, 2020</span>
         </div>
 <!-- Article reading time -->
         <div class="reading-time">
           <i class="far fa-clock"></i>
-          <span>10 min</span>
+          <span>5 min</span>
         </div>
 </div>
 
@@ -771,35 +791,35 @@ respecting the triangle inegality.</p>
 </a>
 </div>
 <div class="col-xs-12 col-md-6 col-lg-4">
-<a href="/blog/articles/2019/07/14/trace-a-request-path.html" title="Read this article" style="display: block">
+<a href="/blog/articles/2019/03/23/kerberos-in-5-minutes.html" title="Read this article" style="display: block">
   <div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2019-07-14-trace-a-request-path.jpg" alt="2019-07-14-trace-a-request-path">
+        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2019-03-23-kerberos-in-5-minutes.jpg" alt="2019-03-23-kerberos-in-5-minutes">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          Trace a request path
+          Kerberos in 5 minutes
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          How to know for which routers a HTTP request browses?
+          Kerberos is an authentication protocol for trusted hosts on untrusted networks.
         </div>
 <!-- Article categories -->
         <div class="article-category">
           <ul>
-            <li>Web</li>
+            <li>Security</li>
           </ul>
         </div>
 <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>July 14, 2019</span>
+          <span>March 23, 2019</span>
         </div>
 <!-- Article reading time -->
         <div class="reading-time">

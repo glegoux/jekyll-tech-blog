@@ -257,7 +257,7 @@ window.MathJax = {
       </span>
       </div>
       <!-- Article browser -->
-      <div class="col-4 text-right">
+      <div class="col-4 text-right no-print">
         <div class="article-browser">
 <a href="/blog/articles/2019/03/01/access-to-a-computer-from-usb-key.html" title="See the previous article">
     <i class="fa fa-arrow-left"></i>
@@ -270,17 +270,29 @@ window.MathJax = {
     </div>
 
     <!-- Article title -->
-    <div class="article-title" title="Title of this article">
+    <div class="row article-title" title="Title of this article">
       Kerberos in 5 minutes
     </div>
 
     <!-- Article description -->
-    <div class="article-description" title="Description of this article">
+    <div class="row article-description" title="Description of this article">
       Kerberos is an authentication protocol for trusted hosts on untrusted networks.
     </div>
 
+    <!-- Article tags -->
+    <div class="row">
+      <span class="article-labels">
+  <ul>
+    
+    <li title="Tag of this article">Kerberos</li>
+    
+  </ul>
+</span>
+
+    </div>
+
     <!-- Socials sharing -->
-    <div>
+    <div class="row article-social">
       <div class="social-sharing">
   <ul>
     <li title="Share page on LinkedIn">
@@ -303,26 +315,34 @@ window.MathJax = {
 
     </div>
 
+    <!-- Inline author(s) -->
+    <div class="row article-authors-inline">
+      <div title="Author of this article" style="margin-bottom: 0.5em;"><span class="d-inline-block">
+        <a class="link-strong" href="https://glegoux.com" title="Follow this author">
+          <img src="/_static/authors/glegoux.jpg" alt="picture of glegoux" title="picture of this author" class="icon-avatar">
+          Gilles
+          LEGOUX
+        </a></span></div>
+    </div>
+
     <div class="row">
       <!-- Article details -->
-      <div class="col-8">
-        <div class="article-details">
-          <ul>
-            <li title="Published date of this article">
-              <i class="far fa-calendar-alt"></i>
-              <span>March 23, 2019</span>
-            </li>
-            <li title="Reading time of this article">
-              <i class="far fa-clock"></i>
-              <span>
-                5 min
-              </span>
-            </li>
-</ul>
-        </div>
+      <div class="article-details col-6">
+        <ul>
+          <li title="Published date of this article">
+            <i class="far fa-calendar-alt"></i>
+            <span>March 23, 2019</span>
+          </li>
+          <li title="Reading time of this article">
+            <i class="far fa-clock"></i>
+            <span>
+              5 min
+            </span>
+          </li>
+        </ul>
       </div>
       <!-- Article license -->
-      <div class="col-4">
+      <div class="col-6">
         <div class="article-license" title="See the license">
     <a href="https://creativecommons.org/licenses/by-nc-sa/4.0">
       <i class="cc notranslate"><span class="d-none d-md-inline">Creative Commons Attribution 4.0 International</span> License:</i>
@@ -513,11 +533,11 @@ integrates very well Kerberos, it is in the standard library. A lot of Java proj
 
 <ul>
   <li>
-<code class="language-plaintext highlighter-rouge">Authentication</code> is managed by the KDC to guarantee the identity of an entity.</li>
+<code class="language-text highlighter-rouge">Authentication</code> is managed by the KDC to guarantee the identity of an entity.</li>
   <li>
-<code class="language-plaintext highlighter-rouge">Authorization</code> is controlled by the Service directly to authorize access (you can also use Access Control List (ACL) for other permissions)</li>
+<code class="language-text highlighter-rouge">Authorization</code> is controlled by the Service directly to authorize access (you can also use Access Control List (ACL) for other permissions)</li>
   <li>
-<code class="language-plaintext highlighter-rouge">Accounting</code> is allowed by LDAP server.</li>
+<code class="language-text highlighter-rouge">Accounting</code> is allowed by LDAP server.</li>
 </ul>
 
 <figure>
@@ -563,79 +583,79 @@ integrates very well Kerberos, it is in the standard library. A lot of Java proj
 
 <h2 id="key-concepts">Key Concepts</h2>
 
-<p><code class="language-plaintext highlighter-rouge">Authentication</code>: Action of checking that an entity is really this entity without impersonating another entity.</p>
+<p><code class="language-text highlighter-rouge">Authentication</code>: Action of checking that an entity is really this entity without impersonating another entity.</p>
 
-<p><code class="language-plaintext highlighter-rouge">Authorization</code>: Action of verifying that an entity have sufficient rights to access a system.</p>
+<p><code class="language-text highlighter-rouge">Authorization</code>: Action of verifying that an entity have sufficient rights to access a system.</p>
 
-<p><code class="language-plaintext highlighter-rouge">Accounting</code>: Management of defined groups and users.</p>
+<p><code class="language-text highlighter-rouge">Accounting</code>: Management of defined groups and users.</p>
 
 <h2 id="general-concepts">General concepts</h2>
 
-<p><code class="language-plaintext highlighter-rouge">Mutual authentication</code>: It is also called two-way authentication, is a process or technology in which both entities in a communications link authenticate each other. In a network environment, the client authenticates the server and vice-versa.</p>
+<p><code class="language-text highlighter-rouge">Mutual authentication</code>: It is also called two-way authentication, is a process or technology in which both entities in a communications link authenticate each other. In a network environment, the client authenticates the server and vice-versa.</p>
 
-<p><code class="language-plaintext highlighter-rouge">AAS</code>: Authentication and Authorization System.</p>
+<p><code class="language-text highlighter-rouge">AAS</code>: Authentication and Authorization System.</p>
 
-<p><code class="language-plaintext highlighter-rouge">AAAS</code>: Authentication, Authorization, Accounting/Auditing System.</p>
+<p><code class="language-text highlighter-rouge">AAAS</code>: Authentication, Authorization, Accounting/Auditing System.</p>
 
-<p><code class="language-plaintext highlighter-rouge">Client</code>: An entity that can obtain a ticket. This entity is usually either a user or a host.</p>
+<p><code class="language-text highlighter-rouge">Client</code>: An entity that can obtain a ticket. This entity is usually either a user or a host.</p>
 
-<p><code class="language-plaintext highlighter-rouge">Host</code>: A computer that can be accessed over a network.</p>
+<p><code class="language-text highlighter-rouge">Host</code>: A computer that can be accessed over a network.</p>
 
-<p><code class="language-plaintext highlighter-rouge">DNS</code>: The Domain Name System is a hierarchical decentralized naming system for computers.</p>
+<p><code class="language-text highlighter-rouge">DNS</code>: The Domain Name System is a hierarchical decentralized naming system for computers.</p>
 
-<p><code class="language-plaintext highlighter-rouge">Service</code>: Any program or computer you access over a network. Examples of services include “host” (a host, e.g., when you use telnet and rsh), “ftp” (FTP), “krbtgt” (authentication; cf. ticket-granting ticket), and “pop” (email).</p>
+<p><code class="language-text highlighter-rouge">Service</code>: Any program or computer you access over a network. Examples of services include “host” (a host, e.g., when you use telnet and rsh), “ftp” (FTP), “krbtgt” (authentication; cf. ticket-granting ticket), and “pop” (email).</p>
 
-<p><code class="language-plaintext highlighter-rouge">RFC</code>: A Request for Comments (RFC) is a type of publication from the Internet Engineering Task Force (IETF) and the Internet Society (ISOC), the principal technical development and standards-setting bodies for the Internet.</p>
+<p><code class="language-text highlighter-rouge">RFC</code>: A Request for Comments (RFC) is a type of publication from the Internet Engineering Task Force (IETF) and the Internet Society (ISOC), the principal technical development and standards-setting bodies for the Internet.</p>
 
-<p><code class="language-plaintext highlighter-rouge">LDAP</code>: Lightweight Directory Access Protocol is a directory service protocol that runs on a layer above the TCP/IP stack. It provides a mechanism used to connect to, search, and modify Internet directories. It is essentially a database that contains information about users and groups in a tree structure</p>
+<p><code class="language-text highlighter-rouge">LDAP</code>: Lightweight Directory Access Protocol is a directory service protocol that runs on a layer above the TCP/IP stack. It provides a mechanism used to connect to, search, and modify Internet directories. It is essentially a database that contains information about users and groups in a tree structure</p>
 
-<p><code class="language-plaintext highlighter-rouge">HDFS</code>:  Hadoop Distributed File System is a Java-based file system that provides scalable and reliable data storage, and it was designed to span large clusters of commodity servers.</p>
+<p><code class="language-text highlighter-rouge">HDFS</code>:  Hadoop Distributed File System is a Java-based file system that provides scalable and reliable data storage, and it was designed to span large clusters of commodity servers.</p>
 
-<p><code class="language-plaintext highlighter-rouge">SSO</code>: Single Sign On is a method allowing to an user to access to several applications thanks to one unique authentication.</p>
+<p><code class="language-text highlighter-rouge">SSO</code>: Single Sign On is a method allowing to an user to access to several applications thanks to one unique authentication.</p>
 
-<p><code class="language-plaintext highlighter-rouge">OpenSSH</code>: Implementation Open Source of Secure SHell (SSH) is a cryptographic network protocol for operating network services securely over an unsecured network.</p>
+<p><code class="language-text highlighter-rouge">OpenSSH</code>: Implementation Open Source of Secure SHell (SSH) is a cryptographic network protocol for operating network services securely over an unsecured network.</p>
 
-<p><code class="language-plaintext highlighter-rouge">ACL</code>: Access Control List allows to manage permissions attached to an object.</p>
+<p><code class="language-text highlighter-rouge">ACL</code>: Access Control List allows to manage permissions attached to an object.</p>
 
-<p><code class="language-plaintext highlighter-rouge">PAM</code>: A Pluggable Authentication Module allows to standardize security layer dynamically though system of same customizable modules for all applications.</p>
+<p><code class="language-text highlighter-rouge">PAM</code>: A Pluggable Authentication Module allows to standardize security layer dynamically though system of same customizable modules for all applications.</p>
 
 <h2 id="kerberos-concepts">Kerberos concepts</h2>
 
-<p><code class="language-plaintext highlighter-rouge">Kerberos</code>: In Greek mythology, the three-headed dog that guards the entrance to the underworld. In the computing world, Kerberos is a network security package that was developed at MIT.</p>
+<p><code class="language-text highlighter-rouge">Kerberos</code>: In Greek mythology, the three-headed dog that guards the entrance to the underworld. In the computing world, Kerberos is a network security package that was developed at MIT.</p>
 
-<p><code class="language-plaintext highlighter-rouge">KDC</code>: Key Distribution Center. A machine that issues Kerberos tickets composed of Ticket-Granting Server (TGS), Authentication Server (AS) and database instances.</p>
+<p><code class="language-text highlighter-rouge">KDC</code>: Key Distribution Center. A machine that issues Kerberos tickets composed of Ticket-Granting Server (TGS), Authentication Server (AS) and database instances.</p>
 
-<p><code class="language-plaintext highlighter-rouge">AS</code>: Authentication Service gives Ticket-Granting Ticket (TGT) to authenticate a client.</p>
+<p><code class="language-text highlighter-rouge">AS</code>: Authentication Service gives Ticket-Granting Ticket (TGT) to authenticate a client.</p>
 
-<p><code class="language-plaintext highlighter-rouge">AD</code>: Active Directory is a Microsoft product which makes use of a Kerberos implementation.</p>
+<p><code class="language-text highlighter-rouge">AD</code>: Active Directory is a Microsoft product which makes use of a Kerberos implementation.</p>
 
-<p><code class="language-plaintext highlighter-rouge">Keytab</code>: Shortcut for key table a key tab is the file containing one or more keys. A host or service uses a keytab file in much the same way as a user uses his/her password.</p>
+<p><code class="language-text highlighter-rouge">Keytab</code>: Shortcut for key table a key tab is the file containing one or more keys. A host or service uses a keytab file in much the same way as a user uses his/her password.</p>
 
-<p><code class="language-plaintext highlighter-rouge">Realm</code>: A REALM is in Kerberos terms equivalent to a Domain in Domain Name Server (DNS) by convention in UPPERCASE.</p>
+<p><code class="language-text highlighter-rouge">Realm</code>: A REALM is in Kerberos terms equivalent to a Domain in Domain Name Server (DNS) by convention in UPPERCASE.</p>
 
-<p><code class="language-plaintext highlighter-rouge">Principal</code>: You can understand that as UNIX username. There 2 types of principles: Service Principal Name (SPN) and User Principal Name (UPN). It is a string that names a specific entity to which a set of credentials may be assigned. 
+<p><code class="language-text highlighter-rouge">Principal</code>: You can understand that as UNIX username. There 2 types of principles: Service Principal Name (SPN) and User Principal Name (UPN). It is a string that names a specific entity to which a set of credentials may be assigned. 
 It can have an arbitrary number of components:
 component1/component2/…<a href="https://github.com/REALM" class="user-mention">@REALM</a>
 The typical format of a typical Kerberos principal is primary/instance@REALM.</p>
 
-<p><code class="language-plaintext highlighter-rouge">primary</code>: The first part of a Kerberos principal. In the case of a user, it is the username. In the case of a service, it is the name of the service.
-<code class="language-plaintext highlighter-rouge">instance</code>: The second part of a Kerberos principal. It gives information that qualifies the primary. The instance may be null. In the case of a user, the instance is often used to describe the intended use of the corresponding credentials. In the case of a host, the instance is the fully qualified hostname.
-<code class="language-plaintext highlighter-rouge">realm</code>: The logical network served by a single Kerberos database and a set of Key Distribution Centers. By convention, realm names are generally all uppercase letters, to differentiate the realm from the internet domain.
-<code class="language-plaintext highlighter-rouge">Ticket</code>: A temporary set of electronic credentials that verify the identity of a client for a particular service (typically 8 or 10 hours of life time).</p>
+<p><code class="language-text highlighter-rouge">primary</code>: The first part of a Kerberos principal. In the case of a user, it is the username. In the case of a service, it is the name of the service.
+<code class="language-text highlighter-rouge">instance</code>: The second part of a Kerberos principal. It gives information that qualifies the primary. The instance may be null. In the case of a user, the instance is often used to describe the intended use of the corresponding credentials. In the case of a host, the instance is the fully qualified hostname.
+<code class="language-text highlighter-rouge">realm</code>: The logical network served by a single Kerberos database and a set of Key Distribution Centers. By convention, realm names are generally all uppercase letters, to differentiate the realm from the internet domain.
+<code class="language-text highlighter-rouge">Ticket</code>: A temporary set of electronic credentials that verify the identity of a client for a particular service (typically 8 or 10 hours of life time).</p>
 
-<p><code class="language-plaintext highlighter-rouge">TGT</code>: Ticket-Granting Ticket. A special Kerberos ticket to guarantee authentication that permits the client to obtain additional Kerberos tickets within the same Kerberos realm given by Authentication Service (AS).</p>
+<p><code class="language-text highlighter-rouge">TGT</code>: Ticket-Granting Ticket. A special Kerberos ticket to guarantee authentication that permits the client to obtain additional Kerberos tickets within the same Kerberos realm given by Authentication Service (AS).</p>
 
-<p><code class="language-plaintext highlighter-rouge">TGS</code>: Ticket-Granting Service or Ticket-Granting Server (depends on context). The TGS exchange is initiated by a client when it wishes to obtain authentication credentials for a given server</p>
+<p><code class="language-text highlighter-rouge">TGS</code>: Ticket-Granting Service or Ticket-Granting Server (depends on context). The TGS exchange is initiated by a client when it wishes to obtain authentication credentials for a given server</p>
 
-<p><code class="language-plaintext highlighter-rouge">GSS-API</code>: Acronym for Generic Security Service Application Program Interface (GSSAPI, also GSS-API) is an application programming interface for programs to access security services.</p>
+<p><code class="language-text highlighter-rouge">GSS-API</code>: Acronym for Generic Security Service Application Program Interface (GSSAPI, also GSS-API) is an application programming interface for programs to access security services.</p>
 
-<p><code class="language-plaintext highlighter-rouge">Session Key</code>:  Random number generated by the KDC when it builds a ticket. It is the shared secret that the KDC, the client, and the validating server have in common.</p>
+<p><code class="language-text highlighter-rouge">Session Key</code>:  Random number generated by the KDC when it builds a ticket. It is the shared secret that the KDC, the client, and the validating server have in common.</p>
 
-<p><code class="language-plaintext highlighter-rouge">KVNO</code>: It is an acronym for Key version number. Kerberos can hold multiple keys for a principal. To distinguish between those keys every key has version number. The number is incremented by one when the password or encryption is changed.</p>
+<p><code class="language-text highlighter-rouge">KVNO</code>: It is an acronym for Key version number. Kerberos can hold multiple keys for a principal. To distinguish between those keys every key has version number. The number is incremented by one when the password or encryption is changed.</p>
 
-<p><code class="language-plaintext highlighter-rouge">KRBTGT Account</code>: This is a special account to create Ticket Granting Tickets.</p>
+<p><code class="language-text highlighter-rouge">KRBTGT Account</code>: This is a special account to create Ticket Granting Tickets.</p>
 
-<p><code class="language-plaintext highlighter-rouge">Key salt</code>: The salt is a string concatenated to the password to make sure the string2key function creates a unique encryption key, via a one-way hash. In Kerberos 5 the salt is the complete principal name including the realm. The reason the salt is used is to make sure the outcome of the one way hash is unique across realms.</p>
+<p><code class="language-text highlighter-rouge">Key salt</code>: The salt is a string concatenated to the password to make sure the string2key function creates a unique encryption key, via a one-way hash. In Kerberos 5 the salt is the complete principal name including the realm. The reason the salt is used is to make sure the outcome of the one way hash is unique across realms.</p>
 
 <h1 id="references">References</h1>
 
@@ -716,9 +736,9 @@ The typical format of a typical Kerberos principal is primary/instance@REALM.</p
       </div>
     </div>
 
-    <hr class="sep">
+    <hr class="sep no-print">
 
-    <div class="row">
+    <div class="row no-print">
       <!-- Article browser -->
       <div class="col-4 text-left">
         <div class="article-browser">
@@ -823,77 +843,35 @@ The typical format of a typical Kerberos principal is primary/instance@REALM.</p
   <h5>Also read</h5>
   <div class="row">
 <div class="col-xs-12 col-md-6 col-lg-4">
-<a href="/blog/articles/2019/01/21/getting-started.html" title="Read this article" style="display: block">
+<a href="/blog/articles/2019/07/14/trace-a-request-path.html" title="Read this article" style="display: block">
   <div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2019-01-21-getting-started.jpg" alt="2019-01-21-getting-started">
+        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2019-07-14-trace-a-request-path.jpg" alt="2019-07-14-trace-a-request-path">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          Getting started
+          Trace a request path
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          How to write articles on this blog from an easy-to-use and rich syntax?
+          How to know for which routers a HTTP request browses?
         </div>
 <!-- Article categories -->
         <div class="article-category">
           <ul>
-            <li>Methodology</li>
+            <li>Web</li>
           </ul>
         </div>
 <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>January 21, 2019</span>
-        </div>
-<!-- Article reading time -->
-        <div class="reading-time">
-          <i class="far fa-clock"></i>
-          <span>10 min</span>
-        </div>
-</div>
-
-    </div>
-  </div>
-</a>
-</div>
-<div class="col-xs-12 col-md-6 col-lg-4">
-<a href="/blog/articles/2019/03/23/kerberos-in-5-minutes.html" title="Read this article" style="display: block">
-  <div class="article-card-container">
-    <!-- Article metadata -->
-    <div class="article-card">
-<!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2019-03-23-kerberos-in-5-minutes.jpg" alt="2019-03-23-kerberos-in-5-minutes">
-      </div>
-
-      <!-- Article details -->
-      <div class="article-details">
-        <!-- Article title -->
-        <div class="article-title">
-          Kerberos in 5 minutes
-        </div>
-
-        <!-- Article description -->
-        <div class="article-description">
-          Kerberos is an authentication protocol for trusted hosts on untrusted networks.
-        </div>
-<!-- Article categories -->
-        <div class="article-category">
-          <ul>
-            <li>Security</li>
-          </ul>
-        </div>
-<!-- Article publication date -->
-        <div class="date">
-          <i class="far fa-calendar-alt"></i>
-          <span>March 23, 2019</span>
+          <span>July 14, 2019</span>
         </div>
 <!-- Article reading time -->
         <div class="reading-time">
@@ -907,24 +885,24 @@ The typical format of a typical Kerberos principal is primary/instance@REALM.</p
 </a>
 </div>
 <div class="col-xs-12 col-md-6 col-lg-4">
-<a href="/blog/articles/2019/03/01/access-to-a-computer-from-usb-key.html" title="Read this article" style="display: block">
+<a href="/blog/articles/2020/05/15/gnu-privacy-guard.html" title="Read this article" style="display: block">
   <div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2019-03-01-access-to-a-computer-from-usb-key.jpg" alt="2019-03-01-access-to-a-computer-from-usb-key">
+        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2020-05-15-gnu-privacy-guard.jpg" alt="2020-05-15-gnu-privacy-guard">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          Access to a computer from USB key
+          GNU privacy guard
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          Somebody with USB key can take control of your computer
+          How to prove its identity and encrypt its communication?
         </div>
 <!-- Article categories -->
         <div class="article-category">
@@ -935,7 +913,49 @@ The typical format of a typical Kerberos principal is primary/instance@REALM.</p
 <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>March 01, 2019</span>
+          <span>May 15, 2020</span>
+        </div>
+<!-- Article reading time -->
+        <div class="reading-time">
+          <i class="far fa-clock"></i>
+          <span>5 min</span>
+        </div>
+</div>
+
+    </div>
+  </div>
+</a>
+</div>
+<div class="col-xs-12 col-md-6 col-lg-4">
+<a href="/blog/articles/2020/03/04/development-environment.html" title="Read this article" style="display: block">
+  <div class="article-card-container">
+    <!-- Article metadata -->
+    <div class="article-card">
+<!-- Article cover --><div class="article-cover">
+        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2020-03-04-development-environment.jpg" alt="2020-03-04-development-environment">
+      </div>
+
+      <!-- Article details -->
+      <div class="article-details">
+        <!-- Article title -->
+        <div class="article-title">
+          Development environment
+        </div>
+
+        <!-- Article description -->
+        <div class="article-description">
+          Why isolate its development environment?
+        </div>
+<!-- Article categories -->
+        <div class="article-category">
+          <ul>
+            <li>Development</li>
+          </ul>
+        </div>
+<!-- Article publication date -->
+        <div class="date">
+          <i class="far fa-calendar-alt"></i>
+          <span>March 04, 2020</span>
         </div>
 <!-- Article reading time -->
         <div class="reading-time">
