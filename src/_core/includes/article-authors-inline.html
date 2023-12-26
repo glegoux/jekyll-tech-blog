@@ -1,0 +1,24 @@
+{%- assign n_authors = page.authors | size -%}
+{%- if n_authors > 0 -%}
+<div title="Author{%- if n_authors > 1 -%}s{%- endif %} of this article" style="margin-bottom: 0.5em;">
+    {%- for author_name in page.authors -%}
+      {%- assign author = config_article.authors[author_name] -%}
+      {%- assign author_avatar_path = '/_static/authors/' | append: author_name | append:
+      '.jpg' -%}
+      {%- assign author_avatar_path_exist = site.static_files | where: "path",
+      author_avatar_path | first -%}
+      {%- unless author_avatar_path_exist -%}
+      {%- assign author_avatar_path = '/_core/static/img/default/author.png' -%}
+      {%- endunless -%}
+      <span class="d-inline-block">
+        <a class="link-strong" href="{{ author.follow.link }}" title="Follow this author">
+          <img src="{{ author_avatar_path }}" alt="picture of {{ author_name }}"
+          title="picture of this author" class="icon-avatar"/>
+          {{ author.firstname | capitalize }}
+          {{ author.lastname | uppercase }}
+        </a>
+        {%- unless forloop.last -%},  {%- endunless -%}
+      </span>
+    {%- endfor -%}
+</div>
+{%- endif -%}
