@@ -21,13 +21,19 @@
     }
 
     .article-description {
-      color: grey;
+      color: dimgrey;
       font-weight: 300;
       font-size: 1.5em;
     }
 
+    .article-social {
+      margin-bottom: 0.5em;
+    }
+
     .article-details {
-      font-size: 1em;
+      padding-left: 0;
+      color: black;
+      font-size: 0.8em;
 
       li {
         display: inline-block;
