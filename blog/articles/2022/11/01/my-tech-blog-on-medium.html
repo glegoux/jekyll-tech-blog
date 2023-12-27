@@ -304,8 +304,31 @@ window.MathJax = {
         <i class="fab fa-facebook" aria-hidden="true"></i>
       </a>
     </li>
+    <li title="Share page by email">
+      <a href="mailto:?subject=Read%20https://glegoux.com/blog/articles/2022/11/01/my-tech-blog-on-medium.html">
+        <i class="fas fa-envelope" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li title="Copy page link" class="no-print">
+      <a href="javascript:void(0);" onclick="copyUrl()">
+        <i class="fa-solid fa-link" aria-hidden="true"></i>
+      </a>
+    </li>
   </ul>
 </div>
+
+<script>
+  function copyUrl() {
+    const currentUrl = window.location.href;
+    navigator.clipboard.writeText(currentUrl);
+    const link = window.event.srcElement.parentElement;
+    const innerHTML = link.innerHTML;
+    link.innerHTML = '<span style="font-size: 0.8em; color: dimgrey;">Copied!</span>'
+    setTimeout(function() {
+      link.innerHTML = innerHTML;
+    }, 500);
+  }
+</script>
 
     </div>
 
@@ -500,8 +523,31 @@ and <a href="https://glegoux.com">https://glegoux.com</a> is not only a tech blo
         <i class="fab fa-facebook" aria-hidden="true"></i>
       </a>
     </li>
+    <li title="Share page by email">
+      <a href="mailto:?subject=Read%20https://glegoux.com/blog/articles/2022/11/01/my-tech-blog-on-medium.html">
+        <i class="fas fa-envelope" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li title="Copy page link" class="no-print">
+      <a href="javascript:void(0);" onclick="copyUrl()">
+        <i class="fa-solid fa-link" aria-hidden="true"></i>
+      </a>
+    </li>
   </ul>
 </div>
+
+<script>
+  function copyUrl() {
+    const currentUrl = window.location.href;
+    navigator.clipboard.writeText(currentUrl);
+    const link = window.event.srcElement.parentElement;
+    const innerHTML = link.innerHTML;
+    link.innerHTML = '<span style="font-size: 0.8em; color: dimgrey;">Copied!</span>'
+    setTimeout(function() {
+      link.innerHTML = innerHTML;
+    }, 500);
+  }
+</script>
 
       </div>
       <!-- Article license -->
@@ -622,90 +668,6 @@ and <a href="https://glegoux.com">https://glegoux.com</a> is not only a tech blo
   <h5>Also read</h5>
   <div class="row">
 <div class="col-xs-12 col-md-6 col-lg-4">
-<a href="/blog/articles/2021/11/13/software-versioning.html" title="Read this article" style="display: block">
-  <div class="article-card-container">
-    <!-- Article metadata -->
-    <div class="article-card">
-<!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2021-11-13-software-versioning.jpg" alt="2021-11-13-software-versioning">
-      </div>
-
-      <!-- Article details -->
-      <div class="article-details">
-        <!-- Article title -->
-        <div class="article-title">
-          Software versioning
-        </div>
-
-        <!-- Article description -->
-        <div class="article-description">
-          How is assigned a version to a software?
-        </div>
-<!-- Article categories -->
-        <div class="article-category">
-          <ul>
-            <li>Development</li>
-          </ul>
-        </div>
-<!-- Article publication date -->
-        <div class="date">
-          <i class="far fa-calendar-alt"></i>
-          <span>November 13, 2021</span>
-        </div>
-<!-- Article reading time -->
-        <div class="reading-time">
-          <i class="far fa-clock"></i>
-          <span>10 min</span>
-        </div>
-</div>
-
-    </div>
-  </div>
-</a>
-</div>
-<div class="col-xs-12 col-md-6 col-lg-4">
-<a href="/blog/articles/2020/05/15/gnu-privacy-guard.html" title="Read this article" style="display: block">
-  <div class="article-card-container">
-    <!-- Article metadata -->
-    <div class="article-card">
-<!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2020-05-15-gnu-privacy-guard.jpg" alt="2020-05-15-gnu-privacy-guard">
-      </div>
-
-      <!-- Article details -->
-      <div class="article-details">
-        <!-- Article title -->
-        <div class="article-title">
-          GNU privacy guard
-        </div>
-
-        <!-- Article description -->
-        <div class="article-description">
-          How to prove its identity and encrypt its communication?
-        </div>
-<!-- Article categories -->
-        <div class="article-category">
-          <ul>
-            <li>Security</li>
-          </ul>
-        </div>
-<!-- Article publication date -->
-        <div class="date">
-          <i class="far fa-calendar-alt"></i>
-          <span>May 15, 2020</span>
-        </div>
-<!-- Article reading time -->
-        <div class="reading-time">
-          <i class="far fa-clock"></i>
-          <span>5 min</span>
-        </div>
-</div>
-
-    </div>
-  </div>
-</a>
-</div>
-<div class="col-xs-12 col-md-6 col-lg-4">
 <a href="/blog/articles/2020/05/04/java-ecosystem.html" title="Read this article" style="display: block">
   <div class="article-card-container">
     <!-- Article metadata -->
@@ -740,6 +702,90 @@ and <a href="https://glegoux.com">https://glegoux.com</a> is not only a tech blo
         <div class="reading-time">
           <i class="far fa-clock"></i>
           <span>10 min</span>
+        </div>
+</div>
+
+    </div>
+  </div>
+</a>
+</div>
+<div class="col-xs-12 col-md-6 col-lg-4">
+<a href="/blog/articles/2020/08/24/geo-location.html" title="Read this article" style="display: block">
+  <div class="article-card-container">
+    <!-- Article metadata -->
+    <div class="article-card">
+<!-- Article cover --><div class="article-cover">
+        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2020-08-24-geo-location.jpg" alt="2020-08-24-geo-location">
+      </div>
+
+      <!-- Article details -->
+      <div class="article-details">
+        <!-- Article title -->
+        <div class="article-title">
+          Geo-location
+        </div>
+
+        <!-- Article description -->
+        <div class="article-description">
+          How to compute the distance between 2 points with given latitude and longitude?
+        </div>
+<!-- Article categories -->
+        <div class="article-category">
+          <ul>
+            <li>Applied Mathematics</li>
+          </ul>
+        </div>
+<!-- Article publication date -->
+        <div class="date">
+          <i class="far fa-calendar-alt"></i>
+          <span>August 24, 2020</span>
+        </div>
+<!-- Article reading time -->
+        <div class="reading-time">
+          <i class="far fa-clock"></i>
+          <span>10 min</span>
+        </div>
+</div>
+
+    </div>
+  </div>
+</a>
+</div>
+<div class="col-xs-12 col-md-6 col-lg-4">
+<a href="/blog/articles/2019/07/14/trace-a-request-path.html" title="Read this article" style="display: block">
+  <div class="article-card-container">
+    <!-- Article metadata -->
+    <div class="article-card">
+<!-- Article cover --><div class="article-cover">
+        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2019-07-14-trace-a-request-path.jpg" alt="2019-07-14-trace-a-request-path">
+      </div>
+
+      <!-- Article details -->
+      <div class="article-details">
+        <!-- Article title -->
+        <div class="article-title">
+          Trace a request path
+        </div>
+
+        <!-- Article description -->
+        <div class="article-description">
+          How to know for which routers a HTTP request browses?
+        </div>
+<!-- Article categories -->
+        <div class="article-category">
+          <ul>
+            <li>Web</li>
+          </ul>
+        </div>
+<!-- Article publication date -->
+        <div class="date">
+          <i class="far fa-calendar-alt"></i>
+          <span>July 14, 2019</span>
+        </div>
+<!-- Article reading time -->
+        <div class="reading-time">
+          <i class="far fa-clock"></i>
+          <span>5 min</span>
         </div>
 </div>
 

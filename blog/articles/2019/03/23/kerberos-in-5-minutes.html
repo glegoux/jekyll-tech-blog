@@ -310,8 +310,31 @@ window.MathJax = {
         <i class="fab fa-facebook" aria-hidden="true"></i>
       </a>
     </li>
+    <li title="Share page by email">
+      <a href="mailto:?subject=Read%20https://glegoux.com/blog/articles/2019/03/23/kerberos-in-5-minutes.html">
+        <i class="fas fa-envelope" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li title="Copy page link" class="no-print">
+      <a href="javascript:void(0);" onclick="copyUrl()">
+        <i class="fa-solid fa-link" aria-hidden="true"></i>
+      </a>
+    </li>
   </ul>
 </div>
+
+<script>
+  function copyUrl() {
+    const currentUrl = window.location.href;
+    navigator.clipboard.writeText(currentUrl);
+    const link = window.event.srcElement.parentElement;
+    const innerHTML = link.innerHTML;
+    link.innerHTML = '<span style="font-size: 0.8em; color: dimgrey;">Copied!</span>'
+    setTimeout(function() {
+      link.innerHTML = innerHTML;
+    }, 500);
+  }
+</script>
 
     </div>
 
@@ -717,8 +740,31 @@ The typical format of a typical Kerberos principal is primary/instance@REALM.</p
         <i class="fab fa-facebook" aria-hidden="true"></i>
       </a>
     </li>
+    <li title="Share page by email">
+      <a href="mailto:?subject=Read%20https://glegoux.com/blog/articles/2019/03/23/kerberos-in-5-minutes.html">
+        <i class="fas fa-envelope" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li title="Copy page link" class="no-print">
+      <a href="javascript:void(0);" onclick="copyUrl()">
+        <i class="fa-solid fa-link" aria-hidden="true"></i>
+      </a>
+    </li>
   </ul>
 </div>
+
+<script>
+  function copyUrl() {
+    const currentUrl = window.location.href;
+    navigator.clipboard.writeText(currentUrl);
+    const link = window.event.srcElement.parentElement;
+    const innerHTML = link.innerHTML;
+    link.innerHTML = '<span style="font-size: 0.8em; color: dimgrey;">Copied!</span>'
+    setTimeout(function() {
+      link.innerHTML = innerHTML;
+    }, 500);
+  }
+</script>
 
       </div>
       <!-- Article license -->
@@ -843,6 +889,48 @@ The typical format of a typical Kerberos principal is primary/instance@REALM.</p
   <h5>Also read</h5>
   <div class="row">
 <div class="col-xs-12 col-md-6 col-lg-4">
+<a href="/blog/articles/2021/11/23/secret-santa.html" title="Read this article" style="display: block">
+  <div class="article-card-container">
+    <!-- Article metadata -->
+    <div class="article-card">
+<!-- Article cover --><div class="article-cover">
+        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2021-11-23-secret-santa.jpg" alt="2021-11-23-secret-santa">
+      </div>
+
+      <!-- Article details -->
+      <div class="article-details">
+        <!-- Article title -->
+        <div class="article-title">
+          Secret Santa
+        </div>
+
+        <!-- Article description -->
+        <div class="article-description">
+          What can be the applied mathematics behind a secret santa?
+        </div>
+<!-- Article categories -->
+        <div class="article-category">
+          <ul>
+            <li>Applied Mathematics</li>
+          </ul>
+        </div>
+<!-- Article publication date -->
+        <div class="date">
+          <i class="far fa-calendar-alt"></i>
+          <span>November 23, 2021</span>
+        </div>
+<!-- Article reading time -->
+        <div class="reading-time">
+          <i class="far fa-clock"></i>
+          <span>5 min</span>
+        </div>
+</div>
+
+    </div>
+  </div>
+</a>
+</div>
+<div class="col-xs-12 col-md-6 col-lg-4">
 <a href="/blog/articles/2020/08/24/geo-location.html" title="Read this article" style="display: block">
   <div class="article-card-container">
     <!-- Article metadata -->
@@ -885,24 +973,24 @@ The typical format of a typical Kerberos principal is primary/instance@REALM.</p
 </a>
 </div>
 <div class="col-xs-12 col-md-6 col-lg-4">
-<a href="/blog/articles/2019/03/23/kerberos-in-5-minutes.html" title="Read this article" style="display: block">
+<a href="/blog/articles/2019/03/01/access-to-a-computer-from-usb-key.html" title="Read this article" style="display: block">
   <div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2019-03-23-kerberos-in-5-minutes.jpg" alt="2019-03-23-kerberos-in-5-minutes">
+        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2019-03-01-access-to-a-computer-from-usb-key.jpg" alt="2019-03-01-access-to-a-computer-from-usb-key">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          Kerberos in 5 minutes
+          Access to a computer from USB key
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          Kerberos is an authentication protocol for trusted hosts on untrusted networks.
+          Somebody with USB key can take control of your computer
         </div>
 <!-- Article categories -->
         <div class="article-category">
@@ -913,49 +1001,7 @@ The typical format of a typical Kerberos principal is primary/instance@REALM.</p
 <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>March 23, 2019</span>
-        </div>
-<!-- Article reading time -->
-        <div class="reading-time">
-          <i class="far fa-clock"></i>
-          <span>5 min</span>
-        </div>
-</div>
-
-    </div>
-  </div>
-</a>
-</div>
-<div class="col-xs-12 col-md-6 col-lg-4">
-<a href="/blog/articles/2020/11/28/unix-timestamp.html" title="Read this article" style="display: block">
-  <div class="article-card-container">
-    <!-- Article metadata -->
-    <div class="article-card">
-<!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2020-11-28-unix-timestamp.jpg" alt="2020-11-28-unix-timestamp">
-      </div>
-
-      <!-- Article details -->
-      <div class="article-details">
-        <!-- Article title -->
-        <div class="article-title">
-          Unix timestamp
-        </div>
-
-        <!-- Article description -->
-        <div class="article-description">
-          What could happen in 2038 with the Y2K38 problem?
-        </div>
-<!-- Article categories -->
-        <div class="article-category">
-          <ul>
-            <li>Applied Mathematics</li>
-          </ul>
-        </div>
-<!-- Article publication date -->
-        <div class="date">
-          <i class="far fa-calendar-alt"></i>
-          <span>November 28, 2020</span>
+          <span>March 01, 2019</span>
         </div>
 <!-- Article reading time -->
         <div class="reading-time">
