@@ -15,5 +15,28 @@
         <i class="fab fa-facebook" aria-hidden="true"></i>
       </a>
     </li>
+    <li title="Share page by email">
+      <a href="mailto:?subject=Read {{ site.url }}{{ page.url }}">
+        <i class="fas fa-envelope" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li title="Copy page link" class="no-print">
+      <a href="javascript:void(0);" onclick="copyUrl()">
+        <i class="fa-solid fa-link" aria-hidden="true"></i>
+      </a>
+    </li>
   </ul>
 </div>
+
+<script>
+  function copyUrl() {
+    const currentUrl = window.location.href;
+    navigator.clipboard.writeText(currentUrl);
+    const link = window.event.srcElement.parentElement;
+    const innerHTML = link.innerHTML;
+    link.innerHTML = '<span style="font-size: 0.8em; color: dimgrey;">Copied!</span>'
+    setTimeout(function() {
+      link.innerHTML = innerHTML;
+    }, 500);
+  }
+</script>
