@@ -7,8 +7,7 @@ category: "Methodology"
 tags: [ "Markdown" ]
 ---
 
-Discover the **extended Markdown syntax** used on this blog, generated from the template [🧪 Jekyll Tech blog](https://github.com/glegoux/jekyll-tech-blog),
-to write articles or to generate static pages. It is based on [Kramdown syntax](https://kramdown.gettalong.org/syntax.html) with [GFM parser](https://kramdown.gettalong.org/parser/gfm.html) and a light
+Discover the **extended Markdown syntax** used on this tech blog, generated from the template [🧪 Jekyll Tech blog](https://github.com/glegoux/jekyll-tech-blog), to write articles or to generate static web pages. It is based on [Kramdown syntax](https://kramdown.gettalong.org/syntax.html) with [GFM parser](https://kramdown.gettalong.org/parser/gfm.html) and a light
 custom extension for rendering. Besides, this article is written with this syntax. At the top of the web page, click on
 <b><i class="far fa-file-code"></i> Source</b> to explore its source code and on <b><i class="fas fa-list-ul"></i> Table of contents</b> to browse
 the supported features. So, you can mix this syntax with **existing macro** and **native HTML syntaxes** to write any content. As this blog is **highly configurable**, you can **build** your **custom macros**. Each article
@@ -18,11 +17,11 @@ also has **metadata** to inject constants of configurations.
   <summary title="Click to expand and collapse the content"><b>Summary of supported features by the extended Markdown syntax</b></summary>
   <p markdown="1">
     Read the documentation of the [Kramdown syntax](https://kramdown.gettalong.org/syntax.html).
-    All contents, even if unavailable with the extended Markdown syntax, can be shown thanks to embedded native content: HTML, JS, CSS, or macros: `includes` and `tags` of the Liquid template.
+    All contents, even if unavailable with the extended Markdown syntax, can be shown thanks to embedded native content: HTML, JS, CSS, or macros: `includes` and `tags` of the [Liquid template](https://shopify.github.io/liquid).
   </p>
   <div>
       <table class="text-center">
-        <thead>
+        <thead >
           <tr>
             <th>Feature name</th>
             <th>Comment</th>
@@ -32,11 +31,11 @@ also has **metadata** to inject constants of configurations.
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td colspan="5"><b>Structure</b></td>
+          <tr style="background-color: lightgrey">
+            <td colspan="5"><b><a href="#structure">Structure</a></b></td>
           </tr>  
           <tr>
-            <td><a href="#headings">Headings</a></td>
+            <td><a href="#heading">Heading</a></td>
             <td>Organize your content with part, subpart, sub-subpart, etc.</td>
             <td>✅</td>
             <td>❌</td>
@@ -50,6 +49,23 @@ also has **metadata** to inject constants of configurations.
             <td>✅</td>
           </tr>
           <tr>
+            <td><a href="#horizontal-rule">Horizontal Rule</a></td>
+            <td>Break between paragraph-level elements</td>
+            <td>✅</td>
+            <td>❌</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td><a href="#note">Note</a></td>
+            <td>Soon refactored! Add your notes: info, question, warning, error, success, etc.</td>
+            <td>❌</td>
+            <td>❌</td>
+            <td>✅</td>
+          </tr>
+          <tr style="background-color: lightgrey">
+            <td colspan="5"><b><a href="#textual-content">Textual Content</a></b></td>
+          </tr> 
+          <tr>
             <td><a href="#enchanced-text">Enchanced Text</a></td>
             <td>Enhance your text: italics, bold, strikethrough, inline code, highlight, superscript, subscript, etc.</td>
             <td>✅</td>
@@ -57,15 +73,8 @@ also has **metadata** to inject constants of configurations.
             <td>✅</td>
           </tr>
           <tr>
-            <td><a href="#list">List</a></td>
-            <td>Build an ordered, unordered, definition or task lists and sublists</td>
-            <td>✅</td>
-            <td>❌</td>
-            <td>✅</td>
-          </tr>
-          <tr>
-            <td><a href="#quote">Quote</a></td>
-            <td>Soon refactored! Quote your authors</td>
+            <td><a href="#link">Link</a></td>
+            <td>Use absolute and relative links named or not and re-usable</td>
             <td>✅</td>
             <td>❌</td>
             <td>✅</td>
@@ -78,49 +87,35 @@ also has **metadata** to inject constants of configurations.
             <td>✅</td>
           </tr>
           <tr>
-            <td><a href="#links">Links</a></td>
-            <td>Use absolute and relative links named or not and re-usable</td>
+            <td><a href="#list">List</a></td>
+            <td>Build an ordered, unordered, definition or task lists and sublists</td>
             <td>✅</td>
             <td>❌</td>
             <td>✅</td>
           </tr>
           <tr>
-            <td><a href="#notes">Notes</a></td>
-            <td>Soon refactored! Add your notes: info, question, warning, error, success, etc.</td>
-            <td>❌</td>
-            <td>❌</td>
-            <td>✅</td>
-          </tr>
-          <tr>
-            <td><a href="#comment">Comment</a></td>
-            <td>Comment content</td>
-            <td>❌</td>
-            <td>❌</td>
-            <td>✅</td>
-          </tr>
-          <tr>
-            <td><a href="#escape">Escape</a></td>
-            <td>Escape meta or special characters</td>
+            <td><a href="#table">Table</a></td>
+            <td>Arrange the content in rows and columns with an optional header.</td>
             <td>✅</td>
             <td>❌</td>
             <td>✅</td>
           </tr>
           <tr>
-            <td><a href="#informatics-code">Informatics Code</a></td>
-            <td>Highligh code: python, java, scala, rust, c#, c++, c, bash, ruby, go, typescript, javascript, html, css etc., terminal, or text content: plain, json, yaml, xml, ini etc</td>
+            <td><a href="#blockquote">Blockquote</a></td>
+            <td>Format a special sentence of paragraph to draw attention to the reader</td>
             <td>✅</td>
             <td>❌</td>
             <td>✅</td>
           </tr>
           <tr>
-            <td><a href="#mathematics-equation">Mathematics Equation</a></td>
-            <td>Use LateX syntax for in-line, single-line or multi-line equation</td>
+            <td><a href="#quote">Quote</a></td>
+            <td>Soon refactored! Quote your authors</td>
             <td>✅</td>
             <td>❌</td>
             <td>✅</td>
           </tr>
           <tr>
-            <td><a href="#footnotes">Footnotes</a></td>
+            <td><a href="#footnote">Footnote</a></td>
             <td>Put extra information at the bottom of the article referencing inside content</td>
             <td>✅</td>
             <td>❌</td>
@@ -132,6 +127,9 @@ also has **metadata** to inject constants of configurations.
             <td>✅</td>
             <td>❌</td>
             <td>✅</td>
+          </tr>
+          <tr style="background-color: lightgrey">
+            <td colspan="5"><b><a href="#illustration-content">Illustration Content</a></b></td>
           </tr>
           <tr>
             <td><a href="#image">Image</a></td>
@@ -161,6 +159,29 @@ also has **metadata** to inject constants of configurations.
             <td>✅</td>
             <td>✅</td>
           </tr>
+          <tr style="background-color: lightgrey">
+            <td colspan="5"><b><a href="#informatics-code">Informatics Code</a></b></td>
+          </tr> 
+          <tr>
+            <td><a href="#informatics-code">Informatics Code</a></td>
+            <td>Highligh code: python, java, scala, rust, c#, c++, c, bash, ruby, go, typescript, javascript, html, css etc., terminal, or text content: plain, json, yaml, xml, ini etc</td>
+            <td>✅</td>
+            <td>❌</td>
+            <td>✅</td>
+          </tr>
+          <tr style="background-color: lightgrey">
+            <td colspan="5"><b><a href="#mathematics-equation">Mathematics Equation</a></b></td>
+          </tr> 
+          <tr>
+            <td><a href="#mathematics-equation">Mathematics Equation</a></td>
+            <td>Use LateX syntax for in-line, single-line or multi-line equation</td>
+            <td>✅</td>
+            <td>❌</td>
+            <td>✅</td>
+          </tr>
+          <tr style="background-color: lightgrey">
+            <td colspan="5"><b><a href="#special-content">Special Content</a></b></td>
+          </tr>
           <tr>
             <td><a href="#html">HTML</a></td>
             <td>Put native HTML when the Markdown syntax is not available, it can contain Markdown in its markups</td>
@@ -168,6 +189,20 @@ also has **metadata** to inject constants of configurations.
             <td>❌</td>
             <td>✅</td>
           </tr>
+          <tr>
+            <td><a href="#comment">Comment</a></td>
+            <td>Comment content</td>
+            <td>❌</td>
+            <td>❌</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td><a href="#escape">Escape</a></td>
+            <td>Escape meta or special characters</td>
+            <td>✅</td>
+            <td>❌</td>
+            <td>✅</td>
+          </tr>  
           <tr>
             <td><a href="#others">Others</a></td>
             <td>Create your macros, extend the project or the tools everything is open-source</td>
@@ -323,7 +358,7 @@ SUCCESS
 </div>
 ~~~
 
-# Textual content
+# Textual Content
 
 ## Enchanced Text
 
@@ -351,7 +386,7 @@ Source code:
 - Subscript: sub<sub>sub</sub>
 ~~~
 
-## Links
+## Link
 
 It works with absolute and relative links:
 
@@ -493,7 +528,11 @@ Source code:
 
 ## Table
 
+TODO
+
 ## Blockquote
+
+TODO
 
 ## Quote
 
@@ -542,7 +581,7 @@ The HTML specification is maintained by the W3C.
 *[HTML]: Hyper Text Markup Language
 ~~~
 
-# Illustration content
+# Illustration Content
 
 ## Image
 
@@ -873,11 +912,13 @@ $$
 $$
 ~~~
 
-# HTML
+# Special Content
+
+## HTML
 
 TODO
 
-# Comment
+## Comment
 
 If you want to put a hidden text not displayed in the article but present in the
 written source, that is to say, a comment, simply do an HTML comment:
@@ -888,7 +929,7 @@ Source code:
 <!-- comments -->
 ~~~
 
-# Escape
+## Escape
 
 <div class="info" markdown="1">
 All described multi-lines escapes can work to escape inline and single line characters.
@@ -926,6 +967,6 @@ But you cannot to display reserved sequence of characters `~~~` within a section
 
 But you cannot to display reserved sequence of characters <code>```</code> within a section delimited by <code>```</code>.
 
-# Others
+## Others
 
 TODO
