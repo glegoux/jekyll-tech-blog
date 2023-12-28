@@ -133,28 +133,28 @@ also has **metadata** to inject constants of configurations.
           </tr>
           <tr>
             <td><a href="#image">Image</a></td>
-            <td>Soon available!</td>
+            <td>Soon documented!</td>
             <td>✅</td>
             <td>✅</td>
             <td>✅</td>
           </tr>
           <tr>
             <td><a href="#video">Video</a></td>
-            <td>Soon available!</td>
+            <td>Soon documented!</td>
             <td>❌</td>
             <td>✅</td>
             <td>✅</td>
           </tr>
           <tr>
             <td><a href="#presentation">Presentation</a></td>
-            <td>Soon available!</td>
+            <td>Soon documented!</td>
             <td>❌</td>
             <td>✅</td>
             <td>✅</td>
           </tr>
           <tr>
             <td><a href="#diagram">Diagram</a></td>
-            <td>Soon available!</td>
+            <td>Soon documented!</td>
             <td>❌</td>
             <td>✅</td>
             <td>✅</td>
