@@ -173,8 +173,22 @@ also has **metadata** to inject constants of configurations.
             <td colspan="5"><b><a href="#mathematics-equation">Mathematics Equation</a></b></td>
           </tr> 
           <tr>
-            <td><a href="#mathematics-equation">Mathematics Equation</a></td>
-            <td>Use LateX syntax for in-line, single-line or multi-line equation</td>
+            <td><a href="#in-line-equation">In-Line Equation</a></td>
+            <td>Use LateX syntax for in-line equation</td>
+            <td>✅</td>
+            <td>❌</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td><a href="#single-line-equation">Single-Line Equation</a></td>
+            <td>Use LateX syntax for single-line equation</td>
+            <td>✅</td>
+            <td>❌</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td><a href="#multi-lines-equation">Multi-lines Equation</a></td>
+            <td>Use LateX syntax for multi-lines equation</td>
             <td>✅</td>
             <td>❌</td>
             <td>✅</td>
@@ -238,7 +252,7 @@ for more advanced use cases (like tables, code blocks, syntax highlighting, foot
 is **Markdown compatible**, so all articles written in Markdown can be used directly in this blog without breaking
 changes, and **largely used** by an **active community**.
 
-How it works? The files with the Markdown extension `.md` or `.markdown` are processed to HTML:
+How it works? The files having the Markdown extension `.md` or `.markdown` are processed to HTML with this [processing workflow](https://jekyllrb.com/tutorials/orderofinterpretation/):
 
 {% include article/google-drawing.html
 title="Extended Markdown to HTML"
