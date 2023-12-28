@@ -4,7 +4,7 @@ description: "How to write articles on this blog from an easy-to-use and rich sy
 authors: [ "glegoux" ]
 time_reading_minutes: 10
 category: "Methodology"
-tags: [ "Markdown" ]
+tags: [ "Markdown", "Liquid Template", "Kramdown Converter", "Jekyll" ]
 ---
 
 Discover the **extended Markdown syntax** used on this tech blog, generated from the template [🧪 Jekyll Tech blog](https://github.com/glegoux/jekyll-tech-blog), to write articles or to generate static web pages. It is based on [Kramdown syntax](https://kramdown.gettalong.org/syntax.html) with [GFM parser](https://kramdown.gettalong.org/parser/gfm.html) and a light
@@ -163,8 +163,22 @@ also has **metadata** to inject constants of configurations.
             <td colspan="5"><b><a href="#informatics-code">Informatics Code</a></b></td>
           </tr> 
           <tr>
-            <td><a href="#informatics-code">Informatics Code</a></td>
-            <td>Highligh code: python, java, scala, rust, c#, c++, c, bash, ruby, go, typescript, javascript, html, css etc., terminal, or text content: plain, json, yaml, xml, ini etc</td>
+            <td><a href="#programming-language">Programming Language</a></td>
+            <td>Highlight code: python, java, scala, rust, c#, c++, c, bash, ruby, go, typescript, javascript, html, css ...</td>
+            <td>✅</td>
+            <td>❌</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td><a href="#terminal">Terminal</a></td>
+            <td>Highlight content in a terminal</td>
+            <td>✅</td>
+            <td>❌</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td><a href="#text-file">Text File</a></td>
+            <td>Highlight text content: plain, json, yaml, xml, ini ...</td>
             <td>✅</td>
             <td>❌</td>
             <td>✅</td>
