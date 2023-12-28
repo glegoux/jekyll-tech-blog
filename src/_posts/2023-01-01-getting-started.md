@@ -320,7 +320,16 @@ character.*
 
 ## Horizontal rule
 
-TODO
+To create a horizontal rule, use three or more asterisks `***`, dashes `---`, or underscores `___` on a line by themselves:
+
+---
+
+Source code:
+
+~~~
+---
+~~~
+
 
 ## Note
 
