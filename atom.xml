@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux (glegoux)</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2023-12-27T09:00:30+00:00</updated>
+ <updated>2023-12-28T21:29:35+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -356,7 +356,7 @@ auto-introspections, questionings, doubts…)&lt;/li&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;how-to-define-the-time&quot;&gt;How to define the time?&lt;/h1&gt;
+&lt;h1 id=&quot;time-definition&quot;&gt;Time Definition&lt;/h1&gt;
 
 &lt;p&gt;With the meta-physique considerations, the &lt;strong&gt;time&lt;/strong&gt; has wondering features: &lt;strong&gt;universal, continuous, unlimited, 
 non-renewable, solid (incompressible/no expansible), perpetually self-generated, no accumulative&lt;/strong&gt;. Focus is on the &lt;strong&gt;timescale&lt;/strong&gt; of our &lt;strong&gt;human life&lt;/strong&gt;.
@@ -422,7 +422,7 @@ of time&lt;/li&gt;
 
 &lt;p&gt;But the quantity of time is always available immediately.&lt;/p&gt;
 
-&lt;h1 id=&quot;the-concepts-of-the-time-management&quot;&gt;The concepts of the time management&lt;/h1&gt;
+&lt;h1 id=&quot;concepts&quot;&gt;Concepts&lt;/h1&gt;
 
 &lt;p&gt;We defined several ways to conceptualize the time, here I can define more precisely the other
 concepts of time management like the &lt;strong&gt;effort&lt;/strong&gt; and the &lt;strong&gt;optimization&lt;/strong&gt;.&lt;/p&gt;
@@ -450,7 +450,7 @@ achieve these goals one of the &lt;strong&gt;available resources&lt;/strong&gt; 
 efficiency) of your activities.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;a-model-of-optimization&quot;&gt;A model of optimization&lt;/h1&gt;
+&lt;h1 id=&quot;optimization-model&quot;&gt;Optimization Model&lt;/h1&gt;
 
 &lt;p&gt;The &lt;strong&gt;time management&lt;/strong&gt; can be seen in the &lt;strong&gt;modeling of an objective function&lt;/strong&gt;
 to optimize. The model of this objective function is fixed by the &lt;strong&gt;definition&lt;/strong&gt; of your &lt;strong&gt;goals&lt;/strong&gt;
@@ -501,7 +501,7 @@ the tasks are rows of your &lt;b&gt;dataset&lt;/b&gt; (training, validation, tes
 With experience in an execution plan, you can predict the speed of execution and the quality of results.
 &lt;/div&gt;
 
-&lt;h1 id=&quot;a-methodology-of-usage&quot;&gt;A methodology of usage&lt;/h1&gt;
+&lt;h1 id=&quot;methodology&quot;&gt;Methodology&lt;/h1&gt;
 
 &lt;p&gt;After having modeled and defined the concepts of time management, I am interested here by
 applying it in practice through a methodology. Firstly, even if you can model the time management,
@@ -514,11 +514,11 @@ Here the &lt;b&gt;main considered resource&lt;/b&gt; is &lt;b&gt;the time&lt;/b&
 other inter-dependent resources to spend like money or energy.
 &lt;/div&gt;
 
-&lt;h2 id=&quot;define-your-personal-context&quot;&gt;Define your personal context&lt;/h2&gt;
+&lt;h2 id=&quot;context&quot;&gt;Context&lt;/h2&gt;
 
 &lt;p&gt;You need to list and put into perspective your resources, your skills, and your constraints.&lt;/p&gt;
 
-&lt;h2 id=&quot;define-your-projection&quot;&gt;Define your projection&lt;/h2&gt;
+&lt;h2 id=&quot;projection&quot;&gt;Projection&lt;/h2&gt;
 
 &lt;p&gt;After you need to define what you want to do and build your &lt;strong&gt;goals&lt;/strong&gt; each one with a &lt;strong&gt;dateline&lt;/strong&gt;.
 Do a first pass of the following section strategy applied to your goals (replace activities with
@@ -527,7 +527,7 @@ goals should now fill in a &lt;strong&gt;coherent structure&lt;/strong&gt;. Then
 this operation to split each task into smaller activities to pass &lt;strong&gt;from a macro timescale to a
 micro timescale&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;h2 id=&quot;define-your-strategy&quot;&gt;Define your strategy&lt;/h2&gt;
+&lt;h2 id=&quot;strategy&quot;&gt;Strategy&lt;/h2&gt;
 
 &lt;p&gt;The strategies are the fact to structure your activities to reach out.&lt;/p&gt;
 
@@ -625,7 +625,7 @@ steps and your other constraints:&lt;/p&gt;
 
 &lt;p&gt;You can also optimize these sequencing.&lt;/p&gt;
 
-&lt;h2 id=&quot;have-an-auto-analysis&quot;&gt;Have an auto-analysis&lt;/h2&gt;
+&lt;h2 id=&quot;auto-analysis&quot;&gt;Auto-analysis&lt;/h2&gt;
 
 &lt;p&gt;Now you can execute your plan. But you need to &lt;strong&gt;monitor&lt;/strong&gt; it, have logs, metrics, and traces,
 and have dashboards to visualize it. You need to do regular &lt;strong&gt;retrospectives&lt;/strong&gt; and &lt;strong&gt;plans&lt;/strong&gt;.
@@ -635,7 +635,7 @@ overload, or the accumulation of deprecated goals. Then you need to measure your
 productivity. You need to have a &lt;strong&gt;feedback loop&lt;/strong&gt; to build your &lt;strong&gt;virtuous circle&lt;/strong&gt;, and iterate on
 it.&lt;/p&gt;
 
-&lt;h1 id=&quot;for-example-for-your-lifetime&quot;&gt;For example for your lifetime&lt;/h1&gt;
+&lt;h1 id=&quot;for-example&quot;&gt;For Example&lt;/h1&gt;
 
 &lt;p&gt;Are you a student, a worker, or a retiree? Take the example of a worker, more precisely a professional
 software engineer full-time working exclusively for a unique company at the beginning of their
