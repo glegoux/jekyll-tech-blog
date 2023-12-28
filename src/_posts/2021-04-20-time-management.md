@@ -39,7 +39,7 @@ The way you can **use your time** depends on a lot of things, among others, ther
     * How you receive a critical opinion positive or negative on yourself (feedback,
       auto-introspections, questionings, doubts...)
 
-# How to define the time?
+# Time Definition
 
 With the meta-physique considerations, the **time** has wondering features: **universal, continuous, unlimited, 
 non-renewable, solid (incompressible/no expansible), perpetually self-generated, no accumulative**. Focus is on the **timescale** of our **human life**.
@@ -97,7 +97,7 @@ does not respect the time features mentioned previously, it is:
 
 But the quantity of time is always available immediately.
 
-# The concepts of the time management
+# Concepts
 
 We defined several ways to conceptualize the time, here I can define more precisely the other
 concepts of time management like the **effort** and the **optimization**.
@@ -123,7 +123,7 @@ I use several concepts above without defining them, here is a summary:
 * **Productivity**: a measure of your performance (that is a combination of effectiveness and
   efficiency) of your activities.
 
-# A model of optimization
+# Optimization Model
 
 The **time management** can be seen in the **modeling of an objective function**
 to optimize. The model of this objective function is fixed by the **definition** of your **goals**
@@ -167,7 +167,7 @@ the tasks are rows of your <b>dataset</b> (training, validation, test) and the m
 With experience in an execution plan, you can predict the speed of execution and the quality of results.
 </div>
 
-# A methodology of usage
+# Methodology
 
 After having modeled and defined the concepts of time management, I am interested here by
 applying it in practice through a methodology. Firstly, even if you can model the time management,
@@ -180,11 +180,11 @@ Here the <b>main considered resource</b> is <b>the time</b>, but in practice, th
 other inter-dependent resources to spend like money or energy.
 </div>
 
-## Define your personal context
+## Context
 
 You need to list and put into perspective your resources, your skills, and your constraints.
 
-## Define your projection
+## Projection
 
 After you need to define what you want to do and build your **goals** each one with a **dateline**.
 Do a first pass of the following section strategy applied to your goals (replace activities with
@@ -193,7 +193,7 @@ goals should now fill in a **coherent structure**. Then split each goal into tas
 this operation to split each task into smaller activities to pass **from a macro timescale to a
 micro timescale**.
 
-## Define your strategy
+## Strategy
 
 The strategies are the fact to structure your activities to reach out.
 
@@ -261,7 +261,7 @@ src="https://docs.google.com/drawings/d/e/2PACX-1vTaWiI1eOkX3AKOSixZzaKHyXRaMc7_
 
 You can also optimize these sequencing.
 
-## Have an auto-analysis
+## Auto-analysis
 
 Now you can execute your plan. But you need to **monitor** it, have logs, metrics, and traces,
 and have dashboards to visualize it. You need to do regular **retrospectives** and **plans**.
@@ -271,7 +271,7 @@ overload, or the accumulation of deprecated goals. Then you need to measure your
 productivity. You need to have a **feedback loop** to build your **virtuous circle**, and iterate on
 it.
 
-# For example for your lifetime
+# For Example
 
 Are you a student, a worker, or a retiree? Take the example of a worker, more precisely a professional
 software engineer full-time working exclusively for a unique company at the beginning of their
