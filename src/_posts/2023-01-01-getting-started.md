@@ -651,13 +651,34 @@ print("Hello world!")
 ~~~
 
 Source code:
-
 <pre>
 ~~~ python
 print("Hello world!")
 ~~~
 </pre>
 
+~~~ r
+print("Hello World!", quote = FALSE)
+~~~
+
+Source code:
+<pre>
+~~~ r
+print("Hello World!", quote = FALSE)
+~~~
+</pre>
+
+~~~ m
+disp('Hello World!')
+~~~
+
+Source code:
+<pre>
+~~~ m
+disp('Hello World!')
+~~~
+</pre>
+
 ~~~ java 
 System.out.println("Hello world!");
 ~~~
@@ -666,6 +687,17 @@ Source code:
 <pre>
 ~~~ java 
 System.out.println("Hello world!");
+~~~
+</pre>
+
+~~~ kotlin 
+println("Hello world!")
+~~~
+
+Source code:
+<pre>
+~~~ kotlin 
+println("Hello world!")
 ~~~
 </pre>
 
@@ -681,13 +713,35 @@ println("Hello world!")
 </pre>
 
 ~~~ csharp 
-Console.WriteLine("Hello world!")
+Console.WriteLine("Hello world!");
 ~~~
 
 Source code:
 <pre>
 ~~~ csharp 
-Console.WriteLine("Hello world!")
+Console.WriteLine("Hello world!");
+~~~
+</pre>
+
+~~~ dart
+print("Hello World!");
+~~~
+
+Source code:
+<pre>
+~~~ dart
+print("Hello World!");
+~~~
+</pre>
+
+~~~ swift
+print("Hello World!")
+~~~
+
+Source code:
+<pre>
+~~~ swift
+print("Hello World!")
 ~~~
 </pre>
 
@@ -729,7 +783,6 @@ echo "Hello world!"
 ~~~
 
 Source code:
-
 <pre>
 ~~~ bash 
 echo "Hello world!"
@@ -762,6 +815,28 @@ fmt.Println("Hello world!")
 ~~~
 </pre>
 
+~~~ php
+print "Hello world!";
+~~~
+
+Source code:
+<pre>
+~~~ php
+print "Hello world!";
+~~~
+</pre>
+
+~~~ perl
+print "Hello world!";
+~~~
+
+Source code:
+<pre>
+~~~ perl
+print "Hello world!";
+~~~
+</pre>
+
 ~~~ typescript
 console.log("Hello world!");
 ~~~
@@ -781,6 +856,17 @@ Source code:
 <pre>
 ~~~ javascript
 console.log("Hello world!");
+~~~
+</pre>
+
+~~~ sql
+CREATE TABLE helloworld;
+~~~
+
+Source code:
+<pre>
+~~~ sql
+CREATE TABLE helloworld;
 ~~~
 </pre>
 
@@ -789,7 +875,6 @@ console.log("Hello world!");
 ~~~
 
 Source code:
-
 <pre>
 ~~~ html
 &lt;p&gt;Hello world&lt;/p&gt;
@@ -797,17 +882,35 @@ Source code:
 </pre>
 
 ~~~ css
-.hello-world {
+.hello .world {
   text-align: center
 }
 ~~~
 
 Source code:
-
 <pre>
 ~~~ css
-.hello-world {
+.hello .world {
   text-align: center
+}
+~~~
+</pre>
+
+~~~ sass
+.hello {
+  .world {
+    text-align: center
+  }
+}
+~~~
+
+Source code:
+<pre>
+~~~ sass
+.hello {
+  .world {
+    text-align: center
+  }
 }
 ~~~
 </pre>
