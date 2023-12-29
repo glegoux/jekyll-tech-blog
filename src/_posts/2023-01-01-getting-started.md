@@ -427,7 +427,7 @@ Source code:
 
 It works with absolute and relative links:
 
-**Simple link**
+**Simple Link**
 
 <https://www.glegoux.com>
 
@@ -495,7 +495,7 @@ Source code for emoji with unicode:
 
 ## List
 
-**An ordered list**
+**Ordered List**
 
 1. item
 2. item
@@ -513,7 +513,7 @@ Source code:
   Use `+`, `*` and `-` indifferently.
 </div>
 
-**Unordered list**
+**Unordered List**
 
 * item
   * subitem
@@ -531,7 +531,7 @@ Source code:
  * item
 ~~~
 
-**Definition list**
+**Definition List**
 
 item
 : definition
@@ -549,7 +549,7 @@ item
 : definition
 ~~~
 
-**Task list**
+**Task List**
 
 - [x] item
 - [x] item
