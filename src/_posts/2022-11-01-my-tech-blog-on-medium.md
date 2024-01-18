@@ -6,7 +6,7 @@ time_reading_minutes: 1
 category: "News"
 ---
 
-I will continue writing blog posts here, but mainly, they will be published on Medium under the user [@glegoux](https://medium.com/@glegoux). The goal is always to improve the experience of readers and my experience of writing. The Medium platform is mature and becoming more and more popular, being one of the leaders among the editors of tech blogs now. It provides a full WYSIWYG user interface when editing online, with various formatting options provided as the user edits. It allows publishing blog posts (called stories) to capture large audiences and communities.
+I will continue writing blog posts here, but mainly, they will be published on Medium under the user [@glegoux](https://medium.com/@glegoux). The goal is always to improve the experience of readers and my experience of writing. After having re-evaluating the market of the online editors, the Medium platform is mature and becoming more and more popular, being one of the leaders among the editors of tech blogs now. It provides a full WYSIWYG user interface when editing online, with various formatting options provided as the user edits. It allows publishing blog posts (called stories) to capture large audiences and communities.
 
 With the evolution of practices and tools of online blogging these last years, I wanted to cross a threshold in my tech writer experience: be more efficient and effective in writing content by allocating less time to maintain editor tools and more time to write content. So, I needed to choose between continuing to use only this blog, starting to use only Medium, using both, or something else. I chose to use both:
 
@@ -18,7 +18,7 @@ With the evolution of practices and tools of online blogging these last years, I
   src="https://docs.google.com/drawings/d/e/2PACX-1vRwK7XcVBBYBxZhx3_nqSjUF4boYbf9BBdHP-HJYOlx2vX2Pe_scKcZTZFys9K5BEaaYmrGPN_3WziZ/pub?w=798&h=100" 
 %}
 
-After evaluating the market of online editors and testing Medium, here are the pros and cons of using Medium vs. my blog:
+After evaluating and testing Medium, here are the pros and cons of using Medium vs. my blog:
 
 <table>
   <thead>
@@ -32,9 +32,9 @@ After evaluating the market of online editors and testing Medium, here are the p
 • Medium editor is quicker and handier in updating a post with simple assets like text and images, more intuitive than YAFIYGI, and with instant updates without delay during the deployment of new content like with Jekyll used for my blog<br>
 • Medium has advanced features of collaboration with co-writers, claps, peer comments, and followers, not all available on my blog natively and smoothly<br>
 • Medium decorates the post with an auto-estimation of reading, no need to fill manually, and an auto-listen generation not available on my blog natively<br>
-• Medium offers stats with custom metrics (reads, etc.) for each story more relevant than using a third party solution like Google Analytics
+• Medium offers stats with custom metrics (reads, etc.) for each story more relevant than using a third party solution like Google Analytics used on my blog
     </td>
-    <td style="vertical-align: top;"> used on mu blog
+    <td style="vertical-align: top;">
 • Medium has partial propriety of the written content and limits the number of readings for non-members while my blog is free and unlimited open<br>
 • The Medium content has a pre-defined style of design. It is not highly customizable like the content on my blog<br>
 • The Medium features remain less advanced in pushing varied content like dynamic technical diagrams and mathematics formulae, while some workarounds exist, my blog allows it
