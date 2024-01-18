@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux (glegoux)</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2024-01-03T22:03:51+00:00</updated>
+ <updated>2024-01-18T06:12:41+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -40,15 +40,15 @@
   &lt;/thead&gt;
   &lt;tr&gt;
     &lt;td style=&quot;vertical-align: top;&quot;&gt;
-• Medium editor is quicker and handier in updating a post with simple assets like text and images, more intuitive than YAFIYGI, and with instant updates without delay during the deployment of new content with Jekyll&lt;br /&gt;
-• Medium has advanced features of collaboration with co-writers, claps, peer comments, and followers, not available on my blog&lt;br /&gt;
-• Medium decorates the post with an estimation of reading, no need to fill manually, and the listen generation is not available on my blog&lt;br /&gt;
-• Medium offers stats with custom metrics (reads, etc.) for each story more relevant than using Google Analytics
+• Medium editor is quicker and handier in updating a post with simple assets like text and images, more intuitive than YAFIYGI, and with instant updates without delay during the deployment of new content like with Jekyll used for my blog&lt;br /&gt;
+• Medium has advanced features of collaboration with co-writers, claps, peer comments, and followers, not all available on my blog natively and smoothly&lt;br /&gt;
+• Medium decorates the post with an auto-estimation of reading, no need to fill manually, and an auto-listen generation not available on my blog natively&lt;br /&gt;
+• Medium offers stats with custom metrics (reads, etc.) for each story more relevant than using a third party solution like Google Analytics
     &lt;/td&gt;
-    &lt;td style=&quot;vertical-align: top;&quot;&gt;
-• Medium has partial propriety of the written content and limits the number of readings for non-members while my blog is open&lt;br /&gt;
+    &lt;td style=&quot;vertical-align: top;&quot;&gt; used on mu blog
+• Medium has partial propriety of the written content and limits the number of readings for non-members while my blog is free and unlimited open&lt;br /&gt;
 • The Medium content has a pre-defined style of design. It is not highly customizable like the content on my blog&lt;br /&gt;
-• The Medium features remain less advanced in pushing varied content like dynamic technical diagrams and mathematics formulae, while some workarounds exist
+• The Medium features remain less advanced in pushing varied content like dynamic technical diagrams and mathematics formulae, while some workarounds exist, my blog allows it
     &lt;/td&gt;
   &lt;/tr&gt;
 &lt;/table&gt;
@@ -58,7 +58,7 @@ and &lt;a href=&quot;https://glegoux.com&quot;&gt;https://glegoux.com&lt;/a&gt; 
 
 &lt;p&gt;Don’t worry, and I am going to keep maintaining this website and the open-source template behind it. To avoid all breaking changes, the past blog posts will remain accessible without breaking their web links.&lt;/p&gt;
 
-&lt;p&gt;However, it seems difficult to synchronize the content between Medium and this blog bi-directionally. I can import a post to Medium by copying the link manually, but exporting from Medium is long and tedious. The synchronization in case of updating a blog post from Medium becomes a nightmare to maintain. In contrast, I want to use Medium editor more, which is quicker and more handy. So, as I explained, I foresee that some articles will be only on Medium and others only on this blog. If necessary, if I want to have one at both locations, instead of having a full post everywhere, I will use web links between them, with a partial post redirecting to the full post (to avoid divergences and too heavy maintenance in case of multiple post-editions).&lt;/p&gt;
+&lt;p&gt;However, it seems time-costly to synchronize the content between Medium and this blog bi-directionally. I can import a post to Medium by copying the link manually, but exporting from Medium to markdown is long and tedious (previous native feature has been closed, and no external, mature and existing tools doing it in my knowdlege). The synchronization in case of updating a blog post from Medium becomes a nightmare to maintain, and should be done manually. In contrast, I want to use Medium editor more, which is quicker and more handy. So, as I explained, I foresee that some articles will be only on Medium and others only on this blog. If necessary, if I want to have one at both locations, instead of having a full post everywhere, I will use web links between them, with a partial post redirecting to the full post (to avoid divergences and too heavy maintenance in case of multiple post-editions).&lt;/p&gt;
 
 &lt;p&gt;🙏 Thanks for your understanding and your readings.&lt;/p&gt;
 
