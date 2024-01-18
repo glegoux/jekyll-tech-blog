@@ -6,7 +6,7 @@ time_reading_minutes: 1
 category: "News"
 ---
 
-I will continue writing blog posts here, but mainly, they will be published on Medium under the user [@glegoux](https://medium.com/@glegoux). The goal is always to improve the experience of readers and my experience of writing. After having re-evaluating the market of the online editors, the Medium platform is mature and becoming more and more popular, being one of the leaders among the editors of tech blogs now. It provides a full WYSIWYG user interface when editing online, with various formatting options provided as the user edits. It allows publishing blog posts (called stories) to capture large audiences and communities.
+I will continue writing blog posts here, but mainly, they will be published on Medium under the user [@glegoux](https://medium.com/@glegoux). The goal is always to improve the experience of readers and my experience of writing. After having re-evaluated the market of the online editors, the Medium platform is mature and becoming more and more popular, being one of the leaders among the editors of tech blogs now. It provides a full WYSIWYG user interface when editing online, with various formatting options provided as the user edits. It allows publishing blog posts (called stories) to capture large audiences and communities.
 
 With the evolution of practices and tools of online blogging these last years, I wanted to cross a threshold in my tech writer experience: be more efficient and effective in writing content by allocating less time to maintain editor tools and more time to write content. So, I needed to choose between continuing to use only this blog, starting to use only Medium, using both, or something else. I chose to use both:
 
