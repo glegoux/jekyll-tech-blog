@@ -29,15 +29,15 @@ After evaluating the market of online editors and testing Medium, here are the p
   </thead>
   <tr>
     <td style="vertical-align: top;">
-• Medium editor is quicker and handier in updating a post with simple assets like text and images, more intuitive than YAFIYGI, and with instant updates without delay during the deployment of new content with Jekyll<br>
-• Medium has advanced features of collaboration with co-writers, claps, peer comments, and followers, not available on my blog<br>
-• Medium decorates the post with an estimation of reading, no need to fill manually, and the listen generation is not available on my blog<br>
-• Medium offers stats with custom metrics (reads, etc.) for each story more relevant than using Google Analytics
+• Medium editor is quicker and handier in updating a post with simple assets like text and images, more intuitive than YAFIYGI, and with instant updates without delay during the deployment of new content like with Jekyll used for my blog<br>
+• Medium has advanced features of collaboration with co-writers, claps, peer comments, and followers, not all available on my blog natively and smoothly<br>
+• Medium decorates the post with an auto-estimation of reading, no need to fill manually, and an auto-listen generation not available on my blog natively<br>
+• Medium offers stats with custom metrics (reads, etc.) for each story more relevant than using a third party solution like Google Analytics
     </td>
-    <td style="vertical-align: top;">
-• Medium has partial propriety of the written content and limits the number of readings for non-members while my blog is open<br>
+    <td style="vertical-align: top;"> used on mu blog
+• Medium has partial propriety of the written content and limits the number of readings for non-members while my blog is free and unlimited open<br>
 • The Medium content has a pre-defined style of design. It is not highly customizable like the content on my blog<br>
-• The Medium features remain less advanced in pushing varied content like dynamic technical diagrams and mathematics formulae, while some workarounds exist
+• The Medium features remain less advanced in pushing varied content like dynamic technical diagrams and mathematics formulae, while some workarounds exist, my blog allows it
     </td>
   </tr>
 </table>
@@ -47,7 +47,7 @@ and <https://glegoux.com> is not only a tech blog but a hub of centralized onlin
 
 Don't worry, and I am going to keep maintaining this website and the open-source template behind it. To avoid all breaking changes, the past blog posts will remain accessible without breaking their web links.
 
-However, it seems difficult to synchronize the content between Medium and this blog bi-directionally. I can import a post to Medium by copying the link manually, but exporting from Medium is long and tedious. The synchronization in case of updating a blog post from Medium becomes a nightmare to maintain. In contrast, I want to use Medium editor more, which is quicker and more handy. So, as I explained, I foresee that some articles will be only on Medium and others only on this blog. If necessary, if I want to have one at both locations, instead of having a full post everywhere, I will use web links between them, with a partial post redirecting to the full post (to avoid divergences and too heavy maintenance in case of multiple post-editions).
+However, it seems time-costly to synchronize the content between Medium and this blog bi-directionally. I can import a post to Medium by copying the link manually, but exporting from Medium to markdown is long and tedious (previous native feature has been closed, and no external, mature and existing tools doing it in my knowdlege). The synchronization in case of updating a blog post from Medium becomes a nightmare to maintain, and should be done manually. In contrast, I want to use Medium editor more, which is quicker and more handy. So, as I explained, I foresee that some articles will be only on Medium and others only on this blog. If necessary, if I want to have one at both locations, instead of having a full post everywhere, I will use web links between them, with a partial post redirecting to the full post (to avoid divergences and too heavy maintenance in case of multiple post-editions).
 
 🙏 Thanks for your understanding and your readings.
 
