@@ -4,9 +4,23 @@
  <title>Software Engineering Blog - Gilles Legoux (glegoux)</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2024-02-18T22:01:24+00:00</updated>
+ <updated>2024-02-18T22:46:12+00:00</updated>
  <id>https://glegoux.com/</id>
 
+ 
+ <entry>
+   <title>History of the Generative AI</title>
+   <link href="https://glegoux.com/blog/articles/2023/04/16/history-of-the-generative-ai.html"/>
+   <updated>2023-04-16T00:00:00+00:00</updated>
+   <id>https://glegoux.com/blog/articles/2023/04/16/history-of-the-generative-ai.html</id>
+   <content type="html">&lt;p&gt;Generative AI is the state of the art of machine learning and has excelled recently with the apparition of AI ChatBots with high performance.&lt;/p&gt;
+
+&lt;p&gt;See the rest of the article &lt;a href=&quot;https://medium.com/@glegoux/history-of-the-generative-ai-aa1aa7c63f3c&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+</content><author>
+       <name>glegoux</name>
+       <uri></uri>
+   </author></entry>
  
  <entry>
    <title>My tech blog on Medium</title>

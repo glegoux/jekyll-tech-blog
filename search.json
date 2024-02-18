@@ -1,6 +1,20 @@
 [
 
 {
+"title"       : "History of the Generative AI",
+"description" : "The rise in power of the generative AI is a revolution based on Deep Learning, it transformed the tech world into a new one.",
+"authors"     : "glegoux",
+"category"    : "Machine Learning",
+"tags"        : "",
+"url"         : "/blog/articles/2023/04/16/history-of-the-generative-ai.html",
+"date"        : "2023-04-16 00:00:00 +0000",
+"year"        : "2023",
+"month"       : "04",
+"yearMonth"   : "2023-04",
+"yearMonthDay"   : "2023-04-16"
+} ,
+
+{
 "title"       : "My tech blog on Medium",
 "description" : "Migration blog posts to Medium under the user @glegoux",
 "authors"     : "glegoux",
