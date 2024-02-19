@@ -7,7 +7,16 @@ category: "News"
 tags: ["Markdown"]
 ---
 
+It is my first draft!
 
- It is my first draft!
+# 🎯 Prerequisites
 
-<div style="height: 500px"></div>
+My prerequisites!
+
+# :rocket: Part A
+
+My part A!
+
+{% include article/read-more.md
+src="https://jekyll-tech-blog.netlify.app/blog/articles/2024/01/01/getting-started"
+%}

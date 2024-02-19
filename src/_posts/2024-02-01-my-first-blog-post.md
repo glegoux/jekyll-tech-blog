@@ -7,6 +7,16 @@ category: "Tech"
 tags: [ "Markdown" ]
 ---
 
- It is my first blog post!
+It is my first blog post!
 
-<div style="height: 500px"></div>
+# :bulb: Introduction
+
+My introduction!
+
+# :rocket: Part 1
+
+My part 1!
+
+{% include article/read-more.md
+src="https://jekyll-tech-blog.netlify.app/blog/articles/2024/01/01/getting-started"
+%}
