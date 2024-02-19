@@ -1,4 +1,6 @@
-Read 👀 the rest of the article ...
+# 👀 Read mode
+
+Read the rest of the article ...
 
 <div style="text-align: center;">
   <a href="{{ include.src }}" target="_blank" rel="noopener noreferrer" title="Read more">
