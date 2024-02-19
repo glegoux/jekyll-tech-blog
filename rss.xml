@@ -5,8 +5,8 @@
     <description>Personal blog about software engineering</description>
     <link>https://glegoux.com/</link>
     <atom:link href="https://glegoux.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 19 Feb 2024 04:02:39 +0000</pubDate>
-    <lastBuildDate>Mon, 19 Feb 2024 04:02:39 +0000</lastBuildDate>
+    <pubDate>Mon, 19 Feb 2024 04:10:23 +0000</pubDate>
+    <lastBuildDate>Mon, 19 Feb 2024 04:10:23 +0000</lastBuildDate>
     <generator>Jekyll v4.3.2</generator>
     
       <item>
@@ -64,8 +64,15 @@
 
 &lt;p&gt;Finally, by mixing other types of data (like images, audio, …), NLP models became  &lt;strong&gt;multi-modal generative models&lt;/strong&gt; where varied instructions (in input) give varied results (in output).&lt;/p&gt;
 
-&lt;p&gt;Read 👀 the rest of the article &lt;a href=&quot;https://medium.com/@glegoux/history-of-the-generative-ai-aa1aa7c63f3c&quot;&gt;here&lt;/a&gt; …&lt;/p&gt;
+&lt;p&gt;Read 👀 the rest of the article …&lt;/p&gt;
 
+&lt;div style=&quot;text-align: center;&quot;&gt;
+  &lt;a href=&quot;https://medium.com/@glegoux/history-of-the-generative-ai-aa1aa7c63f3c&quot; title=&quot;Read more&quot;&gt;
+    &lt;button class=&quot;btn btn-dark&quot;&gt;
+      &lt;b class=&quot;black&quot;&gt;Read more ↪️&lt;/b&gt;
+    &lt;/button&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
 </description>
         <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
         <link>https://glegoux.com/blog/articles/2023/04/16/history-of-the-generative-ai.html</link>

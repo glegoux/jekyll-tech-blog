@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux (glegoux)</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2024-02-19T04:02:39+00:00</updated>
+ <updated>2024-02-19T04:10:23+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -66,8 +66,15 @@
 
 &lt;p&gt;Finally, by mixing other types of data (like images, audio, …), NLP models became  &lt;strong&gt;multi-modal generative models&lt;/strong&gt; where varied instructions (in input) give varied results (in output).&lt;/p&gt;
 
-&lt;p&gt;Read 👀 the rest of the article &lt;a href=&quot;https://medium.com/@glegoux/history-of-the-generative-ai-aa1aa7c63f3c&quot;&gt;here&lt;/a&gt; …&lt;/p&gt;
+&lt;p&gt;Read 👀 the rest of the article …&lt;/p&gt;
 
+&lt;div style=&quot;text-align: center;&quot;&gt;
+  &lt;a href=&quot;https://medium.com/@glegoux/history-of-the-generative-ai-aa1aa7c63f3c&quot; title=&quot;Read more&quot;&gt;
+    &lt;button class=&quot;btn btn-dark&quot;&gt;
+      &lt;b class=&quot;black&quot;&gt;Read more ↪️&lt;/b&gt;
+    &lt;/button&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
 </content><author>
        <name>glegoux</name>
        <uri></uri>
