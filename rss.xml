@@ -5,8 +5,8 @@
     <description>Personal blog about software engineering</description>
     <link>https://glegoux.com/</link>
     <atom:link href="https://glegoux.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 19 Feb 2024 05:53:03 +0000</pubDate>
-    <lastBuildDate>Mon, 19 Feb 2024 05:53:03 +0000</lastBuildDate>
+    <pubDate>Mon, 19 Feb 2024 06:03:32 +0000</pubDate>
+    <lastBuildDate>Mon, 19 Feb 2024 06:03:32 +0000</lastBuildDate>
     <generator>Jekyll v4.3.2</generator>
     
       <item>
@@ -195,8 +195,7 @@ this suite $(u_n)_{n\in \mathbb{N}}$ has a rate of convergence quick:&lt;/p&gt;
   &lt;div&gt;
     &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2021-11-23-secret-santa/images/u_n-convergence.png&quot; title=&quot;Inverse of the probability that a guest draws randomly his/her name&quot; alt=&quot;Inverse of the probability that a guest draws randomly his/her name&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;&lt;p&gt;Inverse of the probability that a guest draws randomly his/her name&lt;/p&gt;
-&lt;/figcaption&gt;
+  &lt;figcaption&gt;Inverse of the probability that a guest draws randomly his/her name &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;So if your number of guests is greater or equal to 4, you have around $0.63\%$ of chance, 
@@ -235,8 +234,7 @@ let’s say $N=300$:&lt;/p&gt;
   &lt;div&gt;
     &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2021-11-23-secret-santa/images/g_n-convergence.png&quot; title=&quot;Probability to have 2 identical types of gifts among 300 possible types of Christmas gifts&quot; alt=&quot;Probability to have 2 identical types of gifts among 300 possible types of Christmas gifts&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;&lt;p&gt;Probability to have 2 identical types of gifts among 300 possible types of Christmas gifts&lt;/p&gt;
-&lt;/figcaption&gt;
+  &lt;figcaption&gt;Probability to have 2 identical types of gifts among 300 possible types of Christmas gifts &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;With an approximation $e^{x} \approx 1 +x$ when $x$ is close to $0$, and the &lt;strong&gt;sum of young Gauss&lt;/strong&gt; 
@@ -1163,8 +1161,7 @@ the company &lt;strong&gt;Sun Microsystems&lt;/strong&gt; released the first ver
   &lt;div&gt;
     &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2020-05-04-java-ecosystem/images/java-logo.png&quot; title=&quot;Java logo&quot; alt=&quot;Java logo&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;&lt;p&gt;Java logo&lt;/p&gt;
-&lt;/figcaption&gt;
+  &lt;figcaption&gt;Java logo &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;That is to say:&lt;/p&gt;
@@ -1188,8 +1185,7 @@ that performed tasks for the user:&lt;/p&gt;
   &lt;div&gt;
     &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2020-05-04-java-ecosystem/images/duke.png&quot; title=&quot;Duke the Java mascot&quot; alt=&quot;Duke the Java mascot&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;&lt;p&gt;Duke the Java mascot&lt;/p&gt;
-&lt;/figcaption&gt;
+  &lt;figcaption&gt;Duke the Java mascot &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;The best resource about Java is surely the &lt;em&gt;Effective Java&lt;/em&gt; book with its different editions:&lt;/p&gt;
@@ -1205,8 +1201,7 @@ consists of first learning the rules and then learning when to break them.&lt;/p
   &lt;div&gt;
     &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2020-05-04-java-ecosystem/images/effective-java-book-cover.jpg&quot; title=&quot;Effective Java book&quot; alt=&quot;Effective Java book&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;&lt;p&gt;Effective Java book&lt;/p&gt;
-&lt;/figcaption&gt;
+  &lt;figcaption&gt;Effective Java book &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;But Sun Microsystems had an issue a business model, and &lt;strong&gt;Oracle acquired Java in January 2010&lt;/strong&gt;. 

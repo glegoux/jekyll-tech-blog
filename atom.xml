@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux (glegoux)</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2024-02-19T05:53:03+00:00</updated>
+ <updated>2024-02-19T06:03:32+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -193,8 +193,7 @@ this suite $(u_n)_{n\in \mathbb{N}}$ has a rate of convergence quick:&lt;/p&gt;
   &lt;div&gt;
     &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2021-11-23-secret-santa/images/u_n-convergence.png&quot; title=&quot;Inverse of the probability that a guest draws randomly his/her name&quot; alt=&quot;Inverse of the probability that a guest draws randomly his/her name&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;&lt;p&gt;Inverse of the probability that a guest draws randomly his/her name&lt;/p&gt;
-&lt;/figcaption&gt;
+  &lt;figcaption&gt;Inverse of the probability that a guest draws randomly his/her name &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;So if your number of guests is greater or equal to 4, you have around $0.63\%$ of chance, 
@@ -233,8 +232,7 @@ let’s say $N=300$:&lt;/p&gt;
   &lt;div&gt;
     &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2021-11-23-secret-santa/images/g_n-convergence.png&quot; title=&quot;Probability to have 2 identical types of gifts among 300 possible types of Christmas gifts&quot; alt=&quot;Probability to have 2 identical types of gifts among 300 possible types of Christmas gifts&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;&lt;p&gt;Probability to have 2 identical types of gifts among 300 possible types of Christmas gifts&lt;/p&gt;
-&lt;/figcaption&gt;
+  &lt;figcaption&gt;Probability to have 2 identical types of gifts among 300 possible types of Christmas gifts &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;With an approximation $e^{x} \approx 1 +x$ when $x$ is close to $0$, and the &lt;strong&gt;sum of young Gauss&lt;/strong&gt; 
@@ -1145,8 +1143,7 @@ the company &lt;strong&gt;Sun Microsystems&lt;/strong&gt; released the first ver
   &lt;div&gt;
     &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2020-05-04-java-ecosystem/images/java-logo.png&quot; title=&quot;Java logo&quot; alt=&quot;Java logo&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;&lt;p&gt;Java logo&lt;/p&gt;
-&lt;/figcaption&gt;
+  &lt;figcaption&gt;Java logo &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;That is to say:&lt;/p&gt;
@@ -1170,8 +1167,7 @@ that performed tasks for the user:&lt;/p&gt;
   &lt;div&gt;
     &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2020-05-04-java-ecosystem/images/duke.png&quot; title=&quot;Duke the Java mascot&quot; alt=&quot;Duke the Java mascot&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;&lt;p&gt;Duke the Java mascot&lt;/p&gt;
-&lt;/figcaption&gt;
+  &lt;figcaption&gt;Duke the Java mascot &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;The best resource about Java is surely the &lt;em&gt;Effective Java&lt;/em&gt; book with its different editions:&lt;/p&gt;
@@ -1187,8 +1183,7 @@ consists of first learning the rules and then learning when to break them.&lt;/p
   &lt;div&gt;
     &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2020-05-04-java-ecosystem/images/effective-java-book-cover.jpg&quot; title=&quot;Effective Java book&quot; alt=&quot;Effective Java book&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;&lt;p&gt;Effective Java book&lt;/p&gt;
-&lt;/figcaption&gt;
+  &lt;figcaption&gt;Effective Java book &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;But Sun Microsystems had an issue a business model, and &lt;strong&gt;Oracle acquired Java in January 2010&lt;/strong&gt;. 
@@ -1280,8 +1275,7 @@ computer worldwide market is bi-polaire due to the &lt;strong&gt;Internet censor
   &lt;div&gt;
     &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-11-29-gafa-vs-batx/images/business-area.png&quot; title=&quot;Business regions and computer technology areas&quot; alt=&quot;Business regions and computer technology areas&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;&lt;p&gt;Business regions and computer technology areas&lt;/p&gt;
-&lt;/figcaption&gt;
+  &lt;figcaption&gt;Business regions and computer technology areas &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;So the behaviours of consumers are different according to they are in China or not. This Oligopoly 
@@ -1296,8 +1290,7 @@ the world there is the big four tech companies &lt;strong&gt;Google, Apple, Face
   &lt;div&gt;
     &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-11-29-gafa-vs-batx/images/batx-gafa.png&quot; title=&quot;BATX &amp;amp; GAFA&quot; alt=&quot;BATX &amp;amp; GAFA&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;&lt;p&gt;BATX &amp;amp; GAFA&lt;/p&gt;
-&lt;/figcaption&gt;
+  &lt;figcaption&gt;BATX &amp;amp; GAFA &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Hence, this market has really 2 groups of companies on a B2B or/and B2C position in function of geolocation.
@@ -1323,8 +1316,7 @@ vs GAFA as (without quoting all other ones). Here are some of them with TikTok t
   &lt;div&gt;
     &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-11-29-gafa-vs-batx/images/other-companies.png&quot; title=&quot;Other big companies&quot; alt=&quot;Other big companies&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;&lt;p&gt;Other big companies&lt;/p&gt;
-&lt;/figcaption&gt;
+  &lt;figcaption&gt;Other big companies &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 </content><author>
@@ -1413,8 +1405,7 @@ rtt min/avg/max/mdev = 13.821/13.821/13.821/0.000 ms
   &lt;div&gt;
     &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-07-14-trace-a-request-path/images/rir.png&quot; title=&quot;Map of Regional Internet Registry&quot; alt=&quot;Map of Regional Internet Registry&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;&lt;p&gt;Map of Regional Internet Registry&lt;/p&gt;
-&lt;/figcaption&gt;
+  &lt;figcaption&gt;Map of Regional Internet Registry &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;But an constant update and smart analysis of the network is required to locate any IP address (IPv4 or IPv6), because of dynamic IP addresses and moving connected objects for instance in the Internet of Things (IoT) or mobile networks. In addition, this location could not be too precised to respect private life of each Internet surfer, even if this one shares its location via its web browser.&lt;/p&gt;
@@ -1425,8 +1416,7 @@ rtt min/avg/max/mdev = 13.821/13.821/13.821/0.000 ms
   &lt;div&gt;
     &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-07-14-trace-a-request-path/images/map.png&quot; title=&quot;Geo-location of request path from Paris to glegoux.com&quot; alt=&quot;Geo-location of request path from Paris to glegoux.com&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;&lt;p&gt;Geo-location of request path from Paris to glegoux.com&lt;/p&gt;
-&lt;/figcaption&gt;
+  &lt;figcaption&gt;Geo-location of request path from Paris to glegoux.com &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 </content><author>
@@ -1573,8 +1563,7 @@ jQuery(document).ready(function () {
   &lt;div&gt;
     &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-04-01-lighthouse/images/lighthouse-logo.png&quot; title=&quot;Logo of Lighthouse&quot; alt=&quot;Logo of Lighthouse&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;&lt;p&gt;Logo of Lighthouse&lt;/p&gt;
-&lt;/figcaption&gt;
+  &lt;figcaption&gt;Logo of Lighthouse &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;You can run Lighthouse as a &lt;a href=&quot;https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en&quot;&gt;Chrome Extension&lt;/a&gt;, from the command line, or as a &lt;a href=&quot;https://www.npmjs.com/package/lighthouse&quot;&gt;Node module&lt;/a&gt;. You give Lighthouse a URL to audit, it runs a series of audits against the page, and then it generates a report on how well the page did. From there, use the failing audits as indicators on how to improve the page. Each audit has a reference doc explaining why the audit is important, as well as how to fix it.&lt;/p&gt;
@@ -1596,8 +1585,7 @@ jQuery(document).ready(function () {
   &lt;div&gt;
     &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-04-01-lighthouse/images/scores.png&quot; title=&quot;Lighthouse scores by report category&quot; alt=&quot;Lighthouse scores by report category&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;&lt;p&gt;Lighthouse scores by report category&lt;/p&gt;
-&lt;/figcaption&gt;
+  &lt;figcaption&gt;Lighthouse scores by report category &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;You can export report under HTML or JSON format, then import these format or see directly report due to &lt;a href=&quot;https://googlechrome.github.io/lighthouse/viewer/&quot;&gt;Lighthouse Viewer&lt;/a&gt; (online version). You can install on-premises version directly from the &lt;a href=&quot;https://github.com/GoogleChrome/lighthouse/tree/master/lighthouse-viewer&quot;&gt;Git repository if Lighthouse Viewer&lt;/a&gt; .&lt;/p&gt;
@@ -1606,8 +1594,7 @@ jQuery(document).ready(function () {
   &lt;div&gt;
     &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-04-01-lighthouse/images/export-import-view.jpg&quot; title=&quot;Export, import and view Lighthouse report&quot; alt=&quot;Export, import and view Lighthouse report&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;&lt;p&gt;Export, import and view Lighthouse report&lt;/p&gt;
-&lt;/figcaption&gt;
+  &lt;figcaption&gt;Export, import and view Lighthouse report &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;h1 id=&quot;lighthouse-architecture&quot;&gt;Lighthouse architecture&lt;/h1&gt;
@@ -1618,8 +1605,7 @@ jQuery(document).ready(function () {
   &lt;div&gt;
     &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-04-01-lighthouse/images/architecture.jpg&quot; title=&quot;Architecture of Lighthouse Core&quot; alt=&quot;Architecture of Lighthouse Core&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;&lt;p&gt;Architecture of Lighthouse Core&lt;/p&gt;
-&lt;/figcaption&gt;
+  &lt;figcaption&gt;Architecture of Lighthouse Core &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/GoogleChrome/lighthouse/blob/master/docs/architecture.md&quot;&gt;See details of the architecture&lt;/a&gt;.&lt;/p&gt;
@@ -1650,8 +1636,7 @@ jQuery(document).ready(function () {
   &lt;div&gt;
     &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-04-01-lighthouse/images/chrome-version.jpg&quot; title=&quot;Google Chrome, Chromium and Canary version&quot; alt=&quot;Google Chrome, Chromium and Canary version&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;&lt;p&gt;Google Chrome, Chromium and Canary version&lt;/p&gt;
-&lt;/figcaption&gt;
+  &lt;figcaption&gt;Google Chrome, Chromium and Canary version &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Reminder you in a nutshell that &lt;a href=&quot;https://www.google.com/chrome/browser&quot;&gt;Google Chrome&lt;/a&gt; is the &lt;a href=&quot;https://github.com/chromium/chromium&quot;&gt;Chromium&lt;/a&gt; open source project built, packaged, 
@@ -1695,8 +1680,7 @@ https://glegoux.com/contact/email/
   &lt;div&gt;
     &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-04-01-lighthouse/images/plot_scores.png&quot; title=&quot; Charts of scores for a set of URLs&quot; alt=&quot; Charts of scores for a set of URLs&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;&lt;p&gt;Charts of scores for a set of URLs&lt;/p&gt;
-&lt;/figcaption&gt;
+  &lt;figcaption&gt; Charts of scores for a set of URLs &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;table&gt;
@@ -1839,8 +1823,7 @@ and &lt;a href=&quot;http://www.kerberos.org/software/adminkerberos.pdf&quot;&gt
   &lt;div&gt;
     &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-03-23-kerberos-in-5-minutes/images/kerberos-logo.jpg&quot; title=&quot;MIT Kerberos&quot; alt=&quot;MIT Kerberos&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;&lt;p&gt;MIT Kerberos&lt;/p&gt;
-&lt;/figcaption&gt;
+  &lt;figcaption&gt;MIT Kerberos &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Another interesting implementation of Kerberos is in Java: &lt;a href=&quot;https://directory.apache.org/kerby/&quot;&gt;Apache Kerby&lt;/a&gt;. The &lt;strong&gt;Java ecosystem&lt;/strong&gt; 
@@ -2053,8 +2036,7 @@ The typical format of a typical Kerberos principal is primary/instance@REALM.&lt
   &lt;div&gt;
     &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-03-01-access-to-a-computer-from-usb-key/images/welcome-screen-dell.png&quot; title=&quot;DELL welcome screen&quot; alt=&quot;DELL welcome screen&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;&lt;p&gt;DELL welcome screen&lt;/p&gt;
-&lt;/figcaption&gt;
+  &lt;figcaption&gt;DELL welcome screen &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Start by choosing the following option:&lt;/p&gt;
@@ -2063,8 +2045,7 @@ The typical format of a typical Kerberos principal is primary/instance@REALM.&lt
   &lt;div&gt;
     &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-03-01-access-to-a-computer-from-usb-key/images/hack1.png&quot; title=&quot;Advanced startup options&quot; alt=&quot;Advanced startup options&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;&lt;p&gt;Advanced startup options&lt;/p&gt;
-&lt;/figcaption&gt;
+  &lt;figcaption&gt;Advanced startup options &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Then select the &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;recovery mode&lt;/code&gt;:&lt;/p&gt;
@@ -2073,8 +2054,7 @@ The typical format of a typical Kerberos principal is primary/instance@REALM.&lt
   &lt;div&gt;
     &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-03-01-access-to-a-computer-from-usb-key/images/hack2.png&quot; title=&quot;Getting started in recovery mode&quot; alt=&quot;Getting started in recovery mode&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;&lt;p&gt;Getting started in recovery mode&lt;/p&gt;
-&lt;/figcaption&gt;
+  &lt;figcaption&gt;Getting started in recovery mode &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Launch a &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;root shell&lt;/code&gt;:&lt;/p&gt;
@@ -2083,8 +2063,7 @@ The typical format of a typical Kerberos principal is primary/instance@REALM.&lt
   &lt;div&gt;
     &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-03-01-access-to-a-computer-from-usb-key/images/hack3.png&quot; title=&quot;Choosing the root shell&quot; alt=&quot;Choosing the root shell&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;&lt;p&gt;Choosing the root shell&lt;/p&gt;
-&lt;/figcaption&gt;
+  &lt;figcaption&gt;Choosing the root shell &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;You access a device as a &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;root&lt;/code&gt; user.&lt;/p&gt;
