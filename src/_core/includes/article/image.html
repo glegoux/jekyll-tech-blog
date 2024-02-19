@@ -3,7 +3,11 @@
 <figure title="{{ include.title | default: '' }}">
   <div>
     <img class="img-fluid lazyload"
+         {% if include.abs_url %}
+         data-src="{{ include.src }}"
+         {% else %}
          data-src="{{ config_attachment.url }}/{{ article_id }}/{{ config_attachment.image.path }}/{{ include.src }}{{ config_attachment.image.suffix }}"
+         {% endif %}
          title="{{ include.title | default: '' }}"
          alt="{{ include.title | default: '' }}"
     />
