@@ -12,5 +12,5 @@
          alt="{{ include.title | default: '' }}"
     />
   </div>
-  <figcaption>{{ include.title | default: ''  | markdownify }}</figcaption>
+  <figcaption>{{ include.title | default: '' }} {% if include.source %}[[source](include.source)]{% endif %}</figcaption>
 </figure>
