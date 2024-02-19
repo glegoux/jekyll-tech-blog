@@ -243,7 +243,7 @@
 "description" : "How to write articles on this blog from an easy-to-use and rich syntax?",
 "authors"     : "glegoux",
 "category"    : "Methodology",
-"tags"        : "Markdown",
+"tags"        : "Markdown, Liquid Template, Kramdown Converter, Jekyll",
 "url"         : "/blog/articles/2019/01/21/getting-started.html",
 "date"        : "2019-01-21 00:00:00 +0000",
 "year"        : "2019",

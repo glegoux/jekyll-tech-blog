@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux (glegoux)</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2024-02-19T04:38:43+00:00</updated>
+ <updated>2024-02-19T05:10:51+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -2216,70 +2216,285 @@ Beware, the morality of this article is that a person physically accessing your 
    <link href="https://glegoux.com/blog/articles/2019/01/21/getting-started.html"/>
    <updated>2019-01-21T00:00:00+00:00</updated>
    <id>https://glegoux.com/blog/articles/2019/01/21/getting-started.html</id>
-   <content type="html">&lt;p&gt;Discover the &lt;strong&gt;extended Markdown syntax&lt;/strong&gt; used on this blog, generated from the template &lt;a href=&quot;https://github.com/glegoux/jekyll-tech-blog&quot;&gt;🧪 Jekyll Tech blog&lt;/a&gt;, to write articles or to generate static pages. 
-This syntax is based on &lt;a href=&quot;https://kramdown.gettalong.org/syntax.html&quot;&gt;Kramdown&lt;/a&gt; with a light and custom extension. Besides, this article is written with this syntax, click on the button: &lt;b&gt;&lt;i class=&quot;far fa-file-code&quot;&gt;&lt;/i&gt;Source&lt;/b&gt; to explore its &lt;strong&gt;source code&lt;/strong&gt;. Each following section gives an overview and examples for each usage.&lt;/p&gt;
+   <content type="html">&lt;p&gt;Discover the &lt;strong&gt;extended Markdown syntax&lt;/strong&gt; used on this tech blog, generated from the template &lt;a href=&quot;https://github.com/glegoux/jekyll-tech-blog&quot;&gt;🧪 Jekyll Tech blog&lt;/a&gt;, to write articles or to generate static web pages. It is based on &lt;a href=&quot;https://kramdown.gettalong.org/syntax.html&quot;&gt;Kramdown syntax&lt;/a&gt; with &lt;a href=&quot;https://kramdown.gettalong.org/parser/gfm.html&quot;&gt;GFM parser&lt;/a&gt; and a light
+custom extension for rendering. Besides, this article is written with this syntax. At the top of the web page, click on
+&lt;b&gt;&lt;i class=&quot;far fa-file-code&quot;&gt;&lt;/i&gt; Source&lt;/b&gt; to explore its source code and on &lt;b&gt;&lt;i class=&quot;fas fa-list-ul&quot;&gt;&lt;/i&gt; Table of contents&lt;/b&gt; to browse
+the supported features. So, you can mix this syntax with &lt;strong&gt;existing macro&lt;/strong&gt; and &lt;strong&gt;native &lt;abbr title=&quot;Hyper Text Markup Language&quot;&gt;HTML&lt;/abbr&gt; syntaxes&lt;/strong&gt; to write any content. As this blog is &lt;strong&gt;highly configurable&lt;/strong&gt;, you can &lt;strong&gt;build&lt;/strong&gt; your &lt;strong&gt;custom macros&lt;/strong&gt;. Each article
+also has &lt;strong&gt;metadata&lt;/strong&gt; to inject constants of configurations.&lt;/p&gt;
 
-&lt;p&gt;But before, what is precisely the Markdown? &lt;a href=&quot;https://daringfireball.net/projects/markdown/&quot;&gt;Markdown&lt;/a&gt; is a lightweight and popular text metalanguage that is a writing standard
-with the extension &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;.md&lt;/code&gt; or &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;.markdown&lt;/code&gt;. It is often converted into HTML, allowing it to be easily shared on the web :spider_web:. After converting to HTML, it 
-is decorated and animated by CSS style sheets and/or JS scripts. See more details on this &lt;a href=&quot;https://www.markdownguide.org&quot;&gt;Markdown Guide&lt;/a&gt;.&lt;/p&gt;
-
-&lt;figure&gt;
+&lt;details open=&quot;true&quot;&gt;
+  &lt;summary title=&quot;Click to expand and collapse the content&quot;&gt;&lt;b&gt;Summary of supported features by the extended Markdown syntax&lt;/b&gt;&lt;/summary&gt;
+  &lt;p&gt;
+    Read the documentation of the &lt;a href=&quot;https://kramdown.gettalong.org/syntax.html&quot;&gt;Kramdown syntax&lt;/a&gt;.
+    All contents, even if unavailable with the extended Markdown syntax, can be shown thanks to embedded native content: &lt;abbr title=&quot;Hyper Text Markup Language&quot;&gt;HTML&lt;/abbr&gt;, JS, CSS, or macros: &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;includes&lt;/code&gt; and &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;tags&lt;/code&gt; of the &lt;a href=&quot;https://shopify.github.io/liquid&quot;&gt;Liquid template&lt;/a&gt;.
+  &lt;/p&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://docs.google.com/drawings/d/e/2PACX-1vRPwfUjnj6bT9B-M4jdzQqOICzCwblxYR5xvgiXYWrpcgpmFddbWR-ErodWf-U0rE8f0aqzUfazXvf8/pub?w=960&amp;amp;h=267&quot; alt=&quot;Markdown processor&quot; title=&quot;Markdown processor&quot; /&gt;
+      &lt;table class=&quot;text-center&quot;&gt;
+        &lt;thead&gt;
+          &lt;tr&gt;
+            &lt;th&gt;Feature name&lt;/th&gt;
+            &lt;th&gt;Comment&lt;/th&gt;
+            &lt;th&gt;Extended Markdown syntax&lt;/th&gt;
+            &lt;th&gt;Existing Macro syntax&lt;/th&gt;
+            &lt;th&gt;Native HTML syntax&lt;/th&gt;
+          &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+          &lt;tr style=&quot;background-color: lightgrey&quot;&gt;
+            &lt;td colspan=&quot;5&quot;&gt;&lt;b&gt;&lt;a href=&quot;#structure&quot;&gt;Structure&lt;/a&gt;&lt;/b&gt;&lt;/td&gt;
+          &lt;/tr&gt;  
+          &lt;tr&gt;
+            &lt;td&gt;&lt;a href=&quot;#heading&quot;&gt;Heading&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;Organize your content with part, subpart, sub-subpart, etc.&lt;/td&gt;
+            &lt;td&gt;✅&lt;/td&gt;
+            &lt;td&gt;❌&lt;/td&gt;
+            &lt;td&gt;✅&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;&lt;a href=&quot;#new-line--paragraph&quot;&gt;New line &amp;amp; Paragraph&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;Organize the content in a part&lt;/td&gt;
+            &lt;td&gt;✅&lt;/td&gt;
+            &lt;td&gt;❌&lt;/td&gt;
+            &lt;td&gt;✅&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;&lt;a href=&quot;#horizontal-rule&quot;&gt;Horizontal Rule&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;Break between paragraph-level elements&lt;/td&gt;
+            &lt;td&gt;✅&lt;/td&gt;
+            &lt;td&gt;❌&lt;/td&gt;
+            &lt;td&gt;✅&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;&lt;a href=&quot;#note&quot;&gt;Note&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;Soon refactored! Add your notes: info, question, warning, error, success, etc.&lt;/td&gt;
+            &lt;td&gt;❌&lt;/td&gt;
+            &lt;td&gt;❌&lt;/td&gt;
+            &lt;td&gt;✅&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr style=&quot;background-color: lightgrey&quot;&gt;
+            &lt;td colspan=&quot;5&quot;&gt;&lt;b&gt;&lt;a href=&quot;#textual-content&quot;&gt;Textual Content&lt;/a&gt;&lt;/b&gt;&lt;/td&gt;
+          &lt;/tr&gt; 
+          &lt;tr&gt;
+            &lt;td&gt;&lt;a href=&quot;#enchanced-text&quot;&gt;Enchanced Text&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;Enhance your text: italics, bold, strikethrough, inline code, highlight, superscript, subscript, etc.&lt;/td&gt;
+            &lt;td&gt;✅&lt;/td&gt;
+            &lt;td&gt;❌&lt;/td&gt;
+            &lt;td&gt;✅&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;&lt;a href=&quot;#link&quot;&gt;Link&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;Use absolute and relative links named or not and re-usable&lt;/td&gt;
+            &lt;td&gt;✅&lt;/td&gt;
+            &lt;td&gt;❌&lt;/td&gt;
+            &lt;td&gt;✅&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;&lt;a href=&quot;#emoticon&quot;&gt;Emoticon&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;Use emoticons with shortcode or unicode&lt;/td&gt;
+            &lt;td&gt;✅&lt;/td&gt;
+            &lt;td&gt;❌&lt;/td&gt;
+            &lt;td&gt;✅&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;&lt;a href=&quot;#list&quot;&gt;List&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;Build an ordered, unordered, definition or task lists and sublists&lt;/td&gt;
+            &lt;td&gt;✅&lt;/td&gt;
+            &lt;td&gt;❌&lt;/td&gt;
+            &lt;td&gt;✅&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;&lt;a href=&quot;#table&quot;&gt;Table&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;Arrange the content in rows and columns with an optional header.&lt;/td&gt;
+            &lt;td&gt;✅&lt;/td&gt;
+            &lt;td&gt;❌&lt;/td&gt;
+            &lt;td&gt;✅&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;&lt;a href=&quot;#blockquote&quot;&gt;Blockquote&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;Format a special sentence of paragraph to draw attention to the reader&lt;/td&gt;
+            &lt;td&gt;✅&lt;/td&gt;
+            &lt;td&gt;❌&lt;/td&gt;
+            &lt;td&gt;✅&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;&lt;a href=&quot;#quote&quot;&gt;Quote&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;Soon refactored! Quote your authors&lt;/td&gt;
+            &lt;td&gt;✅&lt;/td&gt;
+            &lt;td&gt;❌&lt;/td&gt;
+            &lt;td&gt;✅&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;&lt;a href=&quot;#footnote&quot;&gt;Footnote&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;Put extra information at the bottom of the article referencing inside content&lt;/td&gt;
+            &lt;td&gt;✅&lt;/td&gt;
+            &lt;td&gt;❌&lt;/td&gt;
+            &lt;td&gt;✅&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;&lt;a href=&quot;#abbreviation&quot;&gt;Abbreviation&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;Shorten used word or concept by keeping the accessible meaning&lt;/td&gt;
+            &lt;td&gt;✅&lt;/td&gt;
+            &lt;td&gt;❌&lt;/td&gt;
+            &lt;td&gt;✅&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr style=&quot;background-color: lightgrey&quot;&gt;
+            &lt;td colspan=&quot;5&quot;&gt;&lt;b&gt;&lt;a href=&quot;#illustration-content&quot;&gt;Illustration Content&lt;/a&gt;&lt;/b&gt;&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;&lt;a href=&quot;#image&quot;&gt;Image&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;Soon documented!&lt;/td&gt;
+            &lt;td&gt;✅&lt;/td&gt;
+            &lt;td&gt;✅&lt;/td&gt;
+            &lt;td&gt;✅&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;&lt;a href=&quot;#video&quot;&gt;Video&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;Soon documented!&lt;/td&gt;
+            &lt;td&gt;❌&lt;/td&gt;
+            &lt;td&gt;✅&lt;/td&gt;
+            &lt;td&gt;✅&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;&lt;a href=&quot;#presentation&quot;&gt;Presentation&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;Soon documented!&lt;/td&gt;
+            &lt;td&gt;❌&lt;/td&gt;
+            &lt;td&gt;✅&lt;/td&gt;
+            &lt;td&gt;✅&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;&lt;a href=&quot;#diagram&quot;&gt;Diagram&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;Soon documented!&lt;/td&gt;
+            &lt;td&gt;❌&lt;/td&gt;
+            &lt;td&gt;✅&lt;/td&gt;
+            &lt;td&gt;✅&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr style=&quot;background-color: lightgrey&quot;&gt;
+            &lt;td colspan=&quot;5&quot;&gt;&lt;b&gt;&lt;a href=&quot;#informatics-code&quot;&gt;Informatics Code&lt;/a&gt;&lt;/b&gt;&lt;/td&gt;
+          &lt;/tr&gt; 
+          &lt;tr&gt;
+            &lt;td&gt;&lt;a href=&quot;#programming-language&quot;&gt;Programming Language&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;Highlight code: python, java, scala, rust, c#, c++, c, bash, ruby, go, typescript, javascript, html, css ...&lt;/td&gt;
+            &lt;td&gt;✅&lt;/td&gt;
+            &lt;td&gt;❌&lt;/td&gt;
+            &lt;td&gt;✅&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;&lt;a href=&quot;#terminal&quot;&gt;Terminal&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;Highlight content in a terminal&lt;/td&gt;
+            &lt;td&gt;✅&lt;/td&gt;
+            &lt;td&gt;❌&lt;/td&gt;
+            &lt;td&gt;✅&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;&lt;a href=&quot;#text-file&quot;&gt;Text File&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;Highlight text content: plain, json, yaml, xml, ini ...&lt;/td&gt;
+            &lt;td&gt;✅&lt;/td&gt;
+            &lt;td&gt;❌&lt;/td&gt;
+            &lt;td&gt;✅&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr style=&quot;background-color: lightgrey&quot;&gt;
+            &lt;td colspan=&quot;5&quot;&gt;&lt;b&gt;&lt;a href=&quot;#mathematics-equation&quot;&gt;Mathematics Equation&lt;/a&gt;&lt;/b&gt;&lt;/td&gt;
+          &lt;/tr&gt; 
+          &lt;tr&gt;
+            &lt;td&gt;&lt;a href=&quot;#in-line-equation&quot;&gt;In-Line Equation&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;Use LateX syntax for in-line equation&lt;/td&gt;
+            &lt;td&gt;✅&lt;/td&gt;
+            &lt;td&gt;❌&lt;/td&gt;
+            &lt;td&gt;✅&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;&lt;a href=&quot;#single-line-equation&quot;&gt;Single-Line Equation&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;Use LateX syntax for single-line equation&lt;/td&gt;
+            &lt;td&gt;✅&lt;/td&gt;
+            &lt;td&gt;❌&lt;/td&gt;
+            &lt;td&gt;✅&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;&lt;a href=&quot;#multi-lines-equation&quot;&gt;Multi-lines Equation&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;Use LateX syntax for multi-lines equation&lt;/td&gt;
+            &lt;td&gt;✅&lt;/td&gt;
+            &lt;td&gt;❌&lt;/td&gt;
+            &lt;td&gt;✅&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr style=&quot;background-color: lightgrey&quot;&gt;
+            &lt;td colspan=&quot;5&quot;&gt;&lt;b&gt;&lt;a href=&quot;#special-content&quot;&gt;Special Content&lt;/a&gt;&lt;/b&gt;&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;&lt;a href=&quot;#html&quot;&gt;HTML&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;Put native HTML when the Markdown syntax is not available, it can contain Markdown in its markups&lt;/td&gt;
+            &lt;td&gt;❌&lt;/td&gt;
+            &lt;td&gt;❌&lt;/td&gt;
+            &lt;td&gt;✅&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;&lt;a href=&quot;#comment&quot;&gt;Comment&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;Comment content&lt;/td&gt;
+            &lt;td&gt;❌&lt;/td&gt;
+            &lt;td&gt;❌&lt;/td&gt;
+            &lt;td&gt;✅&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;&lt;a href=&quot;#escape&quot;&gt;Escape&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;Escape meta or special characters&lt;/td&gt;
+            &lt;td&gt;✅&lt;/td&gt;
+            &lt;td&gt;❌&lt;/td&gt;
+            &lt;td&gt;✅&lt;/td&gt;
+          &lt;/tr&gt;  
+          &lt;tr&gt;
+            &lt;td&gt;&lt;a href=&quot;#others&quot;&gt;Others&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;Create your macros, extend the project or the tools everything is open-source&lt;/td&gt;
+            &lt;td&gt;❌&lt;/td&gt;
+            &lt;td&gt;❌&lt;/td&gt;
+            &lt;td&gt;✅&lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/table&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;Markdown processor&lt;/figcaption&gt;
-&lt;/figure&gt;
+&lt;/details&gt;
+
+&lt;p&gt;What is the
+&lt;a href=&quot;https://daringfireball.net/projects/markdown/&quot;&gt;Markdown syntax&lt;/a&gt;?
+It is a lightweight and popular text metalanguage that is a writing standard. It is often converted into &lt;abbr title=&quot;Hyper Text Markup Language&quot;&gt;HTML&lt;/abbr&gt;,
+allowing it to be easily shared on the web :spider_web:. After converting to
+&lt;abbr title=&quot;Hyper Text Markup Language&quot;&gt;HTML&lt;/abbr&gt;, it is decorated and animated by CSS style sheets and/or JS scripts. See
+more details on this &lt;a href=&quot;https://www.markdownguide.org&quot;&gt;Markdown Guide&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Why use Markdown? Because it is very handy to use for the reader and the writer:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Reader&lt;/strong&gt;: The generated HTML content from the Markdown content is compatible with all web browsers that can render it for the final reader.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Writer&lt;/strong&gt;: The Markdown content continues to be separated from the rendering. In addition, it is easy to learn and use syntax, with the pros of portability and compatibility, flexibility and customizability, and readability and maintainability. Modify its article so the content is more human-writable/readable and shorter than the HTML code, less expressive, but sufficient for a blog post.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Reader&lt;/strong&gt;: The generated &lt;abbr title=&quot;Hyper Text Markup Language&quot;&gt;HTML&lt;/abbr&gt; content from the Markdown content is compatible
+with all web browsers that can render it for the final reader.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Writer&lt;/strong&gt;: The Markdown content continues to be separated from the rendering.
+In addition, it is easy to learn and use syntax, with the pros of portability
+and compatibility, flexibility and customizable, and readability and
+maintainability. Modify its article so the content is more
+human-writable/readable and shorter than the &lt;abbr title=&quot;Hyper Text Markup Language&quot;&gt;HTML&lt;/abbr&gt; code, less expressive, but
+sufficient for a blog post.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;See how to create your content with the right syntax through examples in the following sections.&lt;/p&gt;
+&lt;p&gt;Why use an extended Markdown syntax? Markdown has a basic syntax, that is limited
+for more advanced use cases (like tables, code blocks, syntax highlighting, footnotes and so one…). This extension
+is &lt;strong&gt;Markdown compatible&lt;/strong&gt;, so all articles written in Markdown can be used directly in this blog without breaking
+changes, and &lt;strong&gt;largely used&lt;/strong&gt; by an &lt;strong&gt;active community&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;h1 id=&quot;text&quot;&gt;Text&lt;/h1&gt;
+&lt;p&gt;How it works? The files having the Markdown extension &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;.md&lt;/code&gt; or &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;.markdown&lt;/code&gt; are processed to &lt;abbr title=&quot;Hyper Text Markup Language&quot;&gt;HTML&lt;/abbr&gt; with this &lt;a href=&quot;https://jekyllrb.com/tutorials/orderofinterpretation/&quot;&gt;processing workflow&lt;/a&gt;:&lt;/p&gt;
 
-&lt;h2 id=&quot;highlight&quot;&gt;Highlight&lt;/h2&gt;
+&lt;figure&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://docs.google.com/drawings/d/e/2PACX-1vRPwfUjnj6bT9B-M4jdzQqOICzCwblxYR5xvgiXYWrpcgpmFddbWR-ErodWf-U0rE8f0aqzUfazXvf8/pub?w=960&amp;amp;h=267&quot; alt=&quot;Extended Markdown to HTML&quot; title=&quot;Extended Markdown to HTML&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;Extended Markdown to HTML&lt;/figcaption&gt;
+&lt;/figure&gt;
 
-&lt;p&gt;Enhance your text:&lt;/p&gt;
+&lt;p&gt;The following sections give examples for each usage to create your content with the right syntax.&lt;/p&gt;
 
-&lt;p&gt;Italics: &lt;em&gt;italics&lt;/em&gt; or &lt;em&gt;italics&lt;/em&gt;&lt;br /&gt;
-Bold:	&lt;strong&gt;bold&lt;/strong&gt; or &lt;strong&gt;bold&lt;/strong&gt;&lt;br /&gt;
-Strikethrough: &lt;del&gt;Strikethrough&lt;/del&gt;&lt;br /&gt;
-Bold &amp;amp; Italics: &lt;strong&gt;&lt;em&gt;bold italics&lt;/em&gt;&lt;/strong&gt; or &lt;strong&gt;&lt;em&gt;bold italics&lt;/em&gt;&lt;/strong&gt;&lt;br /&gt;
-Inline code: &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;code&lt;/code&gt;&lt;/p&gt;
+&lt;h1 id=&quot;structure&quot;&gt;Structure&lt;/h1&gt;
 
-&lt;p&gt;Source code:&lt;/p&gt;
+&lt;h2 id=&quot;heading&quot;&gt;Heading&lt;/h2&gt;
 
-&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Italics: *italics* or _italics_  
-Bold:	**bold** or __bold__ 
-Strikethrough: ~~Strikethrough~~
-Bold &amp;amp; Italics: **_bold italics_** or __*bold italics*__
-Inline code: `code`
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Make a part, a subpart, and a sub-subpart.&lt;/p&gt;
 
-&lt;h2 id=&quot;new-line--paragraph&quot;&gt;New line &amp;amp; paragraph&lt;/h2&gt;
-
-&lt;p&gt;Let 2 trailing spaces have an end of the line, and let an empty line for a new paragraph:&lt;/p&gt;
-
-&lt;p&gt;Hello,&lt;/p&gt;
-
-&lt;p&gt;World!&lt;/p&gt;
-
-&lt;p&gt;Source code:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-whitespace&quot;&gt;Hello,␣␣\n
-\n
-World!\n
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;em&gt;Note: &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;\n&lt;/code&gt; and &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;␣&lt;/code&gt; represent respectively a new line character and a space character.&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;headings&quot;&gt;Headings&lt;/h2&gt;
-
-&lt;p&gt;Make a part, a subpart, and a sub-subpart:&lt;/p&gt;
+&lt;p&gt;It is used for each section here.&lt;/p&gt;
 
 &lt;p&gt;Source code:&lt;/p&gt;
 
@@ -2295,9 +2510,189 @@ H2
 ------
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
+&lt;h2 id=&quot;new-line--paragraph&quot;&gt;New line &amp;amp; Paragraph&lt;/h2&gt;
+
+&lt;p&gt;Let 2 trailing spaces have an end of the line, and let an empty line for a new
+paragraph:&lt;/p&gt;
+
+&lt;p&gt;Hello,&lt;/p&gt;
+
+&lt;p&gt;World!&lt;/p&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-whitespace&quot;&gt;Hello,␣␣\n
+\n
+World!\n
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;em&gt;Note: &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;\n&lt;/code&gt; and &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;␣&lt;/code&gt; represent respectively a new line character and a space
+character.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;horizontal-rule&quot;&gt;Horizontal rule&lt;/h2&gt;
+
+&lt;p&gt;To create a horizontal rule, use three or more asterisks &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;***&lt;/code&gt;, dashes &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;---&lt;/code&gt;, or underscores &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;___&lt;/code&gt; on a line by themselves:&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;---
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;note&quot;&gt;Note&lt;/h2&gt;
+
+&lt;p&gt;Add your notes: info, question, warning, error, and success etc.&lt;/p&gt;
+
+&lt;div class=&quot;info&quot;&gt;
+INFO
+&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;div class=&quot;info&quot;&amp;gt;
+INFO
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;question&quot;&gt;
+QUESTION
+&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;div class=&quot;question&quot;&amp;gt;
+QUESTION
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;warning&quot;&gt;
+WARNING
+&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;div class=&quot;warning&quot;&amp;gt;
+WARNING
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;error&quot;&gt;
+ERROR
+&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;div class=&quot;error&quot;&amp;gt;
+ERROR
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;success&quot;&gt;
+SUCCESS
+&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;div class=&quot;success&quot;&amp;gt;
+SUCCESS
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;textual-content&quot;&gt;Textual Content&lt;/h1&gt;
+
+&lt;h2 id=&quot;enchanced-text&quot;&gt;Enchanced Text&lt;/h2&gt;
+
+&lt;p&gt;Enhance your text:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Italics: &lt;em&gt;italics&lt;/em&gt; or &lt;em&gt;italics&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;Bold:    &lt;strong&gt;bold&lt;/strong&gt; or &lt;strong&gt;bold&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Strikethrough: &lt;del&gt;strikethrough&lt;/del&gt;&lt;/li&gt;
+  &lt;li&gt;Bold &amp;amp; Italics: &lt;strong&gt;&lt;em&gt;bold italics&lt;/em&gt;&lt;/strong&gt; or &lt;strong&gt;&lt;em&gt;bold italics&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Inline code: &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;code&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Highlight: &lt;mark&gt;highlight&lt;/mark&gt;&lt;/li&gt;
+  &lt;li&gt;Supscript: sup&lt;sup&gt;sup&lt;/sup&gt;&lt;/li&gt;
+  &lt;li&gt;Subscript: sub&lt;sub&gt;sub&lt;/sub&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- Italics: *italics* or _italics_  
+- Bold:	**bold** or __bold__ 
+- Strikethrough: ~~strikethrough~~
+- Bold &amp;amp; Italics: **_bold italics_** or __*bold italics*__
+- Inline code: `code`
+- Highlight: &amp;lt;mark&amp;gt;highlight&amp;lt;/mark&amp;gt;
+- Supscript: sup&amp;lt;sup&amp;gt;sup&amp;lt;/sup&amp;gt;
+- Subscript: sub&amp;lt;sub&amp;gt;sub&amp;lt;/sub&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;link&quot;&gt;Link&lt;/h2&gt;
+
+&lt;p&gt;It works with absolute and relative links:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Simple Link&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.glegoux.com&quot;&gt;https://www.glegoux.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;https://www.glegoux.com&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Named Link&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.glegoux.com&quot;&gt;glegoux&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[glegoux](https://www.glegoux.com)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;with a title:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.glegoux.com&quot; title=&quot;glegoux&apos;s Homepage&quot;&gt;glegoux1&lt;/a&gt; (with the
+  title &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;glegoux&apos;s Homepage&lt;/code&gt;)&lt;/p&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[glegoux](https://www.glegoux.com &quot;glegoux&apos;s Homepage&quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Reference-style Link&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;You can use shortcuts for your links to use that several times on the article or to centralize links:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.glegoux.com&quot; title=&quot;glegoux&apos;s Homepage&quot;&gt;glegoux1&lt;/a&gt; &lt;a href=&quot;https://www.glegoux.com&quot; title=&quot;glegoux&apos;s Homepage&quot;&gt;glegoux2&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[glegoux1][1] [glegoux2][1]
+
+[1]: https://www.glegoux.com &quot;glegoux&apos;s Homepage&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;emoticon&quot;&gt;Emoticon&lt;/h2&gt;
+
+&lt;p&gt;Use emoji, with &lt;a href=&quot;https://github.com/github/gemoji&quot;&gt;gemoji&lt;/a&gt;
+see &lt;a href=&quot;https://www.webfx.com/tools/emoji-cheat-sheet/&quot;&gt;emoji cheat sheet&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;For example: with shortcode :smile: :scream: :yum: or unicode directly 😀 😱 😋.&lt;/p&gt;
+
+&lt;p&gt;Source code for emoji with shortcode:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-@escape&quot;&gt;:smile: :scream: :yum:
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Source code for emoji with unicode:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-@escape&quot;&gt;😀 😱 😋
+&lt;/code&gt;&lt;/pre&gt;
+
 &lt;h2 id=&quot;list&quot;&gt;List&lt;/h2&gt;
 
-&lt;p&gt;Build an ordered list:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ordered List&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;item&lt;/li&gt;
@@ -2312,11 +2707,25 @@ H2
 3. item
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Build an unordered list:&lt;/p&gt;
+&lt;div class=&quot;info&quot;&gt;
+  &lt;p&gt;Use &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;+&lt;/code&gt;, &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;*&lt;/code&gt; and &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;-&lt;/code&gt; indifferently.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Unordered List&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;item&lt;/li&gt;
-  &lt;li&gt;item&lt;/li&gt;
+  &lt;li&gt;item
+    &lt;ul&gt;
+      &lt;li&gt;subitem&lt;/li&gt;
+      &lt;li&gt;…&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;item
+    &lt;ul&gt;
+      &lt;li&gt;subitem&lt;/li&gt;
+      &lt;li&gt;…&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
   &lt;li&gt;item&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -2327,7 +2736,50 @@ H2
  * item
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
+&lt;p&gt;&lt;strong&gt;Definition List&lt;/strong&gt;&lt;/p&gt;
+
+&lt;dl&gt;
+  &lt;dt&gt;item&lt;/dt&gt;
+  &lt;dd&gt;definition&lt;/dd&gt;
+  &lt;dt&gt;item&lt;/dt&gt;
+  &lt;dd&gt;definition&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;item
+: definition
+
+item
+: definition
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Task List&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul class=&quot;task-list&quot;&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;item&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;item&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;item&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- [x] item
+- [x] item
+- [ ] item
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;table&quot;&gt;Table&lt;/h2&gt;
+
+&lt;p&gt;TODO&lt;/p&gt;
+
+&lt;h2 id=&quot;blockquote&quot;&gt;Blockquote&lt;/h2&gt;
+
+&lt;p&gt;TODO&lt;/p&gt;
+
 &lt;h2 id=&quot;quote&quot;&gt;Quote&lt;/h2&gt;
+
+&lt;p&gt;Quote authors:&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Talk is cheap. Show me the code.&lt;/p&gt;
@@ -2336,156 +2788,93 @@ H2
 &lt;p&gt;Linus Torvalds, creator of the Linux operating system&lt;/p&gt;
 
 &lt;p&gt;Source code:&lt;/p&gt;
+
 &lt;pre&gt;&lt;code class=&quot;language-@escape&quot;&gt;&amp;gt; Talk is cheap. Show me the code.
 
 Linus Torvalds, creator of the Linux operating system
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&quot;emoticon&quot;&gt;Emoticon&lt;/h2&gt;
+&lt;h2 id=&quot;footnote&quot;&gt;Footnote&lt;/h2&gt;
 
-&lt;p&gt;Use emoji, with &lt;a href=&quot;https://github.com/github/gemoji&quot;&gt;gemoji&lt;/a&gt; see &lt;a href=&quot;https://www.webfx.com/tools/emoji-cheat-sheet/&quot;&gt;emoji cheat sheet&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Footnotes work mostly like reference-style links. A footnote is made of two things: a marker in the text that will become a superscript number; 
+a footnote definition that will be placed in a list of footnotes at the end of the document. A footnote looks like this:&lt;/p&gt;
 
-&lt;p&gt;For example: with shortcode :smile: :scream: :yum: or unicode directly 😀 😱 😋.&lt;/p&gt;
-
-&lt;p&gt;Source code for emoji with shortcode:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-@escape&quot;&gt;:smile: :scream: :yum:
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Source code for emoji with unicode:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-@escape&quot;&gt;😀 😱 😋
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&quot;links&quot;&gt;Links&lt;/h2&gt;
-
-&lt;p&gt;It works with absolute and relative links:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;A simple link:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.google.com&quot;&gt;https://www.google.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;That’s some text with a footnote&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 
 &lt;p&gt;Source code:&lt;/p&gt;
 
-&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;https://www.google.com&amp;gt;
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;That&apos;s some text with a footnote.[^1]
+
+[^1]: And that&apos;s the footnote.
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;A link with a name: &lt;a href=&quot;https://www.google.com&quot;&gt;Google&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h2 id=&quot;abbreviation&quot;&gt;Abbreviation&lt;/h2&gt;
+
+&lt;p&gt;The &lt;abbr title=&quot;Hyper Text Markup Language&quot;&gt;HTML&lt;/abbr&gt; specification is maintained by the W3C.&lt;/p&gt;
 
 &lt;p&gt;Source code:&lt;/p&gt;
-&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[Google](https://www.google.com)
+
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;The HTML specification is maintained by the W3C.
+
+*[HTML]: Hyper Text Markup Language
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;A link with a name and a title: &lt;a href=&quot;https://www.google.com&quot; title=&quot;Google&apos;s Homepage&quot;&gt;Google&lt;/a&gt; with the title &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;Google&apos;s Homepage&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h1 id=&quot;illustration-content&quot;&gt;Illustration Content&lt;/h1&gt;
 
-&lt;p&gt;Source code:&lt;/p&gt;
-&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[Google](https://www.google.com &quot;Google&apos;s Homepage&quot;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h2 id=&quot;image&quot;&gt;Image&lt;/h2&gt;
 
-&lt;p&gt;You can use shortcuts for your links to use that several times on the article or to centralize links:&lt;/p&gt;
+&lt;p&gt;TODO&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www.google.com&quot;&gt;Google1&lt;/a&gt; &lt;a href=&quot;https://www.google.com&quot;&gt;Google2&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;video&quot;&gt;Video&lt;/h2&gt;
 
-&lt;p&gt;Source code:&lt;/p&gt;
-&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[Google1][1] [Google2][1]
+&lt;p&gt;TODO&lt;/p&gt;
 
-[1]: https://www.google.com
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h2 id=&quot;presentation&quot;&gt;Presentation&lt;/h2&gt;
 
-&lt;h2 id=&quot;notes&quot;&gt;Notes&lt;/h2&gt;
+&lt;p&gt;TODO&lt;/p&gt;
 
-&lt;h3 id=&quot;info&quot;&gt;Info&lt;/h3&gt;
+&lt;h2 id=&quot;diagram&quot;&gt;Diagram&lt;/h2&gt;
 
-&lt;pre class=&quot;info&quot;&gt;
-INFO
-&lt;/pre&gt;
+&lt;p&gt;TODO&lt;/p&gt;
 
-&lt;p&gt;Source code:&lt;/p&gt;
-&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;pre class=&quot;info&quot;&amp;gt;
-INFO
-&amp;lt;/pre&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h1 id=&quot;informatics-code&quot;&gt;Informatics Code&lt;/h1&gt;
 
-&lt;h3 id=&quot;question&quot;&gt;Question&lt;/h3&gt;
+&lt;h2 id=&quot;programming-language&quot;&gt;Programming Language&lt;/h2&gt;
 
-&lt;pre class=&quot;question&quot;&gt;
-QUESTION
-&lt;/pre&gt;
-
-&lt;p&gt;Source code:&lt;/p&gt;
-&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;pre class=&quot;question&quot;&amp;gt;
-QUESTION
-&amp;lt;/pre&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;warning&quot;&gt;Warning&lt;/h3&gt;
-
-&lt;pre class=&quot;warning&quot;&gt;
-WARNING
-&lt;/pre&gt;
-
-&lt;p&gt;Source code:&lt;/p&gt;
-&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;pre class=&quot;warning&quot;&amp;gt;
-WARNING
-&amp;lt;/pre&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;error&quot;&gt;Error&lt;/h3&gt;
-
-&lt;pre class=&quot;error&quot;&gt;
-ERROR
-&lt;/pre&gt;
-
-&lt;p&gt;Source code:&lt;/p&gt;
-&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;pre class=&quot;error&quot;&amp;gt;
-ERROR
-&amp;lt;/pre&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;success&quot;&gt;Success&lt;/h3&gt;
-
-&lt;pre class=&quot;success&quot;&gt;
-SUCCESS
-&lt;/pre&gt;
-
-&lt;p&gt;Source code:&lt;/p&gt;
-&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;pre class=&quot;success&quot;&amp;gt;
-SUCCESS
-&amp;lt;/pre&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;comment&quot;&gt;Comment&lt;/h2&gt;
-
-&lt;p&gt;If you want to put a hidden text not displayed in the article but present in the written source, that is to say, a comment, simply do an HTML comment:&lt;/p&gt;
-
-&lt;p&gt;Source code:&lt;/p&gt;
-&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;!-- comments --&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;informatics-code&quot;&gt;Informatics code&lt;/h1&gt;
-
-&lt;h2 id=&quot;programming-language&quot;&gt;Programming language&lt;/h2&gt;
-
-&lt;p&gt;The used syntax highlighter is Rouge, see the &lt;a href=&quot;https://github.com/rouge-ruby/rouge/wiki/List-of-supported-languages-and-lexers&quot;&gt;list of supported languages and lexers&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;python&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;Python&lt;/span&gt;&lt;/h3&gt;
+&lt;p&gt;The used syntax highlighter is Rouge, see
+the &lt;a href=&quot;https://github.com/rouge-ruby/rouge/wiki/List-of-supported-languages-and-lexers&quot;&gt;list of supported languages and lexers&lt;/a&gt;,
+with python, java, scala, rust, c#, c++, c, bash, ruby, go, typescript,
+javascript, html, css etc.&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nf&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Hello world!&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Source code:&lt;/p&gt;
-
 &lt;pre&gt;
 ~~~ python
 print(&quot;Hello world!&quot;)
 ~~~
 &lt;/pre&gt;
 
-&lt;h3 id=&quot;java&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;Java&lt;/span&gt;&lt;/h3&gt;
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Hello World!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;quote&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;FALSE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;pre&gt;
+~~~ r
+print(&quot;Hello World!&quot;, quote = FALSE)
+~~~
+&lt;/pre&gt;
+
+&lt;div class=&quot;language-m highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;disp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;Hello World!&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;pre&gt;
+~~~ m
+disp(&apos;Hello World!&apos;)
+~~~
+&lt;/pre&gt;
 
 &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello world!&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -2497,7 +2886,15 @@ System.out.println(&quot;Hello world!&quot;);
 ~~~
 &lt;/pre&gt;
 
-&lt;h3 id=&quot;scala&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;Scala&lt;/span&gt;&lt;/h3&gt;
+&lt;div class=&quot;language-kotlin highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nf&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello world!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;pre&gt;
+~~~ kotlin 
+println(&quot;Hello world!&quot;)
+~~~
+&lt;/pre&gt;
 
 &lt;div class=&quot;language-scala highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nf&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello world!&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -2509,19 +2906,35 @@ println(&quot;Hello world!&quot;)
 ~~~
 &lt;/pre&gt;
 
-&lt;h3 id=&quot;c-net&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;C# .NET&lt;/span&gt;&lt;/h3&gt;
-
-&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;Console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;WriteLine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello world!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;Console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;WriteLine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello world!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Source code:&lt;/p&gt;
 &lt;pre&gt;
 ~~~ csharp 
-Console.WriteLine(&quot;Hello world!&quot;)
+Console.WriteLine(&quot;Hello world!&quot;);
 ~~~
 &lt;/pre&gt;
 
-&lt;h3 id=&quot;rust&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;Rust&lt;/span&gt;&lt;/h3&gt;
+&lt;div class=&quot;language-dart highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello World!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;pre&gt;
+~~~ dart
+print(&quot;Hello World!&quot;);
+~~~
+&lt;/pre&gt;
+
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nf&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello World!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;pre&gt;
+~~~ swift
+print(&quot;Hello World!&quot;)
+~~~
+&lt;/pre&gt;
 
 &lt;div class=&quot;language-rust highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nd&quot;&gt;println!&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello World!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -2533,8 +2946,6 @@ println!(&quot;Hello World!&quot;);
 ~~~
 &lt;/pre&gt;
 
-&lt;h3 id=&quot;c&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;C++&lt;/span&gt;&lt;/h3&gt;
-
 &lt;div class=&quot;language-c++ highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Hello World!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -2544,8 +2955,6 @@ println!(&quot;Hello World!&quot;);
 std::cout &amp;lt;&amp;lt; &quot;Hello World!&quot;;
 ~~~
 &lt;/pre&gt;
-
-&lt;h3 id=&quot;c-1&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;C&lt;/span&gt;&lt;/h3&gt;
 
 &lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello, World!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -2557,20 +2966,15 @@ printf(&quot;Hello, World!&quot;);
 ~~~
 &lt;/pre&gt;
 
-&lt;h3 id=&quot;bash&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;Bash&lt;/span&gt;&lt;/h3&gt;
-
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hello world!&quot;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Source code:&lt;/p&gt;
-
 &lt;pre&gt;
 ~~~ bash 
 echo &quot;Hello world!&quot;
 ~~~
 &lt;/pre&gt;
-
-&lt;h3 id=&quot;ruby&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;Ruby&lt;/span&gt;&lt;/h3&gt;
 
 &lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hello world!&quot;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -2581,8 +2985,6 @@ echo &quot;Hello world!&quot;
 puts &quot;Hello world!&quot;
 ~~~
 &lt;/pre&gt;
-
-&lt;h3 id=&quot;go&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;Go&lt;/span&gt;&lt;/h3&gt;
 
 &lt;div class=&quot;language-go highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;fmt&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 
@@ -2598,7 +3000,25 @@ fmt.Println(&quot;Hello world!&quot;)
 ~~~
 &lt;/pre&gt;
 
-&lt;h3 id=&quot;typescript&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;TypeScript&lt;/span&gt;&lt;/h3&gt;
+&lt;div class=&quot;language-php highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hello world!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;pre&gt;
+~~~ php
+print &quot;Hello world!&quot;;
+~~~
+&lt;/pre&gt;
+
+&lt;div class=&quot;language-perl highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Hello world!&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&quot;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;pre&gt;
+~~~ perl
+print &quot;Hello world!&quot;;
+~~~
+&lt;/pre&gt;
 
 &lt;div class=&quot;language-typescript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Hello world!&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -2610,8 +3030,6 @@ console.log(&quot;Hello world!&quot;);
 ~~~
 &lt;/pre&gt;
 
-&lt;h3 id=&quot;javascript&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;JavaScript&lt;/span&gt;&lt;/h3&gt;
-
 &lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Hello world!&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -2622,37 +3040,61 @@ console.log(&quot;Hello world!&quot;);
 ~~~
 &lt;/pre&gt;
 
-&lt;h3 id=&quot;html&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;HTML&lt;/span&gt;&lt;/h3&gt;
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;helloworld&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;pre&gt;
+~~~ sql
+CREATE TABLE helloworld;
+~~~
+&lt;/pre&gt;
 
 &lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Hello world!&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Source code:&lt;/p&gt;
-
 &lt;pre&gt;
 ~~~ html
 &amp;lt;p&amp;gt;Hello world&amp;lt;/p&amp;gt;
 ~~~
 &lt;/pre&gt;
 
-&lt;h3 id=&quot;css&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;CSS&lt;/span&gt;&lt;/h3&gt;
-
-&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;.hello-world&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;.hello&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.world&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;nl&quot;&gt;text-align&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;center&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Source code:&lt;/p&gt;
-
 &lt;pre&gt;
 ~~~ css
-.hello-world {
+.hello .world {
   text-align: center
 }
 ~~~
 &lt;/pre&gt;
 
+&lt;div class=&quot;language-sass highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;.hello&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nc&quot;&gt;.world&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;text-align&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;center&lt;/span&gt;
+  &lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+&lt;pre&gt;
+~~~ sass
+.hello {
+  .world {
+    text-align: center
+  }
+}
+~~~
+&lt;/pre&gt;
+
 &lt;h2 id=&quot;terminal&quot;&gt;Terminal&lt;/h2&gt;
+
+&lt;p&gt;Have a dark terminal container:&lt;/p&gt;
 
 &lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;command&lt;/span&gt;
 &lt;span class=&quot;go&quot;&gt;result
@@ -2667,9 +3109,9 @@ result
 ~~~
 &lt;/pre&gt;
 
-&lt;h2 id=&quot;text-file&quot;&gt;Text file&lt;/h2&gt;
+&lt;h2 id=&quot;text-file&quot;&gt;Text File&lt;/h2&gt;
 
-&lt;h3 id=&quot;plain-text&quot;&gt;Plain text&lt;/h3&gt;
+&lt;p&gt;Highlight your text file content: plain, json, yaml, xml, ini etc.&lt;/p&gt;
 
 &lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&quot;Hello World!&quot;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -2681,8 +3123,6 @@ result
 ~~~
 &lt;/pre&gt;
 
-&lt;h3 id=&quot;json&quot;&gt;JSON&lt;/h3&gt;
-
 &lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;message&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Hello World!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -2692,8 +3132,6 @@ result
 {&quot;message&quot;: &quot;Hello World!&quot;}
 ~~~
 &lt;/pre&gt;
-
-&lt;h3 id=&quot;yaml&quot;&gt;YAML&lt;/h3&gt;
 
 &lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
   &lt;span class=&quot;na&quot;&gt;world&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Hello&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;World!&quot;&lt;/span&gt;
@@ -2707,21 +3145,18 @@ hello:
 ~~~
 &lt;/pre&gt;
 
-&lt;h3 id=&quot;xml&quot;&gt;XML&lt;/h3&gt;
-
 &lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;message&amp;gt;&lt;/span&gt;Hello World!&lt;span class=&quot;nt&quot;&gt;&amp;lt;/message&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Source code:&lt;/p&gt;
+
 &lt;pre&gt;
 ~~~ xml
-&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;message&gt;Hello World!&lt;/message&gt;
+&amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&amp;gt;
+&amp;lt;message&amp;gt;Hello World!&amp;lt;/message&amp;gt;
 ~~~
 &lt;/pre&gt;
-
-&lt;h3 id=&quot;ini&quot;&gt;&lt;span class=&quot;notranslate&quot;&gt;INI&lt;/span&gt;&lt;/h3&gt;
 
 &lt;div class=&quot;language-ini highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nn&quot;&gt;[message]&lt;/span&gt;
 &lt;span class=&quot;py&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello World!&quot;&lt;/span&gt;
@@ -2735,31 +3170,36 @@ message=&quot;Hello World!&quot;
 ~~~
 &lt;/pre&gt;
 
-&lt;h1 id=&quot;mathematics-equation&quot;&gt;Mathematics equation&lt;/h1&gt;
+&lt;h1 id=&quot;mathematics-equation&quot;&gt;Mathematics Equation&lt;/h1&gt;
 
 &lt;p&gt;Use LateX syntax, see &lt;a href=&quot;https://www.latex-project.org&quot;&gt;latex-project.org&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;:warning: The dollar symbol $ becomes a meta symbol, so there is a conflict with the dollar symbol use the HTML code &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;&amp;amp;#36;&lt;/code&gt; to see the dollar symbol $.&lt;/p&gt;
+&lt;div class=&quot;warning&quot;&gt;
+  &lt;p&gt;The dollar symbol $ becomes a meta symbol, so there is a conflict
+  with the dollar symbol use the &lt;abbr title=&quot;Hyper Text Markup Language&quot;&gt;HTML&lt;/abbr&gt; code &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;&amp;amp;#36;&lt;/code&gt; to see the dollar symbol $.&lt;/p&gt;
+&lt;/div&gt;
 
-&lt;h2 id=&quot;in-line-equation&quot;&gt;In-line equation&lt;/h2&gt;
+&lt;h2 id=&quot;in-line-equation&quot;&gt;In-line Equation&lt;/h2&gt;
 
 &lt;p&gt;This equation $\int_0^1 x^2dx = \frac{1}{3}$ is in-line.&lt;/p&gt;
 
 &lt;p&gt;Source code:&lt;/p&gt;
+
 &lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;This equation $\int_0^1 x^2dx = \frac{1}{3}$ is in-line.
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;single-line-equation&quot;&gt;Single-line equation&lt;/h2&gt;
+&lt;h2 id=&quot;single-line-equation&quot;&gt;Single-line Equation&lt;/h2&gt;
 
 &lt;p&gt;This equation is single-line and centered:&lt;/p&gt;
 
 \[\int_0^1 x^2dx = \frac{1}{3}\]
 
 &lt;p&gt;Source code:&lt;/p&gt;
+
 &lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$$\int_0^1 x^2dx = \frac{1}{3}$$
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;multi-line-equation&quot;&gt;Multi-line equation&lt;/h2&gt;
+&lt;h2 id=&quot;multi-lines-equation&quot;&gt;Multi-lines Equation&lt;/h2&gt;
 
 &lt;p&gt;This equation is multi-line and centered:&lt;/p&gt;
 
@@ -2769,6 +3209,7 @@ message=&quot;Hello World!&quot;
 }\]
 
 &lt;p&gt;Source code:&lt;/p&gt;
+
 &lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$$
 \displaylines{
 \int_0^1 x\,dx = \frac{1}{2} \\
@@ -2777,6 +3218,80 @@ message=&quot;Hello World!&quot;
 $$
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
+&lt;h1 id=&quot;special-content&quot;&gt;Special Content&lt;/h1&gt;
+
+&lt;h2 id=&quot;html&quot;&gt;&lt;abbr title=&quot;Hyper Text Markup Language&quot;&gt;HTML&lt;/abbr&gt;&lt;/h2&gt;
+
+&lt;p&gt;TODO&lt;/p&gt;
+
+&lt;h2 id=&quot;comment&quot;&gt;Comment&lt;/h2&gt;
+
+&lt;p&gt;If you want to put a hidden text not displayed in the article but present in the
+written source, that is to say, a comment, simply do an &lt;abbr title=&quot;Hyper Text Markup Language&quot;&gt;HTML&lt;/abbr&gt; comment:&lt;/p&gt;
+
+&lt;p&gt;Source code:&lt;/p&gt;
+
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;!-- comments --&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;escape&quot;&gt;Escape&lt;/h2&gt;
+
+&lt;div class=&quot;info&quot;&gt;
+  &lt;p&gt;All described multi-lines escapes can work to escape inline and single line characters.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Character by Character&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Use a backslash &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;\&lt;/code&gt;, see the &lt;a href=&quot;https://kramdown.gettalong.org/syntax.html#automatic-and-manual-escaping&quot;&gt;list of all the characters that can be escaped&lt;/a&gt;, or &lt;abbr title=&quot;Hyper Text Markup Language&quot;&gt;HTML&lt;/abbr&gt; entities like &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;&amp;amp;lt;&lt;/code&gt; or &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;&amp;amp;gt;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Inline and Single Line Characters&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Instead of using multiple backslashes, use for multiple characters inline and composing a single line, these syntaxes:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;`inline or single line`&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;But you cannot display &lt;code&gt;`&lt;/code&gt; inside a section delimited by &lt;code&gt;`&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Multi-lines Characters&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;&amp;lt;code&amp;gt;inline or single line&amp;lt;/code&amp;gt;&lt;code&gt;&lt;/code&gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you have to display reserved characters such as &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;&amp;lt;&lt;/code&gt;, and &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;&amp;gt;&lt;/code&gt; within the &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;&amp;lt;code&amp;gt;&lt;/code&gt; section, the characters must be escaped using their respective &lt;abbr title=&quot;Hyper Text Markup Language&quot;&gt;HTML&lt;/abbr&gt; entity:
+&lt;code class=&quot;language-text highlighter-rouge&quot;&gt;&amp;lt;: &amp;amp;lt;&lt;/code&gt;, and &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;&amp;gt;: &amp;amp;gt;&lt;/code&gt;. But you cannot escape &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;&amp;amp;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;&amp;lt;pre&amp;gt;multi-lines&amp;lt;/pre&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you have to display reserved characters such as &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;&amp;lt;&lt;/code&gt;,&lt;code class=&quot;language-text highlighter-rouge&quot;&gt;&amp;gt;&lt;/code&gt;, &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;&amp;amp;&lt;/code&gt;, and &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;&quot;&lt;/code&gt; within the &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;&amp;lt;pre&amp;gt;&lt;/code&gt; section, the characters must be escaped using their respective &lt;abbr title=&quot;Hyper Text Markup Language&quot;&gt;HTML&lt;/abbr&gt; entity:
+&lt;code class=&quot;language-text highlighter-rouge&quot;&gt;&amp;lt;: &amp;amp;lt;&lt;/code&gt;, &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;&amp;gt;: &amp;amp;gt;&lt;/code&gt;, &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;&amp;amp;: &amp;amp;amp;&lt;/code&gt;, and &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;&quot;: &amp;amp;quot;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;~~~ multi-lines ~~~&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;But you cannot to display reserved sequence of characters &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;~~~&lt;/code&gt; within a section delimited by &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;~~~&lt;/code&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;``` multi-lines ```&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;But you cannot to display reserved sequence of characters &lt;code&gt;```&lt;/code&gt; within a section delimited by &lt;code&gt;```&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;others&quot;&gt;Others&lt;/h2&gt;
+
+&lt;p&gt;TODO&lt;/p&gt;
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;And that’s the footnote. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
 </content><author>
        <name>glegoux</name>
        <uri></uri>

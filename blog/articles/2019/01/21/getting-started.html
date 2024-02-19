@@ -282,6 +282,12 @@ window.MathJax = {
     
     <li title="Tag of this article">Markdown</li>
     
+    <li title="Tag of this article">Liquid Template</li>
+    
+    <li title="Tag of this article">Kramdown Converter</li>
+    
+    <li title="Tag of this article">Jekyll</li>
+    
   </ul>
 </span>
 
@@ -438,72 +444,287 @@ window.MathJax = {
     <div id="table-of-contents-container" style="display: none;"></div>
 
     <div class="markdown-body text-justify-with-hyphens">
-      <p>Discover the <strong>extended Markdown syntax</strong> used on this blog, generated from the template <a href="https://github.com/glegoux/jekyll-tech-blog">🧪 Jekyll Tech blog</a>, to write articles or to generate static pages. 
-This syntax is based on <a href="https://kramdown.gettalong.org/syntax.html">Kramdown</a> with a light and custom extension. Besides, this article is written with this syntax, click on the button: <b><i class="far fa-file-code"></i>Source</b> to explore its <strong>source code</strong>. Each following section gives an overview and examples for each usage.</p>
+      <p>Discover the <strong>extended Markdown syntax</strong> used on this tech blog, generated from the template <a href="https://github.com/glegoux/jekyll-tech-blog">🧪 Jekyll Tech blog</a>, to write articles or to generate static web pages. It is based on <a href="https://kramdown.gettalong.org/syntax.html">Kramdown syntax</a> with <a href="https://kramdown.gettalong.org/parser/gfm.html">GFM parser</a> and a light
+custom extension for rendering. Besides, this article is written with this syntax. At the top of the web page, click on
+<b><i class="far fa-file-code"></i> Source</b> to explore its source code and on <b><i class="fas fa-list-ul"></i> Table of contents</b> to browse
+the supported features. So, you can mix this syntax with <strong>existing macro</strong> and <strong>native <abbr title="Hyper Text Markup Language">HTML</abbr> syntaxes</strong> to write any content. As this blog is <strong>highly configurable</strong>, you can <strong>build</strong> your <strong>custom macros</strong>. Each article
+also has <strong>metadata</strong> to inject constants of configurations.</p>
 
-<p>But before, what is precisely the Markdown? <a href="https://daringfireball.net/projects/markdown/">Markdown</a> is a lightweight and popular text metalanguage that is a writing standard
-with the extension <code class="language-text highlighter-rouge">.md</code> or <code class="language-text highlighter-rouge">.markdown</code>. It is often converted into HTML, allowing it to be easily shared on the web <img class="emoji" title=":spider_web:" alt=":spider_web:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f578.png" height="20" width="20">. After converting to HTML, it 
-is decorated and animated by CSS style sheets and/or JS scripts. See more details on this <a href="https://www.markdownguide.org">Markdown Guide</a>.</p>
-
-<figure>
+<details open="true">
+  <summary title="Click to expand and collapse the content"><b>Summary of supported features by the extended Markdown syntax</b></summary>
+  <p>
+    Read the documentation of the <a href="https://kramdown.gettalong.org/syntax.html">Kramdown syntax</a>.
+    All contents, even if unavailable with the extended Markdown syntax, can be shown thanks to embedded native content: <abbr title="Hyper Text Markup Language">HTML</abbr>, JS, CSS, or macros: <code class="language-text highlighter-rouge">includes</code> and <code class="language-text highlighter-rouge">tags</code> of the <a href="https://shopify.github.io/liquid">Liquid template</a>.
+  </p>
   <div>
-    <img class="img-fluid lazyload" data-src="https://docs.google.com/drawings/d/e/2PACX-1vRPwfUjnj6bT9B-M4jdzQqOICzCwblxYR5xvgiXYWrpcgpmFddbWR-ErodWf-U0rE8f0aqzUfazXvf8/pub?w=960&amp;h=267" alt="Markdown processor" title="Markdown processor">
+      <table class="text-center">
+        <thead>
+          <tr>
+            <th>Feature name</th>
+            <th>Comment</th>
+            <th>Extended Markdown syntax</th>
+            <th>Existing Macro syntax</th>
+            <th>Native HTML syntax</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="background-color: lightgrey">
+            <td colspan="5"><b><a href="#structure">Structure</a></b></td>
+          </tr>  
+          <tr>
+            <td><a href="#heading">Heading</a></td>
+            <td>Organize your content with part, subpart, sub-subpart, etc.</td>
+            <td>✅</td>
+            <td>❌</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td><a href="#new-line--paragraph">New line &amp; Paragraph</a></td>
+            <td>Organize the content in a part</td>
+            <td>✅</td>
+            <td>❌</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td><a href="#horizontal-rule">Horizontal Rule</a></td>
+            <td>Break between paragraph-level elements</td>
+            <td>✅</td>
+            <td>❌</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td><a href="#note">Note</a></td>
+            <td>Soon refactored! Add your notes: info, question, warning, error, success, etc.</td>
+            <td>❌</td>
+            <td>❌</td>
+            <td>✅</td>
+          </tr>
+          <tr style="background-color: lightgrey">
+            <td colspan="5"><b><a href="#textual-content">Textual Content</a></b></td>
+          </tr> 
+          <tr>
+            <td><a href="#enchanced-text">Enchanced Text</a></td>
+            <td>Enhance your text: italics, bold, strikethrough, inline code, highlight, superscript, subscript, etc.</td>
+            <td>✅</td>
+            <td>❌</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td><a href="#link">Link</a></td>
+            <td>Use absolute and relative links named or not and re-usable</td>
+            <td>✅</td>
+            <td>❌</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td><a href="#emoticon">Emoticon</a></td>
+            <td>Use emoticons with shortcode or unicode</td>
+            <td>✅</td>
+            <td>❌</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td><a href="#list">List</a></td>
+            <td>Build an ordered, unordered, definition or task lists and sublists</td>
+            <td>✅</td>
+            <td>❌</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td><a href="#table">Table</a></td>
+            <td>Arrange the content in rows and columns with an optional header.</td>
+            <td>✅</td>
+            <td>❌</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td><a href="#blockquote">Blockquote</a></td>
+            <td>Format a special sentence of paragraph to draw attention to the reader</td>
+            <td>✅</td>
+            <td>❌</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td><a href="#quote">Quote</a></td>
+            <td>Soon refactored! Quote your authors</td>
+            <td>✅</td>
+            <td>❌</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td><a href="#footnote">Footnote</a></td>
+            <td>Put extra information at the bottom of the article referencing inside content</td>
+            <td>✅</td>
+            <td>❌</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td><a href="#abbreviation">Abbreviation</a></td>
+            <td>Shorten used word or concept by keeping the accessible meaning</td>
+            <td>✅</td>
+            <td>❌</td>
+            <td>✅</td>
+          </tr>
+          <tr style="background-color: lightgrey">
+            <td colspan="5"><b><a href="#illustration-content">Illustration Content</a></b></td>
+          </tr>
+          <tr>
+            <td><a href="#image">Image</a></td>
+            <td>Soon documented!</td>
+            <td>✅</td>
+            <td>✅</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td><a href="#video">Video</a></td>
+            <td>Soon documented!</td>
+            <td>❌</td>
+            <td>✅</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td><a href="#presentation">Presentation</a></td>
+            <td>Soon documented!</td>
+            <td>❌</td>
+            <td>✅</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td><a href="#diagram">Diagram</a></td>
+            <td>Soon documented!</td>
+            <td>❌</td>
+            <td>✅</td>
+            <td>✅</td>
+          </tr>
+          <tr style="background-color: lightgrey">
+            <td colspan="5"><b><a href="#informatics-code">Informatics Code</a></b></td>
+          </tr> 
+          <tr>
+            <td><a href="#programming-language">Programming Language</a></td>
+            <td>Highlight code: python, java, scala, rust, c#, c++, c, bash, ruby, go, typescript, javascript, html, css ...</td>
+            <td>✅</td>
+            <td>❌</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td><a href="#terminal">Terminal</a></td>
+            <td>Highlight content in a terminal</td>
+            <td>✅</td>
+            <td>❌</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td><a href="#text-file">Text File</a></td>
+            <td>Highlight text content: plain, json, yaml, xml, ini ...</td>
+            <td>✅</td>
+            <td>❌</td>
+            <td>✅</td>
+          </tr>
+          <tr style="background-color: lightgrey">
+            <td colspan="5"><b><a href="#mathematics-equation">Mathematics Equation</a></b></td>
+          </tr> 
+          <tr>
+            <td><a href="#in-line-equation">In-Line Equation</a></td>
+            <td>Use LateX syntax for in-line equation</td>
+            <td>✅</td>
+            <td>❌</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td><a href="#single-line-equation">Single-Line Equation</a></td>
+            <td>Use LateX syntax for single-line equation</td>
+            <td>✅</td>
+            <td>❌</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td><a href="#multi-lines-equation">Multi-lines Equation</a></td>
+            <td>Use LateX syntax for multi-lines equation</td>
+            <td>✅</td>
+            <td>❌</td>
+            <td>✅</td>
+          </tr>
+          <tr style="background-color: lightgrey">
+            <td colspan="5"><b><a href="#special-content">Special Content</a></b></td>
+          </tr>
+          <tr>
+            <td><a href="#html">HTML</a></td>
+            <td>Put native HTML when the Markdown syntax is not available, it can contain Markdown in its markups</td>
+            <td>❌</td>
+            <td>❌</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td><a href="#comment">Comment</a></td>
+            <td>Comment content</td>
+            <td>❌</td>
+            <td>❌</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td><a href="#escape">Escape</a></td>
+            <td>Escape meta or special characters</td>
+            <td>✅</td>
+            <td>❌</td>
+            <td>✅</td>
+          </tr>  
+          <tr>
+            <td><a href="#others">Others</a></td>
+            <td>Create your macros, extend the project or the tools everything is open-source</td>
+            <td>❌</td>
+            <td>❌</td>
+            <td>✅</td>
+          </tr>
+        </tbody>
+      </table>
   </div>
-  <figcaption>Markdown processor</figcaption>
-</figure>
+</details>
+
+<p>What is the
+<a href="https://daringfireball.net/projects/markdown/">Markdown syntax</a>?
+It is a lightweight and popular text metalanguage that is a writing standard. It is often converted into <abbr title="Hyper Text Markup Language">HTML</abbr>,
+allowing it to be easily shared on the web <img class="emoji" title=":spider_web:" alt=":spider_web:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f578.png" height="20" width="20">. After converting to
+<abbr title="Hyper Text Markup Language">HTML</abbr>, it is decorated and animated by CSS style sheets and/or JS scripts. See
+more details on this <a href="https://www.markdownguide.org">Markdown Guide</a>.</p>
 
 <p>Why use Markdown? Because it is very handy to use for the reader and the writer:</p>
 
 <ul>
   <li>
-<strong>Reader</strong>: The generated HTML content from the Markdown content is compatible with all web browsers that can render it for the final reader.</li>
+<strong>Reader</strong>: The generated <abbr title="Hyper Text Markup Language">HTML</abbr> content from the Markdown content is compatible
+with all web browsers that can render it for the final reader.</li>
   <li>
-<strong>Writer</strong>: The Markdown content continues to be separated from the rendering. In addition, it is easy to learn and use syntax, with the pros of portability and compatibility, flexibility and customizability, and readability and maintainability. Modify its article so the content is more human-writable/readable and shorter than the HTML code, less expressive, but sufficient for a blog post.</li>
+<strong>Writer</strong>: The Markdown content continues to be separated from the rendering.
+In addition, it is easy to learn and use syntax, with the pros of portability
+and compatibility, flexibility and customizable, and readability and
+maintainability. Modify its article so the content is more
+human-writable/readable and shorter than the <abbr title="Hyper Text Markup Language">HTML</abbr> code, less expressive, but
+sufficient for a blog post.</li>
 </ul>
 
-<p>See how to create your content with the right syntax through examples in the following sections.</p>
+<p>Why use an extended Markdown syntax? Markdown has a basic syntax, that is limited
+for more advanced use cases (like tables, code blocks, syntax highlighting, footnotes and so one…). This extension
+is <strong>Markdown compatible</strong>, so all articles written in Markdown can be used directly in this blog without breaking
+changes, and <strong>largely used</strong> by an <strong>active community</strong>.</p>
 
-<h1 id="text">Text</h1>
+<p>How it works? The files having the Markdown extension <code class="language-text highlighter-rouge">.md</code> or <code class="language-text highlighter-rouge">.markdown</code> are processed to <abbr title="Hyper Text Markup Language">HTML</abbr> with this <a href="https://jekyllrb.com/tutorials/orderofinterpretation/">processing workflow</a>:</p>
 
-<h2 id="highlight">Highlight</h2>
+<figure>
+  <div>
+    <img class="img-fluid lazyload" data-src="https://docs.google.com/drawings/d/e/2PACX-1vRPwfUjnj6bT9B-M4jdzQqOICzCwblxYR5xvgiXYWrpcgpmFddbWR-ErodWf-U0rE8f0aqzUfazXvf8/pub?w=960&amp;h=267" alt="Extended Markdown to HTML" title="Extended Markdown to HTML">
+  </div>
+  <figcaption>Extended Markdown to HTML</figcaption>
+</figure>
 
-<p>Enhance your text:</p>
+<p>The following sections give examples for each usage to create your content with the right syntax.</p>
 
-<p>Italics: <em>italics</em> or <em>italics</em><br>
-Bold:	<strong>bold</strong> or <strong>bold</strong><br>
-Strikethrough: <del>Strikethrough</del><br>
-Bold &amp; Italics: <strong><em>bold italics</em></strong> or <strong><em>bold italics</em></strong><br>
-Inline code: <code class="language-text highlighter-rouge">code</code></p>
+<h1 id="structure">Structure</h1>
 
-<p>Source code:</p>
+<h2 id="heading">Heading</h2>
 
-<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Italics: *italics* or _italics_  
-Bold:	**bold** or __bold__ 
-Strikethrough: ~~Strikethrough~~
-Bold &amp; Italics: **_bold italics_** or __*bold italics*__
-Inline code: `code`
-</code></pre></div></div>
+<p>Make a part, a subpart, and a sub-subpart.</p>
 
-<h2 id="new-line--paragraph">New line &amp; paragraph</h2>
-
-<p>Let 2 trailing spaces have an end of the line, and let an empty line for a new paragraph:</p>
-
-<p>Hello,</p>
-
-<p>World!</p>
-
-<p>Source code:</p>
-
-<pre><code class="language-whitespace">Hello,␣␣\n
-\n
-World!\n
-</code></pre>
-
-<p><em>Note: <code class="language-text highlighter-rouge">\n</code> and <code class="language-text highlighter-rouge">␣</code> represent respectively a new line character and a space character.</em></p>
-
-<h2 id="headings">Headings</h2>
-
-<p>Make a part, a subpart, and a sub-subpart:</p>
+<p>It is used for each section here.</p>
 
 <p>Source code:</p>
 
@@ -519,9 +740,197 @@ H2
 ------
 </code></pre></div></div>
 
+<h2 id="new-line--paragraph">New line &amp; Paragraph</h2>
+
+<p>Let 2 trailing spaces have an end of the line, and let an empty line for a new
+paragraph:</p>
+
+<p>Hello,</p>
+
+<p>World!</p>
+
+<p>Source code:</p>
+
+<pre><code class="language-whitespace">Hello,␣␣\n
+\n
+World!\n
+</code></pre>
+
+<p><em>Note: <code class="language-text highlighter-rouge">\n</code> and <code class="language-text highlighter-rouge">␣</code> represent respectively a new line character and a space
+character.</em></p>
+
+<h2 id="horizontal-rule">Horizontal rule</h2>
+
+<p>To create a horizontal rule, use three or more asterisks <code class="language-text highlighter-rouge">***</code>, dashes <code class="language-text highlighter-rouge">---</code>, or underscores <code class="language-text highlighter-rouge">___</code> on a line by themselves:</p>
+
+<hr>
+
+<p>Source code:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+</code></pre></div></div>
+
+<h2 id="note">Note</h2>
+
+<p>Add your notes: info, question, warning, error, and success etc.</p>
+
+<div class="info">
+INFO
+</div>
+
+<p>Source code:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div class="info"&gt;
+INFO
+&lt;/div&gt;
+</code></pre></div></div>
+
+<div class="question">
+QUESTION
+</div>
+
+<p>Source code:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div class="question"&gt;
+QUESTION
+&lt;/div&gt;
+</code></pre></div></div>
+
+<div class="warning">
+WARNING
+</div>
+
+<p>Source code:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div class="warning"&gt;
+WARNING
+&lt;/div&gt;
+</code></pre></div></div>
+
+<div class="error">
+ERROR
+</div>
+
+<p>Source code:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div class="error"&gt;
+ERROR
+&lt;/div&gt;
+</code></pre></div></div>
+
+<div class="success">
+SUCCESS
+</div>
+
+<p>Source code:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div class="success"&gt;
+SUCCESS
+&lt;/div&gt;
+</code></pre></div></div>
+
+<h1 id="textual-content">Textual Content</h1>
+
+<h2 id="enchanced-text">Enchanced Text</h2>
+
+<p>Enhance your text:</p>
+
+<ul>
+  <li>Italics: <em>italics</em> or <em>italics</em>
+</li>
+  <li>Bold:    <strong>bold</strong> or <strong>bold</strong>
+</li>
+  <li>Strikethrough: <del>strikethrough</del>
+</li>
+  <li>Bold &amp; Italics: <strong><em>bold italics</em></strong> or <strong><em>bold italics</em></strong>
+</li>
+  <li>Inline code: <code class="language-text highlighter-rouge">code</code>
+</li>
+  <li>Highlight: <mark>highlight</mark>
+</li>
+  <li>Supscript: sup<sup>sup</sup>
+</li>
+  <li>Subscript: sub<sub>sub</sub>
+</li>
+</ul>
+
+<p>Source code:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- Italics: *italics* or _italics_  
+- Bold:	**bold** or __bold__ 
+- Strikethrough: ~~strikethrough~~
+- Bold &amp; Italics: **_bold italics_** or __*bold italics*__
+- Inline code: `code`
+- Highlight: &lt;mark&gt;highlight&lt;/mark&gt;
+- Supscript: sup&lt;sup&gt;sup&lt;/sup&gt;
+- Subscript: sub&lt;sub&gt;sub&lt;/sub&gt;
+</code></pre></div></div>
+
+<h2 id="link">Link</h2>
+
+<p>It works with absolute and relative links:</p>
+
+<p><strong>Simple Link</strong></p>
+
+<p><a href="https://www.glegoux.com">https://www.glegoux.com</a></p>
+
+<p>Source code:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;https://www.glegoux.com&gt;
+</code></pre></div></div>
+
+<p><strong>Named Link</strong></p>
+
+<p><a href="https://www.glegoux.com">glegoux</a></p>
+
+<p>Source code:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[glegoux](https://www.glegoux.com)
+</code></pre></div></div>
+
+<p>with a title:</p>
+
+<p><a href="https://www.glegoux.com" title="glegoux's Homepage">glegoux1</a> (with the
+  title <code class="language-text highlighter-rouge">glegoux's Homepage</code>)</p>
+
+<p>Source code:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[glegoux](https://www.glegoux.com "glegoux's Homepage")
+</code></pre></div></div>
+
+<p><strong>Reference-style Link</strong></p>
+
+<p>You can use shortcuts for your links to use that several times on the article or to centralize links:</p>
+
+<p><a href="https://www.glegoux.com" title="glegoux's Homepage">glegoux1</a> <a href="https://www.glegoux.com" title="glegoux's Homepage">glegoux2</a></p>
+
+<p>Source code:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[glegoux1][1] [glegoux2][1]
+
+[1]: https://www.glegoux.com "glegoux's Homepage"
+</code></pre></div></div>
+
+<h2 id="emoticon">Emoticon</h2>
+
+<p>Use emoji, with <a href="https://github.com/github/gemoji">gemoji</a>
+see <a href="https://www.webfx.com/tools/emoji-cheat-sheet/">emoji cheat sheet</a>.</p>
+
+<p>For example: with shortcode <img class="emoji" title=":smile:" alt=":smile:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png" height="20" width="20"> <img class="emoji" title=":scream:" alt=":scream:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f631.png" height="20" width="20"> <img class="emoji" title=":yum:" alt=":yum:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f60b.png" height="20" width="20"> or unicode directly 😀 😱 😋.</p>
+
+<p>Source code for emoji with shortcode:</p>
+
+<pre><code class="language-@escape">:smile: :scream: :yum:
+</code></pre>
+
+<p>Source code for emoji with unicode:</p>
+
+<pre><code class="language-@escape">😀 😱 😋
+</code></pre>
+
 <h2 id="list">List</h2>
 
-<p>Build an ordered list:</p>
+<p><strong>Ordered List</strong></p>
 
 <ol>
   <li>item</li>
@@ -536,11 +945,25 @@ H2
 3. item
 </code></pre></div></div>
 
-<p>Build an unordered list:</p>
+<div class="info">
+  <p>Use <code class="language-text highlighter-rouge">+</code>, <code class="language-text highlighter-rouge">*</code> and <code class="language-text highlighter-rouge">-</code> indifferently.</p>
+</div>
+
+<p><strong>Unordered List</strong></p>
 
 <ul>
-  <li>item</li>
-  <li>item</li>
+  <li>item
+    <ul>
+      <li>subitem</li>
+      <li>…</li>
+    </ul>
+  </li>
+  <li>item
+    <ul>
+      <li>subitem</li>
+      <li>…</li>
+    </ul>
+  </li>
   <li>item</li>
 </ul>
 
@@ -551,7 +974,53 @@ H2
  * item
 </code></pre></div></div>
 
+<p><strong>Definition List</strong></p>
+
+<dl>
+  <dt>item</dt>
+  <dd>definition</dd>
+  <dt>item</dt>
+  <dd>definition</dd>
+</dl>
+
+<p>Source code:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>item
+: definition
+
+item
+: definition
+</code></pre></div></div>
+
+<p><strong>Task List</strong></p>
+
+<ul class="task-list">
+  <li class="task-list-item">
+<input type="checkbox" class="task-list-item-checkbox" disabled checked>item</li>
+  <li class="task-list-item">
+<input type="checkbox" class="task-list-item-checkbox" disabled checked>item</li>
+  <li class="task-list-item">
+<input type="checkbox" class="task-list-item-checkbox" disabled>item</li>
+</ul>
+
+<p>Source code:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- [x] item
+- [x] item
+- [ ] item
+</code></pre></div></div>
+
+<h2 id="table">Table</h2>
+
+<p>TODO</p>
+
+<h2 id="blockquote">Blockquote</h2>
+
+<p>TODO</p>
+
 <h2 id="quote">Quote</h2>
+
+<p>Quote authors:</p>
 
 <blockquote>
   <p>Talk is cheap. Show me the code.</p>
@@ -560,156 +1029,93 @@ H2
 <p>Linus Torvalds, creator of the Linux operating system</p>
 
 <p>Source code:</p>
+
 <pre><code class="language-@escape">&gt; Talk is cheap. Show me the code.
 
 Linus Torvalds, creator of the Linux operating system
 </code></pre>
 
-<h2 id="emoticon">Emoticon</h2>
+<h2 id="footnote">Footnote</h2>
 
-<p>Use emoji, with <a href="https://github.com/github/gemoji">gemoji</a> see <a href="https://www.webfx.com/tools/emoji-cheat-sheet/">emoji cheat sheet</a>.</p>
+<p>Footnotes work mostly like reference-style links. A footnote is made of two things: a marker in the text that will become a superscript number; 
+a footnote definition that will be placed in a list of footnotes at the end of the document. A footnote looks like this:</p>
 
-<p>For example: with shortcode <img class="emoji" title=":smile:" alt=":smile:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png" height="20" width="20"> <img class="emoji" title=":scream:" alt=":scream:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f631.png" height="20" width="20"> <img class="emoji" title=":yum:" alt=":yum:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f60b.png" height="20" width="20"> or unicode directly 😀 😱 😋.</p>
-
-<p>Source code for emoji with shortcode:</p>
-<pre><code class="language-@escape">:smile: :scream: :yum:
-</code></pre>
-
-<p>Source code for emoji with unicode:</p>
-<pre><code class="language-@escape">😀 😱 😋
-</code></pre>
-
-<h2 id="links">Links</h2>
-
-<p>It works with absolute and relative links:</p>
-
-<ul>
-  <li>A simple link:</li>
-</ul>
-
-<p><a href="https://www.google.com">https://www.google.com</a></p>
+<p>That’s some text with a footnote<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>.</p>
 
 <p>Source code:</p>
 
-<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;https://www.google.com&gt;
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>That's some text with a footnote.[^1]
+
+[^1]: And that's the footnote.
 </code></pre></div></div>
 
-<ul>
-  <li>A link with a name: <a href="https://www.google.com">Google</a>.</li>
-</ul>
+<h2 id="abbreviation">Abbreviation</h2>
+
+<p>The <abbr title="Hyper Text Markup Language">HTML</abbr> specification is maintained by the W3C.</p>
 
 <p>Source code:</p>
-<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Google](https://www.google.com)
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>The HTML specification is maintained by the W3C.
+
+*[HTML]: Hyper Text Markup Language
 </code></pre></div></div>
 
-<ul>
-  <li>A link with a name and a title: <a href="https://www.google.com" title="Google's Homepage">Google</a> with the title <code class="language-text highlighter-rouge">Google's Homepage</code>.</li>
-</ul>
+<h1 id="illustration-content">Illustration Content</h1>
 
-<p>Source code:</p>
-<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Google](https://www.google.com "Google's Homepage")
-</code></pre></div></div>
+<h2 id="image">Image</h2>
 
-<p>You can use shortcuts for your links to use that several times on the article or to centralize links:</p>
+<p>TODO</p>
 
-<p><a href="https://www.google.com">Google1</a> <a href="https://www.google.com">Google2</a></p>
+<h2 id="video">Video</h2>
 
-<p>Source code:</p>
-<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Google1][1] [Google2][1]
+<p>TODO</p>
 
-[1]: https://www.google.com
-</code></pre></div></div>
+<h2 id="presentation">Presentation</h2>
 
-<h2 id="notes">Notes</h2>
+<p>TODO</p>
 
-<h3 id="info">Info</h3>
+<h2 id="diagram">Diagram</h2>
 
-<pre class="info">
-INFO
-</pre>
+<p>TODO</p>
 
-<p>Source code:</p>
-<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;pre class="info"&gt;
-INFO
-&lt;/pre&gt;
-</code></pre></div></div>
+<h1 id="informatics-code">Informatics Code</h1>
 
-<h3 id="question">Question</h3>
+<h2 id="programming-language">Programming Language</h2>
 
-<pre class="question">
-QUESTION
-</pre>
-
-<p>Source code:</p>
-<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;pre class="question"&gt;
-QUESTION
-&lt;/pre&gt;
-</code></pre></div></div>
-
-<h3 id="warning">Warning</h3>
-
-<pre class="warning">
-WARNING
-</pre>
-
-<p>Source code:</p>
-<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;pre class="warning"&gt;
-WARNING
-&lt;/pre&gt;
-</code></pre></div></div>
-
-<h3 id="error">Error</h3>
-
-<pre class="error">
-ERROR
-</pre>
-
-<p>Source code:</p>
-<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;pre class="error"&gt;
-ERROR
-&lt;/pre&gt;
-</code></pre></div></div>
-
-<h3 id="success">Success</h3>
-
-<pre class="success">
-SUCCESS
-</pre>
-
-<p>Source code:</p>
-<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;pre class="success"&gt;
-SUCCESS
-&lt;/pre&gt;
-</code></pre></div></div>
-
-<h2 id="comment">Comment</h2>
-
-<p>If you want to put a hidden text not displayed in the article but present in the written source, that is to say, a comment, simply do an HTML comment:</p>
-
-<p>Source code:</p>
-<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;!-- comments --&gt;
-</code></pre></div></div>
-
-<h1 id="informatics-code">Informatics code</h1>
-
-<h2 id="programming-language">Programming language</h2>
-
-<p>The used syntax highlighter is Rouge, see the <a href="https://github.com/rouge-ruby/rouge/wiki/List-of-supported-languages-and-lexers">list of supported languages and lexers</a>.</p>
-
-<h3 id="python"><span class="notranslate">Python</span></h3>
+<p>The used syntax highlighter is Rouge, see
+the <a href="https://github.com/rouge-ruby/rouge/wiki/List-of-supported-languages-and-lexers">list of supported languages and lexers</a>,
+with python, java, scala, rust, c#, c++, c, bash, ruby, go, typescript,
+javascript, html, css etc.</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Hello world!</span><span class="sh">"</span><span class="p">)</span>
 </code></pre></div></div>
 
 <p>Source code:</p>
-
 <pre>
 ~~~ python
 print("Hello world!")
 ~~~
 </pre>
 
-<h3 id="java"><span class="notranslate">Java</span></h3>
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">print</span><span class="p">(</span><span class="s2">"Hello World!"</span><span class="p">,</span><span class="w"> </span><span class="n">quote</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Source code:</p>
+<pre>
+~~~ r
+print("Hello World!", quote = FALSE)
+~~~
+</pre>
+
+<div class="language-m highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">disp</span><span class="p">(</span><span class="s1">'Hello World!'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Source code:</p>
+<pre>
+~~~ m
+disp('Hello World!')
+~~~
+</pre>
 
 <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Hello world!"</span><span class="o">);</span>
 </code></pre></div></div>
@@ -721,7 +1127,15 @@ System.out.println("Hello world!");
 ~~~
 </pre>
 
-<h3 id="scala"><span class="notranslate">Scala</span></h3>
+<div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">println</span><span class="p">(</span><span class="s">"Hello world!"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Source code:</p>
+<pre>
+~~~ kotlin 
+println("Hello world!")
+~~~
+</pre>
 
 <div class="language-scala highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">println</span><span class="o">(</span><span class="s">"Hello world!"</span><span class="o">)</span>
 </code></pre></div></div>
@@ -733,19 +1147,35 @@ println("Hello world!")
 ~~~
 </pre>
 
-<h3 id="c-net"><span class="notranslate">C# .NET</span></h3>
-
-<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Console</span><span class="p">.</span><span class="nf">WriteLine</span><span class="p">(</span><span class="s">"Hello world!"</span><span class="p">)</span>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Console</span><span class="p">.</span><span class="nf">WriteLine</span><span class="p">(</span><span class="s">"Hello world!"</span><span class="p">);</span>
 </code></pre></div></div>
 
 <p>Source code:</p>
 <pre>
 ~~~ csharp 
-Console.WriteLine("Hello world!")
+Console.WriteLine("Hello world!");
 ~~~
 </pre>
 
-<h3 id="rust"><span class="notranslate">Rust</span></h3>
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">print</span><span class="p">(</span><span class="s">"Hello World!"</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Source code:</p>
+<pre>
+~~~ dart
+print("Hello World!");
+~~~
+</pre>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">print</span><span class="p">(</span><span class="s">"Hello World!"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Source code:</p>
+<pre>
+~~~ swift
+print("Hello World!")
+~~~
+</pre>
 
 <div class="language-rust highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">println!</span><span class="p">(</span><span class="s">"Hello World!"</span><span class="p">);</span>
 </code></pre></div></div>
@@ -757,8 +1187,6 @@ println!("Hello World!");
 ~~~
 </pre>
 
-<h3 id="c"><span class="notranslate">C++</span></h3>
-
 <div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Hello World!"</span><span class="p">;</span>
 </code></pre></div></div>
 
@@ -768,8 +1196,6 @@ println!("Hello World!");
 std::cout &lt;&lt; "Hello World!";
 ~~~
 </pre>
-
-<h3 id="c-1"><span class="notranslate">C</span></h3>
 
 <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">printf</span><span class="p">(</span><span class="s">"Hello, World!"</span><span class="p">);</span>
 </code></pre></div></div>
@@ -781,20 +1207,15 @@ printf("Hello, World!");
 ~~~
 </pre>
 
-<h3 id="bash"><span class="notranslate">Bash</span></h3>
-
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo</span> <span class="s2">"Hello world!"</span>
 </code></pre></div></div>
 
 <p>Source code:</p>
-
 <pre>
 ~~~ bash 
 echo "Hello world!"
 ~~~
 </pre>
-
-<h3 id="ruby"><span class="notranslate">Ruby</span></h3>
 
 <div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">puts</span> <span class="s2">"Hello world!"</span>
 </code></pre></div></div>
@@ -805,8 +1226,6 @@ echo "Hello world!"
 puts "Hello world!"
 ~~~
 </pre>
-
-<h3 id="go"><span class="notranslate">Go</span></h3>
 
 <div class="language-go highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span><span class="p">(</span><span class="s">"fmt"</span><span class="p">)</span>
 
@@ -822,7 +1241,25 @@ fmt.Println("Hello world!")
 ~~~
 </pre>
 
-<h3 id="typescript"><span class="notranslate">TypeScript</span></h3>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span> <span class="s2">"Hello world!"</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Source code:</p>
+<pre>
+~~~ php
+print "Hello world!";
+~~~
+</pre>
+
+<div class="language-perl highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span> <span class="p">"</span><span class="s2">Hello world!</span><span class="p">";</span>
+</code></pre></div></div>
+
+<p>Source code:</p>
+<pre>
+~~~ perl
+print "Hello world!";
+~~~
+</pre>
 
 <div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">Hello world!</span><span class="dl">"</span><span class="p">);</span>
 </code></pre></div></div>
@@ -834,8 +1271,6 @@ console.log("Hello world!");
 ~~~
 </pre>
 
-<h3 id="javascript"><span class="notranslate">JavaScript</span></h3>
-
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">Hello world!</span><span class="dl">"</span><span class="p">);</span>
 </code></pre></div></div>
 
@@ -846,37 +1281,61 @@ console.log("Hello world!");
 ~~~
 </pre>
 
-<h3 id="html"><span class="notranslate">HTML</span></h3>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">helloworld</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Source code:</p>
+<pre>
+~~~ sql
+CREATE TABLE helloworld;
+~~~
+</pre>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p&gt;</span>Hello world!<span class="nt">&lt;/p&gt;</span>
 </code></pre></div></div>
 
 <p>Source code:</p>
-
 <pre>
 ~~~ html
 &lt;p&gt;Hello world&lt;/p&gt;
 ~~~
 </pre>
 
-<h3 id="css"><span class="notranslate">CSS</span></h3>
-
-<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.hello-world</span> <span class="p">{</span>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.hello</span> <span class="nc">.world</span> <span class="p">{</span>
   <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span>
 <span class="p">}</span>
 </code></pre></div></div>
 
 <p>Source code:</p>
-
 <pre>
 ~~~ css
-.hello-world {
+.hello .world {
   text-align: center
 }
 ~~~
 </pre>
 
+<div class="language-sass highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.hello</span> <span class="err">{</span>
+  <span class="nc">.world</span> <span class="err">{</span>
+    <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span>
+  <span class="err">}</span>
+<span class="err">}</span>
+</code></pre></div></div>
+
+<p>Source code:</p>
+<pre>
+~~~ sass
+.hello {
+  .world {
+    text-align: center
+  }
+}
+~~~
+</pre>
+
 <h2 id="terminal">Terminal</h2>
+
+<p>Have a dark terminal container:</p>
 
 <div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span><span class="nb">command</span>
 <span class="go">result
@@ -891,9 +1350,9 @@ result
 ~~~
 </pre>
 
-<h2 id="text-file">Text file</h2>
+<h2 id="text-file">Text File</h2>
 
-<h3 id="plain-text">Plain text</h3>
+<p>Highlight your text file content: plain, json, yaml, xml, ini etc.</p>
 
 <div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"Hello World!"
 </code></pre></div></div>
@@ -905,8 +1364,6 @@ result
 ~~~
 </pre>
 
-<h3 id="json">JSON</h3>
-
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Hello World!"</span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
 
@@ -916,8 +1373,6 @@ result
 {"message": "Hello World!"}
 ~~~
 </pre>
-
-<h3 id="yaml">YAML</h3>
 
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">hello</span><span class="pi">:</span>
   <span class="na">world</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Hello</span><span class="nv"> </span><span class="s">World!"</span>
@@ -931,21 +1386,18 @@ hello:
 ~~~
 </pre>
 
-<h3 id="xml">XML</h3>
-
 <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
 <span class="nt">&lt;message&gt;</span>Hello World!<span class="nt">&lt;/message&gt;</span>
 </code></pre></div></div>
 
 <p>Source code:</p>
+
 <pre>
 ~~~ xml
-<?xml version="1.0" encoding="UTF-8"?>
-<message>Hello World!</message>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;message&gt;Hello World!&lt;/message&gt;
 ~~~
 </pre>
-
-<h3 id="ini"><span class="notranslate">INI</span></h3>
 
 <div class="language-ini highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">[message]</span>
 <span class="py">message</span><span class="p">=</span><span class="s">"Hello World!"</span>
@@ -959,31 +1411,36 @@ message="Hello World!"
 ~~~
 </pre>
 
-<h1 id="mathematics-equation">Mathematics equation</h1>
+<h1 id="mathematics-equation">Mathematics Equation</h1>
 
 <p>Use LateX syntax, see <a href="https://www.latex-project.org">latex-project.org</a>.</p>
 
-<p><img class="emoji" title=":warning:" alt=":warning:" src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png" height="20" width="20"> The dollar symbol $ becomes a meta symbol, so there is a conflict with the dollar symbol use the HTML code <code class="language-text highlighter-rouge">&amp;#36;</code> to see the dollar symbol $.</p>
+<div class="warning">
+  <p>The dollar symbol $ becomes a meta symbol, so there is a conflict
+  with the dollar symbol use the <abbr title="Hyper Text Markup Language">HTML</abbr> code <code class="language-text highlighter-rouge">&amp;#36;</code> to see the dollar symbol $.</p>
+</div>
 
-<h2 id="in-line-equation">In-line equation</h2>
+<h2 id="in-line-equation">In-line Equation</h2>
 
 <p>This equation $\int_0^1 x^2dx = \frac{1}{3}$ is in-line.</p>
 
 <p>Source code:</p>
+
 <div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This equation $\int_0^1 x^2dx = \frac{1}{3}$ is in-line.
 </code></pre></div></div>
 
-<h2 id="single-line-equation">Single-line equation</h2>
+<h2 id="single-line-equation">Single-line Equation</h2>
 
 <p>This equation is single-line and centered:</p>
 
 \[\int_0^1 x^2dx = \frac{1}{3}\]
 
 <p>Source code:</p>
+
 <div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$$\int_0^1 x^2dx = \frac{1}{3}$$
 </code></pre></div></div>
 
-<h2 id="multi-line-equation">Multi-line equation</h2>
+<h2 id="multi-lines-equation">Multi-lines Equation</h2>
 
 <p>This equation is multi-line and centered:</p>
 
@@ -993,6 +1450,7 @@ message="Hello World!"
 }\]
 
 <p>Source code:</p>
+
 <div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$$
 \displaylines{
 \int_0^1 x\,dx = \frac{1}{2} \\
@@ -1001,6 +1459,80 @@ message="Hello World!"
 $$
 </code></pre></div></div>
 
+<h1 id="special-content">Special Content</h1>
+
+<h2 id="html"><abbr title="Hyper Text Markup Language">HTML</abbr></h2>
+
+<p>TODO</p>
+
+<h2 id="comment">Comment</h2>
+
+<p>If you want to put a hidden text not displayed in the article but present in the
+written source, that is to say, a comment, simply do an <abbr title="Hyper Text Markup Language">HTML</abbr> comment:</p>
+
+<p>Source code:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;!-- comments --&gt;
+</code></pre></div></div>
+
+<h2 id="escape">Escape</h2>
+
+<div class="info">
+  <p>All described multi-lines escapes can work to escape inline and single line characters.</p>
+</div>
+
+<p><strong>Character by Character</strong></p>
+
+<p>Use a backslash <code class="language-text highlighter-rouge">\</code>, see the <a href="https://kramdown.gettalong.org/syntax.html#automatic-and-manual-escaping">list of all the characters that can be escaped</a>, or <abbr title="Hyper Text Markup Language">HTML</abbr> entities like <code class="language-text highlighter-rouge">&amp;lt;</code> or <code class="language-text highlighter-rouge">&amp;gt;</code>.</p>
+
+<p><strong>Inline and Single Line Characters</strong></p>
+
+<p>Instead of using multiple backslashes, use for multiple characters inline and composing a single line, these syntaxes:</p>
+
+<ul>
+  <li><code>`inline or single line`</code></li>
+</ul>
+
+<p>But you cannot display <code>`</code> inside a section delimited by <code>`</code>.</p>
+
+<p><strong>Multi-lines Characters</strong></p>
+
+<ul>
+  <li><code>&lt;code&gt;inline or single line&lt;/code&gt;<code></code></code></li>
+</ul>
+
+<p>If you have to display reserved characters such as <code class="language-text highlighter-rouge">&lt;</code>, and <code class="language-text highlighter-rouge">&gt;</code> within the <code class="language-text highlighter-rouge">&lt;code&gt;</code> section, the characters must be escaped using their respective <abbr title="Hyper Text Markup Language">HTML</abbr> entity:
+<code class="language-text highlighter-rouge">&lt;: &amp;lt;</code>, and <code class="language-text highlighter-rouge">&gt;: &amp;gt;</code>. But you cannot escape <code class="language-text highlighter-rouge">&amp;</code>.</p>
+
+<ul>
+  <li><code>&lt;pre&gt;multi-lines&lt;/pre&gt;</code></li>
+</ul>
+
+<p>If you have to display reserved characters such as <code class="language-text highlighter-rouge">&lt;</code>,<code class="language-text highlighter-rouge">&gt;</code>, <code class="language-text highlighter-rouge">&amp;</code>, and <code class="language-text highlighter-rouge">"</code> within the <code class="language-text highlighter-rouge">&lt;pre&gt;</code> section, the characters must be escaped using their respective <abbr title="Hyper Text Markup Language">HTML</abbr> entity:
+<code class="language-text highlighter-rouge">&lt;: &amp;lt;</code>, <code class="language-text highlighter-rouge">&gt;: &amp;gt;</code>, <code class="language-text highlighter-rouge">&amp;: &amp;amp;</code>, and <code class="language-text highlighter-rouge">": &amp;quot;</code>.</p>
+
+<ul>
+  <li><code>~~~ multi-lines ~~~</code></li>
+</ul>
+
+<p>But you cannot to display reserved sequence of characters <code class="language-text highlighter-rouge">~~~</code> within a section delimited by <code class="language-text highlighter-rouge">~~~</code>.</p>
+
+<ul>
+  <li><code>``` multi-lines ```</code></li>
+</ul>
+
+<p>But you cannot to display reserved sequence of characters <code>```</code> within a section delimited by <code>```</code>.</p>
+
+<h2 id="others">Others</h2>
+
+<p>TODO</p>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>And that’s the footnote. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+  </ol>
+</div>
 
     </div>
 
@@ -1023,6 +1555,12 @@ $$
             <ul>
               
               <li title="Tag of this article">Markdown</li>
+              
+              <li title="Tag of this article">Liquid Template</li>
+              
+              <li title="Tag of this article">Kramdown Converter</li>
+              
+              <li title="Tag of this article">Jekyll</li>
               
             </ul>
           </span>
@@ -1195,35 +1733,35 @@ $$
   <h5>Also read</h5>
   <div class="row">
 <div class="col-xs-12 col-md-6 col-lg-4">
-<a href="/blog/articles/2021/11/23/secret-santa.html" title="Read this article" style="display: block">
+<a href="/blog/articles/2019/02/14/how-to-quote-sources.html" title="Read this article" style="display: block">
   <div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2021-11-23-secret-santa.jpg" alt="2021-11-23-secret-santa">
+        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2019-02-14-how-to-quote-sources.jpg" alt="2019-02-14-how-to-quote-sources">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          Secret Santa
+          How to quote sources
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          What can be the applied mathematics behind a secret santa?
+          Current standards and rules to respect in order to quote sources.
         </div>
 <!-- Article categories -->
         <div class="article-category">
           <ul>
-            <li>Applied Mathematics</li>
+            <li>Methodology</li>
           </ul>
         </div>
 <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>November 23, 2021</span>
+          <span>February 14, 2019</span>
         </div>
 <!-- Article reading time -->
         <div class="reading-time">
@@ -1237,66 +1775,24 @@ $$
 </a>
 </div>
 <div class="col-xs-12 col-md-6 col-lg-4">
-<a href="/blog/articles/2021/04/20/time-management.html" title="Read this article" style="display: block">
+<a href="/blog/articles/2020/05/15/gnu-privacy-guard.html" title="Read this article" style="display: block">
   <div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2021-04-20-time-management.jpg" alt="2021-04-20-time-management">
+        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2020-05-15-gnu-privacy-guard.jpg" alt="2020-05-15-gnu-privacy-guard">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          Time management
+          GNU privacy guard
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          How to optimize your time &amp; work?
-        </div>
-<!-- Article categories -->
-        <div class="article-category">
-          <ul>
-            <li>Methodology</li>
-          </ul>
-        </div>
-<!-- Article publication date -->
-        <div class="date">
-          <i class="far fa-calendar-alt"></i>
-          <span>April 20, 2021</span>
-        </div>
-<!-- Article reading time -->
-        <div class="reading-time">
-          <i class="far fa-clock"></i>
-          <span>10 min</span>
-        </div>
-</div>
-
-    </div>
-  </div>
-</a>
-</div>
-<div class="col-xs-12 col-md-6 col-lg-4">
-<a href="/blog/articles/2019/03/01/access-to-a-computer-from-usb-key.html" title="Read this article" style="display: block">
-  <div class="article-card-container">
-    <!-- Article metadata -->
-    <div class="article-card">
-<!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2019-03-01-access-to-a-computer-from-usb-key.jpg" alt="2019-03-01-access-to-a-computer-from-usb-key">
-      </div>
-
-      <!-- Article details -->
-      <div class="article-details">
-        <!-- Article title -->
-        <div class="article-title">
-          Access to a computer from USB key
-        </div>
-
-        <!-- Article description -->
-        <div class="article-description">
-          Somebody with USB key can take control of your computer
+          How to prove its identity and encrypt its communication?
         </div>
 <!-- Article categories -->
         <div class="article-category">
@@ -1307,7 +1803,49 @@ $$
 <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>March 01, 2019</span>
+          <span>May 15, 2020</span>
+        </div>
+<!-- Article reading time -->
+        <div class="reading-time">
+          <i class="far fa-clock"></i>
+          <span>5 min</span>
+        </div>
+</div>
+
+    </div>
+  </div>
+</a>
+</div>
+<div class="col-xs-12 col-md-6 col-lg-4">
+<a href="/blog/articles/2019/07/14/trace-a-request-path.html" title="Read this article" style="display: block">
+  <div class="article-card-container">
+    <!-- Article metadata -->
+    <div class="article-card">
+<!-- Article cover --><div class="article-cover">
+        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2019-07-14-trace-a-request-path.jpg" alt="2019-07-14-trace-a-request-path">
+      </div>
+
+      <!-- Article details -->
+      <div class="article-details">
+        <!-- Article title -->
+        <div class="article-title">
+          Trace a request path
+        </div>
+
+        <!-- Article description -->
+        <div class="article-description">
+          How to know for which routers a HTTP request browses?
+        </div>
+<!-- Article categories -->
+        <div class="article-category">
+          <ul>
+            <li>Web</li>
+          </ul>
+        </div>
+<!-- Article publication date -->
+        <div class="date">
+          <i class="far fa-calendar-alt"></i>
+          <span>July 14, 2019</span>
         </div>
 <!-- Article reading time -->
         <div class="reading-time">
@@ -1457,6 +1995,8 @@ $$
           🧪 Jekyll Tech Blog
         </a> - ©Copyright 2024.
         <br>
+        <a class="link-strong" href="https://jekyll-tech-blog.netlify.app" title="Test the online template">Demo</a>
+        |
         <a class="link-strong" href="https://github.com/glegoux/jekyll-tech-blog" title="Explore the source code">Source code</a>
         |
         <a class="link-strong" href="https://github.com/glegoux/jekyll-tech-blog/wiki" title="Read the documentation">Documentation</a>
