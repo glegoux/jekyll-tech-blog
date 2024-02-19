@@ -50,5 +50,12 @@ NLP timeline with the Deep Learning  [[source](https://arxiv.org/pdf/2202.05924.
 
 Finally, by mixing other types of data (like images, audio, …), NLP models became  **multi-modal generative models** where varied instructions (in input) give varied results (in output).
 
-Read 👀 the rest of the article [here](https://medium.com/@glegoux/history-of-the-generative-ai-aa1aa7c63f3c) ...
+Read 👀 the rest of the article ...
 
+<div style="text-align: center;">
+  <a href="https://medium.com/@glegoux/history-of-the-generative-ai-aa1aa7c63f3c" title="Read more">
+    <button class="btn btn-dark">
+      <b class="black">Read more ↪️</b>
+    </button>
+  </a>
+</div>
