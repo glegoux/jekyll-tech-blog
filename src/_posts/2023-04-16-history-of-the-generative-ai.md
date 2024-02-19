@@ -1,6 +1,6 @@
 ---
 title: "History of the Generative AI"
-description: "The rise in power of the generative AI is a revolution based on Deep Learning, it transformed the tech world into a new one."
+description: "The rise in power of the generative AI is a revolution based on Deep Learning, transforming the tech world into a new one."
 authors: ["glegoux"]
 time_reading_minutes: 9
 category: "Machine Learning"
@@ -50,5 +50,5 @@ NLP timeline with the Deep Learning  [[source](https://arxiv.org/pdf/2202.05924.
 
 Finally, by mixing other types of data (like images, audio, …), NLP models became  **multi-modal generative models** where varied instructions (in input) give varied results (in output).
 
-See the rest of the article [here](https://medium.com/@glegoux/history-of-the-generative-ai-aa1aa7c63f3c).
+Read 👀 the rest of the article [here](https://medium.com/@glegoux/history-of-the-generative-ai-aa1aa7c63f3c) ...
 
