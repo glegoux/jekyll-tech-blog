@@ -778,16 +778,28 @@ body {
     content: url("/_core/static/img/language/java.png") " Java" ;
   }
 
+  .highlighter-rouge.language-kotlin:before {
+    content: url("/_core/static/img/language/kotlin.png") " Kotlin";
+  }
+
   .highlighter-rouge.language-scala:before {
     content: url("/_core/static/img/language/scala.png") " Scala";
   }
 
   .highlighter-rouge.language-csharp:before {
-    content: url("/_core/static/img/language/csharp.png") " C# .NET";
+    content: url("/_core/static/img/language/csharp.png") " C#";
+  }
+
+  .highlighter-rouge.language-swift::before {
+    content: url("/_core/static/img/language/swift.png") " Swift";
   }
 
   .highlighter-rouge.language-rust::before {
     content: url("/_core/static/img/language/rust.png") " Rust";
+  }
+
+  .highlighter-rouge.language-dart::before {
+    content: url("/_core/static/img/language/dart.png") " Dart";
   }
 
   .highlighter-rouge.language-c\+\+:before {
@@ -802,12 +814,28 @@ body {
     content: url("/_core/static/img/language/python.png") " Python";
   }
 
-  .highlighter-rouge.language-sql::before {
-    content: url("/_core/static/img/language/sql.png") " SQL";
+  .highlighter-rouge.language-r::before {
+    content: url("/_core/static/img/language/r.png") " R";
+  }
+
+  .highlighter-rouge.language-m::before {
+    content: url("/_core/static/img/language/matlab.png") " MATHLAB";
   }
 
   .highlighter-rouge.language-bash::before {
     content: url("/_core/static/img/language/bash.png") " Bash";
+  }
+
+  .highlighter-rouge.language-perl::before {
+    content: url("/_core/static/img/language/perl.png") " Perl";
+  }
+
+  .highlighter-rouge.language-php::before {
+    content: url("/_core/static/img/language/php.png") " PHP";
+  }
+
+  .highlighter-rouge.language-go::before {
+    content: url("/_core/static/img/language/go.png") " Go";
   }
 
   .highlighter-rouge.language-go::before {
@@ -826,12 +854,20 @@ body {
     content: url("/_core/static/img/language/javascript.png") " Javascript";
   }
 
+  .highlighter-rouge.language-sql::before {
+    content: url("/_core/static/img/language/sql.png") " SQL";
+  }
+
   .highlighter-rouge.language-html::before {
     content: url("/_core/static/img/language/html.png") " HTML";
   }
 
   .highlighter-rouge.language-css::before {
     content: url("/_core/static/img/language/css.png") " CSS";
+  }
+
+  .highlighter-rouge.language-sass::before {
+    content: url("/_core/static/img/language/sass.png") " Sass";
   }
 
   /* Format text file */

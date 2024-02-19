@@ -110,6 +110,7 @@ project_core:
   links:
     project: "https://github.com/glegoux/jekyll-tech-blog"
     cover: "https://github.com/glegoux/jekyll-tech-blog/raw/main/doc/img/jekyll-tech-blog-features.png"
+    demo: "https://jekyll-tech-blog.netlify.app"
     doc: "https://github.com/glegoux/jekyll-tech-blog/wiki"
     code: "https://github.com/glegoux/jekyll-tech-blog"
     bug: "https://github.com/glegoux/jekyll-tech-blog/issues"
