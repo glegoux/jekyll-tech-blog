@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux (glegoux)</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2024-02-18T22:46:12+00:00</updated>
+ <updated>2024-02-19T03:56:55+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -13,7 +13,58 @@
    <link href="https://glegoux.com/blog/articles/2023/04/16/history-of-the-generative-ai.html"/>
    <updated>2023-04-16T00:00:00+00:00</updated>
    <id>https://glegoux.com/blog/articles/2023/04/16/history-of-the-generative-ai.html</id>
-   <content type="html">&lt;p&gt;Generative AI is the state of the art of machine learning and has excelled recently with the apparition of AI ChatBots with high performance.&lt;/p&gt;
+   <content type="html">&lt;p&gt;&lt;strong&gt;Generative AI&lt;/strong&gt;  is the state of the art of machine learning and has excelled recently with the apparition of  &lt;strong&gt;AI ChatBots with high performance&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/v2/resize:fit:700/1*UenOkL0Tn-XuP-hOho9b3Q.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Generative AI for all types of content&lt;/p&gt;
+
+&lt;p&gt;Let’s discover its history, from simple textual machine learning models specialized to  &lt;strong&gt;universal&lt;/strong&gt;  &lt;strong&gt;large language models&lt;/strong&gt; at a vast scale:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;💬 AI ChatBots&lt;/li&gt;
+  &lt;li&gt;🔥 From NLP to Multimodal GAI ChatBots based on LLM&lt;/li&gt;
+  &lt;li&gt;🧪LLMs Timeline: Closed-source vs. Open-source&lt;/li&gt;
+  &lt;li&gt;🎯 From Specialized Model to Generalized ML Model&lt;/li&gt;
+  &lt;li&gt;📈 Scaling Laws &amp;amp; Performance&lt;/li&gt;
+  &lt;li&gt;🏁 Technologic and Economic Race&lt;/li&gt;
+  &lt;li&gt;🚀 Go Further with Limited &amp;amp; Augmented LLMs&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;-ai-chatbots&quot;&gt;💬 AI ChatBots&lt;/h1&gt;
+
+&lt;p&gt;Building generalist  &lt;strong&gt;AI chatbots&lt;/strong&gt;  is the most complex challenge for a technology that simulates human intelligence. It is the  &lt;strong&gt;base of the artificial human assistant&lt;/strong&gt;. They are experiencing dazzling success with the  &lt;strong&gt;release of ChatGPT&lt;/strong&gt;, a new step that has been overcome after Google Home and Alexa by AWS. The technical component behind these products has disrupted and improved the ecosystem considerably,  &lt;strong&gt;although not perfect yet&lt;/strong&gt;  (perhaps it will never be).&lt;/p&gt;
+
+&lt;p&gt;The interest in chatBots followed the one for deep learning from 2010. Before, it was reserved for a restrained audience. Still, it exploded in  &lt;strong&gt;November 2022&lt;/strong&gt;  with the release of  &lt;strong&gt;chatGPT&lt;/strong&gt;  open to the general public with a ramp-up of  &lt;strong&gt;100M Monthly Active Users (MAUs) after two months&lt;/strong&gt;, a  worldwide record (4.5x faster than TikTok) and  &lt;strong&gt;1.6B MAUs now&lt;/strong&gt;. At the same time, machine learning and deep learning trends have continued growing in the background for ten years.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/v2/resize:fit:961/1*imwYfo_SLbjeVzeZ420QhQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/v2/resize:fit:853/1*bdBhXytZGBsTrI3t-zxd4A.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Google Trends from 2010 [source]&lt;/td&gt;
+      &lt;td&gt;Similar web for chat.openai.com [&lt;a href=&quot;https://www.similarweb.com/website/chat.openai.com/#ranking&quot;&gt;source&lt;/a&gt;]&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;To have an order of magnitude, the human brain has, on average, 100 billion neurons and 100 trillion synapses. The estimated resources used for  &lt;strong&gt;chatGPT+&lt;/strong&gt;  (paying version of chatGPT) use deep learning models based on GPT-4 with an estimated model size close to these values (digits kept private by OpenAI). But a  &lt;strong&gt;human neuron/synapse&lt;/strong&gt;  is much more powerful than a  &lt;strong&gt;deep learning neuron/synapse.&lt;/strong&gt; The gap is still important, above on reasoning tasks on unknown problems requiring many resources.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/v2/resize:fit:382/1*Ty6-E7apO67lSr02i-6kvQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Human brain vs. Deep learning&lt;/p&gt;
+
+&lt;h1 id=&quot;from-nlp-to-multimodal-gai-chatbots-based-on-llm&quot;&gt;🔥From NLP to Multimodal GAI ChatBots based on LLM&lt;/h1&gt;
+
+&lt;p&gt;Thanks to  &lt;strong&gt;Large Language Models (LLMs)&lt;/strong&gt;  working with Generative AI, chatBots continue getting closer to the objective of simulating  human intelligence&lt;strong&gt;.&lt;/strong&gt;  The  &lt;strong&gt;NLP AI models&lt;/strong&gt;  have progressively migrated from simple parsing to c&lt;strong&gt;omplex processing on the language structure&lt;/strong&gt;, from shallow learning to  &lt;strong&gt;deep learning&lt;/strong&gt;, from a single-language vocabulary of words to a  &lt;strong&gt;vocabulary of tokens with multi-language embeddings&lt;/strong&gt;, from an RNN (LSTM) to the  &lt;strong&gt;Transformer with multi-head attention layers&lt;/strong&gt;  approach.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/v2/resize:fit:700/1*4N5CPyYSVFzfEapqGM5gug.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;NLP timeline with the Deep Learning  [&lt;a href=&quot;https://arxiv.org/pdf/2202.05924.pdf&quot;&gt;source&lt;/a&gt;]&lt;/p&gt;
+
+&lt;p&gt;Finally, by mixing other types of data (like images, audio, …), NLP models became  &lt;strong&gt;multi-modal generative models&lt;/strong&gt; where varied instructions (in input) give varied results (in output).&lt;/p&gt;
 
 &lt;p&gt;See the rest of the article &lt;a href=&quot;https://medium.com/@glegoux/history-of-the-generative-ai-aa1aa7c63f3c&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
