@@ -1,4 +1,4 @@
-# 👀 Read mode
+# 👀 Read more
 
 Read the rest of the article ...
 
