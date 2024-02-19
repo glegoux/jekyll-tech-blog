@@ -12,5 +12,5 @@
          alt="{{ include.title | default: '' }}"
     />
   </div>
-  <figcaption>{{ include.title | default: '' }} {% if include.source %}[[source](include.source)]{% endif %}</figcaption>
+  <figcaption>{{ include.title | default: '' }} {% if include.source %}[<a href="{{ include.source }}" target="_blank" rel="noopener noreferrer" >source</a>]{% endif %}</figcaption>
 </figure>
