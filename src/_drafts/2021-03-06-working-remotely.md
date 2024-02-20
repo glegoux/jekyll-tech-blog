@@ -27,7 +27,7 @@ My analysis of different shapes of the remote work has 4 dimensions:
 * **Location**: Are you always at the same location or nomad, close or away of your company office or other workers?
 * **Structure**: Has the company at least one physical office? Is it a mature or startup company? Is it a worldwide, national or local company?
 
-{% include article/google-drawing.html title="Remote work features"
+{% include content/google-drawing.html title="Remote work features"
 src="https://docs.google.com/drawings/d/e/2PACX-1vRLCCncPwAGGgU-TZaj3REvA6Vkm0hm2MUQ-IlOdD-IIhi4JDzLstqFxnUwFuh3_KR8WI8oubLTc2ef/pub?w=568&h=194" %}
 
 I could add another dimension the **frequency** to know if the remote work is permanent or occasional. With these dimensions, you can classify

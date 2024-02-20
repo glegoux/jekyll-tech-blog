@@ -23,7 +23,7 @@ or **containerization**, or a **bare-metal server (physical server)**.
 
 A simple datacenter has this kind of architecture:
 
-{% include article/image.html
+{% include content/image.html
   title="Datacenter buildings"
   src="datacenter.png"
 %}
@@ -62,7 +62,7 @@ Here are the aspects that a datacenter looks out:
 
 For example, a datacenter of Google looks like that:
 
-{% include article/youtube-video.html
+{% include content/youtube-video.html
    title="Inside a Google Datacenter"
    src="https://www.youtube.com/embed/XZmGGAbHqa0"
 %}
@@ -71,7 +71,7 @@ Currently [Equinix](https://www.equinix.com/data-centers) is the leader of **dat
 for the 3 world business areas: AMER, ASIA, EMEA. Equinix provides also datacenters to different
 Cloud providers or other companies.
 
-{% include article/image.html
+{% include content/image.html
    title="Equinix"
    src="equinix.png"
 %}
@@ -84,7 +84,7 @@ hundreds for **hyper-scale data centers**. You can have a list non-exhaustive wi
 Here you can see the Data Center Infrastructure Management (DCIM) of Cisco, and an overview of 
 the architecture of a datacenter:
 
-{% include article/youtube-video.html
+{% include content/youtube-video.html
    title="The Cisco Data Center Architecture in 10 minutes"
    src="https://www.youtube.com/embed/QH9vxKz-REY"
 %}
@@ -111,7 +111,7 @@ several LANs one for the **employees** of the **R&D** (Research & Development) a
 network point of view), and the **guests or other employees** can be another LAN to access only few
 internal services, and the Internet.
 
-{% include article/google-drawing.html 
+{% include content/google-drawing.html 
    title="Datacenter networks"
    src="https://docs.google.com/drawings/d/e/2PACX-1vQGbac_UdZlS6EIjjmQBDBBGpdNdpMErchLwLbCMN1Y7SdrLy56sdqdUI968UqHjEdl-MF9vfO4Oee4/pub?w=968&h=786"
 %}
@@ -154,7 +154,7 @@ Sr. No.	Key	Router	Switch
 
 The servers room are organised by Rack, PoD, Cluster and Zone:
 
-{% include article/google-drawing.html
+{% include content/google-drawing.html
    title="Topology of servers network"
    src="https://docs.google.com/drawings/d/e/2PACX-1vSbiMi2Q9FkSUDHdsSqYWW4SmDgPXxEzKwuFkifYUymsOT2zcWltmZ_T80iK0UOc0V30apf8TkPXAxg/pub?w=1025&h=313"
 %}
@@ -173,7 +173,7 @@ is equal to 1.75" in height. To calculate the internal usable space of a rack en
 simply multiply the total amount of Rack Units by 1.75 inches (44.45 mm). The height of chassis containing 
 server(s) should be a multiple of Rack Unit.
 
-{% include article/google-drawing.html
+{% include content/google-drawing.html
    title="Remote work features"
    src="https://docs.google.com/drawings/d/e/2PACX-1vQKdAlS_wgMf8Lp8mrZM8NRSNwUOLJpm-GGQKqqirFHfngXQpEHGuBqw5QZ9hdZP5Utp6MVkAGDsaly/pub?w=462&h=644"
 %}
@@ -185,7 +185,7 @@ https://community.hpe.com/t5/ProLiant-Servers-ML-DL-SL/what-is-difference-betwee
 EXAMPLE:
 https://community.hpe.com/t5/ProLiant-Servers-ML-DL-SL/what-is-difference-between-Small-Form-Factor-SFF-SAS-and-SATA/td-p/4572468#.YE1Tutwo_b3
 
-{% include article/youtube-video.html
+{% include content/youtube-video.html
    title="HPE ProLiant DL380 Gen10 Rack Server"
    src="https://www.youtube.com/embed/_6nOsJwHkEU"
 %}
@@ -225,12 +225,12 @@ TODO
 
 TODO
 
-{% include article/image.html
+{% include content/image.html
    title="Equinix Cloud Exchange Providers.png"
    src="ecx-providers.png"
 %}
 
-{% include article/youtube-video.html
+{% include content/youtube-video.html
    title="Equinix Cloud Exchange Fabric™ Overview"
    src="https://www.youtube.com/embed/_fLgVb3oAF8"
 %}

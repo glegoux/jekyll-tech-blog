@@ -1,5 +1,5 @@
 <!-- usage {% include article/image.html src="" title="" %} -->
-<figure title="{{ include.title | default: '' }}">
+<figure title="{{ include.title | default: '' }}" class="content">
   <iframe width="{{ include.width | default: '640' }}"
           height="{{ include.height | default: '360' }}"
           src="{{ include.src }}"

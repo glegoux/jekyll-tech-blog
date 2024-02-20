@@ -17,7 +17,7 @@ The **time management** is the science of the usage of time, a possible definiti
 exercising conscious control of time spent on specific activities, especially **to increase effectiveness, efficiency, 
 and productivity**.
 
-{% include article/google-drawing.html title="Time Management"
+{% include content/google-drawing.html title="Time Management"
 src="https://docs.google.com/drawings/d/e/2PACX-1vR9gDDDWTNK3btntBfhxsrL18EDGgytkOLDCS2yrgp8ZqxgvJQsCpnyWJwWT4cIk_8z0rLUn1iTS8cG/pub?w=600&h=348"
 %}
 
@@ -50,7 +50,7 @@ The present moment is seen like a progressive cursor representing a dynamic **in
 plays the role of an irreversible transformer altering the future into the past. The **duration** of an **event** is the length of a **windows time** 
 delimited by 2 instants where the event began and finished. For the following, when I speak about time, I refer to these **sliding windows**.
 
-{% include article/google-drawing.html title="Time vs Duration"
+{% include content/google-drawing.html title="Time vs Duration"
 src="https://docs.google.com/drawings/d/e/2PACX-1vQMPHMxeI8O86epOjBylFK4Pv1L71MKeIki-rfSJzG5wZ9jeickJi_y32JDWLGqLlXqm0lTj-3vBBge/pub?w=537&h=147"
 %}
 
@@ -78,7 +78,7 @@ activities**. The **unit measure of an activity** is subjective, and could be ca
 where mixed the **quantities of used resources** to do the activity (for example the quantities
 of time, energy, or money). Here more the activity has a light color, the more the activity has a lightweight:
 
-{% include article/google-drawing.html title="Time usage"
+{% include content/google-drawing.html title="Time usage"
 src="https://docs.google.com/drawings/d/e/2PACX-1vR_VEmMKNndJR493-_obuNMiuI0c3h_MeUADJoeCJF7KdAPEuAgJm0F-f7U_UF4bF-aStk1pQZF5A6K/pub?w=537&h=147"
 %}
 
@@ -145,7 +145,7 @@ $$g: Img(f) = \{\,f(x)\,|\,x \in X \} \subset \mathbb{R}^+ \times \mathbb{R}^+ \
 * $g$ is a **trade-off function** between the minimization of the cost $c$ and maximization of the quality
   $q$ on subset of $X$
 
-{% include article/google-drawing.html title="Objective function is a trade-off: cost vs quality of
+{% include content/google-drawing.html title="Objective function is a trade-off: cost vs quality of
 a set of tasks"
 src="https://docs.google.com/drawings/d/e/2PACX-1vQWBneRL7immMkY2pHZ1FMm7Kz3LNDcrF7by2pUAonxbNXIBP9dKNtc0NohlMi72y8Duk1BJaTZCwWg/pub?w=500&h=366"
 %}
@@ -205,7 +205,7 @@ is subjective for some activities, you can classify your activities into these p
 differently in the function of your sensitivities and interests. You can already give an important
 weight to each partition.
 
-{% include article/google-drawing.html title="Partitioning"
+{% include content/google-drawing.html title="Partitioning"
 src="https://docs.google.com/drawings/d/e/2PACX-1vRt1dc1fZp69-BO05hjcdjSoRflDhlTG_9NmctQRn-EbmvITD_Lg2xlgT-MqsnkAF7XA_31X0Uv-a0m/pub?w=300&h=321"
 %}
 
@@ -217,7 +217,7 @@ Each goal should be realistic, reachable, measurable with success keys, and size
 required time to achieve it. You can play on **several scales** for your future projections:
 **very long term, long term, middle term, short term, and very short term**.
 
-{% include article/google-drawing.html title="Scaling"
+{% include content/google-drawing.html title="Scaling"
 src="https://docs.google.com/drawings/d/e/2PACX-1vT2INReaOVrCjN2rKrOCBToYqXnIg6dU7hHGiwSvcZl_7Lg6uXqoj5aNlV68abuP29q_OaZm6vc5bPF/pub?w=480&h=360"
 %}
 
@@ -227,7 +227,7 @@ Now you can size more precisely each task. You can measure absolutely if it is c
 also measure relatively the ones in relation to the other ones. You need to choose the unit of the *
 weight* of your activity.
 
-{% include article/google-drawing.html title="Sizing"
+{% include content/google-drawing.html title="Sizing"
 src="https://docs.google.com/drawings/d/e/2PACX-1vTKLnvm7RpJb3SSmZ4mEmLFyvb84e9ndFV1ehYUDe7OV5ev-yWVztyG8VE0gYpyi_KpQNyhZtuN_ToH/pub?w=200&h=331"
 %}
 
@@ -236,7 +236,7 @@ src="https://docs.google.com/drawings/d/e/2PACX-1vTKLnvm7RpJb3SSmZ4mEmLFyvb84e9n
 You need to build a **dependency graph** of each activity to see if an activity depends on other
 one(s).
 
-{% include article/google-drawing.html title="Dependency graph"
+{% include content/google-drawing.html title="Dependency graph"
 src="https://docs.google.com/drawings/d/e/2PACX-1vSudssT0neN76LmXVxtcbVBVQEI_cVhyS6wqCWo9jqCTX2EqIJeb6qMtUvm-7XR0m2J_AWm1Ynps9qB/pub?w=250&h=289"
 %}
 
@@ -246,7 +246,7 @@ Your **dependency graph** must be a set of **acyclic graphs**.
 
 After you need **to rank your activities** which ones are the most important ones:
 
-{% include article/google-drawing.html title="Prioritizing"
+{% include content/google-drawing.html title="Prioritizing"
 src="https://docs.google.com/drawings/d/e/2PACX-1vS8OzDo_ArOse_qIVYYg1yati0qf8MeIyxeiP_bL618xEMEFxdBwLGiFK1jsj66hY7OPzCz-rlP71Kl/pub?w=245&h=240"
 %}
 
@@ -255,7 +255,7 @@ src="https://docs.google.com/drawings/d/e/2PACX-1vS8OzDo_ArOse_qIVYYg1yati0qf8Me
 It is you build your **plan of execution** by sequencing each activity by respecting the previous
 steps and your other constraints:
 
-{% include article/google-drawing.html title="Sequencing"
+{% include content/google-drawing.html title="Sequencing"
 src="https://docs.google.com/drawings/d/e/2PACX-1vTaWiI1eOkX3AKOSixZzaKHyXRaMc7_RVdFqwglYzHhfMss0hQ7No16GBqfDbzJqM1hfNk1Pw7wDdpV/pub?w=573&h=145"
 %}
 
@@ -279,7 +279,7 @@ career. By hoping, that it matches your **auto-introspection**, else the followi
 the same thing for your personal context. I give you here only a **partial overview** of how it can be done, 
 this example is not necessarily my real usage of my personal time.
 
-{% include article/google-drawing.html title="Timescale of the human life"
+{% include content/google-drawing.html title="Timescale of the human life"
 src="https://docs.google.com/drawings/d/e/2PACX-1vTP167tBMm4i3nTOrf72NzpkGNLuTAVMnsQqdasktHiuAnOx-AMG1G9We3qWRADeDgrfCC3EV2Oxwm7/pub?w=537&h=147"
 %}
 

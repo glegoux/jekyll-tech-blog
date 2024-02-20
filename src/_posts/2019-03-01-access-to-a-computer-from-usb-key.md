@@ -16,19 +16,19 @@ With a bootable USB key on Ubuntu, you can resolve these situations, first by mo
 
 First, plug your USB drive into the target computer, and choose your key as the boot device for the target computer to boot to the Ubuntu system on your USB drive. On a DELL computer, press `F12` to access this selection. This information is visible on the welcome screen of your computer's manufacturer.
 
-{% include article/image.html title="DELL welcome screen" src="welcome-screen-dell.png" %}
+{% include content/image.html title="DELL welcome screen" src="welcome-screen-dell.png" %}
 
 Start by choosing the following option: 
 
-{% include article/image.html title="Advanced startup options" src="hack1.png" %}
+{% include content/image.html title="Advanced startup options" src="hack1.png" %}
 
 Then select the `recovery mode`:
 
-{% include article/image.html title="Getting started in recovery mode" src="hack2.png" %}
+{% include content/image.html title="Getting started in recovery mode" src="hack2.png" %}
 
 Launch a `root shell`:
 
-{% include article/image.html title="Choosing the root shell" src="hack3.png" %}
+{% include content/image.html title="Choosing the root shell" src="hack3.png" %}
 
 You access a device as a `root` user.
 

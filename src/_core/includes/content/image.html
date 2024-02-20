@@ -1,6 +1,6 @@
 {%- assign config_attachment = site.project.article.attachment -%}
 {%- assign article_id = page.date | date: '%Y-%m-%d-' | append: page.title | slugify -%}
-<figure title="{{ include.title | default: '' }}">
+<figure title="{{ include.title | default: '' }}" class="content">
   <div>
     <img class="img-fluid lazyload"
          {% if include.abs_url %}
