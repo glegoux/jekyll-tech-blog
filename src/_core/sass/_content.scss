@@ -1,0 +1,42 @@
+/* Figure */
+
+figure.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 1em;
+  margin-bottom: 1em;
+
+  img {
+    margin: 0.5em;
+    border: 1px solid #fff;
+  }
+
+  figcaption.num::before {
+    counter-increment: figure;
+    content: "Figure " counter(figure) ": "
+  }
+
+  figcaption {
+    color: grey;
+    text-align: center;
+    font-style: italic;
+  }
+
+  /* Iframe */
+
+  iframe {
+    display: table;
+    margin: 1em auto 1em auto;
+  }
+}
+
+/* Horizontal separator */
+
+hr.content {
+  width: 20%;
+  border-top: 1px solid lightgrey;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}

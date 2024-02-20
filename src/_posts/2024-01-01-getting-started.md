@@ -268,7 +268,7 @@ changes, and **largely used** by an **active community**.
 
 How it works? The files having the Markdown extension `.md` or `.markdown` are processed to HTML with this [processing workflow](https://jekyllrb.com/tutorials/orderofinterpretation/):
 
-{% include article/google-drawing.html
+{% include content/google-drawing.html
 title="Extended Markdown to HTML"
 src="https://docs.google.com/drawings/d/e/2PACX-1vRPwfUjnj6bT9B-M4jdzQqOICzCwblxYR5xvgiXYWrpcgpmFddbWR-ErodWf-U0rE8f0aqzUfazXvf8/pub?w=960&amp;h=267"
 %}

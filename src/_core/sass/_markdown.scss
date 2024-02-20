@@ -899,33 +899,6 @@ body {
   color: dimgray;
 }
 
-/* Figure */
-
-.markdown-body figure {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
-.markdown-body figure img {
-  margin: 0.5em;
-  border: 1px solid #fff;
-}
-
-.markdown-body figure figcaption.num::before {
-  counter-increment: figure;
-  content: "Figure " counter(figure) ": "
-}
-
-.markdown-body figure figcaption {
-  color: grey;
-  text-align: center;
-  font-style: italic;
-}
-
 /* List */
 
 .markdown-body ol:not(.footnotes ol) {
@@ -975,7 +948,7 @@ body {
     margin: 0;
     padding-left: -32px;
   }
-  
+
   ol::before {
     content: "Footnotes:";
     position: relative;
@@ -984,12 +957,7 @@ body {
 
 }
 
-/* iframe */
-
-.markdown-body iframe {
-  display: table;
-  margin: 1em auto 1em auto;
-}
+/* Category */
 
 .markdown-body .category-content {
   text-align: right;
