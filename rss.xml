@@ -5,8 +5,8 @@
     <description>Personal blog about software engineering</description>
     <link>https://glegoux.com/</link>
     <atom:link href="https://glegoux.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 20 Feb 2024 06:43:46 +0000</pubDate>
-    <lastBuildDate>Tue, 20 Feb 2024 06:43:46 +0000</lastBuildDate>
+    <pubDate>Thu, 22 Feb 2024 06:13:09 +0000</pubDate>
+    <lastBuildDate>Thu, 22 Feb 2024 06:13:09 +0000</lastBuildDate>
     <generator>Jekyll v4.3.2</generator>
     
       <item>
@@ -17,7 +17,12 @@
   &lt;div&gt;
     &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://miro.medium.com/v2/resize:fit:700/1*UenOkL0Tn-XuP-hOho9b3Q.png&quot; title=&quot;Generative AI for all types of content&quot; alt=&quot;Generative AI for all types of content&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;Generative AI for all types of content &lt;/figcaption&gt;
+  &lt;figcaption&gt;
+    Generative AI for all types of content
+    
+      [built by author]
+    
+  &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Let’s discover its history, from simple textual machine learning models specialized to  &lt;strong&gt;universal&lt;/strong&gt;  &lt;strong&gt;large language models&lt;/strong&gt; at a vast scale:&lt;/p&gt;
@@ -42,14 +47,24 @@
   &lt;div&gt;
     &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://miro.medium.com/v2/resize:fit:961/1*imwYfo_SLbjeVzeZ420QhQ.png&quot; title=&quot;Google Trends from 2010&quot; alt=&quot;Google Trends from 2010&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;Google Trends from 2010 [&lt;a href=&quot;https://trends.google.com/trends/explore?date=2010-01-01%202023-04-01&amp;amp;geo=FR&amp;amp;q=Machine%20Learning,Deep%20Learning,Chatbot&amp;amp;hl=en&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;source&lt;/a&gt;]&lt;/figcaption&gt;
+  &lt;figcaption&gt;
+    Google Trends from 2010
+    
+      [&lt;a href=&quot;https://trends.google.com/trends/explore?date=2010-01-01%202023-04-01&amp;amp;geo=FR&amp;amp;q=Machine%20Learning,Deep%20Learning,Chatbot&amp;amp;hl=en&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;source&lt;/a&gt;]
+    
+  &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;figure title=&quot;Similar web for chat.openai.com&quot; class=&quot;content&quot;&gt;
   &lt;div&gt;
     &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://miro.medium.com/v2/resize:fit:853/1*bdBhXytZGBsTrI3t-zxd4A.png&quot; title=&quot;Similar web for chat.openai.com&quot; alt=&quot;Similar web for chat.openai.com&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;Similar web for chat.openai.com [&lt;a href=&quot;https://www.similarweb.com/website/chat.openai.com/#ranking&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;source&lt;/a&gt;]&lt;/figcaption&gt;
+  &lt;figcaption&gt;
+    Similar web for chat.openai.com
+    
+      [&lt;a href=&quot;https://www.similarweb.com/website/chat.openai.com/#ranking&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;source&lt;/a&gt;]
+    
+  &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;To have an order of magnitude, the human brain has, on average, 100 billion neurons and 100 trillion synapses. The estimated resources used for  &lt;strong&gt;chatGPT+&lt;/strong&gt;  (paying version of chatGPT) use deep learning models based on GPT-4 with an estimated model size close to these values (digits kept private by OpenAI). But a  &lt;strong&gt;human neuron/synapse&lt;/strong&gt;  is much more powerful than a  &lt;strong&gt;deep learning neuron/synapse.&lt;/strong&gt; The gap is still important, above on reasoning tasks on unknown problems requiring many resources.&lt;/p&gt;
@@ -58,7 +73,12 @@
   &lt;div&gt;
     &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://miro.medium.com/v2/resize:fit:382/1*Ty6-E7apO67lSr02i-6kvQ.png&quot; title=&quot;Human brain vs. Deep learning&quot; alt=&quot;Human brain vs. Deep learning&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;Human brain vs. Deep learning &lt;/figcaption&gt;
+  &lt;figcaption&gt;
+    Human brain vs. Deep learning
+    
+      [adapted from &lt;a href=&quot;https://www.researchgate.net/figure/Visual-comparison-between-human-nerve-cell-and-neural-network-architecture14_fig3_360640306&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;source&lt;/a&gt;]
+    
+  &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;h1 id=&quot;from-nlp-to-multimodal-gai-chatbots-based-on-llm&quot;&gt;🔥From NLP to Multimodal GAI ChatBots based on LLM&lt;/h1&gt;
@@ -69,7 +89,12 @@
   &lt;div&gt;
     &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://miro.medium.com/v2/resize:fit:700/1*4N5CPyYSVFzfEapqGM5gug.png&quot; title=&quot;NLP timeline with the Deep Learning&quot; alt=&quot;NLP timeline with the Deep Learning&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;NLP timeline with the Deep Learning [&lt;a href=&quot;https://arxiv.org/pdf/2202.05924.pdf&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;source&lt;/a&gt;]&lt;/figcaption&gt;
+  &lt;figcaption&gt;
+    NLP timeline with the Deep Learning
+    
+      [&lt;a href=&quot;https://arxiv.org/pdf/2202.05924.pdf&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;source&lt;/a&gt;]
+    
+  &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Finally, by mixing other types of data (like images, audio, …), NLP models became  &lt;strong&gt;multi-modal generative models&lt;/strong&gt; where varied instructions (in input) give varied results (in output).&lt;/p&gt;
@@ -111,7 +136,7 @@
   &lt;div&gt;
     &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://docs.google.com/drawings/d/e/2PACX-1vRwK7XcVBBYBxZhx3_nqSjUF4boYbf9BBdHP-HJYOlx2vX2Pe_scKcZTZFys9K5BEaaYmrGPN_3WziZ/pub?w=798&amp;amp;h=100&quot; alt=&quot;Migration from glegoux.com to Medium&quot; title=&quot;Migration from glegoux.com to Medium&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;Migration from glegoux.com to Medium&lt;/figcaption&gt;
+  &lt;figcaption&gt;Migration from glegoux.com to Medium [built by author]&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;After evaluating and testing Medium, here are the pros and cons of using Medium vs. my blog:&lt;/p&gt;
@@ -208,7 +233,10 @@ this suite $(u_n)_{n\in \mathbb{N}}$ has a rate of convergence quick:&lt;/p&gt;
   &lt;div&gt;
     &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2021-11-23-secret-santa/images/u_n-convergence.png&quot; title=&quot;Inverse of the probability that a guest draws randomly his/her name&quot; alt=&quot;Inverse of the probability that a guest draws randomly his/her name&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;Inverse of the probability that a guest draws randomly his/her name &lt;/figcaption&gt;
+  &lt;figcaption&gt;
+    Inverse of the probability that a guest draws randomly his/her name
+    
+  &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;So if your number of guests is greater or equal to 4, you have around $0.63\%$ of chance, 
@@ -247,7 +275,10 @@ let’s say $N=300$:&lt;/p&gt;
   &lt;div&gt;
     &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2021-11-23-secret-santa/images/g_n-convergence.png&quot; title=&quot;Probability to have 2 identical types of gifts among 300 possible types of Christmas gifts&quot; alt=&quot;Probability to have 2 identical types of gifts among 300 possible types of Christmas gifts&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;Probability to have 2 identical types of gifts among 300 possible types of Christmas gifts &lt;/figcaption&gt;
+  &lt;figcaption&gt;
+    Probability to have 2 identical types of gifts among 300 possible types of Christmas gifts
+    
+  &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;With an approximation $e^{x} \approx 1 +x$ when $x$ is close to $0$, and the &lt;strong&gt;sum of young Gauss&lt;/strong&gt; 
@@ -412,7 +443,7 @@ and productivity&lt;/strong&gt;.&lt;/p&gt;
   &lt;div&gt;
     &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://docs.google.com/drawings/d/e/2PACX-1vR9gDDDWTNK3btntBfhxsrL18EDGgytkOLDCS2yrgp8ZqxgvJQsCpnyWJwWT4cIk_8z0rLUn1iTS8cG/pub?w=600&amp;amp;h=348&quot; alt=&quot;Time Management&quot; title=&quot;Time Management&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;Time Management&lt;/figcaption&gt;
+  &lt;figcaption&gt;Time Management [built by author]&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;The way you can &lt;strong&gt;use your time&lt;/strong&gt; depends on a lot of things, among others, there are your:&lt;/p&gt;
@@ -462,7 +493,7 @@ delimited by 2 instants where the event began and finished. For the following, w
   &lt;div&gt;
     &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://docs.google.com/drawings/d/e/2PACX-1vQMPHMxeI8O86epOjBylFK4Pv1L71MKeIki-rfSJzG5wZ9jeickJi_y32JDWLGqLlXqm0lTj-3vBBge/pub?w=537&amp;amp;h=147&quot; alt=&quot;Time vs Duration&quot; title=&quot;Time vs Duration&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;Time vs Duration&lt;/figcaption&gt;
+  &lt;figcaption&gt;Time vs Duration [built by author]&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;div class=&quot;info&quot;&gt;
@@ -493,7 +524,7 @@ of time, energy, or money). Here more the activity has a light color, the more t
   &lt;div&gt;
     &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://docs.google.com/drawings/d/e/2PACX-1vR_VEmMKNndJR493-_obuNMiuI0c3h_MeUADJoeCJF7KdAPEuAgJm0F-f7U_UF4bF-aStk1pQZF5A6K/pub?w=537&amp;amp;h=147&quot; alt=&quot;Time usage&quot; title=&quot;Time usage&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;Time usage&lt;/figcaption&gt;
+  &lt;figcaption&gt;Time usage [built by author]&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;The time could be considered as a quantity of spent resources during a duration (itself in another meaning)
@@ -572,7 +603,7 @@ a set of tasks&quot; title=&quot;Objective function is a trade-off: cost vs qual
 a set of tasks&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;Objective function is a trade-off: cost vs quality of
-a set of tasks&lt;/figcaption&gt;
+a set of tasks [built by author]&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;div class=&quot;warning&quot;&gt;
@@ -636,7 +667,7 @@ weight to each partition.&lt;/p&gt;
   &lt;div&gt;
     &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://docs.google.com/drawings/d/e/2PACX-1vRt1dc1fZp69-BO05hjcdjSoRflDhlTG_9NmctQRn-EbmvITD_Lg2xlgT-MqsnkAF7XA_31X0Uv-a0m/pub?w=300&amp;amp;h=321&quot; alt=&quot;Partitioning&quot; title=&quot;Partitioning&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;Partitioning&lt;/figcaption&gt;
+  &lt;figcaption&gt;Partitioning [built by author]&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;ul&gt;
@@ -653,7 +684,7 @@ required time to achieve it. You can play on &lt;strong&gt;several scales&lt;/st
   &lt;div&gt;
     &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://docs.google.com/drawings/d/e/2PACX-1vT2INReaOVrCjN2rKrOCBToYqXnIg6dU7hHGiwSvcZl_7Lg6uXqoj5aNlV68abuP29q_OaZm6vc5bPF/pub?w=480&amp;amp;h=360&quot; alt=&quot;Scaling&quot; title=&quot;Scaling&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;Scaling&lt;/figcaption&gt;
+  &lt;figcaption&gt;Scaling [built by author]&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;ul&gt;
@@ -668,7 +699,7 @@ weight* of your activity.&lt;/p&gt;
   &lt;div&gt;
     &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://docs.google.com/drawings/d/e/2PACX-1vTKLnvm7RpJb3SSmZ4mEmLFyvb84e9ndFV1ehYUDe7OV5ev-yWVztyG8VE0gYpyi_KpQNyhZtuN_ToH/pub?w=200&amp;amp;h=331&quot; alt=&quot;Sizing&quot; title=&quot;Sizing&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;Sizing&lt;/figcaption&gt;
+  &lt;figcaption&gt;Sizing [built by author]&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;ul&gt;
@@ -682,7 +713,7 @@ one(s).&lt;/p&gt;
   &lt;div&gt;
     &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://docs.google.com/drawings/d/e/2PACX-1vSudssT0neN76LmXVxtcbVBVQEI_cVhyS6wqCWo9jqCTX2EqIJeb6qMtUvm-7XR0m2J_AWm1Ynps9qB/pub?w=250&amp;amp;h=289&quot; alt=&quot;Dependency graph&quot; title=&quot;Dependency graph&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;Dependency graph&lt;/figcaption&gt;
+  &lt;figcaption&gt;Dependency graph [built by author]&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Your &lt;strong&gt;dependency graph&lt;/strong&gt; must be a set of &lt;strong&gt;acyclic graphs&lt;/strong&gt;.&lt;/p&gt;
@@ -697,7 +728,7 @@ one(s).&lt;/p&gt;
   &lt;div&gt;
     &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://docs.google.com/drawings/d/e/2PACX-1vS8OzDo_ArOse_qIVYYg1yati0qf8MeIyxeiP_bL618xEMEFxdBwLGiFK1jsj66hY7OPzCz-rlP71Kl/pub?w=245&amp;amp;h=240&quot; alt=&quot;Prioritizing&quot; title=&quot;Prioritizing&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;Prioritizing&lt;/figcaption&gt;
+  &lt;figcaption&gt;Prioritizing [built by author]&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;ul&gt;
@@ -711,7 +742,7 @@ steps and your other constraints:&lt;/p&gt;
   &lt;div&gt;
     &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://docs.google.com/drawings/d/e/2PACX-1vTaWiI1eOkX3AKOSixZzaKHyXRaMc7_RVdFqwglYzHhfMss0hQ7No16GBqfDbzJqM1hfNk1Pw7wDdpV/pub?w=573&amp;amp;h=145&quot; alt=&quot;Sequencing&quot; title=&quot;Sequencing&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;Sequencing&lt;/figcaption&gt;
+  &lt;figcaption&gt;Sequencing [built by author]&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;You can also optimize these sequencing.&lt;/p&gt;
@@ -738,7 +769,7 @@ this example is not necessarily my real usage of my personal time.&lt;/p&gt;
   &lt;div&gt;
     &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://docs.google.com/drawings/d/e/2PACX-1vTP167tBMm4i3nTOrf72NzpkGNLuTAVMnsQqdasktHiuAnOx-AMG1G9We3qWRADeDgrfCC3EV2Oxwm7/pub?w=537&amp;amp;h=147&quot; alt=&quot;Timescale of the human life&quot; title=&quot;Timescale of the human life&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;Timescale of the human life&lt;/figcaption&gt;
+  &lt;figcaption&gt;Timescale of the human life [built by author]&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;I analyze my resources, my constraints, and my features (hard skills and soft skills, …).&lt;/p&gt;
@@ -996,7 +1027,7 @@ it is important to be aware of this kind of behavior when a technology is used.&
   &lt;div&gt;
     &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://docs.google.com/drawings/d/e/2PACX-1vRdm2uIt-uhISovgxlwTgP6w08Lq8LPqX-vpNz8RVt7cr_sHn8k1Fb5-3d8kVV5Z2K5-Ys8gwEYLfy9/pub?w=480&amp;amp;h=360&quot; alt=&quot;Coordinates on earth with latitude and longitude&quot; title=&quot;Coordinates on earth with latitude and longitude&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;Coordinates on earth with latitude and longitude&lt;/figcaption&gt;
+  &lt;figcaption&gt;Coordinates on earth with latitude and longitude [built by author]&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Let $p1 = (\text{lat1}, \text{long1})$, $p2 = (\text{lat2}, \text{long2})$ be 2 points on the surface of the earth with a latitude and a longitude given in radian respectively. The latitude has a value between $[-\frac{\pi}{2}, \frac{\pi}{2}]$, and the longitude between $]-\pi, \pi]$. So each point is identified by unique way with this tuple: latitude and longitude. There is at least a great circle of the sphere passing both through $p1$ and $p2$, either an infinity if $p1$, $p2$ and the center of the sphere are aligned in the ambient space, or an unique one. The smallest length of a path joining $p1$ and $p2$ on the earth surface is the size of the minor circular arc of a great circle. A such arc is called a geodesic, that we note $d(p1, p2)$ its size. We put $\alpha \in [0, \pi]$ is the smallest central angle, to avoid all ambiguities, because $p1$ and $p2$ belong to a circle, and define 2 circular arcs: the minor one and the major one, respectively with a size $d(p1, p2)$ and $2\pi R - d(p1, p2)$. If $\alpha = 0$, then $p1$ and $p2$ are confused, and if $\alpha = \pi$, then $p1$ is the antipode of $p2$ (diametrically opposite, and reciprocally).&lt;/p&gt;
@@ -1005,7 +1036,7 @@ it is important to be aware of this kind of behavior when a technology is used.&
   &lt;div&gt;
     &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://docs.google.com/drawings/d/e/2PACX-1vQptEFbx1SxwX-p1QFsK94CvkoJwbVAKXpiQ8FaL9-BJbZnEUw4PYZqce7UnUtD-Hcm01ZRV4vOornF/pub?w=480&amp;amp;h=360&quot; alt=&quot;Smallest distance between 2 points on the earth surface&quot; title=&quot;Smallest distance between 2 points on the earth surface&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;Smallest distance between 2 points on the earth surface&lt;/figcaption&gt;
+  &lt;figcaption&gt;Smallest distance between 2 points on the earth surface [built by author]&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;So:&lt;/p&gt;
@@ -1026,7 +1057,7 @@ it is important to be aware of this kind of behavior when a technology is used.&
   &lt;div&gt;
     &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://docs.google.com/drawings/d/e/2PACX-1vSo-qbr70ZR3v_49gXzE7HI6cv0jgPXLEANpuZaNszi0QAL3NLIzjAd34V-s-2nCAtSaiW3AXno0urI/pub?w=529&amp;amp;h=323&quot; alt=&quot;Cartesian coordinates on earth&quot; title=&quot;Cartesian coordinates on earth&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;Cartesian coordinates on earth&lt;/figcaption&gt;
+  &lt;figcaption&gt;Cartesian coordinates on earth [built by author]&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Then, we have also:&lt;/p&gt;
@@ -1174,7 +1205,10 @@ the company &lt;strong&gt;Sun Microsystems&lt;/strong&gt; released the first ver
   &lt;div&gt;
     &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2020-05-04-java-ecosystem/images/java-logo.png&quot; title=&quot;Java logo&quot; alt=&quot;Java logo&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;Java logo &lt;/figcaption&gt;
+  &lt;figcaption&gt;
+    Java logo
+    
+  &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;That is to say:&lt;/p&gt;
@@ -1198,7 +1232,10 @@ that performed tasks for the user:&lt;/p&gt;
   &lt;div&gt;
     &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2020-05-04-java-ecosystem/images/duke.png&quot; title=&quot;Duke the Java mascot&quot; alt=&quot;Duke the Java mascot&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;Duke the Java mascot &lt;/figcaption&gt;
+  &lt;figcaption&gt;
+    Duke the Java mascot
+    
+  &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;The best resource about Java is surely the &lt;em&gt;Effective Java&lt;/em&gt; book with its different editions:&lt;/p&gt;
@@ -1214,7 +1251,10 @@ consists of first learning the rules and then learning when to break them.&lt;/p
   &lt;div&gt;
     &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2020-05-04-java-ecosystem/images/effective-java-book-cover.jpg&quot; title=&quot;Effective Java book&quot; alt=&quot;Effective Java book&quot; /&gt;
   &lt;/div&gt;
-  &lt;figcaption&gt;Effective Java book &lt;/figcaption&gt;
+  &lt;figcaption&gt;
+    Effective Java book
+    
+  &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;But Sun Microsystems had an issue a business model, and &lt;strong&gt;Oracle acquired Java in January 2010&lt;/strong&gt;. 

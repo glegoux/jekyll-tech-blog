@@ -501,7 +501,10 @@ and <a href="http://www.kerberos.org/software/adminkerberos.pdf">short guide pdf
   <div>
     <img class="img-fluid lazyload" data-src="https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2019-03-23-kerberos-in-5-minutes/images/kerberos-logo.jpg" title="MIT Kerberos" alt="MIT Kerberos">
   </div>
-  <figcaption>MIT Kerberos </figcaption>
+  <figcaption>
+    MIT Kerberos
+    
+  </figcaption>
 </figure>
 
 <p>Another interesting implementation of Kerberos is in Java: <a href="https://directory.apache.org/kerby/">Apache Kerby</a>. The <strong>Java ecosystem</strong> 
@@ -549,7 +552,7 @@ integrates very well Kerberos, it is in the standard library. A lot of Java proj
   <div>
     <img class="img-fluid lazyload" data-src="https://docs.google.com/drawings/d/e/2PACX-1vRFoa0U8YarJybG_tJJ4bxSaDj000n8XduoQyDVJQ77XHTovCd4EuGArkG9JhGDqATybKOHV9TSCVSh/pub?w=959&amp;h=535" alt="Kerberos authentication architecture" title="Kerberos authentication architecture">
   </div>
-  <figcaption>Kerberos authentication architecture</figcaption>
+  <figcaption>Kerberos authentication architecture [built by author]</figcaption>
 </figure>
 
 <p>You can use <strong>Lightweight Directory Access Protocol</strong> (LDAP) as principal database to store users and groups of your organization. Now you have a nice <strong>Authentication, Authorization</strong> and <strong>Accounting</strong> System (AAAS) :</p>
@@ -567,7 +570,7 @@ integrates very well Kerberos, it is in the standard library. A lot of Java proj
   <div>
     <img class="img-fluid lazyload" data-src="https://docs.google.com/drawings/d/e/2PACX-1vRmsLxbS-kwQOzK20d0i3PZGADr1dmoWbG2ld-M2hIyXYjw1pGPuXtWO8LmBv9VaYJVh-E1aJOU7xoF/pub?w=959&amp;h=542" alt=" Kerberos authentication workflow with LDAP" title=" Kerberos authentication workflow with LDAP">
   </div>
-  <figcaption> Kerberos authentication workflow with LDAP</figcaption>
+  <figcaption> Kerberos authentication workflow with LDAP [built by author]</figcaption>
 </figure>
 
 <h1 id="how-to-test">How to test?</h1>
@@ -580,7 +583,7 @@ integrates very well Kerberos, it is in the standard library. A lot of Java proj
   <div>
     <img class="img-fluid lazyload" data-src="kerberos-docker-logo.png" alt="Kerberos/Docker icon" title="Kerberos/Docker icon">
   </div>
-  <figcaption>Kerberos/Docker icon</figcaption>
+  <figcaption>Kerberos/Docker icon [built by author]</figcaption>
 </figure>
 
 <p>This servers cluster is deployed automatically with only one command.</p>
@@ -589,7 +592,7 @@ integrates very well Kerberos, it is in the standard library. A lot of Java proj
   <div>
     <img class="img-fluid lazyload" data-src="https://docs.google.com/drawings/d/e/2PACX-1vSWzlGsP6c2XMkKZnJ8ncLx5rfaqR9vWJlvG8ksr5CxAKc1zeJ4aFUC-Zw4KpZt-ipcGJRcoY4P2q-o/pub?w=695&amp;h=421" alt="Kerberos architecture on docker for Kerberos/Docker project" title="Kerberos architecture on docker for Kerberos/Docker project">
   </div>
-  <figcaption>Kerberos architecture on docker for Kerberos/Docker project</figcaption>
+  <figcaption>Kerberos architecture on docker for Kerberos/Docker project [built by author]</figcaption>
 </figure>
 
 <p>Thanks to GSS-API implementation in C, OpenSSH use one method based on Kerberos authentication: <strong>gssapi-with-mic</strong>. That is a Message Authentication Code (MAC) methods renamed in Message Integrated Code (MIC) for disambiguation MAC address. Thus the suffix with-mic is used. But SSH continue to manage authorization (using Linux-PAM or/and AllowsUser, Allowsgroup,PermitRootLogin in /etc/ssh/sshd_config), and accounting is managed by the Operating System.</p>
@@ -892,35 +895,77 @@ The typical format of a typical Kerberos principal is primary/instance@REALM.</p
   <h5>Also read</h5>
   <div class="row">
 <div class="col-xs-12 col-md-6 col-lg-4">
-<a href="/blog/articles/2020/03/04/development-environment.html" title="Read this article" style="display: block">
+<a href="/blog/articles/2020/11/28/unix-timestamp.html" title="Read this article" style="display: block">
   <div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2020-03-04-development-environment.jpg" alt="2020-03-04-development-environment">
+        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2020-11-28-unix-timestamp.jpg" alt="2020-11-28-unix-timestamp">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          Development environment
+          Unix timestamp
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          Why isolate its development environment?
+          What could happen in 2038 with the Y2K38 problem?
         </div>
 <!-- Article categories -->
         <div class="article-category">
           <ul>
-            <li>Development</li>
+            <li>Applied Mathematics</li>
           </ul>
         </div>
 <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>March 04, 2020</span>
+          <span>November 28, 2020</span>
+        </div>
+<!-- Article reading time -->
+        <div class="reading-time">
+          <i class="far fa-clock"></i>
+          <span>5 min</span>
+        </div>
+</div>
+
+    </div>
+  </div>
+</a>
+</div>
+<div class="col-xs-12 col-md-6 col-lg-4">
+<a href="/blog/articles/2019/11/29/gafa-vs-batx.html" title="Read this article" style="display: block">
+  <div class="article-card-container">
+    <!-- Article metadata -->
+    <div class="article-card">
+<!-- Article cover --><div class="article-cover">
+        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2019-11-29-gafa-vs-batx.jpg" alt="2019-11-29-gafa-vs-batx">
+      </div>
+
+      <!-- Article details -->
+      <div class="article-details">
+        <!-- Article title -->
+        <div class="article-title">
+          Gafa vs Batx
+        </div>
+
+        <!-- Article description -->
+        <div class="article-description">
+          What is the difference?
+        </div>
+<!-- Article categories -->
+        <div class="article-category">
+          <ul>
+            <li>Business</li>
+          </ul>
+        </div>
+<!-- Article publication date -->
+        <div class="date">
+          <i class="far fa-calendar-alt"></i>
+          <span>November 29, 2019</span>
         </div>
 <!-- Article reading time -->
         <div class="reading-time">
@@ -968,48 +1013,6 @@ The typical format of a typical Kerberos principal is primary/instance@REALM.</p
         <div class="reading-time">
           <i class="far fa-clock"></i>
           <span>10 min</span>
-        </div>
-</div>
-
-    </div>
-  </div>
-</a>
-</div>
-<div class="col-xs-12 col-md-6 col-lg-4">
-<a href="/blog/articles/2019/05/24/java-champion.html" title="Read this article" style="display: block">
-  <div class="article-card-container">
-    <!-- Article metadata -->
-    <div class="article-card">
-<!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2019-05-24-java-champion.jpg" alt="2019-05-24-java-champion">
-      </div>
-
-      <!-- Article details -->
-      <div class="article-details">
-        <!-- Article title -->
-        <div class="article-title">
-          Java champion
-        </div>
-
-        <!-- Article description -->
-        <div class="article-description">
-          How to become a Java champion?
-        </div>
-<!-- Article categories -->
-        <div class="article-category">
-          <ul>
-            <li>Development</li>
-          </ul>
-        </div>
-<!-- Article publication date -->
-        <div class="date">
-          <i class="far fa-calendar-alt"></i>
-          <span>May 24, 2019</span>
-        </div>
-<!-- Article reading time -->
-        <div class="reading-time">
-          <i class="far fa-clock"></i>
-          <span>1 min</span>
         </div>
 </div>
 
