@@ -11,6 +11,7 @@ category: "Machine Learning"
 {% include content/image.html
 src="https://miro.medium.com/v2/resize:fit:700/1*UenOkL0Tn-XuP-hOho9b3Q.png"
 abs_url=true
+source_author=true
 title="Generative AI for all types of content"
 %}
 
@@ -49,6 +50,7 @@ To have an order of magnitude, the human brain has, on average, 100 billion neur
 {% include content/image.html
 src="https://miro.medium.com/v2/resize:fit:382/1*Ty6-E7apO67lSr02i-6kvQ.png"
 abs_url=true
+source_adapted="https://www.researchgate.net/figure/Visual-comparison-between-human-nerve-cell-and-neural-network-architecture14_fig3_360640306"
 title="Human brain vs. Deep learning"
 %}
 
