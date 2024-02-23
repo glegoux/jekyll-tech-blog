@@ -1,6 +1,20 @@
 [
 
 {
+"title"       : "Ubuntu: apt-key is deprecated",
+"description" : "apt-key is deprecated from Ubuntu 22.04 LTS (Jammy Jellyfish) for security flaws: don’t use it anymore whatever your Linux environment.",
+"authors"     : "glegoux",
+"category"    : "Security",
+"tags"        : "",
+"url"         : "/blog/articles/2023/07/29/ubuntu-apt-key-is-deprecated.html",
+"date"        : "2023-07-29 00:00:00 +0000",
+"year"        : "2023",
+"month"       : "07",
+"yearMonth"   : "2023-07",
+"yearMonthDay"   : "2023-07-29"
+} ,
+
+{
 "title"       : "History of the Generative AI",
 "description" : "The rise in power of the generative AI is a revolution based on Deep Learning, transforming the tech world into a new one.",
 "authors"     : "glegoux",

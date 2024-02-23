@@ -4,9 +4,92 @@
  <title>Software Engineering Blog - Gilles Legoux (glegoux)</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2024-02-23T07:12:01+00:00</updated>
+ <updated>2024-02-23T20:44:14+00:00</updated>
  <id>https://glegoux.com/</id>
 
+ 
+ <entry>
+   <title>Ubuntu: apt-key is deprecated</title>
+   <link href="https://glegoux.com/blog/articles/2023/07/29/ubuntu-apt-key-is-deprecated.html"/>
+   <updated>2023-07-29T00:00:00+00:00</updated>
+   <id>https://glegoux.com/blog/articles/2023/07/29/ubuntu-apt-key-is-deprecated.html</id>
+   <content type="html">&lt;p&gt;&lt;code class=&quot;language-text highlighter-rouge&quot;&gt;apt-key&lt;/code&gt; is deprecated from Ubuntu 22.04 LTS (Jammy Jellyfish) for security flaws: don’t use it anymore whatever your Linux environment.
+Instead of using it, consider the command gpg now. Then move your public keys relative to your APT package manager to a 
+new location with the binary format OpenPGP, and specify the option Signed-By (signed-by) for all your used package repositories.&lt;/p&gt;
+
+&lt;p&gt;Let’s follow this plan together to properly use your secure package management and see if you are not infected by these security flaws:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;🔒Understand the security flaws&lt;/li&gt;
+  &lt;li&gt;💡 Explore its workstation environment for  &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;apt&lt;/code&gt;  and  &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;apt-key&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;🔨 Use directly the  &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;gpg&lt;/code&gt;  command to manage your new keys&lt;/li&gt;
+  &lt;li&gt;➡️ Migrate your current trusted public security keys to the correct format and location&lt;/li&gt;
+  &lt;li&gt;✅ Check the migration and stop the use&lt;code class=&quot;language-text highlighter-rouge&quot;&gt;apt-key&lt;/code&gt;,  &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;/etc/apt/trusted.gpg&lt;/code&gt;,  &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;/etc/apt/trusted.gpg.d/&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;❔Questions&lt;/li&gt;
+  &lt;li&gt;🚀 Go further&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;-understand-the-security-flaws&quot;&gt;🔒 Understand the security flaws&lt;/h1&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-text highlighter-rouge&quot;&gt;apt-key&lt;/code&gt;  is a sub-command of  &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;apt&lt;/code&gt;  to secure the management packages with asymmetric  security keys. As you know, package management is a sensible area for security; it is an access door for an attacker to install malicious packages. That’s why when a package is installed, cryptography is used to validate that the installed package is really the one wishes (see  &lt;a href=&quot;https://wiki.debian.org/SecureApt&quot;&gt;Debian Wiki: SecureApt&lt;/a&gt;).&lt;/p&gt;
+
+&lt;figure title=&quot;Security risks in package management&quot; class=&quot;content&quot;&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://miro.medium.com/v2/resize:fit:700/1*xnkb2pC2ouw_pA97-n8Mjg.png&quot; title=&quot;Security risks in package management&quot; alt=&quot;Security risks in package management&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;
+    Security risks in package management
+    
+      [built by author]
+    
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Here are the milestones of the lifecycle of a package until be installed:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;The package is produced on a build machine;&lt;/li&gt;
+  &lt;li&gt;The package is signed on the build machine with a private key;&lt;/li&gt;
+  &lt;li&gt;The signed package is uploaded to a repository (download mirror);&lt;/li&gt;
+  &lt;li&gt;The client system downloads the package (with its package dependencies before if needed) thanks to the metadata and the usage of its package manager from an authorized repository (or from cache);&lt;/li&gt;
+  &lt;li&gt;The signature of the package is verified (with its package dependencies before if needed) with the associated public key;&lt;/li&gt;
+  &lt;li&gt;If the signature is valid, the package is installed.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The developers of Debian and Ubuntu realized that the apt-key command has had flaws for a long time (see  &lt;a href=&quot;https://security-tracker.debian.org/tracker/source-package/apt&quot;&gt;Security tracker: package apt&lt;/a&gt;  and particularly  &lt;a href=&quot;https://security-tracker.debian.org/tracker/CVE-2011-3374&quot;&gt;CVE-2011–3374&lt;/a&gt;). While  &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;apt-key&lt;/code&gt;  was not guaranteed to work people continue to use it, that’s why now this command line has been marked as deprecated (see  &lt;a href=&quot;https://salsa.debian.org/apt-team/apt/-/commit/ee284d5917d09649b68ff1632d44e892f290c52f&quot;&gt;Fully deprecate apt-key, schedule removal for Q2/2022 (ee284d59) · Commits · APT Developers / apt · GitLab&lt;/a&gt;) and will be deleted. Support for the function ends with Debian 11 (Bullseye) and Ubuntu 22.04 (Jammy Jellyfish).&lt;/p&gt;
+
+&lt;p&gt;The problem is to move all tech ecosystems because numerous documentations or blog posts are not up-to-date on this aspect, even the tech giant like  &lt;a href=&quot;https://www.google.com/linuxrepositories/&quot;&gt;Google: Linux Software Repositories&lt;/a&gt;  where the usage of  &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;apt-key&lt;/code&gt;  is still referenced in July 2023.&lt;/p&gt;
+
+&lt;figure title=&quot;The home page of the Google Linux Software Repositories is not up-to-date with the usage of apt-key&quot; class=&quot;content&quot;&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://miro.medium.com/v2/resize:fit:700/1*uOECpGoz2jU0l2rwQ1t1fw.png&quot; title=&quot;The home page of the Google Linux Software Repositories is not up-to-date with the usage of apt-key&quot; alt=&quot;The home page of the Google Linux Software Repositories is not up-to-date with the usage of apt-key&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;
+    The home page of the Google Linux Software Repositories is not up-to-date with the usage of apt-key
+    
+      [&lt;a href=&quot;https://www.google.com/linuxrepositories&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;source&lt;/a&gt;]
+    
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Let’s understand an attack scenario among several ones possible. Even if by default, APT checks the validity of the signature of each package to install, and if it is invalid, a warning message is printed and the package is not installed. It is not sufficient because APT needs also to know which trusted public GPG key belongs to which package repository.&lt;/p&gt;
+
+&lt;h1 id=&quot;-read-more&quot;&gt;👀 Read more&lt;/h1&gt;
+
+&lt;p&gt;Read the rest of the article …&lt;/p&gt;
+
+&lt;div style=&quot;text-align: center;margin-bottom: 1em;&quot;&gt;
+  &lt;a href=&quot;https://medium.com/@glegoux/ubuntu-22-04-jammy-jellyfish-apt-key-is-deprecated-2dbbee8aec84&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; title=&quot;Read more&quot;&gt;
+    &lt;button class=&quot;btn btn-dark&quot;&gt;
+      &lt;b class=&quot;black&quot;&gt;Read more&lt;/b&gt;
+    &lt;/button&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+
+</content><author>
+       <name>glegoux</name>
+       <uri></uri>
+   </author></entry>
  
  <entry>
    <title>History of the Generative AI</title>
