@@ -5,8 +5,8 @@
     <description>Personal blog about software engineering</description>
     <link>https://glegoux.com/</link>
     <atom:link href="https://glegoux.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 23 Feb 2024 20:44:14 +0000</pubDate>
-    <lastBuildDate>Fri, 23 Feb 2024 20:44:14 +0000</lastBuildDate>
+    <pubDate>Fri, 23 Feb 2024 22:12:15 +0000</pubDate>
+    <lastBuildDate>Fri, 23 Feb 2024 22:12:15 +0000</lastBuildDate>
     <generator>Jekyll v4.3.2</generator>
     
       <item>
@@ -203,6 +203,86 @@ new location with the binary format OpenPGP, and specify the option Signed-By (s
         
         
         <category>Machine Learning</category>
+        
+      </item>
+    
+      <item>
+        <title>Learning PySpark with Google Colab</title>
+        <description>&lt;p&gt;Learning  &lt;a href=&quot;https://spark.apache.org/&quot;&gt;&lt;strong&gt;Apache Spark&lt;/strong&gt;&lt;/a&gt;  with a quick learning curve is challenging. Discover  &lt;strong&gt;distributed computation&lt;/strong&gt;  and  &lt;strong&gt;machine learning&lt;/strong&gt;  with  &lt;a href=&quot;https://www.databricks.com/glossary/pyspark&quot;&gt;PySpark&lt;/a&gt;, with  &lt;strong&gt;several tutorials&lt;/strong&gt;  until building your movie recommendation engine.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Links:&lt;/strong&gt; &lt;a href=&quot;https://github.com/criteo-research/master-iasd/tree/master/module4&quot;&gt;GitHub&lt;/a&gt;  |  &lt;a href=&quot;https://colab.research.google.com/github/criteo-research/master-iasd/blob/master/module4/td1/td1-rdd-questions.ipynb&quot;&gt;Tutorials quick start&lt;/a&gt;  |  &lt;a href=&quot;https://grouplens.org/datasets/movielens/&quot;&gt;Dataset&lt;/a&gt;&lt;/p&gt;
+
+&lt;figure title=&quot;&quot; class=&quot;content&quot;&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://miro.medium.com/v2/resize:fit:359/1*HZloIx45zZtPrtcEksmeRw.png&quot; title=&quot;&quot; alt=&quot;&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;
+    
+    
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Let’s discover how to use PySpark on Google Colab with accessible tutorials.&lt;/p&gt;
+
+&lt;p&gt;As a teaching fellow with  &lt;a href=&quot;https://www.linkedin.com/in/david-diebold-51249977/&quot;&gt;David Diebold&lt;/a&gt;  about  &lt;a href=&quot;https://www.lamsade.dauphine.fr/wp/iasd/en/programme/options/systemes-paradigmes-et-langages-pour-les-big-data/&quot;&gt;Systems, paradigms, and algorithms for Big Data&lt;/a&gt;  for the international  &lt;a href=&quot;https://www.lamsade.dauphine.fr/wp/iasd/en/&quot;&gt;Master IASD&lt;/a&gt;  (&lt;a href=&quot;https://www.universite-paris-saclay.fr/en/education/french-higher-education-system&quot;&gt;graduate degree M2&lt;/a&gt;) for the French  &lt;a href=&quot;https://dauphine.psl.eu/&quot;&gt;Dauphine Paris University&lt;/a&gt;  member of the  &lt;a href=&quot;https://psl.eu/en&quot;&gt;PSL University&lt;/a&gt;, I needed to organize sessions of tutorials for the students on the distributed computation with  &lt;a href=&quot;https://spark.apache.org/&quot;&gt;&lt;strong&gt;Apache Spark&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Fast, flexible, and developer-friendly&lt;/strong&gt;, this  &lt;strong&gt;data-distributed processing&lt;/strong&gt;  framework has become  &lt;strong&gt;one of the world’s most significant&lt;/strong&gt;. Before teaching the features provided by Spark, we had to choose  &lt;strong&gt;which language and platform&lt;/strong&gt;  our learners could run the tutorials we prepared. We chose the tech stack:  &lt;strong&gt;PySpark with Google Colab&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;pyspark-vs-spark&quot;&gt;PySpark vs. Spark&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.databricks.com/glossary/pyspark&quot;&gt;&lt;strong&gt;PySpark&lt;/strong&gt;&lt;/a&gt;  allows interaction with Spark in  &lt;strong&gt;Python&lt;/strong&gt;. It gives a  &lt;strong&gt;better learning curve&lt;/strong&gt;  than Spark (written originally in Scala). Even though it is less performant for a production world using  &lt;a href=&quot;https://www.py4j.org/&quot;&gt;Py4J&lt;/a&gt;  to interact with the JVM of Spark, it gives  &lt;strong&gt;sufficient performance&lt;/strong&gt;  (sometimes close to Spark with Java/Scala) to experiment with distributed data science and machine learning.&lt;/p&gt;
+
+&lt;figure title=&quot;PySpark is an interaction of Spark with Python&quot; class=&quot;content&quot;&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://miro.medium.com/v2/resize:fit:571/1*jLK8saUaKj8KuovUgXumUg.png&quot; title=&quot;PySpark is an interaction of Spark with Python&quot; alt=&quot;PySpark is an interaction of Spark with Python&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;
+    PySpark is an interaction of Spark with Python
+    
+      [built by author]
+    
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;PySpark with Python remains largely the  &lt;strong&gt;preferred language&lt;/strong&gt;  for  &lt;strong&gt;Notebooks.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure title=&quot;Percent of commands on the Databricks platform in each Spark language &quot; class=&quot;content&quot;&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://miro.medium.com/v2/resize:fit:344/1*L8jzF1__70sSDfflDM5CBg.png&quot; title=&quot;Percent of commands on the Databricks platform in each Spark language &quot; alt=&quot;Percent of commands on the Databricks platform in each Spark language &quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;
+    Percent of commands on the Databricks platform in each Spark language 
+    
+      [&lt;a href=&quot;https://www.databricks.com/blog/2020/06/18/introducing-apache-spark-3-0-now-available-in-databricks-runtime-7-0.html&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;source&lt;/a&gt;]
+    
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The  &lt;strong&gt;support&lt;/strong&gt;  of PySpark is already  &lt;strong&gt;excellent&lt;/strong&gt;  and continues to be improved with the future version of  &lt;a href=&quot;https://www.databricks.com/blog/2020/06/18/introducing-apache-spark-3-0-now-available-in-databricks-runtime-7-0.html&quot;&gt;&lt;strong&gt;Spark 3+&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Python is  &lt;strong&gt;easier to learn&lt;/strong&gt;  than Scala and has a  &lt;strong&gt;mature ecosystem for applied mathematics&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;For these reasons,  &lt;strong&gt;we preferred teaching PySpark over Spark&lt;/strong&gt;. Moving from one to another is easy, only the cost for the learners to become familiar with the Scala/Java ecosystem for advanced use.&lt;/p&gt;
+
+&lt;h1 id=&quot;-read-more&quot;&gt;👀 Read more&lt;/h1&gt;
+
+&lt;p&gt;Read the rest of the article …&lt;/p&gt;
+
+&lt;div style=&quot;text-align: center;margin-bottom: 1em;&quot;&gt;
+  &lt;a href=&quot;https://medium.com/@glegoux/apache-spark-pyspark-with-google-colab-for-data-science-63478138a63e&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; title=&quot;Read more&quot;&gt;
+    &lt;button class=&quot;btn btn-dark&quot;&gt;
+      &lt;b class=&quot;black&quot;&gt;Read more&lt;/b&gt;
+    &lt;/button&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+
+</description>
+        <pubDate>Tue, 15 Nov 2022 00:00:00 +0000</pubDate>
+        <link>https://glegoux.com/blog/articles/2022/11/15/learning-pyspark-with-google-colab.html</link>
+        <guid isPermaLink="true">https://glegoux.com/blog/articles/2022/11/15/learning-pyspark-with-google-colab.html</guid>
+        
+        
+        <category>Data</category>
         
       </item>
     
@@ -1315,123 +1395,6 @@ Particularly, you can:&lt;/p&gt;
         
         
         <category>Security</category>
-        
-      </item>
-    
-      <item>
-        <title>Java ecosystem</title>
-        <description>&lt;p&gt;The Java language is initiated by &lt;strong&gt;James Gosling&lt;/strong&gt;, &lt;strong&gt;Mike Sheridan&lt;/strong&gt; and &lt;strong&gt;Patrick Naughton&lt;/strong&gt; is June &lt;strong&gt;1991&lt;/strong&gt;. After several years,
-the company &lt;strong&gt;Sun Microsystems&lt;/strong&gt; released the first version of Java. Here its principles:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;It must be simple, object-oriented, and familiar.&lt;/li&gt;
-  &lt;li&gt;It must be robust and secure.&lt;/li&gt;
-  &lt;li&gt;It must be architecture-neutral and portable.&lt;/li&gt;
-  &lt;li&gt;It must execute with high performance.&lt;/li&gt;
-  &lt;li&gt;It must be interpreted, threaded, and dynamic.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;figure title=&quot;Java logo&quot; class=&quot;content&quot;&gt;
-  &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2020-05-04-java-ecosystem/images/java-logo.png&quot; title=&quot;Java logo&quot; alt=&quot;Java logo&quot; /&gt;
-  &lt;/div&gt;
-  &lt;figcaption&gt;
-    Java logo
-    
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;That is to say:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Java is C++ without the guns, clubs and knives.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;James Gosling, one of inventors of Java language&lt;/p&gt;
-
-&lt;p&gt;Java is a &lt;strong&gt;most famous programming language&lt;/strong&gt;, it is in the &lt;strong&gt;top 10&lt;/strong&gt; of the languages 
-the most &lt;strong&gt;present on the Internet resources&lt;/strong&gt; and with the highest number of contributors 
-respectively with the &lt;a href=&quot;https://www.tiobe.com/tiobe-index/programming-languages-definition&quot;&gt;TIOBE index&lt;/a&gt; 
-that counts the search engine hits, and the &lt;a href=&quot;https://octoverse.github.com&quot;&gt;octoverse&lt;/a&gt;
-annual report of Github that counts the number of unique contributors of java projects.&lt;/p&gt;
-
-&lt;p&gt;But the mascot of Java is &lt;a href=&quot;https://www.oracle.com/java/duke.html&quot;&gt;Duke&lt;/a&gt; that plays the role of a &lt;em&gt;software agent&lt;/em&gt; 
-that performed tasks for the user:&lt;/p&gt;
-
-&lt;figure title=&quot;Duke the Java mascot&quot; class=&quot;content&quot;&gt;
-  &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2020-05-04-java-ecosystem/images/duke.png&quot; title=&quot;Duke the Java mascot&quot; alt=&quot;Duke the Java mascot&quot; /&gt;
-  &lt;/div&gt;
-  &lt;figcaption&gt;
-    Duke the Java mascot
-    
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;The best resource about Java is surely the &lt;em&gt;Effective Java&lt;/em&gt; book with its different editions:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Learning the art of programming, like most other disciplines,&lt;br /&gt;
-consists of first learning the rules and then learning when to break them.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Joshua Bloch, author of Effective Java&lt;/p&gt;
-
-&lt;figure title=&quot;Effective Java book&quot; class=&quot;content&quot;&gt;
-  &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2020-05-04-java-ecosystem/images/effective-java-book-cover.jpg&quot; title=&quot;Effective Java book&quot; alt=&quot;Effective Java book&quot; /&gt;
-  &lt;/div&gt;
-  &lt;figcaption&gt;
-    Effective Java book
-    
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;But Sun Microsystems had an issue a business model, and &lt;strong&gt;Oracle acquired Java in January 2010&lt;/strong&gt;. 
-Now the project has 2 main versions, an &lt;strong&gt;open source version with OpenJDK&lt;/strong&gt; and &lt;strong&gt;commercial version with Oracle JDK&lt;/strong&gt;.
-These both Java Development Kit are available respectively at &lt;a href=&quot;https://openjdk.java.net&quot;&gt;https://openjdk.java.net&lt;/a&gt; and &lt;a href=&quot;https://www.oracle.com/java&quot;&gt;https://www.oracle.com/java&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;There are &lt;strong&gt;several JDK vendors among AdoptOpenJDK, Amazon Correto, SAP, Red Hat, Azul, IBM&lt;/strong&gt;. 
-The most of the vendors have a project based on OpenJDK. The Java Community Process (JCP) 
-provides a &lt;strong&gt;Technology Compatibility Kit&lt;/strong&gt; (TCK) to certify whether a JDK build meets 
-the Java standards. Once a build passes the TCK, it can be referred to as &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;Java SE compatible&lt;/code&gt;.
-The certification process requires a commercial license from Oracle.&lt;/p&gt;
-
-&lt;p&gt;You can see, what is the usage of the Java ecosystem in terms of IDE, Java vendors, Java version, Java 
-with the Snyk company survey, or the Jrebel company survey.&lt;/p&gt;
-
-&lt;p&gt;To follow the evolution of the ecosystem, you can subscribe to the Java magazine.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;References:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://blogs.oracle.com/java-platform-group/the-arrival-of-java-14&quot;&gt;https://blogs.oracle.com/java-platform-group/the-arrival-of-java-14&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://dzone.com/articles/an-overview-on-jdk-vendors&quot;&gt;https://dzone.com/articles/an-overview-on-jdk-vendors&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://blog.overops.com/java-wish-list-the-top-differences-between-java-scala-groovy-clojure-and-kotlin&quot;&gt;https://blog.overops.com/java-wish-list-the-top-differences-between-java-scala-groovy-clojure-and-kotlin&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://mreinhold.org/blog/forward-faster&quot;&gt;https://mreinhold.org/blog/forward-faster&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.jrebel.com/blog/2020-java-technology-report&quot;&gt;https://www.jrebel.com/blog/2020-java-technology-report&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://blogs.oracle.com/java-platform-group/faster-and-easier-use-and-redistribution-of-java-se&quot;&gt;https://blogs.oracle.com/java-platform-group/faster-and-easier-use-and-redistribution-of-java-se&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.developpez.com/actu/159181/Oracle-annonce-des-changements-pour-Java-SE-deux-versions-par-an-licence-GPL-des-fonctionnalites-commerciales-du-JDK-d-Oracle-en-open-source&quot;&gt;https://www.developpez.com/actu/159181/Oracle-annonce-des-changements-pour-Java-SE-deux-versions-par-an-licence-GPL-des-fonctionnalites-commerciales-du-JDK-d-Oracle-en-open-source&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.developpez.com/actu/185779/Java-8-ne-va-plus-recevoir-de-mises-a-jour-et-correctifs-de-securite-a-partir-de-septembre-a-moins-de-passer-a-un-support-commercial&quot;&gt;https://www.developpez.com/actu/185779/Java-8-ne-va-plus-recevoir-de-mises-a-jour-et-correctifs-de-securite-a-partir-de-septembre-a-moins-de-passer-a-un-support-commercial&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://tekcollab.imdeo.com/java-devient-payant&quot;&gt;https://tekcollab.imdeo.com/java-devient-payant&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.oracle.com/java/technologies/java-se-support-roadmap.html&quot;&gt;https://www.oracle.com/java/technologies/java-se-support-roadmap.html&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://oss.oracle.com&quot;&gt;https://oss.oracle.com&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://dzone.com/articles/difference-between-jdk-vs-jre-vs-jvm&quot;&gt;https://dzone.com/articles/difference-between-jdk-vs-jre-vs-jvm&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://docs.scala-lang.org/overviews/jdk-compatibility/overview.html&quot;&gt;https://docs.scala-lang.org/overviews/jdk-compatibility/overview.html&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/search?l=&amp;amp;o=desc&amp;amp;q=stars%3A%22%3E+1000%22+language%3AJava&amp;amp;s=stars&amp;amp;type=Repositories&quot;&gt;https://github.com/search?l=&amp;amp;o=desc&amp;amp;q=stars%3A%22%3E+1000%22+language%3AJava&amp;amp;s=stars&amp;amp;type=Repositories&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-</description>
-        <pubDate>Mon, 04 May 2020 00:00:00 +0000</pubDate>
-        <link>https://glegoux.com/blog/articles/2020/05/04/java-ecosystem.html</link>
-        <guid isPermaLink="true">https://glegoux.com/blog/articles/2020/05/04/java-ecosystem.html</guid>
-        
-        <category>Language</category>
-        
-        <category>Java</category>
-        
-        
-        <category>Development</category>
         
       </item>
     

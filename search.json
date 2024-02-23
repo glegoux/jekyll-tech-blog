@@ -29,6 +29,20 @@
 } ,
 
 {
+"title"       : "Learning PySpark with Google Colab",
+"description" : "PySpark on Google Colab is an efficient way to manipulate and explore the data, and a good fit for a group of AI learners.",
+"authors"     : "glegoux",
+"category"    : "Data",
+"tags"        : "",
+"url"         : "/blog/articles/2022/11/15/learning-pyspark-with-google-colab.html",
+"date"        : "2022-11-15 00:00:00 +0000",
+"year"        : "2022",
+"month"       : "11",
+"yearMonth"   : "2022-11",
+"yearMonthDay"   : "2022-11-15"
+} ,
+
+{
 "title"       : "My tech blog on Medium",
 "description" : "Migration blog posts to Medium under the user @glegoux",
 "authors"     : "glegoux",
