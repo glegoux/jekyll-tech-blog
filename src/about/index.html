@@ -5,7 +5,7 @@ layout: default
 
 <div id="page-about">
 
-  <p class="text-center">
+  <p id="about-this-blog" class="text-center">
     <b style="font-size: 2em">About this blog</b>
   </p>
 
@@ -61,8 +61,8 @@ layout: default
 
   {% include content/separator.html %}
 
-  <p class="text-center">
-    <b style="font-size: 2em">Tech blog community</b>
+  <p id="about-the-community" class="text-center">
+    <b style="font-size: 2em">About the community</b>
   </p>
 
   <div class="row" style="text-align: center">
@@ -109,32 +109,17 @@ layout: default
 
   {% include content/separator.html %}
 
-  <p class="text-center">
-    <b style="font-size: 2em">Accessibility</b>
+  <p id="about-me" class="text-center">
+    <b style="font-size: 2em">About me</b>
   </p>
 
-  <div class="row">
-    <div class="col-12 col-md-4" style="text-align: center;">
-      <img class="margin: auto" width="75%" src="/_static/common/img/all-devices.png" alt="all-devices">
-    </div>
+  {% include project/about-me.html %}
 
-    <div class="col-12 col-md-8">
-      This content is available and adapted for
-      <b>all devices with a web browser</b>.
-      Add this tech blog as a:
-      <br><br>
-      <ul style="padding-inline-start: 2em">
-        <li><b>favorite bookmark</b> of your <span class="d-inline-block"><img width="25" height="25" src="/_static/common/img/web-icon.png" alt="web browser"/> <b>web</b></span> <b>browser</b></li>
-        <li><b>desktop shortcut</b> of your <span class="d-inline-block"><b>:computer: computer</b></span> like your other native desktop applications.</li>
-        <li><b>home screen icon</b> of your <span class="d-inline-block"></span><b>📱 tablet or mobile</b></span> like your other native mobile applications.</li>
-      </ul>
-    </div>
-  </div>
 
   {% include content/separator.html %}
 
-  <p class="text-center">
-    <b style="font-size: 2em">Logo</b>
+  <p id="about-the-logo" class="text-center">
+    <b style="font-size: 2em">About the logo</b>
   </p>
 
   <div class="row">

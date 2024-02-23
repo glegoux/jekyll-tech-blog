@@ -17,11 +17,18 @@ redirect_from:
   <div class="blog-header">
 
     <div class="row">
-      <div class="col-lg-6 blog-avatar">
+      <div class="col-md-6 blog-avatar text-center">
         {% include avatar.html %}
+        <br>
+        <a href="/about/#about-me" target="_blank" rel="noopener noreferrer" title="About me">
+          <button class="btn btn-secondary">
+            <b class="black">About me</b>
+          </button>
+        </a>
       </div>
 
-      <div class="col-lg-6" style="text-align:center;margin-top:1em;margin-bottom:1em">
+      <div class="col-md-6 text-center" style="margin-top:1em;margin-bottom:1em">
+        <img width="25%" src="/_static/config/img/site-logo.png" alt="site logo glegoux.com">
         {% include blinker-info.html
               title=config_blog.title
               keywords=config_blog.keywords
@@ -31,30 +38,82 @@ redirect_from:
         %}
       </div>
     </div>
-
   </div>
 
   {% include content/separator.html %}
 
   <p class="text-center">
-    <b style="font-size: 2em">About me</b>
+    <b style="font-size: 2em">Pinned Tech Blog Posts</b>
   </p>
 
-  {% include project/about-me.html %}
+  <div class="row">
+    <div class="col-xs-12 col-md-6 col-lg-4">
+      {% include card-article.html
+      url="/blog/articles/2023/07/29/ubuntu-apt-key-is-deprecated.html"
+      title="Ubuntu: apt-key is deprecated"
+      date="2023/07/29"
+      description="apt-key is deprecated from Ubuntu 22.04 LTS (Jammy Jellyfish) for security flaws: don’t use it anymore whatever your Linux environment."
+      %}
+    </div>
+    <div class="col-xs-12 col-md-6 col-lg-4">
+      {% include card-article.html
+      url="/blog/articles/2023/04/16/history-of-the-generative-ai.html"
+      title="History of the Generative AI"
+      date="2023/04/16"
+      description="The rise in power of the generative AI is a revolution based on Deep Learning, transforming the tech world into a new one."
+      %}
+    </div>
+    <div class="col-xs-12 col-md-6 col-lg-4">
+      {% include card-article.html
+      url="/blog/articles/2022/11/15/learning-pyspark-with-google-colab.html"
+      title="Learning PySpark with Google Colab"
+      date="2022/11/15"
+      description="PySpark on Google Colab is an efficient way to manipulate and explore the data, and a good fit for a group of AI learners."
+      %}
+    </div>
+    <div class="d-none col-md-6 d-md-block d-lg-none">
+      {% include card-article.html
+      url="/blog/articles/2019/01/21/getting-started.html"
+      title="Getting Started"
+      date="2019/01/21"
+      description="How to write articles on this blog from an easy-to-use and rich syntax?"
+      %}
+    </div>
+  </div>
+
+  <div class="text-center">
+    <a href="/blog/articles/" title="Read other blog posts">
+      <b class="black">Read other blog posts ➡️</b>
+    </a>
+  </div>
 
   {% include content/separator.html %}
 
-  <p class="text-center">
-    <b style="font-size: 2em">Contact me</b>
+  <p id="accessibility" class="text-center">
+    <b style="font-size: 2em">Accessibility</b>
   </p>
 
-  {% include project/contact-me.html %}
+  <div class="row">
+    <div class="col-12 col-md-4" style="text-align: center;">
+      <img class="margin: auto" width="75%" src="/_static/common/img/all-devices.png" alt="all-devices">
+    </div>
 
-  {% include project/contact-me-why.html %}
+    <div class="col-12 col-md-8">
+      This content is available and adapted for
+      <b>all devices with a web browser</b>.
+      Add this tech blog as a:
+      <br><br>
+      <ul style="padding-inline-start: 2em">
+        <li><b>favorite bookmark</b> of your <span class="d-inline-block"><img width="25" height="25" src="/_static/common/img/web-icon.png" alt="web browser"/> <b>web</b></span> <b>browser</b></li>
+        <li><b>desktop shortcut</b> of your <span class="d-inline-block"><b>:computer: computer</b></span> like your other native desktop applications.</li>
+        <li><b>home screen icon</b> of your <span class="d-inline-block"></span><b>📱 tablet or mobile</b></span> like your other native mobile applications.</li>
+      </ul>
+    </div>
+  </div>
 
   {% include content/separator.html %}
 
-  <p class="text-center">
+  <p id="follow-me" class="text-center">
     <b style="font-size: 2em">Follow me</b>
   </p>
 
@@ -64,5 +123,15 @@ redirect_from:
     and/or gilleslegoux</b>:<br>
     {% include social.html %}
   </p>
+
+  {% include content/separator.html %}
+
+  <p id="contact-me" class="text-center">
+    <b style="font-size: 2em">Contact me</b>
+  </p>
+
+  {% include project/contact-me.html %}
+
+  {% include project/contact-me-why.html %}
 
 </div>
