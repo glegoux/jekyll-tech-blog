@@ -2,5 +2,14 @@
   <div>
     <img class="img-fluid lazyload" data-src="{{ include.src }}" alt="{{ include.title | default: '' }}" title="{{ include.title | default: '' }}"/>
   </div>
-  <figcaption>{{ include.title | default: '' }} [built by author]</figcaption>
+  <figcaption>
+    {{ include.title | default: '' }}
+    {% if include.source %}
+    [<a href="{{ include.source }}" target="_blank" rel="noopener noreferrer" >source</a>]
+    {% elsif include.source_author %}
+    [built by author]
+    {% elsif include.source_adapted %}
+    [adapted from <a href="{{ include.source_adapted }}" target="_blank" rel="noopener noreferrer" >source</a>]
+    {% endif %}
+  </figcaption>
 </figure>
