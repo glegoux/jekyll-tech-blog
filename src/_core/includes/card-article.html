@@ -39,12 +39,12 @@
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          {{ include.title }}
+          {{ include.title | truncate: 60 }}
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          {{ include.description }}
+          {{ include.description | truncate: 120 }}
         </div>
 
         {%- if include.category -%}
