@@ -62,8 +62,10 @@ mjx-container::-webkit-scrollbar-thumb {
 
   .article-card {
     margin: auto;
-    text-align: center;
     padding-bottom: 0.5em;
+    word-wrap: break-word;
+    text-align: center;
+    hyphens: auto;
 
     .article-cover {
       img {
@@ -88,6 +90,7 @@ mjx-container::-webkit-scrollbar-thumb {
       }
 
       .article-description {
+        text-align: justify;
         color: grey;
         font-weight: 300;
         font-size: 0.9em;
@@ -127,7 +130,7 @@ mjx-container::-webkit-scrollbar-thumb {
     li {
       display: inline-block;
       padding: 0.3em 0.9em;
-      margin: 0.25em 0.5em 0.25em 0;
+      margin: 0.5em 0.5em 0.25em 0;
       border-radius: 5px;
     }
 
