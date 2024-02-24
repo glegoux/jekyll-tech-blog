@@ -10,10 +10,15 @@ layout: default
   </p>
 
 
-  <div class="row">
+  <div class="row text-center">
     <div class="col-12 col-md-4">
       {% include avatar.html %}
       <br>
+      <a href="#about-me" title="About me">
+        <button class="btn btn-secondary">
+          <b class="black">About me</b>
+        </button>
+      </a>
     </div>
 
     <div class="col-12 col-md-8">
@@ -36,7 +41,7 @@ layout: default
             <span class="d-inline-block">
               <img width="25" height="25" src="/_static/common/img/open-source.png" alt="open source project"/>
               <u>open</u>
-            </span><u> source project</u>
+            </span><u> source project:🧪Jekyll Tech Blog</u>
           </b>
         </a>
         for the
@@ -108,6 +113,25 @@ layout: default
     </div>
     <div class="d-none d-md-block col-md-3 d-lg-none"></div>
   </div>
+
+  {% include content/separator.html %}
+
+  <p id="open-source-freemium" class="text-center">
+    <b style="font-size: 2em">About open source and freemium tools used</b>
+  </p>
+
+  <p>
+    Here are open source and freemium used to build this tech blog based on the framework
+    <a class="link-strong" href="https://github.com/glegoux/jekyll-tech-blog" target="_blank" rel="noopener noreferrer" title="See the original project">
+      🧪 <b>Jekyll Tech Blog</b>
+    </a>, that I developed:
+  </p>
+
+  {% include content/google-drawing.html
+  title="Open source and Freemium tools"
+  src="https://docs.google.com/drawings/d/e/2PACX-1vRkBNM6Pvz1h0E7p0s11NmBCy1M0LmErf3ryvgHgEhJR7dV6K47tGWOkmUdZiJpDP_RTieyiuOUbxTl/pub?w=960&h=720"
+  source_author=true
+  %}
 
   {% include content/separator.html %}
 
