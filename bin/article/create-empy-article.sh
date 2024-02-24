@@ -9,7 +9,7 @@ ROOT_DIR="$(git rev-parse --show-toplevel)"
 error() {
     local message="$1"
     echo >&2 "${message}"
-    exit 1 
+    exit 1
 }
 
 # main
@@ -65,6 +65,7 @@ if [ -f "${article_path}" ]; then
 fi
 
 echo "---
+pinned: false
 title: \"${title}\"
 description: \"${description}\"
 authors: [\"${author}\"]

@@ -14,6 +14,16 @@
       </span>
       {%- endif -%}
 
+      {%- if include.pinned -%}
+      <span class="article-pinned">
+        <ul>
+          <li title="Pinned article">
+            📌
+          </li>
+        </ul>
+      </span>
+      {%- endif -%}
+
       <!-- Article cover -->
       {%- assign article_cover_path = "/_static/covers/posts/" | append: article_id | append: ".jpg" -%}
       {%- assign article_cover_path_exist = site.static_files | where: "path", article_cover_path | first -%}
