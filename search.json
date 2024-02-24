@@ -1,6 +1,20 @@
 [
 
 {
+"title"       : "Top Five Ways to Beat Blue Monday",
+"description" : "Don’t panic. Overcome the Blue Monday, the third Monday of each year. Neither an advertising campaign, nor a pseudo-scientific formula, nor a societal event should influence you. Analyze the collected data, and be resilient to the seasonal blues.",
+"authors"     : "glegoux",
+"category"    : "News",
+"tags"        : "",
+"url"         : "/blog/articles/2024/01/10/top-five-ways-to-beat-blue-monday.html",
+"date"        : "2024-01-10 00:00:00 +0000",
+"year"        : "2024",
+"month"       : "01",
+"yearMonth"   : "2024-01",
+"yearMonthDay"   : "2024-01-10"
+} ,
+
+{
 "title"       : "Ubuntu: apt-key is deprecated",
 "description" : "apt-key is deprecated from Ubuntu 22.04 LTS (Jammy Jellyfish) for security flaws: don’t use it anymore whatever your Linux environment.",
 "authors"     : "glegoux",

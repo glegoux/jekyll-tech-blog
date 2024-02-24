@@ -5,9 +5,86 @@
     <description>Personal blog about software engineering</description>
     <link>https://glegoux.com/</link>
     <atom:link href="https://glegoux.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 24 Feb 2024 08:06:48 +0000</pubDate>
-    <lastBuildDate>Sat, 24 Feb 2024 08:06:48 +0000</lastBuildDate>
+    <pubDate>Sat, 24 Feb 2024 13:48:02 +0000</pubDate>
+    <lastBuildDate>Sat, 24 Feb 2024 13:48:02 +0000</lastBuildDate>
     <generator>Jekyll v4.3.2</generator>
+    
+      <item>
+        <title>Top Five Ways to Beat Blue Monday</title>
+        <description>&lt;p&gt;Knowing that the year’s most depressing day is soon can be upsetting. No recurrent day will see everyone feeling depressed. However, periodic factors can contribute to defining the social climate of a society, where statistically, a significant proportion of the population suffers from depression compared to other moments.&lt;/p&gt;
+
+&lt;p&gt;Let’s understand the Blue Monday effect and how to go over it:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;📜 History&lt;/li&gt;
+  &lt;li&gt;🧮 Formulae&lt;/li&gt;
+  &lt;li&gt;📊 Analysis&lt;/li&gt;
+  &lt;li&gt;🪄 Tips&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;-history&quot;&gt;📜 History&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Blue_Monday_%28date%29&quot;&gt;Blue Monday&lt;/a&gt;  is a day recognized as the most depressing day of the year, mainly because of the return to work and routine after a weekend and the end of the festivities of the previous year. It is the third Monday of January.&lt;/p&gt;
+
+&lt;p&gt;It was initially created by psychologist Dr. Cliff Arnall in 2005 when he developed the concept as part of a marketing campaign for the now-defunct British company  &lt;a href=&quot;https://en.wikipedia.org/wiki/Sky_Travel&quot;&gt;Sky Travel&lt;/a&gt;. It’s a fantastic example of how an advertising campaign can become embedded in cultural traditions.&lt;/p&gt;
+
+&lt;h1 id=&quot;-formulae&quot;&gt;🧮 Formulae&lt;/h1&gt;
+
+&lt;p&gt;Dr. Cliff Arnall suggested a function that models how depressing each day of the year is. By finding the date on which a mathematical formula based on economic, psychological, and climatological factors, then validated by his observations, takes its maximum value on Blue Monday:&lt;/p&gt;
+
+&lt;figure title=&quot;Depression formula — not proven scientifically 🤓&quot; class=&quot;content&quot;&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://miro.medium.com/v2/resize:fit:223/1*g_U1U3hTBB28XbBAaIiVVg.png&quot; title=&quot;Depression formula — not proven scientifically 🤓&quot; alt=&quot;Depression formula — not proven scientifically 🤓&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;
+    Depression formula — not proven scientifically 🤓
+    
+      [&lt;a href=&quot;https://en.wikipedia.org/wiki/Blue_Monday_(date)&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;source&lt;/a&gt;]
+    
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Where the parameters are the weather (W), the debt (D), the monthly salary (d), the time since Christmas (T), the time since failing our New Year’s resolutions (Q), low motivational levels (M), and the feeling of the need to take action (Na).&lt;/p&gt;
+
+&lt;p&gt;Later, Dr. Cliff Arnall created the “Yellow Day”, a celebration of the happiest day of the year to counterbalance the saddest day. This time, he was in cahoots with an ice cream manufacturer,  &lt;a href=&quot;https://en.wikipedia.org/wiki/Wall%27s_(ice_cream)&quot;&gt;Wall’s Ice Cream&lt;/a&gt;, where the period around the 20th of June would be a perfectly happy day thanks to the pleasant temperature, more daylight hours, and holiday perspectives. On a similar approach, the formula is:&lt;/p&gt;
+
+&lt;figure title=&quot;Happiness formula — not proven scientifically 🤓&quot; class=&quot;content&quot;&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://miro.medium.com/v2/resize:fit:214/1*LfeLEl_pl-iB8PSR5kDf5w.png&quot; title=&quot;Happiness formula — not proven scientifically 🤓&quot; alt=&quot;Happiness formula — not proven scientifically 🤓&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;
+    Happiness formula — not proven scientifically 🤓
+    
+      [&lt;a href=&quot;https://web.archive.org/web/20110120064745/http://www.ctv.ca/CTVNews/TopStories/20060623/happiest_day_060623&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;source&lt;/a&gt;]
+    
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Where the parameters are the outdoor activities (O) in full connection with nature (N) and also the social interactions (I), the childhood and other positive memories  (S), multiplied by the temperature (T), and divided holiday excitement (P).&lt;/p&gt;
+
+&lt;p&gt;Several versions of these mathematical formulae exist. Each one gives periodic dates because they are founded on pseudo-periodic coupled parameters. However, the scientific community considers them as baseless pseudoscience. And they are right. In addition, the mental health of a population can be influenced by many unpredictable phenomena like an economic crisis, an epidemic, or a natural catastrophe. Even if a mathematical formula and/or these annual periodicities were proven, they would be disturbed by it. But time slices exist where the mental health of a whole population is affected. It isn’t easy to quantify. Only trends can be observed.&lt;/p&gt;
+
+&lt;h1 id=&quot;-read-more&quot;&gt;👀 Read more&lt;/h1&gt;
+
+&lt;p&gt;Read the rest of the article …&lt;/p&gt;
+
+&lt;div style=&quot;text-align: center;margin-bottom: 1em;&quot;&gt;
+  &lt;a href=&quot;https://medium.com/@glegoux/top-five-ways-to-beat-blue-monday-0f0de0950827&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; title=&quot;Read more&quot;&gt;
+    &lt;button class=&quot;btn btn-dark&quot;&gt;
+      &lt;b class=&quot;black&quot;&gt;Read more&lt;/b&gt;
+    &lt;/button&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+
+</description>
+        <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
+        <link>https://glegoux.com/blog/articles/2024/01/10/top-five-ways-to-beat-blue-monday.html</link>
+        <guid isPermaLink="true">https://glegoux.com/blog/articles/2024/01/10/top-five-ways-to-beat-blue-monday.html</guid>
+        
+        
+        <category>News</category>
+        
+      </item>
     
       <item>
         <title>Ubuntu: apt-key is deprecated</title>
@@ -1353,48 +1430,6 @@ respecting the triangle inegality.&lt;/p&gt;
         
         
         <category>Applied Mathematics</category>
-        
-      </item>
-    
-      <item>
-        <title>GNU privacy guard</title>
-        <description>&lt;p&gt;First, it is important to distinguish: &lt;strong&gt;PGP&lt;/strong&gt; (Pretty Good Privacy), &lt;strong&gt;OpenPGP&lt;/strong&gt; and &lt;strong&gt;GnuPG&lt;/strong&gt; also named &lt;strong&gt;GPG&lt;/strong&gt; (Gnu Privacy Guard).
-Phil Zimmerman made up PGP in 1991 as a way for people to communicate without eavesdropping. Going further 
-back into the 1990s, there used to be a law in the US that restricted the export of cryptographic technology 
-outside the US until 1992 after the World War II. Due to this patent and license around the source code and specification of 
-the proprietary product PGP, it was not always practical for international use. That’s why the 
-&lt;a href=&quot;https://www.openpgp.org/about&quot;&gt;OpenPGP Working Group&lt;/a&gt; was formed within the Internet Engineering Task Force (IETF) 
-to define a free standard protocol OpenPGP inspired by PGP with &lt;a href=&quot;https://www.ietf.org/rfc/rfc4880.txt&quot;&gt;RFC4880&lt;/a&gt; and 
-after the end of the US restriction to allow to everyone to implement a solution. In June 2010 Symantec Corporation bought PGP Inc., 
-but it is acquired by &lt;a href=&quot;https://www.broadcom.com&quot;&gt;Broadcom Inc&lt;/a&gt; in 2019 that owns a propriety implementation of PGP now. 
-&lt;a href=&quot;https://gnupg.org&quot;&gt;GnuPG&lt;/a&gt; is a free implementation of the OpenPGP standard very used in the world.&lt;/p&gt;
-
-&lt;p&gt;GnuPG proposes services as authentication, confidentiality, compression, compatibility and segmentation
-with a hybrid cryptosystem combining the efficiency of symmetrical cryptosystem and the convenience of asymmetrical cryptosystem. 
-Particularly, you can:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;sign resources (electronic document, Git commit …)&lt;/li&gt;
-  &lt;li&gt;encrypt/decrypt resources (email, sms, message, filesystem partition, stored data …)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;References:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://help.github.com/en/github/authenticating-to-github/generating-a-new-gpg-key&quot;&gt;https://help.github.com/en/github/authenticating-to-github/generating-a-new-gpg-key&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.gnupg.org/index.html&quot;&gt;https://www.gnupg.org/index.html&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://git.gnupg.org/cgi-bin/gitweb.cgi&quot;&gt;https://git.gnupg.org/cgi-bin/gitweb.cgi&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.faqs.org/faqs/pgp-faq/part1/&quot;&gt;http://www.faqs.org/faqs/pgp-faq/part1/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.linuxjournal.com/content/signing-git-commits&quot;&gt;https://www.linuxjournal.com/content/signing-git-commits&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.linode.com/docs/security/encryption/gpg-keys-to-send-encrypted-messages/#more-information&quot;&gt;https://www.linode.com/docs/security/encryption/gpg-keys-to-send-encrypted-messages/#more-information&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate>
-        <link>https://glegoux.com/blog/articles/2020/05/15/gnu-privacy-guard.html</link>
-        <guid isPermaLink="true">https://glegoux.com/blog/articles/2020/05/15/gnu-privacy-guard.html</guid>
-        
-        
-        <category>Security</category>
         
       </item>
     
