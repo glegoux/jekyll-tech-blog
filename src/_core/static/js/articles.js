@@ -170,7 +170,7 @@ jQuery(document).ready(function () {
         categories.forEach(category => categoriesStructure.add(category));
       }
     );
-    return categoriesStructure;
+    return [...categoriesStructure].sort();
   }
 
   function buildCategoriesContainerElement(categoriesStructure) {
