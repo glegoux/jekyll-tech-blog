@@ -1,4 +1,5 @@
 ---
+pinned: true
 title: "History of the Generative AI"
 description: "The rise in power of the generative AI is a revolution based on Deep Learning, transforming the tech world into a new one."
 authors: ["glegoux"]

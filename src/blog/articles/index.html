@@ -111,6 +111,7 @@ redirect_from:
       {%- for post in posts %}
       <div class="col-xs-12 col-md-6 col-lg-4">
         {% include card-article.html
+        pinned=post.pinned
         url=post.url
         date=post.date
         title=post.title

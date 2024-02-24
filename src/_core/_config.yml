@@ -57,6 +57,7 @@ defaults:
       layout: "article"
       article: true
       comment: true
+      pinned: false
 
 # Markdown - generation and syntax
 

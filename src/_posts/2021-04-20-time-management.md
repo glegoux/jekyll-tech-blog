@@ -1,4 +1,5 @@
 ---
+pinned: true
 title: "Time management"
 description: "How to optimize your time & work?"
 authors: ["glegoux"]

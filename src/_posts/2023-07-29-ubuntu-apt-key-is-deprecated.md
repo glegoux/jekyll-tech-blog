@@ -1,4 +1,5 @@
 ---
+pinned: true
 title: "Ubuntu: apt-key is deprecated"
 description: "apt-key is deprecated from Ubuntu 22.04 LTS (Jammy Jellyfish) for security flaws: don’t use it anymore whatever your Linux environment."
 authors: ["glegoux"]

@@ -115,7 +115,7 @@ mjx-container::-webkit-scrollbar-thumb {
   }
 }
 
-.article-draft, .article-category, .article-labels {
+.article-pinned, .article-draft, .article-category, .article-labels {
   padding: 0;
   font-size: 0.8em;
 
@@ -144,6 +144,18 @@ mjx-container::-webkit-scrollbar-thumb {
   top: 10px;
   li {
     background-color: lightgray;
+    color: grey;
+  }
+}
+
+.article-pinned {
+  z-index: 1;
+  position: absolute;
+  left: 25px;
+  top: 10px;
+  li {
+    background-color: white;
+    border: 1px solid lightgray;
     color: grey;
   }
 }

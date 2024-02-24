@@ -1,4 +1,5 @@
 ---
+pinned: true
 title: "Learning PySpark with Google Colab"
 description: "PySpark on Google Colab is an efficient way to manipulate and explore the data, and a good fit for a group of AI learners."
 authors: ["glegoux"]

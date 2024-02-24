@@ -47,32 +47,22 @@ redirect_from:
   </p>
 
   <div class="row">
+    {% assign posts = site.posts | where:'pinned', true %}
+    {%- for post in posts %}
     <div class="col-xs-12 col-md-6 col-lg-4">
       {% include card-article.html
-      url="/blog/articles/2023/07/29/ubuntu-apt-key-is-deprecated.html"
-      title="Ubuntu: apt-key is deprecated"
-      date="2023/07/29"
-      description="apt-key is deprecated from Ubuntu 22.04 LTS (Jammy Jellyfish) for security flaws: don’t use it anymore whatever your Linux environment."
+      url=post.url
+      date=post.date
+      title=post.title
+      description=post.description
+      category=post.category
+      time_reading_minutes=post.time_reading_minutes
+      draft=post.draft
       %}
     </div>
-    <div class="col-xs-12 col-md-6 col-lg-4">
-      {% include card-article.html
-      url="/blog/articles/2023/04/16/history-of-the-generative-ai.html"
-      title="History of the Generative AI"
-      date="2023/04/16"
-      description="The rise in power of the generative AI is a revolution based on Deep Learning, transforming the tech world into a new one."
-      %}
-    </div>
-    <div class="d-none d-md-block col-md-3 d-lg-none"></div>
-    <div class="col-xs-12 col-md-6 col-lg-4">
-      {% include card-article.html
-      url="/blog/articles/2022/11/15/learning-pyspark-with-google-colab.html"
-      title="Learning PySpark with Google Colab"
-      date="2022/11/15"
-      description="PySpark on Google Colab is an efficient way to manipulate and explore the data, and a good fit for a group of AI learners."
-      %}
-    </div>
-    <div class="d-none d-md-block col-md-3 d-lg-none"></div>
+    {%- else -%}
+    <p>No one available pinned article</p>
+    {%- endfor %}
   </div>
 
   <div class="text-center">

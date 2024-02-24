@@ -1,4 +1,5 @@
 ---
+pinned: true
 title: "Access to a computer from USB key"
 description: "Somebody with USB key can take control of your computer"
 authors: ["glegoux"]
