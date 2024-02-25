@@ -1,0 +1,22 @@
+---
+layout: null
+sitemap: false
+permalink: "/stats.json"
+---
+[
+{% for post in site.posts %}
+{
+"title"                : "{{ post.title }}",
+"authors"              : "{{ post.authors | join: ', ' }}",
+"category"             : "{{ post.category }}",
+"tags"                 : "{{ post.tags | join: ', ' }}",
+"time_reading_minutes" : {{ post.time_reading_minutes }},
+"url"                  : "{{ site.baseurl }}{{ post.url }}",
+"date"                 : "{{ post.date }}",
+"year"                 : "{{ post.date | date: '%Y' }}",
+"month"                : "{{ post.date | date: '%m' }}",
+"yearMonth"            : "{{ post.date | date: '%Y-%m' }}",
+"yearMonthDay"         : "{{ post.date | date: '%Y-%m-%d' }}"
+} {% unless forloop.last %},{% endunless %}
+{% endfor %}
+]
