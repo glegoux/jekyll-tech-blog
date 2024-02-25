@@ -1,0 +1,36 @@
+table {
+    text-align: center;
+    font-size: 1em
+}
+
+table td, table th {
+    padding: 0.5em;
+}
+
+table.log {
+    margin-left: 1em;
+}
+
+table.log td, table.log th {
+    border: 1px solid lightgrey;
+}
+
+table.log a {
+    color: #0366d6 !important;
+}
+
+table.sortable th[data-sort="dsc"]::after {
+    content: "▼";
+    color: currentcolor;
+    font-size: 100%;
+    top: 0;
+    right: 0;
+}
+
+table.sortable th[data-sort="asc"]::after {
+    content: "▲";
+    color: currentcolor;
+    font-size: 100%;
+    top: 0;
+    right: 0;
+}
