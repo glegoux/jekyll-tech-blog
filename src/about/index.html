@@ -3,15 +3,35 @@ layout: default
 ---
 {%- assign config_blog = site.project.blog -%}
 {%- assign config_core = site.project_core -%}
-<div id="page-about" class="w-100 text-center">
+<div id="page-about" class="w-100">
 
-  {% include avatar.html %}
+  <p id="about-this-blog" class="text-center">
+    <b style="font-size: 2em">About this blog</b>
+  </p>
 
-  <br>
+  <div class="row">
+    <div class="col-12 col-md-4 text-center">
+      {% include avatar.html %}
+      <br>
+    </div>
+    <div class="col-12 col-md-8">
+      <p>
+        Hello :wave:, I am a software engineer. I share my
+        :bookmark_tabs: <a class="underline link-strong" href="/blog/articles">tech blog posts</a> about my works and interests.
+      </p>
+      <p>
+        I use here the <img width="25" height="25" src="https://github.com/glegoux/jekyll-tech-blog/raw/main/doc/img/open-source.png" alt="open source project">
+        open source template provided by <a class="underline" href="https://github.com/glegoux/glegoux.github.io"><b>🧪 Jekyll Tech Blog</b></a>,
+        that is a framework based on Jekyll to build easily a tech blog.
+        </a>
+      </p>
+    </div>
+  </div>
 
-  <p>
-    Hello :wave:, I am a software engineer. I share :bookmark_tabs: my
-    <a href="/blog/articles"><b><u>post blog posts</u></b></a> about my works and interests.
+  {% include content/separator.html %}
+
+  <p id="about-the-community" class="text-center">
+    <b style="font-size: 2em">About the community</b>
   </p>
 
   <div class="row text-center">
@@ -35,9 +55,9 @@ layout: default
         Co-write content or create your own blog
       </p>
       {% include card-article.html
-          url="/blog/articles/2023/01/01/getting-started.html"
+          url="/blog/articles/2024/01/01/getting-started.html"
           title="Getting Started"
-          date="2023/01/01"
+          date="2024/01/01"
           description="How to write articles on this blog from an easy-to-use and rich syntax?"
       %}
     </div>
@@ -52,6 +72,78 @@ layout: default
              class="img-fluid ls-is-cached lazyloaded" />
       </a>
       <br>
+    </div>
+  </div>
+
+  {% include content/separator.html %}
+
+  <p id="open-source-freemium" class="text-center">
+    <b style="font-size: 2em">About open source and freemium tools used</b>
+  </p>
+
+  <p>
+    Here are open source and freemium used to build this tech blog based on the framework
+    <a class="underline" href="https://github.com/glegoux/jekyll-tech-blog" target="_blank" rel="noopener noreferrer" title="See project behind this template">
+      <b>🧪 Jekyll Tech Blog</b>
+    </a>:
+  </p>
+
+  {% include content/google-drawing.html
+  title="Open source and Freemium tools"
+  src="https://docs.google.com/drawings/d/e/2PACX-1vRkBNM6Pvz1h0E7p0s11NmBCy1M0LmErf3ryvgHgEhJR7dV6K47tGWOkmUdZiJpDP_RTieyiuOUbxTl/pub?w=960&h=720"
+  source_author=true
+  %}
+
+  {% include content/separator.html %}
+
+  <p id="accessibility" class="text-center">
+    <b style="font-size: 2em">Accessibility</b>
+  </p>
+
+  <div class="row">
+    <div class="col-12 col-md-4" style="text-align: center;">
+      <img class="margin: auto" width="75%" src="https://github.com/glegoux/jekyll-tech-blog/raw/main/doc/img/all-devices.png" alt="all-devices">
+    </div>
+
+    <div class="col-12 col-md-8">
+      This content is available and adapted for
+      <b>all devices with a web browser</b>.
+      Add this tech blog as a:
+      <br><br>
+      <ul style="padding-inline-start: 2em">
+        <li><b>favorite bookmark</b> of your <span class="d-inline-block">🌐 <b>web</b></span> <b>browser</b></li>
+        <li><b>desktop shortcut</b> of your <span class="d-inline-block"><b>:computer: computer</b></span> like your other native desktop applications.</li>
+        <li><b>home screen icon</b> of your <span class="d-inline-block"></span><b>📱 tablet or mobile</b></span> like your other native mobile applications.</li>
+      </ul>
+    </div>
+  </div>
+
+
+  {% include content/separator.html %}
+
+  <p id="about-the-logo" class="text-center">
+    <b style="font-size: 2em">About the logo</b>
+  </p>
+
+  <div class="row">
+    <div class="col-12 col-md-8">
+      <p style="text-align:justify">
+        The logo of this blog is composed of a <b>test tube</b> with the shortcode : test_tube :, it gives :test_tube: but with unicode 🧪,
+        as used to conduct chemical experiments in a laboratory. Depicted as a clear cylinder, open at one end and containing a green liquid.
+        Positioned at a 45° angle. It symbolizes the <b>tech experimentation</b> and is similar of the Jekyll icon
+        <img height="25px" src="https://github.com/glegoux/jekyll-tech-blog/raw/main/doc/img/jekyll-icon.png" alt="Jekyll icon">
+        but where the content is red.
+      </p>
+    </div>
+
+    <div class="col-12 col-md-4">
+      <div style="text-align:center;margin-top:1em;margin-bottom:1em">
+        <img height="75px" src="https://github.com/glegoux/jekyll-tech-blog/raw/main/doc/img/icon-square.png" alt="site logo Jekyll Tech Blog"><br>
+        <a class="underline link-strong" href="{{ config_core.links.project }}" target="_blank" rel="noopener noreferrer" title="See the original project">
+          {{ config_core.title }}
+        </a>
+      </div>
+
     </div>
   </div>
 
