@@ -1,7 +1,7 @@
 ---
 layout: null
 sitemap: false
-permalink: "/stats.json"
+permalink: "/_stats.json"
 ---
 [
 {% for post in site.posts %}
