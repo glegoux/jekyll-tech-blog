@@ -58,6 +58,7 @@ defaults:
       article: true
       comment: true
       pinned: false
+      time_reading_minutes: 1
 
 # Markdown - generation and syntax
 
