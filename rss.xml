@@ -5,8 +5,8 @@
     <description>Personal blog about software engineering</description>
     <link>https://glegoux.com/</link>
     <atom:link href="https://glegoux.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 25 Feb 2024 15:49:41 +0000</pubDate>
-    <lastBuildDate>Sun, 25 Feb 2024 15:49:41 +0000</lastBuildDate>
+    <pubDate>Sun, 25 Feb 2024 20:58:15 +0000</pubDate>
+    <lastBuildDate>Sun, 25 Feb 2024 20:58:15 +0000</lastBuildDate>
     <generator>Jekyll v4.3.2</generator>
     
       <item>
@@ -284,6 +284,299 @@ new location with the binary format OpenPGP, and specify the option Signed-By (s
       </item>
     
       <item>
+        <title>From Hadoop to the modern data stack</title>
+        <description>&lt;h1 id=&quot;hadoop-at-criteo&quot;&gt;Hadoop at Criteo&lt;/h1&gt;
+
+&lt;p&gt;by  &lt;a href=&quot;https://fr.linkedin.com/in/anthony-rabier-345108100&quot;&gt;Anthony Rabier&lt;/a&gt;, Staff Site Reliability Lead Engineer at  &lt;a href=&quot;https://www.criteo.com/&quot;&gt;Criteo&lt;/a&gt;&lt;br /&gt;
+and  &lt;a href=&quot;https://fr.linkedin.com/in/williammontaz&quot;&gt;William Montaz&lt;/a&gt;, Senior Staff Site Reliability Engineer at  &lt;a href=&quot;https://www.criteo.com/&quot;&gt;Criteo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Criteo migrated from  &lt;a href=&quot;https://hadoop.apache.org/docs/stable/&quot;&gt;Hadoop&lt;/a&gt;  3 to Hadoop 2, with a lot of patches and in an awesome way by migrating first the runtime to Hadoop 3 for a big progressively without downtime for Hadoop YARN and HDFS without any intervention of the development teams, then by migrating the Hadoop projects for Spark, Flink, and Hadoop Map Reduce. So a vanilla distribution of Hadoop 3 has been created, running with compiled projects in Hadoop 2 and 3 with retro compatibility and tricks developed and merged by Criteo in the core project of Hadoop.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/v2/resize:fit:318/0*Ca5vwq5jxI-Qq2m_&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Migration from Hadoop 2 to Hadoop 3&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/criteo/garmadon&quot;&gt;Garmadon&lt;/a&gt;  is an agent java deployed with all JVM processes running on the Criteo Hadoop cluster to do the metrology jobs for Spark, Flink, and Hadoop Map Reduce … You can build generic Grafana dashboards and create data lineage between your dataset and audit all operations on HDFS.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/v2/resize:fit:700/0*OSMVeNYwRB6fQMSC&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Garmadon, Java agent for the Metrology on Hadoop&lt;/p&gt;
+
+&lt;h1 id=&quot;data-processing-at-criteo&quot;&gt;Data processing at Criteo&lt;/h1&gt;
+
+&lt;p&gt;by  &lt;a href=&quot;https://fr.linkedin.com/in/mliroz&quot;&gt;Miguel Liroz&lt;/a&gt;, Senior Staff Site Reliability Lead Engineer at  &lt;a href=&quot;https://www.criteo.com/&quot;&gt;Criteo&lt;/a&gt;&lt;br /&gt;
+and  &lt;a href=&quot;https://www.linkedin.com/in/raphaelclaude&quot;&gt;Raphael Claude&lt;/a&gt;, Staff Site Reliability Engineer at  &lt;a href=&quot;https://www.criteo.com/&quot;&gt;Criteo&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Datadoc is an internal tool used by Criteo to browse the data catalog and to provide a data catalog on each dataset.&lt;/p&gt;
+
+&lt;figure title=&quot;Datadoc&quot; class=&quot;content&quot;&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://miro.medium.com/v2/resize:fit:700/1*UD_BHWOi4vMzm_vEQQthvg.png&quot; title=&quot;Datadoc&quot; alt=&quot;Datadoc&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;
+    Datadoc
+    
+      [built by author]
+    
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.com/criteo-engineering/scheduling-data-pipelines-at-criteo-part-1-8b257c6c8e55&quot;&gt;BigDataFlow&lt;/a&gt;  is an internal tool used by Criteo written in Scala to schedule data processing jobs from an extended SQL query.&lt;/p&gt;
+
+&lt;figure title=&quot;BigDataFlow extended SQL&quot; class=&quot;content&quot;&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://miro.medium.com/v2/resize:fit:700/1*cRzS5MJ4IiErfXQ82Sz5Ug.png&quot; title=&quot;BigDataFlow extended SQL&quot; alt=&quot;BigDataFlow extended SQL&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;
+    BigDataFlow extended SQL
+    
+      [built by author]
+    
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h1 id=&quot;-read-more&quot;&gt;👀 Read more&lt;/h1&gt;
+
+&lt;p&gt;Read the rest of the article …&lt;/p&gt;
+
+&lt;div style=&quot;text-align: center;margin-bottom: 1em;&quot;&gt;
+  &lt;a href=&quot;https://medium.com/@glegoux/from-hadoop-to-the-modern-stack-cdb2f10cee31&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; title=&quot;Read more&quot;&gt;
+    &lt;button class=&quot;btn btn-dark&quot;&gt;
+      &lt;b class=&quot;black&quot;&gt;Read more&lt;/b&gt;
+    &lt;/button&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+
+</description>
+        <pubDate>Wed, 14 Dec 2022 00:00:00 +0000</pubDate>
+        <link>https://glegoux.com/blog/articles/2022/12/14/from-hadoop-to-the-modern-data-stack.html</link>
+        <guid isPermaLink="true">https://glegoux.com/blog/articles/2022/12/14/from-hadoop-to-the-modern-data-stack.html</guid>
+        
+        
+        <category>Data</category>
+        
+      </item>
+    
+      <item>
+        <title>How to write a README?</title>
+        <description>&lt;p&gt;A README is the best place to start documenting a project. A README is normally a  &lt;strong&gt;single-page document&lt;/strong&gt;  describing your computer project’s key aspects. This document can be read in a few minutes maximum. It is the open door for a newcomer who wants an overview of the fundamental aspects of the project.&lt;/p&gt;
+
+&lt;p&gt;Having a README for a computer project is a  &lt;strong&gt;common&lt;/strong&gt;  enough &lt;strong&gt;thing&lt;/strong&gt;  for the code repositories. Still, the  &lt;strong&gt;template&lt;/strong&gt;  defining what should contain this README is not standard and often depends on the  &lt;strong&gt;sensibility of the software documentalist&lt;/strong&gt;. Avoiding gaps in content and format allows you to align the shared knowledge of your projects in the best common possible way.&lt;/p&gt;
+
+&lt;p&gt;The rules for writing a README file will be described with a generic template and a pragmatic methodology agnostic to the tech stack and the project type you use.&lt;/p&gt;
+
+&lt;p&gt;First, let’s begin defining the type of project that you can have.&lt;/p&gt;
+
+&lt;p&gt;A  &lt;strong&gt;project&lt;/strong&gt; is a code repository; it can be composed of either one module (&lt;strong&gt;simple project&lt;/strong&gt;) or several modules (&lt;strong&gt;complex project&lt;/strong&gt;). This project is in an ecosystem composed of dependencies between modules of the same project or other projects. A module can be :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;An  &lt;strong&gt;application&lt;/strong&gt;: It is deployed at runtime with an executable. No other module depends on it except optionally at runtime.&lt;/li&gt;
+  &lt;li&gt;A  &lt;strong&gt;library&lt;/strong&gt;: It’s used by other modules that depend on it for their execution and/or build.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For example, a  &lt;strong&gt;type of project&lt;/strong&gt;  can be a code library in (Python, Scala, or Java …), an SDK, a web app with a UI and/or an API, a machine learning model, a data processor, a set of scripts, an OPS configuration module or a scheduled job …&lt;/p&gt;
+
+&lt;p&gt;All projects have not necessarily needed a README respected rigorous template; it can use a degraded version in function efforts that you want to provide. Only  &lt;strong&gt;mature projects&lt;/strong&gt;  where you want a high level of quality need it, that is to say, for a project used by the community in an intensive or critical way.&lt;/p&gt;
+
+&lt;h1 id=&quot;practical-guidelines&quot;&gt;Practical guidelines&lt;/h1&gt;
+
+&lt;p&gt;&lt;em&gt;Here are explained the practical guidelines that a README should respect.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;For a simple project:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The README should be a simple text file called README.&lt;extension&gt;.&lt;/extension&gt;&lt;/li&gt;
+  &lt;li&gt;It should be written in coherent syntax (like  &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;Markdown&lt;/code&gt;  or  &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;reStructuredText&lt;/code&gt;).&lt;/li&gt;
+  &lt;li&gt;There should be a README at the root of the project.&lt;/li&gt;
+  &lt;li&gt;According to the README variant you choose (see sections below), you need to adhere to the variant structure.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For a complex project:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The README at the root must have links to the ones of each submodule, with a sentence to describe the role of each module&lt;/li&gt;
+  &lt;li&gt;It should have a README for each module&lt;/li&gt;
+  &lt;li&gt;The README of each module should respect the guidelines of a simple project&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;template&quot;&gt;Template&lt;/h1&gt;
+
+&lt;p&gt;&lt;em&gt;Here are the sections that README should contain.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Each  &lt;strong&gt;section&lt;/strong&gt;  can contain  &lt;strong&gt;direct or indirect information&lt;/strong&gt;  with  &lt;strong&gt;links&lt;/strong&gt;  and should contain a  &lt;strong&gt;title section&lt;/strong&gt;  with format H1 (i.e., ‘#’ with markdown). A section can be  &lt;strong&gt;optional&lt;/strong&gt;  and  &lt;strong&gt;required&lt;/strong&gt;  in function of the type of modules.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;[Project Title]&lt;/strong&gt;* [*: required]
+    &lt;ul&gt;
+      &lt;li&gt;High-level description (with a demo link if applicable)&lt;/li&gt;
+      &lt;li&gt;It should indicate if it is a  &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;library&lt;/code&gt;  or an  &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;application  
+&lt;/code&gt;- It should indicate who is the owner of this project&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Quick start&lt;/strong&gt;* [*: required]
+    &lt;ul&gt;
+      &lt;li&gt;How to set up the development environment, get the repository, install tech stack, …&lt;/li&gt;
+      &lt;li&gt;Link to a demo&lt;/li&gt;
+      &lt;li&gt;How to run the project&lt;/li&gt;
+      &lt;li&gt;How to run the tests&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Usage&lt;/strong&gt;  [optional only if relevant and helpful]
+    &lt;ul&gt;
+      &lt;li&gt;How to use the project (ex. API description)&lt;/li&gt;
+      &lt;li&gt;Links to help resources&lt;/li&gt;
+      &lt;li&gt;How to contribute to the project (coding style, code of conduct, …)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Main structure&lt;/strong&gt;* [*: required]
+    &lt;ul&gt;
+      &lt;li&gt;Link(s) to other “sub-README(s)” (only if the module has submodules)&lt;/li&gt;
+      &lt;li&gt;Links to dependencies&lt;/li&gt;
+      &lt;li&gt;Describe the file architecture of the repository&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Architecture&lt;/strong&gt; [optional only if relevant and helpful]
+    &lt;ul&gt;
+      &lt;li&gt;Explanation of the design with a diagram and a description …&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Deployment&lt;/strong&gt;**  [**: required only for a deployed application]
+    &lt;ul&gt;
+      &lt;li&gt;Link to the deployment configuration&lt;/li&gt;
+      &lt;li&gt;Link to this history of the deployment with the changelog and the releases&lt;/li&gt;
+      &lt;li&gt;Link to the deployed application&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Monitoring&lt;/strong&gt;**  [**: required only for a deployed application]
+    &lt;ul&gt;
+      &lt;li&gt;Links to monitoring dashboards, …&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;References&lt;/strong&gt;  [required]
+    &lt;ul&gt;
+      &lt;li&gt;Links to the documentation about specifications, improvements, or maintenance…&lt;/li&gt;
+      &lt;li&gt;Other useful links&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;License&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Link to the license and copyright with the general conditions&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;-read-more&quot;&gt;👀 Read more&lt;/h1&gt;
+
+&lt;p&gt;Read the rest of the article …&lt;/p&gt;
+
+&lt;div style=&quot;text-align: center;margin-bottom: 1em;&quot;&gt;
+  &lt;a href=&quot;https://medium.com/@glegoux/how-to-write-a-readme-f8986d407c1e&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; title=&quot;Read more&quot;&gt;
+    &lt;button class=&quot;btn btn-dark&quot;&gt;
+      &lt;b class=&quot;black&quot;&gt;Read more&lt;/b&gt;
+    &lt;/button&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+
+</description>
+        <pubDate>Sat, 10 Dec 2022 00:00:00 +0000</pubDate>
+        <link>https://glegoux.com/blog/articles/2022/12/10/how-to-write-a-readme.html</link>
+        <guid isPermaLink="true">https://glegoux.com/blog/articles/2022/12/10/how-to-write-a-readme.html</guid>
+        
+        
+        <category>Documentation</category>
+        
+      </item>
+    
+      <item>
+        <title>Aerospike: Real-time database for the online ads ecosystem</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://aerospike.com/&quot;&gt;Aerospike&lt;/a&gt;  can replace at the same time 2 cache layers, an in-memory layer, and a persistent memory layer like  &lt;a href=&quot;https://memcached.org/&quot;&gt;Memcached&lt;/a&gt;  and  &lt;a href=&quot;https://www.couchbase.com/&quot;&gt;Couchbase&lt;/a&gt;, respectively, with awesome performance.&lt;/p&gt;
+
+&lt;p&gt;Especially explore the usages of this distributed key-value store for the e-commerce catalogs indispensable in the online ads ecosystem to build ad campaigns, recommend products to the right audience, and display the ads for the publishers.&lt;/p&gt;
+
+&lt;p&gt;As a member of catalog teams at Criteo, I was at the last meetup of  &lt;a href=&quot;https://www.meetup.com/aerospike-paris-scale-warrior-meet-ups/events/289187127/&quot;&gt;Scale Warriors Aerospike&lt;/a&gt;, where the CTO (and founder at Aerospike) was present  &lt;a href=&quot;https://www.linkedin.com/in/drvsrini/&quot;&gt;Srini V. Srinivasan&lt;/a&gt;  to share new and existing features of Aerospike, and where Criteo presented its plan and strategy to migrate to Aerospike.&lt;/p&gt;
+
+&lt;h1 id=&quot;aerospike&quot;&gt;Aerospike&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Aerospike&lt;/strong&gt;  is a key-value NoSQL database with  &lt;a href=&quot;https://en.wikipedia.org/wiki/Flash_memory&quot;&gt;flash memory&lt;/a&gt;  and  &lt;a href=&quot;https://en.wikipedia.org/wiki/In-memory_database&quot;&gt;in-memory&lt;/a&gt;  &lt;a href=&quot;https://github.com/aerospike&quot;&gt;open source&lt;/a&gt;. The high-level ecosystem of Aerospike is deeply integrated with tools of the Big data ecosystem for streaming, batch, and SQL usages with  &lt;a href=&quot;https://www.confluent.io/lp/apache-kafka/&quot;&gt;Kafka&lt;/a&gt;,  &lt;a href=&quot;https://spark.apache.org/&quot;&gt;Spark&lt;/a&gt;, and  &lt;a href=&quot;https://trino.io/&quot;&gt;Trino&lt;/a&gt;  with a  &lt;a href=&quot;https://developer.aerospike.com/client/java&quot;&gt;Java client&lt;/a&gt;:&lt;/p&gt;
+
+&lt;figure title=&quot;The Aerospike Real-time Data Platform&quot; class=&quot;content&quot;&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://miro.medium.com/v2/resize:fit:700/1*83KoE4CmWbOJFgxFU6paeQ.png&quot; title=&quot;The Aerospike Real-time Data Platform&quot; alt=&quot;The Aerospike Real-time Data Platform&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;
+    The Aerospike Real-time Data Platform
+    
+      [&lt;a href=&quot;https://aerospike.com/developer/blog/database-queries-json-db-6&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;source&lt;/a&gt;]
+    
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Aerospike is a distributed key-value store. You can access the data with a simple API:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Get(key) -&amp;gt; byte[]&lt;br /&gt;
+Set(key, byte[], ttl)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The goal is to have small objects from a few bytes to 4 MiB, with low latency, 1 ms on average, and 5 ms at the 99th percentile.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Aerospike is first optimized for the OLTP paradigm because it is a KV Store.&lt;/strong&gt; Still, you can easily do OLAP queries for other usages for more exotic queries to scan the data thanks to the data models layer for Documents, SQL, Graphs, or Time Series.&lt;/p&gt;
+
+&lt;h1 id=&quot;aerospike-clusters-at-criteo&quot;&gt;Aerospike clusters at Criteo&lt;/h1&gt;
+
+&lt;p&gt;A DKVS plays a central role in online ads. With this storage, the infrastructure can answer to the small-time budgets required for each business use case: to bid a request for the auction of RTB (&amp;lt; 100 ms) or to render the ads (&amp;lt; 250 ms).&lt;/p&gt;
+
+&lt;figure title=&quot;Time budget for the online ads&quot; class=&quot;content&quot;&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://miro.medium.com/v2/resize:fit:700/1*huw1bvBiZIDuDliExf6bOg.png&quot; title=&quot;Time budget for the online ads&quot; alt=&quot;Time budget for the online ads&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;
+    Time budget for the online ads
+    
+      [&lt;a href=&quot;https://www.meetup.com/aerospike-paris-meet-ups/events/289187127&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;source&lt;/a&gt;]
+    
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The tech stack is diversified to respond to the needs of online ads, and a DKVS is insufficient. It is only a part of the ecosystem:&lt;/p&gt;
+
+&lt;figure title=&quot;Data stack at Criteo&quot; class=&quot;content&quot;&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://miro.medium.com/v2/resize:fit:700/1*2czh312iW3IsFkVU1YfW3w.png&quot; title=&quot;Data stack at Criteo&quot; alt=&quot;Data stack at Criteo&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;
+    Data stack at Criteo
+    
+      [&lt;a href=&quot;https://www.meetup.com/aerospike-paris-meet-ups/events/289187127&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;source&lt;/a&gt;]
+    
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The data stored in the KV stores must be persisted and loaded in memory to access long-term and quick readings.&lt;/p&gt;
+
+&lt;h1 id=&quot;-read-more&quot;&gt;👀 Read more&lt;/h1&gt;
+
+&lt;p&gt;Read the rest of the article …&lt;/p&gt;
+
+&lt;div style=&quot;text-align: center;margin-bottom: 1em;&quot;&gt;
+  &lt;a href=&quot;https://medium.com/@glegoux/aerospike-real-time-database-c88066769274&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; title=&quot;Read more&quot;&gt;
+    &lt;button class=&quot;btn btn-dark&quot;&gt;
+      &lt;b class=&quot;black&quot;&gt;Read more&lt;/b&gt;
+    &lt;/button&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+
+</description>
+        <pubDate>Tue, 29 Nov 2022 00:00:00 +0000</pubDate>
+        <link>https://glegoux.com/blog/articles/2022/11/29/aerospike-real-time-database-for-the-online-ads-ecosystem.html</link>
+        <guid isPermaLink="true">https://glegoux.com/blog/articles/2022/11/29/aerospike-real-time-database-for-the-online-ads-ecosystem.html</guid>
+        
+        
+        <category>Data</category>
+        
+      </item>
+    
+      <item>
         <title>Learning PySpark with Google Colab</title>
         <description>&lt;p&gt;Learning  &lt;a href=&quot;https://spark.apache.org/&quot;&gt;&lt;strong&gt;Apache Spark&lt;/strong&gt;&lt;/a&gt;  with a quick learning curve is challenging. Discover  &lt;strong&gt;distributed computation&lt;/strong&gt;  and  &lt;strong&gt;machine learning&lt;/strong&gt;  with  &lt;a href=&quot;https://www.databricks.com/glossary/pyspark&quot;&gt;PySpark&lt;/a&gt;, with  &lt;strong&gt;several tutorials&lt;/strong&gt;  until building your movie recommendation engine.&lt;/p&gt;
 
@@ -364,6 +657,258 @@ new location with the binary format OpenPGP, and specify the option Signed-By (s
       </item>
     
       <item>
+        <title>The Apache Software Foundation for the open-source</title>
+        <description>&lt;p&gt;ASF is one of the larger foundations for open-source projects in the tech world. The official website  &lt;a href=&quot;https://apache.org/&quot;&gt;https://apache.org/&lt;/a&gt;  is exhaustive of useful information.&lt;/p&gt;
+
+&lt;figure title=&quot;Metrics about the Apache Foundation&quot; class=&quot;content&quot;&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://miro.medium.com/v2/resize:fit:700/1*zIWuiiqmXct1v7HjBxCFUA.png&quot; title=&quot;Metrics about the Apache Foundation&quot; alt=&quot;Metrics about the Apache Foundation&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;
+    Metrics about the Apache Foundation
+    
+      [&lt;a href=&quot;https://apache.org&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;source&lt;/a&gt;]
+    
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h1 id=&quot;apache-organization&quot;&gt;Apache Organization&lt;/h1&gt;
+
+&lt;p&gt;The organization of ASF is complex enough, here are useful like to understand how it works:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.apache.org/foundation/how-it-works.html&quot;&gt;https://www.apache.org/foundation/how-it-works.html&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://apache.org/foundation/&quot;&gt;https://apache.org/foundation/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.apache.org/foundation/governance/orgchart&quot;&gt;https://www.apache.org/foundation/governance/orgchart&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;apache-community&quot;&gt;Apache community&lt;/h1&gt;
+
+&lt;p&gt;See  &lt;a href=&quot;https://community.apache.org/&quot;&gt;https://community.apache.org/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;apache-way-core-values&quot;&gt;Apache Way: Core values&lt;/h1&gt;
+
+&lt;p&gt;It is a set of methodologies and values designed to enable disparate communities of volunteers to work collaboratively over time.&lt;/p&gt;
+
+&lt;p&gt;See  &lt;a href=&quot;https://www.apache.org/theapacheway/&quot;&gt;https://www.apache.org/theapacheway/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;apache-news&quot;&gt;Apache News&lt;/h1&gt;
+
+&lt;p&gt;ApacheCon is a conference that is a must for anyone who works deeply with Apache-based software programs.&lt;/p&gt;
+
+&lt;figure title=&quot;ApacheCon&quot; class=&quot;content&quot;&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://miro.medium.com/v2/resize:fit:206/1*bbdfE_HQ-S98x0vUV5Dgnw.png&quot; title=&quot;ApacheCon&quot; alt=&quot;ApacheCon&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;
+    ApacheCon
+    
+      [&lt;a href=&quot;http://www.apachecon.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;source&lt;/a&gt;]
+    
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;See the old conferences:  &lt;a href=&quot;https://archive.apachecon.com/&quot;&gt;https://archive.apachecon.com/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;See all the Apache events:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://events.apache.org/event/&quot;&gt;https://events.apache.org/event/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Apache Blog posts:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://news.apache.org/&quot;&gt;https://news.apache.org/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blogs.apache.org/&quot;&gt;https://blogs.apache.org/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Apache Reports:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.apache.org/foundation/reports.html&quot;&gt;https://www.apache.org/foundation/reports.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;apache-sponsors&quot;&gt;Apache sponsors&lt;/h1&gt;
+
+&lt;p&gt;See  &lt;a href=&quot;https://apache.org/foundation/thanks&quot;&gt;https://apache.org/foundation/thanks&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;-read-more&quot;&gt;👀 Read more&lt;/h1&gt;
+
+&lt;p&gt;Read the rest of the article …&lt;/p&gt;
+
+&lt;div style=&quot;text-align: center;margin-bottom: 1em;&quot;&gt;
+  &lt;a href=&quot;https://medium.com/@glegoux/top-five-ways-to-beat-blue-monday-0f0de0950827&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; title=&quot;Read more&quot;&gt;
+    &lt;button class=&quot;btn btn-dark&quot;&gt;
+      &lt;b class=&quot;black&quot;&gt;Read more&lt;/b&gt;
+    &lt;/button&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+
+</description>
+        <pubDate>Sun, 13 Nov 2022 00:00:00 +0000</pubDate>
+        <link>https://glegoux.com/blog/articles/2022/11/13/the-apache-software-foundation-for-the-open-source.html</link>
+        <guid isPermaLink="true">https://glegoux.com/blog/articles/2022/11/13/the-apache-software-foundation-for-the-open-source.html</guid>
+        
+        
+        <category>News</category>
+        
+      </item>
+    
+      <item>
+        <title>Apache Spark: Ecosystem overview with Apache Hadoop YARN and HDFS</title>
+        <description>&lt;p&gt;Apache Spark: ecosystem overview with Apache Hadoop YARN and HDFS&lt;a href=&quot;https://spark.apache.org/&quot;&gt;Apache Spark™&lt;/a&gt;  is a multi-language engine for executing data engineerinApache Spark: ecosystem overview with Apache Hadoop YARN and HDFSg, data science, and machine learning on single-node machines or clusters. It is largely used in the industry for distributed computation of data at scale.&lt;/p&gt;
+
+&lt;p&gt;This project is  &lt;a href=&quot;https://github.com/apache/spark&quot;&gt;open-source&lt;/a&gt;  under the  &lt;a href=&quot;https://apache.org/&quot;&gt;Apache software foundation,&lt;/a&gt;  created by the founders of the company  &lt;a href=&quot;https://www.databricks.com/&quot;&gt;Databricks&lt;/a&gt;  that provides cluster and support for Spark.&lt;/p&gt;
+
+&lt;p&gt;Let deep dive on the architecture of  &lt;strong&gt;Apache Spark on YARN&lt;/strong&gt; in a distributed ecosystem of containers and  &lt;strong&gt;Java VMs&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;This architecture need to address the  &lt;strong&gt;computation&lt;/strong&gt;  and the  &lt;strong&gt;storage&lt;/strong&gt;  at  &lt;strong&gt;high scale&lt;/strong&gt;  to manipulate big volume of data with an efficient processing.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Table of contents&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Spark ecosystem&lt;/li&gt;
+  &lt;li&gt;Spark architecture through Hadoop&lt;/li&gt;
+  &lt;li&gt;Spark engine for computation and storage&lt;/li&gt;
+  &lt;li&gt;Go with Spark in production&lt;/li&gt;
+  &lt;li&gt;Example of Spark application at Scale&lt;/li&gt;
+  &lt;li&gt;Go further&lt;/li&gt;
+  &lt;li&gt;What’s next&lt;/li&gt;
+  &lt;li&gt;Thanks to&lt;/li&gt;
+  &lt;li&gt;Glossary&lt;/li&gt;
+  &lt;li&gt;References&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Let’s start with the basics, you can jump straight to the sections that interest you, otherwise see vertically how this whole ecosystem works.&lt;/p&gt;
+
+&lt;h1 id=&quot;spark-ecosystem&quot;&gt;Spark ecosystem&lt;/h1&gt;
+
+&lt;h2 id=&quot;data-pipelines&quot;&gt;Data pipelines&lt;/h2&gt;
+
+&lt;p&gt;Spark allows building data pipeline in  &lt;strong&gt;batch mode&lt;/strong&gt; and the  &lt;strong&gt;streaming mode&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;figure title=&quot;Lambda architecture with Spark&quot; class=&quot;content&quot;&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://miro.medium.com/v2/resize:fit:408/0*zqTHvZ2Uckv_Hjz3.png&quot; title=&quot;Lambda architecture with Spark&quot; alt=&quot;Lambda architecture with Spark&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;
+    Lambda architecture with Spark
+    
+      [&lt;a href=&quot;true&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;source&lt;/a&gt;]
+    
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Here, you see a  &lt;strong&gt;lambda architecture&lt;/strong&gt;, but to associate online and offline processing, you can have a  &lt;strong&gt;kappa&lt;/strong&gt;  or  &lt;strong&gt;zeta&lt;/strong&gt;  &lt;strong&gt;architecture&lt;/strong&gt;  on your data pipeline. You will see it in another article.&lt;/p&gt;
+
+&lt;figure title=&quot;Spark vs Spark Streaming&quot; class=&quot;content&quot;&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://miro.medium.com/v2/resize:fit:394/1*4QrgYLPJto1TBvMcs45iqg.png&quot; title=&quot;Spark vs Spark Streaming&quot; alt=&quot;Spark vs Spark Streaming&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;
+    Spark vs Spark Streaming
+    
+      [built by author]
+    
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The streaming mode of Spark is more micro-batch approach. Other framework like  &lt;a href=&quot;https://kafka.apache.org/documentation/streams/&quot;&gt;Kafka Streaming&lt;/a&gt;,  &lt;a href=&quot;https://faust-streaming.github.io/faust/&quot;&gt;Faust Streaming&lt;/a&gt;  or  &lt;a href=&quot;https://flink.apache.org/&quot;&gt;Apache Flink&lt;/a&gt;  are more used to process data streams. Spark is forceful to process data batch overall.&lt;/p&gt;
+
+&lt;h2 id=&quot;apis&quot;&gt;APIs&lt;/h2&gt;
+
+&lt;p&gt;Mainly, Spark can run with several APIs, one for each following programming language  &lt;a href=&quot;https://spark.apache.org/docs/latest/api/scala/org/apache/spark/index.html&quot;&gt;Scala&lt;/a&gt;/&lt;a href=&quot;https://spark.apache.org/docs/latest/api/java/&quot;&gt;Java&lt;/a&gt;,  &lt;a href=&quot;https://spark.apache.org/docs/latest/api/python/&quot;&gt;Python&lt;/a&gt;  and  &lt;a href=&quot;https://spark.apache.org/docs/latest/api/R/&quot;&gt;R&lt;/a&gt;, respectively with  &lt;strong&gt;Spark&lt;/strong&gt;,  &lt;strong&gt;PySpark&lt;/strong&gt;  and  &lt;strong&gt;SparkR&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;figure title=&quot;Different types of Spark engines&quot; class=&quot;content&quot;&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://miro.medium.com/v2/resize:fit:700/1*zXXVD_S-pBs8mWBi3OcR7w.png&quot; title=&quot;Different types of Spark engines&quot; alt=&quot;Different types of Spark engines&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;
+    Different types of Spark engines
+    
+      [built by author]
+    
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;In practice, Spark and PySpark are more used than SparkR. For the experimentation, PySpark is more helpful, and for the performances Spark is better.&lt;/p&gt;
+
+&lt;h2 id=&quot;connectors&quot;&gt;Connectors&lt;/h2&gt;
+
+&lt;p&gt;Spark has many  &lt;strong&gt;connectors&lt;/strong&gt;  to write  &lt;strong&gt;to different types of storage&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;figure title=&quot;Apache Spark’s ecosystem of connectors&quot; class=&quot;content&quot;&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://miro.medium.com/v2/resize:fit:684/0*uQtzEnoXUORb2dgi&quot; title=&quot;Apache Spark’s ecosystem of connectors&quot; alt=&quot;Apache Spark’s ecosystem of connectors&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;
+    Apache Spark’s ecosystem of connectors
+    
+      [&lt;a href=&quot;https://pages.databricks.com/rs/094-YMS-629/images/LearningSpark2.0.pdf&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;source&lt;/a&gt;]
+    
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Here, we are going to speak a bit more about the connection with Apache Hadoop HDFS.&lt;/p&gt;
+
+&lt;h2 id=&quot;spark-sql&quot;&gt;Spark SQL&lt;/h2&gt;
+
+&lt;p&gt;In addition, you can also run Spark with  &lt;a href=&quot;https://spark.apache.org/docs/latest/api/sql/&quot;&gt;SQL&lt;/a&gt;. With a SQL request, you can also access to heterogeneous data then combine them in memory:&lt;/p&gt;
+
+&lt;figure title=&quot;Spark SQL overview&quot; class=&quot;content&quot;&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://miro.medium.com/v2/resize:fit:720/format:webp/0*Ts-DH76DiRFZh4p1.png&quot; title=&quot;Spark SQL overview&quot; alt=&quot;Spark SQL overview&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;
+    Spark SQL overview
+    
+      [&lt;a href=&quot;http://www.gatorsmile.io/sparksqloverview/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;source&lt;/a&gt;]
+    
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The  &lt;a href=&quot;https://www.linkedin.com/pulse/catalyst-tungsten-apache-sparks-speeding-engine-deepak-rajak/&quot;&gt;Catalyst &amp;amp; Tungsten&lt;/a&gt; engines allows optimizing the execution plan of the query:&lt;/p&gt;
+
+&lt;figure title=&quot;Catalyst&quot; class=&quot;content&quot;&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://miro.medium.com/v2/resize:fit:700/0*CRcfOe8vbDWNGJhV.png&quot; title=&quot;Catalyst&quot; alt=&quot;Catalyst&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;
+    Catalyst
+    
+      [&lt;a href=&quot;https://www.databricks.com/glossary/catalyst-optimizer&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;source&lt;/a&gt;]
+    
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&quot;pyspark&quot;&gt;PySpark&lt;/h2&gt;
+
+&lt;p&gt;In the Python driver program, SparkContext uses  &lt;a href=&quot;https://www.py4j.org/&quot;&gt;Py4J&lt;/a&gt;  to launch a JVM and create a JavaSparkContext. Py4J is only used on the driver for local communication between the Python and Java SparkContext objects; large data transfers are performed through a different mechanism.&lt;/p&gt;
+
+&lt;h1 id=&quot;-read-more&quot;&gt;👀 Read more&lt;/h1&gt;
+
+&lt;p&gt;Read the rest of the article …&lt;/p&gt;
+
+&lt;div style=&quot;text-align: center;margin-bottom: 1em;&quot;&gt;
+  &lt;a href=&quot;https://medium.com/@glegoux/apache-spark-ecosystem-with-hadoop-apache-yarn-and-hdfs-8e64eeba68c0&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; title=&quot;Read more&quot;&gt;
+    &lt;button class=&quot;btn btn-dark&quot;&gt;
+      &lt;b class=&quot;black&quot;&gt;Read more&lt;/b&gt;
+    &lt;/button&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+
+</description>
+        <pubDate>Wed, 02 Nov 2022 00:00:00 +0000</pubDate>
+        <link>https://glegoux.com/blog/articles/2022/11/02/apache-spark-ecosystem-overview-with-apache-hadoop-yarn-and-hdfs.html</link>
+        <guid isPermaLink="true">https://glegoux.com/blog/articles/2022/11/02/apache-spark-ecosystem-overview-with-apache-hadoop-yarn-and-hdfs.html</guid>
+        
+        
+        <category>Data</category>
+        
+      </item>
+    
+      <item>
         <title>My tech blog on Medium</title>
         <description>&lt;p&gt;I will continue writing blog posts here, but mainly, they will be published on Medium under the user &lt;a href=&quot;https://medium.com/@glegoux&quot;&gt;@glegoux&lt;/a&gt;. The goal is always to improve the experience of readers and my experience of writing. After having re-evaluated the market of the online editors, the Medium platform is mature and becoming more and more popular, being one of the leaders among the editors of tech blogs now. It provides a full WYSIWYG user interface when editing online, with various formatting options provided as the user edits. It allows publishing blog posts (called stories) to capture large audiences and communities.&lt;/p&gt;
 
@@ -425,1011 +970,6 @@ and &lt;a href=&quot;https://glegoux.com&quot;&gt;https://glegoux.com&lt;/a&gt; 
         
         
         <category>News</category>
-        
-      </item>
-    
-      <item>
-        <title>Secret Santa</title>
-        <description>&lt;p&gt;Secret Santa is a traditional event in December with family, friends, or office colleagues, 
-in which each guest gives a gift to another guest without knowing who will give him/her a gift. 
-Imagine that you want to organize it. You notify your guests to choose a gift by keeping it secret. 
-For a maximum of surprise, you would like to attribute each gift to a guest with a draw at the last 
-minute. So your guests don’t know for whom will be the gift that he/she chose. But several problems 
-are raised, that can be answered by applied mathematics.&lt;/p&gt;
-
-&lt;h1 id=&quot;hat-check-problem&quot;&gt;Hat-check problem&lt;/h1&gt;
-
-&lt;p&gt;Let’s begin with the first problem: to whom each guest gives his/her gift. Let’s suppose 
-each guest has well his/her gift for a unique other guest. Of course, the draw could 
-have been done before and kept secret. But you want to do the draw at the last moment 
-and by revealing simultaneously who gives his/her gift to whom. That is to say, you 
-write the name of each guest on a different piece of paper for each and mix it in 
-a Christmas hat. Then each one takes a piece of paper randomly. And finally, all ones at 
-the same time unfold the piece of paper and discover the name of the guest to whom 
-he/she gives his/her gift.&lt;/p&gt;
-
-&lt;p&gt;Will a guest draw at random his/her name? If it is the case, the surprise effect will be 
-broken for him/her, and what would imply to redo the draw or exchange gifts? What we 
-want to avoid.&lt;/p&gt;
-
-&lt;p&gt;This concrete problem can be reformulated: Is there a least a fixed point in the permutation 
-of a set with $n$ elements? Where $n$ is the number of guests. It is the famous &lt;strong&gt;hat-check problem&lt;/strong&gt;. 
-You can use the probabilities to solve it.&lt;/p&gt;
-
-&lt;p&gt;The probability that at least one guest draws his/her name is the inverse of
-the probability that no one drew his/her name, that is to say:&lt;/p&gt;
-
-\[p_n =  1 - \dfrac{\mathcal{D}_{n}}{n!} = 1 - u_n\]
-
-&lt;p&gt;$\mathcal{D}_{n}$ is the number of derangements, that is to say, the number of permutations 
-without fixed points, knowing that $n!$ is the number of permutation with $n$ elements. 
-You can prove with the &lt;strong&gt;inclusion-exclusion generalized principle&lt;/strong&gt; that:&lt;/p&gt;
-
-\[\mathcal{D}_{n} = n! \sum_{k=0}^{n} \dfrac{(-1)^k}{k!}\]
-
-&lt;p&gt;According to the &lt;strong&gt;Taylor-Maclaurin development&lt;/strong&gt;, we have:&lt;/p&gt;
-
-\[\displaystyle\lim_{n\mapsto +\infty}u_n = \displaystyle\lim_{n\mapsto +\infty}\sum_{k=0}^{n}\dfrac{(-1)^k}{k!} = \dfrac{1}{e}\]
-
-&lt;p&gt;with $e \approx 2.71828…$. In addition, 
-this suite $(u_n)_{n\in \mathbb{N}}$ has a rate of convergence quick:&lt;/p&gt;
-
-&lt;figure title=&quot;Inverse of the probability that a guest draws randomly his/her name&quot; class=&quot;content&quot;&gt;
-  &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2021-11-23-secret-santa/images/u_n-convergence.png&quot; title=&quot;Inverse of the probability that a guest draws randomly his/her name&quot; alt=&quot;Inverse of the probability that a guest draws randomly his/her name&quot; /&gt;
-  &lt;/div&gt;
-  &lt;figcaption&gt;
-    Inverse of the probability that a guest draws randomly his/her name
-    
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;So if your number of guests is greater or equal to 4, you have around $0.63\%$ of chance, 
-to have at least one guest who drew its name, that is a bit less than 2 out of 3 chances:&lt;/p&gt;
-
-\[p_{n\geq 4} \approx \dfrac{2}{3}\]
-
-&lt;p&gt;It is risky to choose this simultaneous strategy, and it breaks the surprise phenomenon 
-when everyone unfolds the paper if a guest randomly draws his/her own name. An exchange
-of papers or a new drawing of lots must be made. Another strategy this time sequential, 
-is a guest takes turns drawing randomly a piece of paper and giving the Christmas hat to
-the person whose name is on the paper. Only the first guest could be drawn his/her name, 
-but all he has to do is redraw a piece of paper and then put the paper back with his/her name.&lt;/p&gt;
-
-&lt;h1 id=&quot;birthday-problem&quot;&gt;Birthday problem&lt;/h1&gt;
-
-&lt;p&gt;A second problem will be to know if 2 guests could bring the same type of gift. This one is 
-equivalent to another famous problem the &lt;strong&gt;birthday problem&lt;/strong&gt;. The probability that 
-2 people were born on the same day in a group of people increases quickly in function 
-of the size of this group. It becomes almost certain, that is to say, more than $99\%$ 
-of a chance to be true for a group of 60 people.&lt;/p&gt;
-
-&lt;p&gt;More generally, the probability that a subset of size $n$ of a set $E$ of size $N$
-contains at least 2 identical elements is:&lt;/p&gt;
-
-\[g_n = 1 - \frac{N}{N}\,\frac{N-1}{N}\,\cdots\,\frac{N-n+1}{N} = 1 - \dfrac{N!}{(N-n)!}\,\dfrac{1}{N^n}\]
-
-&lt;p&gt;It is the inverse of the probability that no of $n$ elements be identical.&lt;/p&gt;
-
-&lt;p&gt;Here the element $E$ is the set of possible types of Christmas gifts, and $n$ is the number of guests. 
-Except for some guests with a very original gift, suppose that your guest chose a 
-pre-defined list influenced by the constraints and the ads, with a few hundred types of items, 
-let’s say $N=300$:&lt;/p&gt;
-
-&lt;figure title=&quot;Probability to have 2 identical types of gifts among 300 possible types of Christmas gifts&quot; class=&quot;content&quot;&gt;
-  &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2021-11-23-secret-santa/images/g_n-convergence.png&quot; title=&quot;Probability to have 2 identical types of gifts among 300 possible types of Christmas gifts&quot; alt=&quot;Probability to have 2 identical types of gifts among 300 possible types of Christmas gifts&quot; /&gt;
-  &lt;/div&gt;
-  &lt;figcaption&gt;
-    Probability to have 2 identical types of gifts among 300 possible types of Christmas gifts
-    
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;With an approximation $e^{x} \approx 1 +x$ when $x$ is close to $0$, and the &lt;strong&gt;sum of young Gauss&lt;/strong&gt; 
-$\sum_{k=0}^{n}\,k = \frac{n(n+1)}{2}$, you can get:&lt;/p&gt;
-
-\[g_n \approx 1 - e^{-\frac{n(n-1)}{2N}}\]
-
-&lt;p&gt;But in any case, you see:&lt;/p&gt;
-
-\[\displaystyle\lim_{n\mapsto +\infty}g_n = 1\]
-
-&lt;p&gt;And:&lt;/p&gt;
-
-\[g_{n\geq 20} \geq \dfrac{1}{2} \qquad g_{n\geq 60} \approx 1\]
-
-&lt;p&gt;If you have more than 20 guests, we have more than 1 out of 2 chances, to have
-at least 2 identical types of gifts.&lt;/p&gt;
-
-&lt;p&gt;So after explaining these 2 problems, I wish you a good Secret Santa.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 23 Nov 2021 00:00:00 +0000</pubDate>
-        <link>https://glegoux.com/blog/articles/2021/11/23/secret-santa.html</link>
-        <guid isPermaLink="true">https://glegoux.com/blog/articles/2021/11/23/secret-santa.html</guid>
-        
-        
-        <category>Applied Mathematics</category>
-        
-      </item>
-    
-      <item>
-        <title>Software versioning</title>
-        <description>&lt;h1 id=&quot;what-is-a-software-version&quot;&gt;What is a software version?&lt;/h1&gt;
-
-&lt;p&gt;A software is a dynamic set of lines of code, that evolves discretely from state to state in function 
-of time. To identify a specific state of a software, a versioning can be used whether it be for a
-language compiler, a library, a web API, an application, a server, or a client. Of course a versioning 
-can be used more generally for any project, but here I focus only on the &lt;strong&gt;software versioning&lt;/strong&gt; at large.&lt;/p&gt;
-
-&lt;figure&gt;
-&lt;pre class=&quot;notranslate&quot;&gt;
-             ┌─────────┐           ┌─────────┐           ┌─────────┐
-             │         │           │         │           │         │
-  ──────────►│ State 1 ├──────────►│ State 2 ├──────────►│ State 3 │─────────►
-             │         │           │         │           │         │
-             └─────────┘           └─────────┘           └─────────┘
-&lt;/pre&gt;
-&lt;figcaption&gt;Software states&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;The software versioning is the process to assign a version to a state of a software: 
-a &lt;strong&gt;version scheme&lt;/strong&gt; and a &lt;strong&gt;version strategy&lt;/strong&gt; are chosen to track the successive evolutions. 
-For example, with a version control system as &lt;a href=&quot;https://git-scm.com/&quot;&gt;Git&lt;/a&gt;, the history of a 
-software is split into commits, where each commit identifier is used as a version.&lt;/p&gt;
-
-&lt;figure&gt;
-&lt;pre class=&quot;notranslate&quot;&gt;
-40551405dc02afe8240024c952fa1de953fc2ff9 Commit message: State 3
-3982dcd90b486eab39eb610ec5e7e5963b92ab33 Commit message: State 2
-32f0469eb344029bd1ecf5b0626685f2fa795f47 Commit message: State 1
-...
-&lt;/pre&gt;
-&lt;figcaption&gt;Commit logs with commit identifier and message&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Here the version scheme is a &lt;a href=&quot;https://wikipedia.org/wiki/SHA-1&quot;&gt;SHA1-hash&lt;/a&gt;, where the version strategy is 
-to assign a new version to each change of code rendered the more atomic than possible. It is a software 
-versioning handy for development team, because each version is unique and points to each different change
-in the code base. But not very useable for the users of this software, because a given version is not
-human readable or user friendly, no useful information is given by this complex naming. And each change
-has a version, what makes too many existing versions with a naming not discriminant, to know which
-versions are important except the last one.&lt;/p&gt;
-
-&lt;p&gt;A software version is a unique identifier to distribute a software also to users. But the development team 
-of a software wishes to reduce the number of supported and maintained versions exposed to their clients,
-and wants to package these changes to propose a software as a product with coherent features. That is why
-another software versioning is applied often above these commit identifiers, and the usage of Git tag
-and/or Git release is privileged.&lt;/p&gt;
-
-&lt;h1 id=&quot;what-are-the-features-of-a-software-version&quot;&gt;What are the features of a software version?&lt;/h1&gt;
-
-&lt;p&gt;As we have seen above, a software can have &lt;strong&gt;several versioning systems&lt;/strong&gt;, for example one used internally 
-by the development team, and one exposed externally to users.&lt;/p&gt;
-
-&lt;p&gt;In addition to be &lt;strong&gt;unique identifiers&lt;/strong&gt;, the versions are often ordered to know if a version is more
-recent than another. So the naming of a version repects a &lt;strong&gt;semantics&lt;/strong&gt;, that contains this order and 
-additional meanings.&lt;/p&gt;
-
-&lt;p&gt;The publication of a new version follows a &lt;strong&gt;lifecycle&lt;/strong&gt; with a workflow and a process. This publication 
-produces a distributable format of the software called &lt;strong&gt;archive&lt;/strong&gt; or &lt;strong&gt;package&lt;/strong&gt;. The version is 
-assigned to the archive that is &lt;strong&gt;signed by the software provider identity&lt;/strong&gt; with a hash function on the
-content of the archive to guarantee that once a particular version is published, this one remains
-immutable and author of this archive is well the official provider of this software.&lt;/p&gt;
-
-&lt;p&gt;A software can have &lt;strong&gt;direct&lt;/strong&gt; and &lt;strong&gt;transitive dependencies&lt;/strong&gt; that are also a versioning, and can be 
-also a &lt;strong&gt;dependency of another software&lt;/strong&gt;. So, the question is raised of the compatibility between
-the different versions.&lt;/p&gt;
-
-&lt;p&gt;There are two directions to describe compatibility between 2 versions of a same software:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Backward compatible&lt;/strong&gt; means that a newer version can be used successfully in an context where an older 
-version is expected.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Forward compatible&lt;/strong&gt; means that an older version can be used successfully in an context where a newer 
-version is expected.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Fully compatible&lt;/strong&gt; means backward compatible and forward compatible.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Backward compatibility is often guaranteed, but forward compatibility is not. Compatibility depends on a
-context of use, if the use is not exhaustive, it should be noted that compatibility is only guaranteed for
-this use. Otherwise, implicitly, compatibility is assumed to be true for all possible contexts of use. For
-example, full compatibility is only possible in sub-context and not on the global context, otherwise the 2
-versions would point to an identical state of the software.&lt;/p&gt;
-
-&lt;h1 id=&quot;how-to-build-a-software-version&quot;&gt;How to build a software version?&lt;/h1&gt;
-
-&lt;p&gt;Breaking change, compatibility, Changelog, releases, alpha, beta, dependencies&lt;/p&gt;
-
-&lt;p&gt;For example, &lt;a href=&quot;https://ubuntu.com/about/release-cycle&quot;&gt;Ubuntu versioning&lt;/a&gt;, &lt;a href=&quot;https://www.oracle.com/java/technologies/javase/versioning-naming.html&quot;&gt;SDK/JRE versioning&lt;/a&gt;, …&lt;/p&gt;
-
-&lt;h1 id=&quot;example-for-javascala&quot;&gt;Example for Java/Scala&lt;/h1&gt;
-
-&lt;p&gt;A Java/Scala library is compiled to a platform-independent format called JVM bytecode and stored in 
-&lt;code class=&quot;language-text highlighter-rouge&quot;&gt;.class&lt;/code&gt; files. These class files are zipped in JAR files for distribution.&lt;/p&gt;
-
-&lt;h1 id=&quot;references&quot;&gt;References&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Software_versioning&quot;&gt;https://en.wikipedia.org/wiki/Software_versioning&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://doc.akka.io/docs/akka/current/common/binary-compatibility-rules.html&quot;&gt;https://doc.akka.io/docs/akka/current/common/binary-compatibility-rules.html&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://semver.org/&quot;&gt;https://semver.org/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.scala-lang.org/blog/2021/02/16/preventing-version-conflicts-with-versionscheme.html&quot;&gt;https://www.scala-lang.org/blog/2021/02/16/preventing-version-conflicts-with-versionscheme.html&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://docs.scala-lang.org/overviews/core/binary-compatibility-for-library-authors.html&quot;&gt;https://docs.scala-lang.org/overviews/core/binary-compatibility-for-library-authors.html&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://docs.scala-lang.org/overviews/jdk-compatibility/overview.html&quot;&gt;https://docs.scala-lang.org/overviews/jdk-compatibility/overview.html&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/jatcwang/binary-compatibility-guide&quot;&gt;https://github.com/jatcwang/binary-compatibility-guide&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/lightbend/mima&quot;&gt;https://github.com/lightbend/mima&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://wiki.openjdk.java.net/display/csr/Kinds+of+Compatibility&quot;&gt;https://wiki.openjdk.java.net/display/csr/Kinds+of+Compatibility&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Sat, 13 Nov 2021 00:00:00 +0000</pubDate>
-        <link>https://glegoux.com/blog/articles/2021/11/13/software-versioning.html</link>
-        <guid isPermaLink="true">https://glegoux.com/blog/articles/2021/11/13/software-versioning.html</guid>
-        
-        
-        <category>Development</category>
-        
-      </item>
-    
-      <item>
-        <title>Time management</title>
-        <description>&lt;p&gt;You could need to &lt;strong&gt;optimize the spending of your time&lt;/strong&gt; for &lt;strong&gt;professional or personal activities&lt;/strong&gt;. 
-I am going to explain what means to me the time, and how you can manage it. I have been inspired by my
-knowledge, experiences, readings, and listenings, but it is my personal version of time management 
-between math, physics, management, philosophy, and operational research. Without giving a lot of details, 
-time management is also linked to the &lt;strong&gt;agile methodologies&lt;/strong&gt; that are one implementation, 
-like &lt;strong&gt;Scrum&lt;/strong&gt;, &lt;strong&gt;Kanban&lt;/strong&gt;, or &lt;strong&gt;Pomodoro&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;The &lt;strong&gt;time management&lt;/strong&gt; is the science of the usage of time, a possible definition could be the process of planning and 
-exercising conscious control of time spent on specific activities, especially &lt;strong&gt;to increase effectiveness, efficiency, 
-and productivity&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;figure class=&quot;content&quot;&gt;
-  &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://docs.google.com/drawings/d/e/2PACX-1vR9gDDDWTNK3btntBfhxsrL18EDGgytkOLDCS2yrgp8ZqxgvJQsCpnyWJwWT4cIk_8z0rLUn1iTS8cG/pub?w=600&amp;amp;h=348&quot; alt=&quot;Time Management&quot; title=&quot;Time Management&quot; /&gt;
-  &lt;/div&gt;
-  &lt;figcaption&gt;
-    Time Management
-    
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;The way you can &lt;strong&gt;use your time&lt;/strong&gt; depends on a lot of things, among others, there are your:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;context&lt;/strong&gt;:
-    &lt;ul&gt;
-      &lt;li&gt;Which resources do you have (knowledge, time, energy, money …)&lt;/li&gt;
-      &lt;li&gt;What are your features (skills, experiences, character traits …)&lt;/li&gt;
-      &lt;li&gt;What are your constraints (costs, exigencies, …)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;projection&lt;/strong&gt;:
-    &lt;ul&gt;
-      &lt;li&gt;What you want to do (ambitions, preferences, choices …)&lt;/li&gt;
-      &lt;li&gt;What are your goals (objectives, key results, tasks, sub-tasks, projects, missions …)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;strategy&lt;/strong&gt;:
-    &lt;ul&gt;
-      &lt;li&gt;How do you organize your activities (priorities, hierarchies, dependencies, sizing, partitioning
-…)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;analysis&lt;/strong&gt;:
-    &lt;ul&gt;
-      &lt;li&gt;How you know yourself (strong points, weak points, personal will, and effort …)&lt;/li&gt;
-      &lt;li&gt;How you have a projection &amp;amp; strategy coherent of yourself (clairvoyance, honesty, realism …)&lt;/li&gt;
-      &lt;li&gt;How you receive a critical opinion positive or negative on yourself (feedback,
-auto-introspections, questionings, doubts…)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;time-definition&quot;&gt;Time Definition&lt;/h1&gt;
-
-&lt;p&gt;With the meta-physique considerations, the &lt;strong&gt;time&lt;/strong&gt; has wondering features: &lt;strong&gt;universal, continuous, unlimited, 
-non-renewable, solid (incompressible/no expansible), perpetually self-generated, no accumulative&lt;/strong&gt;. Focus is on the &lt;strong&gt;timescale&lt;/strong&gt; of our &lt;strong&gt;human life&lt;/strong&gt;.
-These features are immutable, or more precisely their changes are negligible. But we can interpret the time differently.&lt;/p&gt;
-
-&lt;p&gt;Here I am going to interpret the time like a &lt;strong&gt;quantizable object&lt;/strong&gt; with an arbitrary window in the &lt;strong&gt;past, present or future&lt;/strong&gt;.
-The present moment is seen like a progressive cursor representing a dynamic &lt;strong&gt;instant&lt;/strong&gt; on the &lt;strong&gt;timeline&lt;/strong&gt;. This present instant 
-plays the role of an irreversible transformer altering the future into the past. The &lt;strong&gt;duration&lt;/strong&gt; of an &lt;strong&gt;event&lt;/strong&gt; is the length of a &lt;strong&gt;windows time&lt;/strong&gt; 
-delimited by 2 instants where the event began and finished. For the following, when I speak about time, I refer to these &lt;strong&gt;sliding windows&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;figure class=&quot;content&quot;&gt;
-  &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://docs.google.com/drawings/d/e/2PACX-1vQMPHMxeI8O86epOjBylFK4Pv1L71MKeIki-rfSJzG5wZ9jeickJi_y32JDWLGqLlXqm0lTj-3vBBge/pub?w=537&amp;amp;h=147&quot; alt=&quot;Time vs Duration&quot; title=&quot;Time vs Duration&quot; /&gt;
-  &lt;/div&gt;
-  &lt;figcaption&gt;
-    Time vs Duration
-    
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;div class=&quot;info&quot;&gt;
-The &lt;b&gt;time&lt;/b&gt; :clock2: is one of our &lt;b&gt;most valuable resources&lt;/b&gt;, for me more important than 
-knowledge, money or energy, because all ones depend on time.
-&lt;/div&gt;
-
-&lt;p&gt;It is important to distinguish the &lt;strong&gt;absolute time&lt;/strong&gt;, and the &lt;strong&gt;subjective time&lt;/strong&gt;. The quantity of
-elapsed time to carry out an activity can be &lt;strong&gt;viewed and interpreted subjectively&lt;/strong&gt;. The same
-quantity of time measured objectively in &lt;strong&gt;seconds&lt;/strong&gt; could be lived differently by 2 different
-people esteemed like &lt;strong&gt;short or long&lt;/strong&gt;. Take into account this subjectivity, because time
-management is more relevant if it is applied individually with your sensibility.&lt;/p&gt;
-
-&lt;p&gt;For example, &lt;strong&gt;a sharp mind&lt;/strong&gt; in a particular situation will have the feeling of life in accelerated
-time by interacting with a less sharp mind, because he compares his thinking speed to that of his
-interlocutor, and this one is faster, and reciprocally. Another example is when you are doing a
-&lt;strong&gt;passionate activity&lt;/strong&gt;. The time seems to go faster, because you forget the feeling of elapsed
-time, and inversely with the boredom.&lt;/p&gt;
-
-&lt;p&gt;The absolute time allows you to compare the duration between 2 activities objectively, but when you want
-to organize or optimize your time, you need to adjust your efforts with your personal consideration
-of an elapsed time for a given activity. The &lt;strong&gt;elapsed time&lt;/strong&gt; can be interpreted as a &lt;strong&gt;sum of done
-activities&lt;/strong&gt;. The &lt;strong&gt;unit measure of an activity&lt;/strong&gt; is subjective, and could be called &lt;strong&gt;weight&lt;/strong&gt;,
-where mixed the &lt;strong&gt;quantities of used resources&lt;/strong&gt; to do the activity (for example the quantities
-of time, energy, or money). Here more the activity has a light color, the more the activity has a lightweight:&lt;/p&gt;
-
-&lt;figure class=&quot;content&quot;&gt;
-  &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://docs.google.com/drawings/d/e/2PACX-1vR_VEmMKNndJR493-_obuNMiuI0c3h_MeUADJoeCJF7KdAPEuAgJm0F-f7U_UF4bF-aStk1pQZF5A6K/pub?w=537&amp;amp;h=147&quot; alt=&quot;Time usage&quot; title=&quot;Time usage&quot; /&gt;
-  &lt;/div&gt;
-  &lt;figcaption&gt;
-    Time usage
-    
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;The time could be considered as a quantity of spent resources during a duration (itself in another meaning)
-to do activities now. So the &lt;strong&gt;quantity of available time at your disposition&lt;/strong&gt; 
-does not respect the time features mentioned previously, it is:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;personal&lt;/strong&gt;: you have a personal context and subjective time&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;discrete&lt;/strong&gt;: you have a minimum time of reactivity for your frequency sample to measure the elapsed time&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;limited&lt;/strong&gt;: you have a life length and resources which are finite&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;renewable&lt;/strong&gt;: you can renew some activities in the future&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;compressible/expansible&lt;/strong&gt;: you feel elapsed time differently for a given activity in function
-of time&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;occasionally generated by you&lt;/strong&gt;: you make your choices, and your organization to free of time&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;cumulative&lt;/strong&gt;: we interpret the time with a quantity now, not only an instant&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;But the quantity of time is always available immediately.&lt;/p&gt;
-
-&lt;h1 id=&quot;concepts&quot;&gt;Concepts&lt;/h1&gt;
-
-&lt;p&gt;We defined several ways to conceptualize the time, here I can define more precisely the other
-concepts of time management like the &lt;strong&gt;effort&lt;/strong&gt; and the &lt;strong&gt;optimization&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;The &lt;strong&gt;effort&lt;/strong&gt; to do an activity is like the &lt;strong&gt;way of consummation of a number of resources&lt;/strong&gt;.
-Your resources are renewed perpetually and have a &lt;strong&gt;potential&lt;/strong&gt;, the activity has also a &lt;strong&gt;potential&lt;/strong&gt;.
-You need to create a resource flow, called the &lt;strong&gt;intensity&lt;/strong&gt; of the effort, to do the activity.
-The awareness to practice an extreme effort in quantity (too much or too few) or quality (too easy or
-too difficult) slows down the feeling of elapsed time and extends the time. This reduces your
-endurance in this activity. But the practice and the training allow you to reduce the feeling of
-effort, you consume less and/or have more resources.&lt;/p&gt;
-
-&lt;p&gt;It is important to observe that the optimization of the &lt;strong&gt;time usage&lt;/strong&gt; is in fact the optimization
-of future projection of the productivity of an activity on a time range. This
-&lt;strong&gt;optimization&lt;/strong&gt; is &lt;strong&gt;under constraints&lt;/strong&gt; and depends on &lt;strong&gt;objectives&lt;/strong&gt;, called also goals. To
-achieve these goals one of the &lt;strong&gt;available resources&lt;/strong&gt; to use and save is time.&lt;/p&gt;
-
-&lt;p&gt;I use several concepts above without defining them, here is a summary:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Goal&lt;/strong&gt;: definition of result(s) that you want to get, called also objective.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Task&lt;/strong&gt;: definition of action(s) that you need to achieve a goal.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Activity&lt;/strong&gt;: execution of task(s) over time.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Productivity&lt;/strong&gt;: a measure of your performance (that is a combination of effectiveness and
-efficiency) of your activities.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;optimization-model&quot;&gt;Optimization Model&lt;/h1&gt;
-
-&lt;p&gt;The &lt;strong&gt;time management&lt;/strong&gt; can be seen in the &lt;strong&gt;modeling of an objective function&lt;/strong&gt;
-to optimize. The model of this objective function is fixed by the &lt;strong&gt;definition&lt;/strong&gt; of your &lt;strong&gt;goals&lt;/strong&gt;
-(split into &lt;strong&gt;tasks&lt;/strong&gt;) and of the &lt;strong&gt;execution plan&lt;/strong&gt;. Then its optimization is determined by the
-duality between the &lt;strong&gt;minimization&lt;/strong&gt; of the &lt;strong&gt;cost of executions&lt;/strong&gt; and the &lt;strong&gt;maximization&lt;/strong&gt; of 
-&lt;strong&gt;quality of got results&lt;/strong&gt; for a set of tasks.&lt;/p&gt;
-
-&lt;p&gt;In mathematics terms, that is to say optimize the &lt;strong&gt;objective function&lt;/strong&gt; $g \circ f$ on a set of tasks $\bigcup x \subset X$
-where:&lt;/p&gt;
-
-\[f: X \rightarrow \mathbb{R}^+ \times \mathbb{R}^+ \quad x \mapsto f(x) = (c(x), q(x))\]
-
-\[g: Img(f) = \{\,f(x)\,|\,x \in X \} \subset \mathbb{R}^+ \times \mathbb{R}^+ \rightarrow
-\mathbb{R}^+ \quad y \mapsto g(y) = g(f(x)) = g(c(x), q(x))\]
-
-&lt;ul&gt;
-  &lt;li&gt;$c$ is the &lt;strong&gt;cost function&lt;/strong&gt; of executions&lt;/li&gt;
-  &lt;li&gt;$q$ is the &lt;strong&gt;quality function&lt;/strong&gt; of got results&lt;/li&gt;
-  &lt;li&gt;$f$ is the &lt;strong&gt;productivity function&lt;/strong&gt; in terms of efficiency and effectiveness&lt;/li&gt;
-  &lt;li&gt;$g$ is a &lt;strong&gt;trade-off function&lt;/strong&gt; between the minimization of the cost $c$ and maximization of the quality
-$q$ on subset of $X$&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;figure class=&quot;content&quot;&gt;
-  &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://docs.google.com/drawings/d/e/2PACX-1vQWBneRL7immMkY2pHZ1FMm7Kz3LNDcrF7by2pUAonxbNXIBP9dKNtc0NohlMi72y8Duk1BJaTZCwWg/pub?w=500&amp;amp;h=366&quot; alt=&quot;Objective function is a trade-off: cost vs quality of
-a set of tasks&quot; title=&quot;Objective function is a trade-off: cost vs quality of
-a set of tasks&quot; /&gt;
-  &lt;/div&gt;
-  &lt;figcaption&gt;
-    Objective function is a trade-off: cost vs quality of
-a set of tasks
-    
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;div class=&quot;warning&quot;&gt;
-But the stability, the evolution of the objective function depends on your &lt;b&gt;regularity&lt;/b&gt;, your &lt;b&gt;implication&lt;/b&gt;, and your &lt;b&gt;progress&lt;/b&gt;.
-&lt;/div&gt;
-
-&lt;p&gt;The functions $c$ and $q$ are often linked, and it influences generally each one negatively for the
-optimization: reducing the cost reduces the quality, and increasing the quality increases the cost.
-While our optimization consists in reducing the cost, being &lt;strong&gt;efficient&lt;/strong&gt;, and increasing the quality,
-to be &lt;strong&gt;effective&lt;/strong&gt;. It is often more performant to be firstly effective, than efficient for a given
-task. Learning to do correctly a task before doing it faster. But it is clear, that being
-effective and efficient (at the same time and in good proportion) is the final goal for each task.&lt;/p&gt;
-
-&lt;div class=&quot;info&quot;&gt;
-You can do an analogy with the &lt;b&gt;machine learning&lt;/b&gt; algorithm. The execution plan is your &lt;b&gt;model&lt;/b&gt; owning &lt;b&gt;hyper-parameters&lt;/b&gt;, 
-the tasks are rows of your &lt;b&gt;dataset&lt;/b&gt; (training, validation, test) and the maximization of the objection function is the step of &lt;b&gt;learning&lt;/b&gt;. 
-With experience in an execution plan, you can predict the speed of execution and the quality of results.
-&lt;/div&gt;
-
-&lt;h1 id=&quot;methodology&quot;&gt;Methodology&lt;/h1&gt;
-
-&lt;p&gt;After having modeled and defined the concepts of time management, I am interested here by
-applying it in practice through a methodology. Firstly, even if you can model the time management,
-in my point of view it is an &lt;strong&gt;empirical science&lt;/strong&gt;. That is to say, you need a methodology to test
-it, and your knowledge about this science will be provided by your experiences and your
-observations.&lt;/p&gt;
-
-&lt;div class=&quot;info&quot;&gt;
-Here the &lt;b&gt;main considered resource&lt;/b&gt; is &lt;b&gt;the time&lt;/b&gt;, but in practice, the methodology could be more complex you could consider 
-other inter-dependent resources to spend like money or energy.
-&lt;/div&gt;
-
-&lt;h2 id=&quot;context&quot;&gt;Context&lt;/h2&gt;
-
-&lt;p&gt;You need to list and put into perspective your resources, your skills, and your constraints.&lt;/p&gt;
-
-&lt;h2 id=&quot;projection&quot;&gt;Projection&lt;/h2&gt;
-
-&lt;p&gt;After you need to define what you want to do and build your &lt;strong&gt;goals&lt;/strong&gt; each one with a &lt;strong&gt;dateline&lt;/strong&gt;.
-Do a first pass of the following section strategy applied to your goals (replace activities with
-goals). Once your goals are partitioned, hierarchized, sized, prioritized, and sequenced. Your destructed
-goals should now fill in a &lt;strong&gt;coherent structure&lt;/strong&gt;. Then split each goal into tasks. You can repeat
-this operation to split each task into smaller activities to pass &lt;strong&gt;from a macro timescale to a
-micro timescale&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;strategy&quot;&gt;Strategy&lt;/h2&gt;
-
-&lt;p&gt;The strategies are the fact to structure your activities to reach out.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Partition your activities&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Partition your activities which have the same &lt;strong&gt;type&lt;/strong&gt; in &lt;strong&gt;independent class&lt;/strong&gt; between them the more
-possible. Of course, the content of each &lt;strong&gt;partition&lt;/strong&gt;
-is subjective for some activities, you can classify your activities into these partitions
-differently in the function of your sensitivities and interests. You can already give an important
-weight to each partition.&lt;/p&gt;
-
-&lt;figure class=&quot;content&quot;&gt;
-  &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://docs.google.com/drawings/d/e/2PACX-1vRt1dc1fZp69-BO05hjcdjSoRflDhlTG_9NmctQRn-EbmvITD_Lg2xlgT-MqsnkAF7XA_31X0Uv-a0m/pub?w=300&amp;amp;h=321&quot; alt=&quot;Partitioning&quot; title=&quot;Partitioning&quot; /&gt;
-  &lt;/div&gt;
-  &lt;figcaption&gt;
-    Partitioning
-    
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Organize into a hierarchy your activities&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Here the goal is to estimate roughly the weight of an activity to have its order of magnitude.&lt;/p&gt;
-
-&lt;p&gt;Each goal should be realistic, reachable, measurable with success keys, and sized in difficulty and
-required time to achieve it. You can play on &lt;strong&gt;several scales&lt;/strong&gt; for your future projections:
-&lt;strong&gt;very long term, long term, middle term, short term, and very short term&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;figure class=&quot;content&quot;&gt;
-  &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://docs.google.com/drawings/d/e/2PACX-1vT2INReaOVrCjN2rKrOCBToYqXnIg6dU7hHGiwSvcZl_7Lg6uXqoj5aNlV68abuP29q_OaZm6vc5bPF/pub?w=480&amp;amp;h=360&quot; alt=&quot;Scaling&quot; title=&quot;Scaling&quot; /&gt;
-  &lt;/div&gt;
-  &lt;figcaption&gt;
-    Scaling
-    
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Size your activities&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Now you can size more precisely each task. You can measure absolutely if it is complicated, you can
-also measure relatively the ones in relation to the other ones. You need to choose the unit of the *
-weight* of your activity.&lt;/p&gt;
-
-&lt;figure class=&quot;content&quot;&gt;
-  &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://docs.google.com/drawings/d/e/2PACX-1vTKLnvm7RpJb3SSmZ4mEmLFyvb84e9ndFV1ehYUDe7OV5ev-yWVztyG8VE0gYpyi_KpQNyhZtuN_ToH/pub?w=200&amp;amp;h=331&quot; alt=&quot;Sizing&quot; title=&quot;Sizing&quot; /&gt;
-  &lt;/div&gt;
-  &lt;figcaption&gt;
-    Sizing
-    
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Organize the interactions of activities&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;You need to build a &lt;strong&gt;dependency graph&lt;/strong&gt; of each activity to see if an activity depends on other
-one(s).&lt;/p&gt;
-
-&lt;figure class=&quot;content&quot;&gt;
-  &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://docs.google.com/drawings/d/e/2PACX-1vSudssT0neN76LmXVxtcbVBVQEI_cVhyS6wqCWo9jqCTX2EqIJeb6qMtUvm-7XR0m2J_AWm1Ynps9qB/pub?w=250&amp;amp;h=289&quot; alt=&quot;Dependency graph&quot; title=&quot;Dependency graph&quot; /&gt;
-  &lt;/div&gt;
-  &lt;figcaption&gt;
-    Dependency graph
-    
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Your &lt;strong&gt;dependency graph&lt;/strong&gt; must be a set of &lt;strong&gt;acyclic graphs&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Prioritize your activities&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;After you need &lt;strong&gt;to rank your activities&lt;/strong&gt; which ones are the most important ones:&lt;/p&gt;
-
-&lt;figure class=&quot;content&quot;&gt;
-  &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://docs.google.com/drawings/d/e/2PACX-1vS8OzDo_ArOse_qIVYYg1yati0qf8MeIyxeiP_bL618xEMEFxdBwLGiFK1jsj66hY7OPzCz-rlP71Kl/pub?w=245&amp;amp;h=240&quot; alt=&quot;Prioritizing&quot; title=&quot;Prioritizing&quot; /&gt;
-  &lt;/div&gt;
-  &lt;figcaption&gt;
-    Prioritizing
-    
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Sequence your activities&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;It is you build your &lt;strong&gt;plan of execution&lt;/strong&gt; by sequencing each activity by respecting the previous
-steps and your other constraints:&lt;/p&gt;
-
-&lt;figure class=&quot;content&quot;&gt;
-  &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://docs.google.com/drawings/d/e/2PACX-1vTaWiI1eOkX3AKOSixZzaKHyXRaMc7_RVdFqwglYzHhfMss0hQ7No16GBqfDbzJqM1hfNk1Pw7wDdpV/pub?w=573&amp;amp;h=145&quot; alt=&quot;Sequencing&quot; title=&quot;Sequencing&quot; /&gt;
-  &lt;/div&gt;
-  &lt;figcaption&gt;
-    Sequencing
-    
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;You can also optimize these sequencing.&lt;/p&gt;
-
-&lt;h2 id=&quot;auto-analysis&quot;&gt;Auto-analysis&lt;/h2&gt;
-
-&lt;p&gt;Now you can execute your plan. But you need to &lt;strong&gt;monitor&lt;/strong&gt; it, have logs, metrics, and traces,
-and have dashboards to visualize it. You need to do regular &lt;strong&gt;retrospectives&lt;/strong&gt; and &lt;strong&gt;plans&lt;/strong&gt;.
-Respectively adjust your strategy in the function of time, and continue to converge to the filling of
-your goals. Then define new goals or delete goals in order to avoid the shortage of tasks, the
-overload, or the accumulation of deprecated goals. Then you need to measure your &lt;strong&gt;KPI&lt;/strong&gt; and your
-productivity. You need to have a &lt;strong&gt;feedback loop&lt;/strong&gt; to build your &lt;strong&gt;virtuous circle&lt;/strong&gt;, and iterate on
-it.&lt;/p&gt;
-
-&lt;h1 id=&quot;for-example&quot;&gt;For Example&lt;/h1&gt;
-
-&lt;p&gt;Are you a student, a worker, or a retiree? Take the example of a worker, more precisely a professional
-software engineer full-time working exclusively for a unique company at the beginning of their
-career. By hoping, that it matches your &lt;strong&gt;auto-introspection&lt;/strong&gt;, else the following could help you to do
-the same thing for your personal context. I give you here only a &lt;strong&gt;partial overview&lt;/strong&gt; of how it can be done, 
-this example is not necessarily my real usage of my personal time.&lt;/p&gt;
-
-&lt;figure class=&quot;content&quot;&gt;
-  &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://docs.google.com/drawings/d/e/2PACX-1vTP167tBMm4i3nTOrf72NzpkGNLuTAVMnsQqdasktHiuAnOx-AMG1G9We3qWRADeDgrfCC3EV2Oxwm7/pub?w=537&amp;amp;h=147&quot; alt=&quot;Timescale of the human life&quot; title=&quot;Timescale of the human life&quot; /&gt;
-  &lt;/div&gt;
-  &lt;figcaption&gt;
-    Timescale of the human life
-    
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;I analyze my resources, my constraints, and my features (hard skills and soft skills, …).&lt;/p&gt;
-
-&lt;p&gt;Above all, I define what I want to do and my ambitions: following conferences, coding an open-source project, having a side project, 
-becoming a speaker, losing weight, finishing TV series, reading books, following training, giving courses …
-Each goal should be precise, measurable, and reachable.&lt;/p&gt;
-
-&lt;p&gt;I split my activities into 3 partitions:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Life activities&lt;/strong&gt;: required vital, society or community activities&lt;br /&gt;
-&lt;em&gt;for example sleep, eat, wash, practice a physical activity, interact with your environment, do
-the housework, pay the taxes, see your friends …&lt;/em&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Work activities&lt;/strong&gt;: required activities for your job&lt;br /&gt;
-&lt;em&gt;for example commute, work, do brainstorm, code, participate in a meeting, take a break …&lt;/em&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Personal activities&lt;/strong&gt;: spare and free activities&lt;br /&gt;
-&lt;em&gt;for example: practice its development personal, relaxation …&lt;/em&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;I focus on the &lt;strong&gt;life activities&lt;/strong&gt; that compose my lifetime. I let on side work and personal activities, it is the principle.&lt;/p&gt;
-
-&lt;p&gt;For example, for the different timescales, I take long: ~hour and short: ~minute. 
-I try to evaluate the time of each life activity:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;sleeping: 7 hours per day&lt;/li&gt;
-  &lt;li&gt;washing: 2 times 3 minutes per day for teeth and 15min per day for body&lt;/li&gt;
-  &lt;li&gt;eating: 2 times 20 minutes per day for lunch and dinner with 10 minutes per day for the breakfast&lt;/li&gt;
-  &lt;li&gt;seeing friends: at least one time per week for several hours&lt;/li&gt;
-  &lt;li&gt;practicing sport: 3 hours per week&lt;/li&gt;
-  &lt;li&gt;doing the other tasks: several hours per week (taking out the trash, preparing the meals, doing housework, shopping, do-it-yourself …)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;These activities are not really dependent and with the same priority for me. Now I sequence them for each period of a day and of a week.&lt;/p&gt;
-
-&lt;p&gt;I have a &lt;strong&gt;calendar&lt;/strong&gt; where I can monitor each timescale and put my tasks, a &lt;strong&gt;weekly planning&lt;/strong&gt;
-for my datelines, and a &lt;strong&gt;to-do list&lt;/strong&gt; for daily tasks.&lt;/p&gt;
-
-&lt;p&gt;Now I redo the same things for my personal activities, and my work activities to finish the management of my time.&lt;/p&gt;
-
-&lt;h1 id=&quot;go-further&quot;&gt;Go Further&lt;/h1&gt;
-
-&lt;p&gt;This article is only an introduction to time management applied to oneself by oneself. But the situation can
-be &lt;strong&gt;more complex&lt;/strong&gt;. For example, if you think the time management for other people, if you are:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Tech lead&lt;/strong&gt; for a team composed of a group of people&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Manager&lt;/strong&gt; for a department composed of a group of teams&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;CTO&lt;/strong&gt; for a R&amp;amp;D pole composed of departments&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;CEO&lt;/strong&gt; for a company or a group of companies …&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;It requires delegating tasks, understanding the personal context of other people, and driving
-the time management for a group of people at &lt;strong&gt;different scales&lt;/strong&gt;. These organizations can have
-different structures and different stakes. For it, you must redefine the &lt;strong&gt;time management&lt;/strong&gt; to
-resolve your new needs for &lt;strong&gt;yourself&lt;/strong&gt; and for &lt;strong&gt;other people&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;h1 id=&quot;references&quot;&gt;References&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;MALABOU, Catherine. &lt;strong&gt;Le Temps&lt;/strong&gt;. Hatier, 2019. 80 pages. ISBN: 2-218-71678-X.&lt;/li&gt;
-  &lt;li&gt;Saint-Augustin. &lt;strong&gt;Les Confessions&lt;/strong&gt;. 4 BC. Book XI.&lt;/li&gt;
-  &lt;li&gt;KLEIN, Etienne. &lt;strong&gt;Les tactiques de Chronos&lt;/strong&gt;. Flammarion, 2009. 224 pages. ISBN: 978-2-0812-2305-9.&lt;/li&gt;
-  &lt;li&gt;HAWKING, Stephen. &lt;strong&gt;A Brief History of Time&lt;/strong&gt;. Bantam Book, 2011. Chapter 2: Space and Time. 23 pages. ISBN: 978-0-857-50100-4.&lt;/li&gt;
-  &lt;li&gt;VANDENBERGHE, Lieven. &lt;strong&gt;Convex Optimization&lt;/strong&gt;. Cambridge University Press, 2009. Chapter 1: 16 pages. ISBN: 978-0-521-83378-3.&lt;/li&gt;
-  &lt;li&gt;WINSTON, Wayne L.. &lt;strong&gt;Operations Research&lt;/strong&gt;. Thomson Brooks/Cole, 2004. Chapter 1: 12 pages. ISBN: 0-534-38058-1.&lt;/li&gt;
-  &lt;li&gt;MURPHY, Kevin P.. &lt;strong&gt;Machine Learning: A probabilistic Perspective&lt;/strong&gt;. The MIT Press, 2012. Chapter 1: 24 pages. ISBN: 978-0-262-01802-9.&lt;/li&gt;
-  &lt;li&gt;SUTHERLAND, Jeff. &lt;strong&gt;SCRUM&lt;/strong&gt;. Business Books, 2014. 248 pages. ISBN: 978-1-847-94108-4.&lt;/li&gt;
-  &lt;li&gt;ANDERSON, David J. &lt;strong&gt;Kanban: Successful Evolutionary …&lt;/strong&gt; Blue Hole Press, 2010. 278 pages. ISBN: 978-0-9845214-1-8.&lt;/li&gt;
-  &lt;li&gt;CIRILLO, Francesco. &lt;strong&gt;The Pomodoro Technique&lt;/strong&gt;. 2018. 160 pages. ISBN: 1524760706.&lt;/li&gt;
-  &lt;li&gt;OHNO, Taiichi. &lt;strong&gt;Toyota Production System&lt;/strong&gt;. Synermage, 2020. 150 pages. ISBN: 106992329X.&lt;/li&gt;
-  &lt;li&gt;New York University. &lt;strong&gt;Time Management&lt;/strong&gt;. NYC, January 2023. &lt;a href=&quot;https://meet.nyu.edu/academics/time-management-101-guide-to-reclaim-your-time/&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;KOLMAR, Chris. &lt;strong&gt;Efficiency vs Effectiveness&lt;/strong&gt;. Zippia, April 2021. &lt;a href=&quot;https://www.zippia.com/advice/efficiency-vs-effectiveness/&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Tue, 20 Apr 2021 00:00:00 +0000</pubDate>
-        <link>https://glegoux.com/blog/articles/2021/04/20/time-management.html</link>
-        <guid isPermaLink="true">https://glegoux.com/blog/articles/2021/04/20/time-management.html</guid>
-        
-        
-        <category>Methodology</category>
-        
-      </item>
-    
-      <item>
-        <title>Unix timestamp</title>
-        <description>&lt;p&gt;In fact, 2038 is a particular year when an informatics bug could occur, sometimes referred as the &lt;strong&gt;Y2K38 problem&lt;/strong&gt;. 
-Because an &lt;strong&gt;arithmetic overflow&lt;/strong&gt; on the Unix timestamp risks appearing, what it means, there are insufficient bits in a 
-binary number representation to portray the result of an arithmetic operation. For example, an arithmetic operation 
-is not closed with respect to addition, subtraction, multiplication, or division.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Y2K38 problem is caused by insufficient capacity used to represent a time duration:&lt;br /&gt;
-the Unix timestamp as a signed 32-bits integer. It could produce a huge chaos.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;h1 id=&quot;unix-timestamp&quot;&gt;Unix timestamp&lt;/h1&gt;
-
-&lt;p&gt;Effectively, the &lt;strong&gt;Unix timestamp&lt;/strong&gt;, used largely in informatics systems, represents the number of
-elapsed seconds since January 1st, 1970 at midnight in the Coordinated Universal Time (UTC) time standard.
-This value is incremented every second. And the date &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;1970-01-01 00:00:00 UTC&lt;/code&gt;, usually called &lt;strong&gt;epoch date&lt;/strong&gt;, 
-is a particular date in a lot of informatics system representing the origin time, inherited of the Unix operating system
-an POSIX standard. The Unix engineers picked this date arbitrarily, because they needed to set a uniform date for the start of time, 
-and New Year’s Day, 1970, seemed most convenient.&lt;/p&gt;
-
-&lt;p&gt;As you can see:&lt;/p&gt;
-
-&lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;s &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;seq &lt;/span&gt;0 3&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;date&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--date&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;1970-01-01 00:00:00 UTC &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$s&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; seconds&quot;&lt;/span&gt; +%s&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;
-&lt;span class=&quot;go&quot;&gt;0
-1
-2
-3
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;A Unix timestamp is used to known the occurrence date of an informatics event, after 1970. Sometimes other 
-granularity of time like the millisecond, or the nanosecond are used, but traditionally it is the second.&lt;/p&gt;
-
-&lt;div class=&quot;info&quot;&gt;
-While the trademark today is UNIX, in this article, we use Unix in deference to dmr&apos;s wishes, dmr being the 
-username of Dennis MacAlistair Ritchie, famous computer scientist having worked the on Unix operating system.
-&lt;/div&gt;
-
-&lt;h1 id=&quot;arithmetic-binary-representation-overflow&quot;&gt;Arithmetic binary representation overflow&lt;/h1&gt;
-
-&lt;p&gt;But the arithmetic binary representation of this Unix timestamp is sometimes on &lt;strong&gt;32-bits as a signed integer&lt;/strong&gt; again as 
-originally at its creation. That is to say, its maximum value is $ 2^{31} - 1 $. The negative values until $ -2^{31} 
-$ (inclusive) are used by convention for representing a duration from &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;1970-01-01 00:00:00 UTC&lt;/code&gt; to an anterior date. 
-Then the maximum duration time supported by a such Unix timestamp will be reach out at &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;2038-01-19 03:14:07 UTC&lt;/code&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;date&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--date&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;@&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$((&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;31&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--utc&lt;/span&gt;
-&lt;span class=&quot;go&quot;&gt;Tue Jan 19 03:14:07 UTC 2038
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;The &lt;strong&gt;adding of 1 second at this date&lt;/strong&gt; raises an arithmetic overflow error. For a representation on &lt;strong&gt;32-bits 
-as an unsigned integer&lt;/strong&gt;. The problem will be the same in 2106:&lt;/p&gt;
-
-&lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;date&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--date&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;@&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$((&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;32&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--utc&lt;/span&gt;
-&lt;span class=&quot;go&quot;&gt;Sun Feb  7 06:28:15 UTC 2106
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Hopefully, the majority of informatics technology have already migrated to a &lt;strong&gt;64-bits representation&lt;/strong&gt;. For a signed integer,
-this problem is rescheduled for around in 290 billions of years, in other words in a &lt;strong&gt;quantity quasi-infinity of time&lt;/strong&gt;, knowing the 
-age of the universe is estimated around 13 billions of years, or around 20 times less. With the approximate computation:&lt;/p&gt;
-
-&lt;div class=&quot;language-scala highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;scala&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Long&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;MaxValue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;365&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;24&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3600&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)/&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;pow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Double&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;292.471208677&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;The problem could be considered as resolved. But &lt;strong&gt;some informatics system could be bugged&lt;/strong&gt; by the &lt;strong&gt;negligence&lt;/strong&gt; or the &lt;strong&gt;ignorance&lt;/strong&gt; of this problem 
-from developers and/or maintainers of these informatics systems. The informatics system uses often &lt;strong&gt;a lot of dependencies&lt;/strong&gt; like code libraries, 
-hardware components, or operating systems. Only one of the dependency could be the source of a such bug in the related informatics systems that uses it, 
-because the Unix timestamp are omnipresent on each system layer from low level to high level.&lt;/p&gt;
-
-&lt;p&gt;Concretely, it raises an &lt;strong&gt;arithmetic overflow error&lt;/strong&gt;. It could be silent, trigger a coding exception, or have a different behavior.
-For example for the most programming languages, it will be silent for the programmer but with a different behavior. 
-Even if the test policy of the coding project could catch this kind of error. It is enough rare to have a unit or integration test 
-with the current time or a future time, often the time is fixed to have an exact reproducible test. But it could be observed in 
-the end-to-end test. In any case, &lt;strong&gt;the error will appear firstly at the runtime directly in production&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;It could produce a chaos, because the consequences of a such error are hard to forecast, with a risk to be destructive.
-Events can be not synchronized between several systems or just stop working: internet, cars, IoT devices, banks, airplanes, etc … 
-suddenly could no longer work.&lt;/p&gt;
-
-&lt;h1 id=&quot;example-in-javascala&quot;&gt;Example in Java/Scala&lt;/h1&gt;
-
-&lt;p&gt;While currently Java/Scala ecosystem is not exposed to this problem in the standard library, 
-with a signed 64-bits representation for an Unix timestamp:&lt;/p&gt;
-
-&lt;div class=&quot;language-scala highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;scala&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.time.Instant&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Instant&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;now&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;getEpochSecond&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;isInstanceOf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Long&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Boolean&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;A Unix timestamp is well represented by a &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;Long&lt;/code&gt; from $-2^{63}$ to $2^{63} - 1$. Let’s study together, what it could happen, if it was a &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;Int&lt;/code&gt;.&lt;br /&gt;
-The range of values will be between $-2^{31}$ and $2^{31} - 1$ for a &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;Int&lt;/code&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;language-scala highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;scala&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;MinValue&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Int&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2147483648&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;scala&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;MaxValue&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Int&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2147483647&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;warning&quot;&gt;
-In Scala, it is false to express $2^{31}$ with Math.pow(2, 31).intValue that is equal to 2147483647, what it doesn&apos;t make sense.
-Here, you have a odd number instead of an even number, and typically an arithmetic overflow per truncation from Double to Int.
-&lt;/div&gt;
-
-&lt;p&gt;In addition we have:&lt;/p&gt;
-
-&lt;div class=&quot;language-scala highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;scala&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;MaxValue&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;MinValue&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Boolean&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;The adding of 1 second after &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;Tue Jan 19 03:14:07 UTC 2038&lt;/code&gt; gives:&lt;/p&gt;
-
-&lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;date&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--date&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;@&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$((&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;31&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--utc&lt;/span&gt;
-&lt;span class=&quot;go&quot;&gt;Fri Dec 13 20:45:52 UTC 1901
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Weird, how could we explain that. The error is silent no exception raised, the addition provoking the arithmetic overflow is cyclic on the 
-arithmetic representation. Because, here a &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;Int&lt;/code&gt; has a &lt;strong&gt;two’s complement binary representation&lt;/strong&gt; (2C) in Scala.
-Here the relation between the base 10 and the two’s complement binary representation on 32-bits is:&lt;/p&gt;
-
-\[[N]_{10} = [b_{31}\,...\,b_{1}\,b_{0}]_{2C} = - b_{31}\,2^{31} + \sum_{i=0}^{30} b_{i}\,2^{i} \text{ where } b_k \,\in\, \{ 0,1 \}\]
-
-&lt;p&gt;with the notation &lt;strong&gt;little endian&lt;/strong&gt; for the order of the bits, the most significant bit (MSB) $ b_{31} $ is the &lt;strong&gt;sign bit&lt;/strong&gt; 
-and the least significant (LSB) bit $ b_{0} $ the &lt;strong&gt;unit bit&lt;/strong&gt;. It the sign bit is 1, the number is stricly negative. And if the unit bit is 1, the numbder is odd. For example:&lt;/p&gt;
-
-&lt;div class=&quot;language-scala highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;toBinaryRepresentation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
-    &lt;span class=&quot;nv&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;toBinaryString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;reverse&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;padTo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;32&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;&apos;0&apos;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;reverse&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;scala&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;toBinaryRepresentation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;MinValue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10000000000000000000000000000000&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;scala&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;toBinaryRepresentation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;11111111111111111111111111111111&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;scala&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;toBinaryRepresentation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;00000000000000000000000000000000&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;scala&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;toBinaryRepresentation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;MaxValue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;01111111111111111111111111111111&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;To conclude the limitations of storage capacity for a value can provoke weird bugs in an informatics ecosystem, 
-it is important to be aware of this kind of behavior when a technology is used.&lt;/p&gt;
-
-&lt;h1 id=&quot;references&quot;&gt;References&lt;/h1&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;RITCHIE Dennis M., THOMPSON Ken, &lt;strong&gt;The UNIX TimeSharing System&lt;/strong&gt;. Bell Labs, July 1974. &lt;a href=&quot;https://dsf.berkeley.edu/cs262/unix.pdf&quot;&gt;Link&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;NYGREN Erik, &lt;strong&gt;Preparing for Y2038 (ALREADY?!)&lt;/strong&gt;. Akamai Blog, January 2019. &lt;a href=&quot;https://blogs.akamai.com/2019/01/preparing-for-y2038-already.html&quot;&gt;Link&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;DINAMANI Deepa, &lt;strong&gt;Solving the Year 2038 problem in the Linux kernel&lt;/strong&gt;. opensource.com, January 2019. &lt;a href=&quot;https://opensource.com/article/19/1/year2038-problem-linux-kernel&quot;&gt;Link&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;THAKUR Vishal, &lt;strong&gt;What Is The 2038 Problem?&lt;/strong&gt;. Science ABC, October 2020. &lt;a href=&quot;https://www.scienceabc.com/innovation/what-is-the-2038-problem.html&quot;&gt;Link&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Sat, 28 Nov 2020 00:00:00 +0000</pubDate>
-        <link>https://glegoux.com/blog/articles/2020/11/28/unix-timestamp.html</link>
-        <guid isPermaLink="true">https://glegoux.com/blog/articles/2020/11/28/unix-timestamp.html</guid>
-        
-        <category>Arithmetic</category>
-        
-        
-        <category>Applied Mathematics</category>
-        
-      </item>
-    
-      <item>
-        <title>Geo-location</title>
-        <description>&lt;p&gt;We can model the surface of the earth as a sphere of radius $R$. Even if in reality, the earth is more a kind of ellipsoid with an irregular surface, where each point of its surface owns an altitude in relation to the sea level.&lt;/p&gt;
-
-&lt;figure class=&quot;content&quot;&gt;
-  &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://docs.google.com/drawings/d/e/2PACX-1vRdm2uIt-uhISovgxlwTgP6w08Lq8LPqX-vpNz8RVt7cr_sHn8k1Fb5-3d8kVV5Z2K5-Ys8gwEYLfy9/pub?w=480&amp;amp;h=360&quot; alt=&quot;Coordinates on earth with latitude and longitude&quot; title=&quot;Coordinates on earth with latitude and longitude&quot; /&gt;
-  &lt;/div&gt;
-  &lt;figcaption&gt;
-    Coordinates on earth with latitude and longitude
-    
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Let $p1 = (\text{lat1}, \text{long1})$, $p2 = (\text{lat2}, \text{long2})$ be 2 points on the surface of the earth with a latitude and a longitude given in radian respectively. The latitude has a value between $[-\frac{\pi}{2}, \frac{\pi}{2}]$, and the longitude between $]-\pi, \pi]$. So each point is identified by unique way with this tuple: latitude and longitude. There is at least a great circle of the sphere passing both through $p1$ and $p2$, either an infinity if $p1$, $p2$ and the center of the sphere are aligned in the ambient space, or an unique one. The smallest length of a path joining $p1$ and $p2$ on the earth surface is the size of the minor circular arc of a great circle. A such arc is called a geodesic, that we note $d(p1, p2)$ its size. We put $\alpha \in [0, \pi]$ is the smallest central angle, to avoid all ambiguities, because $p1$ and $p2$ belong to a circle, and define 2 circular arcs: the minor one and the major one, respectively with a size $d(p1, p2)$ and $2\pi R - d(p1, p2)$. If $\alpha = 0$, then $p1$ and $p2$ are confused, and if $\alpha = \pi$, then $p1$ is the antipode of $p2$ (diametrically opposite, and reciprocally).&lt;/p&gt;
-
-&lt;figure class=&quot;content&quot;&gt;
-  &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://docs.google.com/drawings/d/e/2PACX-1vQptEFbx1SxwX-p1QFsK94CvkoJwbVAKXpiQ8FaL9-BJbZnEUw4PYZqce7UnUtD-Hcm01ZRV4vOornF/pub?w=480&amp;amp;h=360&quot; alt=&quot;Smallest distance between 2 points on the earth surface&quot; title=&quot;Smallest distance between 2 points on the earth surface&quot; /&gt;
-  &lt;/div&gt;
-  &lt;figcaption&gt;
-    Smallest distance between 2 points on the earth surface
-    
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;So:&lt;/p&gt;
-
-\[d(p1, p2) = R\;\alpha\]
-
-&lt;p&gt;With the formula of scalar product, we can find $\alpha$, because:&lt;/p&gt;
-
-\[p1\,.\,p2 = ||p1||\,||p2||\,\cos(\alpha) = R^2 \cos(\alpha)\]
-
-&lt;p&gt;But also, in the cartesian coordinates system, with $( 0, 0, 0 )$ the center of the earth, we have that a point $p = (\text{lat}, \text{long})$ on the surface of the earth has for cartesian coordinates:&lt;/p&gt;
-
-\[p = \begin{pmatrix} R\cos(\text{lat})\cos(\text{long}) \\\ R\cos(\text{lat})\sin(\text{long}) \\\ R\sin(\text{lat}) \end{pmatrix}\]
-
-&lt;p&gt;Indeed, even if it means changing reference points, we can always by symmetry come back to this diagram:&lt;/p&gt;
-
-&lt;figure class=&quot;content&quot;&gt;
-  &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://docs.google.com/drawings/d/e/2PACX-1vSo-qbr70ZR3v_49gXzE7HI6cv0jgPXLEANpuZaNszi0QAL3NLIzjAd34V-s-2nCAtSaiW3AXno0urI/pub?w=529&amp;amp;h=323&quot; alt=&quot;Cartesian coordinates on earth&quot; title=&quot;Cartesian coordinates on earth&quot; /&gt;
-  &lt;/div&gt;
-  &lt;figcaption&gt;
-    Cartesian coordinates on earth
-    
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Then, we have also:&lt;/p&gt;
-
-\[\begin{align*}
-p1\,.\,p2 &amp;amp;= R^2\left(\sin(\text{lat1})\sin(\text{lat2}) + \cos(\text{lat1})\cos(\text{lat2})(\cos(\text{long1})\cos(\text{long2}) + \sin(\text{long1})\sin(\text{long2})\right) \\\
-          &amp;amp;= R^2\left(\sin(\text{lat1})\sin(\text{lat2}) + \cos(\text{lat1})\cos(\text{lat2})\cos(\text{long1} - \text{long2})\right)
-\end{align*}\]
-
-&lt;p&gt;So:&lt;/p&gt;
-
-\[\cos(\alpha) = \sin(\text{lat1})\sin(\text{lat2}) + \cos(\text{lat1})\cos(\text{lat2})\cos(\text{long1} - \text{long2})\]
-
-&lt;p&gt;By applying the function $\text{arccos}: [-1, 1] \rightarrow [0, \pi]$ the reciprocal bijection of $\cos$ on $[0, \pi]$, we get the smallest center angle $\alpha$, and:&lt;/p&gt;
-
-\[\boxed{ 
-  d(p1, p2) = R\,\text{arccos}\big(\sin(\text{lat1})\sin(\text{lat2}) + \cos(\text{lat1})\cos(\text{lat2})\cos(\text{long1} - \text{long2})\big) 
-}\]
-
-&lt;p&gt;For a historical reason and numerical computation often the haversine fonction $\text{hav}: \mathbb{R} \rightarrow [0, 1]\quad x \mapsto \sin^2\left(\frac{x}{2}\right)$.&lt;/p&gt;
-
-&lt;p&gt;We have $\cos(\alpha) = 1 - 2\text{hav}(\alpha)$, so:&lt;/p&gt;
-
-\[1 - 2\text{hav}(\alpha) = \sin(\text{lat1})\sin(\text{lat2}) + \cos(\text{lat1})\cos(\text{lat2}) - 2\text{hav}(\text{long1} - \text{long2})\cos(\text{lat1})\cos(\text{lat2})\]
-
-&lt;p&gt;That is to say:&lt;/p&gt;
-
-\[\begin{align*}
-\text{hav}(\alpha) &amp;amp;= \dfrac{1 - (\sin(\text{lat1})\sin(\text{lat2}) + \cos(\text{lat1})\cos(\text{lat2}))}{2} + \text{hav}(\text{long1} - \text{long2})\cos(\text{lat1})\cos(\text{lat2}) \\\
-                   &amp;amp;= \dfrac{1 - \cos(\text{lat1 - lat2})}{2} + \text{hav}(\text{long1} - \text{long2})\cos(\text{lat1})\cos(\text{lat2}) 
-\end{align*}\]
-
-&lt;p&gt;Thus, we get the harvesine relation:&lt;/p&gt;
-
-\[\boxed{ 
-  hav(p1, p2) = \text{hav}(\text{lat1} - \text{lat2}) + \text{hav}(\text{long1} - \text{long2})\cos(\text{lat1})\cos(\text{lat2}) 
-}\]
-
-&lt;p&gt;Where $hav: \left(\left[-\frac{\pi}{2}, \frac{\pi}{2}\right] \times ]-\pi, \pi]\right)^2 \rightarrow [0, 1]$ is defined by overloading of 
-$hav$ on $[0, \pi]$ by a change of variables $hav(p1, p2) = hav(\alpha)$, because the couple $(p1, p2)$ defines a unique $\alpha$ (it is not reciprocal).&lt;/p&gt;
-
-&lt;p&gt;By using $\text{archav}: [0, 1] \rightarrow [0, \pi]$ the reciprocal bijection of $\text{hav}$ on $[0, \pi]$, we have for $\alpha \in [0, \pi]$:&lt;/p&gt;
-
-\[d(p1, p2) = R\,\text{archav}(\text{hav}(\alpha))\]
-
-&lt;p&gt;In addition $\forall x \in [0, 1]$:&lt;/p&gt;
-
-\[\text{archav}(x) = 2\,\text{arcsin}(\sqrt{x})\]
-
-&lt;p&gt;And by putting $y = \text{arcsin}(x)$ and $x = \sin(y)$ with $\tan(y) = \sqrt{\dfrac{\sin^2(y)}{1 - \sin^2(y)}}$ we have for $x \neq 1$:&lt;/p&gt;
-
-\[\text{arcsin}(x) = \text{arctan}\left(\sqrt{\dfrac{x^2}{1 - x^2}}\right)\]
-
-&lt;p&gt;So:&lt;/p&gt;
-
-\[d(p1, p2) = 2\,R\,\text{arctan}\left(\sqrt{\dfrac{\text{hav}(p1, p2)}{1 - \text{hav}(p1, p2)}}\right)\]
-
-&lt;p&gt;In order to have a valid formula for the case where $\text{hav}(p1, p2) = \text{hav}(\alpha) = 1$, that is to say for $\alpha = \pi$, we introduce the function:&lt;/p&gt;
-
-\[\text{atan2}: \mathbb{R}^+ \times \mathbb{R}^+ \backslash \left\{0, 0\right\} \quad (x,y) \mapsto \left\{
-    \begin{array}{ll}
-        \text{arctan}\left(\frac{x}{y}\right) &amp;amp; \text{if } y &amp;gt; 0 \\\
-        \frac{\pi}{2} &amp;amp; \text{if } y = 0
-    \end{array}
-\right.\]
-
-&lt;p&gt;So:&lt;/p&gt;
-
-\[\boxed{ 
-  d(p1,p2) = 2\,R\,\text{atan2}\left( \sqrt{\text{hav}(p1, p2)}, \sqrt{1 - \text{hav}(p1, p2)} \right) 
-}\]
-
-&lt;p&gt;We can check that the coherence of the formula where $d$ is well a metric distance, it is a positive function, symetric $d(p1, p2) = d(p2, p1)$, and homogeneous $d(p, p) = 0$ 
-respecting the triangle inegality.&lt;/p&gt;
-
-&lt;p&gt;In practice, the radius of the earth is  $R = 6371\,km$, and the latitude and longitude are given often in decimal degree and not in radian.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 24 Aug 2020 00:00:00 +0000</pubDate>
-        <link>https://glegoux.com/blog/articles/2020/08/24/geo-location.html</link>
-        <guid isPermaLink="true">https://glegoux.com/blog/articles/2020/08/24/geo-location.html</guid>
-        
-        <category>Geometry</category>
-        
-        
-        <category>Applied Mathematics</category>
         
       </item>
     

@@ -43,6 +43,48 @@
 } ,
 
 {
+"title"                : "From Hadoop to the modern data stack",
+"authors"              : "glegoux",
+"category"             : "Data",
+"tags"                 : "",
+"time_reading_minutes" : 3,
+"url"                  : "/blog/articles/2022/12/14/from-hadoop-to-the-modern-data-stack.html",
+"date"                 : "2022-12-14 00:00:00 +0000",
+"year"                 : "2022",
+"month"                : "12",
+"yearMonth"            : "2022-12",
+"yearMonthDay"         : "2022-12-14"
+} ,
+
+{
+"title"                : "How to write a README?",
+"authors"              : "glegoux",
+"category"             : "Documentation",
+"tags"                 : "",
+"time_reading_minutes" : 4,
+"url"                  : "/blog/articles/2022/12/10/how-to-write-a-readme.html",
+"date"                 : "2022-12-10 00:00:00 +0000",
+"year"                 : "2022",
+"month"                : "12",
+"yearMonth"            : "2022-12",
+"yearMonthDay"         : "2022-12-10"
+} ,
+
+{
+"title"                : "Aerospike: Real-time database for the online ads ecosystem",
+"authors"              : "glegoux",
+"category"             : "Data",
+"tags"                 : "",
+"time_reading_minutes" : 8,
+"url"                  : "/blog/articles/2022/11/29/aerospike-real-time-database-for-the-online-ads-ecosystem.html",
+"date"                 : "2022-11-29 00:00:00 +0000",
+"year"                 : "2022",
+"month"                : "11",
+"yearMonth"            : "2022-11",
+"yearMonthDay"         : "2022-11-29"
+} ,
+
+{
 "title"                : "Learning PySpark with Google Colab",
 "authors"              : "glegoux",
 "category"             : "Data",
@@ -54,6 +96,34 @@
 "month"                : "11",
 "yearMonth"            : "2022-11",
 "yearMonthDay"         : "2022-11-15"
+} ,
+
+{
+"title"                : "The Apache Software Foundation for the open-source",
+"authors"              : "glegoux",
+"category"             : "News",
+"tags"                 : "",
+"time_reading_minutes" : 3,
+"url"                  : "/blog/articles/2022/11/13/the-apache-software-foundation-for-the-open-source.html",
+"date"                 : "2022-11-13 00:00:00 +0000",
+"year"                 : "2022",
+"month"                : "11",
+"yearMonth"            : "2022-11",
+"yearMonthDay"         : "2022-11-13"
+} ,
+
+{
+"title"                : "Apache Spark: Ecosystem overview with Apache Hadoop YARN and HDFS",
+"authors"              : "glegoux",
+"category"             : "Data",
+"tags"                 : "",
+"time_reading_minutes" : 10,
+"url"                  : "/blog/articles/2022/11/02/apache-spark-ecosystem-overview-with-apache-hadoop-yarn-and-hdfs.html",
+"date"                 : "2022-11-02 00:00:00 +0000",
+"year"                 : "2022",
+"month"                : "11",
+"yearMonth"            : "2022-11",
+"yearMonthDay"         : "2022-11-02"
 } ,
 
 {

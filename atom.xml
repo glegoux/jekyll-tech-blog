@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux (glegoux)</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2024-02-25T15:49:41+00:00</updated>
+ <updated>2024-02-25T20:58:15+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -277,6 +277,293 @@ new location with the binary format OpenPGP, and specify the option Signed-By (s
    </author></entry>
  
  <entry>
+   <title>From Hadoop to the modern data stack</title>
+   <link href="https://glegoux.com/blog/articles/2022/12/14/from-hadoop-to-the-modern-data-stack.html"/>
+   <updated>2022-12-14T00:00:00+00:00</updated>
+   <id>https://glegoux.com/blog/articles/2022/12/14/from-hadoop-to-the-modern-data-stack.html</id>
+   <content type="html">&lt;h1 id=&quot;hadoop-at-criteo&quot;&gt;Hadoop at Criteo&lt;/h1&gt;
+
+&lt;p&gt;by  &lt;a href=&quot;https://fr.linkedin.com/in/anthony-rabier-345108100&quot;&gt;Anthony Rabier&lt;/a&gt;, Staff Site Reliability Lead Engineer at  &lt;a href=&quot;https://www.criteo.com/&quot;&gt;Criteo&lt;/a&gt;&lt;br /&gt;
+and  &lt;a href=&quot;https://fr.linkedin.com/in/williammontaz&quot;&gt;William Montaz&lt;/a&gt;, Senior Staff Site Reliability Engineer at  &lt;a href=&quot;https://www.criteo.com/&quot;&gt;Criteo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Criteo migrated from  &lt;a href=&quot;https://hadoop.apache.org/docs/stable/&quot;&gt;Hadoop&lt;/a&gt;  3 to Hadoop 2, with a lot of patches and in an awesome way by migrating first the runtime to Hadoop 3 for a big progressively without downtime for Hadoop YARN and HDFS without any intervention of the development teams, then by migrating the Hadoop projects for Spark, Flink, and Hadoop Map Reduce. So a vanilla distribution of Hadoop 3 has been created, running with compiled projects in Hadoop 2 and 3 with retro compatibility and tricks developed and merged by Criteo in the core project of Hadoop.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/v2/resize:fit:318/0*Ca5vwq5jxI-Qq2m_&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Migration from Hadoop 2 to Hadoop 3&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/criteo/garmadon&quot;&gt;Garmadon&lt;/a&gt;  is an agent java deployed with all JVM processes running on the Criteo Hadoop cluster to do the metrology jobs for Spark, Flink, and Hadoop Map Reduce … You can build generic Grafana dashboards and create data lineage between your dataset and audit all operations on HDFS.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://miro.medium.com/v2/resize:fit:700/0*OSMVeNYwRB6fQMSC&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Garmadon, Java agent for the Metrology on Hadoop&lt;/p&gt;
+
+&lt;h1 id=&quot;data-processing-at-criteo&quot;&gt;Data processing at Criteo&lt;/h1&gt;
+
+&lt;p&gt;by  &lt;a href=&quot;https://fr.linkedin.com/in/mliroz&quot;&gt;Miguel Liroz&lt;/a&gt;, Senior Staff Site Reliability Lead Engineer at  &lt;a href=&quot;https://www.criteo.com/&quot;&gt;Criteo&lt;/a&gt;&lt;br /&gt;
+and  &lt;a href=&quot;https://www.linkedin.com/in/raphaelclaude&quot;&gt;Raphael Claude&lt;/a&gt;, Staff Site Reliability Engineer at  &lt;a href=&quot;https://www.criteo.com/&quot;&gt;Criteo&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Datadoc is an internal tool used by Criteo to browse the data catalog and to provide a data catalog on each dataset.&lt;/p&gt;
+
+&lt;figure title=&quot;Datadoc&quot; class=&quot;content&quot;&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://miro.medium.com/v2/resize:fit:700/1*UD_BHWOi4vMzm_vEQQthvg.png&quot; title=&quot;Datadoc&quot; alt=&quot;Datadoc&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;
+    Datadoc
+    
+      [built by author]
+    
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.com/criteo-engineering/scheduling-data-pipelines-at-criteo-part-1-8b257c6c8e55&quot;&gt;BigDataFlow&lt;/a&gt;  is an internal tool used by Criteo written in Scala to schedule data processing jobs from an extended SQL query.&lt;/p&gt;
+
+&lt;figure title=&quot;BigDataFlow extended SQL&quot; class=&quot;content&quot;&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://miro.medium.com/v2/resize:fit:700/1*cRzS5MJ4IiErfXQ82Sz5Ug.png&quot; title=&quot;BigDataFlow extended SQL&quot; alt=&quot;BigDataFlow extended SQL&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;
+    BigDataFlow extended SQL
+    
+      [built by author]
+    
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h1 id=&quot;-read-more&quot;&gt;👀 Read more&lt;/h1&gt;
+
+&lt;p&gt;Read the rest of the article …&lt;/p&gt;
+
+&lt;div style=&quot;text-align: center;margin-bottom: 1em;&quot;&gt;
+  &lt;a href=&quot;https://medium.com/@glegoux/from-hadoop-to-the-modern-stack-cdb2f10cee31&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; title=&quot;Read more&quot;&gt;
+    &lt;button class=&quot;btn btn-dark&quot;&gt;
+      &lt;b class=&quot;black&quot;&gt;Read more&lt;/b&gt;
+    &lt;/button&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+
+</content><author>
+       <name>glegoux</name>
+       <uri></uri>
+   </author></entry>
+ 
+ <entry>
+   <title>How to write a README?</title>
+   <link href="https://glegoux.com/blog/articles/2022/12/10/how-to-write-a-readme.html"/>
+   <updated>2022-12-10T00:00:00+00:00</updated>
+   <id>https://glegoux.com/blog/articles/2022/12/10/how-to-write-a-readme.html</id>
+   <content type="html">&lt;p&gt;A README is the best place to start documenting a project. A README is normally a  &lt;strong&gt;single-page document&lt;/strong&gt;  describing your computer project’s key aspects. This document can be read in a few minutes maximum. It is the open door for a newcomer who wants an overview of the fundamental aspects of the project.&lt;/p&gt;
+
+&lt;p&gt;Having a README for a computer project is a  &lt;strong&gt;common&lt;/strong&gt;  enough &lt;strong&gt;thing&lt;/strong&gt;  for the code repositories. Still, the  &lt;strong&gt;template&lt;/strong&gt;  defining what should contain this README is not standard and often depends on the  &lt;strong&gt;sensibility of the software documentalist&lt;/strong&gt;. Avoiding gaps in content and format allows you to align the shared knowledge of your projects in the best common possible way.&lt;/p&gt;
+
+&lt;p&gt;The rules for writing a README file will be described with a generic template and a pragmatic methodology agnostic to the tech stack and the project type you use.&lt;/p&gt;
+
+&lt;p&gt;First, let’s begin defining the type of project that you can have.&lt;/p&gt;
+
+&lt;p&gt;A  &lt;strong&gt;project&lt;/strong&gt; is a code repository; it can be composed of either one module (&lt;strong&gt;simple project&lt;/strong&gt;) or several modules (&lt;strong&gt;complex project&lt;/strong&gt;). This project is in an ecosystem composed of dependencies between modules of the same project or other projects. A module can be :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;An  &lt;strong&gt;application&lt;/strong&gt;: It is deployed at runtime with an executable. No other module depends on it except optionally at runtime.&lt;/li&gt;
+  &lt;li&gt;A  &lt;strong&gt;library&lt;/strong&gt;: It’s used by other modules that depend on it for their execution and/or build.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For example, a  &lt;strong&gt;type of project&lt;/strong&gt;  can be a code library in (Python, Scala, or Java …), an SDK, a web app with a UI and/or an API, a machine learning model, a data processor, a set of scripts, an OPS configuration module or a scheduled job …&lt;/p&gt;
+
+&lt;p&gt;All projects have not necessarily needed a README respected rigorous template; it can use a degraded version in function efforts that you want to provide. Only  &lt;strong&gt;mature projects&lt;/strong&gt;  where you want a high level of quality need it, that is to say, for a project used by the community in an intensive or critical way.&lt;/p&gt;
+
+&lt;h1 id=&quot;practical-guidelines&quot;&gt;Practical guidelines&lt;/h1&gt;
+
+&lt;p&gt;&lt;em&gt;Here are explained the practical guidelines that a README should respect.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;For a simple project:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The README should be a simple text file called README.&lt;extension&gt;.&lt;/extension&gt;&lt;/li&gt;
+  &lt;li&gt;It should be written in coherent syntax (like  &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;Markdown&lt;/code&gt;  or  &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;reStructuredText&lt;/code&gt;).&lt;/li&gt;
+  &lt;li&gt;There should be a README at the root of the project.&lt;/li&gt;
+  &lt;li&gt;According to the README variant you choose (see sections below), you need to adhere to the variant structure.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For a complex project:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The README at the root must have links to the ones of each submodule, with a sentence to describe the role of each module&lt;/li&gt;
+  &lt;li&gt;It should have a README for each module&lt;/li&gt;
+  &lt;li&gt;The README of each module should respect the guidelines of a simple project&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;template&quot;&gt;Template&lt;/h1&gt;
+
+&lt;p&gt;&lt;em&gt;Here are the sections that README should contain.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Each  &lt;strong&gt;section&lt;/strong&gt;  can contain  &lt;strong&gt;direct or indirect information&lt;/strong&gt;  with  &lt;strong&gt;links&lt;/strong&gt;  and should contain a  &lt;strong&gt;title section&lt;/strong&gt;  with format H1 (i.e., ‘#’ with markdown). A section can be  &lt;strong&gt;optional&lt;/strong&gt;  and  &lt;strong&gt;required&lt;/strong&gt;  in function of the type of modules.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;[Project Title]&lt;/strong&gt;* [*: required]
+    &lt;ul&gt;
+      &lt;li&gt;High-level description (with a demo link if applicable)&lt;/li&gt;
+      &lt;li&gt;It should indicate if it is a  &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;library&lt;/code&gt;  or an  &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;application  
+&lt;/code&gt;- It should indicate who is the owner of this project&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Quick start&lt;/strong&gt;* [*: required]
+    &lt;ul&gt;
+      &lt;li&gt;How to set up the development environment, get the repository, install tech stack, …&lt;/li&gt;
+      &lt;li&gt;Link to a demo&lt;/li&gt;
+      &lt;li&gt;How to run the project&lt;/li&gt;
+      &lt;li&gt;How to run the tests&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Usage&lt;/strong&gt;  [optional only if relevant and helpful]
+    &lt;ul&gt;
+      &lt;li&gt;How to use the project (ex. API description)&lt;/li&gt;
+      &lt;li&gt;Links to help resources&lt;/li&gt;
+      &lt;li&gt;How to contribute to the project (coding style, code of conduct, …)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Main structure&lt;/strong&gt;* [*: required]
+    &lt;ul&gt;
+      &lt;li&gt;Link(s) to other “sub-README(s)” (only if the module has submodules)&lt;/li&gt;
+      &lt;li&gt;Links to dependencies&lt;/li&gt;
+      &lt;li&gt;Describe the file architecture of the repository&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Architecture&lt;/strong&gt; [optional only if relevant and helpful]
+    &lt;ul&gt;
+      &lt;li&gt;Explanation of the design with a diagram and a description …&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Deployment&lt;/strong&gt;**  [**: required only for a deployed application]
+    &lt;ul&gt;
+      &lt;li&gt;Link to the deployment configuration&lt;/li&gt;
+      &lt;li&gt;Link to this history of the deployment with the changelog and the releases&lt;/li&gt;
+      &lt;li&gt;Link to the deployed application&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Monitoring&lt;/strong&gt;**  [**: required only for a deployed application]
+    &lt;ul&gt;
+      &lt;li&gt;Links to monitoring dashboards, …&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;References&lt;/strong&gt;  [required]
+    &lt;ul&gt;
+      &lt;li&gt;Links to the documentation about specifications, improvements, or maintenance…&lt;/li&gt;
+      &lt;li&gt;Other useful links&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;License&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Link to the license and copyright with the general conditions&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;-read-more&quot;&gt;👀 Read more&lt;/h1&gt;
+
+&lt;p&gt;Read the rest of the article …&lt;/p&gt;
+
+&lt;div style=&quot;text-align: center;margin-bottom: 1em;&quot;&gt;
+  &lt;a href=&quot;https://medium.com/@glegoux/how-to-write-a-readme-f8986d407c1e&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; title=&quot;Read more&quot;&gt;
+    &lt;button class=&quot;btn btn-dark&quot;&gt;
+      &lt;b class=&quot;black&quot;&gt;Read more&lt;/b&gt;
+    &lt;/button&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+
+</content><author>
+       <name>glegoux</name>
+       <uri></uri>
+   </author></entry>
+ 
+ <entry>
+   <title>Aerospike: Real-time database for the online ads ecosystem</title>
+   <link href="https://glegoux.com/blog/articles/2022/11/29/aerospike-real-time-database-for-the-online-ads-ecosystem.html"/>
+   <updated>2022-11-29T00:00:00+00:00</updated>
+   <id>https://glegoux.com/blog/articles/2022/11/29/aerospike-real-time-database-for-the-online-ads-ecosystem.html</id>
+   <content type="html">&lt;p&gt;&lt;a href=&quot;https://aerospike.com/&quot;&gt;Aerospike&lt;/a&gt;  can replace at the same time 2 cache layers, an in-memory layer, and a persistent memory layer like  &lt;a href=&quot;https://memcached.org/&quot;&gt;Memcached&lt;/a&gt;  and  &lt;a href=&quot;https://www.couchbase.com/&quot;&gt;Couchbase&lt;/a&gt;, respectively, with awesome performance.&lt;/p&gt;
+
+&lt;p&gt;Especially explore the usages of this distributed key-value store for the e-commerce catalogs indispensable in the online ads ecosystem to build ad campaigns, recommend products to the right audience, and display the ads for the publishers.&lt;/p&gt;
+
+&lt;p&gt;As a member of catalog teams at Criteo, I was at the last meetup of  &lt;a href=&quot;https://www.meetup.com/aerospike-paris-scale-warrior-meet-ups/events/289187127/&quot;&gt;Scale Warriors Aerospike&lt;/a&gt;, where the CTO (and founder at Aerospike) was present  &lt;a href=&quot;https://www.linkedin.com/in/drvsrini/&quot;&gt;Srini V. Srinivasan&lt;/a&gt;  to share new and existing features of Aerospike, and where Criteo presented its plan and strategy to migrate to Aerospike.&lt;/p&gt;
+
+&lt;h1 id=&quot;aerospike&quot;&gt;Aerospike&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Aerospike&lt;/strong&gt;  is a key-value NoSQL database with  &lt;a href=&quot;https://en.wikipedia.org/wiki/Flash_memory&quot;&gt;flash memory&lt;/a&gt;  and  &lt;a href=&quot;https://en.wikipedia.org/wiki/In-memory_database&quot;&gt;in-memory&lt;/a&gt;  &lt;a href=&quot;https://github.com/aerospike&quot;&gt;open source&lt;/a&gt;. The high-level ecosystem of Aerospike is deeply integrated with tools of the Big data ecosystem for streaming, batch, and SQL usages with  &lt;a href=&quot;https://www.confluent.io/lp/apache-kafka/&quot;&gt;Kafka&lt;/a&gt;,  &lt;a href=&quot;https://spark.apache.org/&quot;&gt;Spark&lt;/a&gt;, and  &lt;a href=&quot;https://trino.io/&quot;&gt;Trino&lt;/a&gt;  with a  &lt;a href=&quot;https://developer.aerospike.com/client/java&quot;&gt;Java client&lt;/a&gt;:&lt;/p&gt;
+
+&lt;figure title=&quot;The Aerospike Real-time Data Platform&quot; class=&quot;content&quot;&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://miro.medium.com/v2/resize:fit:700/1*83KoE4CmWbOJFgxFU6paeQ.png&quot; title=&quot;The Aerospike Real-time Data Platform&quot; alt=&quot;The Aerospike Real-time Data Platform&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;
+    The Aerospike Real-time Data Platform
+    
+      [&lt;a href=&quot;https://aerospike.com/developer/blog/database-queries-json-db-6&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;source&lt;/a&gt;]
+    
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Aerospike is a distributed key-value store. You can access the data with a simple API:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Get(key) -&amp;gt; byte[]&lt;br /&gt;
+Set(key, byte[], ttl)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The goal is to have small objects from a few bytes to 4 MiB, with low latency, 1 ms on average, and 5 ms at the 99th percentile.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Aerospike is first optimized for the OLTP paradigm because it is a KV Store.&lt;/strong&gt; Still, you can easily do OLAP queries for other usages for more exotic queries to scan the data thanks to the data models layer for Documents, SQL, Graphs, or Time Series.&lt;/p&gt;
+
+&lt;h1 id=&quot;aerospike-clusters-at-criteo&quot;&gt;Aerospike clusters at Criteo&lt;/h1&gt;
+
+&lt;p&gt;A DKVS plays a central role in online ads. With this storage, the infrastructure can answer to the small-time budgets required for each business use case: to bid a request for the auction of RTB (&amp;lt; 100 ms) or to render the ads (&amp;lt; 250 ms).&lt;/p&gt;
+
+&lt;figure title=&quot;Time budget for the online ads&quot; class=&quot;content&quot;&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://miro.medium.com/v2/resize:fit:700/1*huw1bvBiZIDuDliExf6bOg.png&quot; title=&quot;Time budget for the online ads&quot; alt=&quot;Time budget for the online ads&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;
+    Time budget for the online ads
+    
+      [&lt;a href=&quot;https://www.meetup.com/aerospike-paris-meet-ups/events/289187127&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;source&lt;/a&gt;]
+    
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The tech stack is diversified to respond to the needs of online ads, and a DKVS is insufficient. It is only a part of the ecosystem:&lt;/p&gt;
+
+&lt;figure title=&quot;Data stack at Criteo&quot; class=&quot;content&quot;&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://miro.medium.com/v2/resize:fit:700/1*2czh312iW3IsFkVU1YfW3w.png&quot; title=&quot;Data stack at Criteo&quot; alt=&quot;Data stack at Criteo&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;
+    Data stack at Criteo
+    
+      [&lt;a href=&quot;https://www.meetup.com/aerospike-paris-meet-ups/events/289187127&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;source&lt;/a&gt;]
+    
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The data stored in the KV stores must be persisted and loaded in memory to access long-term and quick readings.&lt;/p&gt;
+
+&lt;h1 id=&quot;-read-more&quot;&gt;👀 Read more&lt;/h1&gt;
+
+&lt;p&gt;Read the rest of the article …&lt;/p&gt;
+
+&lt;div style=&quot;text-align: center;margin-bottom: 1em;&quot;&gt;
+  &lt;a href=&quot;https://medium.com/@glegoux/aerospike-real-time-database-c88066769274&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; title=&quot;Read more&quot;&gt;
+    &lt;button class=&quot;btn btn-dark&quot;&gt;
+      &lt;b class=&quot;black&quot;&gt;Read more&lt;/b&gt;
+    &lt;/button&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+
+</content><author>
+       <name>glegoux</name>
+       <uri></uri>
+   </author></entry>
+ 
+ <entry>
    <title>Learning PySpark with Google Colab</title>
    <link href="https://glegoux.com/blog/articles/2022/11/15/learning-pyspark-with-google-colab.html"/>
    <updated>2022-11-15T00:00:00+00:00</updated>
@@ -343,6 +630,254 @@ new location with the binary format OpenPGP, and specify the option Signed-By (s
 
 &lt;div style=&quot;text-align: center;margin-bottom: 1em;&quot;&gt;
   &lt;a href=&quot;https://medium.com/@glegoux/apache-spark-pyspark-with-google-colab-for-data-science-63478138a63e&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; title=&quot;Read more&quot;&gt;
+    &lt;button class=&quot;btn btn-dark&quot;&gt;
+      &lt;b class=&quot;black&quot;&gt;Read more&lt;/b&gt;
+    &lt;/button&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+
+</content><author>
+       <name>glegoux</name>
+       <uri></uri>
+   </author></entry>
+ 
+ <entry>
+   <title>The Apache Software Foundation for the open-source</title>
+   <link href="https://glegoux.com/blog/articles/2022/11/13/the-apache-software-foundation-for-the-open-source.html"/>
+   <updated>2022-11-13T00:00:00+00:00</updated>
+   <id>https://glegoux.com/blog/articles/2022/11/13/the-apache-software-foundation-for-the-open-source.html</id>
+   <content type="html">&lt;p&gt;ASF is one of the larger foundations for open-source projects in the tech world. The official website  &lt;a href=&quot;https://apache.org/&quot;&gt;https://apache.org/&lt;/a&gt;  is exhaustive of useful information.&lt;/p&gt;
+
+&lt;figure title=&quot;Metrics about the Apache Foundation&quot; class=&quot;content&quot;&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://miro.medium.com/v2/resize:fit:700/1*zIWuiiqmXct1v7HjBxCFUA.png&quot; title=&quot;Metrics about the Apache Foundation&quot; alt=&quot;Metrics about the Apache Foundation&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;
+    Metrics about the Apache Foundation
+    
+      [&lt;a href=&quot;https://apache.org&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;source&lt;/a&gt;]
+    
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h1 id=&quot;apache-organization&quot;&gt;Apache Organization&lt;/h1&gt;
+
+&lt;p&gt;The organization of ASF is complex enough, here are useful like to understand how it works:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.apache.org/foundation/how-it-works.html&quot;&gt;https://www.apache.org/foundation/how-it-works.html&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://apache.org/foundation/&quot;&gt;https://apache.org/foundation/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.apache.org/foundation/governance/orgchart&quot;&gt;https://www.apache.org/foundation/governance/orgchart&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;apache-community&quot;&gt;Apache community&lt;/h1&gt;
+
+&lt;p&gt;See  &lt;a href=&quot;https://community.apache.org/&quot;&gt;https://community.apache.org/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;apache-way-core-values&quot;&gt;Apache Way: Core values&lt;/h1&gt;
+
+&lt;p&gt;It is a set of methodologies and values designed to enable disparate communities of volunteers to work collaboratively over time.&lt;/p&gt;
+
+&lt;p&gt;See  &lt;a href=&quot;https://www.apache.org/theapacheway/&quot;&gt;https://www.apache.org/theapacheway/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;apache-news&quot;&gt;Apache News&lt;/h1&gt;
+
+&lt;p&gt;ApacheCon is a conference that is a must for anyone who works deeply with Apache-based software programs.&lt;/p&gt;
+
+&lt;figure title=&quot;ApacheCon&quot; class=&quot;content&quot;&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://miro.medium.com/v2/resize:fit:206/1*bbdfE_HQ-S98x0vUV5Dgnw.png&quot; title=&quot;ApacheCon&quot; alt=&quot;ApacheCon&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;
+    ApacheCon
+    
+      [&lt;a href=&quot;http://www.apachecon.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;source&lt;/a&gt;]
+    
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;See the old conferences:  &lt;a href=&quot;https://archive.apachecon.com/&quot;&gt;https://archive.apachecon.com/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;See all the Apache events:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://events.apache.org/event/&quot;&gt;https://events.apache.org/event/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Apache Blog posts:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://news.apache.org/&quot;&gt;https://news.apache.org/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blogs.apache.org/&quot;&gt;https://blogs.apache.org/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Apache Reports:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.apache.org/foundation/reports.html&quot;&gt;https://www.apache.org/foundation/reports.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;apache-sponsors&quot;&gt;Apache sponsors&lt;/h1&gt;
+
+&lt;p&gt;See  &lt;a href=&quot;https://apache.org/foundation/thanks&quot;&gt;https://apache.org/foundation/thanks&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;-read-more&quot;&gt;👀 Read more&lt;/h1&gt;
+
+&lt;p&gt;Read the rest of the article …&lt;/p&gt;
+
+&lt;div style=&quot;text-align: center;margin-bottom: 1em;&quot;&gt;
+  &lt;a href=&quot;https://medium.com/@glegoux/top-five-ways-to-beat-blue-monday-0f0de0950827&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; title=&quot;Read more&quot;&gt;
+    &lt;button class=&quot;btn btn-dark&quot;&gt;
+      &lt;b class=&quot;black&quot;&gt;Read more&lt;/b&gt;
+    &lt;/button&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+
+</content><author>
+       <name>glegoux</name>
+       <uri></uri>
+   </author></entry>
+ 
+ <entry>
+   <title>Apache Spark: Ecosystem overview with Apache Hadoop YARN and HDFS</title>
+   <link href="https://glegoux.com/blog/articles/2022/11/02/apache-spark-ecosystem-overview-with-apache-hadoop-yarn-and-hdfs.html"/>
+   <updated>2022-11-02T00:00:00+00:00</updated>
+   <id>https://glegoux.com/blog/articles/2022/11/02/apache-spark-ecosystem-overview-with-apache-hadoop-yarn-and-hdfs.html</id>
+   <content type="html">&lt;p&gt;Apache Spark: ecosystem overview with Apache Hadoop YARN and HDFS&lt;a href=&quot;https://spark.apache.org/&quot;&gt;Apache Spark™&lt;/a&gt;  is a multi-language engine for executing data engineerinApache Spark: ecosystem overview with Apache Hadoop YARN and HDFSg, data science, and machine learning on single-node machines or clusters. It is largely used in the industry for distributed computation of data at scale.&lt;/p&gt;
+
+&lt;p&gt;This project is  &lt;a href=&quot;https://github.com/apache/spark&quot;&gt;open-source&lt;/a&gt;  under the  &lt;a href=&quot;https://apache.org/&quot;&gt;Apache software foundation,&lt;/a&gt;  created by the founders of the company  &lt;a href=&quot;https://www.databricks.com/&quot;&gt;Databricks&lt;/a&gt;  that provides cluster and support for Spark.&lt;/p&gt;
+
+&lt;p&gt;Let deep dive on the architecture of  &lt;strong&gt;Apache Spark on YARN&lt;/strong&gt; in a distributed ecosystem of containers and  &lt;strong&gt;Java VMs&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;This architecture need to address the  &lt;strong&gt;computation&lt;/strong&gt;  and the  &lt;strong&gt;storage&lt;/strong&gt;  at  &lt;strong&gt;high scale&lt;/strong&gt;  to manipulate big volume of data with an efficient processing.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Table of contents&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Spark ecosystem&lt;/li&gt;
+  &lt;li&gt;Spark architecture through Hadoop&lt;/li&gt;
+  &lt;li&gt;Spark engine for computation and storage&lt;/li&gt;
+  &lt;li&gt;Go with Spark in production&lt;/li&gt;
+  &lt;li&gt;Example of Spark application at Scale&lt;/li&gt;
+  &lt;li&gt;Go further&lt;/li&gt;
+  &lt;li&gt;What’s next&lt;/li&gt;
+  &lt;li&gt;Thanks to&lt;/li&gt;
+  &lt;li&gt;Glossary&lt;/li&gt;
+  &lt;li&gt;References&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Let’s start with the basics, you can jump straight to the sections that interest you, otherwise see vertically how this whole ecosystem works.&lt;/p&gt;
+
+&lt;h1 id=&quot;spark-ecosystem&quot;&gt;Spark ecosystem&lt;/h1&gt;
+
+&lt;h2 id=&quot;data-pipelines&quot;&gt;Data pipelines&lt;/h2&gt;
+
+&lt;p&gt;Spark allows building data pipeline in  &lt;strong&gt;batch mode&lt;/strong&gt; and the  &lt;strong&gt;streaming mode&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;figure title=&quot;Lambda architecture with Spark&quot; class=&quot;content&quot;&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://miro.medium.com/v2/resize:fit:408/0*zqTHvZ2Uckv_Hjz3.png&quot; title=&quot;Lambda architecture with Spark&quot; alt=&quot;Lambda architecture with Spark&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;
+    Lambda architecture with Spark
+    
+      [&lt;a href=&quot;true&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;source&lt;/a&gt;]
+    
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Here, you see a  &lt;strong&gt;lambda architecture&lt;/strong&gt;, but to associate online and offline processing, you can have a  &lt;strong&gt;kappa&lt;/strong&gt;  or  &lt;strong&gt;zeta&lt;/strong&gt;  &lt;strong&gt;architecture&lt;/strong&gt;  on your data pipeline. You will see it in another article.&lt;/p&gt;
+
+&lt;figure title=&quot;Spark vs Spark Streaming&quot; class=&quot;content&quot;&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://miro.medium.com/v2/resize:fit:394/1*4QrgYLPJto1TBvMcs45iqg.png&quot; title=&quot;Spark vs Spark Streaming&quot; alt=&quot;Spark vs Spark Streaming&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;
+    Spark vs Spark Streaming
+    
+      [built by author]
+    
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The streaming mode of Spark is more micro-batch approach. Other framework like  &lt;a href=&quot;https://kafka.apache.org/documentation/streams/&quot;&gt;Kafka Streaming&lt;/a&gt;,  &lt;a href=&quot;https://faust-streaming.github.io/faust/&quot;&gt;Faust Streaming&lt;/a&gt;  or  &lt;a href=&quot;https://flink.apache.org/&quot;&gt;Apache Flink&lt;/a&gt;  are more used to process data streams. Spark is forceful to process data batch overall.&lt;/p&gt;
+
+&lt;h2 id=&quot;apis&quot;&gt;APIs&lt;/h2&gt;
+
+&lt;p&gt;Mainly, Spark can run with several APIs, one for each following programming language  &lt;a href=&quot;https://spark.apache.org/docs/latest/api/scala/org/apache/spark/index.html&quot;&gt;Scala&lt;/a&gt;/&lt;a href=&quot;https://spark.apache.org/docs/latest/api/java/&quot;&gt;Java&lt;/a&gt;,  &lt;a href=&quot;https://spark.apache.org/docs/latest/api/python/&quot;&gt;Python&lt;/a&gt;  and  &lt;a href=&quot;https://spark.apache.org/docs/latest/api/R/&quot;&gt;R&lt;/a&gt;, respectively with  &lt;strong&gt;Spark&lt;/strong&gt;,  &lt;strong&gt;PySpark&lt;/strong&gt;  and  &lt;strong&gt;SparkR&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;figure title=&quot;Different types of Spark engines&quot; class=&quot;content&quot;&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://miro.medium.com/v2/resize:fit:700/1*zXXVD_S-pBs8mWBi3OcR7w.png&quot; title=&quot;Different types of Spark engines&quot; alt=&quot;Different types of Spark engines&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;
+    Different types of Spark engines
+    
+      [built by author]
+    
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;In practice, Spark and PySpark are more used than SparkR. For the experimentation, PySpark is more helpful, and for the performances Spark is better.&lt;/p&gt;
+
+&lt;h2 id=&quot;connectors&quot;&gt;Connectors&lt;/h2&gt;
+
+&lt;p&gt;Spark has many  &lt;strong&gt;connectors&lt;/strong&gt;  to write  &lt;strong&gt;to different types of storage&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;figure title=&quot;Apache Spark’s ecosystem of connectors&quot; class=&quot;content&quot;&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://miro.medium.com/v2/resize:fit:684/0*uQtzEnoXUORb2dgi&quot; title=&quot;Apache Spark’s ecosystem of connectors&quot; alt=&quot;Apache Spark’s ecosystem of connectors&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;
+    Apache Spark’s ecosystem of connectors
+    
+      [&lt;a href=&quot;https://pages.databricks.com/rs/094-YMS-629/images/LearningSpark2.0.pdf&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;source&lt;/a&gt;]
+    
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Here, we are going to speak a bit more about the connection with Apache Hadoop HDFS.&lt;/p&gt;
+
+&lt;h2 id=&quot;spark-sql&quot;&gt;Spark SQL&lt;/h2&gt;
+
+&lt;p&gt;In addition, you can also run Spark with  &lt;a href=&quot;https://spark.apache.org/docs/latest/api/sql/&quot;&gt;SQL&lt;/a&gt;. With a SQL request, you can also access to heterogeneous data then combine them in memory:&lt;/p&gt;
+
+&lt;figure title=&quot;Spark SQL overview&quot; class=&quot;content&quot;&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://miro.medium.com/v2/resize:fit:720/format:webp/0*Ts-DH76DiRFZh4p1.png&quot; title=&quot;Spark SQL overview&quot; alt=&quot;Spark SQL overview&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;
+    Spark SQL overview
+    
+      [&lt;a href=&quot;http://www.gatorsmile.io/sparksqloverview/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;source&lt;/a&gt;]
+    
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The  &lt;a href=&quot;https://www.linkedin.com/pulse/catalyst-tungsten-apache-sparks-speeding-engine-deepak-rajak/&quot;&gt;Catalyst &amp;amp; Tungsten&lt;/a&gt; engines allows optimizing the execution plan of the query:&lt;/p&gt;
+
+&lt;figure title=&quot;Catalyst&quot; class=&quot;content&quot;&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://miro.medium.com/v2/resize:fit:700/0*CRcfOe8vbDWNGJhV.png&quot; title=&quot;Catalyst&quot; alt=&quot;Catalyst&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;
+    Catalyst
+    
+      [&lt;a href=&quot;https://www.databricks.com/glossary/catalyst-optimizer&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;source&lt;/a&gt;]
+    
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&quot;pyspark&quot;&gt;PySpark&lt;/h2&gt;
+
+&lt;p&gt;In the Python driver program, SparkContext uses  &lt;a href=&quot;https://www.py4j.org/&quot;&gt;Py4J&lt;/a&gt;  to launch a JVM and create a JavaSparkContext. Py4J is only used on the driver for local communication between the Python and Java SparkContext objects; large data transfers are performed through a different mechanism.&lt;/p&gt;
+
+&lt;h1 id=&quot;-read-more&quot;&gt;👀 Read more&lt;/h1&gt;
+
+&lt;p&gt;Read the rest of the article …&lt;/p&gt;
+
+&lt;div style=&quot;text-align: center;margin-bottom: 1em;&quot;&gt;
+  &lt;a href=&quot;https://medium.com/@glegoux/apache-spark-ecosystem-with-hadoop-apache-yarn-and-hdfs-8e64eeba68c0&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; title=&quot;Read more&quot;&gt;
     &lt;button class=&quot;btn btn-dark&quot;&gt;
       &lt;b class=&quot;black&quot;&gt;Read more&lt;/b&gt;
     &lt;/button&gt;

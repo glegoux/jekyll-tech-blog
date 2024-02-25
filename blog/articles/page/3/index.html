@@ -28,14 +28,15 @@
 <meta property="og:locale" content="en" />
 <meta name="description" content="Personal blog about software engineering" />
 <meta property="og:description" content="Personal blog about software engineering" />
-<link rel="canonical" href="https://glegoux.com/_stats.html" />
-<meta property="og:url" content="https://glegoux.com/_stats.html" />
+<link rel="canonical" href="https://glegoux.com/blog/articles/page/3/" />
+<meta property="og:url" content="https://glegoux.com/blog/articles/page/3/" />
 <meta property="og:site_name" content="Software Engineering Blog - Gilles Legoux (glegoux)" />
 <meta property="og:type" content="website" />
+<link rel="prev" href="https://glegoux.com/blog/articles/page/2/" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Software Engineering Blog - Gilles Legoux (glegoux)" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Gilles Legoux"},"description":"Personal blog about software engineering","headline":"Software Engineering Blog - Gilles Legoux (glegoux)","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://glegoux.com/_static/config/img/icon-iphone.png"},"name":"Gilles Legoux"},"url":"https://glegoux.com/_stats.html"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Gilles Legoux"},"description":"Personal blog about software engineering","headline":"Software Engineering Blog - Gilles Legoux (glegoux)","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://glegoux.com/_static/config/img/icon-iphone.png"},"name":"Gilles Legoux"},"url":"https://glegoux.com/blog/articles/page/3/"}</script>
 <!-- End Jekyll SEO tag -->
 
   <!-- Preconnect --><link rel="preconnect" href="https://marketingplatform.google.com/about/analytics/" crossorigin="anonymous"/>
@@ -52,8 +53,8 @@
 <link rel="preload" as="style" href="/_core/static/libs/font-awesome/6.5.1/css/all.min.css"/>
 
 <link rel="preload" as="script" href="/_core/static/js/typing-text.min.js"/>
-<link rel="preload"  as="style" href="/_core/static/css/main.css"/><link rel="preload" as="script" href="/_core/stats.js"/>
-<link rel="preload" as="style" href="/_core/stats.css"/>
+<link rel="preload"  as="style" href="/_core/static/css/main.css"/><link rel="preload" as="script" href="/_core/static/js/articles.js"/>
+<link rel="preload" as="style" href="/_core/static/css/articles.css"/>
   <!-- Load before DOMContentLoaded (<script> markup harcoded, ...) -->
 <!-- Third-party JS -->
 <script type="text/javascript" src="/_core/static/libs/jquery/3.5.1/js/jquery.min.js"></script>
@@ -74,14 +75,14 @@ window.MathJax = {
 <script type="text/javascript" defer src="/_core/static/libs/moment/2.24.0/js/moment.min.js"></script>
 <script type="text/javascript" defer src="/_core/static/libs/fuse/3.4.6/js/fuse.min.js"></script>
 <!-- Local JS -->
-<script type="text/javascript" defer src="/_core/static/js/typing-text.min.js"></script><script type="text/javascript" defer src="/_core/stats.js"></script>
+<script type="text/javascript" defer src="/_core/static/js/typing-text.min.js"></script><script type="text/javascript" defer src="/_core/static/js/articles.js"></script>
 <!-- Project JS -->
 
   <!-- Third-party CSS -->
 <link type="text/css" rel="stylesheet" href="/_core/static/libs/bootstrap/4.3.1/css/bootstrap.min.css"/>
 <link type="text/css" rel="stylesheet" href="/_core/static/libs/font-awesome/6.5.1/css/all.min.css"/>
 <!-- Local CSS -->
-<link type="text/css" rel="stylesheet" href="/_core/static/css/main.css"/><link type="text/css" rel="stylesheet" href="/_core/stats.css"/>
+<link type="text/css" rel="stylesheet" href="/_core/static/css/main.css"/><link type="text/css" rel="stylesheet" href="/_core/static/css/articles.css"/>
 <!-- Project CSS -->
 <link type="text/css" rel="stylesheet" href="/_static/common/css/stack.css"/>
 
@@ -235,197 +236,212 @@ window.MathJax = {
 
 
 
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <div id="page-articles">
 
-<h1>Stats</h1>
+  <p class="text-center">
+    <b style="font-size: 2em">Read tech blog posts</b>
+  </p>
 
-<table id="table-stats" class="stats">
-  <tr>
-    <td><b>Total number of posts</b></td>
-    <td><b>Total reading time (minutes)</b></td>
-  </tr>
-  <tr>
-    <td><span id="total-n-posts"></span></td>
-    <td><span id="total-reading-time"></span></td>
-  </tr>
-</table>
+  <div class="row">
+      <!-- Topic blog posts -->
+      <div class="col-12 col-md-6" style="text-align:center;margin-top:1em;margin-bottom:1em">
+        <div class="text-center">
+  <h2 class="notranslate blog-title">Software Engineering</h2>
 
-<div class="row">
-  <div class="col-xs-12 col-md-6">
-    <b>Count the posts by category</b>
-    <div id="posts-by-category" style="width: 100%; height: 300px;"></div>
+  <p class="typewrite notranslate blog-keywords" data-period="1000" data-type='["Research", "Computer science", "Development", "Software", "Algorithm", "Design", "Data", "AI / Machine Learning", "Applied Mathematics", "Web", "Security", "Reliability", "System", "Network", "Infrastructure", "Hardware", "Methodology", "Business", "Management", "Communication", "Documentation"]'>
+  <span class="blinker"></span>
+  </p>
+</div>
+
+      </div>
+    <div class="col-12 col-md-6" style="text-align:center;margin: auto;margin-bottom:1em">
+      <!-- Tech stack -->
+      <a style="display: block" aria-label="tech-stack" href="">
+  <div class="tech-stack"></div>
+</a>
+
+    </div>
   </div>
-  <div class="col-xs-12 col-md-6">
-    <b>Count the posts by year</b>
-    <div id="posts-by-year" style="width: 100%; height: 300px;"></div>
+
+
+  <p style="text-align: center">
+    “ I write also blog posts on
+    <span class="d-inline-block">
+      <a href="https://medium.com/@glegoux" target="_blank">
+        <img style="width:25px; height:25px" src="/_core/static/img/social/medium.png" alt="Medium">
+        <b><u>Medium</u></b>
+      </a>
+    </span>
+    with the username
+    <span class="d-inline-block">
+      <a href="https://medium.com/@glegoux" target="_blank">
+        <img style="width:25px; height:25px" class="icon-avatar" src="/_static/common/img/avatar.jpg" alt="avatar">
+        <b><u>@glegoux</u></b>
+      </a>
+    </span>. ”
+  </p>
+
+  <!-- Articles advanced search -->
+  <div id="articles-text-search">
+    <span title="Launch a search articles">
+      <i class="fa fa-search"></i>
+    </span>
+    <input type="text" title="Type your search">
   </div>
+
+  <ul class="articles-advanced-search">
+    <li class="articles-categories-button" title="Search an article by category">
+      <i class="fa fa-tags" aria-hidden="true"></i>
+      <span class="link-strong">
+        Categories
+      </span>
+    </li>
+    <li class="articles-archive-button" title="Search an article by published date">
+      <span class="link-strong">
+        <i class="fa fa-archive" aria-hidden="true"></i>
+        Archives
+      </span>
+    </li>
+  </ul>
+
+
+  <div id="articles-archive-container" class="filter-result-advanced-search" style="display: none">
+  </div>
+  <div id="articles-categories-container" class="filter-result-advanced-search" style="display: none">
+  </div>
+
+  <div id="result-advanced-search"></div>
+
+  <hr>
+
+  <!-- Articles subscriptions -->
+  <ul class="articles-subscription">
+    <li>
+      <i class="fa fa-rss" aria-hidden="true"></i>
+      Subscribe:
+    </li>
+    <li>
+      <a href="/rss.xml" class="link-strong" title="Subscribe to RSS feed">
+        <span class="notranslate">RSS</span>
+      </a>
+      |
+      <a href="/atom.xml" class="link-strong" title="Subscribe to Atom feed">
+        <span class="notranslate">Atom</span>
+      </a>
+    </li>
+  </ul>
+
+  <!-- Articles list -->
+  <div class="list-articles">
+    <div class="row">
+      <div class="col-xs-12 col-md-6 col-lg-4">
+        <a href="/blog/articles/2019/02/14/how-to-quote-sources.html" title="Read this article" style="display: block">
+  <div class="article-card-container">
+    <!-- Article metadata -->
+    <div class="article-card">
+<!-- Article cover --><div class="article-cover">
+        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2019-02-14-how-to-quote-sources.jpg" alt="2019-02-14-how-to-quote-sources">
+      </div>
+
+      <!-- Article details -->
+      <div class="article-details">
+        <!-- Article title -->
+        <div class="article-title">
+          How to quote sources
+        </div>
+
+        <!-- Article description -->
+        <div class="article-description">
+          Current standards and rules to respect in order to quote sources.
+        </div>
+<!-- Article categories -->
+        <div class="article-category">
+          <ul>
+            <li>Methodology</li>
+          </ul>
+        </div>
+<!-- Article publication date -->
+        <div class="date">
+          <i class="far fa-calendar-alt"></i>
+          <span>February 14, 2019</span>
+        </div>
+<!-- Article reading time -->
+        <div class="reading-time">
+          <i class="far fa-clock"></i>
+          <span>5 min</span>
+        </div>
+</div>
+
+    </div>
+  </div>
+</a>
+
+      </div>
+      <div class="col-xs-12 col-md-6 col-lg-4">
+        <a href="/blog/articles/2019/01/21/getting-started.html" title="Read this article" style="display: block">
+  <div class="article-card-container">
+    <!-- Article metadata -->
+    <div class="article-card">
+<span class="article-pinned">
+        <ul>
+          <li title="Pinned article">
+            📌
+          </li>
+        </ul>
+      </span><!-- Article cover --><div class="article-cover">
+        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2019-01-21-getting-started.jpg" alt="2019-01-21-getting-started">
+      </div>
+
+      <!-- Article details -->
+      <div class="article-details">
+        <!-- Article title -->
+        <div class="article-title">
+          Getting started
+        </div>
+
+        <!-- Article description -->
+        <div class="article-description">
+          How to write articles on this blog from an easy-to-use and rich syntax?
+        </div>
+<!-- Article categories -->
+        <div class="article-category">
+          <ul>
+            <li>Methodology</li>
+          </ul>
+        </div>
+<!-- Article publication date -->
+        <div class="date">
+          <i class="far fa-calendar-alt"></i>
+          <span>January 21, 2019</span>
+        </div>
+<!-- Article reading time -->
+        <div class="reading-time">
+          <i class="far fa-clock"></i>
+          <span>10 min</span>
+        </div>
+</div>
+
+    </div>
+  </div>
+</a>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  
+<div class="articles-pagination">
+  <ul>
+    <li><a href="/blog/articles/page/2/" title="go to previous articles page" class="previous">«</a></li>
+    <li><a href="/blog/articles/page/1/" title="go to this articles page">1</a></li>
+    <li><a href="/blog/articles/page/2/" title="go to this articles page">2</a></li>
+    <li class="current-page"><a href="/blog/articles/page/3/" title="current articles page">3</a></li>
+  </ul>
 </div>
 
 
-<table id="table-log" class="log sortable">
-  <tr>
-    <th onclick="sortTablePostsLog(0)" data-sort="dsc">Date</th>
-    <th onclick="sortTablePostsLog(1)">Name</th>
-    <th onclick="sortTablePostsLog(2)">Category</th>
-    <th onclick="sortTablePostsLog(3)">Reading time (minutes)</th>
-  </tr>
-  <tr>
-    <td>2024-01-10</td>
-    <td><a href="/blog/articles/2024/01/10/top-five-ways-to-beat-blue-monday.html">Top Five Ways to Beat Blue Monday</a></td>
-    <td>News</td>
-    <td>04</td>
-  </tr>
-  <tr>
-    <td>2023-07-29</td>
-    <td><a href="/blog/articles/2023/07/29/ubuntu-apt-key-is-deprecated.html">Ubuntu: apt-key is deprecated</a></td>
-    <td>Security</td>
-    <td>13</td>
-  </tr>
-  <tr>
-    <td>2023-04-16</td>
-    <td><a href="/blog/articles/2023/04/16/history-of-the-generative-ai.html">History of the Generative AI</a></td>
-    <td>Machine Learning</td>
-    <td>09</td>
-  </tr>
-  <tr>
-    <td>2022-12-14</td>
-    <td><a href="/blog/articles/2022/12/14/from-hadoop-to-the-modern-data-stack.html">From Hadoop to the modern data stack</a></td>
-    <td>Data</td>
-    <td>03</td>
-  </tr>
-  <tr>
-    <td>2022-12-10</td>
-    <td><a href="/blog/articles/2022/12/10/how-to-write-a-readme.html">How to write a README?</a></td>
-    <td>Documentation</td>
-    <td>04</td>
-  </tr>
-  <tr>
-    <td>2022-11-29</td>
-    <td><a href="/blog/articles/2022/11/29/aerospike-real-time-database-for-the-online-ads-ecosystem.html">Aerospike: Real-time database for the online ads ecosystem</a></td>
-    <td>Data</td>
-    <td>08</td>
-  </tr>
-  <tr>
-    <td>2022-11-15</td>
-    <td><a href="/blog/articles/2022/11/15/learning-pyspark-with-google-colab.html">Learning PySpark with Google Colab</a></td>
-    <td>Data</td>
-    <td>10</td>
-  </tr>
-  <tr>
-    <td>2022-11-13</td>
-    <td><a href="/blog/articles/2022/11/13/the-apache-software-foundation-for-the-open-source.html">The Apache Software Foundation for the open-source</a></td>
-    <td>News</td>
-    <td>03</td>
-  </tr>
-  <tr>
-    <td>2022-11-02</td>
-    <td><a href="/blog/articles/2022/11/02/apache-spark-ecosystem-overview-with-apache-hadoop-yarn-and-hdfs.html">Apache Spark: Ecosystem overview with Apache Hadoop YARN and HDFS</a></td>
-    <td>Data</td>
-    <td>10</td>
-  </tr>
-  <tr>
-    <td>2022-11-01</td>
-    <td><a href="/blog/articles/2022/11/01/my-tech-blog-on-medium.html">My tech blog on Medium</a></td>
-    <td>News</td>
-    <td>01</td>
-  </tr>
-  <tr>
-    <td>2021-11-23</td>
-    <td><a href="/blog/articles/2021/11/23/secret-santa.html">Secret Santa</a></td>
-    <td>Applied Mathematics</td>
-    <td>05</td>
-  </tr>
-  <tr>
-    <td>2021-11-13</td>
-    <td><a href="/blog/articles/2021/11/13/software-versioning.html">Software versioning</a></td>
-    <td>Development</td>
-    <td>10</td>
-  </tr>
-  <tr>
-    <td>2021-04-20</td>
-    <td><a href="/blog/articles/2021/04/20/time-management.html">Time management</a></td>
-    <td>Methodology</td>
-    <td>10</td>
-  </tr>
-  <tr>
-    <td>2020-11-28</td>
-    <td><a href="/blog/articles/2020/11/28/unix-timestamp.html">Unix timestamp</a></td>
-    <td>Applied Mathematics</td>
-    <td>05</td>
-  </tr>
-  <tr>
-    <td>2020-08-24</td>
-    <td><a href="/blog/articles/2020/08/24/geo-location.html">Geo-location</a></td>
-    <td>Applied Mathematics</td>
-    <td>10</td>
-  </tr>
-  <tr>
-    <td>2020-05-15</td>
-    <td><a href="/blog/articles/2020/05/15/gnu-privacy-guard.html">GNU privacy guard</a></td>
-    <td>Security</td>
-    <td>05</td>
-  </tr>
-  <tr>
-    <td>2020-05-04</td>
-    <td><a href="/blog/articles/2020/05/04/java-ecosystem.html">Java ecosystem</a></td>
-    <td>Development</td>
-    <td>10</td>
-  </tr>
-  <tr>
-    <td>2020-03-04</td>
-    <td><a href="/blog/articles/2020/03/04/development-environment.html">Development environment</a></td>
-    <td>Development</td>
-    <td>05</td>
-  </tr>
-  <tr>
-    <td>2019-11-29</td>
-    <td><a href="/blog/articles/2019/11/29/gafa-vs-batx.html">Gafa vs Batx</a></td>
-    <td>Business</td>
-    <td>05</td>
-  </tr>
-  <tr>
-    <td>2019-07-14</td>
-    <td><a href="/blog/articles/2019/07/14/trace-a-request-path.html">Trace a request path</a></td>
-    <td>Web</td>
-    <td>05</td>
-  </tr>
-  <tr>
-    <td>2019-05-24</td>
-    <td><a href="/blog/articles/2019/05/24/java-champion.html">Java champion</a></td>
-    <td>Development</td>
-    <td>01</td>
-  </tr>
-  <tr>
-    <td>2019-04-01</td>
-    <td><a href="/blog/articles/2019/04/01/lighthouse.html">Lighthouse</a></td>
-    <td>Web</td>
-    <td>10</td>
-  </tr>
-  <tr>
-    <td>2019-03-23</td>
-    <td><a href="/blog/articles/2019/03/23/kerberos-in-5-minutes.html">Kerberos in 5 minutes</a></td>
-    <td>Security</td>
-    <td>05</td>
-  </tr>
-  <tr>
-    <td>2019-03-01</td>
-    <td><a href="/blog/articles/2019/03/01/access-to-a-computer-from-usb-key.html">Access to a computer from USB key</a></td>
-    <td>Security</td>
-    <td>05</td>
-  </tr>
-  <tr>
-    <td>2019-02-14</td>
-    <td><a href="/blog/articles/2019/02/14/how-to-quote-sources.html">How to quote sources</a></td>
-    <td>Methodology</td>
-    <td>05</td>
-  </tr>
-  <tr>
-    <td>2019-01-21</td>
-    <td><a href="/blog/articles/2019/01/21/getting-started.html">Getting started</a></td>
-    <td>Methodology</td>
-    <td>10</td>
-  </tr>
-</table>
+</div>
   
   </div>
 

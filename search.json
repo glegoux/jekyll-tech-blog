@@ -43,6 +43,48 @@
 } ,
 
 {
+"title"       : "From Hadoop to the modern data stack",
+"description" : "I was at the meetup From Hadoop to the Modern Stack with the companies Criteo, Starbust and Castor with 3 speeches Hadoop and Data processing at Criteo, Data Catalog Costor, and Trino on Apache Iceberg.",
+"authors"     : "glegoux",
+"category"    : "Data",
+"tags"        : "",
+"url"         : "/blog/articles/2022/12/14/from-hadoop-to-the-modern-data-stack.html",
+"date"        : "2022-12-14 00:00:00 +0000",
+"year"        : "2022",
+"month"       : "12",
+"yearMonth"   : "2022-12",
+"yearMonthDay"   : "2022-12-14"
+} ,
+
+{
+"title"       : "How to write a README?",
+"description" : "After a retrospective of team work, we noted that our computer projects are not sufficient well documented. With my teammates, we decided to create a up-to-date and standard README for all diverse projects that you have with an pragmatic approach that requires minimal efforts for an efficient and effective documentation.",
+"authors"     : "glegoux",
+"category"    : "Documentation",
+"tags"        : "",
+"url"         : "/blog/articles/2022/12/10/how-to-write-a-readme.html",
+"date"        : "2022-12-10 00:00:00 +0000",
+"year"        : "2022",
+"month"       : "12",
+"yearMonth"   : "2022-12",
+"yearMonthDay"   : "2022-12-10"
+} ,
+
+{
+"title"       : "Aerospike: Real-time database for the online ads ecosystem",
+"description" : "Let’s discover the deployment of Aerospike on Kubernetes clusters at scale as a distributed key-value store for the online ad market",
+"authors"     : "glegoux",
+"category"    : "Data",
+"tags"        : "",
+"url"         : "/blog/articles/2022/11/29/aerospike-real-time-database-for-the-online-ads-ecosystem.html",
+"date"        : "2022-11-29 00:00:00 +0000",
+"year"        : "2022",
+"month"       : "11",
+"yearMonth"   : "2022-11",
+"yearMonthDay"   : "2022-11-29"
+} ,
+
+{
 "title"       : "Learning PySpark with Google Colab",
 "description" : "PySpark on Google Colab is an efficient way to manipulate and explore the data, and a good fit for a group of AI learners.",
 "authors"     : "glegoux",
@@ -54,6 +96,34 @@
 "month"       : "11",
 "yearMonth"   : "2022-11",
 "yearMonthDay"   : "2022-11-15"
+} ,
+
+{
+"title"       : "The Apache Software Foundation for the open-source",
+"description" : "After having used, tens Apache projects to manage web servers, logs, and big data ecosystem, it is time to understand how this open-source foundation works. It is a brief summary and great enter door to understand the open-source world.",
+"authors"     : "glegoux",
+"category"    : "News",
+"tags"        : "",
+"url"         : "/blog/articles/2022/11/13/the-apache-software-foundation-for-the-open-source.html",
+"date"        : "2022-11-13 00:00:00 +0000",
+"year"        : "2022",
+"month"       : "11",
+"yearMonth"   : "2022-11",
+"yearMonthDay"   : "2022-11-13"
+} ,
+
+{
+"title"       : "Apache Spark: Ecosystem overview with Apache Hadoop YARN and HDFS",
+"description" : "Though my experience of Software Engineer @Criteo during several years to import and enrich e-commerce catalogs. I would like to share with a large overview how Spark works and can be used in the data Industry to manage data processing at scale.",
+"authors"     : "glegoux",
+"category"    : "Data",
+"tags"        : "",
+"url"         : "/blog/articles/2022/11/02/apache-spark-ecosystem-overview-with-apache-hadoop-yarn-and-hdfs.html",
+"date"        : "2022-11-02 00:00:00 +0000",
+"year"        : "2022",
+"month"       : "11",
+"yearMonth"   : "2022-11",
+"yearMonthDay"   : "2022-11-02"
 } ,
 
 {
