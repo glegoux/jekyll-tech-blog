@@ -16,11 +16,194 @@
       border: 1px solid lightgrey;
     }
   </style>
+  <script type="text/javascript">
+
+    // visualization
+    function buildValueChart(value, id) {
+      let elementHTML = document.getElementById(id);
+      elementHTML.innerText = value;
+    }
+
+    function buildDonutPieChart(result, id) {
+      google.charts.load("current", {packages: ["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable(result);
+
+        var options = {
+          title: '',
+          pieHole: 0.4,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById(id));
+        chart.draw(data, options);
+      }
+    }
+
+    function buildBarChart(xTitle, yTitle, result, id) {
+      google.charts.load('current', {'packages': ['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable(result);
+
+        var options = {
+          chart: {
+            title: '',
+          },
+          bars: 'vertical',
+          legend: {
+            position: 'none'
+          },
+          hAxis: {
+            title: xTitle
+          },
+          vAxis: {
+            title: yTitle
+          }
+        };
+
+        var chart = new google.charts.Bar(document.getElementById(id));
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+    }
+
+    function sortTablePostLog(n) {
+      var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+      table = document.getElementById("table-log");
+      switching = true;
+      dir = "asc";
+      while (switching) {
+        switching = false;
+        rows = table.rows;
+        for (i = 1; i < (rows.length - 1); i++) {
+          shouldSwitch = false;
+          x = rows[i].getElementsByTagName("TD")[n];
+          y = rows[i + 1].getElementsByTagName("TD")[n];
+          if (dir == "asc") {
+            if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+              shouldSwitch = true;
+              break;
+            }
+          } else if (dir == "desc") {
+            if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+              shouldSwitch = true;
+              break;
+            }
+          }
+        }
+        if (shouldSwitch) {
+          rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+          switching = true;
+          switchcount ++;
+        } else {
+          if (switchcount == 0 && dir == "asc") {
+            dir = "desc";
+            switching = true;
+          }
+        }
+      }
+    }
+
+    // analytics
+    function countBy(values, fn) {
+      return values
+        .map(typeof fn === 'function' ? fn : val => val[fn])
+        .reduce((acc, val) => {
+          acc[val] = (acc[val] || 0) + 1;
+          return acc;
+        }, {});
+    }
+
+    function getNumberOfPosts(posts) {
+      return posts.length;
+    }
+
+    function getTotalNumberOfReadingTime(posts) {
+      // TODO: Implement getTotalNumberOfReadingTime
+      console.log(posts);
+      let sum = 0;
+      posts.forEach(post => {
+        sum += post["time_reading_minutes"];
+      });
+      return sum;
+    }
+
+    function getStatsPostsByCategory(posts) {
+      let countBlogPostsByCategory = countBy(posts, post => post.category);
+      const result = [];
+      for (const [key, value] of Object.entries(countBlogPostsByCategory)) {
+        result.push([key, value]);
+      }
+      result.sort((x, y) => {
+        if (x[0] < y[0]) {
+          return -1;
+        } else if (x[0] > y[0]) {
+          return 1;
+        } else {
+          return 0;
+        }
+      });
+      result.unshift(["Category", "Number of posts"])
+      return result;
+    }
+
+    function getStatsPostsByYear(posts) {
+      let countBlogPostsByYear = countBy(posts, post => post.year);
+      const result = [];
+      for (const [key, value] of Object.entries(countBlogPostsByYear)) {
+        result.push([key, value]);
+      }
+      result.sort((x, y) => {
+        if (x[0] < y[0]) {
+          return -1;
+        } else if (x[0] > y[0]) {
+          return 1;
+        } else {
+          return 0;
+        }
+      });
+      result.unshift(["Year", "Number of posts"])
+      return result;
+    }
+
+    // data processing
+    const url = "/stats.json";
+
+    fetch(url)
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        buildValueChart(
+          getNumberOfPosts(data),
+          "total-n-posts"
+        );
+
+        buildValueChart(
+          getTotalNumberOfReadingTime(data),
+          "total-reading-time"
+        );
+
+        buildDonutPieChart(
+          getStatsPostsByCategory(data),
+          "posts-by-category"
+        );
+
+        buildBarChart(
+          "Year",
+          "Number of posts",
+          getStatsPostsByYear(data),
+          "posts-by-year"
+        );
+      });
+  </script>
 </head>
 <body>
 <h1>Stats</h1>
 
-<table class="stats">
+<table id="table-stats" class="stats">
   <tr>
     <td><b>Total number of posts</b></td>
     <td><b>Total reading time (minutes)</b></td>
@@ -44,264 +227,139 @@
 </table>
 
 
-<table class="log">
+<table id="table-log"  class="log">
   <tr>
-    <th>Date</th>
-    <th>Name</th>
-    <th>Reading time (minutes)</th>
+    <th onclick="sortTablePostLog(0)">Date</th>
+    <th onclick="sortTablePostLog(1)">Name</th>
+    <th onclick="sortTablePostLog(2)">Category</th>
+    <th onclick="sortTablePostLog(3)">Reading time (minutes)</th>
   </tr>
   <tr>
     <td>2024-01-10</td>
     <td><a href="/blog/articles/2024/01/10/top-five-ways-to-beat-blue-monday.html">Top Five Ways to Beat Blue Monday</a></td>
-    <td>4</td>
+    <td>News</td>
+    <td>04</td>
   </tr>
   <tr>
     <td>2023-07-29</td>
     <td><a href="/blog/articles/2023/07/29/ubuntu-apt-key-is-deprecated.html">Ubuntu: apt-key is deprecated</a></td>
+    <td>Security</td>
     <td>13</td>
   </tr>
   <tr>
     <td>2023-04-16</td>
     <td><a href="/blog/articles/2023/04/16/history-of-the-generative-ai.html">History of the Generative AI</a></td>
-    <td>9</td>
+    <td>Machine Learning</td>
+    <td>09</td>
   </tr>
   <tr>
     <td>2022-11-15</td>
     <td><a href="/blog/articles/2022/11/15/learning-pyspark-with-google-colab.html">Learning PySpark with Google Colab</a></td>
+    <td>Data</td>
     <td>10</td>
   </tr>
   <tr>
     <td>2022-11-01</td>
     <td><a href="/blog/articles/2022/11/01/my-tech-blog-on-medium.html">My tech blog on Medium</a></td>
-    <td>1</td>
+    <td>News</td>
+    <td>01</td>
   </tr>
   <tr>
     <td>2021-11-23</td>
     <td><a href="/blog/articles/2021/11/23/secret-santa.html">Secret Santa</a></td>
-    <td>5</td>
+    <td>Applied Mathematics</td>
+    <td>05</td>
   </tr>
   <tr>
     <td>2021-11-13</td>
     <td><a href="/blog/articles/2021/11/13/software-versioning.html">Software versioning</a></td>
+    <td>Development</td>
     <td>10</td>
   </tr>
   <tr>
     <td>2021-04-20</td>
     <td><a href="/blog/articles/2021/04/20/time-management.html">Time management</a></td>
+    <td>Methodology</td>
     <td>10</td>
   </tr>
   <tr>
     <td>2020-11-28</td>
     <td><a href="/blog/articles/2020/11/28/unix-timestamp.html">Unix timestamp</a></td>
-    <td>5</td>
+    <td>Applied Mathematics</td>
+    <td>05</td>
   </tr>
   <tr>
     <td>2020-08-24</td>
     <td><a href="/blog/articles/2020/08/24/geo-location.html">Geo-location</a></td>
+    <td>Applied Mathematics</td>
     <td>10</td>
   </tr>
   <tr>
     <td>2020-05-15</td>
     <td><a href="/blog/articles/2020/05/15/gnu-privacy-guard.html">GNU privacy guard</a></td>
-    <td>5</td>
+    <td>Security</td>
+    <td>05</td>
   </tr>
   <tr>
     <td>2020-05-04</td>
     <td><a href="/blog/articles/2020/05/04/java-ecosystem.html">Java ecosystem</a></td>
+    <td>Development</td>
     <td>10</td>
   </tr>
   <tr>
     <td>2020-03-04</td>
     <td><a href="/blog/articles/2020/03/04/development-environment.html">Development environment</a></td>
-    <td>5</td>
+    <td>Development</td>
+    <td>05</td>
   </tr>
   <tr>
     <td>2019-11-29</td>
     <td><a href="/blog/articles/2019/11/29/gafa-vs-batx.html">Gafa vs Batx</a></td>
-    <td>5</td>
+    <td>Business</td>
+    <td>05</td>
   </tr>
   <tr>
     <td>2019-07-14</td>
     <td><a href="/blog/articles/2019/07/14/trace-a-request-path.html">Trace a request path</a></td>
-    <td>5</td>
+    <td>Web</td>
+    <td>05</td>
   </tr>
   <tr>
     <td>2019-05-24</td>
     <td><a href="/blog/articles/2019/05/24/java-champion.html">Java champion</a></td>
-    <td>1</td>
+    <td>Development</td>
+    <td>01</td>
   </tr>
   <tr>
     <td>2019-04-01</td>
     <td><a href="/blog/articles/2019/04/01/lighthouse.html">Lighthouse</a></td>
+    <td>Web</td>
     <td>10</td>
   </tr>
   <tr>
     <td>2019-03-23</td>
     <td><a href="/blog/articles/2019/03/23/kerberos-in-5-minutes.html">Kerberos in 5 minutes</a></td>
-    <td>5</td>
+    <td>Security</td>
+    <td>05</td>
   </tr>
   <tr>
     <td>2019-03-01</td>
     <td><a href="/blog/articles/2019/03/01/access-to-a-computer-from-usb-key.html">Access to a computer from USB key</a></td>
-    <td>5</td>
+    <td>Security</td>
+    <td>05</td>
   </tr>
   <tr>
     <td>2019-02-14</td>
     <td><a href="/blog/articles/2019/02/14/how-to-quote-sources.html">How to quote sources</a></td>
-    <td>5</td>
+    <td>Methodology</td>
+    <td>05</td>
   </tr>
   <tr>
     <td>2019-01-21</td>
     <td><a href="/blog/articles/2019/01/21/getting-started.html">Getting started</a></td>
+    <td>Methodology</td>
     <td>10</td>
   </tr>
 </table>
-
-<script type="text/javascript">
-
-  // visualization
-  function buildValueChart(value, id) {
-    let elementHTML = document.getElementById(id);
-    elementHTML.innerText = value;
-  }
-
-  function buildDonutPieChart(result, id) {
-    google.charts.load("current", {packages: ["corechart"]});
-    google.charts.setOnLoadCallback(drawChart);
-
-    function drawChart() {
-      var data = google.visualization.arrayToDataTable(result);
-
-      var options = {
-        title: '',
-        pieHole: 0.4,
-      };
-
-      var chart = new google.visualization.PieChart(document.getElementById(id));
-      chart.draw(data, options);
-    }
-  }
-
-  function buildBarChart(xTitle, yTitle, result, id) {
-    google.charts.load('current', {'packages': ['bar']});
-    google.charts.setOnLoadCallback(drawChart);
-
-    function drawChart() {
-      var data = google.visualization.arrayToDataTable(result);
-
-      var options = {
-        chart: {
-          title: '',
-        },
-        bars: 'vertical',
-        legend: {
-          position: 'none'
-        },
-        hAxis: {
-          title: xTitle
-        },
-        vAxis: {
-          title: yTitle
-        }
-      };
-
-      var chart = new google.charts.Bar(document.getElementById(id));
-      chart.draw(data, google.charts.Bar.convertOptions(options));
-    }
-  }
-
-  // analytics
-  function countBy(values, fn) {
-    return values
-      .map(typeof fn === 'function' ? fn : val => val[fn])
-      .reduce((acc, val) => {
-        acc[val] = (acc[val] || 0) + 1;
-        return acc;
-      }, {});
-  }
-
-  function getNumberOfPosts(posts) {
-    return posts.length;
-  }
-
-  function getTotalNumberOfReadingTime(posts) {
-    // TODO: Implement getTotalNumberOfReadingTime
-    console.log(posts);
-    let sum = 0;
-    posts.forEach(post => {
-      sum += post["time_reading_minutes"];
-    });
-    return sum;
-  }
-
-  function getStatsPostsByCategory(posts) {
-    let countBlogPostsByCategory = countBy(posts, post => post.category);
-    const result = [];
-    for (const [key, value] of Object.entries(countBlogPostsByCategory)) {
-      result.push([key, value]);
-    }
-    result.sort((x, y) => {
-      if (x[0] < y[0]) {
-        return -1;
-      } else if (x[0] > y[0]) {
-        return 1;
-      } else {
-        return 0;
-      }
-    });
-    result.unshift(["Category", "Number of posts"])
-    return result;
-  }
-
-  function getStatsPostsByYear(posts) {
-    let countBlogPostsByYear = countBy(posts, post => post.year);
-    const result = [];
-    for (const [key, value] of Object.entries(countBlogPostsByYear)) {
-      result.push([key, value]);
-    }
-    result.sort((x, y) => {
-      if (x[0] < y[0]) {
-        return -1;
-      } else if (x[0] > y[0]) {
-        return 1;
-      } else {
-        return 0;
-      }
-    });
-    result.unshift(["Year", "Number of posts"])
-    return result;
-  }
-
-  // data processing
-  const url = "/stats.json";
-
-  fetch(url)
-    .then((response) => {
-      return response.json();
-    })
-    .then((data) => {
-      buildValueChart(
-        getNumberOfPosts(data),
-        "total-n-posts"
-      );
-
-      buildValueChart(
-        getTotalNumberOfReadingTime(data),
-        "total-reading-time"
-      );
-
-      buildDonutPieChart(
-        getStatsPostsByCategory(data),
-        "posts-by-category"
-      );
-
-      buildBarChart(
-        "Year",
-        "Number of posts",
-        getStatsPostsByYear(data),
-        "posts-by-year"
-      );
-    });
-</script>
 </body>
 </html>
