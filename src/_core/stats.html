@@ -21,11 +21,194 @@ permalink: "/stats.html"
       border: 1px solid lightgrey;
     }
   </style>
+  <script type="text/javascript">
+
+    // visualization
+    function buildValueChart(value, id) {
+      let elementHTML = document.getElementById(id);
+      elementHTML.innerText = value;
+    }
+
+    function buildDonutPieChart(result, id) {
+      google.charts.load("current", {packages: ["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable(result);
+
+        var options = {
+          title: '',
+          pieHole: 0.4,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById(id));
+        chart.draw(data, options);
+      }
+    }
+
+    function buildBarChart(xTitle, yTitle, result, id) {
+      google.charts.load('current', {'packages': ['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable(result);
+
+        var options = {
+          chart: {
+            title: '',
+          },
+          bars: 'vertical',
+          legend: {
+            position: 'none'
+          },
+          hAxis: {
+            title: xTitle
+          },
+          vAxis: {
+            title: yTitle
+          }
+        };
+
+        var chart = new google.charts.Bar(document.getElementById(id));
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+    }
+
+    function sortTablePostLog(n) {
+      var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+      table = document.getElementById("table-log");
+      switching = true;
+      dir = "asc";
+      while (switching) {
+        switching = false;
+        rows = table.rows;
+        for (i = 1; i < (rows.length - 1); i++) {
+          shouldSwitch = false;
+          x = rows[i].getElementsByTagName("TD")[n];
+          y = rows[i + 1].getElementsByTagName("TD")[n];
+          if (dir == "asc") {
+            if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+              shouldSwitch = true;
+              break;
+            }
+          } else if (dir == "desc") {
+            if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+              shouldSwitch = true;
+              break;
+            }
+          }
+        }
+        if (shouldSwitch) {
+          rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+          switching = true;
+          switchcount ++;
+        } else {
+          if (switchcount == 0 && dir == "asc") {
+            dir = "desc";
+            switching = true;
+          }
+        }
+      }
+    }
+
+    // analytics
+    function countBy(values, fn) {
+      return values
+        .map(typeof fn === 'function' ? fn : val => val[fn])
+        .reduce((acc, val) => {
+          acc[val] = (acc[val] || 0) + 1;
+          return acc;
+        }, {});
+    }
+
+    function getNumberOfPosts(posts) {
+      return posts.length;
+    }
+
+    function getTotalNumberOfReadingTime(posts) {
+      // TODO: Implement getTotalNumberOfReadingTime
+      console.log(posts);
+      let sum = 0;
+      posts.forEach(post => {
+        sum += post["time_reading_minutes"];
+      });
+      return sum;
+    }
+
+    function getStatsPostsByCategory(posts) {
+      let countBlogPostsByCategory = countBy(posts, post => post.category);
+      const result = [];
+      for (const [key, value] of Object.entries(countBlogPostsByCategory)) {
+        result.push([key, value]);
+      }
+      result.sort((x, y) => {
+        if (x[0] < y[0]) {
+          return -1;
+        } else if (x[0] > y[0]) {
+          return 1;
+        } else {
+          return 0;
+        }
+      });
+      result.unshift(["Category", "Number of posts"])
+      return result;
+    }
+
+    function getStatsPostsByYear(posts) {
+      let countBlogPostsByYear = countBy(posts, post => post.year);
+      const result = [];
+      for (const [key, value] of Object.entries(countBlogPostsByYear)) {
+        result.push([key, value]);
+      }
+      result.sort((x, y) => {
+        if (x[0] < y[0]) {
+          return -1;
+        } else if (x[0] > y[0]) {
+          return 1;
+        } else {
+          return 0;
+        }
+      });
+      result.unshift(["Year", "Number of posts"])
+      return result;
+    }
+
+    // data processing
+    const url = "/stats.json";
+
+    fetch(url)
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        buildValueChart(
+          getNumberOfPosts(data),
+          "total-n-posts"
+        );
+
+        buildValueChart(
+          getTotalNumberOfReadingTime(data),
+          "total-reading-time"
+        );
+
+        buildDonutPieChart(
+          getStatsPostsByCategory(data),
+          "posts-by-category"
+        );
+
+        buildBarChart(
+          "Year",
+          "Number of posts",
+          getStatsPostsByYear(data),
+          "posts-by-year"
+        );
+      });
+  </script>
 </head>
 <body>
 <h1>Stats</h1>
 
-<table class="stats">
+<table id="table-stats" class="stats">
   <tr>
     <td><b>Total number of posts</b></td>
     <td><b>Total reading time (minutes)</b></td>
@@ -49,168 +232,23 @@ permalink: "/stats.html"
 </table>
 
 {% assign posts = site.posts %}
-<table class="log">
+<table id="table-log"  class="log">
   <tr>
-    <th>Date</th>
-    <th>Name</th>
-    <th>Reading time (minutes)</th>
+    <th onclick="sortTablePostLog(0)">Date</th>
+    <th onclick="sortTablePostLog(1)">Name</th>
+    <th onclick="sortTablePostLog(2)">Category</th>
+    <th onclick="sortTablePostLog(3)">Reading time (minutes)</th>
   </tr>
 {%- for post in posts %}
   <tr>
     <td>{{post.date | date: '%Y-%m-%d' }}</td>
     <td><a href="{{post.url}}">{{post.title}}</a></td>
-    <td>{{post.time_reading_minutes}}</td>
+    <td>{{post.category}}</td>
+    <td>{{post.time_reading_minutes | prepend: "00" |  slice: -2, 2 }}</td>
   </tr>
 {%- else -%}
   <tr><td colspan="3">No one available posts</td></tr>
 {%- endfor %}
 </table>
-
-<script type="text/javascript">
-
-  // visualization
-  function buildValueChart(value, id) {
-    let elementHTML = document.getElementById(id);
-    elementHTML.innerText = value;
-  }
-
-  function buildDonutPieChart(result, id) {
-    google.charts.load("current", {packages: ["corechart"]});
-    google.charts.setOnLoadCallback(drawChart);
-
-    function drawChart() {
-      var data = google.visualization.arrayToDataTable(result);
-
-      var options = {
-        title: '',
-        pieHole: 0.4,
-      };
-
-      var chart = new google.visualization.PieChart(document.getElementById(id));
-      chart.draw(data, options);
-    }
-  }
-
-  function buildBarChart(xTitle, yTitle, result, id) {
-    google.charts.load('current', {'packages': ['bar']});
-    google.charts.setOnLoadCallback(drawChart);
-
-    function drawChart() {
-      var data = google.visualization.arrayToDataTable(result);
-
-      var options = {
-        chart: {
-          title: '',
-        },
-        bars: 'vertical',
-        legend: {
-          position: 'none'
-        },
-        hAxis: {
-          title: xTitle
-        },
-        vAxis: {
-          title: yTitle
-        }
-      };
-
-      var chart = new google.charts.Bar(document.getElementById(id));
-      chart.draw(data, google.charts.Bar.convertOptions(options));
-    }
-  }
-
-  // analytics
-  function countBy(values, fn) {
-    return values
-      .map(typeof fn === 'function' ? fn : val => val[fn])
-      .reduce((acc, val) => {
-        acc[val] = (acc[val] || 0) + 1;
-        return acc;
-      }, {});
-  }
-
-  function getNumberOfPosts(posts) {
-    return posts.length;
-  }
-
-  function getTotalNumberOfReadingTime(posts) {
-    // TODO: Implement getTotalNumberOfReadingTime
-    console.log(posts);
-    let sum = 0;
-    posts.forEach(post => {
-      sum += post["time_reading_minutes"];
-    });
-    return sum;
-  }
-
-  function getStatsPostsByCategory(posts) {
-    let countBlogPostsByCategory = countBy(posts, post => post.category);
-    const result = [];
-    for (const [key, value] of Object.entries(countBlogPostsByCategory)) {
-      result.push([key, value]);
-    }
-    result.sort((x, y) => {
-      if (x[0] < y[0]) {
-        return -1;
-      } else if (x[0] > y[0]) {
-        return 1;
-      } else {
-        return 0;
-      }
-    });
-    result.unshift(["Category", "Number of posts"])
-    return result;
-  }
-
-  function getStatsPostsByYear(posts) {
-    let countBlogPostsByYear = countBy(posts, post => post.year);
-    const result = [];
-    for (const [key, value] of Object.entries(countBlogPostsByYear)) {
-      result.push([key, value]);
-    }
-    result.sort((x, y) => {
-      if (x[0] < y[0]) {
-        return -1;
-      } else if (x[0] > y[0]) {
-        return 1;
-      } else {
-        return 0;
-      }
-    });
-    result.unshift(["Year", "Number of posts"])
-    return result;
-  }
-
-  // data processing
-  const url = "/stats.json";
-
-  fetch(url)
-    .then((response) => {
-      return response.json();
-    })
-    .then((data) => {
-      buildValueChart(
-        getNumberOfPosts(data),
-        "total-n-posts"
-      );
-
-      buildValueChart(
-        getTotalNumberOfReadingTime(data),
-        "total-reading-time"
-      );
-
-      buildDonutPieChart(
-        getStatsPostsByCategory(data),
-        "posts-by-category"
-      );
-
-      buildBarChart(
-        "Year",
-        "Number of posts",
-        getStatsPostsByYear(data),
-        "posts-by-year"
-      );
-    });
-</script>
 </body>
 </html>
