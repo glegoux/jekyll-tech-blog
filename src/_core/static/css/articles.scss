@@ -36,8 +36,11 @@
   ul.articles-advanced-search, ul.articles-subscription {
     li {
       color: grey;
-      margin-left: 1em;
       display: inline;
+    }
+
+    li + li {
+      margin-left: 1em;
     }
   }
 
@@ -46,8 +49,7 @@
   }
 
   ul.articles-advanced-search {
-    color: black;
-    font-size: 0.8em;
+    font-size: 0.7em;
   }
 
   hr {
