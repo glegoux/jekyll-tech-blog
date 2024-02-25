@@ -3,9 +3,17 @@ layout: default
 sitemap: false
 permalink: "/_stats.html"
 ---
+<div id="page-stats" class="w-100">
+
+<p style="color: grey;">
+  <a href="/blog/articles" title="See all articles">
+    <i class="fa fa-newspaper"></i> All tech blog posts
+  </a> 
+</p>
+
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
-<h1>Stats</h1>
+<h1 id="stats">Stats</h1>
 
 <table id="table-stats" class="stats">
   <tr>
@@ -46,7 +54,9 @@ permalink: "/_stats.html"
   </tr>
   {%- else -%}
   <tr>
-    <td colspan="3">No one available posts</td>
+    <td colspan="4">No one available posts</td>
   </tr>
   {%- endfor %}
 </table>
+
+</div>

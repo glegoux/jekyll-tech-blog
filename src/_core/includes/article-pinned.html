@@ -1,0 +1,18 @@
+<div class="row">
+    {% assign posts = site.posts | where:'pinned', true %}
+    {%- for post in posts %}
+    <div class="col-xs-12 col-md-6 col-lg-4">
+      {% include card-article.html
+      url=post.url
+      date=post.date
+      title=post.title
+      description=post.description
+      category=post.category
+      time_reading_minutes=post.time_reading_minutes
+      draft=post.draft
+      %}
+    </div>
+    {%- else -%}
+    <p>No one available pinned article</p>
+    {%- endfor %}
+</div>
