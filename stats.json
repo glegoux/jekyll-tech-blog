@@ -1,0 +1,297 @@
+[
+
+{
+"title"                : "Top Five Ways to Beat Blue Monday",
+"authors"              : "glegoux",
+"category"             : "News",
+"tags"                 : "",
+"time_reading_minutes" : 4,
+"url"                  : "/blog/articles/2024/01/10/top-five-ways-to-beat-blue-monday.html",
+"date"                 : "2024-01-10 00:00:00 +0000",
+"year"                 : "2024",
+"month"                : "01",
+"yearMonth"            : "2024-01",
+"yearMonthDay"         : "2024-01-10"
+} ,
+
+{
+"title"                : "Ubuntu: apt-key is deprecated",
+"authors"              : "glegoux",
+"category"             : "Security",
+"tags"                 : "",
+"time_reading_minutes" : 13,
+"url"                  : "/blog/articles/2023/07/29/ubuntu-apt-key-is-deprecated.html",
+"date"                 : "2023-07-29 00:00:00 +0000",
+"year"                 : "2023",
+"month"                : "07",
+"yearMonth"            : "2023-07",
+"yearMonthDay"         : "2023-07-29"
+} ,
+
+{
+"title"                : "History of the Generative AI",
+"authors"              : "glegoux",
+"category"             : "Machine Learning",
+"tags"                 : "",
+"time_reading_minutes" : 9,
+"url"                  : "/blog/articles/2023/04/16/history-of-the-generative-ai.html",
+"date"                 : "2023-04-16 00:00:00 +0000",
+"year"                 : "2023",
+"month"                : "04",
+"yearMonth"            : "2023-04",
+"yearMonthDay"         : "2023-04-16"
+} ,
+
+{
+"title"                : "Learning PySpark with Google Colab",
+"authors"              : "glegoux",
+"category"             : "Data",
+"tags"                 : "",
+"time_reading_minutes" : 10,
+"url"                  : "/blog/articles/2022/11/15/learning-pyspark-with-google-colab.html",
+"date"                 : "2022-11-15 00:00:00 +0000",
+"year"                 : "2022",
+"month"                : "11",
+"yearMonth"            : "2022-11",
+"yearMonthDay"         : "2022-11-15"
+} ,
+
+{
+"title"                : "My tech blog on Medium",
+"authors"              : "glegoux",
+"category"             : "News",
+"tags"                 : "",
+"time_reading_minutes" : 1,
+"url"                  : "/blog/articles/2022/11/01/my-tech-blog-on-medium.html",
+"date"                 : "2022-11-01 00:00:00 +0000",
+"year"                 : "2022",
+"month"                : "11",
+"yearMonth"            : "2022-11",
+"yearMonthDay"         : "2022-11-01"
+} ,
+
+{
+"title"                : "Secret Santa",
+"authors"              : "glegoux",
+"category"             : "Applied Mathematics",
+"tags"                 : "",
+"time_reading_minutes" : 5,
+"url"                  : "/blog/articles/2021/11/23/secret-santa.html",
+"date"                 : "2021-11-23 00:00:00 +0000",
+"year"                 : "2021",
+"month"                : "11",
+"yearMonth"            : "2021-11",
+"yearMonthDay"         : "2021-11-23"
+} ,
+
+{
+"title"                : "Software versioning",
+"authors"              : "glegoux",
+"category"             : "Development",
+"tags"                 : "",
+"time_reading_minutes" : 10,
+"url"                  : "/blog/articles/2021/11/13/software-versioning.html",
+"date"                 : "2021-11-13 00:00:00 +0000",
+"year"                 : "2021",
+"month"                : "11",
+"yearMonth"            : "2021-11",
+"yearMonthDay"         : "2021-11-13"
+} ,
+
+{
+"title"                : "Time management",
+"authors"              : "glegoux",
+"category"             : "Methodology",
+"tags"                 : "",
+"time_reading_minutes" : 10,
+"url"                  : "/blog/articles/2021/04/20/time-management.html",
+"date"                 : "2021-04-20 00:00:00 +0000",
+"year"                 : "2021",
+"month"                : "04",
+"yearMonth"            : "2021-04",
+"yearMonthDay"         : "2021-04-20"
+} ,
+
+{
+"title"                : "Unix timestamp",
+"authors"              : "glegoux",
+"category"             : "Applied Mathematics",
+"tags"                 : "Arithmetic",
+"time_reading_minutes" : 5,
+"url"                  : "/blog/articles/2020/11/28/unix-timestamp.html",
+"date"                 : "2020-11-28 00:00:00 +0000",
+"year"                 : "2020",
+"month"                : "11",
+"yearMonth"            : "2020-11",
+"yearMonthDay"         : "2020-11-28"
+} ,
+
+{
+"title"                : "Geo-location",
+"authors"              : "glegoux",
+"category"             : "Applied Mathematics",
+"tags"                 : "Geometry",
+"time_reading_minutes" : 10,
+"url"                  : "/blog/articles/2020/08/24/geo-location.html",
+"date"                 : "2020-08-24 00:00:00 +0000",
+"year"                 : "2020",
+"month"                : "08",
+"yearMonth"            : "2020-08",
+"yearMonthDay"         : "2020-08-24"
+} ,
+
+{
+"title"                : "GNU privacy guard",
+"authors"              : "glegoux",
+"category"             : "Security",
+"tags"                 : "",
+"time_reading_minutes" : 5,
+"url"                  : "/blog/articles/2020/05/15/gnu-privacy-guard.html",
+"date"                 : "2020-05-15 00:00:00 +0000",
+"year"                 : "2020",
+"month"                : "05",
+"yearMonth"            : "2020-05",
+"yearMonthDay"         : "2020-05-15"
+} ,
+
+{
+"title"                : "Java ecosystem",
+"authors"              : "glegoux",
+"category"             : "Development",
+"tags"                 : "Language, Java",
+"time_reading_minutes" : 10,
+"url"                  : "/blog/articles/2020/05/04/java-ecosystem.html",
+"date"                 : "2020-05-04 00:00:00 +0000",
+"year"                 : "2020",
+"month"                : "05",
+"yearMonth"            : "2020-05",
+"yearMonthDay"         : "2020-05-04"
+} ,
+
+{
+"title"                : "Development environment",
+"authors"              : "glegoux",
+"category"             : "Development",
+"tags"                 : " Working environment",
+"time_reading_minutes" : 5,
+"url"                  : "/blog/articles/2020/03/04/development-environment.html",
+"date"                 : "2020-03-04 00:00:00 +0000",
+"year"                 : "2020",
+"month"                : "03",
+"yearMonth"            : "2020-03",
+"yearMonthDay"         : "2020-03-04"
+} ,
+
+{
+"title"                : "Gafa vs Batx",
+"authors"              : "glegoux",
+"category"             : "Business",
+"tags"                 : "",
+"time_reading_minutes" : 5,
+"url"                  : "/blog/articles/2019/11/29/gafa-vs-batx.html",
+"date"                 : "2019-11-29 00:00:00 +0000",
+"year"                 : "2019",
+"month"                : "11",
+"yearMonth"            : "2019-11",
+"yearMonthDay"         : "2019-11-29"
+} ,
+
+{
+"title"                : "Trace a request path",
+"authors"              : "glegoux",
+"category"             : "Web",
+"tags"                 : "Internet, Network",
+"time_reading_minutes" : 5,
+"url"                  : "/blog/articles/2019/07/14/trace-a-request-path.html",
+"date"                 : "2019-07-14 00:00:00 +0000",
+"year"                 : "2019",
+"month"                : "07",
+"yearMonth"            : "2019-07",
+"yearMonthDay"         : "2019-07-14"
+} ,
+
+{
+"title"                : "Java champion",
+"authors"              : "glegoux",
+"category"             : "Development",
+"tags"                 : "Language, Java",
+"time_reading_minutes" : 1,
+"url"                  : "/blog/articles/2019/05/24/java-champion.html",
+"date"                 : "2019-05-24 00:00:00 +0000",
+"year"                 : "2019",
+"month"                : "05",
+"yearMonth"            : "2019-05",
+"yearMonthDay"         : "2019-05-24"
+} ,
+
+{
+"title"                : "Lighthouse",
+"authors"              : "glegoux",
+"category"             : "Web",
+"tags"                 : "",
+"time_reading_minutes" : 10,
+"url"                  : "/blog/articles/2019/04/01/lighthouse.html",
+"date"                 : "2019-04-01 00:00:00 +0000",
+"year"                 : "2019",
+"month"                : "04",
+"yearMonth"            : "2019-04",
+"yearMonthDay"         : "2019-04-01"
+} ,
+
+{
+"title"                : "Kerberos in 5 minutes",
+"authors"              : "glegoux",
+"category"             : "Security",
+"tags"                 : "Kerberos",
+"time_reading_minutes" : 5,
+"url"                  : "/blog/articles/2019/03/23/kerberos-in-5-minutes.html",
+"date"                 : "2019-03-23 00:00:00 +0000",
+"year"                 : "2019",
+"month"                : "03",
+"yearMonth"            : "2019-03",
+"yearMonthDay"         : "2019-03-23"
+} ,
+
+{
+"title"                : "Access to a computer from USB key",
+"authors"              : "glegoux",
+"category"             : "Security",
+"tags"                 : "",
+"time_reading_minutes" : 5,
+"url"                  : "/blog/articles/2019/03/01/access-to-a-computer-from-usb-key.html",
+"date"                 : "2019-03-01 00:00:00 +0000",
+"year"                 : "2019",
+"month"                : "03",
+"yearMonth"            : "2019-03",
+"yearMonthDay"         : "2019-03-01"
+} ,
+
+{
+"title"                : "How to quote sources",
+"authors"              : "glegoux",
+"category"             : "Methodology",
+"tags"                 : "",
+"time_reading_minutes" : 5,
+"url"                  : "/blog/articles/2019/02/14/how-to-quote-sources.html",
+"date"                 : "2019-02-14 00:00:00 +0000",
+"year"                 : "2019",
+"month"                : "02",
+"yearMonth"            : "2019-02",
+"yearMonthDay"         : "2019-02-14"
+} ,
+
+{
+"title"                : "Getting started",
+"authors"              : "glegoux",
+"category"             : "Methodology",
+"tags"                 : "Markdown, Liquid Template, Kramdown Converter, Jekyll",
+"time_reading_minutes" : 10,
+"url"                  : "/blog/articles/2019/01/21/getting-started.html",
+"date"                 : "2019-01-21 00:00:00 +0000",
+"year"                 : "2019",
+"month"                : "01",
+"yearMonth"            : "2019-01",
+"yearMonthDay"         : "2019-01-21"
+} 
+
+]
