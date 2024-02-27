@@ -39,6 +39,11 @@ figure.content {
 
 /* Horizontal separator */
 
+hr.sep {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
 hr.content {
   width: 20%;
   border-top: 1px solid lightgrey;
