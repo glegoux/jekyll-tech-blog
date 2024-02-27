@@ -12,7 +12,22 @@ function buildDonutPieChart(result, id) {
         var data = google.visualization.arrayToDataTable(result);
 
         var options = {
-            title: '', pieHole: 0.4,
+            title: '',
+            pieHole: 0.4,
+            height: '100%',
+            width: '100%',
+            chartArea: {
+                left: 0,
+                width: '80%',
+                height: '80%',
+            },
+            legend: {
+                maxLines: 1,
+                textStyle: {
+                    fontSize: 12
+                },
+                position: 'right'
+            }
         };
 
         var chart = new google.visualization.PieChart(document.getElementById(id));
