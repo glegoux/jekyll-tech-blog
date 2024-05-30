@@ -72,7 +72,7 @@ project:
     google_analytics_code: "UA-102138582-1"
   avatar:
     name: "Gilles Legoux"
-    job: "Senior Software Engineer"
+    job: "Staff Software Engineer"
     github:
       link: "https://github.com/glegoux"
     linkedin:
@@ -104,7 +104,7 @@ project:
       glegoux:
         firstname: "Gilles"
         lastname: "LEGOUX"
-        job: "Senior Software Engineer"
+        job: "Staff Software Engineer"
         company: "Criteo"
         follow:
           link: "https://glegoux.com"
