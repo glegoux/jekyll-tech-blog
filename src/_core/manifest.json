@@ -7,6 +7,19 @@ permalink: "/manifest.json"
 {
   "short_name": "{{ site.title }}",
   "name": "{{ site.description }}",
+  "screenshots": [
+    {
+        "src": "/_static/config/img/screenshot-320x320.png",
+        "sizes": "320x320",
+        "type": "image/png",
+        "form_factor": "wide"
+    },
+    {
+        "src": "/_static/config/img/screenshot-320x320.png",
+        "sizes": "320x320",
+        "type": "image/png"
+    }
+  ],
   "icons": [
     {
       "src": "/_static/config/img/icon-android-144x144.png",
@@ -27,6 +40,7 @@ permalink: "/manifest.json"
       "density": 0.75
     }
   ],
+  "id": "/",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#000000",
