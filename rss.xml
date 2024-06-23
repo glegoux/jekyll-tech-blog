@@ -5,8 +5,8 @@
     <description>Personal blog about software engineering</description>
     <link>https://glegoux.com/</link>
     <atom:link href="https://glegoux.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 23 Jun 2024 14:02:46 +0000</pubDate>
-    <lastBuildDate>Sun, 23 Jun 2024 14:02:46 +0000</lastBuildDate>
+    <pubDate>Sun, 23 Jun 2024 14:07:51 +0000</pubDate>
+    <lastBuildDate>Sun, 23 Jun 2024 14:07:51 +0000</lastBuildDate>
     <generator>Jekyll v4.3.2</generator>
     
       <item>
@@ -958,7 +958,7 @@ and &lt;a href=&quot;https://glegoux.com&quot;&gt;https://glegoux.com&lt;/a&gt; 
 
 &lt;p&gt;Don’t worry. I will keep maintaining this website and the open-source template behind it. To avoid breaking changes, the past blog posts will remain accessible without breaking their web links.&lt;/p&gt;
 
-&lt;p&gt;However, it seems time-consuming to synchronize the content between Medium and this blog bi-directionally. I can export and import a blog post to and from Medium by copying/pasting the content manually and by adapting the past content. Because the automatic Medium feature for external synchronization has been closed, and no other mature tools allow it, the custom extension of Mardown used here forces potential adaptations. So, the synchronization in updating a blog post from Medium becomes a nightmare to maintain. In contrast, I want to use Medium editor more, which is quicker and more handy to publish followed content. So, as I explained, some complete articles will only be on Medium or exclusively on this blog (with often a second partial version). When I want to have one blog post at both locations, instead of having a full post everywhere, I will use bidirectional web links cross-websites between the partial post and full post (to avoid divergences and too heavy maintenance in case of multiple evolutive versions with there are editions after the original publication).&lt;/p&gt;
+&lt;p&gt;However, it seems time-consuming to synchronize the content between Medium and this blog bi-directionally. At best, I can only export and import a blog post to and from Medium by copying/pasting the content manually and by adapting the past content. Because the automatic Medium feature for external synchronization has been closed, and no other mature tools allow it, the custom extension of Mardown used here forces potential adaptations. So, the synchronization in updating a blog post from Medium becomes a nightmare to maintain. In contrast, I want to use Medium editor more, which is quicker and more handy to publish followed content. So, as I explained, some complete articles will only be on Medium or exclusively on this blog (with often a second partial version). When I want to have one blog post at both locations, instead of having a full post everywhere, I will use bidirectional web links cross-websites between the partial post and full post (to avoid divergences and too heavy maintenance in case of multiple evolutive versions with there are editions after the original publication).&lt;/p&gt;
 
 &lt;p&gt;🙏 Thanks for your understanding and your readings.&lt;/p&gt;
 
