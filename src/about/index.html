@@ -12,7 +12,7 @@ layout: default
 
   <div class="row text-center">
 
-    <div class="col-12 col-md-4" style="margin-bottom: 1em">
+    <div class="col-12 col-lg-4" style="margin-bottom: 1em">
       {% include avatar.html %}
       <br>
       <a href="#about-me" title="About me">
@@ -20,9 +20,14 @@ layout: default
           <b class="black">About me</b>
         </button>
       </a>
+      <a href="/contact" target="_blank" rel="noopener noreferrer" title="Contact me">
+        <button class="btn btn-dark">
+          <b class="black">Contact me</b>
+        </button>
+      </a>
     </div>
 
-    <div class="col-12 col-md-8">
+    <div class="col-12 col-lg-8">
       <p style="text-align:justify">
         &ldquo; I created this tech blog to share my
         <span class="d-inline-block">
@@ -142,34 +147,16 @@ layout: default
 
   {% include project/about-me.html %}
 
+  {% include content/separator.html %}
+
+  {% include project/follow-me.html %}
 
   {% include content/separator.html %}
 
-  <p id="about-the-logo" class="text-center">
-    <b style="font-size: 2em">About the logo</b>
-  </p>
+  {% include project/blog-accessibility.html %}
 
-  <div class="row">
-    <div class="col-12 col-md-8">
-      <p style="text-align:justify">
-        The logo of this blog is composed of a <span class="d-inline-block"><b>$\rhd$ buffer</b></span> logic gate and a <span class="d-inline-block"><b>$\Sigma$ uppercase</b></span> <b>sigma</b> to represent respectively
-        the strong relationships between
-        <b>
-          <span class="d-inline-block"><img width="25" height="25" src="/_static/common/img/computer-science.png" alt="computer-science"> computer</span> science,
-          <span class="d-inline-block"><img width="25" height="25" src="/_static/common/img/data-science.png" alt="data-science"> data</span> science, and
-          <span class="d-inline-block"><img width="25" height="25" src="/_static/common/img/applied-mathematics.png" alt="applied-mathematics"> applied</span> mathematics
-        </b>:
-        the buffer accumulates the knowledge in the input before propagating it to the sigma to generate a synthesized output.
-      </p>
-    </div>
+  {% include content/separator.html %}
 
-    <div class="col-12 col-md-4">
-      <div style="text-align:center;margin-top:1em;margin-bottom:1em">
-        <img height="75px" src="/_static/common/img/glegoux-com-icon.png" style="border:1px lightgray solid;border-radius:60%" alt="site logo glegoux.com"><br>
-        <a class="underline link-strong" href="https://glegoux.com">https://glegoux.com</a>
-      </div>
-
-    </div>
-  </div>
+  {% include project/about-logo.html %}
 
 </div>
