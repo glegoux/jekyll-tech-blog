@@ -105,6 +105,8 @@ project:
         firstname: "Gilles"
         lastname: "LEGOUX"
         job: "Staff Software Engineer"
-        company: "Criteo"
+        company:
+          name: "Criteo"
+          link: "https://criteo.com"
         follow:
           link: "https://glegoux.com"
