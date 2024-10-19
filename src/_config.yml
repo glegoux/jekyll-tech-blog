@@ -53,7 +53,7 @@ project:
         link: "https://github.com/glegoux/jekyll-tech-blog/wiki/Configuration"
         class_icon:  "fab fa-linkedin"
       - name: "X (Twitter)"
-        link: "https://twitter.com/gilleslegoux"
+        link: "https://github.com/glegoux/jekyll-tech-blog/wiki/Configuration"
         class_icon: "fab fa-x-twitter"
       - name: "GitHub"
         link: "https://github.com/glegoux/jekyll-tech-blog/wiki/Configuration"
@@ -105,13 +105,14 @@ project:
         firstname: "Bob"
         lastname: ""
         job: "Software Engineer"
-        company: ""
         follow:
           link: "https://github.com/glegoux/jekyll-tech-blog/wiki/Configuration"
       glegoux:
         firstname: "Gilles"
         lastname: "LEGOUX"
-        job: "Software Engineer"
-        company: "Freelance"
+        job: "Staff Software Engineer"
+        company:
+          name: "Freelance"
+          link: "https://glegoux.com"
         follow:
           link: "https://glegoux.com"

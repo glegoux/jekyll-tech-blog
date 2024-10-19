@@ -33,15 +33,16 @@
             {{ author.lastname | uppercase }}
           </b>
           ({{ author_name }})
-        </td>
-      <tr>
-        <td>
+          <br>
           <span class="notranslate job">
           {{ author.job | capitalize }}
-          {%- if author.company and author.company != '' -%}&nbsp;@{{ author.company | capitalize }} {%- endif -%}
+          {%- if author.company and author.company != '' -%}
+            <a href="{{ author.company.link }}" title="Company of this author">
+              @{{ author.company.name | capitalize }}
+            </a>
+          {%- endif -%}
           </span>
         </td>
-      </tr>
       <tr>
         <td colspan="2" style="text-align: center">
           <a href="{{ author.follow.link }}" title="Follow this author">
