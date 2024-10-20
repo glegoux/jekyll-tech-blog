@@ -3,20 +3,55 @@ layout: default
 ---
 <div id="page-404" style="text-align: center;width: 100%;">
 
-  <h1 class="notranslate">404 - Not Found</h1>
+  <div class="row">
+    <div class="col-lg-6 col-md-12 blog-avatar text-center">
+      {% include avatar.html %}
+      <br>
+      <a href="/about/#about-me" title="About me">
+        <button class="btn btn-secondary">
+          <b class="black">About me</b>
+        </button>
+      </a>
+      <a href="/contact" title="Contact me">
+        <button class="btn btn-dark">
+          <b class="black">Contact me</b>
+        </button>
+      </a>
+    </div>
+    <div class="col-lg-6 col-md-12">
+      <h1 class="notranslate">404 - Not Found</h1>
 
-  <p>Oops, this page doesn't exist.</p>
+      <p>Oops, this page doesn't exist.</p>
 
-  <p>Looks like you followed a bad link. If you think that it is not the case,
-    <a class="link" href="/contact/email/">let me know this issue</a>.
-  </p>
+      <p>Looks like you followed a bad link. If you think that it is not the case,
+        <a class="link" href="/contact/email/">let me know this issue</a>.
+      </p>
+      <p>
+        <a href="/">
+          <button class="btn btn-dark">
+            <b>Go to home page</b>
+          </button>
+        </a>
+      </p>
+    </div>
+  </div>
 
-  <p>
-    <a href="/">
-      <button class="btn btn-dark">
-        <b>Go to home page</b>
-      </button>
+  {% include content/separator.html %}
+
+  <h1>Read the pinned posts</h1>
+
+  {% include article-pinned.html %}
+
+  <div class="text-center">
+    <a href="/blog/articles/" title="Read other blog posts">
+      <b class="black">Read other tech blog posts ➡️</b>
     </a>
-  </p>
+  </div>
+
+  {% include content/separator.html %}
+
+  <h1>Watch the mentioned posts</h1>
+
+  {% include project/mention.html %}
 
 </div>
