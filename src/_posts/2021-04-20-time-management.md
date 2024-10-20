@@ -324,8 +324,8 @@ Now I redo the same things for my personal activities, and my work activities to
 This article is only an introduction to time management applied to oneself by oneself. But the situation can
 be **more complex**. For example, if you think the time management for other people, if you are:
 
-* **Tech lead** for a team composed of a group of people
-* **Manager** for a department composed of a group of teams
+* **Tech/Team/Dev Leader** for a team composed of a group of people
+* **Tech/Project Manager/Director** for a department composed of a group of teams
 * **CTO** for a R&D pole composed of departments
 * **CEO** for a company or a group of companies ...
 
