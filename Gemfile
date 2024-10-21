@@ -2,7 +2,7 @@
 source 'https://rubygems.org'
 ruby File.read('.ruby-version', mode: 'rb').chomp
 
-gem 'jekyll', '4.3.2'
+gem 'jekyll', '4.3.4'
 
 # Jekyll plugins
 group :jekyll_plugins do
