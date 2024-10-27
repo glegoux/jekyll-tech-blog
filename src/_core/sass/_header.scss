@@ -1,5 +1,7 @@
 /* Header */
 
+@use "variables";
+
 header {
   z-index: 1000;
   padding-top: 0.2em;
@@ -36,7 +38,7 @@ header {
   #hr-above {
     height: 0.3em;
     width: 100%;
-    background-color: $color;
+    background-color: variables.$color;
     margin-bottom: 0.5em;
   }
 
