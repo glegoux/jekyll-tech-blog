@@ -159,6 +159,6 @@ it is important to be aware of this kind of behavior when a technology is used.
 # References
 
 * RITCHIE Dennis M., THOMPSON Ken, **The UNIX TimeSharing System**. Bell Labs, July 1974. [Link](https://dsf.berkeley.edu/cs262/unix.pdf).
-* NYGREN Erik, **Preparing for Y2038 (ALREADY?!)**. Akamai Blog, January 2019. [Link](https://blogs.akamai.com/2019/01/preparing-for-y2038-already.html).
+* NYGREN Erik, **Preparing for Y2038 (ALREADY?!)**. Akamai Blog, January 2019. [Link](https://www.akamai.com/blog/performance/preparing-for-y2038-already).
 * DINAMANI Deepa, **Solving the Year 2038 problem in the Linux kernel**. opensource.com, January 2019. [Link](https://opensource.com/article/19/1/year2038-problem-linux-kernel).
 * THAKUR Vishal, **What Is The 2038 Problem?**. Science ABC, October 2020. [Link](https://www.scienceabc.com/innovation/what-is-the-2038-problem.html).
