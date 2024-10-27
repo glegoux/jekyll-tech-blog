@@ -1,9 +1,11 @@
 /* Footer */
 
+@use "variables";
+
 footer {
   z-index: 1000;
   margin-top: 5em;
-  background-color: $color;
+  background-color: variables.$color;
   color: white;
   font-size: 0.8em;
   text-align: center;
