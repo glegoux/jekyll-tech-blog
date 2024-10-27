@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux (glegoux)</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2024-10-22T06:33:49+00:00</updated>
+ <updated>2024-10-27T20:17:56+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -1802,7 +1802,7 @@ it is important to be aware of this kind of behavior when a technology is used.&
 
 &lt;ul&gt;
   &lt;li&gt;RITCHIE Dennis M., THOMPSON Ken, &lt;strong&gt;The UNIX TimeSharing System&lt;/strong&gt;. Bell Labs, July 1974. &lt;a href=&quot;https://dsf.berkeley.edu/cs262/unix.pdf&quot;&gt;Link&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;NYGREN Erik, &lt;strong&gt;Preparing for Y2038 (ALREADY?!)&lt;/strong&gt;. Akamai Blog, January 2019. &lt;a href=&quot;https://blogs.akamai.com/2019/01/preparing-for-y2038-already.html&quot;&gt;Link&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;NYGREN Erik, &lt;strong&gt;Preparing for Y2038 (ALREADY?!)&lt;/strong&gt;. Akamai Blog, January 2019. &lt;a href=&quot;https://www.akamai.com/blog/performance/preparing-for-y2038-already&quot;&gt;Link&lt;/a&gt;.&lt;/li&gt;
   &lt;li&gt;DINAMANI Deepa, &lt;strong&gt;Solving the Year 2038 problem in the Linux kernel&lt;/strong&gt;. opensource.com, January 2019. &lt;a href=&quot;https://opensource.com/article/19/1/year2038-problem-linux-kernel&quot;&gt;Link&lt;/a&gt;.&lt;/li&gt;
   &lt;li&gt;THAKUR Vishal, &lt;strong&gt;What Is The 2038 Problem?&lt;/strong&gt;. Science ABC, October 2020. &lt;a href=&quot;https://www.scienceabc.com/innovation/what-is-the-2038-problem.html&quot;&gt;Link&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
