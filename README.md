@@ -12,7 +12,7 @@ Build your tech blog, write your tech articles, and deploy it on-premise or clou
 <table>
   <tr>
     <td>
-        <img src="https://github.com/glegoux/jekyll-tech-blog/raw/main/doc/img/jekyll-tech-blog-features.png"
+        <img src="https://github.com/glegoux/jekyll-tech-blog/raw/main/doc/img/jekyll-tech-blog-features.png?v=1"
              alt="Jekyll Tech Blog features" />
     </td>
   </tr>
