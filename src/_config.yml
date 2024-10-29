@@ -59,7 +59,7 @@ project:
         link: "https://github.com/glegoux"
         class_icon:  "fab fa-github"
       - name: "SlideShare"
-        link: "https://www.slideshare.net/gilleslegoux"
+        link: "https://www.slideshare.net/gillesLegoux/presentations?order=latest"
         class_icon: "fab fa-slideshare"
       - name: "Medium"
         link: "https://medium.com/@glegoux"
