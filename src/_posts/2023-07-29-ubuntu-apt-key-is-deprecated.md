@@ -37,13 +37,13 @@ Here are the milestones of the lifecycle of a package until be installed:
 1.  The package is produced on a build machine;
 2.  The package is signed on the build machine with a private key;
 3.  The signed package is uploaded to a repository (download mirror);
-4.  The client system downloads the package (with its package dependencies before if needed) thanks to the metadata and the usage of its package manager from an authorized repository (or from cache);
-5.  The signature of the package is verified (with its package dependencies before if needed) with the associated public key;
+4.  The client system downloads the package (with its package dependencies before, if needed) thanks to the metadata and the usage of its package manager from an authorized repository (or from cache);
+5.  The signature of the package is verified (with its package dependencies before, if needed) with the associated public key;
 6.  If the signature is valid, the package is installed.
 
 The developers of Debian and Ubuntu realized that the apt-key command has had flaws for a long time (see  [Security tracker: package apt](https://security-tracker.debian.org/tracker/source-package/apt)  and particularly  [CVE-2011–3374](https://security-tracker.debian.org/tracker/CVE-2011-3374)). While  `apt-key`  was not guaranteed to work people continue to use it, that’s why now this command line has been marked as deprecated (see  [Fully deprecate apt-key, schedule removal for Q2/2022 (ee284d59) · Commits · APT Developers / apt · GitLab](https://salsa.debian.org/apt-team/apt/-/commit/ee284d5917d09649b68ff1632d44e892f290c52f)) and will be deleted. Support for the function ends with Debian 11 (Bullseye) and Ubuntu 22.04 (Jammy Jellyfish).
 
-The problem is to move all tech ecosystems because numerous documentations or blog posts are not up-to-date on this aspect, even the tech giant like  [Google: Linux Software Repositories](https://www.google.com/linuxrepositories/)  where the usage of  `apt-key`  is still referenced in July 2023.
+The problem is to move all tech ecosystems because numerous documentation or blog posts are not up-to-date on this aspect. Even tech giants like [Google: Linux Software Repositories](https://web.archive.org/web/20230821043842/https://www.google.com/linuxrepositories/), where the usage of `apt-key` is still referenced in August 2023 (after the publication of this article in July 2023). After raising the alert, the correction was made in February 2024 ([here](https://web.archive.org/web/20240219051925/http://www.google.com/linuxrepositories/)).
 
 {% include content/image.html
 src="https://miro.medium.com/v2/resize:fit:700/1*uOECpGoz2jU0l2rwQ1t1fw.png"
@@ -52,8 +52,8 @@ title="The home page of the Google Linux Software Repositories is not up-to-date
 source="https://www.google.com/linuxrepositories"
 %}
 
-Let’s understand an attack scenario among several ones possible. Even if by default, APT checks the validity of the signature of each package to install, and if it is invalid, a warning message is printed and the package is not installed. It is not sufficient because APT needs also to know which trusted public GPG key belongs to which package repository.
+Let’s understand an attack scenario among several possible ones. Even if, by default, APT checks the validity of the signature of each package to install, and if it is invalid, a warning message is printed, and the package is not installed, this is not sufficient because APT also needs to know which trusted public GPG key belongs to which package repository.
 
 {% include article/read-more.md
-src="https://medium.com/@glegoux/ubuntu-22-04-jammy-jellyfish-apt-key-is-deprecated-2dbbee8aec84"
+src="https://medium.com/@glegoux/ubuntu-22-04-jammy-jellyfish-apt-key-is-deprecated-2dbbee8aec84#:~:text=Let%E2%80%99s%20understand%20an%20attack%20scenario%20among%20several%20ones%20possible."
 %}
