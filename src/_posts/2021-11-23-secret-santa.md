@@ -1,6 +1,6 @@
 ---
 title: "Secret Santa"
-description: "What can be the applied mathematics behind a secret santa?"
+description: "What can be the applied mathematics behind a secret Santa?"
 authors: ["glegoux"]
 time_reading_minutes: 5
 category: "Applied Mathematics"
@@ -8,12 +8,12 @@ category: "Applied Mathematics"
 
 Secret Santa is a traditional event in December with family, friends, or office colleagues, 
 in which each guest gives a gift to another guest without knowing who will give him/her a gift. 
-Could you imagine that you want to organize it? You notify your guests to choose a gift by keeping it secret. 
+Could you imagine that you want to organize it? Please let your guests know to choose a gift by keeping it secret. 
 For maximum surprise, you would like to give each gift to a guest with a draw at the last 
 minute. So your guests don't know for whom the gift that he/she chose will be. However, several problems
 are raised that can be answered by applied mathematics. 
 
-# Hat-check problem
+# 🎅 Secret Santa: Hat-check problem
 
 Let's begin with the first problem: to whom each guest gives his/her gift. Let's suppose 
 each guest has well his/her gift for a unique other guest. Of course, the draw could 
@@ -62,18 +62,18 @@ $$p_{n\geq 4} \approx \dfrac{2}{3}$$
 
 It is risky to choose this simultaneous strategy, and it breaks the surprise phenomenon 
 when everyone unfolds the paper if a guest randomly draws his/her name. An exchange
-of papers or a new drawing of lots must be made. Another sequential strategy could be considered, 
-a guest draws randomly a piece of paper, keeps it, and gives the Christmas hat to
-the person whose name is on the paper. Only the first guest could draw her/his name, 
-but all she/he has to do is redraw a piece of paper and then put the paper back with his/her name.
+of pieces of paper or a new drawing of lots must be made. Another sequential strategy could be considered: 
+A guest randomly draws a piece of paper, keeps it, and gives the Christmas hat to
+the person whose name is on it. Only the first guest could draw her/his name, 
+but all she/he had to do was redraw a piece of paper and then put the paper back with his/her name.
 
-# Birthday problem
+# 🎁 Gift types: Birthday problem
 
-A second problem will be to know if 2 guests could bring the same type of gift. This one is 
+A second problem will be to know if 2 guests could bring the same type of gift. This is 
 equivalent to another famous problem, the **birthday problem**. The probability that 
 two people were born on the same day increases quickly depending
 on the number of people. It becomes almost certain, that is to say, more than $99\%$ 
-of a chance to be true for a group of 60 people. 
+of a chance to be valid for a group of 60 people. 
 
 More generally, the probability that a subset of size $n$ of a set $E$ of size $N$
 contains at least 2 identical elements:
