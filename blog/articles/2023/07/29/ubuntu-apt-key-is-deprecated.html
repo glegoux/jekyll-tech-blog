@@ -481,14 +481,14 @@ new location with the binary format OpenPGP, and specify the option Signed-By (s
   <li>The package is produced on a build machine;</li>
   <li>The package is signed on the build machine with a private key;</li>
   <li>The signed package is uploaded to a repository (download mirror);</li>
-  <li>The client system downloads the package (with its package dependencies before if needed) thanks to the metadata and the usage of its package manager from an authorized repository (or from cache);</li>
-  <li>The signature of the package is verified (with its package dependencies before if needed) with the associated public key;</li>
+  <li>The client system downloads the package (with its package dependencies before, if needed) thanks to the metadata and the usage of its package manager from an authorized repository (or from cache);</li>
+  <li>The signature of the package is verified (with its package dependencies before, if needed) with the associated public key;</li>
   <li>If the signature is valid, the package is installed.</li>
 </ol>
 
 <p>The developers of Debian and Ubuntu realized that the apt-key command has had flaws for a long time (see  <a href="https://security-tracker.debian.org/tracker/source-package/apt">Security tracker: package apt</a>  and particularly  <a href="https://security-tracker.debian.org/tracker/CVE-2011-3374">CVE-2011–3374</a>). While  <code class="language-text highlighter-rouge">apt-key</code>  was not guaranteed to work people continue to use it, that’s why now this command line has been marked as deprecated (see  <a href="https://salsa.debian.org/apt-team/apt/-/commit/ee284d5917d09649b68ff1632d44e892f290c52f">Fully deprecate apt-key, schedule removal for Q2/2022 (ee284d59) · Commits · APT Developers / apt · GitLab</a>) and will be deleted. Support for the function ends with Debian 11 (Bullseye) and Ubuntu 22.04 (Jammy Jellyfish).</p>
 
-<p>The problem is to move all tech ecosystems because numerous documentations or blog posts are not up-to-date on this aspect, even the tech giant like  <a href="https://www.google.com/linuxrepositories/">Google: Linux Software Repositories</a>  where the usage of  <code class="language-text highlighter-rouge">apt-key</code>  is still referenced in July 2023.</p>
+<p>The problem is to move all tech ecosystems because numerous documentation or blog posts are not up-to-date on this aspect. Even tech giants like <a href="https://web.archive.org/web/20230821043842/https://www.google.com/linuxrepositories/">Google: Linux Software Repositories</a>, where the usage of <code class="language-text highlighter-rouge">apt-key</code> is still referenced in August 2023 (after the publication of this article in July 2023). After raising the alert, the correction was made in February 2024 (<a href="https://web.archive.org/web/20240219051925/http://www.google.com/linuxrepositories/">here</a>).</p>
 
 <figure title="The home page of the Google Linux Software Repositories is not up-to-date with the usage of apt-key" class="content">
   <div>
@@ -502,14 +502,14 @@ new location with the binary format OpenPGP, and specify the option Signed-By (s
   </figcaption>
 </figure>
 
-<p>Let’s understand an attack scenario among several ones possible. Even if by default, APT checks the validity of the signature of each package to install, and if it is invalid, a warning message is printed and the package is not installed. It is not sufficient because APT needs also to know which trusted public GPG key belongs to which package repository.</p>
+<p>Let’s understand an attack scenario among several possible ones. Even if, by default, APT checks the validity of the signature of each package to install, and if it is invalid, a warning message is printed, and the package is not installed, this is not sufficient because APT also needs to know which trusted public GPG key belongs to which package repository.</p>
 
 <h1 id="-read-more">👀 Read more</h1>
 
 <p>Read the rest of the article …</p>
 
 <div style="text-align: center;margin-bottom: 1em;">
-  <a href="https://medium.com/@glegoux/ubuntu-22-04-jammy-jellyfish-apt-key-is-deprecated-2dbbee8aec84" target="_blank" rel="noopener noreferrer" title="Read more">
+  <a href="https://medium.com/@glegoux/ubuntu-22-04-jammy-jellyfish-apt-key-is-deprecated-2dbbee8aec84#:~:text=Let%E2%80%99s%20understand%20an%20attack%20scenario%20among%20several%20ones%20possible." target="_blank" rel="noopener noreferrer" title="Read more">
     <button class="btn btn-dark">
       <b class="black">Read more</b>
     </button>
@@ -704,35 +704,35 @@ new location with the binary format OpenPGP, and specify the option Signed-By (s
   <h5>Also read</h5>
   <div class="row">
 <div class="col-xs-12 col-md-6 col-lg-4">
-<a href="/blog/articles/2020/08/24/geo-location.html" title="Read this article" style="display: block">
+<a href="/blog/articles/2021/11/13/software-versioning.html" title="Read this article" style="display: block">
   <div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2020-08-24-geo-location.jpg" alt="2020-08-24-geo-location">
+        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2021-11-13-software-versioning.jpg" alt="2021-11-13-software-versioning">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          Geo-location
+          Software versioning
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          How to compute the distance between 2 points with given latitude and longitude?
+          How is assigned a version to a software?
         </div>
 <!-- Article categories -->
         <div class="article-category">
           <ul>
-            <li>Applied Mathematics</li>
+            <li>Development</li>
           </ul>
         </div>
 <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>August 24, 2020</span>
+          <span>November 13, 2021</span>
         </div>
 <!-- Article reading time -->
         <div class="reading-time">
@@ -746,66 +746,24 @@ new location with the binary format OpenPGP, and specify the option Signed-By (s
 </a>
 </div>
 <div class="col-xs-12 col-md-6 col-lg-4">
-<a href="/blog/articles/2022/12/14/from-hadoop-to-the-modern-data-stack.html" title="Read this article" style="display: block">
+<a href="/blog/articles/2019/03/23/kerberos-in-5-minutes.html" title="Read this article" style="display: block">
   <div class="article-card-container">
     <!-- Article metadata -->
     <div class="article-card">
 <!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2022-12-14-from-hadoop-to-the-modern-data-stack.jpg" alt="2022-12-14-from-hadoop-to-the-modern-data-stack">
+        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2019-03-23-kerberos-in-5-minutes.jpg" alt="2019-03-23-kerberos-in-5-minutes">
       </div>
 
       <!-- Article details -->
       <div class="article-details">
         <!-- Article title -->
         <div class="article-title">
-          From Hadoop to the modern data stack
+          Kerberos in 5 minutes
         </div>
 
         <!-- Article description -->
         <div class="article-description">
-          I was at the meetup From Hadoop to the Modern Stack with the companies Criteo, Starbust and Castor with 3 speeches Ha...
-        </div>
-<!-- Article categories -->
-        <div class="article-category">
-          <ul>
-            <li>Data</li>
-          </ul>
-        </div>
-<!-- Article publication date -->
-        <div class="date">
-          <i class="far fa-calendar-alt"></i>
-          <span>December 14, 2022</span>
-        </div>
-<!-- Article reading time -->
-        <div class="reading-time">
-          <i class="far fa-clock"></i>
-          <span>3 min</span>
-        </div>
-</div>
-
-    </div>
-  </div>
-</a>
-</div>
-<div class="col-xs-12 col-md-6 col-lg-4">
-<a href="/blog/articles/2020/05/15/gnu-privacy-guard.html" title="Read this article" style="display: block">
-  <div class="article-card-container">
-    <!-- Article metadata -->
-    <div class="article-card">
-<!-- Article cover --><div class="article-cover">
-        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2020-05-15-gnu-privacy-guard.jpg" alt="2020-05-15-gnu-privacy-guard">
-      </div>
-
-      <!-- Article details -->
-      <div class="article-details">
-        <!-- Article title -->
-        <div class="article-title">
-          GNU privacy guard
-        </div>
-
-        <!-- Article description -->
-        <div class="article-description">
-          How to prove its identity and encrypt its communication?
+          Kerberos is an authentication protocol for trusted hosts on untrusted networks.
         </div>
 <!-- Article categories -->
         <div class="article-category">
@@ -816,12 +774,54 @@ new location with the binary format OpenPGP, and specify the option Signed-By (s
 <!-- Article publication date -->
         <div class="date">
           <i class="far fa-calendar-alt"></i>
-          <span>May 15, 2020</span>
+          <span>March 23, 2019</span>
         </div>
 <!-- Article reading time -->
         <div class="reading-time">
           <i class="far fa-clock"></i>
           <span>5 min</span>
+        </div>
+</div>
+
+    </div>
+  </div>
+</a>
+</div>
+<div class="col-xs-12 col-md-6 col-lg-4">
+<a href="/blog/articles/2022/11/02/apache-spark-ecosystem-overview-with-apache-hadoop-yarn-and-hdfs.html" title="Read this article" style="display: block">
+  <div class="article-card-container">
+    <!-- Article metadata -->
+    <div class="article-card">
+<!-- Article cover --><div class="article-cover">
+        <img class="img-fluid lazyload" data-src="/_static/covers/posts/2022-11-02-apache-spark-ecosystem-overview-with-apache-hadoop-yarn-and-hdfs.jpg" alt="2022-11-02-apache-spark-ecosystem-overview-with-apache-hadoop-yarn-and-hdfs">
+      </div>
+
+      <!-- Article details -->
+      <div class="article-details">
+        <!-- Article title -->
+        <div class="article-title">
+          Apache Spark: Ecosystem overview with Apache Hadoop YARN ...
+        </div>
+
+        <!-- Article description -->
+        <div class="article-description">
+          Though my experience of Software Engineer @Criteo during several years to import and enrich e-commerce catalogs. I wo...
+        </div>
+<!-- Article categories -->
+        <div class="article-category">
+          <ul>
+            <li>Data</li>
+          </ul>
+        </div>
+<!-- Article publication date -->
+        <div class="date">
+          <i class="far fa-calendar-alt"></i>
+          <span>November 02, 2022</span>
+        </div>
+<!-- Article reading time -->
+        <div class="reading-time">
+          <i class="far fa-clock"></i>
+          <span>10 min</span>
         </div>
 </div>
 
