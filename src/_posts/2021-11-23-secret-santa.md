@@ -21,7 +21,7 @@ gift during the event.
 
 So the identities of gifts (ideally all different), donors, and receivers remain secret until the last 
 moment. However, several problems could reduce the surprise effect. Let us understand  it thanks to 
-applied mathematics. 
+applied mathematics in probability, statistics, and combinatorics. 
 
 # 🎅 Secret Santa: Hat-check problem
 
