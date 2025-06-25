@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux (glegoux)</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2025-06-25T23:19:46+00:00</updated>
+ <updated>2025-06-25T23:49:54+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -972,7 +972,7 @@ gift during the event.&lt;/p&gt;
 
 &lt;p&gt;So the identities of gifts (ideally all different), donors, and receivers remain secret until the last 
 moment. However, several problems could reduce the surprise effect. Let us understand  it thanks to 
-applied mathematics.&lt;/p&gt;
+applied mathematics in probability, statistics, and combinatorics.&lt;/p&gt;
 
 &lt;h1 id=&quot;-secret-santa-hat-check-problem&quot;&gt;🎅 Secret Santa: Hat-check problem&lt;/h1&gt;
 
