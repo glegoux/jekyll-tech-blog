@@ -7,8 +7,21 @@ category: "Applied Mathematics"
 ---
 
 Secret Santa is a traditional event in December with family, friends, or office colleagues, 
-in which each guest gives a gift to another guest without knowing who will give him/her a gift. 
-Could you imagine that you want to organize it? For a maximum surprise, you would to keep secret the identity of gifts (ideally all different), donors and receivers until the last moment. So your guests don't know for whom the gift that he/she chose will be, and nor which one they will receive and from whom until the festive meeting where all will be present. However, several problems are raised that could reduce the surprise effect. Let us understand it thanks to applied mathematics. 
+in which each guest gives a gift to another guest without knowing who will give him/her a gift.
+
+Could you imagine that you want to organize it? As an independent, technical, and meticulous 
+organizer, you could automate the drawing of pairs (donor, recipient) to work even for an odd 
+number of guests. You could implement an algorithm (given later) that generates a directed cyclic 
+graph where the vertices are guests and the edges represent the relationship (donor -> recipient).
+
+But you want to increase the pleasure of secrecy, you choose to draw lots for the identity of the recipients 
+at the last moment. In this case, the guests do not know neither for whom the gift they buy will be. 
+In addition, it counters the effect of a no-show, in which a guest might not receive the pre-chosen 
+gift during the event. 
+
+So the identities of gifts (ideally all different), donors, and receivers remain secret until the last 
+moment. However, several problems could reduce the surprise effect. Let us understand  it thanks to 
+applied mathematics. 
 
 # 🎅 Secret Santa: Hat-check problem
 
@@ -16,7 +29,7 @@ Let's begin with the first problem: to whom each guest gives his/her gift. Let's
 each guest has well his/her gift for a unique other guest. Of course, the draw could 
 have been done before and kept secret. But you want to do the draw at the last moment 
 and by revealing simultaneously who gives his/her gift to whom. That is to say, you 
-write the name of each guest on a different piece of paper for each and mix it in 
+write the name of each guest on a different piece of paper for each, and mix it in 
 a Christmas hat. Then, each one takes a piece of paper randomly. Finally, all of them, at
 the same time, unfold the piece of paper and discover the name of the guest to whom 
 he/she gives his/her gift.  
@@ -57,24 +70,27 @@ to have at least one guest who drew its name, that is a bit less than 2 out of 3
 
 $$p_{n\geq 4} \approx \dfrac{2}{3}$$
 
-This simultaneous strategy risks to limit the surprise effect, like the probability that a guest randomly draws his/her name becomes high quickly in function of the number of guests. An exchange
+This simultaneous strategy risks limiting the surprise effect, like the probability that a guest randomly draws his/her name becomes high quickly as a function of the number of guests. An exchange
 of pieces of paper or a new drawing must be made. 
 
-But, another sequential strategy could be considered: 
+However, another sequential strategy could be considered, the same as presented in the introduction, 
+to generate a cyclic-oriented graph (donor -> recipient). The algorithm will be:
 A guest randomly draws a piece of paper, keeps it, and gives the Christmas hat to
-the person whose name is on it. Only the first guest could draw her/his name, 
-but all she/he had to do was redraw a piece of paper and then put the paper back with his/her name. But, here the surprise effect becomes split into two moments, first discovering the identity of donors progressively, then at the same time all the gifts, instead of one moment previously.
+The person whose name is on it. Only the first guest could draw her/his name.
+In this case, the person redraws a piece of paper and then puts the paper back with his/her name. 
+But here, the surprise effect becomes split into two moments, first discovering the identity of donors progressively,
+and then all the gifts simultaneously, instead of one moment previously.
 
 # 🎁 Gift types: Birthday problem
 
-A second problem will be to know if 2 guests could bring the same type of gift. This is 
+A second problem will be to know if two guests could bring the same type of gift. This is 
 equivalent to another famous problem, the **birthday problem**. The probability that 
 two people were born on the same day increases quickly depending
 on the number of people. It becomes almost certain, that is to say, more than $99\%$ 
 of a chance to be valid for a group of 60 people. 
 
 More generally, the probability that a subset of size $n$ of a set $E$ of size $N$
-contains at least 2 identical elements:
+contains at least two identical elements:
 
 $$g_n = 1 - \frac{N}{N}\,\frac{N-1}{N}\,\cdots\,\frac{N-n+1}{N} = 1 - \dfrac{N!}{(N-n)!}\,\dfrac{1}{N^n}$$
 
@@ -86,7 +102,7 @@ pre-defined list influenced by the constraints and the ads, with a few hundred t
 let's say $N=300$:
 
 {% include content/image.html
-title="Probability to have 2 identical types of gifts among 300 possible types of Christmas gifts" 
+title="Probability to have two identical types of gifts among 300 possible types of Christmas gifts" 
 src="g_n-convergence.png"
 %}
 
@@ -104,6 +120,6 @@ And:
 $$g_{n\geq 20} \geq \dfrac{1}{2} \qquad g_{n\geq 60} \approx 1$$
 
 If you have more than 20 guests, we have more than 1 out of 2 chances to have
-at least 2 identical types of gifts.
+at least two identical types of gifts.
 
 So, I wish you a good Secret Santa 🎄.
