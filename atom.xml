@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux (glegoux)</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2025-06-25T21:51:08+00:00</updated>
+ <updated>2025-06-25T23:02:14+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -958,8 +958,21 @@ and &lt;a href=&quot;https://glegoux.com&quot;&gt;https://glegoux.com&lt;/a&gt; 
    <updated>2021-11-23T00:00:00+00:00</updated>
    <id>https://glegoux.com/blog/articles/2021/11/23/secret-santa.html</id>
    <content type="html">&lt;p&gt;Secret Santa is a traditional event in December with family, friends, or office colleagues, 
-in which each guest gives a gift to another guest without knowing who will give him/her a gift. 
-Could you imagine that you want to organize it? For a maximum surprise, you would to keep secret the identity of gifts (ideally all different), donors and receivers until the last moment. So your guests don’t know for whom the gift that he/she chose will be, and nor which one they will receive and from whom until the festive meeting where all will be present. However, several problems are raised that could reduce the surprise effect. Let us understand it thanks to applied mathematics.&lt;/p&gt;
+in which each guest gives a gift to another guest without knowing who will give him/her a gift.&lt;/p&gt;
+
+&lt;p&gt;Could you imagine that you want to organize it? As an independent, technical, and meticulous 
+organizer, you could automate the drawing of pairs (donor, recipient) to work even for an odd 
+number of guests. You could implement an algorithm (given later) that generates a directed cyclic 
+graph where the vertices are guests and the edges represent the relationship (donor -&amp;gt; recipient).&lt;/p&gt;
+
+&lt;p&gt;But you want to increase the pleasure of secrecy, you choose to draw lots for the identity of the recipients 
+at the last moment. In this case, the guests do not know neither for whom the gift they buy will be. 
+In addition, it counters the effect of a no-show, in which a guest might not receive the pre-chosen 
+gift during the event.&lt;/p&gt;
+
+&lt;p&gt;So the identities of gifts (ideally all different), donors, and receivers remain secret until the last 
+moment. However, several problems could reduce the surprise effect. Let us understand  it thanks to 
+applied mathematics.&lt;/p&gt;
 
 &lt;h1 id=&quot;-secret-santa-hat-check-problem&quot;&gt;🎅 Secret Santa: Hat-check problem&lt;/h1&gt;
 
@@ -967,7 +980,7 @@ Could you imagine that you want to organize it? For a maximum surprise, you woul
 each guest has well his/her gift for a unique other guest. Of course, the draw could 
 have been done before and kept secret. But you want to do the draw at the last moment 
 and by revealing simultaneously who gives his/her gift to whom. That is to say, you 
-write the name of each guest on a different piece of paper for each and mix it in 
+write the name of each guest on a different piece of paper for each, and mix it in 
 a Christmas hat. Then, each one takes a piece of paper randomly. Finally, all of them, at
 the same time, unfold the piece of paper and discover the name of the guest to whom 
 he/she gives his/her gift.&lt;/p&gt;
@@ -1013,24 +1026,27 @@ to have at least one guest who drew its name, that is a bit less than 2 out of 3
 
 \[p_{n\geq 4} \approx \dfrac{2}{3}\]
 
-&lt;p&gt;This simultaneous strategy risks to limit the surprise effect, like the probability that a guest randomly draws his/her name becomes high quickly in function of the number of guests. An exchange
+&lt;p&gt;This simultaneous strategy risks limiting the surprise effect, like the probability that a guest randomly draws his/her name becomes high quickly as a function of the number of guests. An exchange
 of pieces of paper or a new drawing must be made.&lt;/p&gt;
 
-&lt;p&gt;But, another sequential strategy could be considered: 
+&lt;p&gt;However, another sequential strategy could be considered, the same as presented in the introduction, 
+to generate a cyclic-oriented graph (donor -&amp;gt; recipient). The algorithm will be:
 A guest randomly draws a piece of paper, keeps it, and gives the Christmas hat to
-the person whose name is on it. Only the first guest could draw her/his name, 
-but all she/he had to do was redraw a piece of paper and then put the paper back with his/her name. But, here the surprise effect becomes split into two moments, first discovering the identity of donors progressively, then at the same time all the gifts, instead of one moment previously.&lt;/p&gt;
+The person whose name is on it. Only the first guest could draw her/his name.
+In this case, the person redraws a piece of paper and then puts the paper back with his/her name. 
+But here, the surprise effect becomes split into two moments, first discovering the identity of donors progressively,
+and then all the gifts simultaneously, instead of one moment previously.&lt;/p&gt;
 
 &lt;h1 id=&quot;-gift-types-birthday-problem&quot;&gt;🎁 Gift types: Birthday problem&lt;/h1&gt;
 
-&lt;p&gt;A second problem will be to know if 2 guests could bring the same type of gift. This is 
+&lt;p&gt;A second problem will be to know if two guests could bring the same type of gift. This is 
 equivalent to another famous problem, the &lt;strong&gt;birthday problem&lt;/strong&gt;. The probability that 
 two people were born on the same day increases quickly depending
 on the number of people. It becomes almost certain, that is to say, more than $99\%$ 
 of a chance to be valid for a group of 60 people.&lt;/p&gt;
 
 &lt;p&gt;More generally, the probability that a subset of size $n$ of a set $E$ of size $N$
-contains at least 2 identical elements:&lt;/p&gt;
+contains at least two identical elements:&lt;/p&gt;
 
 \[g_n = 1 - \frac{N}{N}\,\frac{N-1}{N}\,\cdots\,\frac{N-n+1}{N} = 1 - \dfrac{N!}{(N-n)!}\,\dfrac{1}{N^n}\]
 
@@ -1041,12 +1057,12 @@ Except for some guests with a very original gift, suppose that your guest chose 
 pre-defined list influenced by the constraints and the ads, with a few hundred types of items, 
 let’s say $N=300$:&lt;/p&gt;
 
-&lt;figure title=&quot;Probability to have 2 identical types of gifts among 300 possible types of Christmas gifts&quot; class=&quot;content&quot;&gt;
+&lt;figure title=&quot;Probability to have two identical types of gifts among 300 possible types of Christmas gifts&quot; class=&quot;content&quot;&gt;
   &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2021-11-23-secret-santa/images/g_n-convergence.png&quot; title=&quot;Probability to have 2 identical types of gifts among 300 possible types of Christmas gifts&quot; alt=&quot;Probability to have 2 identical types of gifts among 300 possible types of Christmas gifts&quot; /&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2021-11-23-secret-santa/images/g_n-convergence.png&quot; title=&quot;Probability to have two identical types of gifts among 300 possible types of Christmas gifts&quot; alt=&quot;Probability to have two identical types of gifts among 300 possible types of Christmas gifts&quot; /&gt;
   &lt;/div&gt;
   &lt;figcaption&gt;
-    Probability to have 2 identical types of gifts among 300 possible types of Christmas gifts
+    Probability to have two identical types of gifts among 300 possible types of Christmas gifts
     
   &lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -1065,7 +1081,7 @@ $\sum_{k=0}^{n}\,k = \frac{n(n+1)}{2}$, you can get:&lt;/p&gt;
 \[g_{n\geq 20} \geq \dfrac{1}{2} \qquad g_{n\geq 60} \approx 1\]
 
 &lt;p&gt;If you have more than 20 guests, we have more than 1 out of 2 chances to have
-at least 2 identical types of gifts.&lt;/p&gt;
+at least two identical types of gifts.&lt;/p&gt;
 
 &lt;p&gt;So, I wish you a good Secret Santa 🎄.&lt;/p&gt;
 </content><author>
