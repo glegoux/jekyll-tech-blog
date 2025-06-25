@@ -1,6 +1,6 @@
 ---
 title: "Secret Santa"
-description: "What can be the applied mathematics behind a secret Santa?"
+description: "What can be the applied mathematics behind a Secret Santa?"
 authors: ["glegoux"]
 time_reading_minutes: 5
 category: "Applied Mathematics"
@@ -8,10 +8,7 @@ category: "Applied Mathematics"
 
 Secret Santa is a traditional event in December with family, friends, or office colleagues, 
 in which each guest gives a gift to another guest without knowing who will give him/her a gift. 
-Could you imagine that you want to organize it? Please let your guests know to choose a gift by keeping it secret. 
-For maximum surprise, you would like to give each gift to a guest with a draw at the last 
-minute. So your guests don't know for whom the gift that he/she chose will be. However, several problems
-are raised that can be answered by applied mathematics. 
+Could you imagine that you want to organize it? Please let your guests know to choose a gift by keeping it secret. For maximum surprise, you would to keep secret the identity of gifts (ideally all different), donors and receivers until the last moment. So your guests don't know for whom the gift that he/she chose will be, and nor which one they will receive and from whom until the festive meeting where all will be present. However, several problems are raised that could reduce the surprise effect. Let us understand it thanks to applied mathematics. 
 
 # 🎅 Secret Santa: Hat-check problem
 
@@ -60,12 +57,13 @@ to have at least one guest who drew its name, that is a bit less than 2 out of 3
 
 $$p_{n\geq 4} \approx \dfrac{2}{3}$$
 
-It is risky to choose this simultaneous strategy, and it breaks the surprise phenomenon 
-when everyone unfolds the paper if a guest randomly draws his/her name. An exchange
-of pieces of paper or a new drawing of lots must be made. Another sequential strategy could be considered: 
+This simultaneous strategy risks to limit the surprise effect, like the probability that a guest randomly draws his/her name becomes high quickly in function of the number of guests. An exchange
+of pieces of paper or a new drawing must be made. 
+
+But, another sequential strategy could be considered: 
 A guest randomly draws a piece of paper, keeps it, and gives the Christmas hat to
 the person whose name is on it. Only the first guest could draw her/his name, 
-but all she/he had to do was redraw a piece of paper and then put the paper back with his/her name.
+but all she/he had to do was redraw a piece of paper and then put the paper back with his/her name. But, here the surprise effect becomes split into two moments, first discovering the identity of donors progressively, then at the same time all the gifts, instead of one moment previously.
 
 # 🎁 Gift types: Birthday problem
 
