@@ -14,7 +14,7 @@ organizer, you could automate the drawing of pairs (donor, recipient) to work ev
 number of guests. You could implement an algorithm (given later) that generates a directed cyclic 
 graph where the vertices are guests and the edges represent the relationship (donor -> recipient).
 
-But you want to increase the pleasure of secrecy, you choose to draw lots for the identity of the recipients 
+But you want to increase the secrecy, you choose to draw lots for the identity of the recipients 
 at the last moment. In this case, the guests do not know neither for whom the gift they buy will be. 
 In addition, it counters the effect of a no-show, in which a guest might not receive the pre-chosen 
 gift during the event. 
@@ -25,9 +25,9 @@ applied mathematics.
 
 # 🎅 Secret Santa: Hat-check problem
 
-Let's begin with the first problem: to whom each guest gives his/her gift. Let's suppose 
+Let's begin with the first problem: to whom does each guest give his/her gift? Let's suppose 
 each guest has well his/her gift for a unique other guest. Of course, the draw could 
-have been done before and kept secret. But you want to do the draw at the last moment 
+have been done before and kept secret, as mentioned previously. But you want to do the draw at the last moment 
 and by revealing simultaneously who gives his/her gift to whom. That is to say, you 
 write the name of each guest on a different piece of paper for each, and mix it in 
 a Christmas hat. Then, each one takes a piece of paper randomly. Finally, all of them, at
@@ -65,13 +65,13 @@ title="Inverse of the probability that a guest draws randomly his/her name"
 src="u_n-convergence.png"
 %}
 
-So if your number of guests is greater or equal to 4, you have around $0.63\%$ of chance, 
-to have at least one guest who drew its name, that is a bit less than 2 out of 3 chances:
+So if the number of guests is greater than or equal to 4, you have around $0.63\%$ of chance, 
+to have at least one guest who drew their name, that is a bit less than 2 out of 3 chances:
 
 $$p_{n\geq 4} \approx \dfrac{2}{3}$$
 
-This simultaneous strategy risks limiting the surprise effect, like the probability that a guest randomly draws his/her name becomes high quickly as a function of the number of guests. An exchange
-of pieces of paper or a new drawing must be made. 
+This simultaneous strategy risks limiting the surprise effect, like the probability that a guest randomly 
+draws his/her name, which becomes high quickly as a function of the number of guests.
 
 However, another sequential strategy could be considered, the same as presented in the introduction, 
 to generate a cyclic-oriented graph (donor -> recipient). The algorithm will be:
@@ -83,8 +83,11 @@ and then all the gifts simultaneously, instead of one moment previously.
 
 # 🎁 Gift types: Birthday problem
 
-A second problem will be to know if two guests could bring the same type of gift. This is 
-equivalent to another famous problem, the **birthday problem**. The probability that 
+A second problem will be to know if two guests could bring the same type of gift. 
+Having all gifts different could make it more fun, as the guests did not know for whom the gift they bought would be. 
+These gifts are not personalized. Let's suppose that you categorized 300 types of gifts. 
+
+This is equivalent to another famous problem, the **birthday problem**. The probability that 
 two people were born on the same day increases quickly depending
 on the number of people. It becomes almost certain, that is to say, more than $99\%$ 
 of a chance to be valid for a group of 60 people. 
