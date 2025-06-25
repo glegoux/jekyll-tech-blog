@@ -8,7 +8,7 @@ category: "Applied Mathematics"
 
 Secret Santa is a traditional event in December with family, friends, or office colleagues, 
 in which each guest gives a gift to another guest without knowing who will give him/her a gift. 
-Could you imagine that you want to organize it? Please let your guests know to choose a gift by keeping it secret. For maximum surprise, you would to keep secret the identity of gifts (ideally all different), donors and receivers until the last moment. So your guests don't know for whom the gift that he/she chose will be, and nor which one they will receive and from whom until the festive meeting where all will be present. However, several problems are raised that could reduce the surprise effect. Let us understand it thanks to applied mathematics. 
+Could you imagine that you want to organize it? For a maximum surprise, you would to keep secret the identity of gifts (ideally all different), donors and receivers until the last moment. So your guests don't know for whom the gift that he/she chose will be, and nor which one they will receive and from whom until the festive meeting where all will be present. However, several problems are raised that could reduce the surprise effect. Let us understand it thanks to applied mathematics. 
 
 # 🎅 Secret Santa: Hat-check problem
 
