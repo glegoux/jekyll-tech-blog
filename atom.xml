@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux (glegoux)</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2025-06-25T23:02:14+00:00</updated>
+ <updated>2025-06-25T23:19:46+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -965,7 +965,7 @@ organizer, you could automate the drawing of pairs (donor, recipient) to work ev
 number of guests. You could implement an algorithm (given later) that generates a directed cyclic 
 graph where the vertices are guests and the edges represent the relationship (donor -&amp;gt; recipient).&lt;/p&gt;
 
-&lt;p&gt;But you want to increase the pleasure of secrecy, you choose to draw lots for the identity of the recipients 
+&lt;p&gt;But you want to increase the secrecy, you choose to draw lots for the identity of the recipients 
 at the last moment. In this case, the guests do not know neither for whom the gift they buy will be. 
 In addition, it counters the effect of a no-show, in which a guest might not receive the pre-chosen 
 gift during the event.&lt;/p&gt;
@@ -976,9 +976,9 @@ applied mathematics.&lt;/p&gt;
 
 &lt;h1 id=&quot;-secret-santa-hat-check-problem&quot;&gt;🎅 Secret Santa: Hat-check problem&lt;/h1&gt;
 
-&lt;p&gt;Let’s begin with the first problem: to whom each guest gives his/her gift. Let’s suppose 
+&lt;p&gt;Let’s begin with the first problem: to whom does each guest give his/her gift? Let’s suppose 
 each guest has well his/her gift for a unique other guest. Of course, the draw could 
-have been done before and kept secret. But you want to do the draw at the last moment 
+have been done before and kept secret, as mentioned previously. But you want to do the draw at the last moment 
 and by revealing simultaneously who gives his/her gift to whom. That is to say, you 
 write the name of each guest on a different piece of paper for each, and mix it in 
 a Christmas hat. Then, each one takes a piece of paper randomly. Finally, all of them, at
@@ -1021,13 +1021,13 @@ this suite $(u_n)_{n\in \mathbb{N}}$ has a rate of convergence quick:&lt;/p&gt;
   &lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;So if your number of guests is greater or equal to 4, you have around $0.63\%$ of chance, 
-to have at least one guest who drew its name, that is a bit less than 2 out of 3 chances:&lt;/p&gt;
+&lt;p&gt;So if the number of guests is greater than or equal to 4, you have around $0.63\%$ of chance, 
+to have at least one guest who drew their name, that is a bit less than 2 out of 3 chances:&lt;/p&gt;
 
 \[p_{n\geq 4} \approx \dfrac{2}{3}\]
 
-&lt;p&gt;This simultaneous strategy risks limiting the surprise effect, like the probability that a guest randomly draws his/her name becomes high quickly as a function of the number of guests. An exchange
-of pieces of paper or a new drawing must be made.&lt;/p&gt;
+&lt;p&gt;This simultaneous strategy risks limiting the surprise effect, like the probability that a guest randomly 
+draws his/her name, which becomes high quickly as a function of the number of guests.&lt;/p&gt;
 
 &lt;p&gt;However, another sequential strategy could be considered, the same as presented in the introduction, 
 to generate a cyclic-oriented graph (donor -&amp;gt; recipient). The algorithm will be:
@@ -1039,8 +1039,11 @@ and then all the gifts simultaneously, instead of one moment previously.&lt;/p&g
 
 &lt;h1 id=&quot;-gift-types-birthday-problem&quot;&gt;🎁 Gift types: Birthday problem&lt;/h1&gt;
 
-&lt;p&gt;A second problem will be to know if two guests could bring the same type of gift. This is 
-equivalent to another famous problem, the &lt;strong&gt;birthday problem&lt;/strong&gt;. The probability that 
+&lt;p&gt;A second problem will be to know if two guests could bring the same type of gift. 
+Having all gifts different could make it more fun, as the guests did not know for whom the gift they bought would be. 
+These gifts are not personalized. Let’s suppose that you categorized 300 types of gifts.&lt;/p&gt;
+
+&lt;p&gt;This is equivalent to another famous problem, the &lt;strong&gt;birthday problem&lt;/strong&gt;. The probability that 
 two people were born on the same day increases quickly depending
 on the number of people. It becomes almost certain, that is to say, more than $99\%$ 
 of a chance to be valid for a group of 60 people.&lt;/p&gt;
