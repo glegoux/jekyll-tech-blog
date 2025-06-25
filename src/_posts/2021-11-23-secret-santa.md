@@ -106,4 +106,4 @@ $$g_{n\geq 20} \geq \dfrac{1}{2} \qquad g_{n\geq 60} \approx 1$$
 If you have more than 20 guests, we have more than 1 out of 2 chances to have
 at least 2 identical types of gifts.
 
-So after explaining these 2 problems, I wish you a good Secret Santa.
+So, I wish you a good Secret Santa 🎄.
