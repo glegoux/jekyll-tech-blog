@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux (glegoux)</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2025-06-25T23:49:54+00:00</updated>
+ <updated>2025-06-26T07:05:15+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -957,7 +957,7 @@ and &lt;a href=&quot;https://glegoux.com&quot;&gt;https://glegoux.com&lt;/a&gt; 
    <link href="https://glegoux.com/blog/articles/2021/11/23/secret-santa.html"/>
    <updated>2021-11-23T00:00:00+00:00</updated>
    <id>https://glegoux.com/blog/articles/2021/11/23/secret-santa.html</id>
-   <content type="html">&lt;p&gt;Secret Santa is a traditional event in December with family, friends, or office colleagues, 
+   <content type="html">&lt;p&gt;Secret Santa 🎅 is a traditional event in December with family, friends, or office colleagues, 
 in which each guest gives a gift to another guest without knowing who will give him/her a gift.&lt;/p&gt;
 
 &lt;p&gt;Could you imagine that you want to organize it? As an independent, technical, and meticulous 
@@ -974,7 +974,7 @@ gift during the event.&lt;/p&gt;
 moment. However, several problems could reduce the surprise effect. Let us understand  it thanks to 
 applied mathematics in probability, statistics, and combinatorics.&lt;/p&gt;
 
-&lt;h1 id=&quot;-secret-santa-hat-check-problem&quot;&gt;🎅 Secret Santa: Hat-check problem&lt;/h1&gt;
+&lt;h1 id=&quot;self-selection-problem&quot;&gt;⟲Self-selection problem&lt;/h1&gt;
 
 &lt;p&gt;Let’s begin with the first problem: to whom does each guest give his/her gift? Let’s suppose 
 each guest has well his/her gift for a unique other guest. Of course, the draw could 
@@ -990,8 +990,7 @@ broken for him/her, and what would imply redoing the draw or exchanging gifts? W
 want to avoid.&lt;/p&gt;
 
 &lt;p&gt;This concrete problem can be reformulated: Is there at least a fixed point in the permutation 
-of a set with $n$ elements? Where $n$ is the number of guests. It is the famous &lt;strong&gt;hat-check problem&lt;/strong&gt;. 
-You can use the probabilities to solve it.&lt;/p&gt;
+of a set with $n$ elements? Where $n$ is the number of guests. It is the famous &lt;strong&gt;hat-check problem&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;The probability that at least one guest draws his/her name is the inverse of
 the probability that no one drew his/her name, that is to say:&lt;/p&gt;
@@ -1037,7 +1036,7 @@ In this case, the person redraws a piece of paper and then puts the paper back w
 But here, the surprise effect becomes split into two moments, first discovering the identity of donors progressively,
 and then all the gifts simultaneously, instead of one moment previously.&lt;/p&gt;
 
-&lt;h1 id=&quot;-gift-types-birthday-problem&quot;&gt;🎁 Gift types: Birthday problem&lt;/h1&gt;
+&lt;h1 id=&quot;-different-gifts-problem&quot;&gt;🎁 Different gifts problem&lt;/h1&gt;
 
 &lt;p&gt;A second problem will be to know if two guests could bring the same type of gift. 
 Having all gifts different could make it more fun, as the guests did not know for whom the gift they bought would be. 
