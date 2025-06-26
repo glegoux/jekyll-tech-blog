@@ -6,7 +6,7 @@ time_reading_minutes: 5
 category: "Applied Mathematics"
 ---
 
-Secret Santa is a traditional event in December with family, friends, or office colleagues, 
+Secret Santa 🎅 is a traditional event in December with family, friends, or office colleagues, 
 in which each guest gives a gift to another guest without knowing who will give him/her a gift.
 
 Could you imagine that you want to organize it? As an independent, technical, and meticulous 
@@ -23,7 +23,7 @@ So the identities of gifts (ideally all different), donors, and receivers remain
 moment. However, several problems could reduce the surprise effect. Let us understand  it thanks to 
 applied mathematics in probability, statistics, and combinatorics. 
 
-# 🎅 Secret Santa: Hat-check problem
+# ⟲Self-selection problem
 
 Let's begin with the first problem: to whom does each guest give his/her gift? Let's suppose 
 each guest has well his/her gift for a unique other guest. Of course, the draw could 
@@ -40,7 +40,6 @@ want to avoid.
 
 This concrete problem can be reformulated: Is there at least a fixed point in the permutation 
 of a set with $n$ elements? Where $n$ is the number of guests. It is the famous **hat-check problem**. 
-You can use the probabilities to solve it.
 
 The probability that at least one guest draws his/her name is the inverse of
 the probability that no one drew his/her name, that is to say:
@@ -81,7 +80,7 @@ In this case, the person redraws a piece of paper and then puts the paper back w
 But here, the surprise effect becomes split into two moments, first discovering the identity of donors progressively,
 and then all the gifts simultaneously, instead of one moment previously.
 
-# 🎁 Gift types: Birthday problem
+# 🎁 Different gifts problem
 
 A second problem will be to know if two guests could bring the same type of gift. 
 Having all gifts different could make it more fun, as the guests did not know for whom the gift they bought would be. 
