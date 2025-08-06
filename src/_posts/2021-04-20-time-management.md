@@ -307,28 +307,23 @@ I try to evaluate the time of each life activity:
 
 * sleeping: 7 hours per day
 * washing: 2 times 3 minutes per day for teeth and 15min per day for body
-* eating: 2 times 20 minutes per day for lunch and dinner with 10 minutes per day for the breakfast
+* eating: 2 times 20 minutes per day for lunch and dinner, with 10 minutes per day for breakfast
 * seeing friends: at least one time per week for several hours
 * practicing sport: 3 hours per week
 * doing the other tasks: several hours per week (taking out the trash, preparing the meals, doing housework, shopping, do-it-yourself ...)
 
-These activities are not really dependent and with the same priority for me. Now I sequence them for each period of a day and of a week.
+These activities are not really dependent on each other and have the same priority for me. Now I sequence them for each period of a day and of a week.
 
 I have a **calendar** where I can monitor each timescale and put my tasks, a **weekly planning**
-for my datelines, and a **to-do list** for daily tasks.
+for my deadlines, and a **to-do list** for daily tasks.
 
-Now I redo the same things for my personal activities, and my work activities to finish the management of my time.
-
-To conclude, as the time management is set of meta-concepts learned mainly with a self-education practice, here is a paradox quote to consider (translated from French):
-
-> Dare I set forth here the greatest, the most important, the most useful rule of all education? It is not to save time, but to waste it.
-
-Jean-Jacques Rousseau from Emile, or On Education (1762)
+Now I redo the same things for both my personal and work activities to manage my time more effectively.
 
 # Go Further
 
 This article is only an introduction to time management applied to oneself by oneself. But the situation can
-be **more complex** and applied in all situations. For example, if you think the time management for other people in a professional context in the tech sector, if you are:
+be **more complex** and applied in all situations. For example, if you think about the time management 
+for other people or projects, in a professional context for the tech sector:
 
 * **Tech/Team/Dev Leader** for a team composed of a group of people
 * **Tech/Project Manager/Director** for a department composed of a group of teams
@@ -337,8 +332,15 @@ be **more complex** and applied in all situations. For example, if you think the
 
 It requires delegating tasks, understanding the personal context of other people, and driving
 the time management for a group of people at **different scales**. These organizations can have
-different structures and different stakes. For it, you must redefine the **time management** to
+different structures and different stakes. For this, you must redefine the **time management** to
 resolve your new needs for **yourself** and for **other people**.
+
+To conclude, as time management is a set of **meta-concepts** learned mainly through **self-education practice**, 
+here is a paradoxical quote to consider (translated from French):
+
+> Dare I set forth here the greatest, the most important, the most useful rule of all education? It is not to save time, but to waste it.
+
+Jean-Jacques Rousseau from Emile, or On Education (1762)
 
 # References
 
