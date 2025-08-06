@@ -319,10 +319,16 @@ for my datelines, and a **to-do list** for daily tasks.
 
 Now I redo the same things for my personal activities, and my work activities to finish the management of my time.
 
+To conclude, as the time management is set of meta-concepts learned mainly with a self-education practice, here is a paradox quote to consider (translated from French):
+
+> Dare I set forth here the greatest, the most important, the most useful rule of all education? It is not to save time, but to waste it.
+
+Jean-Jacques Rousseau from Emile, or On Education (1762)
+
 # Go Further
 
 This article is only an introduction to time management applied to oneself by oneself. But the situation can
-be **more complex**. For example, if you think the time management for other people, if you are:
+be **more complex** and applied in all situations. For example, if you think the time management for other people in a professional context in the tech sector, if you are:
 
 * **Tech/Team/Dev Leader** for a team composed of a group of people
 * **Tech/Project Manager/Director** for a department composed of a group of teams
