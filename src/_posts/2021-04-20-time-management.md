@@ -322,7 +322,7 @@ Now I redo the same things for both my personal and work activities to manage my
 # Go Further
 
 This article is only an introduction to time management applied to oneself by oneself. But the situation can
-be **more complex** and applied in all situations. For example, if you think about the time management 
+be **more complex** and applied in **all situations**. For example, if you think about the time management 
 for other people or projects, in a professional context for the tech sector:
 
 * **Tech/Team/Dev Leader** for a team composed of a group of people
@@ -333,7 +333,7 @@ for other people or projects, in a professional context for the tech sector:
 It requires delegating tasks, understanding the personal context of other people, and driving
 the time management for a group of people at **different scales**. These organizations can have
 different structures and different stakes. For this, you must redefine the **time management** to
-resolve your new needs for **yourself** and for **other people**.
+resolve your new needs for **yourself** and for **other people** and/or **projects**.
 
 To conclude, as time management is a set of **meta-concepts** learned mainly through **self-education practice**, 
 here is a paradoxical quote to consider (translated from French):
