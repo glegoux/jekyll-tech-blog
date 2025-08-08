@@ -7,7 +7,7 @@ time_reading_minutes: 9
 category: "Machine Learning"
 ---
 
-**Generative AI**  is the state of the art of machine learning and has excelled recently with the apparition of  **AI ChatBots with high performance**.
+**Generative AI** is the state of the art of machine learning and has recently seen significant advancements with the emergence of **AI ChatBots with high performance**.
 
 {% include content/image.html
 src="https://miro.medium.com/v2/resize:fit:700/1*UenOkL0Tn-XuP-hOho9b3Q.png"
@@ -23,7 +23,7 @@ Let’s discover its history, from simple textual machine learning models specia
 -   🧪LLMs Timeline: Closed-source vs. Open-source
 -   🎯 From Specialized Model to Generalized ML Model
 -   📈 Scaling Laws & Performance
--   🏁 Technologic and Economic Race
+-   🏁 Technological and Economic Race
 -   🚀 Go Further with Limited & Augmented LLMs
 
 # 💬 AI ChatBots
@@ -57,7 +57,7 @@ title="Human brain vs. Deep learning"
 
 # 🔥From NLP to Multimodal GAI ChatBots based on LLM
 
-Thanks to  **Large Language Models (LLMs)**  working with Generative AI, chatBots continue getting closer to the objective of simulating  human intelligence**.**  The  **NLP AI models**  have progressively migrated from simple parsing to c**omplex processing on the language structure**, from shallow learning to  **deep learning**, from a single-language vocabulary of words to a  **vocabulary of tokens with multi-language embeddings**, from an RNN (LSTM) to the  **Transformer with multi-head attention layers**  approach.
+Thanks to  **Large Language Models (LLMs)**  working with Generative AI, chatBots continue getting closer to the objective of simulating  human intelligence**.**  The  **NLP AI models**  have progressively migrated from simple parsing to **complex processing on the language structure**, from shallow learning to  **deep learning**, from a single-language vocabulary of words to a  **vocabulary of tokens with multi-language embeddings**, from an RNN (LSTM) to the  **Transformer with multi-head attention layers**  approach.
 
 {% include content/image.html
 src="https://miro.medium.com/v2/resize:fit:700/1*4N5CPyYSVFzfEapqGM5gug.png"
