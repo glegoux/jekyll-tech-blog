@@ -5,8 +5,8 @@
     <description>Personal blog about software engineering</description>
     <link>https://glegoux.com/</link>
     <atom:link href="https://glegoux.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 06 Aug 2025 07:37:18 +0000</pubDate>
-    <lastBuildDate>Wed, 06 Aug 2025 07:37:18 +0000</lastBuildDate>
+    <pubDate>Fri, 08 Aug 2025 10:12:04 +0000</pubDate>
+    <lastBuildDate>Fri, 08 Aug 2025 10:12:04 +0000</lastBuildDate>
     <generator>Jekyll v4.3.4</generator>
     
       <item>
@@ -173,7 +173,7 @@ new location with the binary format OpenPGP, and specify the option Signed-By (s
     
       <item>
         <title>History of the Generative AI</title>
-        <description>&lt;p&gt;&lt;strong&gt;Generative AI&lt;/strong&gt;  is the state of the art of machine learning and has excelled recently with the apparition of  &lt;strong&gt;AI ChatBots with high performance&lt;/strong&gt;.&lt;/p&gt;
+        <description>&lt;p&gt;&lt;strong&gt;Generative AI&lt;/strong&gt; is the state of the art of machine learning and has recently seen significant advancements with the emergence of &lt;strong&gt;AI ChatBots with high performance&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;figure title=&quot;Generative AI for all types of content&quot; class=&quot;content&quot;&gt;
   &lt;div&gt;
@@ -195,7 +195,7 @@ new location with the binary format OpenPGP, and specify the option Signed-By (s
   &lt;li&gt;🧪LLMs Timeline: Closed-source vs. Open-source&lt;/li&gt;
   &lt;li&gt;🎯 From Specialized Model to Generalized ML Model&lt;/li&gt;
   &lt;li&gt;📈 Scaling Laws &amp;amp; Performance&lt;/li&gt;
-  &lt;li&gt;🏁 Technologic and Economic Race&lt;/li&gt;
+  &lt;li&gt;🏁 Technological and Economic Race&lt;/li&gt;
   &lt;li&gt;🚀 Go Further with Limited &amp;amp; Augmented LLMs&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -245,7 +245,7 @@ new location with the binary format OpenPGP, and specify the option Signed-By (s
 
 &lt;h1 id=&quot;from-nlp-to-multimodal-gai-chatbots-based-on-llm&quot;&gt;🔥From NLP to Multimodal GAI ChatBots based on LLM&lt;/h1&gt;
 
-&lt;p&gt;Thanks to  &lt;strong&gt;Large Language Models (LLMs)&lt;/strong&gt;  working with Generative AI, chatBots continue getting closer to the objective of simulating  human intelligence&lt;strong&gt;.&lt;/strong&gt;  The  &lt;strong&gt;NLP AI models&lt;/strong&gt;  have progressively migrated from simple parsing to c&lt;strong&gt;omplex processing on the language structure&lt;/strong&gt;, from shallow learning to  &lt;strong&gt;deep learning&lt;/strong&gt;, from a single-language vocabulary of words to a  &lt;strong&gt;vocabulary of tokens with multi-language embeddings&lt;/strong&gt;, from an RNN (LSTM) to the  &lt;strong&gt;Transformer with multi-head attention layers&lt;/strong&gt;  approach.&lt;/p&gt;
+&lt;p&gt;Thanks to  &lt;strong&gt;Large Language Models (LLMs)&lt;/strong&gt;  working with Generative AI, chatBots continue getting closer to the objective of simulating  human intelligence&lt;strong&gt;.&lt;/strong&gt;  The  &lt;strong&gt;NLP AI models&lt;/strong&gt;  have progressively migrated from simple parsing to &lt;strong&gt;complex processing on the language structure&lt;/strong&gt;, from shallow learning to  &lt;strong&gt;deep learning&lt;/strong&gt;, from a single-language vocabulary of words to a  &lt;strong&gt;vocabulary of tokens with multi-language embeddings&lt;/strong&gt;, from an RNN (LSTM) to the  &lt;strong&gt;Transformer with multi-head attention layers&lt;/strong&gt;  approach.&lt;/p&gt;
 
 &lt;figure title=&quot;NLP timeline with the Deep Learning&quot; class=&quot;content&quot;&gt;
   &lt;div&gt;
