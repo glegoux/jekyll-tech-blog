@@ -1,7 +1,7 @@
 ---
 pinned: true
 title: "Access to a computer from USB key"
-description: "Somebody with USB key can take control of your computer"
+description: "Somebody with a USB key can take control of your computer"
 authors: ["glegoux"]
 time_reading_minutes: 5
 category: "Security"
@@ -33,9 +33,9 @@ Launch a `root shell`:
 
 You access a device as a `root` user.
 
-<pre class="info">
+<div class="info">
 If you need to access the internet, select the network entry before. To verify that you have access to the web you can <i>ping 8.8.8.8</i> on the Google DNS server, then make <i>nslookup  8.8.8.8</i> to check that the DNS resolution works. If that does not work, add this line <i>nameserver 8.8.8.8</i> to the file <i>/etc/resolv.conf</i> (this will be deleted when you restart the computer) and restart your service <i>network-manager</i> with <i>service network-manager restart</i>.
-</pre>
+</div>
 
 For the moment, the file system is only in `read only`, type the following command to mount the file system in` read / write` at the root of your key:
  
@@ -49,9 +49,9 @@ Now you can copy the file system to an external hard drive, and then you can cho
 passwd <username>
 ~~~
  
-<pre class="info">
+<div class="info">
 If you do not know the users on this machine, you can do <i>ls /home</i>. Certainly, a user of this machine corresponds to a directory name in <i>/home/</i>, or even view the file <i>/etc/passwd</i>, or else you can create a user as you are <i>root</i>.
-</pre>
+</div>
 
 Type in the new password and confirm.
 
@@ -63,8 +63,8 @@ shutdown -h now
 
 You can now turn on the computer normally and log in with the chosen user and password.
 
-<pre class="error">
+<div class="error">
 Beware, the morality of this article is that a person physically accessing your computer does not need login/password to access your computer. If you want to protect yourself from this attack, you must <b>encrypt your hard drive</b>.
-</pre>
+</div>
 
 Well done :smile:!
