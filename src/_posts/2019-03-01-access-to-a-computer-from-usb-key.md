@@ -10,12 +10,12 @@ category: "Security"
 Imagine that you are in one of the following situations:
 
 1. You have forgotten your password to connect to the personal workspace of your computer, and you want to reset it.
-2. After a wrong manipulation, you can not access to personal data of your computer, and you want to retrieve this access.
-3. You found a computer without supervision for whom you are not the owner but want to see the file system's content.
+2. After a wrong manipulation, you can not access the personal data of your computer, and you want to retrieve this access.
+3. You found a computer without supervision for which you are not the owner, but you want to see the file system's content.
 
-With a bootable USB key on Ubuntu, you can resolve these situations, first by mounting the file system of the targeted computer with all permissions, then by changing the password of any local user, and finally by connecting to the targeted workspace and exploring the file system.
+With a bootable USB key on Ubuntu, you can resolve these situations by first mounting the file system of the targeted computer with all permissions, then changing the password of any local user, and finally by connecting to the targeted workspace and exploring the file system.
 
-First, plug your USB drive into the target computer, and choose your key as the boot device for the target computer to boot to the Ubuntu system on your USB drive. On a DELL computer, press `F12` to access this selection. This information is visible on the welcome screen of your computer's manufacturer.
+First, plug your USB drive into the target computer and select your key as the boot device. This will enable the target computer to boot into the Ubuntu system on your USB drive. On a DELL computer, press `F12` to access this selection. This information is visible on the welcome screen of your computer's manufacturer.
 
 {% include content/image.html title="DELL welcome screen" src="welcome-screen-dell.png" %}
 
