@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux (glegoux)</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2025-08-08T10:12:04+00:00</updated>
+ <updated>2025-08-29T12:18:45+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -3029,9 +3029,9 @@ The typical format of a typical Kerberos principal is primary/instance@REALM.&lt
 
 &lt;p&gt;You access a device as a &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;root&lt;/code&gt; user.&lt;/p&gt;
 
-&lt;pre class=&quot;info&quot;&gt;
+&lt;div class=&quot;info&quot;&gt;
 If you need to access the internet, select the network entry before. To verify that you have access to the web you can &lt;i&gt;ping 8.8.8.8&lt;/i&gt; on the Google DNS server, then make &lt;i&gt;nslookup  8.8.8.8&lt;/i&gt; to check that the DNS resolution works. If that does not work, add this line &lt;i&gt;nameserver 8.8.8.8&lt;/i&gt; to the file &lt;i&gt;/etc/resolv.conf&lt;/i&gt; (this will be deleted when you restart the computer) and restart your service &lt;i&gt;network-manager&lt;/i&gt; with &lt;i&gt;service network-manager restart&lt;/i&gt;.
-&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;For the moment, the file system is only in &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;read only&lt;/code&gt;, type the following command to mount the file system in&lt;code class=&quot;language-text highlighter-rouge&quot;&gt; read / write&lt;/code&gt; at the root of your key:&lt;/p&gt;
 
@@ -3043,9 +3043,9 @@ If you need to access the internet, select the network entry before. To verify t
 &lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;passwd &amp;lt;username&amp;gt;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;pre class=&quot;info&quot;&gt;
+&lt;div class=&quot;info&quot;&gt;
 If you do not know the users on this machine, you can do &lt;i&gt;ls /home&lt;/i&gt;. Certainly, a user of this machine corresponds to a directory name in &lt;i&gt;/home/&lt;/i&gt;, or even view the file &lt;i&gt;/etc/passwd&lt;/i&gt;, or else you can create a user as you are &lt;i&gt;root&lt;/i&gt;.
-&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Type in the new password and confirm.&lt;/p&gt;
 
@@ -3056,9 +3056,9 @@ If you do not know the users on this machine, you can do &lt;i&gt;ls /home&lt;/i
 
 &lt;p&gt;You can now turn on the computer normally and log in with the chosen user and password.&lt;/p&gt;
 
-&lt;pre class=&quot;error&quot;&gt;
+&lt;div class=&quot;error&quot;&gt;
 Beware, the morality of this article is that a person physically accessing your computer does not need login/password to access your computer. If you want to protect yourself from this attack, you must &lt;b&gt;encrypt your hard drive&lt;/b&gt;.
-&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Well done :smile:!&lt;/p&gt;
 </content><author>
