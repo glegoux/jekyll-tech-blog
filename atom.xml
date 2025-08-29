@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux (glegoux)</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2025-08-29T12:18:45+00:00</updated>
+ <updated>2025-08-29T12:20:09+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -2973,13 +2973,13 @@ The typical format of a typical Kerberos principal is primary/instance@REALM.&lt
 
 &lt;ol&gt;
   &lt;li&gt;You have forgotten your password to connect to the personal workspace of your computer, and you want to reset it.&lt;/li&gt;
-  &lt;li&gt;After a wrong manipulation, you can not access to personal data of your computer, and you want to retrieve this access.&lt;/li&gt;
-  &lt;li&gt;You found a computer without supervision for whom you are not the owner but want to see the file system’s content.&lt;/li&gt;
+  &lt;li&gt;After a wrong manipulation, you can not access the personal data of your computer, and you want to retrieve this access.&lt;/li&gt;
+  &lt;li&gt;You found a computer without supervision for which you are not the owner, but you want to see the file system’s content.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;With a bootable USB key on Ubuntu, you can resolve these situations, first by mounting the file system of the targeted computer with all permissions, then by changing the password of any local user, and finally by connecting to the targeted workspace and exploring the file system.&lt;/p&gt;
+&lt;p&gt;With a bootable USB key on Ubuntu, you can resolve these situations by first mounting the file system of the targeted computer with all permissions, then changing the password of any local user, and finally by connecting to the targeted workspace and exploring the file system.&lt;/p&gt;
 
-&lt;p&gt;First, plug your USB drive into the target computer, and choose your key as the boot device for the target computer to boot to the Ubuntu system on your USB drive. On a DELL computer, press &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;F12&lt;/code&gt; to access this selection. This information is visible on the welcome screen of your computer’s manufacturer.&lt;/p&gt;
+&lt;p&gt;First, plug your USB drive into the target computer and select your key as the boot device. This will enable the target computer to boot into the Ubuntu system on your USB drive. On a DELL computer, press &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;F12&lt;/code&gt; to access this selection. This information is visible on the welcome screen of your computer’s manufacturer.&lt;/p&gt;
 
 &lt;figure title=&quot;DELL welcome screen&quot; class=&quot;content&quot;&gt;
   &lt;div&gt;
