@@ -25,7 +25,7 @@ jQuery(document).ready(function () {
           return detail !== "";
         }).join(' - ') +
         '</div>' +
-        '<a>' +
+        '</a>' +
         '</div>'
       )
     });
