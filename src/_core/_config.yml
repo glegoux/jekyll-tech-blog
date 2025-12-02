@@ -100,15 +100,15 @@ project_core:
   title: "🧪 Jekyll Tech Blog"
   libs:
     version:
-      jquery: "3.5.1"
-      popper: "1.14.3"
-      bootstrap: "4.3.1"
-      font-awesome: "6.5.1"
-      smooth-scroll: "14.2.1"
-      moment: "2.24.0"
-      fuse: "3.4.6"
-      lazysizes: "5.2.0"
-      mathjax: "4.0.0"
+      jquery: "3.7.1" # https://jquery.com
+      popper: "1.14.3" # https://popper.js.org (REPLACED WITH floating UI)
+      bootstrap: "4.3.1" # https://getbootstrap.com
+      font-awesome: "6.5.1" # https://fontawesome.com
+      smooth-scroll: "14.2.1" # https://github.com/cferdinandi/smooth-scroll (DEPRECATED)
+      moment: "2.24.0" # https://momentjs.com
+      fuse: "3.4.6" # https://www.fusejs.io
+      lazysizes: "5.2.0" # https://github.com/aFarkas/lazysizes (NO MORE MAINTAINED)
+      mathjax: "4.0.0" # https://www.mathjax.org
   links:
     project: "https://github.com/glegoux/jekyll-tech-blog"
     cover: "https://github.com/glegoux/jekyll-tech-blog/raw/main/doc/img/jekyll-tech-blog-cover.png"
