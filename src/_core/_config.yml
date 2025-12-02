@@ -106,7 +106,7 @@ project_core:
       font-awesome: "6.5.1" # https://fontawesome.com
       smooth-scroll: "14.2.1" # https://github.com/cferdinandi/smooth-scroll (DEPRECATED)
       moment: "2.24.0" # https://momentjs.com
-      fuse: "3.4.6" # https://www.fusejs.io
+      fuse: "7.1.0" # https://www.fusejs.io
       lazysizes: "5.2.0" # https://github.com/aFarkas/lazysizes (NO MORE MAINTAINED)
       mathjax: "4.0.0" # https://www.mathjax.org
   links:

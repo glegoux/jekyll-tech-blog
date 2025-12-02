@@ -15,13 +15,14 @@ jQuery(document).ready(function () {
       '<div class="article-request-search-result">' + articles.length + ' search result' + plural + ' for \'' + request + '\'</div>'
     );
     articles.forEach(article => {
+      console.log(article);
       resultAdvancedSearchElement.append(
         '<div class="article-search-result">' +
-        '<a href="' + article.url + '">' +
-        '<div class="article-title">' + article.title + '</div>' +
-        '<div class="article-description">' + article.description + '</div>' +
+        '<a href="' + article.item.url + '">' +
+        '<div class="article-title">' + article.item.title + '</div>' +
+        '<div class="article-description">' + article.item.description + '</div>' +
         '<div class="article-details">' +
-        [article.yearMonthDay, article.category, article.tags].filter(detail => {
+        [article.item.yearMonthDay, article.item.category, article.item.tags].filter(detail => {
           return detail !== "";
         }).join(' - ') +
         '</div>' +
@@ -49,7 +50,6 @@ jQuery(document).ready(function () {
     threshold: 0.6,
     location: 0,
     distance: 0,
-    maxPatternLength: 32,
     minMatchCharLength: 1,
     keys: [
       "title",
