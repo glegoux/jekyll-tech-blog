@@ -108,7 +108,7 @@ project_core:
       moment: "2.24.0"
       fuse: "3.4.6"
       lazysizes: "5.2.0"
-      mathjax: "3.1.2"
+      mathjax: "4.0.0"
   links:
     project: "https://github.com/glegoux/jekyll-tech-blog"
     cover: "https://github.com/glegoux/jekyll-tech-blog/raw/main/doc/img/jekyll-tech-blog-cover.png"
