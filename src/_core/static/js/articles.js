@@ -17,11 +17,11 @@ jQuery(document).ready(function () {
     articles.forEach(article => {
       resultAdvancedSearchElement.append(
         '<div class="article-search-result">' +
-        '<a href="' + article.item.url + '">' +
-        '<div class="article-title">' + article.item.title + '</div>' +
-        '<div class="article-description">' + article.item.description + '</div>' +
+        '<a href="' + article.url + '">' +
+        '<div class="article-title">' + article.title + '</div>' +
+        '<div class="article-description">' + article.description + '</div>' +
         '<div class="article-details">' +
-        [article.item.yearMonthDay, article.item.category, article.item.tags].filter(detail => {
+        [article.yearMonthDay, article.category, article.tags].filter(detail => {
           return detail !== "";
         }).join(' - ') +
         '</div>' +
@@ -66,7 +66,7 @@ jQuery(document).ready(function () {
       return;
     }
     let articles = searchEngineText.search(textSearch);
-    showSearchResult(articles, textSearch);
+    showSearchResult(articles.map(article => article.item), textSearch);
   }
 
   function decorateTextSelector(searchEngineText) {
