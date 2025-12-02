@@ -15,7 +15,6 @@ jQuery(document).ready(function () {
       '<div class="article-request-search-result">' + articles.length + ' search result' + plural + ' for \'' + request + '\'</div>'
     );
     articles.forEach(article => {
-      console.log(article);
       resultAdvancedSearchElement.append(
         '<div class="article-search-result">' +
         '<a href="' + article.item.url + '">' +
