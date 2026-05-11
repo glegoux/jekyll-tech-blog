@@ -91,7 +91,7 @@ two people were born on the same day increases quickly depending
 on the number of people. It becomes almost certain, that is to say, more than $99\%$ 
 of a chance to be valid for a group of 60 people. 
 
-More generally, the probability that a group of size $n$ built with replacement and a sequence of independant and uniform trials from a set of size $N$
+More generally, the probability that a group of size $n$, built with replacement and a sequence of independent and uniformly distributed trials from a set of size $N$,
 contains at least two identical elements:
 
 $$g_n = 1 - \frac{N}{N}\,\frac{N-1}{N}\,\cdots\,\frac{N-n+1}{N} = 1 - 1\,\left(1-\frac{1}{N}\right)\,\cdots\,\left(1-\frac{n-1}{N}\right)$$
