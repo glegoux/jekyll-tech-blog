@@ -96,9 +96,9 @@ contains at least two identical elements:
 
 $$g_n = 1 - \frac{N}{N}\,\frac{N-1}{N}\,\cdots\,\frac{N-n+1}{N} = 1 - 1\,\left(1-\frac{1}{N}\right)\,\cdots\,\left(1-\frac{n-1}{N}\right)$$
 
-It is the inverse of the probability that no $n$ element is the same.
+It is the inverse of the probability that no element is the same.
 
-The element $E$ is the set of possible types of Christmas gifts, and $n$ is the number of guests. 
+Here, $N$ is the number of possible types of Christmas gifts, and $n$ is the number of guests. 
 Except for some guests with a very original gift, suppose that your guest chose a 
 pre-defined list influenced by the constraints and the ads, with a few hundred types of items, 
 let's say $N=300$:
