@@ -37,9 +37,9 @@ jobs:
         source ~/.profile
         make build-prod
         cp .github/files/* ./build/static-files/
-    - uses: actions/setup-node@v2
+    - uses: actions/setup-node@v4
       with:
-        node-version: '16'
+        node-version: 20
     - name: Test project
       run: |
         echo "** Install test dependencies:"
