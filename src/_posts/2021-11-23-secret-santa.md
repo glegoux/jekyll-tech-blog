@@ -91,10 +91,10 @@ two people were born on the same day increases quickly depending
 on the number of people. It becomes almost certain, that is to say, more than $99\%$ 
 of a chance to be valid for a group of 60 people. 
 
-More generally, the probability that a subset of size $n$ of a set $E$ of size $N$
+More generally, the probability that a group of size $n$ built with replacement and a sequence of independant and uniform trials from a set of size $N$
 contains at least two identical elements:
 
-$$g_n = 1 - \frac{N}{N}\,\frac{N-1}{N}\,\cdots\,\frac{N-n+1}{N} = 1 - \dfrac{N!}{(N-n)!}\,\dfrac{1}{N^n}$$
+$$g_n = 1 - \frac{N}{N}\,\frac{N-1}{N}\,\cdots\,\frac{N-n+1}{N} = 1 - 1\,\left(1-\frac{1}{N}\right)\,\cdots\,\left(1-\frac{n-1}{N}\right)$$
 
 It is the inverse of the probability that no $n$ element is the same.
 
