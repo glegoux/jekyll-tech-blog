@@ -1,5 +1,4 @@
 ---
-pinned: true
 title: "Getting started"
 description: "How to write articles on this blog from an easy-to-use and rich syntax?"
 authors: [ "glegoux" ]
