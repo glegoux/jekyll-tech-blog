@@ -5,86 +5,9 @@
     <description>Personal blog about software engineering</description>
     <link>https://glegoux.com/</link>
     <atom:link href="https://glegoux.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 11 May 2026 13:23:01 +0000</pubDate>
-    <lastBuildDate>Mon, 11 May 2026 13:23:01 +0000</lastBuildDate>
+    <pubDate>Thu, 28 May 2026 14:21:35 +0000</pubDate>
+    <lastBuildDate>Thu, 28 May 2026 14:21:35 +0000</lastBuildDate>
     <generator>Jekyll v4.3.4</generator>
-    
-      <item>
-        <title>Top Five Ways to Beat Blue Monday</title>
-        <description>&lt;p&gt;Knowing that the year’s most depressing day is soon can be upsetting. No recurrent day will see everyone feeling depressed. However, periodic factors can contribute to defining the social climate of a society, where statistically, a significant proportion of the population suffers from depression compared to other moments.&lt;/p&gt;
-
-&lt;p&gt;Let’s understand the Blue Monday effect and how to go over it:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;📜 History&lt;/li&gt;
-  &lt;li&gt;🧮 Formulae&lt;/li&gt;
-  &lt;li&gt;📊 Analysis&lt;/li&gt;
-  &lt;li&gt;🪄 Tips&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;-history&quot;&gt;📜 History&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Blue_Monday_%28date%29&quot;&gt;Blue Monday&lt;/a&gt;  is a day recognized as the most depressing day of the year, mainly because of the return to work and routine after a weekend and the end of the festivities of the previous year. It is the third Monday of January.&lt;/p&gt;
-
-&lt;p&gt;It was initially created by psychologist Dr. Cliff Arnall in 2005 when he developed the concept as part of a marketing campaign for the now-defunct British company  &lt;a href=&quot;https://en.wikipedia.org/wiki/Sky_Travel&quot;&gt;Sky Travel&lt;/a&gt;. It’s a fantastic example of how an advertising campaign can become embedded in cultural traditions.&lt;/p&gt;
-
-&lt;h1 id=&quot;-formulae&quot;&gt;🧮 Formulae&lt;/h1&gt;
-
-&lt;p&gt;Dr. Cliff Arnall suggested a function that models how depressing each day of the year is. By finding the date on which a mathematical formula based on economic, psychological, and climatological factors, then validated by his observations, takes its maximum value on Blue Monday:&lt;/p&gt;
-
-&lt;figure title=&quot;Depression formula — not proven scientifically 🤓&quot; class=&quot;content&quot;&gt;
-  &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://miro.medium.com/v2/resize:fit:223/1*g_U1U3hTBB28XbBAaIiVVg.png&quot; title=&quot;Depression formula — not proven scientifically 🤓&quot; alt=&quot;Depression formula — not proven scientifically 🤓&quot; /&gt;
-  &lt;/div&gt;
-  &lt;figcaption&gt;
-    Depression formula — not proven scientifically 🤓
-    
-      [&lt;a href=&quot;https://en.wikipedia.org/wiki/Blue_Monday_(date)&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;source&lt;/a&gt;]
-    
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Where the parameters are the weather (W), the debt (D), the monthly salary (d), the time since Christmas (T), the time since failing our New Year’s resolutions (Q), low motivational levels (M), and the feeling of the need to take action (Na).&lt;/p&gt;
-
-&lt;p&gt;Later, Dr. Cliff Arnall created the “Yellow Day”, a celebration of the happiest day of the year to counterbalance the saddest day. This time, he was in cahoots with an ice cream manufacturer,  &lt;a href=&quot;https://en.wikipedia.org/wiki/Wall%27s_(ice_cream)&quot;&gt;Wall’s Ice Cream&lt;/a&gt;, where the period around the 20th of June would be a perfectly happy day thanks to the pleasant temperature, more daylight hours, and holiday perspectives. On a similar approach, the formula is:&lt;/p&gt;
-
-&lt;figure title=&quot;Happiness formula — not proven scientifically 🤓&quot; class=&quot;content&quot;&gt;
-  &lt;div&gt;
-    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://miro.medium.com/v2/resize:fit:214/1*LfeLEl_pl-iB8PSR5kDf5w.png&quot; title=&quot;Happiness formula — not proven scientifically 🤓&quot; alt=&quot;Happiness formula — not proven scientifically 🤓&quot; /&gt;
-  &lt;/div&gt;
-  &lt;figcaption&gt;
-    Happiness formula — not proven scientifically 🤓
-    
-      [&lt;a href=&quot;https://web.archive.org/web/20110120064745/http://www.ctv.ca/CTVNews/TopStories/20060623/happiest_day_060623&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;source&lt;/a&gt;]
-    
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Where the parameters are the outdoor activities (O) in full connection with nature (N) and also the social interactions (I), the childhood and other positive memories  (S), multiplied by the temperature (T), and divided holiday excitement (P).&lt;/p&gt;
-
-&lt;p&gt;Several versions of these mathematical formulae exist. Each one gives periodic dates because they are founded on pseudo-periodic coupled parameters. However, the scientific community considers them as baseless pseudoscience. And they are right. In addition, the mental health of a population can be influenced by many unpredictable phenomena like an economic crisis, an epidemic, or a natural catastrophe. Even if a mathematical formula and/or these annual periodicities were proven, they would be disturbed by it. But time slices exist where the mental health of a whole population is affected. It isn’t easy to quantify. Only trends can be observed.&lt;/p&gt;
-
-&lt;h1 id=&quot;-read-more&quot;&gt;👀 Read more&lt;/h1&gt;
-
-&lt;p&gt;Read the rest of the article …&lt;/p&gt;
-
-&lt;div style=&quot;text-align: center;margin-bottom: 1em;&quot;&gt;
-  &lt;a href=&quot;https://medium.com/@glegoux/top-five-ways-to-beat-blue-monday-0f0de0950827&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; title=&quot;Read more&quot;&gt;
-    &lt;button class=&quot;btn btn-dark&quot;&gt;
-      &lt;b class=&quot;black&quot;&gt;Read more&lt;/b&gt;
-    &lt;/button&gt;
-  &lt;/a&gt;
-&lt;/div&gt;
-
-</description>
-        <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
-        <link>https://glegoux.com/blog/articles/2024/01/10/top-five-ways-to-beat-blue-monday.html</link>
-        <guid isPermaLink="true">https://glegoux.com/blog/articles/2024/01/10/top-five-ways-to-beat-blue-monday.html</guid>
-        
-        
-        <category>News</category>
-        
-      </item>
     
       <item>
         <title>Ubuntu: apt-key is deprecated</title>
@@ -970,6 +893,147 @@ and &lt;a href=&quot;https://glegoux.com&quot;&gt;https://glegoux.com&lt;/a&gt; 
         
         
         <category>News</category>
+        
+      </item>
+    
+      <item>
+        <title>Secret Santa</title>
+        <description>&lt;p&gt;Secret Santa 🎅 is a traditional event in December with family, friends, or office colleagues, 
+in which each guest gives a gift to another guest without knowing who will give him/her a gift.&lt;/p&gt;
+
+&lt;p&gt;Could you imagine that you want to organize it? As an independent, technical, and meticulous 
+organizer, you could automate the drawing of pairs (donor, recipient) to work even for an odd 
+number of guests. You could implement an algorithm (given later) that generates a directed cyclic 
+graph where the vertices are guests and the edges represent the relationship (donor -&amp;gt; recipient).&lt;/p&gt;
+
+&lt;p&gt;But you want to increase the secrecy, you choose to draw lots for the identity of the recipients 
+at the last moment. In this case, the guests do not know neither for whom the gift they buy will be. 
+In addition, it counters the effect of a no-show, in which a guest might not receive the pre-chosen 
+gift during the event.&lt;/p&gt;
+
+&lt;p&gt;So the identities of gifts (ideally all different), donors, and receivers remain secret until the last 
+moment. However, several problems could reduce the surprise effect. Let us understand  it thanks to 
+applied mathematics in probability, statistics, and combinatorics.&lt;/p&gt;
+
+&lt;h1 id=&quot;self-selection-problem&quot;&gt;⟲Self-selection problem&lt;/h1&gt;
+
+&lt;p&gt;Let’s begin with the first problem: to whom does each guest give his/her gift? Let’s suppose 
+each guest has well his/her gift for a unique other guest. Of course, the draw could 
+have been done before and kept secret, as mentioned previously. But you want to do the draw at the last moment 
+and by revealing simultaneously who gives his/her gift to whom. That is to say, you 
+write the name of each guest on a different piece of paper for each, and mix it in 
+a Christmas hat. Then, each one takes a piece of paper randomly. Finally, all of them, at
+the same time, unfold the piece of paper and discover the name of the guest to whom 
+he/she gives his/her gift.&lt;/p&gt;
+
+&lt;p&gt;Will a guest draw his/her name at random? If this is the case, the surprise effect will be 
+broken for him/her, and what would imply redoing the draw or exchanging gifts? What we 
+want to avoid.&lt;/p&gt;
+
+&lt;p&gt;This concrete problem can be reformulated: Is there at least a fixed point in the permutation 
+of a set with $n$ elements? Where $n$ is the number of guests. It is the famous &lt;strong&gt;hat-check problem&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;The probability that at least one guest draws his/her name is the inverse of
+the probability that no one drew his/her name, that is to say:&lt;/p&gt;
+
+\[p_n =  1 - \dfrac{\mathcal{D}_{n}}{n!} = 1 - u_n\]
+
+&lt;p&gt;$\mathcal{D}_{n}$ is the number of derangements, that is to say, the number of permutations 
+without fixed points, knowing that $n!$ is the number of permutation with $n$ elements. 
+You can prove with the &lt;strong&gt;inclusion-exclusion generalized principle&lt;/strong&gt; that:&lt;/p&gt;
+
+\[\mathcal{D}_{n} = n! \sum_{k=0}^{n} \dfrac{(-1)^k}{k!}\]
+
+&lt;p&gt;According to the &lt;strong&gt;Taylor-Maclaurin development&lt;/strong&gt;, we have:&lt;/p&gt;
+
+\[\displaystyle\lim_{n\mapsto +\infty}u_n = \displaystyle\lim_{n\mapsto +\infty}\sum_{k=0}^{n}\dfrac{(-1)^k}{k!} = \dfrac{1}{e}\]
+
+&lt;p&gt;with $e \approx 2.71828…$. In addition, 
+this suite $(u_n)_{n\in \mathbb{N}}$ has a rate of convergence quick:&lt;/p&gt;
+
+&lt;figure title=&quot;Inverse of the probability that a guest draws randomly his/her name&quot; class=&quot;content&quot;&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2021-11-23-secret-santa/images/u_n-convergence.png&quot; title=&quot;Inverse of the probability that a guest draws randomly his/her name&quot; alt=&quot;Inverse of the probability that a guest draws randomly his/her name&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;
+    Inverse of the probability that a guest draws randomly his/her name
+    
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;So if the number of guests is greater than or equal to 4, you have around $0.63\%$ of chance, 
+to have at least one guest who drew their name, that is a bit less than 2 out of 3 chances:&lt;/p&gt;
+
+\[p_{n\geq 4} \approx \dfrac{2}{3}\]
+
+&lt;p&gt;This simultaneous strategy risks limiting the surprise effect, like the probability that a guest randomly 
+draws his/her name, which becomes high quickly as a function of the number of guests.&lt;/p&gt;
+
+&lt;p&gt;However, another sequential strategy could be considered, the same as presented in the introduction, 
+to generate a cyclic-oriented graph (donor -&amp;gt; recipient). The algorithm will be:
+A guest randomly draws a piece of paper, keeps it, and gives the Christmas hat to
+The person whose name is on it. Only the first guest could draw her/his name.
+In this case, the person redraws a piece of paper and then puts the paper back with his/her name. 
+But here, the surprise effect becomes split into two moments, first discovering the identity of donors progressively,
+and then all the gifts simultaneously, instead of one moment previously.&lt;/p&gt;
+
+&lt;h1 id=&quot;-different-gifts-problem&quot;&gt;🎁 Different gifts problem&lt;/h1&gt;
+
+&lt;p&gt;A second problem will be to know if two guests could bring the same type of gift. 
+Having all gifts different could make it more fun, as the guests did not know for whom the gift they bought would be. 
+These gifts are not personalized. Let’s suppose that you categorized 300 types of gifts.&lt;/p&gt;
+
+&lt;p&gt;This is equivalent to another famous problem, the &lt;strong&gt;birthday problem&lt;/strong&gt;. The probability that 
+two people were born on the same day increases quickly depending
+on the number of people. It becomes almost certain, that is to say, more than $99\%$ 
+of a chance to be valid for a group of 60 people.&lt;/p&gt;
+
+&lt;p&gt;More generally, the probability that a group of size $n$, built with replacement and a sequence of independent and uniformly distributed trials from a set of size $N$,
+contains at least two identical elements:&lt;/p&gt;
+
+\[g_n = 1 - \frac{N}{N}\,\frac{N-1}{N}\,\cdots\,\frac{N-n+1}{N} = 1 - 1\,\left(1-\frac{1}{N}\right)\,\cdots\,\left(1-\frac{n-1}{N}\right)\]
+
+&lt;p&gt;It is the inverse of the probability that no element is the same.&lt;/p&gt;
+
+&lt;p&gt;Here, $N$ is the number of possible types of Christmas gifts, and $n$ is the number of guests. 
+Except for some guests with a very original gift, suppose that your guest chose a 
+pre-defined list influenced by the constraints and the ads, with a few hundred types of items, 
+let’s say $N=300$:&lt;/p&gt;
+
+&lt;figure title=&quot;Probability to have two identical types of gifts among 300 possible types of Christmas gifts&quot; class=&quot;content&quot;&gt;
+  &lt;div&gt;
+    &lt;img class=&quot;img-fluid lazyload&quot; data-src=&quot;https://raw.githubusercontent.com/glegoux/articles-glegoux-com/master/articles/2021-11-23-secret-santa/images/g_n-convergence.png&quot; title=&quot;Probability to have two identical types of gifts among 300 possible types of Christmas gifts&quot; alt=&quot;Probability to have two identical types of gifts among 300 possible types of Christmas gifts&quot; /&gt;
+  &lt;/div&gt;
+  &lt;figcaption&gt;
+    Probability to have two identical types of gifts among 300 possible types of Christmas gifts
+    
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;With an approximation $e^{x} \approx 1 +x$ when $x$ is close to $0$, and the &lt;strong&gt;sum of young Gauss&lt;/strong&gt; 
+$\sum_{k=0}^{n}\,k = \frac{n(n+1)}{2}$, you can get:&lt;/p&gt;
+
+\[g_n \approx 1 - e^{-\frac{n(n-1)}{2N}}\]
+
+&lt;p&gt;But in any case, you see:&lt;/p&gt;
+
+\[\displaystyle\lim_{n\mapsto +\infty}g_n = 1\]
+
+&lt;p&gt;And:&lt;/p&gt;
+
+\[g_{n\geq 20} \geq \dfrac{1}{2} \qquad g_{n\geq 60} \approx 1\]
+
+&lt;p&gt;If you have more than 20 guests, we have more than 1 out of 2 chances to have
+at least two identical types of gifts.&lt;/p&gt;
+
+&lt;p&gt;So, I wish you a good Secret Santa 🎄.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 23 Nov 2021 00:00:00 +0000</pubDate>
+        <link>https://glegoux.com/blog/articles/2021/11/23/secret-santa.html</link>
+        <guid isPermaLink="true">https://glegoux.com/blog/articles/2021/11/23/secret-santa.html</guid>
+        
+        
+        <category>Applied Mathematics</category>
         
       </item>
     

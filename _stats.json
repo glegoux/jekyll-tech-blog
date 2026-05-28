@@ -1,20 +1,6 @@
 [
 
 {
-"title"                : "Top Five Ways to Beat Blue Monday",
-"authors"              : "glegoux",
-"category"             : "News",
-"tags"                 : "",
-"time_reading_minutes" : 4,
-"url"                  : "/blog/articles/2024/01/10/top-five-ways-to-beat-blue-monday.html",
-"date"                 : "2024-01-10 00:00:00 +0000",
-"year"                 : "2024",
-"month"                : "01",
-"yearMonth"            : "2024-01",
-"yearMonthDay"         : "2024-01-10"
-} ,
-
-{
 "title"                : "Ubuntu: apt-key is deprecated",
 "authors"              : "glegoux",
 "category"             : "Security",
