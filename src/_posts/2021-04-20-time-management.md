@@ -20,7 +20,7 @@ physics, management, philosophy, and operations research. In this perspective, t
 about **understanding how human energy, priorities, and decision-making interact over time**.  
 
 Many modern frameworks can be seen as practical implementations of time-management principles, including **Agile methodologies** and approaches 
-such as **Scrum**, **Kanban**, and the **Pomodoro** Technique.
+such as **Scrum**, **Kanban**, and **Pomodoro**.
 
 {% include content/google-drawing.html title="Time Management"
 src="https://docs.google.com/drawings/d/e/2PACX-1vR9gDDDWTNK3btntBfhxsrL18EDGgytkOLDCS2yrgp8ZqxgvJQsCpnyWJwWT4cIk_8z0rLUn1iTS8cG/pub?w=600&h=348"
