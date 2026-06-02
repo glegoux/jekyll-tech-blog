@@ -323,6 +323,16 @@ for my deadlines, and a **to-do list** for daily tasks.
 
 Now I redo the same things for both my personal and work activities to manage my time more effectively.
 
+# Tracking tools
+
+Once you have defined your goals and methodology, you should track your time to monitor how you spend it and how much time each activity takes.
+Here are three famous tools to do it:
+- <https://clockify.me> : Very popular free time tracker. Strongest option for most people starting out: unlimited tracking, projects, and solid reporting even on the free plan.
+- <https://everhour.com> : Great if you already use tools like Asana, Trello, or ClickUp. It integrates deeply into project management workflows, so it feels more “embedded” than standalone.
+- <https://beebole.com> : More oriented toward teams and businesses that need detailed reporting, timesheets, and compliance-style tracking.
+
+You can try each tool for free to explore its features, including reports and analytics that show how you actually spend your time in practice.
+
 # Go Further
 
 This article is only an introduction to time management applied to oneself by oneself. But the situation can
