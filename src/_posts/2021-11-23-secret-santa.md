@@ -88,20 +88,18 @@ These gifts are not personalized. Let's suppose that you categorized 300 types o
 
 This is equivalent to another famous problem, the **birthday problem**. The probability that 
 two people were born on the same day increases quickly depending
-on the number of people. It becomes almost certain, that is to say, more than $99\%$ 
-of a chance to be valid for a group of 60 people. 
+on the number of people. It becomes almost certain, that is to say, more than $99\%$ of a chance 
+to be valid for a group of 60 people. 
 
-More generally, the probability that a group of size $n$, built with replacement and a sequence of independent and uniformly distributed trials from a set of size $N$,
-contains at least two identical elements:
+More generally, it represents the probability that a collection of size $N$ contains at least two identical elements where the elements has been chosen from a sequence of independent and uniformly distributed trials from a group of $n$, with replacement:
 
 $$g_n = 1 - \frac{N}{N}\,\frac{N-1}{N}\,\cdots\,\frac{N-n+1}{N} = 1 - 1\,\left(1-\frac{1}{N}\right)\,\cdots\,\left(1-\frac{n-1}{N}\right)$$
 
-It is the inverse of the probability that no element is the same.
+It is the complement of the probability that no element is the same.
 
 Here, $N$ is the number of possible types of Christmas gifts, and $n$ is the number of guests. 
 Except for some guests with a very original gift, suppose that your guest chose a 
-pre-defined list influenced by the constraints and the ads, with a few hundred types of items, 
-let's say $N=300$:
+pre-defined list influenced by the constraints and the ads, with a few hundred types of items more or less generic, let's say $N=300$:
 
 {% include content/image.html
 title="Probability to have two identical types of gifts among 300 possible types of Christmas gifts" 
