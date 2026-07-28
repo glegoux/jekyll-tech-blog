@@ -91,7 +91,7 @@ two people were born on the same day increases quickly depending
 on the number of people. It becomes almost certain, that is to say, more than $99\%$ of a chance 
 to be valid for a group of 60 people. 
 
-More generally, it represents the probability that a collection of size $N$ contains at least two identical elements where the elements has been chosen from a sequence of independent and uniformly distributed trials from a group of $n$, with replacement:
+More generally, it represents the probability that a collection of size $N$ contains at least two identical elements where the elements has been chosen from a sequence of independent and uniformly distributed trials from a group of size $n$, with replacement:
 
 $$g_n = 1 - \frac{N}{N}\,\frac{N-1}{N}\,\cdots\,\frac{N-n+1}{N} = 1 - 1\,\left(1-\frac{1}{N}\right)\,\cdots\,\left(1-\frac{n-1}{N}\right)$$
 
