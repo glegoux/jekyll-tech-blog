@@ -41,8 +41,8 @@ want to avoid.
 This concrete problem can be reformulated: Is there at least a fixed point in the permutation 
 of a set with $n$ elements? Where $n$ is the number of guests. It is the famous **hat-check problem**. 
 
-The probability that at least one guest draws his/her name is the inverse of
-the probability that no one drew his/her name, that is to say:
+The probability that at least one guest draws his/her name is the complement of
+the probability that no one drew his/her name:
 
 $$p_n =  1 - \dfrac{\mathcal{D}_{n}}{n!} = 1 - u_n$$
 
