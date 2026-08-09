@@ -5,8 +5,8 @@
     <description>Personal blog about software engineering</description>
     <link>https://glegoux.com/</link>
     <atom:link href="https://glegoux.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 28 Jul 2026 18:51:08 +0000</pubDate>
-    <lastBuildDate>Tue, 28 Jul 2026 18:51:08 +0000</lastBuildDate>
+    <pubDate>Sun, 09 Aug 2026 06:44:54 +0000</pubDate>
+    <lastBuildDate>Sun, 09 Aug 2026 06:44:54 +0000</lastBuildDate>
     <generator>Jekyll v4.3.4</generator>
     
       <item>
@@ -933,8 +933,8 @@ want to avoid.&lt;/p&gt;
 &lt;p&gt;This concrete problem can be reformulated: Is there at least a fixed point in the permutation 
 of a set with $n$ elements? Where $n$ is the number of guests. It is the famous &lt;strong&gt;hat-check problem&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;The probability that at least one guest draws his/her name is the inverse of
-the probability that no one drew his/her name, that is to say:&lt;/p&gt;
+&lt;p&gt;The probability that at least one guest draws his/her name is the complement of
+the probability that no one drew his/her name:&lt;/p&gt;
 
 \[p_n =  1 - \dfrac{\mathcal{D}_{n}}{n!} = 1 - u_n\]
 
