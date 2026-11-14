@@ -104,7 +104,6 @@ project_core:
       popper: "1.16.1" # https://popper.js.org (REPLACED WITH floating UI)
       bootstrap: "4.6.2" # https://getbootstrap.com
       font-awesome: "6.7.2" # https://fontawesome.com
-      smooth-scroll: "14.2.1" # https://github.com/cferdinandi/smooth-scroll (DEPRECATED)
       moment: "2.31.0" # https://momentjs.com
       fuse: "7.2.0" # https://www.fusejs.io
       lazysizes: "5.3.2" # https://github.com/aFarkas/lazysizes (NO MORE MAINTAINED)

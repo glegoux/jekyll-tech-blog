@@ -8,27 +8,24 @@
 
         /* Go to top or to element with id */
 
-        function goToIdorTop() {
-            $('a[href^="#"]').click(function () {
-                var destId = $(this).attr("href");
-                var srcId = $(this).attr("id");
-                if (destId === "#") {
-                    $("html, body").animate({scrollTop: 0}, 'slow');
-                } else {
-                    if (srcId && srcId.startsWith('go-to-ref')) {
-                        srcId = '#' + srcId;
-                        $('.come-back').remove();
-                        $(destId).prepend('<a class="come-back" href="' + srcId + '">&uarr;</a>');
-                        goToIdorTop();
-                    }
-                    var offset = $(destId).offset().top;
-                    $('html, body').animate({scrollTop: offset}, 'slow');
+        $(document).on('click', 'a[href^="#"]', function () {
+            var destId = $(this).attr("href");
+            var srcId = $(this).attr("id");
+            if (destId === "#") {
+                window.scrollTo({top: 0, behavior: 'smooth'});
+            } else {
+                var dest = document.getElementById(decodeURIComponent(destId.substring(1)));
+                if (!dest) {
+                    return false;
                 }
-                return false;
-            });
-        }
-
-        goToIdorTop();
+                if (srcId && srcId.startsWith('go-to-ref')) {
+                    $('.come-back').remove();
+                    $(dest).prepend('<a class="come-back" href="#' + srcId + '">&uarr;</a>');
+                }
+                dest.scrollIntoView({behavior: 'smooth'});
+            }
+            return false;
+        });
 
         /* Show or hide menu */
 
