@@ -18,7 +18,11 @@ run_test() {
 
 project_dir="./build/static-files"
 
+# Disable the npm progress spinner, it clears the current line of the test output
+export npm_config_progress=false
+
 echo "Check:"
+run_test  "HTML files" "./test/checker/checker_html.sh \"${project_dir}\""
 run_test  "CSS files" "./test/checker/checker_css.sh \"${project_dir}\""
 run_test  "JSON files" "./test/checker/checker_json.sh \"${project_dir}\""
 
