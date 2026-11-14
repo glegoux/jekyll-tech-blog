@@ -2,7 +2,7 @@ SHELL = /usr/bin/env bash
 
 .PHONY: usage
 usage:
-	@echo "usage all all-prod install update clean build build-prod doctor test run run-prod"
+	@echo "usage all all-prod install install-test update clean build build-prod doctor test run run-prod"
 
 .PHONY: all
 all: install clean build doctor test run
@@ -13,6 +13,11 @@ all: install clean build-prod doctor test run-prod
 .PHONY: install
 install:
 	@bundle install
+
+.PHONY: install-test
+install-test:
+	@npm install -global stylelint html-validate
+	@command -v jq > /dev/null || { >&2 echo "ERROR: jq is required, install it with your package manager"; exit 1; }
 
 .PHONY: update
 update:
