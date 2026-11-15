@@ -1,6 +1,7 @@
 name: Deploy static website
 
 on:
+  workflow_dispatch:
   workflow_run:
     workflows: ["Test"] # must match `name: Test` in test.yml
     types: [completed]
