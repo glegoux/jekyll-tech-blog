@@ -1,0 +1,15 @@
+{
+  "root": true,
+  "rules": {
+    "close-order": "error",
+    "close-attr": "error",
+    "void-content": "error",
+    "no-dup-attr": "error",
+    "no-dup-id": "error",
+    "element-name": "error",
+    "unrecognized-char-ref": "error",
+    "doctype-html": "error",
+    "missing-doctype": "error",
+    "deprecated": "error"
+  }
+}
