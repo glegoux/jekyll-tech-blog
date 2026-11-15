@@ -9,7 +9,9 @@ on:
 jobs:
   build:
     # Deploy only when the "Test" workflow succeeded
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    if: >
+      github.event.workflow_run.head_branch == 'glegoux.com' &&
+      github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
