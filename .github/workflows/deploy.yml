@@ -3,7 +3,7 @@ name: Deploy
 # Remove the following required "on" property, and replace with this one
 #on:
 #  workflow_run:
-#    workflows: ["Test"]
+#    workflows: ["Test"] # must match `name: Test` in test.yml
 #    types:
 #      - completed
 on:
@@ -12,9 +12,14 @@ on:
 
 jobs:
   notify:
+    # Deploy only when the "Test" workflow succeeded
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Deploy the commit that was tested
+          ref: ${{ github.event.workflow_run.head_sha }}
       - uses: ruby/setup-ruby@v1 # use .ruby-version
       - name: Install project
         run: |
