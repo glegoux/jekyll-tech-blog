@@ -5,26 +5,24 @@ on:
   workflow_call:
 
 jobs:
-  build:
-    # Deploy only when the "Test" workflow succeeded
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+  deploy:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
       with:
-        # Deploy the commit that was tested
-        ref: ${{ github.event.workflow_run.head_sha }}
+        # Deploy the commit of the caller workflow
+        ref: ${{ github.sha }}
     - uses: ruby/setup-ruby@v1 # use .ruby-version
-    - name: Install project
+    - name: (project) Install
       run: |
         echo "** Install ruby dependencies:"
         make install
-    - name: Build static website with domain name
+    - name: (project) Build
       run: |
         source ~/.profile
         make build-prod
         cp .github/files/* ./build/static-files/
-    - name: Deploy static website
+    - name: (project) Deploy
       run: |
         git add --force ./build/static-files
         git stash --keep-index --include-untracked
