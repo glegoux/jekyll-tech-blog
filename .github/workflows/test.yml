@@ -38,7 +38,7 @@ jobs:
           make build
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '26'
       - name: (project) Test
         run: |
           echo "** Install test dependencies:"
