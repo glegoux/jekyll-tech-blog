@@ -43,6 +43,9 @@ jobs:
         source ~/.profile
         make build-prod
         cp .github/files/* ./build/static-files/
+    - uses: actions/setup-node@v4
+      with:
+        node-version: lts/*
     - name: (project) Test
       run: |
         echo "** Install test dependencies:"
