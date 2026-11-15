@@ -43,12 +43,13 @@ jobs:
     - name: Test project
       run: |
         echo "** Install test dependencies:"
-        npm install -global stylelint
+        npm install -global stylelint html-validate
         sudo apt install jq
         echo "** Show test versions:"
         echo "node version: $(node --version)"
         echo "npm version: $(npm --version)"
         echo "stylelint version: $(npx stylelint --version)"
+        echo "html-validate version: $(npx html-validate --version)"
         echo "jq version: $(jq --version)"
         echo "** Run:"
         make test
