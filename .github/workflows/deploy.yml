@@ -1,14 +1,21 @@
 name: Deploy static website
 
 on:
-  push:
-    branches: [ glegoux.com ]
+  workflow_run:
+    workflows: ["Test"] # must match `name: Test` in test.yml
+    types:
+      - completed
 
 jobs:
   build:
+    # Deploy only when the "Test" workflow succeeded
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
+      with:
+        # Deploy the commit that was tested
+        ref: ${{ github.event.workflow_run.head_sha }}
     - name: Show environment
       run: |
         echo "Operating System: $(cat /etc/issue.net)"
