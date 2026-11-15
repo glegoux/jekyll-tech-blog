@@ -6,7 +6,7 @@ on:
     branches: [ glegoux.com ]
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
     steps:
       - name: (project) Show environment
@@ -53,3 +53,6 @@ jobs:
           echo "jq version: $(jq --version)"
           echo "** Run tests:"
           make test
+  deploy:
+    needs: test
+    uses: ./.github/workflows/deploy.yml
