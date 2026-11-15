@@ -5,9 +5,9 @@
     <description>Personal blog about software engineering</description>
     <link>https://glegoux.com/</link>
     <atom:link href="https://glegoux.com/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 09 Aug 2026 06:44:54 +0000</pubDate>
-    <lastBuildDate>Sun, 09 Aug 2026 06:44:54 +0000</lastBuildDate>
-    <generator>Jekyll v4.3.4</generator>
+    <pubDate>Sun, 15 Nov 2026 20:51:35 +0000</pubDate>
+    <lastBuildDate>Sun, 15 Nov 2026 20:51:35 +0000</lastBuildDate>
+    <generator>Jekyll v4.4.1</generator>
     
       <item>
         <title>Ubuntu: apt-key is deprecated</title>
@@ -308,7 +308,7 @@ and  &lt;a href=&quot;https://www.linkedin.com/in/raphaelclaude&quot;&gt;Raphael
 &lt;p&gt;For a simple project:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;The README should be a simple text file called README.&lt;extension&gt;.&lt;/extension&gt;&lt;/li&gt;
+  &lt;li&gt;The README should be a simple text file called README.&lt;/li&gt;
   &lt;li&gt;It should be written in coherent syntax (like  &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;Markdown&lt;/code&gt;  or  &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;reStructuredText&lt;/code&gt;).&lt;/li&gt;
   &lt;li&gt;There should be a README at the root of the project.&lt;/li&gt;
   &lt;li&gt;According to the README variant you choose (see sections below), you need to adhere to the variant structure.&lt;/li&gt;

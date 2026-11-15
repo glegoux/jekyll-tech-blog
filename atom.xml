@@ -4,7 +4,7 @@
  <title>Software Engineering Blog - Gilles Legoux (glegoux)</title>
  <link href="https://glegoux.com/atom.xml" rel="self"/>
  <link href="https://glegoux.com/"/>
- <updated>2026-08-09T06:44:54+00:00</updated>
+ <updated>2026-11-15T20:51:35+00:00</updated>
  <id>https://glegoux.com/</id>
 
  
@@ -304,7 +304,7 @@ and  &lt;a href=&quot;https://www.linkedin.com/in/raphaelclaude&quot;&gt;Raphael
 &lt;p&gt;For a simple project:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;The README should be a simple text file called README.&lt;extension&gt;.&lt;/extension&gt;&lt;/li&gt;
+  &lt;li&gt;The README should be a simple text file called README.&lt;/li&gt;
   &lt;li&gt;It should be written in coherent syntax (like  &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;Markdown&lt;/code&gt;  or  &lt;code class=&quot;language-text highlighter-rouge&quot;&gt;reStructuredText&lt;/code&gt;).&lt;/li&gt;
   &lt;li&gt;There should be a README at the root of the project.&lt;/li&gt;
   &lt;li&gt;According to the README variant you choose (see sections below), you need to adhere to the variant structure.&lt;/li&gt;
@@ -3681,7 +3681,7 @@ Linus Torvalds, creator of the Linux operating system
 &lt;p&gt;Footnotes work mostly like reference-style links. A footnote is made of two things: a marker in the text that will become a superscript number; 
 a footnote definition that will be placed in a list of footnotes at the end of the document. A footnote looks like this:&lt;/p&gt;
 
-&lt;p&gt;That’s some text with a footnote&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;That’s some text with a footnote&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot; role=&quot;doc-noteref&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 
 &lt;p&gt;Source code:&lt;/p&gt;
 
@@ -4040,8 +4040,8 @@ hello:
 ~~~
 &lt;/pre&gt;
 
-&lt;div class=&quot;language-ini highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nn&quot;&gt;[message]&lt;/span&gt;
-&lt;span class=&quot;py&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello World!&quot;&lt;/span&gt;
+&lt;div class=&quot;language-ini highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nn&quot;&gt;[message]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;py&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello World!&quot;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Source code:&lt;/p&gt;
@@ -4169,7 +4169,7 @@ written source, that is to say, a comment, simply do an &lt;abbr title=&quot;Hyp
 &lt;p&gt;TODO&lt;/p&gt;
 &lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
   &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
       &lt;p&gt;And that’s the footnote. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;

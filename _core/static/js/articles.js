@@ -25,7 +25,7 @@ jQuery(document).ready(function () {
           return detail !== "";
         }).join(' - ') +
         '</div>' +
-        '<a>' +
+        '</a>' +
         '</div>'
       )
     });
@@ -49,7 +49,6 @@ jQuery(document).ready(function () {
     threshold: 0.6,
     location: 0,
     distance: 0,
-    maxPatternLength: 32,
     minMatchCharLength: 1,
     keys: [
       "title",
@@ -67,7 +66,7 @@ jQuery(document).ready(function () {
       return;
     }
     let articles = searchEngineText.search(textSearch);
-    showSearchResult(articles, textSearch);
+    showSearchResult(articles.map(article => article.item), textSearch);
   }
 
   function decorateTextSelector(searchEngineText) {
