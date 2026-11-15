@@ -30,7 +30,7 @@ _Here are explained the practical guidelines that a README should respect._
 
 For a simple project:
 
--   The README should be a simple text file called README.<extension>.
+-   The README should be a simple text file called README.
 -   It should be written in coherent syntax (like  `Markdown`  or  `reStructuredText`).
 -   There should be a README at the root of the project.
 -   According to the README variant you choose (see sections below), you need to adhere to the variant structure.
