@@ -4,12 +4,16 @@ on:
   workflow_dispatch:
   workflow_call:
 
+permissions:
+  contents: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
       with:
+        persist-credentials: true
         # Deploy the commit of the caller workflow
         ref: ${{ github.sha }}
     - uses: ruby/setup-ruby@v1 # use .ruby-version
@@ -31,13 +35,8 @@ jobs:
         git checkout gh-pages
         git rm -rf --quiet .
         git stash pop --quiet
-        mv ./build/static-files/* .
+        mv ./build/static-files/* . # Only resources whose names don't start with a dot "."
         git add -A
-        # Use ssh to push to gh-pages branch
-        mkdir -p ~/.ssh/
-        echo "${{ secrets.PRIVATE_SSH_KEY }}" > ~/.ssh/id_rsa
-        chmod 600 ~/.ssh/id_rsa
-        git config url."git@github.com:".insteadOf "https://github.com/"
         git config user.email ""
         git config user.name "GitHub Actions"
         git commit -m "Deploy static website" --author="GitHub Actions <>" --quiet
