@@ -3,15 +3,13 @@ name: Deploy static website
 on:
   workflow_run:
     workflows: ["Test"] # must match `name: Test` in test.yml
-    types:
-      - completed
+    types: [completed]
+    branches: [glegoux.com]
 
 jobs:
   build:
     # Deploy only when the "Test" workflow succeeded
-    if: >
-      github.event.workflow_run.head_branch == 'glegoux.com' &&
-      github.event.workflow_run.conclusion == 'success'
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
