@@ -5,6 +5,9 @@ on:
   push:
     branches: [ glegoux.com ]
 
+env:
+  TARGET_BRANCH: gh-pages
+
 permissions:
   contents: write
 
@@ -65,7 +68,7 @@ jobs:
         git stash --keep-index --include-untracked
         git stash save -m "Deploy static website"
         git fetch --all
-        git checkout gh-pages
+        git checkout $TARGET_BRANCH 2> /dev/null || git checkout -b $TARGET_BRANCH
         git rm -rf --quiet .
         git stash pop --quiet
         mv ./build/static-files/* . # Only resources whose names don't start with a dot "."
