@@ -1,52 +1,83 @@
 name: Deploy
 
-# Remove the following required "on" property, and replace with this one
+# Uncomment the following required "on" property, and remove the other
 #on:
-#  workflow_run:
-#    workflows: ["Test"] # must match `name: Test` in test.yml
-#    types:
-#      - completed
+#  workflow_dispatch:
+#  push:
+#    branches: [ <branch_name> ]
 on:
   push:
     branches: [ nothing ]
 
+env:
+  TARGET_BRANCH: gh-pages
+
+permissions:
+  contents: write
+
 jobs:
-  notify:
-    # Deploy only when the "Test" workflow succeeded
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-        with:
-          # Deploy the commit that was tested
-          ref: ${{ github.event.workflow_run.head_sha }}
-      - uses: ruby/setup-ruby@v1 # use .ruby-version
-      - name: Install project
-        run: |
-          echo "** Install ruby dependencies:"
-          make install
-      - name: Build static website with domain name
-        run: |
-          source ~/.profile
-          make build-prod
-          cp .github/files/* build/static-files/
-      - name: Deploy static website
-        run: |
-          git add --force build/static-files/
-          git stash --keep-index --include-untracked
-          git stash save -m "Deploy static website"
-          git fetch --all
-          git checkout gh-pages
-          git rm -rf --quiet .
-          git stash pop --quiet
-          mv build/static-files/* .
-          git add -A
-          # Use ssh to push to gh-pages branch
-          mkdir -p ~/.ssh/
-          echo "${{ secrets.PRIVATE_SSH_KEY }}" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          git config url."git@github.com:".insteadOf "https://github.com/"
-          git config user.email ""
-          git config user.name "GitHub Actions"
-          git commit -m "Deploy static website" --author="GitHub Actions <>" --quiet
-          git push
+    - name: (project) Show environment
+      run: |
+        echo "Operating System: $(cat /etc/issue.net)"
+        echo "Working Directory: $(pwd)"
+        echo "User: $(id)"
+        echo "Shell: $SHELL"
+    - uses: actions/checkout@v4
+      with:
+        persist-credentials: true
+    - uses: ruby/setup-ruby@v1 # use .ruby-version
+    - name: (project) Install
+      run: |
+        echo "** Install ruby dependencies:"
+        make install
+    - name: (project) Show versions
+      run: |
+        source ~/.profile
+        echo "** Context ecosystem:"
+        echo "git version: $(git --version)"
+        echo "make version: $(make --version | head -1)"
+        echo "bash version: $(bash --version | head -1)"
+        echo "** Ruby ecosystem:"
+        echo "ruby version: $(ruby --version)"
+        echo "bundle version: $(bundle --version)"
+        echo "jekyll version: $(jekyll --version 2> /dev/null)"
+        echo -e "gem version:\n$(gem list)"
+    - name: (project) Build
+      run: |
+        source ~/.profile
+        make build-prod
+        cp .github/files/* ./build/static-files/
+    - uses: actions/setup-node@v4
+      with:
+        node-version: lts/*
+    - name: (project) Test
+      run: |
+        echo "** Install test dependencies:"
+        npm install -global stylelint html-validate
+        sudo apt install jq
+        echo "** Show test versions:"
+        echo "node version: $(node --version)"
+        echo "npm version: $(npm --version)"
+        echo "stylelint version: $(npx stylelint --version)"
+        echo "html-validate version: $(npx html-validate --version)"
+        echo "jq version: $(jq --version)"
+        echo "** Run tests:"
+        make test
+    - name: (project) Deploy
+      run: |
+        git add --force ./build/static-files
+        git stash --keep-index --include-untracked
+        git stash save -m "Deploy static website"
+        git fetch --all
+        git checkout $TARGET_BRANCH 2> /dev/null || git checkout -b $TARGET_BRANCH
+        git rm -rf --quiet .
+        git stash pop --quiet
+        mv ./build/static-files/* . # Only resources whose names don't start with a dot "."
+        git add -A
+        git config user.email ""
+        git config user.name "GitHub Actions"
+        git commit -m "Deploy static website" --author="GitHub Actions <>" --quiet
+        git push
